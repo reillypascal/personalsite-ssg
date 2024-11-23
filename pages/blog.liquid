@@ -1,0 +1,155 @@
+---
+layout: mainlayout.njk
+title: Reilly Spitzfaden, Composer | Blog
+description: A blog about composition/sound design in Max/MSP, C++ audio plugin development, web development, and other personal interests of mine.
+canonical_url: https://reillyspitzfaden.com/blog
+root_folder: ..
+---
+<div class="content">
+<br/>
+    <div id="BGpad">
+        <div id="main">
+            <!-- blog contents -->
+            <div class="blogPostLinks">
+                <h2>Blog</h2>
+                <p>A blog about my personal interests, including composition/sound design in <a href="https://en.wikipedia.org/wiki/Max_(software)">Max/MSP</a>, the <a href="https://indieweb.org/">IndieWeb</a>, C++ audio plugin development, and web development</p>
+                <hr />
+                
+                {% for post in collections.post reversed %}
+                <article>
+                <h3><a href="{{post.url}}">{{ post.data.title }}</a></h3>
+                <p>{{ post.data.description }}</p>
+                    <span class="meta-icon">
+                        <img src="../media/icon-calendar-ltr.svg" alt="calendar icon" />
+                    </span>
+                    <span class="meta-text">
+                    <time>{{ post.date }}</time>
+                    </span>
+                </article>
+                <hr />
+                {% endfor %}
+                <!-- <article>
+                    <h3><a href="blog/06-04-2024.html">Making Journaling More Enjoyable</a></h3>
+                    <p>Coming up with a new system for bullet journaling, as well as the fountain pen inks and paper I'm using</p>
+                    <span class="meta-icon">
+                        <img src="../media/icon-calendar-ltr.svg" alt="calendar icon" />
+                    </span>
+                    <span class="meta-text">
+                        <time>June 4, 2024</time>
+                    </span>
+                </article>
+                <hr />
+        
+                <article>
+                    <h3><a href="blog/05-21-2024.html">Receiving Webmentions, Part 1</a></h3>
+                    <p>Setting up my blog to receive Webmentions</p>
+                    <span class="meta-icon">
+                        <img src="../media/icon-calendar-ltr.svg" alt="calendar icon" />
+                    </span>
+                    <span class="meta-text">
+                        <time>May 21, 2024</time>
+                    </span>
+                </article>
+                <hr />
+        
+                <article>
+                    <h3><a href="blog/05-17-2024.html">Healthy, Sustainable Social Internet</a></h3>
+                    <p>Thinking through what I want from the social internet, and the difference between a social "network" and social "media"</p>
+                    <span class="meta-icon">
+                        <img src="../media/icon-calendar-ltr.svg" alt="calendar icon" />
+                    </span>
+                    <span class="meta-text">
+                        <time>May 17, 2024</time>
+                    </span>
+                </article>
+                <hr />
+        
+                <article>
+                    <h3><a href="blog/05-04-2024.html">Glitchy Lofi Piano Looper + Radio, Part 1</a></h3>
+                    <p>Max/MSP sample mangling with lo-fi piano, percussion & vinyl noise for my work-in-progress <cite>Forget your name</cite></p>
+                    <span class="meta-icon">
+                        <img src="../media/icon-calendar-ltr.svg" alt="calendar icon" />
+                    </span>
+                    <span class="meta-text">    
+                        <time>May 4, 2024</time>
+                    </span>
+                </article>
+                <hr />
+        
+                <article>
+                    <h3><a href="blog/04-05-2024.html">New Album Announcement</a></h3>
+                    <p>My trio <cite>If this reaches you</cite> is on Apply Triangle's new album, out on April 12!</p>
+                    <span class="meta-icon">
+                        <img src="../media/icon-calendar-ltr.svg" alt="calendar icon" />
+                    </span>
+                    <span class="meta-text">
+                        <time>April 5, 2024</time>
+                    </span>
+                </article>
+                <hr />
+        
+                <article>
+                    <h3><a href="blog/03-10-2024.html">RSS Is Nice</a></h3>
+                    <p>My process of adding RSS to my blog, my rediscovery of how nice RSS is, and some music blogs I've been enjoying</p>
+                    <span class="meta-icon">
+                        <img src="../media/icon-calendar-ltr.svg" alt="calendar icon" />
+                    </span>
+                    <span class="meta-text">
+                        <time>March 10, 2024</time>
+                    </span>
+                </article>
+                <hr />
+        
+                <article>
+                    <h3><a href="blog/03-01-2024.html"> Listening and Reading List, Mar. 1, 2024</a></h3>
+                    <p>Links and discussion of what I'm currently listening to and reading</p>
+                    <span class="meta-icon">
+                        <img src="../media/icon-calendar-ltr.svg" alt="calendar icon" />
+                    </span>
+                    <span class="meta-text">
+                        <time>March 1, 2024</time>
+                    </span>
+                </article> 
+                <hr />
+        
+                <article>
+                    <h3><a href="blog/02-27-2024.html">Composition Journal, Feb. 27, 2024</a></h3>
+                    <p>Spectral compositing sound design from my work-in-progress <cite>Forget your name</cite></p>
+                    <span class="meta-icon">
+                        <img src="../media/icon-calendar-ltr.svg" alt="calendar icon" />
+                    </span>
+                    <span class="meta-text">
+                        <time>February 27, 2024</time>
+                    </span>
+                </article>
+                <hr />
+        
+                <article>
+                    <h3><a href="blog/01-14-2024.html">Do Read the Comments</a></h3>
+                    <p>A writeup of using Netlify serverless functions and Supabase to code a comments section on a static site</p>
+                    <span class="meta-icon">
+                        <img src="../media/icon-calendar-ltr.svg" alt="calendar icon" />
+                    </span>
+                    <span class="meta-text">
+                        <time>January 14, 2024</time>
+                    </span>
+                </article>
+                <hr />
+        
+                <article>
+                    <h3><a href="blog/01-03-2024.html">Hello World!</a></h3>
+                    <p>An introduction to this blog and what I plan to do with it</p>
+                    <span class="meta-icon">
+                        <img src="../media/icon-calendar-ltr.svg" alt="calendar icon" />
+                    </span>
+                    <span class="meta-text">
+                        <time>January 3, 2024</time>
+                    </span>
+                </article>
+            </div> -->
+            
+            <!-- <a href="https://validator.w3.org/feed/check.cgi?url=https%3A//reillyspitzfaden.com/blog/feed.xml" class="RSSValidation"><img src="./blog/media/valid-rss-rogers.png" alt="[Valid RSS]" title="Validate my RSS feed" /></a> -->
+        <!-- close "main" -->
+        </div>
+    </div>
+</div>

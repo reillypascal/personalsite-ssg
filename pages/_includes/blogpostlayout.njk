@@ -1,0 +1,98 @@
+---
+layout: mainlayout.njk
+title: Reilly Spitzfaden, Composer
+---
+<!-- page content minus header/footer -->
+<div class="content">
+    <br/>
+    <div id="BGpad">
+        <div id="mainBlog">
+            <!-- post contents -->
+            <article class="textBlock">
+                <h2>{{ title }}</h2>
+                
+                <div class="post-meta">
+                    <span class="meta-icon">
+                        <img src="{{ root_folder }}/media/icon-calendar-ltr.svg" alt="calendar icon" />
+                    </span>
+                    
+                    <span class="meta-text">
+                        <a href="{{ canonical_url }}"><time>{{ date }}</time></a> 
+                    </span>
+                </div>
+            
+            {{ content | safe }}    
+            
+            </article>
+
+            <div class="post-reactions">
+                <span class="heart-meta">
+                    Post Reactions:
+                </span>
+                
+                <button id="react-btn">
+                    <span class="heart-react">
+                        <img src="{{ root_folder }}/media/icon-heart-pink.svg" alt="heart icon" />
+                    </span>
+                </button>
+
+                <span id="react-ctr"></span>
+            </div>
+
+            <div class="share-openly">
+                <img class="share-openly-icon" src="{{ root_folder }}/media/share-openly.svg">&nbsp;
+                <a href="https://shareopenly.org/share/?url={{ canonical_url }}">Share on the Fediverse</a>
+            </div> 
+            
+            <div class="blogPostAsterism"><p>&#x2042;</p></div>
+            <!-- close "main" -->
+        </div>
+    <!-- close "BGpad" -->
+    </div>
+<!-- end content -->
+</div>
+
+<script src="{{ root_folder }}/styles/interactions.js"></script>
+
+<div class="content">
+    <div id="commentBGPad">
+        <div id="mainBlog">
+            <div class="webmentionForm">
+                <form id="webmention-form" action="https://webmention.io/reillyspitzfaden.com/webmention" method="POST">
+                    <h2>Send me a webmention</h2>
+                    <p>
+                        <label for="webmention-form">This post accepts <a href="https://en.wikipedia.org/wiki/Webmention">webmentions</a>. If you link to and write about this on your website, you can enter the web address of your post below:</label>
+                    </p>
+
+                    <input id="webmention-source" type="url" autocomplete="url" required="" pattern="^https?:\/\/(.*)" name="source" placeholder="URL/Permalink of your article" class="error" aria-invalid="true">
+                    
+                    <input id="webmention-submit" type="submit" name="submit" value="Ping me!">
+
+                    <input id="webmention-format" type="hidden" name="format" value="html">
+                    <input id="webmention-target" type="hidden" name="target" value="">
+                </form>
+            </div>
+            
+            <div class="commentSection">
+                <form id="comment-form" name="comments" action="" method="POST">
+                    <h2>Leave a comment</h2>
+                    <fieldset>
+                        <legend>Comment</legend>
+                        <ul>
+                            <li><input type="text" name="name" id="comment-name" placeholder="Name (required)" class="textinput" required="true" aria-required="true"></li>
+                            <li><input type="text" name="email" id="comment-email" placeholder="Email (optional)" class="textinput"></li>
+                            <li><textarea name="comment" id="comment-story" placeholder="Comment (required)" required="true" aria-required="true"></textarea></li>
+                            <li><div id="submit-success"></div><input type="submit" value="Submit" id="submit-comment" ></li>
+                        </ul>
+                    </fieldset>
+                </form>
+                <div id="commentDisplay">
+                    <h3>User Comments</h3>
+                    <input type="submit" id="load-comments" value="Load Comments">
+                    <!-- <input type="submit" id="load-comments" value="Load Comments" onclick="this.blur();"> -->
+                    <div id="comment-section"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

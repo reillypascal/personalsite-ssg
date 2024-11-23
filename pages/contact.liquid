@@ -1,0 +1,35 @@
+---
+layout: mainlayout.njk
+title: Reilly Spitzfaden, Composer| Contact
+description: Contact form for Reilly Spitzafden
+canonical_url: https://reillyspitzfaden.com/contact
+root_folder: ..
+---
+<div class="content">
+<br/>
+    <div id="BGpad">
+        <div id="main">
+            <form 
+                name="contact" 
+                action="./pages/success.html" 
+                method="POST" 
+                data-netlify="true"
+            >
+            <h2>Contact Reilly</h2>
+            <p>Please allow 1-2 business days for a response. Thank-you!</p>
+            <p>You can also contact me directly via <a href="mailto:reillypascal@gmail.com">email.</a></p>
+                <fieldset>
+                    <legend>Contact</legend>
+                    <ul>
+                        <li><input type="text" name="name" id="form-name" placeholder="Name (required)" class="textinput" required="true" aria-required="true"></li>
+                        <li><input type="email" name="email" id="form-email" placeholder="Email (required)" class="textinput" required="true" aria-required="true"></li>
+                        <li><input type="text" name="subject" id="form-subject" placeholder="Subject (optional)" class="textinput"></li>
+                        <li><textarea name="message" id="form-story" placeholder="Message (required)" required="true" aria-required="true"></textarea></li>
+                        <li><input type="submit" value="Send" id="send-email"></li>
+                    </ul>
+                </fieldset>
+            </form>
+        <!-- close "main" -->
+        </div>
+    </div>
+</div>
