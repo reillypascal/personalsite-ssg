@@ -1,7 +1,6 @@
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 
 export default function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy(".env");
   eleventyConfig.addPassthroughCopy("_redirects");
   eleventyConfig.addPassthroughCopy("index.js");
   eleventyConfig.addPassthroughCopy("robots.txt");
