@@ -1,5 +1,5 @@
 ---
-layout: blogpostlayout.njk
+layout: blogpostlayout.liquid
 root_folder: ../../../..
 title: Healthy, Sustainable Social Internet
 description: Thinking through what I want from the social internet, and the difference between a social "network" and social "media"

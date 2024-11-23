@@ -1,5 +1,5 @@
 ---
-layout: blogpostlayout.njk
+layout: blogpostlayout.liquid
 root_folder: ../../../..
 title: Receiving Webmentions, Part 1
 description: Setting up my blog to receive Webmentions

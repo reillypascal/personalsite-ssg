@@ -1,5 +1,5 @@
 ---
-layout: blogpostlayout.njk
+layout: blogpostlayout.liquid
 root_folder: ../../../..
 title: New Album Announcement
 description: My trio "If this reaches you" is on Apply Triangle's new album, out on April 12!

@@ -1,5 +1,5 @@
 ---
-layout: blogpostlayout.njk
+layout: blogpostlayout.liquid
 root_folder: ../../../..
 title: Reading and Listening List, Mar. 1, 2024
 description: Links and discussion of what I'm currently listening to and reading

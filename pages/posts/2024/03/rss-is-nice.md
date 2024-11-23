@@ -1,5 +1,5 @@
 ---
-layout: blogpostlayout.njk
+layout: blogpostlayout.liquid
 root_folder: ../../../..
 title: RSS Is Nice
 description: My process of adding RSS to my blog, my rediscovery of how nice RSS is, and some music blogs I've been enjoying
