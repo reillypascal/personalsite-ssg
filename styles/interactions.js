@@ -1,6 +1,6 @@
 // ##################### COMMENT FUNCTIONS ######################
 
-// submit conmment handler - canonical_url variable is defined in the page that calls this function
+// submit conmment handler - blogPostURL variable is defined in the page that calls this function
 const handleSubmitComment = async (event) => {
   event.preventDefault();
 
@@ -15,7 +15,7 @@ const handleSubmitComment = async (event) => {
   const formObject = {
     name: formData.get("name"),
     email: formData.get("email"),
-    postURL: canonical_url,
+    postURL: blogPostURL,
     comment: formData.get("comment"),
   };
 
@@ -46,7 +46,7 @@ const handleSubmitComment = async (event) => {
     });
 };
 
-// retrieve conmment handler - canonical_url is defined in page
+// retrieve conmment handler - blogPostURL is defined in page
 const handleGetComments = async (event) => {
   event.preventDefault();
 
@@ -65,7 +65,7 @@ const handleGetComments = async (event) => {
   const response = await fetch("/.netlify/functions/get_comment", {
     method: "POST",
     body: JSON.stringify({
-      postURL: canonical_url,
+      postURL: blogPostURL,
     }),
   })
     .then((response) => response.json()) // .json() returns a promise too, so there needs to be another .then()
@@ -146,7 +146,7 @@ const handleGetHeart = async (event) => {
   const response = await fetch("/.netlify/functions/get_heart", {
     method: "POST",
     body: JSON.stringify({
-      postURL: canonical_url,
+      postURL: blogPostURL,
     }),
   })
     .then((response) => response.json())
@@ -172,7 +172,7 @@ const handleSubmitHeart = async (event) => {
 
   const reactionObject = {
     heart: "",
-    postURL: canonical_url,
+    postURL: blogPostURL,
   };
 
   const response = await fetch("/.netlify/functions/set_heart", {
@@ -184,7 +184,7 @@ const handleSubmitHeart = async (event) => {
       handleGetHeart();
 
       reactBtn.disabled = "disabled";
-      window.localStorage.setItem(canonical_url, "disabled");
+      window.localStorage.setItem(blogPostURL, "disabled");
     })
     .catch((error) => {
       reactCtr.innerText = "error reacting to post";
@@ -199,7 +199,7 @@ const handleSubmitHeart = async (event) => {
 // add listeners, set up usage of comment/reaction functions
 document.addEventListener("DOMContentLoaded", () => {
   const webmentionTarget = document.getElementById("webmention-target");
-  webmentionTarget.setAttribute("value", canonical_url);
+  webmentionTarget.setAttribute("value", blogPostURL);
 
   const commentForm = document.getElementById("comment-form");
   const getCommentButton = document.getElementById("load-comments");
@@ -211,7 +211,7 @@ document.addEventListener("DOMContentLoaded", () => {
   reactBtn.addEventListener("click", handleSubmitHeart);
   handleGetHeart();
 
-  if (window.localStorage.getItem(canonical_url) == "disabled") {
+  if (window.localStorage.getItem(blogPostURL) == "disabled") {
     reactBtn.disabled = true;
   }
 });
