@@ -11,17 +11,34 @@ TODO:
 
 @font-face {
     font-family: "Lato";
-    src: local("Lato"), url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+    src: local("Lato"),
+        url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
     font-display: swap;
 }
 
 /* color and theme */
 
-body, .nav, .nav a.icon, #main, #mainBlog, #mainMedia, #mainNow, #mainRecent, footer {
+body,
+.nav,
+.nav a.icon,
+#main,
+#mainBlog,
+#mainMedia,
+#mainNow,
+#mainRecent,
+footer {
     background-color: #111318;
 }
 
-body, .dropbtn, .nav a, :link, :visited, input.textinput, textarea, input[type="submit"], input#webmention-source {
+body,
+.dropbtn,
+.nav a,
+:link,
+:visited,
+input.textinput,
+textarea,
+input[type="submit"],
+input#webmention-source {
     color: #d2dde6;
 }
 
@@ -33,22 +50,34 @@ body, .dropbtn, .nav a, :link, :visited, input.textinput, textarea, input[type="
     /* backdrop-filter: contrast(-5%); */
 }
 
-.comment, input.textinput, textarea, input[type="submit"], input#webmention-source {
+.comment,
+input.textinput,
+textarea,
+input[type="submit"],
+input#webmention-source {
     background-color: #363847;
     /* background-color: #343a40; */
 }
 
-.nav a:focus, .nav a:hover, .dropbtn:focus, .dropbtn:hover, .dropdown-content a:focus, .dropdown-content a:hover {
+.nav a:focus,
+.nav a:hover,
+.dropbtn:focus,
+.dropbtn:hover,
+.dropdown-content a:focus,
+.dropdown-content a:hover {
     background-color: #363847;
     /* background-color: #343a40; */
     box-shadow: 0 0 1px 1px #111318 inset;
 }
 
-input.textinput:focus, textarea:focus, input#webmention-source:focus {
+input.textinput:focus,
+textarea:focus,
+input#webmention-source:focus {
     outline-color: hsla(209, 100%, 94%, 0.67) !important;
 }
 
-input[type="submit"]:focus, input[type="submit"]:hover {
+input[type="submit"]:focus,
+input[type="submit"]:hover {
     outline-color: rgba(224, 240, 255, 0.67) !important;
     background-color: #565973;
     /* background-color: #58626c; */
@@ -65,7 +94,7 @@ body {
     min-height: 100vh;
 }
 /* makes background fixed and mobile-compatible */
-.bg {    
+.bg {
     background: url(../media/wefax_20210809_000222_225235000_full.jpg);
     background-position: left top;
     background-repeat: no-repeat;
@@ -80,27 +109,32 @@ body {
     padding: 0;
 }
 /* make content centered */
-.wrapper, .content {
+.wrapper,
+.content {
     margin: 0;
     padding: 0;
 }
 h1 {
     font-weight: 300;
 }
-h2, h3, table {
+h2,
+h3,
+table {
     font-weight: 400;
 }
 table {
     text-align: left;
 }
-:link, :visited {
+:link,
+:visited {
     text-decoration: none;
     border-bottom: 1px solid #a0a0a0;
     /* color: #fff; */
 }
-a:focus, a:hover {
+a:focus,
+a:hover {
     border-bottom: none;
-    transition: border-bottom .5s;
+    transition: border-bottom 0.5s;
 }
 iframe {
     border-style: none;
@@ -119,7 +153,8 @@ iframe {
     position: relative;
     font-size: 100%;
 }
-.active, .navElement {
+.active,
+.navElement {
     /* margin: 0.125rem 0.75rem 0.125rem 0; */
     margin: 2px 12px 2px 0;
 }
@@ -177,12 +212,12 @@ iframe {
     padding: 14px 16px;
     right: 4px;
     top: 0;
-
 }
 .nav #menuLinks {
     display: none;
 }
-.nav :link, .dropbtn {
+.nav :link,
+.dropbtn {
     /* sets highlight size in dropdown layout */
     width: max-content;
     border-bottom: none;
@@ -195,7 +230,8 @@ iframe {
     padding: 4px 10px 4px 8px;
 }
 /* Handles switching between hamburger menu and regular */
-@media screen and (min-width: 56.25rem) { /* was 900px */
+@media screen and (min-width: 56.25rem) {
+    /* was 900px */
     .nav #menuLinks {
         display: contents;
     }
@@ -215,13 +251,15 @@ iframe {
         position: absolute;
     }
 }
-@media screen and (min-width: 62.5rem) { /* was 1000 px */
+@media screen and (min-width: 62.5rem) {
+    /* was 1000 px */
     .nav {
         /* padding: 0.5rem 8%; */
         padding: 8px 8%;
     }
 }
-@media screen and (min-width: 80rem) { /* was 1280px */
+@media screen and (min-width: 80rem) {
+    /* was 1280px */
     .nav {
         /* padding: 0.5rem 12%; */
         padding: 8px 12%;
@@ -231,7 +269,11 @@ iframe {
 /*************************************************/
 
 /* "main" formatting */
-#main, #mainRecent, #mainMedia, #mainBlog, #mainNow {
+#main,
+#mainRecent,
+#mainMedia,
+#mainBlog,
+#mainNow {
     /* top, sides, bottom */
     /* margin: 0 0.75rem 5%;
     padding: 1rem;
@@ -242,8 +284,9 @@ iframe {
     border-radius: 5px;
 }
 
-#main, #mainMedia {
-    width: fit-content; 
+#main,
+#mainMedia {
+    width: fit-content;
     /* margin: auto; */
 }
 
@@ -256,10 +299,14 @@ iframe {
     padding-top: 0;
     /* padding-bottom: 4rem; */
     padding-bottom: 64px;
-} 
+}
 
 @media screen and (min-width: 480px) {
-    #main, #mainRecent, #mainMedia, #mainBlog, #mainNow {
+    #main,
+    #mainRecent,
+    #mainMedia,
+    #mainBlog,
+    #mainNow {
         /* margin: 0 1.5rem 5%; 
         padding: 2rem;
         padding-top: 0.75rem; */
@@ -269,18 +316,25 @@ iframe {
     }
 }
 @media screen and (min-width: 640px) {
-    #main, #mainRecent {border-radius: 7px;}
+    #main,
+    #mainRecent {
+        border-radius: 7px;
+    }
 }
 /* @media screen and (min-width: 768px) { */
 @media screen and (min-width: 860px) {
-    #mainBlog, #mainNow {
+    #mainBlog,
+    #mainNow {
         max-width: 45rem;
         /* max-width: 720px; */
     }
-    #main, #mainBlog, #mainNow {
+    #main,
+    #mainBlog,
+    #mainNow {
         margin: auto;
     }
-    #BGpad, #commentBGPad {
+    #BGpad,
+    #commentBGPad {
         margin: 5% 32px;
     }
 }
@@ -310,11 +364,12 @@ iframe {
 .content {
     flex-grow: 1;
 }
-.nav, footer {
+.nav,
+footer {
     flex-shrink: 0;
 }
 footer::before {
-    content: '';
+    content: "";
     display: block;
     /* padding-top: 1.5rem; */
     padding-top: 24px;
@@ -383,7 +438,7 @@ footer > table :link {
     font-size: 26pt;
 }
 #myCardName a {
-    text-decoration: none; 
+    text-decoration: none;
     border-bottom-style: none;
 }
 #myCardDescription {
@@ -431,9 +486,9 @@ footer > table :link {
     padding-bottom: 56.25%;
     height: 0;
 }
-.gridVideoWrapper object, 
+.gridVideoWrapper object,
 .gridVideoWrapper iframe,
-.gridVideoWrapper > lite-youtube > *  {
+.gridVideoWrapper > lite-youtube > * {
     position: absolute;
     top: 0;
     left: 0;
@@ -472,7 +527,7 @@ footer > table :link {
     padding-bottom: 60%;
     height: 0;
 }
-.videoWrapper object, 
+.videoWrapper object,
 .videoWrapper iframe,
 .videoWrapper > lite-youtube > * {
     position: absolute;
@@ -550,7 +605,8 @@ footer > table :link {
         min-width: 560px;
     }
 }
-.commentSection > form, .webmention-form > form {
+.commentSection > form,
+.webmention-form > form {
     max-width: 45rem;
     /* max-width: 720px; */
 }
@@ -564,9 +620,13 @@ footer > table :link {
     /* padding: 0.25rem 1rem 0.25rem; */
     padding: 4px 16px 4px;
     /* background-color: #303234; */
-} 
+}
 
-.blogPostLinks > hr, #workslist > hr, #main > hr, #mainNow > hr, #recent > hr {
+.blogPostLinks > hr,
+#workslist > hr,
+#main > hr,
+#mainNow > hr,
+#recent > hr {
     width: 100%;
     /* margin: 1.5rem 0; */
     margin: 24px 0;
@@ -581,13 +641,17 @@ footer > table :link {
     border-top: 1px solid #565973;
 }
 @media screen and (min-width: 480px) {
-    .blogPostLinks > hr, #workslist > hr, #main > hr {
+    .blogPostLinks > hr,
+    #workslist > hr,
+    #main > hr {
         /* margin: 2rem 0; */
         margin: 32px 0;
     }
 }
 @media screen and (min-width: 640px) {
-    .blogPostLinks > hr, #workslist > hr, #main > hr {
+    .blogPostLinks > hr,
+    #workslist > hr,
+    #main > hr {
         /* margin: 2.5rem 0; */
         margin: 40px 0;
     }
@@ -614,7 +678,8 @@ ul {
     margin-left: 24px;
 }
 
-li + li, li > ul {
+li + li,
+li > ul {
     /* margin-top: 0.35rem; */
     margin-top: 6px;
 }
@@ -681,6 +746,9 @@ li + li, li > ul {
 #react-ctr {
     font-weight: 300;
 }
+.email-reply {
+    margin: 24px 0 0 0;
+}
 .share-openly {
     margin: 24px 0 0 0;
 }
@@ -706,22 +774,24 @@ li + li, li > ul {
 
 /* Works list formatting */
 #categories {
-    margin: 0; 
-    padding: 0; 
+    margin: 0;
+    padding: 0;
 }
 #categories li {
-    display: inline; 
+    display: inline;
     padding-right: 0.5rem;
 }
 #workslist {
     max-width: 45rem;
     /* max-width: 720px; */
 }
-#workslist th, #materials th {
+#workslist th,
+#materials th {
     font-weight: 400;
     padding: 0 1rem 0.5rem 0;
 }
-#workslist td, #materials td {
+#workslist td,
+#materials td {
     padding: 0 1rem 0.5rem 0;
 }
 
@@ -736,27 +806,29 @@ form {
     /* max-width: 720px; */
     padding: 8px;
 }
-*, *::after, *:before {
+*,
+*::after,
+*:before {
     box-sizing: inherit;
 }
 /* cancel out list styles */
 fieldset ul {
     list-style-type: none;
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 /* flex list */
 fieldset ul li {
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: .75em;
+    margin-bottom: 0.75em;
 }
 /* hide border, legend; format label */
 fieldset {
     padding: 0;
     margin: 0;
-	border: none;
+    border: none;
 }
 legend {
     width: 0;
@@ -767,15 +839,18 @@ label {
     flex: 0 0 8em;
 }
 
-input, textarea, fieldset {
+input,
+textarea,
+fieldset {
     flex: 1 1 30em;
 }
-input.textinput, input#webmention-source {
+input.textinput,
+input#webmention-source {
     border: none;
     border-radius: 3px;
     padding: 5px;
     font-family: inherit;
-    font-size: .875em;
+    font-size: 0.875em;
     font-weight: 400;
     /* background-color: #303234; */
     /* color: #fff; */
@@ -790,15 +865,17 @@ textarea {
     border-radius: 3px;
     padding: 5px;
     font-family: inherit;
-    font-size: .875em;
+    font-size: 0.875em;
     font-weight: 400;
-	line-height: 1.25;
+    line-height: 1.25;
     resize: none;
     overflow: auto;
     /* background-color: #303234; */
     /* color: #fff; */
 }
-input.textinput:focus, textarea:focus, input#webmention-source:focus {
+input.textinput:focus,
+textarea:focus,
+input#webmention-source:focus {
     outline-style: solid !important;
     outline-width: 1px !important;
     /* outline: rgba(224, 240, 255, 0.67) solid 1px !important; */
@@ -819,7 +896,8 @@ input[type="submit"] {
     /* color: #fff; */
     justify-content: center;
 }
-input[type="submit"]:focus, input[type="submit"]:hover {
+input[type="submit"]:focus,
+input[type="submit"]:hover {
     outline-style: solid !important;
     outline-width: 1px !important;
     /* outline: rgba(224, 240, 255, 0.67) solid 1px ! important; */
