@@ -1,6 +1,6 @@
-import { feedPlugin } from "@11ty/eleventy-plugin-rss";
+const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
 
-export default function (eleventyConfig) {
+module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("_redirects");
   eleventyConfig.addPassthroughCopy("index.js");
   eleventyConfig.addPassthroughCopy("robots.txt");
@@ -35,4 +35,4 @@ export default function (eleventyConfig) {
       input: "pages",
     },
   };
-}
+};
