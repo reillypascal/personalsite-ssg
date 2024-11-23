@@ -1,5 +1,5 @@
 {
-  "name": "personalsite-11ty",
+  "name": "personalsite-ssg",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -12,5 +12,9 @@
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
     "@11ty/eleventy-plugin-rss": "^2.0.2"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.46.1",
+    "dotenv": "^16.4.5"
   }
 }
