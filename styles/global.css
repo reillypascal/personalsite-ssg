@@ -634,6 +634,12 @@ footer > table :link {
     border-top: 1px solid #383a3f;
 }
 
+/* class name from markdown-it-footnote library */
+.footnotes-sep {
+    border: none;
+    border-top: 1px solid #383a3f;
+}
+
 .comment > hr {
     /* margin: 1.25rem 0; */
     margin: 20px 0;

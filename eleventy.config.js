@@ -1,4 +1,6 @@
 const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
+let markdownIt = require("markdown-it");
+let markdownItFootnote = require("markdown-it-footnote");
 
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("_redirects");
@@ -29,6 +31,15 @@ module.exports = function (eleventyConfig) {
       },
     },
   });
+
+  let options = {
+    html: true,
+    breaks: true,
+    linkify: true,
+  };
+
+  let markdownLib = markdownIt(options).use(markdownItFootnote);
+  eleventyConfig.setLibrary("md", markdownLib);
 
   return {
     dir: {
