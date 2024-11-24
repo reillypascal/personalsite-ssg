@@ -5,7 +5,7 @@ title: Connecting Notation Programs to Max/MSP
 description: Getting Dorico and Max/MSP to talk via MIDI — it really helps my composition!
 canonical_url: https://reillyspitzfaden.com/posts/2024/11/connecting-notation-programs-to-maxmsp
 url: posts/2024/11/connecting-notation-programs-to-maxmsp
-date: 2024-11-26
+date: 2024-11-25
 categories: [ "maxmsp", "music", "composition", "electronicmusic" ]
 tags: post
 ---
@@ -24,3 +24,11 @@ In Finale, I had the option to use either MIDI or Audio Units for sound, but not
 With Dorico, on the other hand, you can go to the Play view > VST and MIDI, and choose any number of both VST/AU and MIDI instruments. One issue that I (and it seems [other people](https://forums.steinberg.net/t/midi-instruments-and-mac-iac-brittle-setup/828392/3)) had was that Dorico defaults to enabling the IAC device as a MIDI input, so the MIDI signals feed back and/or end up playing other VST instruments. It took me a bit to figure out, but if you go to Preferences > Play > MIDI Input Devices, and uncheck IAC Driver Bus 1, that fixes the issue. A pretty simple setting, but since I only recently switched to Dorico, it was quite vexing for a while.
 
 ### Composing in Max
+Until earlier this year, when I had music that uses a MIDI controller with Max, I composed by playing the part myself while Finale played back the other instruments. It's a pain keeping in sync and starting at the same time (there's usually a slight delay between pressing play and Finale starting, for example). 
+
+Even with the IAC bus and Finale, the extra steps of opening the Max patch with the rest of the instruments was annoying when I had a quick idea to jot down. While I could temporarily switch back to using VST/AU instruments in Finale, doing so usually messed up the MIDI channel assignments, and made my Max VST/AU host patch stop working.
+
+In Dorico, not only can I mix MIDI and VST/AU instruments, I can easily switch back and forth which one a given track uses with no issue. With the feedback issue sorted, it makes writing a lot nicer.
+
+Here's a demo of that in action:
+![]()
