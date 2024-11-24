@@ -20,3 +20,7 @@ Now, I'm able to put a properly formatted post in the appropriate directory, and
 I started the year hopeful for using IndieWeb architecture and my personal site to replace some of my social media interactions. However, I tend to make things part of my daily routine only if there's low friction. Having to hand-write HTML, add post links, add posts to my RSS feed, etc. made it much more appealing to just use existing social media. I'm hopeful that this new site setup can change that.
 
 Thanks for reading! I'm planning to be much more active on here now.
+
+<div class="email-reply">
+    <a href="mailto:reillypascal@gmail.com?subject=Re: {{ title }}">Reply via email</a>
+</div>

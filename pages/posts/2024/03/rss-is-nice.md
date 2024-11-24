@@ -50,3 +50,7 @@ I follow a variety of things, but one area that's been especially nice is experi
 That's all for today! I'm looking at adding some new features to my site ([Webmentions](https://en.wikipedia.org/wiki/Webmention) are high on my list), and I'm continuing to do sound design and composition. When I get more interesting sounds made or site features added, I'll definitely do a writeup of those here as well.
 
 I've also been getting back into reading for fun, now that I'm out of school (finished my composition PhD in 2022), and I may discuss some of the books I'm reading. I recently got "[High Static; Dead Lines](http://www.kristengallerneaux.com/high-static-dead-lines)" by Kristen Gallerneaux, "[House of Leaves](https://en.wikipedia.org/wiki/House_of_Leaves)" by Mark Z. Danielewski, and "[This Is How They Tell Me the World Ends](https://en.wikipedia.org/wiki/This_Is_How_They_Tell_Me_the_World_Ends)" by Nicole Perlroth, and I'm excited for all of them.
+
+<div class="email-reply">
+    <a href="mailto:reillypascal@gmail.com?subject=Re: {{ title }}">Reply via email</a>
+</div>

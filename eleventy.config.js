@@ -12,6 +12,13 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("netlify");
   eleventyConfig.addPassthroughCopy("styles");
 
+  // eleventyConfig.addPlugin(feedPlugin, {
+  //   collection: {
+  //     name: "post",
+  //     limit: 0,
+  //   },
+  // });
+
   eleventyConfig.addPlugin(feedPlugin, {
     type: "rss",
     outputPath: "/blog/feed.xml",

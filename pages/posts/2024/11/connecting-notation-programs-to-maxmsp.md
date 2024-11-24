@@ -15,7 +15,7 @@ I like to compose music for a combination of acoustic instruments and a pianist 
 ### Virtual MIDI Cables
 On macOS, you can use the [IAC Driver](https://support.apple.com/guide/audio-midi-setup/transfer-midi-information-between-apps-ams1013/mac) to set up virtual MIDI buses between various devices. [^1]
 
-[^1]: I haven't yet tried this on Linux/Windows. For Linux, it it looks like it's possible to do with Jack, or directly with ALSA. For Windows, it doesn't look like there's a built-in method, but [loopBe1](https://www.nerds.de/en/loopbe1.html) could be an option.
+[^1]: I haven't yet tried this on Linux/Windows. For Linux, it looks like it's possible to do with Jack, or directly with ALSA. For Windows, it doesn't look like there's a built-in method, but [loopBe1](https://www.nerds.de/en/loopbe1.html) could be an option.
 
 In Finale, I had the option to use either MIDI or Audio Units for sound, but not both. My temporary solution was to set IAC as the MIDI device and make a Max patch to run the virtual instruments I needed. Not very convenient! 
 
@@ -38,9 +38,13 @@ Here's a demo of all this in action:
 ### One More Thing
 I figured out how to easily include footnotes when writing blog posts in Markdown! [^2]
 
-[^2]: This [blog post](https://www.alpower.com/tutorials/configuring-footnotes-with-eleventy/#fnref2) shows how to do it using the [markdown-it-footnote](https://github.com/markdown-it/markdown-it-footnote) plugin.
+[^2]: This [blog post](https://www.alpower.com/tutorials/configuring-footnotes-with-eleventy/) shows how to do it using the [markdown-it-footnote](https://github.com/markdown-it/markdown-it-footnote) plugin.
 
 A number of writers I like including [Molly White](https://www.citationneeded.news/ai-isnt-useless/) and [Cory Dransfeldt](https://coryd.dev/posts/2024/did-anyone-ask-for-these-ai-features/) have them in their blogs, and I've wanted to try them for a while. I could just write them by hand using HTML, but as I [mentioned](https://reillyspitzfaden.com/posts/2024/11/ssgs-are-nice/) the other day, any extra work in putting a post online dramatically slows down my use of this blog, so it's nice to avoid that.
+
+<div class="email-reply">
+    <a href="mailto:reillypascal@gmail.com?subject=Re: {{ title }}">Reply via email</a>
+</div>
 
 <style>
   video {
