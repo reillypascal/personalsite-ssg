@@ -636,6 +636,7 @@ footer > table :link {
 
 /* class name from markdown-it-footnote library */
 .footnotes-sep {
+    margin: 24px 0 0 0;
     border: none;
     border-top: 1px solid #383a3f;
 }
@@ -753,7 +754,7 @@ li > ul {
     font-weight: 300;
 }
 .email-reply {
-    margin: 24px 0;
+    margin: 24px 0 0 0;
 }
 .share-openly {
     margin: 24px 0 0 0;
