@@ -1,6 +1,6 @@
 // ##################### COMMENT FUNCTIONS ######################
 
-// submit conmment handler - blogPostURL variable is defined blogpostlayout.njk
+// submit conmment handler - blogPostURL variable is defined blogpostlayout.liquid
 const handleSubmitComment = async (event) => {
   event.preventDefault();
 
@@ -57,8 +57,7 @@ const handleGetComments = async (event) => {
   // display spinner
   let spinnerBreak = document.createElement("br");
   let spinner = document.createElement("img");
-  // rootFolder is defined in blogpostlayout.njk
-  spinner.src = `${rootFolder}/media/Rolling-1s-64px.gif`;
+  spinner.src = "/media/Rolling-1s-64px.gif";
   parentDiv.appendChild(spinnerBreak);
   parentDiv.appendChild(spinner);
 
