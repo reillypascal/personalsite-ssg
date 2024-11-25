@@ -15,7 +15,7 @@ I like to compose music for a combination of acoustic instruments and a pianist 
 ### Virtual MIDI Cables
 On macOS, you can use the [IAC Driver](https://support.apple.com/guide/audio-midi-setup/transfer-midi-information-between-apps-ams1013/mac) to set up virtual MIDI buses between various devices. [^1]
 
-[^1]: I haven't yet tried this on Linux/Windows. For Linux, it looks like it's possible to do with Jack, or directly with ALSA. For Windows, it doesn't look like there's a built-in method, but [loopBe1](https://www.nerds.de/en/loopbe1.html) could be an option.
+[^1]: I haven't yet tried this on Linux/Windows. For Linux, it looks like it's possible to do with Jack, or directly with ALSA. For Windows, it doesn't look like there's a built-in method, but [LoopBe1](https://www.nerds.de/en/loopbe1.html) could be an option.
 
 In Finale, I had the option to use either MIDI or Audio Units for sound, but not both. My temporary solution was to set IAC as the MIDI device and make a Max patch to run the virtual instruments I needed. Not very convenient! 
 

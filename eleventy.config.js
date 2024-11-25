@@ -22,7 +22,7 @@ module.exports = function (eleventyConfig) {
     </div>
     <div class="post-reactions">
         <span class="heart-meta">
-            Post Reactions:
+          Like this post:
         </span>
         <button id="react-btn">
             <span class="heart-react">

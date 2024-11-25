@@ -45,3 +45,10 @@ If you have Webmentions set up, please send me one if you link to my blog posts!
 Speaking of blogs, "blog" comes from "web-log," but did you know that "log" (in the sense of "log-book") comes from "log" as in a log from a tree? I like to browse [Etymonline](https://etymonline.com) for fun, and the page for [log](https://www.etymonline.com/word/log#etymonline_v_43590) (as in "log-book") explains that sailors would place a chip of a tree log in the water on the end of a rope with knots at regular intervals, and used the rate at which the knots passed by to tell the ship's speed. Isn't etymology great?
 
 {% postfooter title, canonical_url %}
+
+<style>
+  code {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+</style>
