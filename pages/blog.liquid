@@ -4,6 +4,11 @@ title: Reilly Spitzfaden, Composer | Blog
 description: A blog about composition/sound design in Max/MSP, C++ audio plugin development, web development, and other personal interests of mine.
 canonical_url: https://reillyspitzfaden.com/blog
 root_folder: ..
+pagination:
+    data: collections.post
+    size: 8
+    alias: posts
+    reverse: true
 ---
 <div class="content">
 <br/>
@@ -15,12 +20,13 @@ root_folder: ..
                 <p>A blog about my personal interests, including composition/sound design in <a href="https://en.wikipedia.org/wiki/Max_(software)">Max/MSP</a>, the <a href="https://indieweb.org/">IndieWeb</a>, C++ audio plugin development, and web development</p>
                 <hr />
                 
-                {% for post in collections.post reversed %}
+                {% comment %}{% for post in collections.post reversed %}{% endcomment %}
+                {% for post in posts %}
                 <article>
                 <h3><a href="{{post.url}}">{{ post.data.title }}</a></h3>
                 <p>{{ post.data.description }}</p>
                     <span class="meta-icon">
-                        <img src="../media/icon-calendar-ltr.svg" alt="calendar icon" />
+                    <img src="/media/icon-calendar-ltr.svg" alt="calendar icon" />
                     </span>
                     <span class="meta-text">
                     <time>{{ post.date | date: "%A, %B %d, %Y" }}</time>
@@ -28,7 +34,22 @@ root_folder: ..
                 </article>
                 <hr />
                 {% endfor %}
-            
+                
+                <div class="page-nav-wrapper">
+                    {% if pagination.href.previous %}
+                        <a href="{{pagination.href.previous}}">Previous Page</a>
+                    {% endif %}
+                    {% if pagination.href.next %}
+                        <a href="{{pagination.href.next}}">Next Page</a>
+                    {% endif %}
+                </div>
+                
+                <style>
+                    .page-nav-wrapper {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                </style>
             <!-- <a href="https://validator.w3.org/feed/check.cgi?url=https%3A//reillyspitzfaden.com/blog/feed.xml" class="RSSValidation"><img src="./blog/media/valid-rss-rogers.png" alt="[Valid RSS]" title="Validate my RSS feed" /></a> -->
         <!-- close "main" -->
         </div>
