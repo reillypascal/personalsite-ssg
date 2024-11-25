@@ -57,21 +57,3 @@ Here's the announcement from the ensemble:
 Thanks for reading, and I would love if you check out the album!
 
 {% postfooter title, canonical_url %}
-
-<style>
-    blockquote {
-        margin-left: 0;
-        color: hsla(208, 15%, 67%, 1); /* hue from aliceblue */
-        border-left: 1px solid hsla(208, 15%, 67%, 1);
-        padding-left: 12px;
-    }
-    /* blockquote > p {
-        border-left: 1px solid hsla(208, 15%, 67%, 1);
-        padding-left: 12px;
-    } */
-    @media screen and (min-width: 480px){
-        blockquote {
-            margin-left: 12px;
-        }
-    }
-</style>

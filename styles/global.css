@@ -605,6 +605,21 @@ footer > table :link {
         min-width: 560px;
     }
 }
+img {
+    max-width: 100%;
+    height: auto;
+}
+blockquote {
+    margin-left: 0;
+    color: hsla(208, 15%, 67%, 1); /* hue from aliceblue */
+    border-left: 1px solid hsla(208, 15%, 67%, 1);
+    padding-left: 12px;
+}
+@media screen and (min-width: 480px) {
+    blockquote {
+        margin-left: 12px;
+    }
+}
 .commentSection > form,
 .webmention-form > form {
     max-width: 45rem;
@@ -668,6 +683,8 @@ pre {
 }
 code {
     border-radius: 3px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
 
 /* .RSSValidation {
