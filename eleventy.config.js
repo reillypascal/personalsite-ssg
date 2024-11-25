@@ -12,10 +12,13 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("netlify");
   eleventyConfig.addPassthroughCopy("styles");
 
-  eleventyConfig.addShortcode("postfooter", () => {
+  eleventyConfig.addShortcode("postfooter", (title, url) => {
     return `<div class="blogPostAsterism"><p>&#x2042;</p></div>
     <div class="email-reply">
-        <a href="mailto:reillypascal@gmail.com?subject=Re: {{ title }}">Reply via email</a>
+        <a href="mailto:reillypascal@gmail.com?subject=Re: ${title}">Reply via email</a>
+    </div>
+    <div class="share-openly">
+        <a href="https://shareopenly.org/share/?url=${url}">Share on the Fediverse</a>&nbsp;<img class="share-openly-icon" src="/media/share-openly.svg">
     </div>
     <div class="post-reactions">
         <span class="heart-meta">

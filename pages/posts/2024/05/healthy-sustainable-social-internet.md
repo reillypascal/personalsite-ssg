@@ -42,4 +42,4 @@ It's nice to be reminded that small, "ambient" interactions have value, not only
 
 That's all for today! I'm still figuring out my thoughts on all this, but I've been inspired by Maggie Appleton's discussion of "[digital gardens](https://maggieappleton.com/garden-history)," and I'm pushing myself to write even if I'm still working through an idea.
 
-{% postfooter %}
+{% postfooter title, canonical_url %}

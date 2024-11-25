@@ -21,4 +21,4 @@ RSS will likely be coming if I'm able to figure that out, as well as potentially
 
 I hope you'll join me!
 
-{% postfooter %}
+{% postfooter title, canonical_url %}

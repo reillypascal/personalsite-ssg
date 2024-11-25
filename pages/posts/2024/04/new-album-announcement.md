@@ -56,7 +56,7 @@ Here's the announcement from the ensemble:
 
 Thanks for reading, and I would love if you check out the album!
 
-{% postfooter %}
+{% postfooter title, canonical_url %}
 
 <style>
     blockquote {

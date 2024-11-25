@@ -21,4 +21,4 @@ I started the year hopeful for using IndieWeb architecture and my personal site 
 
 Thanks for reading! I'm planning to be much more active on here now.
 
-{% postfooter %}
+{% postfooter title, canonical_url %}
