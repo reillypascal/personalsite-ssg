@@ -416,6 +416,13 @@ footer > table :link {
     border-bottom: none;
 }
 
+.img-badge {
+    border: none;
+}
+.octothorpes-badge {
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
 /*************************************************/
 
 /* Homepage */
