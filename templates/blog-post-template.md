@@ -10,4 +10,4 @@ categories: []
 tags: post
 ---
 
-{% postfooter %}
+{% postfooter title, canonical_url %}
