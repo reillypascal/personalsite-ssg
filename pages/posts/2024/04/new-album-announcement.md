@@ -56,9 +56,7 @@ Here's the announcement from the ensemble:
 
 Thanks for reading, and I would love if you check out the album!
 
-<div class="email-reply">
-    <a href="mailto:reillypascal@gmail.com?subject=Re: {{ title }}">Reply via email</a>
-</div>
+{% postfooter %}
 
 <style>
     blockquote {

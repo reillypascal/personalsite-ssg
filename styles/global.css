@@ -708,7 +708,7 @@ li > ul {
     }
     .blogPostAsterism {
         /* padding: 0.25rem 0 0; */
-        padding: 4px 0 0;
+        /* padding: 4px 0 0; */
     }
 }
 
@@ -725,7 +725,8 @@ li > ul {
 }
 
 .post-reactions {
-    padding-top: 24px;
+    /* padding-top: 24px; */
+    margin: 16px 0;
 }
 /* https://stackoverflow.com/questions/22672368/how-to-make-a-transparent-html-button */
 #react-btn {
@@ -754,10 +755,10 @@ li > ul {
     font-weight: 300;
 }
 .email-reply {
-    margin: 24px 0 0 0;
+    margin: 16px 0;
 }
 .share-openly {
-    margin: 24px 0 0 0;
+    margin: 16px 0 0 0;
 }
 .share-openly-icon {
     position: relative;

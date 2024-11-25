@@ -21,6 +21,4 @@ RSS will likely be coming if I'm able to figure that out, as well as potentially
 
 I hope you'll join me!
 
-<div class="email-reply">
-    <a href="mailto:reillypascal@gmail.com?subject=Re: {{ title }}">Reply via email</a>
-</div>
+{% postfooter %}

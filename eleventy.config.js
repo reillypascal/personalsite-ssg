@@ -12,12 +12,23 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("netlify");
   eleventyConfig.addPassthroughCopy("styles");
 
-  // eleventyConfig.addPlugin(feedPlugin, {
-  //   collection: {
-  //     name: "post",
-  //     limit: 0,
-  //   },
-  // });
+  eleventyConfig.addShortcode("postfooter", () => {
+    return `<div class="blogPostAsterism"><p>&#x2042;</p></div>
+    <div class="email-reply">
+        <a href="mailto:reillypascal@gmail.com?subject=Re: {{ title }}">Reply via email</a>
+    </div>
+    <div class="post-reactions">
+        <span class="heart-meta">
+            Post Reactions:
+        </span>
+        <button id="react-btn">
+            <span class="heart-react">
+                <img src="/media/icon-heart-pink.svg" alt="heart icon" />
+            </span>
+        </button>
+        <span id="react-ctr"></span>
+    </div>`;
+  });
 
   eleventyConfig.addPlugin(feedPlugin, {
     type: "rss",
