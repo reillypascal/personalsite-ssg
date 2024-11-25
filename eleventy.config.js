@@ -53,7 +53,7 @@ module.exports = function (eleventyConfig) {
       language: "en",
       title: "Reilly Spitzfaden, Composer",
       subtitle:
-        "A blog about my personal interests, including C++ audio plugin development, composition/sound design in Max/MSP, open tech, and web development",
+        "A blog about my personal interests, including composition/sound design in Max/MSP, C++ audio plugin development with JUCE, the IndieWeb, and web development",
       base: "https://reillyspitzfaden.com/blog",
       author: {
         name: "Reilly Spitzfaden",
