@@ -33,6 +33,24 @@ module.exports = function (eleventyConfig) {
     </div>`;
   });
 
+  eleventyConfig.addShortcode("likedfooter", (title, url) => {
+    return `<hr class="liked-hr"/>
+    <div class="email-reply">
+        <a href="mailto:reillypascal@gmail.com?subject=Re: ${title}">Reply via email</a>
+    </div>
+    <div class="post-reactions">
+        <span class="heart-meta">
+          Like this post:
+        </span>
+        <button id="react-btn">
+            <span class="heart-react">
+                <img src="/media/icon-heart-pink.svg" alt="heart icon" />
+            </span>
+        </button>
+        <span id="react-ctr"></span>
+    </div>`;
+  });
+
   eleventyConfig.addShortcode("liked", (url, title) => {
     let display_title = title ? title : url;
     return `<div class="h-entry">

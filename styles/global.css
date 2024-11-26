@@ -694,7 +694,8 @@ blockquote {
 #workslist > hr,
 #main > hr,
 #mainNow > hr,
-#recent > hr {
+#recent > hr,
+.liked-hr {
     width: 100%;
     /* margin: 1.5rem 0; */
     margin: 24px 0;
@@ -783,7 +784,7 @@ li > ul {
 }
 
 .post-meta {
-    padding-bottom: 32px;
+    padding-bottom: 24px;
 }
 .meta-icon {
     position: relative;

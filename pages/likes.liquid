@@ -1,0 +1,53 @@
+---
+layout: mainlayout.liquid
+title: Reilly Spitzfaden, Composer | Likes
+description: Posts I like from around the internet
+canonical_url: https://reillyspitzfaden.com/likes
+root_folder: ..
+pagination:
+    data: collections.like
+    size: 8
+    alias: likes
+    reverse: true
+---
+
+<div class="content">
+    <div id="BGpad">
+        <div id="main">
+            <div class="blogPostLinks">
+                <h2>Likes</h2>
+                <p>Posts I like from around the internet</p>
+                <hr />
+                
+                {% for like in likes %}
+                <article>
+                <h3><a href="{{like.url}}">{{ like.data.title }}</a></h3>
+                <span class="meta-icon">
+                <img src="/media/icon-calendar-ltr.svg" alt="calendar icon" />
+                </span>
+                <span class="meta-text">
+                <time>{{ like.date | date: "%A, %B %d, %Y" }}</time>
+                </span>
+                </article>
+                <hr />
+                {% endfor %}
+                
+                <div class="page-nav-wrapper">
+                    {% if pagination.href.previous %}
+                        <a href="{{pagination.href.previous}}">Previous Page</a>
+                    {% endif %}
+                    {% if pagination.href.next %}
+                        <a href="{{pagination.href.next}}">Next Page</a>
+                    {% endif %}
+                </div>
+                
+                <style>
+                    .page-nav-wrapper {
+                        display: flex;
+                        justify-content: space-between;
+                    }
+                </style>
+            </div>
+        </div>
+    </div>
+</div>
