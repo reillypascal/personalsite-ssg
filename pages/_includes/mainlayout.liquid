@@ -37,10 +37,10 @@ title: Reilly Spitzfaden, Composer
             <link rel="stylesheet" id="googlefonts-css"  href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic&display=swap" type="text/css" media="all" />
         </noscript> --->
 
-        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <!-- <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
         <noscript>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-        </noscript>
+        </noscript> -->
 
         <!-- RSS Autodiscovery -->
         <link rel="alternate" type="application/rss+xml" title="Reilly Spitzfaden | RSS" href="https://reillyspitzfaden.com/blog/feed.xml" />
@@ -123,9 +123,23 @@ title: Reilly Spitzfaden, Composer
                         <div class="navElement"><a href="/contact">Contact</a></div>
                         <div class="navElement"><a href="/blog/feed.xml">RSS</a></div>
                     </div>
-
+                    
+                    <style>
+                        .icon-svg {
+                            width: 1em;
+                            height: 1em;
+                            vertical-align: -0.125em;
+                            fill: aliceblue;
+                        }
+                    </style>
+                    
                     <a href="javascript:void(0);" class="icon" onclick="hamburgerToggle()">
-                      <i class="fa fa-bars"></i>
+                        <!-- <i class="fa fa-bars"></i> -->
+                        <!-- width = height * 0.875 -->
+                        <svg class="icon-svg" xmlns="http://www.w3.org/2000/svg" height="15" width="13.125" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path 
+                            fill="aliceblue"
+                            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/>
+                        </svg>
                     </a>
                 </div>
                 
