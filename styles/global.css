@@ -9,11 +9,57 @@ TODO:
 
 /* @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap'); */
 
-@font-face {
+/* @font-face {
     font-family: "Lato";
     src: local("Lato"),
         url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
     font-display: swap;
+} */
+
+@font-face {
+    font-family: "Lato";
+    src:
+        url("/styles/fonts/lato-webfontkit/lato-light-webfont.woff2")
+            format("woff2"),
+        url("/styles/fonts/lato-webfontkit/lato-light-webfont.woff")
+            format("woff");
+    font-weight: 300;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Lato";
+    src:
+        url("/styles/fonts/lato-webfontkit/lato-regular-webfont.woff2")
+            format("woff2"),
+        url("/styles/fonts/lato-webfontkit/lato-regular-webfont.woff")
+            format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Lato";
+    src:
+        url("/styles/fonts/lato-webfontkit/lato-lightitalic-webfont.woff2")
+            format("woff2"),
+        url("/styles/fonts/lato-webfontkit/lato-lightitalic-webfont.woff")
+            format("woff");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Lato";
+    src:
+        url("/styles/fonts/lato-webfontkit/lato-italic-webfont.woff2")
+            format("woff2"),
+        url("/styles/fonts/lato-webfontkit/lato-italic-webfont.woff")
+            format("woff");
+    font-style: italic;
+    font-display: swap;
+}
+html {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-size: 100%;
 }
 
 /* color and theme */
@@ -87,9 +133,9 @@ input[type="submit"]:hover {
 body {
     /* background-color: #000; */
     /* color: #fff; */
-    font-family: "Lato", "Arial", sans-serif;
+    /* font-family: "Lato", "Arial", sans-serif;
     font-weight: 400;
-    font-size: 100%;
+    font-size: 100%; */
     margin: 0;
     min-height: 100vh;
 }
