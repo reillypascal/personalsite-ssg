@@ -1,11 +1,11 @@
 ---
 layout: blogpostlayout.liquid
-root_folder: ../../../..
 title: Connecting Notation Programs to Max/MSP
 description: Getting Dorico and Max/MSP to talk via MIDI — it really helps my composition!
 canonical_url: https://reillyspitzfaden.com/posts/2024/11/connecting-notation-programs-to-maxmsp
 date: 2024-11-24
 categories: [ "maxmsp", "music", "composition", "electronicmusic" ]
+octothorpes: [ "Audio", "music", "projects" ]
 tags: post
 ---
 
