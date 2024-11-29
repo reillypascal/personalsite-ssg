@@ -16,6 +16,16 @@ pagination:
             <div class="blogPostLinks">
                 <h2>Blog</h2>
                 <p>A blog about my personal interests, including composition/sound design in <a href="https://en.wikipedia.org/wiki/Max_(software)">Max/MSP</a>, C++ audio plugin development with <a href="https://juce.com/">JUCE</a>, the <a href="https://indieweb.org/">IndieWeb</a>, and web development</p>
+                
+                <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+                <script src="/pagefind/pagefind-ui.js"></script>
+                <div id="search"></div>
+                <script>
+                    window.addEventListener('DOMContentLoaded', (event) => {
+                        new PagefindUI({ element: "#search", showSubResults: true });
+                    });
+                </script>
+                
                 <hr />
                 
                 {% for post in posts %}
@@ -42,6 +52,10 @@ pagination:
                 </div>
                 
                 <style>
+                
+                    #search {
+                        padding-top: 16px;
+                    }
                     .page-nav-wrapper {
                         display: flex;
                         justify-content: space-between;

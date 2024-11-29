@@ -3,7 +3,7 @@ title: RSS Is Nice
 description: My process of adding RSS to my blog, my rediscovery of how nice RSS is, and some music blogs I've been enjoying
 canonical_url: https://reillyspitzfaden.com/posts/2024/03/rss-is-nice
 date: 2024-03-10
-tags: ["post", "rss", "webdev", "indieweb", "music"]
+tags: ["post", "webdev", "indieweb", "music"]
 ---
 
 ## RSS Is Nice
