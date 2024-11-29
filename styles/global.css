@@ -71,6 +71,7 @@ body,
 #mainMedia,
 #mainNow,
 #mainRecent,
+#mainTagList,
 footer {
     background-color: #111318;
 }
@@ -318,7 +319,8 @@ iframe {
 #mainRecent,
 #mainMedia,
 #mainBlog,
-#mainNow {
+#mainNow,
+#mainTagList {
     /* top, sides, bottom */
     /* margin: 0 0.75rem 5%;
     padding: 1rem;
@@ -351,7 +353,8 @@ iframe {
     #mainRecent,
     #mainMedia,
     #mainBlog,
-    #mainNow {
+    #mainNow,
+    #mainTagList {
         /* margin: 0 1.5rem 5%; 
         padding: 2rem;
         padding-top: 0.75rem; */
@@ -362,7 +365,8 @@ iframe {
 }
 @media screen and (min-width: 640px) {
     #main,
-    #mainRecent {
+    #mainRecent,
+    #mainTagList {
         border-radius: 7px;
     }
 }
@@ -373,9 +377,13 @@ iframe {
         max-width: 45rem;
         /* max-width: 720px; */
     }
+    #mainTagList {
+        max-width: 35rem;
+    }
     #main,
     #mainBlog,
-    #mainNow {
+    #mainNow,
+    #mainTagList {
         margin: auto;
     }
     #BGpad,
