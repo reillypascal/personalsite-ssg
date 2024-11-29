@@ -1,4 +1,4 @@
 [build]
-command = "npx @11ty/eleventy && npx -y pagefind --site _site"
+command = "npx @11ty/eleventy && npx pagefind --site _site"
 functions = "netlify/functions"
 publish = "/_site"
