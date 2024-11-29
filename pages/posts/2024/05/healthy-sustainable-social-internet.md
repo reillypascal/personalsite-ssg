@@ -1,10 +1,8 @@
 ---
-layout: blogpostlayout.liquid
-root_folder: ../../../..
+layout: blogpostlayout
 title: Healthy, Sustainable Social Internet
 description: Thinking through what I want from the social internet, and the difference between a social "network" and social "media"
 canonical_url: https://reillyspitzfaden.com/posts/2024/05/healthy-sustainable-social-internet
-url: posts/2024/05/healthy-sustainable-social-internet
 date: 2024-05-17
 categories: ["indieweb", "fediverse", "socialmedia"]
 tags: post
