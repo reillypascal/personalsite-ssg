@@ -1,5 +1,4 @@
 ---
-layout: blogpostlayout
 title: Reading and Listening List, Mar. 1, 2024
 description: Links and discussion of what I'm currently listening to and reading
 canonical_url: https://reillyspitzfaden.com/posts/2024/03/reading-and-listening

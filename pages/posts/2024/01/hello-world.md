@@ -1,5 +1,4 @@
 ---
-layout: blogpostlayout
 title: Hello World!
 description: An introduction to this blog and what I plan to do with it
 canonical_url: https://reillyspitzfaden.com/posts/2024/01/hello-world

@@ -1,5 +1,4 @@
 ---
-layout: blogpostlayout
 title: RSS Is Nice
 description: My process of adding RSS to my blog, my rediscovery of how nice RSS is, and some music blogs I've been enjoying
 canonical_url: https://reillyspitzfaden.com/posts/2024/03/rss-is-nice
