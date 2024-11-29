@@ -11,6 +11,16 @@ title: Reilly Spitzfaden, Composer
             <article class="textBlock">
                 <h2>{{ title }}</h2>
                 
+                <div class="post-tags">
+                    Posted in: 
+                    {% assign sorted_categories = tags | sort %}
+                    {% for tag in sorted_categories %}
+                        {% if tag != 'post' %}
+                            <span class="post-tag"><a href="/tags/{{ tag }}">{{ tag }}</a></span>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                
                 <div class="post-meta">
                     <span class="meta-icon">
                         <img src="/media/icon-calendar-ltr.svg" alt="calendar icon" />
@@ -103,3 +113,13 @@ title: Reilly Spitzfaden, Composer
         </div>
     </div>
 </div>
+
+<style>
+
+    .post-tags {
+        margin-bottom: 16px;
+    }
+    .post-tag {
+        margin-left: 4px;
+    }
+</style>

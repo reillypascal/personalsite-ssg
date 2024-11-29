@@ -3,8 +3,7 @@ title: Receiving Webmentions, Part 1
 description: Setting up my blog to receive Webmentions
 canonical_url: https://reillyspitzfaden.com/posts/2024/05/receiving-webmentions-part-1
 date: 2024-05-21
-categories: ["webdev", "indieweb", "programming"]
-tags: post
+tags: ["post", "webdev", "indieweb", "programming"]
 ---
 
 Hi everyone! I recently set up my blog to receive [Webmentions](https://en.wikipedia.org/wiki/Webmention), which means that if somebody wants to link to one of my posts from their website, I can get a notification about their post. I like this because it allows people in the [IndieWeb](https://indieweb.org) community to use our websites kind of like social media — to have conversations with each other — but outside of the silos of social media.

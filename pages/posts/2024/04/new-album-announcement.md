@@ -3,8 +3,7 @@ title: New Album Announcement
 description: My trio "If this reaches you" is on Apply Triangle's new album, out on April 12!
 canonical_url: https://reillyspitzfaden.com/posts/2024/04/new-album-announcement
 date: 2024-04-05
-categories: ["music", "composition", "maxmsp"]
-tags: post
+tags: ["post", "music", "composition", "maxmsp"]
 ---
 
 One of my compositions is on an upcoming album! It's performed by [Apply Triangle](https://applytriangle.com/), a NYC-based electroacoustic trio comprising Yoshi Weinberg (flutes), Tyler Neidermayer (clarinets), and Jixue Yang (piano/keyboards).

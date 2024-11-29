@@ -3,9 +3,8 @@ title: Digital Gardens, Music Tech, and Collaboration as Socialization
 description: What if socializing on the Internet were more like editing Wikipedia? Also I discuss some of the ways I want to write and talk about music technology.
 canonical_url: https://reillyspitzfaden.com/posts/2024/12/digital-gardens-music-collaboration-socialization
 date: 2024-12-01
-categories: [ "music", "indieweb", "blog", "hypertext", "digitalgardens", "academia" ]
 octothorpes: [ "Audio", "music" ]
-tags: post
+tags: [ "post", "music", "indieweb", "hypertext", "digitalgardens", "academia", "socialmedia" ]
 ---
 
 A few days ago I was part of a Facebook thread about music notation. Composer Christopher Cerrone posted asking what way of notating a complex rhythm would be most readable. The general consensus was something akin to what Thomas Adés does in e.g., ["Lieux Retrouves," movement 2](https://www.youtube.com/watch?v=5DOoCEF1c2Q&t=300s) in the piano part: notate it two different ways, with one shown above the other to clarify how the instruments align.

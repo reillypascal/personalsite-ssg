@@ -1,0 +1,54 @@
+---
+layout: mainlayout
+title: Reilly Spitzfaden, Composer | Posts by Tag
+description: Blog posts listed by tag
+canonical_url: https://reillyspitzfaden.com/tags
+pagination:
+    data: collections
+    size: 1
+    alias: tag
+    filter:
+        - like
+        - post
+permalink: /tags/{{ tag }}/
+---
+<!-- page content minus header/footer -->
+<div class="content">
+<br/>
+    <div id="BGpad">
+        <div id="main"> 
+            <article class="textBlock">
+                <h2>Tagged: "{{ tag }}"</h2>
+                
+                <!-- <ul> -->
+                {% assign taglist = collections[tag] %}
+                {% for post in taglist reversed %}
+                    <p><a href="{{ post.data.canonical_url }}">{{ post.data.title }}</a></p>
+                    <!-- <li><a href="{{ post.data.canonical_url }}">{{ post.data.title }}</a></li> -->
+                {% endfor %}
+                <!-- </ul> -->
+                
+                <!-- <h3>Tags</h3> -->
+                
+                {% comment %}{% for tag in collections.allTags %}
+                    {% if tag != 'post' %}
+                        {% if tag != 'like' %}
+                            {% assign post = collections[tag] %}
+                            <figure>
+                            <h4 id="{{ tag }}">{{ tag }}</h4>
+                                <ul>
+                                    {% for p in post reversed %}
+                                        <li><a href="{{ p.data.canonical_url }}">{{ p.data.title }}</a></li>
+                                    {% endfor %}
+                                </ul>
+                            </figure>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}{% endcomment %}
+
+        <!-- close "main" -->
+        </div>
+    <!-- close "BGpad" -->
+    </div>
+<!-- close "wrapper" -->
+</div>

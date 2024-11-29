@@ -3,8 +3,7 @@ title: Healthy, Sustainable Social Internet
 description: Thinking through what I want from the social internet, and the difference between a social "network" and social "media"
 canonical_url: https://reillyspitzfaden.com/posts/2024/05/healthy-sustainable-social-internet
 date: 2024-05-17
-categories: ["indieweb", "fediverse", "socialmedia"]
-tags: post
+tags: [ "post", "indieweb", "fediverse", "socialmedia" ]
 ---
 
 I read two articles recently that clarified a lot of what I had been thinking about interacting with people online. I have been feeling some nostalgia for early days of the internet, including nostalgia for things like [BBSs](https://en.wikipedia.org/wiki/Bulletin_board_system) and [IRC](https://en.wikipedia.org/wiki/IRC) for which I wasn't even around. The [Fediverse](https://en.wikipedia.org/wiki/Fediverse) has been offering some improvement — I like [my Mastodon account](https://hachyderm.io/@reillypascal). However, these articles got me thinking about *how* a social network tool is used, not just *which one* to use.

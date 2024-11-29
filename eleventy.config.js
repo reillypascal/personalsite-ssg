@@ -3,6 +3,7 @@ let markdownIt = require("markdown-it");
 let markdownItFootnote = require("markdown-it-footnote");
 
 module.exports = function (eleventyConfig) {
+  // passthrough copies
   eleventyConfig.addPassthroughCopy("_redirects");
   eleventyConfig.addPassthroughCopy("index.js");
   eleventyConfig.addPassthroughCopy("robots.txt");
@@ -12,6 +13,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("netlify");
   eleventyConfig.addPassthroughCopy("styles");
 
+  // shortcodes
   eleventyConfig.addShortcode("postfooter", (title, url) => {
     return `<div class="blogPostAsterism"><p>&#x2042;</p></div>
     <div class="email-reply">
@@ -60,6 +62,7 @@ module.exports = function (eleventyConfig) {
     </div>`;
   });
 
+  // RSS
   eleventyConfig.addPlugin(feedPlugin, {
     type: "rss",
     outputPath: "/blog/feed.xml",
@@ -80,6 +83,7 @@ module.exports = function (eleventyConfig) {
     },
   });
 
+  // markdown-it
   let options = {
     html: true,
     breaks: true,
@@ -89,6 +93,21 @@ module.exports = function (eleventyConfig) {
   let markdownLib = markdownIt(options).use(markdownItFootnote);
   eleventyConfig.setLibrary("md", markdownLib);
 
+  // tags
+  eleventyConfig.addCollection("allTags", (collection) => {
+    const allCollections = collection.getAll();
+    let tagSet = new Set();
+    allCollections.forEach((temp) => {
+      if ("tags" in temp.data) {
+        for (const tag of temp.data.tags) {
+          tagSet.add(tag);
+        }
+      }
+    });
+    return [...tagSet].sort();
+  });
+
+  // input directory
   return {
     dir: {
       input: "pages",
