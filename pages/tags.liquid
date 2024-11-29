@@ -23,7 +23,7 @@ permalink: /tags/{{ tag }}/
                 <!-- <ul> -->
                 {% assign taglist = collections[tag] %}
                 {% for post in taglist reversed %}
-                    <p><a href="{{ post.data.canonical_url }}">{{ post.data.title }}</a></p>
+                    <p class="taggedPostLink"><a href="{{ post.data.canonical_url }}">{{ post.data.title }}</a></p>
                     <!-- <li><a href="{{ post.data.canonical_url }}">{{ post.data.title }}</a></li> -->
                 {% endfor %}
                 <!-- </ul> -->
@@ -54,5 +54,8 @@ permalink: /tags/{{ tag }}/
 </div>
 
 <style>
-    
+
+    .taggedPostLink {
+        margin: 24px 0;
+    }
 </style>
