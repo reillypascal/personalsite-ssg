@@ -4,7 +4,8 @@ title: Liked |
 description: Liked |
 canonical_url: https://reillyspitzfaden.com/posts/likes
 date: 
-tags: [ "like" ]
+tags:
+  - like
 ---
 
 {% liked <url> <title> %}
