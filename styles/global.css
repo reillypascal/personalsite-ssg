@@ -374,12 +374,10 @@ iframe {
 /* @media screen and (min-width: 768px) { */
 @media screen and (min-width: 860px) {
     #mainBlog,
-    #mainNow {
+    #mainNow,
+    #mainTagList {
         max-width: 45rem;
         /* max-width: 720px; */
-    }
-    #mainTagList {
-        max-width: 35rem;
     }
     #main,
     #mainBlog,
@@ -699,6 +697,7 @@ blockquote {
 }
 
 .blogPostLinks > hr,
+.tagList > hr,
 #workslist > hr,
 #main > hr,
 #mainNow > hr,
@@ -726,6 +725,7 @@ blockquote {
 }
 @media screen and (min-width: 480px) {
     .blogPostLinks > hr,
+    .tagList > hr,
     #workslist > hr,
     #main > hr {
         /* margin: 2rem 0; */
@@ -733,7 +733,7 @@ blockquote {
     }
 }
 @media screen and (min-width: 640px) {
-    .blogPostLinks > hr,
+    .blogPostLinks > .tagList > hr,
     #workslist > hr,
     #main > hr {
         /* margin: 2.5rem 0; */

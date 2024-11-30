@@ -2,59 +2,38 @@
 layout: mainlayout
 title: Reilly Spitzfaden, Composer | Posts by Tag
 description: Blog posts listed by tag
-canonical_url: https://reillyspitzfaden.com/tags/{{ tag }}/
-pagination:
-    data: collections
-    size: 1
-    alias: tag
-    filter:
-        - like
-        - post
-permalink: /tags/{{ tag }}/
+canonical_url: https://reillyspitzfaden.com/tags
 ---
 <!-- page content minus header/footer -->
 <div class="content">
 <br/>
     <div id="BGpad">
         <div id="mainTagList">
-            <article class="tagList">
-                <h2>Tagged: "{{ tag }}"</h2>
-                
-                <!-- <ul> -->
-                {% assign taglist = collections[tag] %}
-                {% for post in taglist reversed %}
-                    <p class="taggedPostLink"><a href="{{ post.data.canonical_url }}">{{ post.data.title }}</a></p>
-                    <!-- <li><a href="{{ post.data.canonical_url }}">{{ post.data.title }}</a></li> -->
-                {% endfor %}
-                <!-- </ul> -->
-                
-                <!-- <h3>Tags</h3> -->
-                
-                {% comment %}{% for tag in collections.allTags %}
+            <h2>All tags</h2>
+            <div id="allTagsList">
+                {% for tag in collections.allTags %}
                     {% if tag != 'post' %}
-                        {% if tag != 'like' %}
-                            {% assign post = collections[tag] %}
-                            <figure>
-                            <h4 id="{{ tag }}">{{ tag }}</h4>
-                                <ul>
-                                    {% for p in post reversed %}
-                                        <li><a href="{{ p.data.canonical_url }}">{{ p.data.title }}</a></li>
-                                    {% endfor %}
-                                </ul>
-                            </figure>
-                        {% endif %}
+                    {% if tag != 'like' %}
+                    <figure>
+                        <p class="tag" id="{{ tag }}"><a href="/tags/{{ tag }}">{{ tag }}</a> ({{ collections[tag].length }}) </p>
+                    </figure>
                     {% endif %}
-                {% endfor %}{% endcomment %}
-
+                    {% endif %}
+                {% endfor %}
+                
+            </div>
         <!-- close "main" -->
         </div>
     <!-- close "BGpad" -->
     </div>
-<!-- close "wrapper" -->
+<!-- close "content" -->
 </div>
 
 <style>
-    .taggedPostLink {
-        margin: 24px 0;
+    figure {
+        margin-left: 20px;
+    }
+    .tag {
+        margin: 20px 0;
     }
 </style>
