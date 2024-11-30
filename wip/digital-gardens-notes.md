@@ -1,25 +1,9 @@
----
-title: Digital Gardens, Music Tech, and Collaboration as Socialization
-description: What if socializing on the Internet were more like editing Wikipedia? Also I discuss some of the ways I want to write and talk about music technology.
-canonical_url: https://reillyspitzfaden.com/posts/2024/12/digital-gardens-music-collaboration-socialization
-date: 2024-12-01
-octothorpes: [ "Audio", "music" ]
-tags: [ "post", "music", "indieweb", "hypertext", "digitalgardens", "academia", "socialmedia" ]
----
-
-A few days ago I was part of a Facebook thread about music notation. Composer Christopher Cerrone posted asking what way of notating a complex rhythm would be most readable. The general consensus was something akin to what Thomas Adés does in e.g., ["Lieux Retrouves," movement 2](https://www.youtube.com/watch?v=5DOoCEF1c2Q&t=300s) in the piano part: notate it two different ways, with one shown above the other to clarify how the instruments align.
-
-Within the thread, there were a number of interesting finer points raised, but as I watched the discussion continue, I was a bit sad to think that it would all disappear in the stream of future posts, and that even if the discussion were somehow pinned, it would not be easily accessible from a search engine.
-
-I have seen a number of people express similar sentiments about the free and open-source software world. Services like Discord are popular (and admittedly easy) ways to discuss the development process. However, there are two big issues: 1) the discussion is not easily searchable from the rest of the Internet, and 2) the linear nature of a chat means that the same questions are raised again and again. Overall, closed platforms with linear forms of discussion are not conducive to building lasting knowledge that is easy to return to or discover.
-
-### Gardens vs Streams
 ## Outline
 ### Gardens vs Streams
-- Chris Cerrone notation discussion
-  - also see FOSS development on Discord, Matrix, etc.
+- Chris Cerrone notation discussion x
+  - also see FOSS development on Discord, Matrix, etc. x
   - I want permanence of forums, wikis; build knowledge over time
-- explain Hapgood article, why significant to me
+- explain Hapgood article, why significant to me x
   - I want interconnectedness; further helps to build knowledge base
 - still room for status updates, greetings, jokes, but the parts where discussion happens would be nicer if they were closer to a wiki
 - Facebook didn't used to have a feed
@@ -39,7 +23,7 @@ I have seen a number of people express similar sentiments about the free and ope
 - difficulty of finding other people in my field in this particular scene
 
 ## Articles to Discuss
-- https://hapgood.us/2015/10/17/the-garden-and-the-stream-a-technopastoral/
+- Mike Caulfield, "[The Garden and the Stream: A Technopastoral](https://hapgood.us/2015/10/17/the-garden-and-the-stream-a-technopastoral/)"
   - [Memex demo](https://www.youtube.com/watch?v=c539cK58ees)
   - Vannevar Bush, "As We May Think"
   > It is exactly as though the physical items had been gathered together to form a new book. It is more than this, for any item can be joined into numerous trails.
@@ -53,4 +37,5 @@ I have seen a number of people express similar sentiments about the free and ope
 > The assumption that "Twitter but decentralized" or "Facebook but open-source and federated" will necessarily be good—rather than differently bad—is a weak one. 
 > I think our failure to remember that the mega-platforms are just intentionally extractive constructs run by brainmelted but very human weirdos is a failure of accountability, but our failure to remember that it doesn’t have to be this way is a failure not only of imagination, but of nerve.
 
-{% postfooter title, canonical_url %}
+Until I heard Vox's [Land of the Giants](https://podcasts.voxmedia.com/show/land-of-the-giants) podcast discuss the introduction of the Facebook news feed, I hadn't thought too much about how the platform looked when it started. I signed up for it in 2012 in my second year of college, so the news feed is how it's always looked for me. 
+

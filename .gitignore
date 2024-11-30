@@ -3,4 +3,5 @@ _site/
 node_modules/
 # Local Netlify folder
 .netlify/
+.obsidian/
 .env
