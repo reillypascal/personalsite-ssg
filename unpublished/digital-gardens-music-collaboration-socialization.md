@@ -22,6 +22,7 @@ I have seen a number of people express similar sentiments about the free and ope
 - explain Hapgood article, why significant to me
   - I want interconnectedness; further helps to build knowledge base
 - still room for status updates, greetings, jokes, but the parts where discussion happens would be nicer if they were closer to a wiki
+- Facebook didn't used to have a feed
 ### Talking about Music Technology
 - collaborative thinking about music tech
   - building associations and thinking musically
@@ -39,7 +40,17 @@ I have seen a number of people express similar sentiments about the free and ope
 
 ## Articles to Discuss
 - https://hapgood.us/2015/10/17/the-garden-and-the-stream-a-technopastoral/
+  - [Memex demo](https://www.youtube.com/watch?v=c539cK58ees)
+  - Vannevar Bush, "As We May Think"
+  > It is exactly as though the physical items had been gathered together to form a new book. It is more than this, for any item can be joined into numerous trails.
+
 - https://reillyspitzfaden.com/posts/2024/05/composition-journal/
+
 - [It's easier to imagine the end of the world than the end of Instagram](https://www.njms.ca/posts/2024-10-08.html)
+> But that's the thing: I don't think dansup, Eugene and friends are trying to create a "truly post-Facebook" social media platform; I was wrong for thinking so. It's a lot more obvious to me now that they're reformers.
+
+- [Against the dark forest](https://www.wrecka.ge/against-the-dark-forest/)
+> The assumption that "Twitter but decentralized" or "Facebook but open-source and federated" will necessarily be good—rather than differently bad—is a weak one. 
+> I think our failure to remember that the mega-platforms are just intentionally extractive constructs run by brainmelted but very human weirdos is a failure of accountability, but our failure to remember that it doesn’t have to be this way is a failure not only of imagination, but of nerve.
 
 {% postfooter title, canonical_url %}

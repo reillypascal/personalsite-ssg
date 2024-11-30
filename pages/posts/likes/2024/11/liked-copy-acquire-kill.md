@@ -8,6 +8,6 @@ categories: [ "likes", "fediverse", "enshittification" ]
 tags: like
 ---
 
-{% liked "https://www.fromjason.xyz/p/notebook/copy-acquire-kill-how-meta-could-pull-off-the-most-extraordinary-pivot-in-tech-history/" "Copy, Acquire, Kill— How Meta could pull off the most extraordinary pivot in tech history" %}
+{% liked "https://www.fromjason.xyz/p/notebook/copy-acquire-kill-how-meta-could-pull-off-the-most-extraordinary-pivot-in-tech-history/", "Copy, Acquire, Kill— How Meta could pull off the most extraordinary pivot in tech history" %}
 
 {% likedfooter title, canonical_url %}
