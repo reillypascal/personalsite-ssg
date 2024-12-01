@@ -5,7 +5,12 @@ canonical_url: https://reillyspitzfaden.com/posts/2024/12/digital-gardens-music-
 date: 2024-12-01
 octothorpes:
   - Audio
+  - digitalGardens
+  - hypertext
+  - indieweb
+  - internet
   - music
+  - web
 tags:
   - post
   - music
