@@ -79,7 +79,7 @@ title: Reilly Spitzfaden, Composer
         {%- endif -%}
         
     </head>
-    <body onresize="hamburgerOnOff()">
+    <body>
         <!-- fixed background - opened and closed here -->
         <div class="bg"></div>
         <!-- moving foreground -->
@@ -87,7 +87,8 @@ title: Reilly Spitzfaden, Composer
             <!-- includes footer - makes it fill the page -->
             <div class="wrapper">
                 <!-- navigation menu -->
-                <div class="nav">
+                <!-- <div class="nav"> -->
+                <nav>
                     <a href="/" class="active">Home</a>
                     <div id="menuLinks">
                         <div class="navElement">
@@ -138,7 +139,8 @@ title: Reilly Spitzfaden, Composer
                         <!-- width = height * 0.875 -->
                         <img src="/styles/fonts/light-bars-solid.svg" class="icon-svg" height="15" width="13.125"></img>
                     </a>
-                </div>
+                </nav>
+                {% comment %}</div>{% endcomment %}
                 
                 {{ content }}
                 

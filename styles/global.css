@@ -64,8 +64,8 @@ html {
 /* color and theme */
 
 body,
-.nav,
-.nav a.icon,
+nav,
+nav a.icon,
 #main,
 #mainBlog,
 #mainMedia,
@@ -78,7 +78,7 @@ footer {
 
 body,
 .dropbtn,
-.nav a,
+nav a,
 :link,
 :visited,
 input.textinput,
@@ -105,8 +105,8 @@ input#webmention-source {
     /* background-color: #343a40; */
 }
 
-.nav a:focus,
-.nav a:hover,
+nav a:focus,
+nav a:hover,
 .dropbtn:focus,
 .dropbtn:hover,
 .dropdown-content a:focus,
@@ -209,7 +209,7 @@ iframe {
 /*************************************************/
 
 /* nav formatting */
-.nav {
+nav {
     /* overflow: hidden; */ /* interferes with dropdown sub-menus */
     margin: 0;
     width: vw100;
@@ -262,14 +262,14 @@ iframe {
 .show {
     display: block;
 }
-.nav a {
+nav a {
     /* color: #fff; */
     /* padding-right: 2rem; */
     padding-right: 32px;
     text-decoration: none;
     display: block;
 }
-.nav a.icon {
+nav a.icon {
     /* background: #000; */
     display: block;
     position: absolute;
@@ -279,10 +279,10 @@ iframe {
     right: 4px;
     top: 0;
 }
-.nav #menuLinks {
+nav #menuLinks {
     display: none;
 }
-.nav :link,
+nav :link,
 .dropbtn {
     /* sets highlight size in dropdown layout */
     width: max-content;
@@ -298,10 +298,10 @@ iframe {
 /* Handles switching between hamburger menu and regular */
 @media screen and (min-width: 56.25rem) {
     /* was 900px */
-    .nav #menuLinks {
+    nav #menuLinks {
         display: contents;
     }
-    .nav {
+    nav {
         /* padding-right: 2rem; */
         padding-right: 32px;
         position: relative;
@@ -309,7 +309,7 @@ iframe {
         flex-flow: row wrap;
         justify-content: left;
     }
-    .nav a.icon {
+    nav a.icon {
         display: none;
     }
     .dropdown-content {
@@ -319,14 +319,14 @@ iframe {
 }
 @media screen and (min-width: 62.5rem) {
     /* was 1000 px */
-    .nav {
+    nav {
         /* padding: 0.5rem 8%; */
         padding: 8px 8%;
     }
 }
 @media screen and (min-width: 80rem) {
     /* was 1280px */
-    .nav {
+    nav {
         /* padding: 0.5rem 12%; */
         padding: 8px 12%;
     }
@@ -436,7 +436,7 @@ iframe {
 .content {
     flex-grow: 1;
 }
-.nav,
+nav,
 footer {
     flex-shrink: 0;
 }
