@@ -65,7 +65,7 @@ html {
 
 body,
 nav,
-nav a.icon,
+.navIcon,
 #main,
 #mainBlog,
 #mainMedia,
@@ -269,7 +269,7 @@ nav a {
     text-decoration: none;
     display: block;
 }
-nav a.icon {
+.navIcon {
     /* background: #000; */
     display: block;
     position: absolute;
@@ -309,7 +309,7 @@ nav :link,
         flex-flow: row wrap;
         justify-content: left;
     }
-    nav a.icon {
+    .navIcon {
         display: none;
     }
     .dropdown-content {
