@@ -1,5 +1,4 @@
 ---
-layout: likedlayout
 title: Liked |
 description: Liked |
 canonical_url: https://reillyspitzfaden.com/posts/likes

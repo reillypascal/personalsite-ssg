@@ -1,5 +1,4 @@
 ---
-layout: blogpostlayout
 title: 
 description: 
 canonical_url: https://reillyspitzfaden.com/posts/
