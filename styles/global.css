@@ -186,6 +186,26 @@ iframe {
     border-style: none;
 }
 
+/* external links */
+/* a[href*="//"]:not([href*="reillyspitzfaden.com"]):after
+{ */
+/* content: " ↗ "; */
+/* content: "⎋"; */
+
+/* necessary to allow transformation */
+/* display: inline-block;
+
+    text-decoration: none !important; */
+
+/* for ne arrow */
+/* transform: scale(85%);
+    padding: 0 0 0 2px; */
+
+/* for ne arrow w/ circle */
+/* transform: rotate(90deg) scale(80%);
+    padding: 0 0 0 4px;
+} */
+
 /*************************************************/
 
 /* nav formatting */
