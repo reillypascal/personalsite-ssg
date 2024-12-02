@@ -524,6 +524,10 @@ footer > table :link {
     border-bottom: none;
 }
 
+.webring-name {
+    margin: 0 8px;
+}
+
 .img-badge {
     border: none;
 }
