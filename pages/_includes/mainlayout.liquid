@@ -25,22 +25,24 @@ title: Reilly Spitzfaden, Composer
         
         <!-- My styles -->
         <link rel="stylesheet" type="text/css" href="/styles/global.css" />
-        <!-- <script src="/styles/scripts.js"></script> -->
+        {% comment %} <script src="/styles/scripts.js"></script> {% endcomment %}
 
         <!-- lite-youtube -->
         <link rel="stylesheet" href="/styles/videos/lite-yt-embed.css" />
         <script src="/styles/videos/lite-yt-embed.js"></script>
 
+        {% comment %}
         <!-- Fonts -->
-        <!-- <link rel="preload" id="googlefonts-cs" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <link rel="preload" id="googlefonts-cs" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
         <noscript>
             <link rel="stylesheet" id="googlefonts-css"  href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic&display=swap" type="text/css" media="all" />
-        </noscript> --->
+        </noscript>
 
-        <!-- <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
         <noscript>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
-        </noscript> -->
+        </noscript>
+        {% endcomment %}
 
         <!-- RSS Autodiscovery -->
         <link rel="alternate" type="application/rss+xml" title="Reilly Spitzfaden | RSS" href="https://reillyspitzfaden.com/blog/feed.xml" />
@@ -90,9 +92,9 @@ title: Reilly Spitzfaden, Composer
                 <nav>
                     <a href="/" class="active">Home</a>
                     <label for="menu" tabindex="0" class="navIcon">    
-                        <img src="/styles/fonts/light-bars-solid.svg" alt="hamburger menu button" class="icon-svg" height="15" width="13.125"></img>
+                        <img src="/styles/fonts/light-bars-solid.svg" alt="menu button" class="icon-svg" height="15" width="13.125"></img>
                     </label>
-                    <input id="menu" type="checkbox" aria-hidden="true" />
+                    <input id="menu" type="checkbox" aria-hidden="true" aria-label="Open the menu"/>
                     <div id="menuLinks">
                         <div class="navElement">
                             <div id="about-dropdown" class="dropdown">
@@ -143,9 +145,9 @@ title: Reilly Spitzfaden, Composer
                         }
                     </style>
                     
-                    <!-- <a href="javascript:void(0);" class="navIcon" onclick="hamburgerToggle()">
+                    {% comment %} <a href="javascript:void(0);" class="navIcon" onclick="hamburgerToggle()">
                         <img src="/styles/fonts/light-bars-solid.svg" class="icon-svg" height="15" width="13.125"></img>
-                    </a> -->
+                    </a> {% endcomment %}
                     
                 </nav>
                 
@@ -160,7 +162,7 @@ title: Reilly Spitzfaden, Composer
                             <td><a href="https://hachyderm.io/@reillypascal" title="Mastodon"><img src="/media/mastodon-logo-white.png" alt="Mastodon"/></a></td>
                             <td><a href="https://makertube.net/c/reilly_spitzfaden_composer/videos" title="PeerTube"><img src="/media/peertube-logo-white.png" alt="PeerTube"></a></td>
                             <td><a href="https://soundcloud.com/reilly-spitzfaden" title="SoundCloud"><img src="/media/soundcloud-brands-white.png" alt="SoundCloud"/></a></td>
-                            <!-- <td><a href="https://www.tiktok.com/@reillypascal" title="TikTok"><img src="/media/tiktok-logo-white.png" alt="TikTok"/></a></td> -->
+                            {% comment %} <td><a href="https://www.tiktok.com/@reillypascal" title="TikTok"><img src="/media/tiktok-logo-white.png" alt="TikTok"/></a></td> {% endcomment %}
                             <td><a href="https://www.youtube.com/@reillyspitzfaden" title="YouTube"><img src="/media/youtube-icon-dark.png" alt="YouTube"/></a></td>
                             <td><a href="https://reillyspitzfaden.com/blog/feed.xml" title="RSS"><img src="/media/rss-icon-white.png" alt="RSS"/></a></td>
                         </tr>
