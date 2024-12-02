@@ -2,3 +2,29 @@
 command = "npx @11ty/eleventy && npx pagefind --site _site"
 functions = "netlify/functions"
 publish = "/_site"
+
+
+[[headers]]
+for = "/*.jpg"
+[headers.values]
+Cache-Control = "public, s-max-age=604800"
+
+[[headers]]
+for = "/*.png"
+[headers.values]
+Cache-Control = "public, s-max-age=604800"
+
+[[headers]]
+for = "/*.webm"
+[headers.values]
+Cache-Control = "public, s-max-age=604800"
+
+[[headers]]
+for = "/*.css"
+[headers.values]
+Cache-Control = "public, s-max-age=604800"
+
+[[headers]]
+for = "/*.js"
+[headers.values]
+Cache-Control = "public, s-max-age=604800"
