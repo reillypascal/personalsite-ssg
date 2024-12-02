@@ -269,6 +269,7 @@ nav a {
     text-decoration: none;
     display: block;
 }
+/* hamburger menu positioning, style */
 .navIcon {
     /* background: #000; */
     display: block;
@@ -279,9 +280,10 @@ nav a {
     right: 4px;
     top: 0;
 }
-nav #menuLinks {
+/* nav #menuLinks {
     display: none;
-}
+} */
+
 nav :link,
 .dropbtn {
     /* sets highlight size in dropdown layout */
@@ -295,6 +297,24 @@ nav :link,
 .dropbtn {
     padding: 4px 10px 4px 8px;
 }
+
+/* toggles hamburger menu on/off */
+nav input[type="checkbox"] {
+    display: none;
+}
+#menuLinks {
+    /* hamburger menu shown unless box not checked */
+    display: block;
+}
+
+/* only apply toggle logic if screen is right size */
+@media screen and (max-width: 56.25rem) {
+    input[type="checkbox"]:not(:checked) ~ #menuLinks {
+        /* hamburger menu hidden if box not checked */
+        display: none;
+    }
+}
+
 /* Handles switching between hamburger menu and regular */
 @media screen and (min-width: 56.25rem) {
     /* was 900px */
@@ -310,6 +330,9 @@ nav :link,
         justify-content: left;
     }
     .navIcon {
+        display: none;
+    }
+    nav label {
         display: none;
     }
     .dropdown-content {
