@@ -141,7 +141,8 @@ body {
 }
 /* makes background fixed and mobile-compatible */
 .bg {
-    background: url(../media/wefax_20210809_000222_225235000_full.jpg);
+    /* background: url(../media/wefax_20210809_000222_225235000_full.jpg); */
+    background: url(../media/wefax_20210809_000222_225235000_phasing_cr_recolor_2.webp);
     background-position: left top;
     background-repeat: no-repeat;
     background-size: cover;
