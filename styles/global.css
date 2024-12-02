@@ -625,6 +625,12 @@ footer > table :link {
         margin-bottom: 16px;
     }
 }
+
+.mediaQuote {
+    margin-top: 0;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
 /*************************************************/
 
 /* Media, projects, supplemental page */
