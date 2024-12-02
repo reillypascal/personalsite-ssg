@@ -1,24 +1,21 @@
-/*
 // Animate dropdown menu
 function hamburgerToggle() {
-    let x = document.getElementById("menuLinks");
-    if (x.style.display === "block") {
-        x.style.display = "none";
-        
-        let dropdowns = document.getElementsByClassName("dropdown-content");
-        for (let i = 0; i < dropdowns.length; i++) {
-            let openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
-    } else {
-        x.style.display = "block";
-    }
-}
-*/
+  let x = document.getElementById("menuLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
 
-/* 
+    let dropdowns = document.getElementsByClassName("dropdown-content");
+    for (let i = 0; i < dropdowns.length; i++) {
+      let openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains("show")) {
+        openDropdown.classList.remove("show");
+      }
+    }
+  } else {
+    x.style.display = "block";
+  }
+}
+
 // Switch from dropdown to menu bar if >= 900px
 function hamburgerOnOff() {
   // get window width and font rem size
@@ -50,7 +47,7 @@ function hamburgerOnOff() {
     }
   }
 }
-*/
+
 function showDropdown(dropdownID) {
   document.getElementById(dropdownID).classList.toggle("show");
 }

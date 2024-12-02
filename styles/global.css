@@ -219,6 +219,10 @@ nav {
     position: relative;
     font-size: 100%;
 }
+/* all nav inputs hidden - click on labels*/
+nav input[type="checkbox"] {
+    display: none;
+}
 .active,
 .navElement {
     /* margin: 0.125rem 0.75rem 0.125rem 0; */
@@ -230,6 +234,7 @@ nav {
     width: max-content;
 }
 .dropdown {
+    padding: 4px 0; /* keeps position the same as when it was a button */
     position: relative;
     display: inline-block;
 }
@@ -246,12 +251,14 @@ nav {
 }
 .dropdown-content {
     background-color: #111318;
-    display: none;
+    /* display: none; */
+    display: block;
     position: static;
     /* z-index: 1; */
     padding: 2px 8px 4px;
     border-radius: 2px;
 }
+
 .dropdown-content a {
     color: #d2dde6;
     padding: 12px 8px;
@@ -259,8 +266,17 @@ nav {
     text-decoration: none;
     display: block;
 }
-.show {
+/* .show {
     display: block;
+} */
+input[type="checkbox"]:not(:checked) ~ #about-dropdown-content {
+    display: none;
+}
+input[type="checkbox"]:not(:checked) ~ #music-dropdown-content {
+    display: none;
+}
+input[type="checkbox"]:not(:checked) ~ #blog-dropdown-content {
+    display: none;
 }
 nav a {
     /* color: #fff; */
@@ -298,15 +314,12 @@ nav :link,
     padding: 4px 10px 4px 8px;
 }
 
-/* toggles hamburger menu on/off */
-nav input[type="checkbox"] {
-    display: none;
-}
 #menuLinks {
     /* hamburger menu shown unless box not checked */
     display: block;
 }
 
+/* toggles hamburger menu on/off */
 /* only apply toggle logic if screen is right size */
 @media screen and (max-width: 56.25rem) {
     input[type="checkbox"]:not(:checked) ~ #menuLinks {
@@ -332,9 +345,9 @@ nav input[type="checkbox"] {
     .navIcon {
         display: none;
     }
-    nav label {
+    /* nav label {
         display: none;
-    }
+    } */
     .dropdown-content {
         padding: 8px;
         position: absolute;

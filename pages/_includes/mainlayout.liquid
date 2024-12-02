@@ -25,7 +25,7 @@ title: Reilly Spitzfaden, Composer
         
         <!-- My styles -->
         <link rel="stylesheet" type="text/css" href="/styles/global.css" />
-        <script src="/styles/scripts.js"></script>
+        <!-- <script src="/styles/scripts.js"></script> -->
 
         <!-- lite-youtube -->
         <link rel="stylesheet" href="/styles/videos/lite-yt-embed.css" />
@@ -87,17 +87,18 @@ title: Reilly Spitzfaden, Composer
             <!-- includes footer - makes it fill the page -->
             <div class="wrapper">
                 <!-- navigation menu -->
-                <!-- <div class="nav"> -->
                 <nav>
                     <a href="/" class="active">Home</a>
                     <label for="menu" tabindex="0" class="navIcon">    
                         <img src="/styles/fonts/light-bars-solid.svg" class="icon-svg" height="15" width="13.125"></img>
                     </label>
-                    <input id="menu" type="checkbox" />
+                    <input id="menu" type="checkbox" aria-hidden="true" />
                     <div id="menuLinks">
                         <div class="navElement">
                             <div id="about-dropdown" class="dropdown">
-                                <button onclick="showDropdown('about-dropdown-content')" class="dropbtn">About <img src="/media/icon-caret-down-invert.svg" alt="" /></button>
+                                <label for="about-dropdown-btn" tabindex="0" class="dropbtn">About <img src="/media/icon-caret-down-invert.svg" alt="" /></label>
+                                <input id="about-dropdown-btn" type="checkbox" aria-hidden="true" />
+                                
                                 <div id="about-dropdown-content" class="dropdown-content">
                                     <a href="/bio">Bio</a>
                                     <a href="/now">Now</a>
@@ -107,7 +108,9 @@ title: Reilly Spitzfaden, Composer
 
                         <div class="navElement">
                             <div id="music-dropdown" class="dropdown">
-                                <button onclick="showDropdown('music-dropdown-content')" class="dropbtn">Music <img src="/media/icon-caret-down-invert.svg" alt="" /></button>
+                                <label for="music-dropdown-btn" tabindex="0" class="dropbtn">Music <img src="/media/icon-caret-down-invert.svg" alt="" /></label>
+                                <input id="music-dropdown-btn" type="checkbox" aria-hidden="true" />
+                                
                                 <div id="music-dropdown-content" class="dropdown-content">
                                     <a href="/works">Works List</a>
                                     <a href="/media">Media</a>
@@ -118,8 +121,10 @@ title: Reilly Spitzfaden, Composer
                         
                         <div class="navElement">
                             <div id="posts-dropdown" class="dropdown">
-                                <button onclick="showDropdown('posts-dropdown-content')" class="dropbtn">Blog<img src="/media/icon-caret-down-invert.svg" alt="" /></button>
-                                <div id="posts-dropdown-content" class="dropdown-content">
+                                <label for="blog-dropdown-btn" tabindex="0" class="dropbtn">Blog <img src="/media/icon-caret-down-invert.svg" alt="" /></label>
+                                <input id="blog-dropdown-btn" type="checkbox" aria-hidden="true" />
+                                
+                                <div id="blog-dropdown-content" class="dropdown-content">
                                     <a href="/blog">Posts</a>
                                     <a href="/likes">Likes</a>
                                 </div>
@@ -143,7 +148,6 @@ title: Reilly Spitzfaden, Composer
                     </a> -->
                     
                 </nav>
-                {% comment %}</div>{% endcomment %}
                 
                 {{ content }}
                 
