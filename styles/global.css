@@ -321,7 +321,7 @@ nav :link,
 
 /* toggles hamburger menu on/off */
 /* only apply toggle logic if screen is right size */
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 639px) {
     input[type="checkbox"]:not(:checked) ~ #menuLinks {
         /* hamburger menu hidden if box not checked */
         display: none;
