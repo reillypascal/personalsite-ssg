@@ -71,6 +71,7 @@ nav,
 #mainMedia,
 #mainNow,
 #mainRecent,
+#mainShop,
 #mainTagList,
 footer {
     background-color: #111318;
@@ -377,6 +378,7 @@ nav :link,
 #mainMedia,
 #mainBlog,
 #mainNow,
+#mainShop,
 #mainTagList {
     /* top, sides, bottom */
     /* margin: 0 0.75rem 5%;
@@ -412,6 +414,7 @@ nav :link,
     #mainMedia,
     #mainBlog,
     #mainNow,
+    #mainShop,
     #mainTagList {
         /* margin: 0 1.5rem 5%; 
         padding: 2rem;
@@ -424,6 +427,7 @@ nav :link,
 @media screen and (min-width: 640px) {
     #main,
     #mainRecent,
+    #mainShop,
     #mainTagList {
         border-radius: 7px;
     }
@@ -432,6 +436,7 @@ nav :link,
 @media screen and (min-width: 860px) {
     #mainBlog,
     #mainNow,
+    #mainShop,
     #mainTagList {
         max-width: 45rem;
         /* max-width: 720px; */
@@ -439,6 +444,7 @@ nav :link,
     #main,
     #mainBlog,
     #mainNow,
+    #mainShop,
     #mainTagList {
         margin: auto;
     }
@@ -768,6 +774,7 @@ blockquote {
 #workslist > hr,
 #main > hr,
 #mainNow > hr,
+#mainShop > hr,
 #recent > hr,
 .liked-hr {
     width: 100%;
@@ -940,15 +947,20 @@ li > ul {
     /* max-width: 720px; */
 }
 #workslist th,
-#materials th {
+#materials th,
+.shopScores th {
     font-weight: 400;
     padding: 0 1rem 0.5rem 0;
 }
 #workslist td,
-#materials td {
+#materials td,
+.shopScores td {
     padding: 0 1rem 0.5rem 0;
 }
 
+.list-dingbat {
+    padding-right: 12px;
+}
 /*************************************************/
 
 /* Contact Form */

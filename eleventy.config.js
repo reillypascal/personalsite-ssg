@@ -62,6 +62,9 @@ module.exports = function (eleventyConfig) {
     </div>`;
   });
 
+  eleventyConfig.addShortcode("list_dingbat", () => {
+    return `<span class="list-dingbat">&#10147;</span>`;
+  });
   // RSS
   eleventyConfig.addPlugin(feedPlugin, {
     type: "rss",
