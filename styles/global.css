@@ -138,10 +138,10 @@ input#webmention-source,
 }
 
 #myCard {
-    /* border-color: #d2dde6;
+    border-color: #d2dde6;
     text-shadow: 1px 1px 8px #000000;
     background-color: rgba(17, 19, 24, 0.15);
-    backdrop-filter: blur(1px); */
+    backdrop-filter: blur(1px);
     /* backdrop-filter: contrast(-5%); */
 }
 
@@ -593,56 +593,50 @@ footer > table :link {
 /*************************************************/
 
 /* Homepage */
-/* #myCard {
+#myCard {
     padding: 0 16px;
     margin: 25% auto 25%;
     text-align: center;
-    width: 288px;
-    height: 156px;
+    width: 295px;
+    height: 175px;
     border-width: 2px;
     border-style: solid;
     border-radius: 4px;
-} */
-#myCard {
-    text-align: center;
-    padding: 2px 32px 4px;
 }
 
 #myCardName {
-    font-family: "Fira Sans", sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 200;
-    font-size: 26pt;
+    font-size: 28pt;
     padding: 0;
-    margin: 32px 0;
+    margin: 32px 0 20px;
 }
 #myCardName a {
     text-decoration: none;
     border-bottom-style: none;
 }
 #myCardDescription {
-    font-family: "Fira Sans", sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 300;
     font-size: 13pt;
-    /* margin: 14px 0; */
 }
 @media screen and (min-width: 640px) {
     #myCard {
         border-radius: 5px;
         margin: 15% auto;
-        /* width: 34rem;
-        height: 15rem; */
-        /* width: 544px;
-        height: 240px; */
+        width: 544px;
+        height: 240px;
         max-width: 540px;
     }
     #myCardName {
         font-size: 48pt;
-        /* margin-bottom: 0;
-        padding-bottom: 8px; */
+        padding: 0;
+        margin: 48px 0 32px;
     }
     #myCardDescription {
         font-size: 18pt;
-        /* margin: 28px 0; */
+        padding: 0;
+        margin: 10px 0;
     }
 }
 @media screen and (min-width: 960px) {
