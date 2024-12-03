@@ -119,6 +119,7 @@ nav,
 #mainRecent,
 #mainShop,
 #mainTagList,
+#myCard,
 footer {
     background-color: #111318;
 }
@@ -131,15 +132,16 @@ nav a,
 input.textinput,
 textarea,
 input[type="submit"],
-input#webmention-source {
+input#webmention-source,
+#myCard hr {
     color: #d2dde6;
 }
 
 #myCard {
-    border-color: #d2dde6;
+    /* border-color: #d2dde6;
     text-shadow: 1px 1px 8px #000000;
     background-color: rgba(17, 19, 24, 0.15);
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px); */
     /* backdrop-filter: contrast(-5%); */
 }
 
@@ -591,36 +593,37 @@ footer > table :link {
 /*************************************************/
 
 /* Homepage */
-#myCard {
-    /* padding: 0 1rem; */
+/* #myCard {
     padding: 0 16px;
     margin: 25% auto 25%;
     text-align: center;
-    /* width: 18rem;
-    height: 10rem; */
     width: 288px;
     height: 156px;
     border-width: 2px;
     border-style: solid;
     border-radius: 4px;
+} */
+#myCard {
+    text-align: center;
+    padding: 2px 32px 4px;
 }
 
 #myCardName {
-    font-family: "Inter", sans-serif;
-    font-weight: 100;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 200;
     font-size: 26pt;
-    margin-bottom: 0;
-    padding-bottom: 0;
+    padding: 0;
+    margin: 32px 0;
 }
 #myCardName a {
     text-decoration: none;
     border-bottom-style: none;
 }
 #myCardDescription {
-    font-family: "Inter", sans-serif;
+    font-family: "Fira Sans", sans-serif;
     font-weight: 300;
     font-size: 13pt;
-    margin: 14px 0;
+    /* margin: 14px 0; */
 }
 @media screen and (min-width: 640px) {
     #myCard {
@@ -628,17 +631,18 @@ footer > table :link {
         margin: 15% auto;
         /* width: 34rem;
         height: 15rem; */
-        width: 544px;
-        height: 240px;
+        /* width: 544px;
+        height: 240px; */
+        max-width: 540px;
     }
     #myCardName {
         font-size: 48pt;
-        margin-bottom: 0;
-        padding-bottom: 8px;
+        /* margin-bottom: 0;
+        padding-bottom: 8px; */
     }
     #myCardDescription {
         font-size: 18pt;
-        margin: 28px 0;
+        /* margin: 28px 0; */
     }
 }
 @media screen and (min-width: 960px) {
