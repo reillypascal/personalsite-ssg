@@ -48,37 +48,35 @@ TODO:
     font-style: italic;
     font-display: swap;
 } */
-/*
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"); */
 
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
 
-/* 
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"); 
-*/
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
-/* 
 @font-face {
     font-family: "Lato";
     src: local("Lato"),
         url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
     font-display: swap;
-}
+} */
 @font-face {
     font-family: "Figtree";
     src: local("Figtree"),
         url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
     font-display: swap;
 }
-@font-face {
+/* @font-face {
     font-family: "Fira Sans";
     src: local("Fira Sans"),
         url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
@@ -89,8 +87,7 @@ TODO:
     src: local("Inter"),
         url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
     font-display: swap;
-} 
-*/
+} */
 
 @font-face {
     font-family: "Mulish";
@@ -99,7 +96,13 @@ TODO:
     font-display: swap;
 }
 
-/* 
+/* @font-face {
+    font-family: "Open Sans";
+    src: local("Open Sans"),
+        url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+    font-display: swap;
+}
+
 @font-face {
     font-family: "Nunito Sans";
     src: local("Nunito Sans"),
@@ -133,18 +136,21 @@ TODO:
 
 html {
     /* font-family: "Lato", sans-serif; */
-    /* font-family: "Figtree", sans-serif; */
+    font-family: "Figtree", sans-serif;
     /* font-family: "Fira Sans", sans-serif; */
     /* font-family: "Inter", sans-serif; */
-    font-family: "Mulish", sans-serif;
+    /* font-family: "Mulish", sans-serif; */
     /* font-family: "Nunito Sans", sans-serif; */
+    /* font-family: "Open Sans", sans-serif; */
     /* font-family: "Poppins", sans-serif; */
     /* font-family: "PT Sans", sans-serif; */
     /* font-family: "Rubik", sans-serif; */
     font-weight: 400;
     font-size: 100%;
 }
-
+#myCard {
+    font-family: "Mulish";
+}
 /* color and theme */
 
 body,
