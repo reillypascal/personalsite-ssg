@@ -51,7 +51,9 @@ TODO:
 
 @import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
 /* @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/*
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"); */
 
 @import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
@@ -82,12 +84,13 @@ TODO:
         url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
     font-display: swap;
 }
+*/
 @font-face {
     font-family: "Inter";
     src: local("Inter"),
         url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
     font-display: swap;
-} */
+}
 
 @font-face {
     font-family: "Mulish";
@@ -134,18 +137,18 @@ TODO:
     font-display: swap;
 } */
 
-html {
+:root {
     /* font-family: "Lato", sans-serif; */
-    font-family: "Figtree", sans-serif;
+    /* font-family: "Figtree", sans-serif; */
     /* font-family: "Fira Sans", sans-serif; */
-    /* font-family: "Inter", sans-serif; */
+    font-family: "Inter", sans-serif;
     /* font-family: "Mulish", sans-serif; */
     /* font-family: "Nunito Sans", sans-serif; */
     /* font-family: "Open Sans", sans-serif; */
     /* font-family: "Poppins", sans-serif; */
     /* font-family: "PT Sans", sans-serif; */
     /* font-family: "Rubik", sans-serif; */
-    font-weight: 380;
+    font-weight: 320;
 }
 #myCard {
     font-family: "Mulish";
