@@ -20,7 +20,7 @@ tags:
   - socialmedia
 ---
 
-A few days ago I was part of a Facebook thread about music notation. Composer Christopher Cerrone posted asking what way of notating a complex rhythm would be most readable. The general consensus was something akin to what Thomas Adés does in e.g., ["Lieux Retrouves," movement 2](https://www.youtube.com/watch?v=5DOoCEF1c2Q&t=300s) in the piano part: notate it two different ways, with one shown above the other to clarify how the instruments align.
+A few days ago I was part of a Facebook thread about music notation. Composer Christopher Cerrone posted asking what way of notating a complex rhythm would be most readable. The general consensus was something akin to what Thomas Adés does in e.g., "Lieux Retrouves," [movement 2](https://www.youtube.com/watch?v=5DOoCEF1c2Q&t=300s) in the piano part: notate it two different ways, with one shown above the other to clarify how the instruments align.
 
 Within the thread, there were a number of interesting finer points raised, but as I watched the discussion continue, I was a bit sad to think that it would all disappear in the stream of future posts, and that even if the discussion were somehow pinned, it would not be easily accessible from a search engine.
 
