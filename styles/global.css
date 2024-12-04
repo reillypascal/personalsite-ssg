@@ -168,11 +168,11 @@ TODO:
 /* Text Block paragraph formatting */
 .textBlock p {
     max-width: 45rem;
-    line-height: 1.65;
+    line-height: 1.5;
 }
 @media screen and (min-width: 520px) {
     .textBlock p {
-        line-height: 2;
+        line-height: 1.75;
     }
 }
 /* 
