@@ -161,6 +161,24 @@ TODO:
 #myCard {
     /* font-family: "Mulish"; */
 }
+
+/* Text Block formatting */
+.textBlock {
+    max-width: 45rem;
+    /* max-width: 720px; */
+    line-height: 1.4;
+}
+@media screen and (min-width: 480px) {
+    .textBlock {
+        line-height: 1.5;
+    }
+}
+@media screen and (min-width: 640px) {
+    .textBlock {
+        line-height: 1.67;
+    }
+}
+
 /* color and theme */
 
 body,
@@ -796,23 +814,6 @@ footer > table :link {
     .headshot {
         /* margin-right: 1.5rem; */
         margin-right: 24px;
-    }
-}
-
-/* Text Block formatting */
-.textBlock {
-    max-width: 45rem;
-    /* max-width: 720px; */
-    line-height: 1.25;
-}
-@media screen and (min-width: 480px) {
-    .textBlock {
-        line-height: 1.33;
-    }
-}
-@media screen and (min-width: 640px) {
-    .textBlock {
-        line-height: 1.6;
     }
 }
 
