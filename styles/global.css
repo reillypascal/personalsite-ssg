@@ -131,23 +131,23 @@ TODO:
 :root {
     /* font-family: "Lato", sans-serif; */
     /* font-family: "Figtree", sans-serif; */
-    /* font-family: "Fira Sans", sans-serif; */
+    font-family: "Fira Sans", sans-serif;
     /* font-family: Inter, sans-serif; */
     /* font-family: "Nunito Sans", sans-serif; */
     /* font-family: "Open Sans", sans-serif; */
     /* font-family: "Poppins", sans-serif; */
     /* font-family: "PT Sans", sans-serif; */
-    font-family: "Rubik", sans-serif;
-    font-weight: 367;
-    font-feature-settings:
+    /* font-family: "Rubik", sans-serif; */
+    font-weight: 400;
+    /* font-feature-settings:
         "liga" 1,
-        "calt" 1; /* fix for Chrome */
+        "calt" 1; /* fix for Chrome */ */
 }
-@supports (font-variation-settings: normal) {
+/* @supports (font-variation-settings: normal) {
     :root {
         font-family: InterVariable, sans-serif;
     }
-}
+} */
 #myCard {
     font-family: "Lato";
 }
@@ -155,7 +155,7 @@ TODO:
     font-weight: 300;
 }
 #myCardDescription {
-    font-weight: 300;
+    font-weight: 400;
 }
 
 /* Text Block formatting */
