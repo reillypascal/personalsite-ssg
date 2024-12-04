@@ -12,16 +12,6 @@ title: Reilly Spitzfaden, Composer
             <article class="textBlock" data-pagefind-body>
                 <h2>{{ title }}</h2>
                 
-                <div class="post-tags">
-                    Posted in: 
-                    {% assign sorted_categories = tags | sort %}
-                    {% for tag in sorted_categories %}
-                        {% if tag != 'post' %}
-                            <span class="post-tag"><a href="/tags/{{ tag }}">{{ tag }}</a></span>
-                        {% endif %}
-                    {% endfor %}
-                </div>
-                
                 <div class="post-meta">
                     <span class="meta-icon">
                         <img src="/media/icon-calendar-ltr.svg" alt="calendar icon" />
@@ -30,6 +20,16 @@ title: Reilly Spitzfaden, Composer
                     <span class="meta-text">
                         <a href="{{ canonical_url }}"><time>{{ date | date: "%A, %B %d, %Y" }}</time></a> 
                     </span>
+                </div>
+                
+                <div class="post-tags">
+                    Posted in: 
+                    {% assign sorted_categories = tags | sort %}
+                    {% for tag in sorted_categories %}
+                        {% if tag != 'post' %}
+                            <span class="post-tag"><a href="/tags/{{ tag }}">{{ tag }}</a></span>
+                        {% endif %}
+                    {% endfor %}
                 </div>
             
             {{ content }}
