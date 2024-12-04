@@ -148,7 +148,7 @@ TODO:
     /* font-family: "Poppins", sans-serif; */
     /* font-family: "PT Sans", sans-serif; */
     /* font-family: "Rubik", sans-serif; */
-    font-weight: 350;
+    font-weight: 367;
     font-feature-settings:
         "liga" 1,
         "calt" 1; /* fix for Chrome */
@@ -652,7 +652,7 @@ footer > table :link {
 }
 
 .webring-name {
-    margin: 0 8px;
+    margin: 0 6px;
 }
 
 .img-badge {
