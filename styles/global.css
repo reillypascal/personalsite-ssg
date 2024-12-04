@@ -165,13 +165,13 @@ TODO:
     font-weight: 400;
 }
 
-/* Text Block formatting */
-.textBlock {
+/* Text Block paragraph formatting */
+.textBlock p {
     max-width: 45rem;
     line-height: 1.65;
 }
 @media screen and (min-width: 520px) {
-    .textBlock {
+    .textBlock p {
         line-height: 2;
     }
 }
