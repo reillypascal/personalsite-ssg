@@ -165,13 +165,14 @@ TODO:
 /* Text Block formatting */
 .textBlock {
     max-width: 45rem;
-    line-height: 2;
+    line-height: 1.8;
 }
-/* @media screen and (min-width: 480px) {
+@media screen and (min-width: 520px) {
     .textBlock {
-        line-height: 1.85;
+        line-height: 2;
     }
 }
+/* 
 @media screen and (min-width: 640px) {
     .textBlock {
         line-height: 2;
