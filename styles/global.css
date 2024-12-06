@@ -51,22 +51,15 @@ body {
 } */
 /* myCard */
 #cardContainer {
-    display: flex;
-    width: 275px;
+    display: grid;
 }
 
 #cardImg {
-    flex: 1 0 0;
-    overflow-x: hidden;
-}
-
-#cardNameContainer {
-    background-color: rgba(0, 0, 0, 0);
-    position:relative;
-    top: 25px;
+    grid-area: 1 / 1;
 }
 
 #cardName {
+    grid-area: 1 / 1;
     width: 200px;
     height: 185px;
 }
