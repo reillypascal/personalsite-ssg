@@ -23,9 +23,9 @@
     /* color variables */
     --bg-dark: #111318;
     --fg-light: #d2dde6;
-    --accent-light: #E09CC9;
-    --accent-med: #A66A94;
-    --accent-dark: #4D1D3E;
+    --accent-light: #e09cc9;
+    --accent-med: #a66a94;
+    --accent-dark: #4d1d3e;
 }
 
 /* colors */
@@ -60,8 +60,17 @@ body {
 
 #cardName {
     grid-area: 1 / 1;
-    width: 200px;
-    height: 185px;
+    width: 250px;
+    height: 275px;
+    /* height: 185px; */
+
+    /* display: flex;
+    flex-flow: row wrap; */
+
+    & p {
+        padding: 32px 0 0 0;
+        font-size: 150%;
+    }
 }
 
 /* nav menu */
@@ -77,16 +86,17 @@ nav {
     position: relative;
     display: flex;
     flex-flow: row wrap;
-    justify-content: right;
+    justify-content: left;
 
     & #menuLinks {
         /* display: none; */
         display: flex;
-    flex-flow: row wrap;
-    justify-content: left;
+        flex-flow: row wrap;
+        justify-content: left;
     }
-    
-    & a, .dropdown-content a {
+
+    & a,
+    .dropdown-content a {
         padding: 4px 8px;
         padding-right: 16px;
         display: block;
