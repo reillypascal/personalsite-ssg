@@ -87,21 +87,26 @@ title: Reilly Spitzfaden, Composer
     </head>
     <body>
         <!-- fixed background - opened and closed here -->
-        <div class="bg"></div>
+        <!-- <div class="bg"></div> -->
         <!-- moving foreground -->
-        <div class="foreground">
-            <!-- includes footer - makes it fill the page -->
-            <div class="wrapper">
-                <!-- navigation menu -->
+        <!-- <div class="foreground"> -->
+        <!-- includes footer - makes it fill the page -->
+        <div class="wrapper">
+            <!-- navigation menu -->
+            <header>
                 <nav>
-                    <a href="/" class="active">Home</a>
-                    <label for="menu" tabindex="0" class="navIcon">    
+                    {% comment %} <a href="/" class="active">Home</a> {% endcomment %}
+                    
+                    {% comment %} <label for="menu" tabindex="0" class="navIcon">    
                         <img src="/styles/fonts/light-bars-solid.svg" alt="menu button" class="icon-svg" height="15" width="13.125"></img>
                     </label>
-                    <input id="menu" type="checkbox" aria-hidden="true" aria-label="Open the menu"/>
+                    <input id="menu" type="checkbox" aria-hidden="true" aria-label="Open the menu"/> {% endcomment %}
+                    
                     <div id="menuLinks">
+                        <a href="/" class="navElement">Home</a>
                         <div class="navElement">
                             <div id="about-dropdown" class="dropdown">
+                                
                                 <label for="about-dropdown-btn" tabindex="0" class="dropbtn">About <img src="/media/icon-caret-down-invert.svg" alt="dropdown menu arrow for 'about'section" /></label>
                                 <input id="about-dropdown-btn" type="checkbox" aria-hidden="true" />
                                 
@@ -109,11 +114,13 @@ title: Reilly Spitzfaden, Composer
                                     <a href="/bio">Bio</a>
                                     <a href="/now">Now</a>
                                 </div>
+                                
                             </div>
                         </div>
-
+    
                         <div class="navElement">
                             <div id="music-dropdown" class="dropdown">
+                                
                                 <label for="music-dropdown-btn" tabindex="0" class="dropbtn">Music <img src="/media/icon-caret-down-invert.svg" alt="dropdown menu arrow for 'music'section" /></label>
                                 <input id="music-dropdown-btn" type="checkbox" aria-hidden="true" />
                                 
@@ -123,11 +130,13 @@ title: Reilly Spitzfaden, Composer
                                     <a href="/media">Media</a>
                                     <a href="/supplemental">Supplemental Materials</a>
                                 </div>
+                                
                             </div>
                         </div>
                         
                         <div class="navElement">
                             <div id="posts-dropdown" class="dropdown">
+                                
                                 <label for="blog-dropdown-btn" tabindex="0" class="dropbtn">Blog <img src="/media/icon-caret-down-invert.svg" alt="dropdown menu arrow for 'blog'section" /></label>
                                 <input id="blog-dropdown-btn" type="checkbox" aria-hidden="true" />
                                 
@@ -135,57 +144,70 @@ title: Reilly Spitzfaden, Composer
                                     <a href="/blog">Posts</a>
                                     <a href="/likes">Likes</a>
                                 </div>
+                                
                             </div>
                         </div>
-
-                        <!-- <div class="navElement"><a href="/blog">Blog</a></div> -->
+    
                         <div class="navElement"><a href="/projects">Code</a></div>
                         <div class="navElement"><a href="/contact">Contact</a></div>
                         <div class="navElement"><a href="/blog/feed.xml">RSS</a></div>
                     </div>
-                    
-                    <style>
-                        .icon-svg {
-                            vertical-align: -0.125em;
-                        }
-                    </style>
-                    
-                    {% comment %} <a href="javascript:void(0);" class="navIcon" onclick="hamburgerToggle()">
-                        <img src="/styles/fonts/light-bars-solid.svg" class="icon-svg" height="15" width="13.125"></img>
-                    </a> {% endcomment %}
-                    
                 </nav>
+            </header>
                 
-                {{ content }}
-                
-                <!-- footer -->
-                <footer>
-                    <table>
-                        <tr>
-                            <td><a href="https://github.com/reillypascal" title="GitHub"><img src="/media/github-mark-white.png" alt="GitHub"/></a></td>
-                            <td><a href="https://www.instagram.com/reillypascal/" title="Instagram"><img src="/media/instagram-glyph-white.png" alt="Instagram"/></a></td>
-                            <td><a href="https://hachyderm.io/@reillypascal" title="Mastodon"><img src="/media/mastodon-logo-white.png" alt="Mastodon"/></a></td>
-                            <td><a href="https://makertube.net/c/reilly_spitzfaden_composer/videos" title="PeerTube"><img src="/media/peertube-logo-white.png" alt="PeerTube"></a></td>
-                            <td><a href="https://soundcloud.com/reilly-spitzfaden" title="SoundCloud"><img src="/media/soundcloud-brands-white.png" alt="SoundCloud"/></a></td>
-                            {% comment %} <td><a href="https://www.tiktok.com/@reillypascal" title="TikTok"><img src="/media/tiktok-logo-white.png" alt="TikTok"/></a></td> {% endcomment %}
-                            <td><a href="https://www.youtube.com/@reillyspitzfaden" title="YouTube"><img src="/media/youtube-icon-dark.png" alt="YouTube"/></a></td>
-                            <td><a href="https://reillyspitzfaden.com/blog/feed.xml" title="RSS"><img src="/media/rss-icon-white.png" alt="RSS"/></a></td>
-                        </tr>
-                    </table>
-                    
-                    <p class="octothorpes-badge"><a href="https://octothorp.es" class="img-badge"><img src="/media/octothorpes-badge.png" alt="Badge for the Octothorpes main ring" /></a></p>
-
-                    <p>
-                        <a href="https://xn--sr8hvo.ws/previous" class="webring-prev-arrow">←</a>
-                        <a href="https://xn--sr8hvo.ws" class="webring-name">IndieWeb Webring</a>
-                        <a href="https://xn--sr8hvo.ws/next" class="webring-next-arrow">→</a>
-                    </p>
-
-                    <p>&copy; 2022–2024 by Reilly Spitzfaden. This site supports <a href="https://webmention.net/">Webmentions</a>.</p>
-                </footer>
-            <!-- close "wrapper"-->
+            <!-- h-card (hidden) -->
+            <div class="h-card">
+                <img class="u-photo" src="./media/profile-400px.png" loading="lazy"/><br />
+                <a class="p-name u-url" rel="me" href="https://reillyspitzfaden.com/">Reilly Spitzfaden</a><br />
+                <p class="p-note">Composer and audio programmer who likes noise, code, electronics, and nostalgia // they/them</p>
             </div>
-        <!-- close "foreground" (moving page over bg) -->
+            
+            <hr/>
+
+            <div id="cardContainer">
+                <div id="cardImg">
+                    <img src="/media/map_duochrome_200x250_1.webp" alt="" />
+                </div>
+                <div id="cardNameContainer">
+                    <div id="cardName">
+                        <h1><a href="/">Reilly<br/>Spitzfaden</a></h1>
+                        <p>composer<br/>electronic musician<br/>educator</p>
+                    </div>
+                </div>
+            </div>
+            <!-- main -->
+            <main>
+                {{ content }}
+            </main>
+            
+            <!-- footer -->
+            <footer>
+                <table>
+                    <tr>
+                        <td><a href="https://github.com/reillypascal" title="GitHub"><img src="/media/github-mark-white.png" alt="GitHub"/></a></td>
+                        <td><a href="https://www.instagram.com/reillypascal/" title="Instagram"><img src="/media/instagram-glyph-white.png" alt="Instagram"/></a></td>
+                        <td><a href="https://hachyderm.io/@reillypascal" title="Mastodon"><img src="/media/mastodon-logo-white.png" alt="Mastodon"/></a></td>
+                        <td><a href="https://makertube.net/c/reilly_spitzfaden_composer/videos" title="PeerTube"><img src="/media/peertube-logo-white.png" alt="PeerTube"></a></td>
+                        <td><a href="https://soundcloud.com/reilly-spitzfaden" title="SoundCloud"><img src="/media/soundcloud-brands-white.png" alt="SoundCloud"/></a></td>
+                        {% comment %} <td><a href="https://www.tiktok.com/@reillypascal" title="TikTok"><img src="/media/tiktok-logo-white.png" alt="TikTok"/></a></td> {% endcomment %}
+                        <td><a href="https://www.youtube.com/@reillyspitzfaden" title="YouTube"><img src="/media/youtube-icon-dark.png" alt="YouTube"/></a></td>
+                        <td><a href="https://reillyspitzfaden.com/blog/feed.xml" title="RSS"><img src="/media/rss-icon-white.png" alt="RSS"/></a></td>
+                    </tr>
+                </table>
+                
+                <p class="octothorpes-badge"><a href="https://octothorp.es" class="img-badge"><img src="/media/octothorpes-badge.png" alt="Badge for the Octothorpes main ring" /></a></p>
+
+                <p>
+                    <a href="https://xn--sr8hvo.ws/previous" class="webring-prev-arrow">←</a>
+                    <a href="https://xn--sr8hvo.ws" class="webring-name">IndieWeb Webring</a>
+                    <a href="https://xn--sr8hvo.ws/next" class="webring-next-arrow">→</a>
+                </p>
+
+                <p>&copy; 2022–2024 by Reilly Spitzfaden. This site supports <a href="https://webmention.net/">Webmentions</a>.</p>
+            </footer>
+        <!-- close "wrapper"-->
         </div>
+        <!-- close "foreground" (moving page over bg) -->
+        <!-- </div> -->
     </body>
 </html>
