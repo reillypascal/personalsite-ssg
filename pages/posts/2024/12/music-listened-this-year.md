@@ -2,6 +2,7 @@
 title: Music Listened This Year
 description: Artists, albums, and songs I've enjoyed the most in 2024
 canonical_url: https://reillyspitzfaden.com/posts/2024/12music-listened-this-year
+og_image: media/blog/2024/12/not-ify-wrapped-grid.webp
 date: 2024-12-07
 octothorpes:
   - Audio
