@@ -15,6 +15,11 @@
     font-display: swap;
 }
 
+/* http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice */
+/* Avoid using max- and min- widths and heights with the border-box model. They are known to cause browser problems. */
+/* html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;} */
+
 :root {
     font-family: "Arimo", sans-serif;
     /* font-family: "Open Sans", sans-serif; */
@@ -22,9 +27,10 @@
 
     /* color variables */
     --bg-dark: #111318;
-    --bg-dark-highlight: #161920;
+    --bg-dark-highlight: #181720;
     --fg-light: #d2dde6;
     --accent-light: #e09cc9;
+    --accent-med-light: #c387af;
     --accent-med: #a66a94;
     --accent-dark: #4d1d3e;
 
@@ -44,10 +50,16 @@ body {
 
 header {
     background-color: var(--bg-dark);
+    & hr {
+        color: var(--accent-med-light);
+    }
 }
 
 main {
-    background-color: var(--bg-dark-highlight);
+    /* background-color: var(--bg-dark-highlight); */
+    & hr {
+        color: var(--accent-med-light);
+    }
 }
 
 footer {
@@ -55,12 +67,12 @@ footer {
 }
 
 header {
-    border-radius: 2px;
-    max-width: var(--main-width);
+    /* border-radius: 2px; */
+    /* max-width: var(--main-width); */
 }
 
 #cardName {
-    background-color: var(--accent-light);
+    background-color: var(--accent-med-light);
     color: var(--bg-dark);
     & a {
         color: inherit;
@@ -73,19 +85,31 @@ header {
 } */
 /* myCard */
 #cardContainer {
-    /* display: grid; */
+    display: grid;
+    grid-template-rows: 14px;
+    grid-template-columns: 18px;
+    margin-top: 12px;
+    margin-bottom: 8px;
 }
 
 #cardImg {
-    /* grid-area: 1 / 1; */
+    width: 290px;
+    height: 85px;
+    border-radius: 4px;
+    grid-area: 1 / 1;
+    /* background-image: "/media/map_duochrome_1000x1250_1.png"; */
+    background: url("/media/map_duochrome_1775x425_1.png");
 }
 
 #cardName {
-    width: fit-content;
+    box-sizing: border-box;
+    width: 290px;
+    height: 85px;
+    /* width: fit-content; */
     marks: none;
-    padding: 2px 32px 2px 0;
-    border-radius: 2px;
-    /* grid-area: 1 / 1; */
+    padding: 2px 0;
+    border-radius: 4px;
+    grid-area: 2 / 2;
     /* width: 250px; */
     /* height: 275px; */
     /* height: 185px; */
@@ -186,10 +210,10 @@ input[type="checkbox"]:not(:checked) ~ #blog-dropdown-content {
 }
 
 main {
+    padding: 24px 32px 32px;
+    margin: 32px;
     max-width: var(--main-width);
 }
 article {
-    padding: 8px 16px;
-    margin: 16px 32px;
     max-width: var(--article-width);
 }
