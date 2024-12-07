@@ -39,7 +39,7 @@
     --article-width: 45rem;
 }
 
-/* colors */
+/* ######## colors ######## */
 body {
     background-color: var(--bg-dark);
     color: var(--fg-light);
@@ -83,7 +83,8 @@ header {
 /* header {
     display: flex;
 } */
-/* myCard */
+
+/* ######## myCard ######## */
 #cardContainer {
     display: grid;
     grid-template-rows: 14px;
@@ -91,39 +92,25 @@ header {
     margin-top: 12px;
     margin-bottom: 8px;
 }
-
-#cardImg {
-    width: 290px;
+#cardImg, #cardName {
+    width: 295px;
     height: 85px;
+}
+#cardImg {
     border-radius: 4px;
     grid-area: 1 / 1;
     /* background-image: "/media/map_duochrome_1000x1250_1.png"; */
     background: url("/media/map_duochrome_1775x425_1.png");
 }
-
 #cardName {
     box-sizing: border-box;
-    width: 290px;
-    height: 85px;
-    /* width: fit-content; */
     marks: none;
-    padding: 2px 0;
+    padding: 2px 0 2px 6px;
     border-radius: 4px;
     grid-area: 2 / 2;
-    /* width: 250px; */
-    /* height: 275px; */
-    /* height: 185px; */
-
-    /* display: flex;
-    flex-flow: row wrap; */
-
-    /* & p {
-        padding: 32px 0 0 0;
-        font-size: 150%;
-    } */
 }
 
-/* nav menu */
+/* ######## nav menu ######## */
 .icon-svg {
     vertical-align: -0.125em;
 }
@@ -204,11 +191,12 @@ input[type="checkbox"]:not(:checked) ~ #blog-dropdown-content {
     display: none;
 }
 
-/* microformats */
+/* ######## microformats ######## */
 .h-card {
     display: none;
 }
 
+/* ######## content ######## */
 main {
     padding: 24px 32px 32px;
     margin: 32px;
