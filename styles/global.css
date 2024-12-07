@@ -22,10 +22,15 @@
 
     /* color variables */
     --bg-dark: #111318;
+    --bg-dark-highlight: #161920;
     --fg-light: #d2dde6;
     --accent-light: #e09cc9;
     --accent-med: #a66a94;
     --accent-dark: #4d1d3e;
+
+    /* size variables */
+    --main-width: 50rem;
+    --article-width: 45rem;
 }
 
 /* colors */
@@ -35,6 +40,23 @@ body {
     & a {
         color: inherit;
     }
+}
+
+header {
+    background-color: var(--bg-dark);
+}
+
+main {
+    background-color: var(--bg-dark-highlight);
+}
+
+footer {
+    background-color: var(--bg-dark);
+}
+
+header {
+    border-radius: 2px;
+    max-width: var(--main-width);
 }
 
 #cardName {
@@ -51,26 +73,30 @@ body {
 } */
 /* myCard */
 #cardContainer {
-    display: grid;
+    /* display: grid; */
 }
 
 #cardImg {
-    grid-area: 1 / 1;
+    /* grid-area: 1 / 1; */
 }
 
 #cardName {
-    grid-area: 1 / 1;
-    width: 250px;
-    height: 275px;
+    width: fit-content;
+    marks: none;
+    padding: 2px 32px 2px 0;
+    border-radius: 2px;
+    /* grid-area: 1 / 1; */
+    /* width: 250px; */
+    /* height: 275px; */
     /* height: 185px; */
 
     /* display: flex;
     flex-flow: row wrap; */
 
-    & p {
+    /* & p {
         padding: 32px 0 0 0;
         font-size: 150%;
-    }
+    } */
 }
 
 /* nav menu */
@@ -97,8 +123,7 @@ nav {
 
     & a,
     .dropdown-content a {
-        padding: 4px 8px;
-        padding-right: 16px;
+        padding: 4px 4px;
         display: block;
         width: max-content;
     }
@@ -113,7 +138,7 @@ nav {
 
     & .navElement {
         /* margin: 2px 12px 2px 0; */
-        margin-right: 12px;
+        margin-right: 24px;
     }
 
     & .active {
@@ -158,4 +183,13 @@ input[type="checkbox"]:not(:checked) ~ #blog-dropdown-content {
 /* microformats */
 .h-card {
     display: none;
+}
+
+main {
+    max-width: var(--main-width);
+}
+article {
+    padding: 8px 16px;
+    margin: 16px 32px;
+    max-width: var(--article-width);
 }
