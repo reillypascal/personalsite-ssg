@@ -194,7 +194,7 @@ nav {
     }
 
     & .dropdown {
-        padding: 4px 0;
+        /* padding: 4px 0; */
         text-decoration: underline;
         /* position: relative;
         display: inline-block; */
@@ -248,4 +248,8 @@ blockquote {
     blockquote {
         margin-left: 12px;
     }
+}
+
+article p {
+    line-height: 1.5;
 }

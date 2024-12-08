@@ -4,8 +4,7 @@
 }
 
 #featured {
-    /* max-width: var(--article-width); /* defined in global */
-    max-width: 32rem; /* defined in global */
+    max-width: 32rem;
 }
 
 #featuredHeader,
@@ -28,7 +27,7 @@
     max-width: 512px;
 }
 
-img {
+article img {
     margin-top: 24px;
     max-width: 100%;
 }
