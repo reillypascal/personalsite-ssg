@@ -1,4 +1,9 @@
 main {
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* display: grid;
+    place-self: center; */
     max-width: 45rem;
 }
 
