@@ -1,33 +1,25 @@
 ---
-layout: mainlayout
 title: Reilly Spitzfaden, Composer | Posts by Tag
 description: Blog posts listed by tag
 canonical_url: https://reillyspitzfaden.com/tags
 ---
-<!-- page content minus header/footer -->
-<div class="content">
-<br/>
-    <div id="BGpad">
-        <div id="mainTagList">
-            <h2>All tags</h2>
-            <div id="allTagsList">
-                {% for tag in collections.allTags %}
-                    {% if tag != 'post' %}
-                    {% if tag != 'like' %}
-                    <figure>
-                        <p class="tag" id="{{ tag }}"><a href="/tags/{{ tag }}">{{ tag }}</a> ({{ collections[tag].length }}) </p>
-                    </figure>
-                    {% endif %}
-                    {% endif %}
-                {% endfor %}
-                
-            </div>
-        <!-- close "main" -->
-        </div>
-    <!-- close "BGpad" -->
+<main>
+    <h2 class="sectionHeader">All tags</h2>
+    <div id="allTagsList">
+        {% for tag in collections.allTags %}
+            {% if tag != 'post' %}
+            {% if tag != 'like' %}
+            <figure>
+                <p class="tag" id="{{ tag }}"><a href="/tags/{{ tag }}">{{ tag }}</a> ({{ collections[tag].length }}) </p>
+            </figure>
+            {% endif %}
+            {% endif %}
+        {% endfor %}
+        
     </div>
-<!-- close "content" -->
-</div>
+</main>
+
+<link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
 
 <style>
     figure {

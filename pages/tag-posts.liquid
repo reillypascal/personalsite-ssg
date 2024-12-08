@@ -1,5 +1,4 @@
 ---
-layout: mainlayout
 title: Reilly Spitzfaden, Composer | Posts by Tag
 description: Blog posts listed by tag
 canonical_url: https://reillyspitzfaden.com/tags/{{ tag }}/
@@ -12,34 +11,28 @@ pagination:
         - post
 permalink: /tags/{{ tag }}/
 ---
-<!-- page content minus header/footer -->
-<div class="content">
-<br/>
-    <div id="BGpad">
-        <div id="mainTagList">
-            <article class="tagList">
-                <h2>Tagged "{{ tag }}"</h2>
+<main>
+    <article class="tagList">
+        <h2 class="sectionHeader">Tagged "{{ tag }}"</h2>
+        <hr />
+        {% assign taglist = collections[tag] %}
+        {% for post in taglist reversed %}
+            <p class="taggedPostLink"><a href="{{ post.data.canonical_url }}">{{ post.data.title }}</a></p>
+            <p>{{ post.data.description }}</p>
+                <span class="meta-icon">
+                <img src="/media/icon-calendar-ltr.svg" alt="calendar icon" />
+                </span>
+                <span class="meta-text">
+                <time>{{ post.date | date: "%A, %B %d, %Y" }}</time>
+                </span>
                 <hr />
-                {% assign taglist = collections[tag] %}
-                {% for post in taglist reversed %}
-                    <p class="taggedPostLink"><a href="{{ post.data.canonical_url }}">{{ post.data.title }}</a></p>
-                    <p>{{ post.data.description }}</p>
-                        <span class="meta-icon">
-                        <img src="/media/icon-calendar-ltr.svg" alt="calendar icon" />
-                        </span>
-                        <span class="meta-text">
-                        <time>{{ post.date | date: "%A, %B %d, %Y" }}</time>
-                        </span>
-                        <hr />
-                {% endfor %}
-                
-            </article>
-        <!-- close "main" -->
-        </div>
-    <!-- close "BGpad" -->
-    </div>
-<!-- close "content" -->
-</div>
+        {% endfor %}
+        
+    </article>
+</main>
+
+<link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
+
 
 <style>
     .taggedPostLink {
