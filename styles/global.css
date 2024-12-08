@@ -56,7 +56,7 @@ header {
     margin-top: 16px;
     margin-left: var(--global-margin);
     margin-right: var(--global-margin);
-    border-bottom: 1px solid var(--accent-med-light);
+    border-bottom: 6px solid var(--accent-med-light);
 }
 
 main {
@@ -77,7 +77,11 @@ main {
 }
 
 footer {
-    background-color: var(--bg-dark);
+    /* background-color: var(--bg-dark); */
+    background-color: var(--accent-med-light);
+    color: var(--bg-dark);
+    padding: 20px 20px;
+    border-radius: 4px;
     margin-left: var(--global-margin);
     margin-right: var(--global-margin);
     margin-bottom: 32px;
@@ -85,15 +89,16 @@ footer {
         padding: 14px 10px 0 0;
     }
 }
-
-footer::before {
+.octothorpes-badge {
+    width: fit-content;
+}
+/* footer::before {
     content: "";
     display: block;
-    /* padding-top: 1.5rem; */
-    padding-top: 24px;
+    margin-top: 24px;
     margin-bottom: 0;
     border-bottom: 1px solid var(--accent-med-light);
-}
+} */
 
 @media screen and (min-width: 840px) {
     :root {
@@ -110,22 +115,6 @@ footer::before {
     }
 }
 
-/* ######## name card ######## */
-#cardName {
-    background-color: var(--accent-light);
-    color: var(--bg-dark);
-    /* background-color: var(--bg-dark); */
-    /* color: var(--fg-light); */
-    & a {
-        color: inherit;
-    }
-}
-
-/* header */
-/* header {
-    display: flex;
-} */
-
 /* ######## myCard ######## */
 #cardContainer {
     display: grid;
@@ -141,10 +130,19 @@ footer::before {
     background: url("/media/map_duochrome_1775x425_1.png");
 }
 #cardName {
-    font-family: "Arimo", sans-serif;
+    background-color: var(--accent-med-light);
+    color: var(--bg-dark);
+    /* background-color: var(--bg-dark);
+    color: var(--fg-light);
+    border: 1px solid var(--accent-med-light); */
+    & a {
+        color: inherit;
+    }
+    /* font-family: "Arimo", sans-serif; */
     box-sizing: border-box;
     marks: none;
-    padding: 2px 32px 2px 6px;
+    /* padding: 2px 32px 2px 6px; */
+    padding: 2px 24px 2px 24px;
     border-radius: 4px;
     grid-area: 2 / 2 / 4 / 4;
 }
@@ -178,7 +176,7 @@ nav {
 
     /* & a, */
     & .dropdown-content a {
-        padding: 4px 4px;
+        padding: 6px 4px;
         display: block;
         width: max-content;
     }
@@ -196,8 +194,8 @@ nav {
     & .dropdown {
         /* padding: 4px 0; */
         text-decoration: underline;
-        /* position: relative;
-        display: inline-block; */
+        position: relative;
+        display: inline-block;
     }
 
     & .dropbtn > img {
@@ -210,9 +208,11 @@ nav {
     background-color: var(--bg-dark);
     /* display: none; */
     display: block;
-    position: static;
+    position: absolute; /* ensures dropdown content doesn't shift other elements; was originally position: static; */
     /* z-index: 1; */
-    padding: 4px 8px 0;
+    padding: 12px 12px;
+    margin-top: 36px;
+    border: 1px solid var(--accent-med-light);
     border-radius: 2px;
 }
 
