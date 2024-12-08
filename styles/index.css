@@ -43,7 +43,7 @@ main {
 }
 #recentItems {
     padding: 16px 20px;
-    border: 1px solid var(--accent-med-light);
+    border: 1px solid var(--accent-dark);
     border-radius: 8px;
     grid-area: 2 / 2 / 4 /4;
     background-color: var(--bg-dark);
