@@ -3,10 +3,12 @@
     display: none;
 }
 
-#recent {
-    max-width: var(--article-width); /* defined in global */
+#featured {
+    /* max-width: var(--article-width); /* defined in global */
+    max-width: 32rem; /* defined in global */
 }
 
+#featuredHeader,
 #recentHeader {
     width: fit-content;
     padding-bottom: 8px;
@@ -14,7 +16,7 @@
     border-bottom: 1px solid var(--accent-med-light);
 }
 
-#recent article {
+#featured article {
     margin-top: 48px;
     margin-bottom: 48px;
     & h3 {
@@ -23,5 +25,10 @@
 }
 
 .gridVideoWrapper {
-    max-width: 500px;
+    max-width: 512px;
+}
+
+img {
+    margin-top: 24px;
+    max-width: 100%;
 }
