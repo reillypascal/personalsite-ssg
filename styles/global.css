@@ -55,7 +55,8 @@ header {
     margin-left: var(--global-margin);
     margin-right: var(--global-margin);
     & hr {
-        color: var(--accent-med-light);
+        border: none;
+        border-bottom: 1px solid var(--accent-med-light);
     }
 }
 
@@ -64,7 +65,8 @@ main {
     margin-left: var(--global-margin);
     margin-right: var(--global-margin);
     & hr {
-        color: var(--accent-med-light);
+        border: none;
+        border-bottom: 1px solid var(--accent-med-light);
     }
 }
 
