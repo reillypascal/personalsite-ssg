@@ -35,11 +35,12 @@
     --accent-dark: #4d1d3e;
 
     /* size variables */
+    --global-margin: 16px;
     --main-width: 50rem;
     --article-width: 45rem;
 }
 
-/* ######## colors ######## */
+/* ######## colors, sizes ######## */
 body {
     background-color: var(--bg-dark);
     color: var(--fg-light);
@@ -50,6 +51,9 @@ body {
 
 header {
     background-color: var(--bg-dark);
+    margin-top: 16px;
+    margin-left: var(--global-margin);
+    margin-right: var(--global-margin);
     & hr {
         color: var(--accent-med-light);
     }
@@ -57,6 +61,8 @@ header {
 
 main {
     /* background-color: var(--bg-dark-highlight); */
+    margin-left: var(--global-margin);
+    margin-right: var(--global-margin);
     & hr {
         color: var(--accent-med-light);
     }
@@ -64,13 +70,39 @@ main {
 
 footer {
     background-color: var(--bg-dark);
+    margin-left: var(--global-margin);
+    margin-right: var(--global-margin);
+    margin-bottom: 32px;
+    & td {
+        padding: 14px 10px 0 0;
+    }
 }
 
-header {
-    /* border-radius: 2px; */
-    /* max-width: var(--main-width); */
+footer::before {
+    content: "";
+    display: block;
+    /* padding-top: 1.5rem; */
+    padding-top: 24px;
+    margin-bottom: 0;
+    border-bottom: 1px solid var(--accent-med-light);
 }
 
+@media screen and (min-width: 960px) {
+    :root {
+        --global-margin: 8%;
+    }
+
+    header {
+        margin-top: 32px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    :root {
+        --global-margin: 12%;
+    }
+}
+
+/* ######## name card ######## */
 #cardName {
     background-color: var(--accent-med-light);
     color: var(--bg-dark);
@@ -89,10 +121,11 @@ header {
     display: grid;
     grid-template-rows: 14px;
     grid-template-columns: 18px;
-    margin-top: 12px;
+    /* margin-top: 8px; */
     margin-bottom: 8px;
 }
-#cardImg, #cardName {
+#cardImg,
+#cardName {
     width: 295px;
     height: 85px;
 }
@@ -191,17 +224,26 @@ input[type="checkbox"]:not(:checked) ~ #blog-dropdown-content {
     display: none;
 }
 
-/* ######## microformats ######## */
-.h-card {
-    display: none;
-}
-
 /* ######## content ######## */
 main {
-    padding: 24px 32px 32px;
+    margin-top: 64px;
+    margin-bottom: 32px;
+    /* padding: 24px 32px 32px;
     margin: 32px;
-    max-width: var(--main-width);
+    max-width: var(--main-width); */
 }
 article {
-    max-width: var(--article-width);
+    /* max-width: var(--article-width); */
+}
+
+blockquote {
+    margin-left: 0;
+    color: hsla(208, 15%, 67%, 1); /* hue from aliceblue */
+    border-left: 1px solid hsla(208, 15%, 67%, 1);
+    padding-left: 12px;
+}
+@media screen and (min-width: 480px) {
+    blockquote {
+        margin-left: 12px;
+    }
 }

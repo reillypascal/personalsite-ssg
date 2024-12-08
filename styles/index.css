@@ -1,0 +1,23 @@
+/* ######## microformats ######## */
+.h-card {
+    display: none;
+}
+
+#recent {
+    max-width: var(--article-width); /* defined in global */
+}
+
+#recentHeader {
+    width: fit-content;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--accent-med-light);
+}
+
+#recent article {
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.gridVideoWrapper {
+    max-width: 500px;
+}
