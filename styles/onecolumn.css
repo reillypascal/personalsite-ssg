@@ -1,10 +1,19 @@
-main {
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-    /* display: grid;
-    place-self: center; */
+main,
+header,
+footer {
     max-width: 45rem;
+}
+
+@media screen and (min-width: 840px) {
+    :root {
+        --global-margin: 12%;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    :root {
+        --global-margin: 18%;
+    }
 }
 
 article {
