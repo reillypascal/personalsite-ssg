@@ -3,10 +3,18 @@ title: Reilly Spitzfaden, Composer
 description: I'm Reilly Spitzfaden, a composer who likes noise, code, electronics, and nostalgia. This site has my music, Max/MSP patches, code, blog, and more.
 canonical_url: https://reillyspitzfaden.com/
 ---
+
+<!-- h-card (hidden) -->
+<div class="h-card">
+    <img class="u-photo" src="./media/profile-400px.png" loading="lazy"/><br />
+    <a class="p-name u-url" rel="me" href="https://reillyspitzfaden.com/">Reilly Spitzfaden</a><br />
+    <p class="p-note">Composer and audio programmer who likes noise, code, electronics, and nostalgia // they/them</p>
+</div>
+
 <main>
     <!-- recent events -->
     <div id="featured">
-        <h2 id="featuredHeader">Featured</h2>
+        <h2 class="sectionHeader">Featured</h2>
         
         <article>
             <h3><a href="https://applytriangle.bandcamp.com/track/if-this-reaches-you"><cite>If this reaches you</cite></a></h3>
@@ -58,7 +66,26 @@ canonical_url: https://reillyspitzfaden.com/
     </div>
     
     <div id="recent">
-        <h2 id="recentHeader">Recently Updated</h2>
+        <h2 class="sectionHeader">Recently Updated</h2>
+        
+        <div id="recentContainer">
+        
+            <div id="recentImg"></div>
+            
+            <div id="recentItems">
+                {% assign recent_posts = collections.post | slice: -3, 3 %}
+                {% for item in recent_posts reversed %}
+                
+                <article>
+                    <h3><a href="{{item.url}}">{{ item.data.title }}</a></h3>
+                    <p>{{ item.data.description }}</p>
+                </article>
+                
+                <div class="dinkus"><p>***</p></div>
+                
+                {% endfor %}
+            </div>
+        </div>
     </div>
 </main>
 

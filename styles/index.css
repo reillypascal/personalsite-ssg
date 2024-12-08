@@ -3,16 +3,17 @@
     display: none;
 }
 
+main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
 #featured {
     max-width: 32rem;
 }
-
-#featuredHeader,
-#recentHeader {
-    width: fit-content;
-    padding-bottom: 8px;
-    margin-bottom: 64px;
-    border-bottom: 1px solid var(--accent-med-light);
+#recent {
+    max-width: 24rem;
 }
 
 #featured article {
@@ -21,6 +22,34 @@
     & h3 {
         margin-bottom: 40px;
     }
+}
+
+#recentContainer {
+    display: grid;
+    grid-template-rows: 20px;
+    grid-template-columns: 20px;
+    /* margin-top: 8px; */
+    margin-bottom: 8px;
+}
+#recentImg {
+    border-radius: 8px;
+    grid-area: 1 / 1;
+    background: url("/media/map_duochrome_1775x425_1.png");
+    width: 360px;
+    height: 615px;
+}
+#recentItems {
+    padding: 16px 20px;
+    border: 1px solid var(--accent-med-light);
+    border-radius: 8px;
+    grid-area: 2 / 2;
+    background-color: var(--bg-dark);
+}
+
+.dinkus {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 4px;
 }
 
 .gridVideoWrapper {

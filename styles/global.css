@@ -54,19 +54,23 @@ header {
     margin-top: 16px;
     margin-left: var(--global-margin);
     margin-right: var(--global-margin);
-    & hr {
-        border: none;
-        border-bottom: 1px solid var(--accent-med-light);
-    }
+    border-bottom: 1px solid var(--accent-med-light);
 }
 
 main {
     /* background-color: var(--bg-dark-highlight); */
+    margin-top: 32px;
+    margin-bottom: 32px;
     margin-left: var(--global-margin);
     margin-right: var(--global-margin);
     & hr {
         border: none;
         border-bottom: 1px solid var(--accent-med-light);
+    }
+}
+@media screen and (min-width: 660px) {
+    main {
+        margin-top: 64px;
     }
 }
 
@@ -89,7 +93,7 @@ footer::before {
     border-bottom: 1px solid var(--accent-med-light);
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 840px) {
     :root {
         --global-margin: 8%;
     }
@@ -152,9 +156,8 @@ footer::before {
 
 nav {
     /* overflow: hidden; */ /* interferes with dropdown sub-menus */
-    margin: 0;
+    margin: 16px 0 8px;
     /* width: vw100; */
-    padding: 8px 16px;
     position: relative;
     display: flex;
     flex-flow: row wrap;
@@ -167,24 +170,21 @@ nav {
         justify-content: left;
     }
 
-    & a,
-    .dropdown-content a {
+    & .navElement {
+        /* margin: 2px 12px 2px 0; */
+        margin-right: 36px;
+        padding-bottom: 8px;
+    }
+
+    /* & a, */
+    & .dropdown-content a {
         padding: 4px 4px;
         display: block;
         width: max-content;
     }
 
-    & .dropbtn {
-        padding: 4px 8px;
-    }
-
     & input[type="checkbox"] {
         display: none;
-    }
-
-    & .navElement {
-        /* margin: 2px 12px 2px 0; */
-        margin-right: 24px;
     }
 
     & .active {
@@ -226,18 +226,6 @@ input[type="checkbox"]:not(:checked) ~ #blog-dropdown-content {
     display: none;
 }
 
-/* ######## content ######## */
-main {
-    margin-top: 64px;
-    margin-bottom: 32px;
-    /* padding: 24px 32px 32px;
-    margin: 32px;
-    max-width: var(--main-width); */
-}
-article {
-    /* max-width: var(--article-width); */
-}
-
 blockquote {
     margin-left: 0;
     color: hsla(208, 15%, 67%, 1); /* hue from aliceblue */
@@ -252,4 +240,21 @@ blockquote {
 
 article p {
     line-height: 1.5;
+}
+
+section {
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.sectionHeader {
+    width: fit-content;
+    padding-bottom: 8px;
+    margin-bottom: 32px;
+    border-bottom: 1px solid var(--accent-med-light);
+}
+@media screen and (min-width: 660px) {
+    .sectionHeader {
+        margin-bottom: 64px;
+    }
 }
