@@ -54,6 +54,32 @@
     --global-margin: 16px;
     --main-width: 50rem;
     --article-width: 45rem;
+    --p-line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+    :root {
+        --global-margin: 4%;
+    }
+
+    header {
+        margin-top: 32px;
+    }
+}
+
+@media screen and (min-width: 860px) {
+    :root {
+        --global-margin: 8%;
+    }
+
+    header {
+        margin-top: 32px;
+    }
+}
+@media screen and (min-width: 1125px) {
+    :root {
+        --global-margin: 12%;
+    }
 }
 
 header,
@@ -148,22 +174,23 @@ footer {
     border-bottom: 1px solid var(--accent-med-light);
 } */
 
-@media screen and (min-width: 840px) {
-    :root {
-        --global-margin: 8%;
-    }
-
-    header {
-        margin-top: 32px;
-    }
-}
-@media screen and (min-width: 1280px) {
-    :root {
-        --global-margin: 12%;
-    }
-}
-
 /* ######## myCard ######## */
+/* #cardContainer {
+    display: inline-flex;
+    flex-flow: row;
+} */
+#cardImg {
+    display: inline-flex;
+    flex-flow: row;
+    & img {
+        padding-right: 32px;
+        width: 64px;
+    }
+}
+#floppy-disk {
+    transform: translateY(4px);
+}
+
 /* #cardContainer {
     display: grid;
     grid-template-rows: 14px auto 14px;
@@ -295,7 +322,7 @@ section {
 
 article p,
 section p {
-    line-height: 1.5;
+    line-height: var(--p-line-height);
 }
 
 section {

@@ -25,6 +25,7 @@ title: Reilly Spitzfaden, Composer
         
         <!-- My styles -->
         <link rel="stylesheet" type="text/css" href="/styles/global.css" />
+        <script src="/styles/menus.js"></script> 
         {% comment %} <script src="/styles/scripts.js"></script> {% endcomment %}
         
         <!-- fonts -->
@@ -94,15 +95,16 @@ title: Reilly Spitzfaden, Composer
         <div class="wrapper">
             <!-- navigation menu -->
             <header>
-                <div id="cardContainer">
+                <!-- <div id="cardContainer"> -->
                     <div id="cardImg">
                         <!-- <img src="/media/map_duochrome_200x250_1.webp" alt="" /> -->
+                        <img src="/media/radio-tower-aliceblue-64px.svg" alt="" id="radio-tower"/>
+                        <img src="/media/save-aliceblue-64px.svg" alt="" id="floppy-disk"/>
                     </div>
-                    <div id="cardName">
+                    <!-- <div id="cardName">
                         <h1><a href="/">Reilly Spitzfaden</a></h1>
-                        <!-- <p>composer<br/>electronic musician<br/>educator</p> -->
                     </div>
-                </div>
+                </div> -->
                 <nav>
                     {% comment %} <a href="/" class="active">Home</a> {% endcomment %}
                     
@@ -112,12 +114,12 @@ title: Reilly Spitzfaden, Composer
                     <input id="menu" type="checkbox" aria-hidden="true" aria-label="Open the menu"/> {% endcomment %}
                     
                     <div id="menuLinks">
-                        <div class="navElement"><a href="/">Home</a></div>
+                        <div class="navElement"><a href="/">Reilly Spitzfaden</a></div>
                         <div class="navElement">
                             <div id="about-dropdown" class="dropdown">
                                 
                                 <label for="about-dropdown-btn" tabindex="0" class="dropbtn">About <img src="/media/icon-caret-down-invert.svg" alt="dropdown menu arrow for 'about'section" /></label>
-                                <input id="about-dropdown-btn" type="checkbox" aria-hidden="true" />
+                                <input id="about-dropdown-btn" type="checkbox" class="dropdown-checkbox" aria-hidden="true" />
                                 
                                 <div id="about-dropdown-content" class="dropdown-content">
                                     <a href="/bio">Bio</a>
@@ -131,7 +133,7 @@ title: Reilly Spitzfaden, Composer
                             <div id="music-dropdown" class="dropdown">
                                 
                                 <label for="music-dropdown-btn" tabindex="0" class="dropbtn">Music <img src="/media/icon-caret-down-invert.svg" alt="dropdown menu arrow for 'music'section" /></label>
-                                <input id="music-dropdown-btn" type="checkbox" aria-hidden="true" />
+                                <input id="music-dropdown-btn" type="checkbox" class="dropdown-checkbox" aria-hidden="true" />
                                 
                                 <div id="music-dropdown-content" class="dropdown-content">
                                     <a href="/shop">Shop</a>
@@ -147,7 +149,7 @@ title: Reilly Spitzfaden, Composer
                             <div id="posts-dropdown" class="dropdown">
                                 
                                 <label for="blog-dropdown-btn" tabindex="0" class="dropbtn">Blog <img src="/media/icon-caret-down-invert.svg" alt="dropdown menu arrow for 'blog'section" /></label>
-                                <input id="blog-dropdown-btn" type="checkbox" aria-hidden="true" />
+                                <input id="blog-dropdown-btn" type="checkbox" class="dropdown-checkbox" aria-hidden="true" />
                                 
                                 <div id="blog-dropdown-content" class="dropdown-content">
                                     <a href="/blog">Posts</a>
