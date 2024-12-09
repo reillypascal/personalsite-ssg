@@ -6,17 +6,17 @@ footer {
 
 @media screen and (min-width: 840px) {
     :root {
-        --global-margin: 12%;
+        --global-margin: 10%;
     }
 }
 
 @media screen and (min-width: 1280px) {
     :root {
-        --global-margin: 18%;
+        --global-margin: 16%;
     }
 }
 
-article {
+/* article {
     margin-top: 32px;
     margin-bottom: 32px;
-}
+} */

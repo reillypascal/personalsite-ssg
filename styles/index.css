@@ -16,30 +16,32 @@ main {
     max-width: 24rem;
 }
 
-#featured article {
+/* #featured article {
     margin-top: 48px;
     margin-bottom: 48px;
     & h3 {
         margin-bottom: 40px;
     }
+} */
+
+article { margin: 56px 0; }
+#recentItems { margin-top: 56px; }
+@media screen and (min-width: 660px) {
+    article { margin: 72px 0; }
+    #recentItems { margin-top: 72px; }
+
 }
 
-#recentContainer {
+/* #recentContainer {
     display: grid;
     grid-template-rows: 20px auto 20px;
     grid-template-columns: 20px auto 20px;
-    /* margin-top: 8px; */
     margin-bottom: 8px;
 }
 #recentImg {
     border-radius: 8px;
     grid-area: 1 / 1 / 3 / 3;
     background: url("/media/map_duochrome_1775x425_1.png");
-    /* padding-right: 20px; */
-    /* width: 360px; */
-    /* width: auto;
-    max-width: 100%; */
-    /* height: 615px; */
 }
 #recentItems {
     padding: 16px 20px;
@@ -47,6 +49,11 @@ main {
     border-radius: 8px;
     grid-area: 2 / 2 / 4 /4;
     background-color: var(--bg-dark);
+} */
+
+#recentItems section {
+    margin-top: 16px;
+    margin-bottom: 16px;
 }
 
 .dinkus {

@@ -17,33 +17,55 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: "Born2bSportyV2";
+    src: url("/styles/fonts/born2bsportyv2/born2bsportyv2-webfont.woff2") format("woff2"),
+        url("/styles/fonts/born2bsportyv2/born2bsportyv2-webfont.woff") format("woff");
+    font-display: swap;
+}
+
 /* http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice */
 /* Avoid using max- and min- widths and heights with the border-box model. They are known to cause browser problems. */
 /* html {box-sizing: border-box;}
 *, *:before, *:after {box-sizing: inherit;} */
 
 :root {
-    /* font-family: "Arimo", sans-serif; */
-    font-family: "Open Sans", sans-serif;
+    font-family: "Arimo", sans-serif;
+    /* font-family: "Open Sans", sans-serif; */
     font-weight: 400;
 
     /* color variables */
     --bg-dark: #111318;
     --bg-dark-highlight: #181720;
     --fg-light: #d2dde6;
-    /* --accent-light: #e09cc9;
-    --accent-med-light: #c387af;
-    --accent-med: #a66a94;
-    --accent-dark: #4d1d3e; */
     --accent-light: #e09cc9;
     --accent-med-light: #c387af;
+    --accent-med: #a66a94;
+    --accent-dark: #4d1d3e;
+    /* --accent-light: #e09cc9;
+    --accent-med-light: #c387af;
     --accent-med: #565973;
-    --accent-dark: #363847;
+    --accent-dark: #363847; */
 
     /* size variables */
     --global-margin: 16px;
     --main-width: 50rem;
     --article-width: 45rem;
+}
+
+header, h1, h2, h3, h4, h5, h6, footer {
+    font-family: "Born2bSportyV2", sans-serif;
+}
+header {
+    font-size: 22px;
+}
+h2 { font-size: 28px; }
+h3 { font-size: 22px; }
+h4 { font-size: 18px; }
+footer { font-size: 18px; }
+#cardName {
+    font-family: "Born2bSportyV2", sans-serif;
+    font-size: 24px;
 }
 
 /* ######## colors, sizes ######## */
@@ -60,7 +82,7 @@ header {
     margin-top: 16px;
     margin-left: var(--global-margin);
     margin-right: var(--global-margin);
-    border-bottom: 6px solid var(--accent-med);
+    border-bottom: 6px solid var(--accent-med-light);
 }
 
 main {
@@ -81,11 +103,12 @@ main {
 }
 
 footer {
-    /* background-color: var(--bg-dark); */
-    background-color: var(--accent-dark);
+    background-color: var(--bg-dark);
+    /* background-color: var(--accent-dark); */
     color: var(--fg-light);
-    padding: 20px 20px;
-    border-radius: 4px;
+    /* padding: 20px 20px; */
+    /* border-radius: 4px; */
+    border-top: 6px solid var(--accent-med-light);
     margin-left: var(--global-margin);
     margin-right: var(--global-margin);
     margin-bottom: 32px;
@@ -120,11 +143,10 @@ footer {
 }
 
 /* ######## myCard ######## */
-#cardContainer {
+/* #cardContainer {
     display: grid;
     grid-template-rows: 14px auto 14px;
     grid-template-columns: 18px auto 18px;
-    /* margin-top: 8px; */
     margin-bottom: 24px;
     width: fit-content;
 }
@@ -136,20 +158,15 @@ footer {
 #cardName {
     background-color: var(--accent-dark);
     color: var(--fg-light);
-    /* background-color: var(--bg-dark);
-    color: var(--fg-light);
-    border: 1px solid var(--accent-med-light); */
     & a {
         color: inherit;
     }
-    /* font-family: "Arimo", sans-serif; */
     box-sizing: border-box;
     marks: none;
-    /* padding: 2px 32px 2px 6px; */
     padding: 2px 24px 2px 24px;
     border-radius: 4px;
     grid-area: 2 / 2 / 4 / 4;
-}
+} */
 
 /* ######## nav menu ######## */
 .icon-svg {
@@ -242,6 +259,19 @@ blockquote {
     }
 }
 
+
+article {
+    margin: 48px 0 ;
+}
+section {
+    margin: 48px 0;
+}
+@media screen and (min-width: 660px) {
+    article {
+        margin: 64px 0 ;
+    }
+}
+
 article p {
     line-height: 1.5;
 }
@@ -254,11 +284,5 @@ section {
 .sectionHeader {
     width: fit-content;
     padding-bottom: 8px;
-    margin-bottom: 32px;
     border-bottom: 1px solid var(--accent-med-light);
-}
-@media screen and (min-width: 660px) {
-    .sectionHeader {
-        margin-bottom: 64px;
-    }
 }

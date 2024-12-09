@@ -30,7 +30,7 @@ canonical_url: https://reillyspitzfaden.com/
             <!-- <i>Cover for <cite>Oxalis Triangularis, Volume 2</cite></i> -->
         </article>
         
-        <hr />
+        {% comment %} <hr /> {% endcomment %}
         
         <article>
             
@@ -49,7 +49,7 @@ canonical_url: https://reillyspitzfaden.com/
             </div>
         </article>
         
-        <hr/>
+        {% comment %} <hr/> {% endcomment %}
         
         <article>
             <h3><a href="https://www.youtube.com/watch?v=Y_inKSy9K0k"><cite>Afterimage from</cite></a></h3>
@@ -76,10 +76,10 @@ canonical_url: https://reillyspitzfaden.com/
                 {% assign recent_posts = collections.post | slice: -3, 3 %}
                 {% for item in recent_posts reversed %}
                 
-                <article>
+                <section>
                     <h3><a href="{{item.url}}">{{ item.data.title }}</a></h3>
                     <p>{{ item.data.description }}</p>
-                </article>
+                </section>
                 
                 <div class="dinkus"><p>***</p></div>
                 

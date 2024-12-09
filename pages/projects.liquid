@@ -4,78 +4,73 @@ description: My projects, including VST/AU plugin programming, handmade electron
 canonical_url: https://reillyspitzfaden.com/projects
 ---
 <main>
-    <div id="projectsContainer">
-        <h2 class="sectionHeader">Plugins</h2>
-        <article id="plugins" class="textBlock">
-            
-            <section>
-                <h3><a href="https://github.com/reillypascal/RSAlgorithmicVerb">RS Algorithmic Verb</a></h3>
-                <p>Retro algorithmic reverb plugin in <a href="https://juce.com/">JUCE</a> with multiple algorithms (including emulations of classic hardware) and more to come. </p>
-                <p>Includes plate and hall reverbs from Dattorro; Gardner's 1992 room reverbs; 4 feedback delay network reverbs using the "<a href="https://www.researchgate.net/publication/344467473_FDNTB_The_Feedback_Delay_Network_Toolbox">FDN Toolbox</a>"; and two experimental/special-effect reverbs. Recently updated for code clarity and maintainability.</p>
-            </section>
-            
-            <hr/>
-            
-            <section>
-                <h3><a href="https://github.com/reillypascal/RSBrokenMedia">RS Broken Media</a></h3>
-                <p>Stereo glitch plugin that records a buffer of recent audio and mangles it, giving tape-warping effects, CD skips, bitcrushing, cell phone codecs, and more.</p>
-                {% comment %}<img src="media/rsbrokenmedia.jpg" alt="The UI of a plugin, showing an 'analog FX,' 'digital FX,' 'distortion FX,' 'clock speed,' 'buffer length,' 'repeats,' and 'dry/wet mix' knob">{% endcomment %}
-            </section>
-            
-            <hr/>
-            
-            <section>
-                <h3><a href="https://github.com/reillypascal/RSTelecom">RS Telecom</a></h3>
-                <p>Lo-fi plugin with options of various telecommunications codecs including Mu-Law and A-Law 8-bit, and GSM 06.10. Work in progress&mdash;more codecs and glitching effects coming soon.</p>
-            </section>
-                
-        </article>
+    <h2 class="sectionHeader">Plugins</h2>
+        
+    <article>
+        <h3><a href="https://github.com/reillypascal/RSAlgorithmicVerb">RS Algorithmic Verb</a></h3>
+        <p>Retro algorithmic reverb plugin in <a href="https://juce.com/">JUCE</a> with multiple algorithms (including emulations of classic hardware) and more to come. </p>
+        <p>Includes plate and hall reverbs from Dattorro; Gardner's 1992 room reverbs; 4 feedback delay network reverbs using the "<a href="https://www.researchgate.net/publication/344467473_FDNTB_The_Feedback_Delay_Network_Toolbox">FDN Toolbox</a>"; and two experimental/special-effect reverbs. Recently updated for code clarity and maintainability.</p>
+    </article>
     
-        {% comment %} <hr />
-        <article id="gemini" class="textBlock">
-            <h3>Gemini and the "Smol Web"</h3>
-            <p>The <a href="https://geminiprotocol.net/">Gemini</a> protocol is a spiritual cousin of the historical <a href="https://en.wikipedia.org/wiki/Gopher_(protocol)">Gopher</a> protocol. It is a lightweight alternative to the HTTP-based internet, designed to resist commercialization, and with a focus on plaintext pages.</p>
-            <p>Gemini requires a specialized browser or web client. See <a href="https://geminiprotocol.net/clients.html">this list</a> for browsers, or enter a Gemini url in the "<a href="http://portal.mozz.us/">Smolnet Portal</a>" web client. I recommend <a href="https://gmi.skyjake.fi/lagrange/">Lagrange</a> &mdash; works with macOS, Windows, and Linux, with iOS and Android betas on TestFlight and F-Droid, respectively.</p>
-            <h4>My Gemini page </h4>
-            <p><a href="gemini://reillypascal.srht.site">gemini://reillypascal.srht.site</a></p>
-            <p>Recently I've found the idea of a smaller, simpler web extremely appealing. Between a love for retro computing and a frustration with the ad-bloated, proprietary, and visually-busy nature of the internet as it exists, projects like the Gemini protocol and the "<a href="https://smolweb.org/index.html">smol web</a>" or "small web" movement seem like a lovely refuge.</p>
-            <p>My Gemini page will be a free-form place to blog or "gemlog" about my code and electronics projects, as well as various other musical, tuning, programming, electronics, and open internet topics of interest to me.</p>
-        </article> {% endcomment %}
+    {% comment %} <hr/> {% endcomment %}
     
-        {% comment %}<hr />
-                <article class="textBlock">
-                <h3>Raspberry Pi Project</h3>
-                <p>End goal of this project: 
-                    <br/>• Take weather sensor data into the pi
-                    <br/>• Use that data to influence an algorithmic composition in SuperCollider
-                    <br/>• Take the audio, sensor data, and a video feed of the weather conditions outside my window, and livecast it all to this page on my website
-                </p>
-                <p>I'm doing it on the pi so it can stay running while I use my computer, and to give me more experience with Linux/Python.</p>
-                <p>Current status:
-                    <br/>• I have the sensors inputting data into SuperCollider (a Python script turns the values to OSC messages)
-                    <br/>• I have the audio stream broadcasting on the local network
-                </p>
-                
-                    <audio id="reillys-pi" controls preload="auto">
-                    <source src="https://streamyouraudio.com/reillys-pi.mp3" type="audio/mp3">
-                </audio> 
+    <article>
+        <h3><a href="https://github.com/reillypascal/RSBrokenMedia">RS Broken Media</a></h3>
+        <p>Stereo glitch plugin that records a buffer of recent audio and mangles it, giving tape-warping effects, CD skips, bitcrushing, cell phone codecs, and more.</p>
+        {% comment %}<img src="media/rsbrokenmedia.jpg" alt="The UI of a plugin, showing an 'analog FX,' 'digital FX,' 'distortion FX,' 'clock speed,' 'buffer length,' 'repeats,' and 'dry/wet mix' knob">{% endcomment %}
+    </article>
     
-                <p>Stay tuned for more updates!</p>
-                
-            </article>{% endcomment %}
+    {% comment %} <hr/> {% endcomment %}
+    
+    <article>
+        <h3><a href="https://github.com/reillypascal/RSTelecom">RS Telecom</a></h3>
+        <p>Lo-fi plugin with options of various telecommunications codecs including Mu-Law and A-Law 8-bit, and GSM 06.10. Work in progress&mdash;more codecs and glitching effects coming soon.</p>
+    </article>
             
-            {% comment %}
-            <br/>
-            <article>
-                <div class="videoList">
-                    <div class="containingBlock">
-                        <h3><i>Electromagnetic Soundwalk,</i> Rochester, NY:</h3>
-                        <div class="videoWrapper">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/iQKfKuEqyYs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                        </div>
+    {% comment %} <hr />
+    <article id="gemini" class="textBlock">
+        <h3>Gemini and the "Smol Web"</h3>
+        <p>The <a href="https://geminiprotocol.net/">Gemini</a> protocol is a spiritual cousin of the historical <a href="https://en.wikipedia.org/wiki/Gopher_(protocol)">Gopher</a> protocol. It is a lightweight alternative to the HTTP-based internet, designed to resist commercialization, and with a focus on plaintext pages.</p>
+        <p>Gemini requires a specialized browser or web client. See <a href="https://geminiprotocol.net/clients.html">this list</a> for browsers, or enter a Gemini url in the "<a href="http://portal.mozz.us/">Smolnet Portal</a>" web client. I recommend <a href="https://gmi.skyjake.fi/lagrange/">Lagrange</a> &mdash; works with macOS, Windows, and Linux, with iOS and Android betas on TestFlight and F-Droid, respectively.</p>
+        <h4>My Gemini page </h4>
+        <p><a href="gemini://reillypascal.srht.site">gemini://reillypascal.srht.site</a></p>
+        <p>Recently I've found the idea of a smaller, simpler web extremely appealing. Between a love for retro computing and a frustration with the ad-bloated, proprietary, and visually-busy nature of the internet as it exists, projects like the Gemini protocol and the "<a href="https://smolweb.org/index.html">smol web</a>" or "small web" movement seem like a lovely refuge.</p>
+        <p>My Gemini page will be a free-form place to blog or "gemlog" about my code and electronics projects, as well as various other musical, tuning, programming, electronics, and open internet topics of interest to me.</p>
+    </article> {% endcomment %}
+
+    {% comment %}<hr />
+            <article class="textBlock">
+            <h3>Raspberry Pi Project</h3>
+            <p>End goal of this project: 
+                <br/>• Take weather sensor data into the pi
+                <br/>• Use that data to influence an algorithmic composition in SuperCollider
+                <br/>• Take the audio, sensor data, and a video feed of the weather conditions outside my window, and livecast it all to this page on my website
+            </p>
+            <p>I'm doing it on the pi so it can stay running while I use my computer, and to give me more experience with Linux/Python.</p>
+            <p>Current status:
+                <br/>• I have the sensors inputting data into SuperCollider (a Python script turns the values to OSC messages)
+                <br/>• I have the audio stream broadcasting on the local network
+            </p>
+            
+                <audio id="reillys-pi" controls preload="auto">
+                <source src="https://streamyouraudio.com/reillys-pi.mp3" type="audio/mp3">
+            </audio> 
+
+            <p>Stay tuned for more updates!</p>
+            
+        </article>{% endcomment %}
+        
+        {% comment %}
+        <br/>
+        <article>
+            <div class="videoList">
+                <div class="containingBlock">
+                    <h3><i>Electromagnetic Soundwalk,</i> Rochester, NY:</h3>
+                    <div class="videoWrapper">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/iQKfKuEqyYs" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
-            </article>{% endcomment %}
-    </div>
+            </div>
+        </article>{% endcomment %}
 </main>
 <link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />

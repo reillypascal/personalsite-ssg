@@ -14,18 +14,20 @@ permalink: /tags/{{ tag }}/
 <main>
     <article class="tagList">
         <h2 class="sectionHeader">Tagged "{{ tag }}"</h2>
-        <hr />
+        {% comment %} <hr /> {% endcomment %}
         {% assign taglist = collections[tag] %}
         {% for post in taglist reversed %}
-            <p class="taggedPostLink"><a href="{{ post.data.canonical_url }}">{{ post.data.title }}</a></p>
-            <p>{{ post.data.description }}</p>
-                <span class="meta-icon">
-                <img src="/media/icon-calendar-ltr.svg" alt="calendar icon" />
-                </span>
-                <span class="meta-text">
-                <time>{{ post.date | date: "%A, %B %d, %Y" }}</time>
-                </span>
-                <hr />
+            <article>
+                <h3 class="taggedPostLink"><a href="{{ post.data.canonical_url }}">{{ post.data.title }}</a></h3>
+                <p>{{ post.data.description }}</p>
+                    <span class="meta-icon">
+                    <img src="/media/icon-calendar-ltr.svg" alt="calendar icon" />
+                    </span>
+                    <span class="meta-text">
+                    <time>{{ post.date | date: "%A, %B %d, %Y" }}</time>
+                    </span>
+                    {% comment %} <hr /> {% endcomment %}
+            </article>
         {% endfor %}
         
     </article>

@@ -10,10 +10,9 @@ pagination:
 ---
 
 <main>
-    <div class="blogPostLinks">
-        <h2>Likes</h2>
+        <h2 class="sectionHeader">Likes</h2>
         <p>Posts I like from around the internet. Formatted using <a href="https://indieweb.org/microformats">Microformats</a>, and sent with <a href="https://indieweb.org/Webmention">Webmentions</a> when available. </p>
-        <hr />
+        {% comment %} <hr /> {% endcomment %}
         
         {% for like in likes %}
         <article>
@@ -25,7 +24,7 @@ pagination:
         <time>{{ like.date | date: "%A, %B %d, %Y" }}</time>
         </span>
         </article>
-        <hr />
+        {% comment %} <hr /> {% endcomment %}
         {% endfor %}
         
         <div class="page-nav-wrapper">
@@ -36,13 +35,13 @@ pagination:
                 <a href="{{pagination.href.next}}">Next Page</a>
             {% endif %}
         </div>
-        
-        <style>
-            .page-nav-wrapper {
-                display: flex;
-                justify-content: space-between;
-            }
-        </style>
-    </div>
 </main>
+
 <link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
+
+<style>
+    .page-nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+</style>

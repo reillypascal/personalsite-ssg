@@ -3,120 +3,110 @@ layout: mainlayout
 title: Reilly Spitzfaden, Composer
 ---
 <!-- page content minus header/footer -->
-<div class="content">
-    <br/>
-    <div id="BGpad">
-        <div id="mainBlog">
-            <!-- post contents -->
-            <!-- ###### data-pagefind-body boolean attribute makes only blog posts indexed ###### -->
-            <article class="textBlock" data-pagefind-body>
-                <h2>{{ title }}</h2>
-                
-                <div class="post-meta">
-                    <span class="meta-icon">
-                        <img src="/media/icon-calendar-ltr.svg" alt="calendar icon" />
-                    </span>
-                    
-                    <span class="meta-text">
-                        <a href="{{ canonical_url }}"><time>{{ date | date: "%A, %B %d, %Y" }}</time></a> 
-                    </span>
-                </div>
-                
-                <div class="post-tags">
-                    Posted in: 
-                    {% assign sorted_categories = tags | sort %}
-                    {% for tag in sorted_categories %}
-                        {% if tag != 'post' %}
-                            <span class="post-tag"><a href="/tags/{{ tag }}">{{ tag }}</a></span>
-                        {% endif %}
-                    {% endfor %}
-                </div>
+<main>
+    <!-- post contents -->
+    <!-- ###### data-pagefind-body boolean attribute makes only blog posts indexed ###### -->
+    <article class="textBlock" data-pagefind-body>
+        <h2>{{ title }}</h2>
+        
+        <div class="post-meta">
+            <span class="meta-icon">
+                <img src="/media/icon-calendar-ltr.svg" alt="calendar icon" />
+            </span>
             
-            {{ content }}
-            
-            </article>
-            
-            <!-- <div class="email-reply">
-                <a href="mailto:reillypascal@gmail.com?subject=Re: {{ title }}">Reply via email</a>
-            </div>
-
-            <div class="post-reactions">
-                <span class="heart-meta">
-                    Post Reactions:
-                </span>
-                
-                <button id="react-btn">
-                    <span class="heart-react">
-                        <img src="/media/icon-heart-pink.svg" alt="heart icon" />
-                    </span>
-                </button>
-
-                <span id="react-ctr"></span>
-            </div> -->
-
-            <!-- <div class="share-openly">
-                <img class="share-openly-icon" src="/media/share-openly.svg">&nbsp;
-                <a href="https://shareopenly.org/share/?url={{ canonical_url }}">Share on the Fediverse</a>
-            </div>  -->
-            
-            <!-- <div class="blogPostAsterism"><p>&#x2042;</p></div> -->
-            <!-- close "main" -->
+            <span class="meta-text">
+                <a href="{{ canonical_url }}"><time>{{ date | date: "%A, %B %d, %Y" }}</time></a> 
+            </span>
         </div>
-    <!-- close "BGpad" -->
+        
+        <div class="post-tags">
+            Posted in: 
+            {% assign sorted_categories = tags | sort %}
+            {% for tag in sorted_categories %}
+                {% if tag != 'post' %}
+                    <span class="post-tag"><a href="/tags/{{ tag }}">{{ tag }}</a></span>
+                {% endif %}
+            {% endfor %}
+        </div>
+    
+    {{ content }}
+    
+    </article>
+    
+    <!-- <div class="email-reply">
+        <a href="mailto:reillypascal@gmail.com?subject=Re: {{ title }}">Reply via email</a>
     </div>
-<!-- end content -->
-</div>
+
+    <div class="post-reactions">
+        <span class="heart-meta">
+            Post Reactions:
+        </span>
+        
+        <button id="react-btn">
+            <span class="heart-react">
+                <img src="/media/icon-heart-pink.svg" alt="heart icon" />
+            </span>
+        </button>
+
+        <span id="react-ctr"></span>
+    </div> -->
+
+    <!-- <div class="share-openly">
+        <img class="share-openly-icon" src="/media/share-openly.svg">&nbsp;
+        <a href="https://shareopenly.org/share/?url={{ canonical_url }}">Share on the Fediverse</a>
+    </div>  -->
+    
+    <!-- <div class="blogPostAsterism"><p>&#x2042;</p></div> -->
+
+    <article>
+        <div class="webmentionForm">
+            <form id="webmention-form" action="https://webmention.io/reillyspitzfaden.com/webmention" method="POST">
+                <h2>Send me a webmention</h2>
+                <p>
+                    <label for="webmention-form">This post accepts <a href="https://en.wikipedia.org/wiki/Webmention">webmentions</a>. If you link to and write about this on your website, you can enter the web address of your post below:</label>
+                </p>
+
+                <input id="webmention-source" type="url" autocomplete="url" required="" pattern="^https?:\/\/(.*)" name="source" placeholder="URL/Permalink of your article" class="error" aria-invalid="true">
+                
+                <input id="webmention-submit" type="submit" name="submit" value="Ping me!">
+
+                <input id="webmention-format" type="hidden" name="format" value="html">
+                <input id="webmention-target" type="hidden" name="target" value="">
+            </form>
+        </div>
+            
+        <div class="commentSection">
+            <form id="comment-form" name="comments" action="" method="POST">
+                <h2>Leave a comment</h2>
+                <fieldset>
+                    <legend>Comment</legend>
+                    <ul>
+                        <li><input type="text" name="name" id="comment-name" placeholder="Name (required)" class="textinput" required="true" aria-required="true"></li>
+                        <li><input type="text" name="email" id="comment-email" placeholder="Email (optional)" class="textinput"></li>
+                        <li><textarea name="comment" id="comment-story" placeholder="Comment (required)" required="true" aria-required="true"></textarea></li>
+                        <li><div id="submit-success"></div><input type="submit" value="Submit" id="submit-comment" ></li>
+                    </ul>
+                </fieldset>
+            </form>
+            <div id="commentDisplay">
+                <h3>User Comments</h3>
+                <input type="submit" id="load-comments" value="Load Comments">
+                <!-- <input type="submit" id="load-comments" value="Load Comments" onclick="this.blur();"> -->
+                <div id="comment-section"></div>
+            </div>
+        </div>
+    </article>
+</main>
 
 <script>
     let blogPostURL = "{{ canonical_url }}";
 </script>
 <script src="/styles/interactions.js"></script>
 
-<div class="content">
-    <div id="commentBGPad">
-        <div id="mainBlog">
-            <div class="webmentionForm">
-                <form id="webmention-form" action="https://webmention.io/reillyspitzfaden.com/webmention" method="POST">
-                    <h2>Send me a webmention</h2>
-                    <p>
-                        <label for="webmention-form">This post accepts <a href="https://en.wikipedia.org/wiki/Webmention">webmentions</a>. If you link to and write about this on your website, you can enter the web address of your post below:</label>
-                    </p>
-
-                    <input id="webmention-source" type="url" autocomplete="url" required="" pattern="^https?:\/\/(.*)" name="source" placeholder="URL/Permalink of your article" class="error" aria-invalid="true">
-                    
-                    <input id="webmention-submit" type="submit" name="submit" value="Ping me!">
-
-                    <input id="webmention-format" type="hidden" name="format" value="html">
-                    <input id="webmention-target" type="hidden" name="target" value="">
-                </form>
-            </div>
-            
-            <div class="commentSection">
-                <form id="comment-form" name="comments" action="" method="POST">
-                    <h2>Leave a comment</h2>
-                    <fieldset>
-                        <legend>Comment</legend>
-                        <ul>
-                            <li><input type="text" name="name" id="comment-name" placeholder="Name (required)" class="textinput" required="true" aria-required="true"></li>
-                            <li><input type="text" name="email" id="comment-email" placeholder="Email (optional)" class="textinput"></li>
-                            <li><textarea name="comment" id="comment-story" placeholder="Comment (required)" required="true" aria-required="true"></textarea></li>
-                            <li><div id="submit-success"></div><input type="submit" value="Submit" id="submit-comment" ></li>
-                        </ul>
-                    </fieldset>
-                </form>
-                <div id="commentDisplay">
-                    <h3>User Comments</h3>
-                    <input type="submit" id="load-comments" value="Load Comments">
-                    <!-- <input type="submit" id="load-comments" value="Load Comments" onclick="this.blur();"> -->
-                    <div id="comment-section"></div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+<link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
+<link rel="stylesheet" type="text/css" href="/styles/forms.css" />
 
 <style>
-
     .post-tags {
         margin-bottom: 16px;
     }

@@ -11,68 +11,67 @@ pagination:
 
 <main>
     <!-- blog contents -->
-    <div class="blogPostLinks">
-        <h2>Blog</h2>
-        <p>A blog about my personal interests, including composition/sound design in <a href="https://en.wikipedia.org/wiki/Max_(software)">Max/MSP</a>, C++ audio plugin development with <a href="https://juce.com/">JUCE</a>, the <a href="https://indieweb.org/">IndieWeb</a>, and web development</p>
+    <h2 class="sectionHeader">Blog</h2>
+    <p>A blog about my personal interests, including composition/sound design in <a href="https://en.wikipedia.org/wiki/Max_(software)">Max/MSP</a>, C++ audio plugin development with <a href="https://juce.com/">JUCE</a>, the <a href="https://indieweb.org/">IndieWeb</a>, and web development</p>
+    
+    <p><a href="/tags">View all tags</a></p>
+    
+    <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+    <script src="/pagefind/pagefind-ui.js"></script>
+    <div id="search"></div>
+    <script>
+        window.addEventListener('DOMContentLoaded', (event) => {
+            new PagefindUI({ element: "#search", showSubResults: true });
+        });
+    </script>
+    
+    {% comment %} <hr /> {% endcomment %}
+    
+    {% for post in posts %}
+    <article>
+    <h3><a href="{{post.url}}">{{ post.data.title }}</a></h3>
+    <p>{{ post.data.description }}</p>
+        <span class="meta-icon">
+        <img src="/media/icon-calendar-ltr.svg" alt="calendar icon" />
+        </span>
+        <span class="meta-text">
+        <time>{{ post.date | date: "%A, %B %d, %Y" }}</time>
+        </span>
+    </article>
+    {% comment %} <hr /> {% endcomment %}
+    {% endfor %}
+    
+    <div class="page-nav-wrapper">
+        {% if pagination.href.previous %}
+            <a href="{{pagination.href.previous}}">Previous Page</a>
+        {% endif %}
+        {% if pagination.href.next %}
+            <a href="{{pagination.href.next}}">Next Page</a>
+        {% endif %}
+    </div>
         
-        <p><a href="/tags">View all tags</a></p>
-        
-        <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
-        <script src="/pagefind/pagefind-ui.js"></script>
-        <div id="search"></div>
-        <script>
-            window.addEventListener('DOMContentLoaded', (event) => {
-                new PagefindUI({ element: "#search", showSubResults: true });
-            });
-        </script>
-        
-        <hr />
-        
-        {% for post in posts %}
-        <article>
-        <h3><a href="{{post.url}}">{{ post.data.title }}</a></h3>
-        <p>{{ post.data.description }}</p>
-            <span class="meta-icon">
-            <img src="/media/icon-calendar-ltr.svg" alt="calendar icon" />
-            </span>
-            <span class="meta-text">
-            <time>{{ post.date | date: "%A, %B %d, %Y" }}</time>
-            </span>
-        </article>
-        <hr />
-        {% endfor %}
-        
-        <div class="page-nav-wrapper">
-            {% if pagination.href.previous %}
-                <a href="{{pagination.href.previous}}">Previous Page</a>
-            {% endif %}
-            {% if pagination.href.next %}
-                <a href="{{pagination.href.next}}">Next Page</a>
-            {% endif %}
-        </div>
-        
-        <style>
-            
-            #search {
-                padding-top: 8px;
-            }
-            @media screen and (min-width: 480px) {
-                #search {
-                    padding-top: 12px;
-                }
-            }
-            @media screen and (min-width: 640px) {
-                #search {
-                    padding-top: 16px;
-                }
-            }
-            .page-nav-wrapper {
-                display: flex;
-                justify-content: space-between;
-            }
-        </style>
     {% comment %} <a href="https://validator.w3.org/feed/check.cgi?url=https%3A//reillyspitzfaden.com/blog/feed.xml" class="RSSValidation"><img src="/media/valid-rss-rogers.png" alt="[Valid RSS]" title="Validate my RSS feed" /></a> {% endcomment %}
     <!--- close blogPostLinks -->
-    </div>
 </main>
+
 <link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
+
+<style>
+    #search {
+        padding-top: 8px;
+    }
+    @media screen and (min-width: 480px) {
+        #search {
+            padding-top: 12px;
+        }
+    }
+    @media screen and (min-width: 640px) {
+        #search {
+            padding-top: 16px;
+        }
+    }
+    .page-nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
