@@ -4,15 +4,14 @@ description: Buy scores and recordings from Reilly Spitzfaden
 canonical_url: https://reillyspitzfaden.com/shop
 ---
 <main>
-    <h2 class="sectionHeader">Shop</h2>
+    {% comment %} <h2 class="sectionHeader">Shop</h2> {% endcomment %}
     
-    <hr />
-    
-    <h3>Purchase Scores:</h3>
-    <p><a href="mailto:reillypascal@gmail.com">Email me</a> to purchase PDF scores and parts. Please indicate in the email which scores you would like to purchase.</p>
-    <p>I can accept payment via <a href="https://www.paypal.com/paypalme/ReillySpitzfaden">PayPal</a> or <a href="https://venmo.com/u/reillypascal">Venmo</a>.
-    <p>For Max/MSP patches and other electronic materials, see <a href="/supplemental">this page</a>.</p>
-    
+    <section>
+        <h2 class="sectionHeader">Purchase Scores:</h2>
+        <p><a href="mailto:reillypascal@gmail.com">Email me</a> to purchase PDF scores and parts. Please indicate in the email which scores you would like to purchase.</p>
+        <p>I can accept payment via <a href="https://www.paypal.com/paypalme/ReillySpitzfaden">PayPal</a> or <a href="https://venmo.com/u/reillypascal">Venmo</a>.</p>
+        <p>For Max/MSP patches and other electronic materials, see <a href="/supplemental">this page</a>.</p>
+    </section>
     {% comment %}<ul id="categories">
         <li>{% list_dingbat %}Shop score categories:</li>
         <li><a href="#2-4-plr">2-4 Players</a></li>
@@ -23,11 +22,9 @@ canonical_url: https://reillyspitzfaden.com/shop
         <li><a href="#other">Fixed Media/Other</a></li> -->
     </ul>{% endcomment %}
     
-    <hr />
-    
-    <h4 id="2-4-plr">Chamber Scores (2–4 Players)</h4>
-    <p>PDF scores with parts: $25 each</p>
-    <div class="shopScores">
+    <article>
+        <h3 class="sectionHeader" id="2-4-plr">Chamber Scores (2–4 Players)</h3>
+        <p>PDF scores with parts: $25 each</p>
         <table>
             <tr>
                 <th>2023</th>
@@ -66,13 +63,11 @@ canonical_url: https://reillyspitzfaden.com/shop
                 <td><a href="https://soundcloud.com/reilly-spitzfaden/in-a-corner"><cite>In a Corner</cite></a> for mezzo-soprano and piano (5’)</td>
             </tr>{% endcomment %}
         </table>
-    </div>
+    </article>
     
-    <hr />
-    
-    <h4 id="5-8-plr">Chamber Scores (5–8 Players)</h4>
-    <p>PDF scores with parts: $30 each</p>
-    <div class="shopScores">
+    <article>
+        <h3 class="sectionHeader" id="5-8-plr">Chamber Scores (5–8 Players)</h3>
+        <p>PDF scores with parts: $30 each</p>
         <table>
             <tr>
                 <th>2019</th>
@@ -91,17 +86,31 @@ canonical_url: https://reillyspitzfaden.com/shop
                 <td><a href="https://www.youtube.com/watch?v=U7tHvdGgFjE"><cite>Resonances</cite></a> for flute, clarinet, percussion, piano, violin, and cello (7’45”)</td>
             </tr>
         </table>
-    </div>
+    </article>
     
-    {% comment %}<h3>Solo Scores</h3> {% endcomment %}
-    
-    {% comment %}
-    <hr />
-    
-    <h3>Purchase Recordings:</h3>
-    {% endcomment %}
-    
+    <article>
+        <h2 class="sectionHeader">Purchase Recordings:</h2>
+
+        <h3><cite>If this reaches you</cite> (2024)</h3>
+        <p>On <cite>Oxalis Triangularis, Volume 2</cite> by Apply Triangle | <a href="https://applytriangle.bandcamp.com/track/if-this-reaches-you">Purchase</a></p>
+
+        <h3><cite>Combination Locks</cite> (2017)</h3>
+        <p>On <cite>HTAM S3E02</cite> by How things are made | <a href="https://howthingsaremade.bandcamp.com/track/reilly-spitzfaden-combination-locks">Purchase</a></p>
+
+        <h3><cite>Nonet, mvt. I</cite> (2014)</h3>
+        <p>On <cite>Statements</cite> by the Michigan State University Music Composition Studio | <a href="https://msucomp.bandcamp.com/track/nonet-for-winds-strings-and-percussion">Purchase</a></p>
+    </article>
+
     <p><a href="#top">Top ⭡</a></p>
 </main>
 
 <link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
+<style>
+    th {    
+        font-weight: 400;
+        padding: 0 1rem 0.5rem 0;
+    }
+    td {
+        padding: 0 1rem 0.5rem 0;
+    }
+</style>

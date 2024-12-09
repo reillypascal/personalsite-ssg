@@ -89,7 +89,7 @@ const handleGetComments = async (event) => {
           let commentDiv = document.createElement("div");
           let commenterName = document.createElement("h3");
           let thisComment = document.createElement("p");
-          let commentDateHR = document.createElement("hr");
+          // let commentDateHR = document.createElement("hr");
           let commentDate = document.createElement("p");
           let commentBreak = document.createElement("br");
 
@@ -101,13 +101,20 @@ const handleGetComments = async (event) => {
           commenterName.textContent = element.name;
           thisComment.textContent = element.comment;
           // commentDateHR.style.color = "#565973";
-          commentDate.textContent = `Date: ${dateObj.getMonth() + 1}-${dateObj.getDate()}-${dateObj.getFullYear()}`;
-          commentDate.style.fontSize = "10pt";
+          commentDate.innerHTML = 
+          `<span class="meta-icon">
+            <img src="/media/icon-calendar-ltr.svg" alt="calendar icon" />
+          </span>
+          
+          <span class="meta-text">
+              <time>${dateObj.getMonth() + 1}-${dateObj.getDate()}-${dateObj.getFullYear()}</time>
+          </span>`;
+          // commentDate.style.fontSize = "10pt";
 
           // add children to div
           commentDiv.appendChild(commenterName);
           commentDiv.appendChild(thisComment);
-          commentDiv.appendChild(commentDateHR);
+          // commentDiv.appendChild(commentDateHR);
           commentDiv.appendChild(commentDate);
 
           // add to document

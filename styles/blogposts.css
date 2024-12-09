@@ -1,0 +1,105 @@
+/* before post */
+.post-meta {
+    margin-bottom: 16px;
+}
+.meta-icon {
+    position: relative;
+    top: 3px;
+}
+.meta-text {
+    margin-left: 3px;
+    /* margin-right: 16px; */
+}
+
+.post-reactions {
+    /* padding-top: 24px; */
+    margin: 16px 0;
+}
+.post-tags {
+    margin-bottom: 16px;
+}
+.post-tag {
+    margin-left: 4px;
+}
+
+/* after post */
+.blogPostAsterism {
+    font-size: 16pt;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+.post-reactions {
+    /* padding-top: 24px; */
+    margin: 16px 0;
+}
+/* https://stackoverflow.com/questions/22672368/how-to-make-a-transparent-html-button */
+#react-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0 4px;
+}
+.heart-react {
+    position: relative;
+    top: 4px;
+    opacity: 0.75;
+}
+#react-btn:not([disabled]) > .heart-react:hover,
+#react-btn:not([disabled]) > .heart-react:focus {
+    opacity: 1;
+}
+#react-btn[disabled] {
+    cursor: not-allowed;
+}
+#react-ctr {
+    font-weight: 300;
+}
+.email-reply {
+    margin: 16px 0;
+}
+.share-openly {
+    margin: 16px 0 0 0;
+}
+.share-openly-icon {
+    position: relative;
+    top: 4px;
+}
+
+/* class name from markdown-it-footnote library */
+/* .footnotes is a <section>, so undo the global formatting */
+.footnotes {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* comments */ 
+#commentBGPad {
+    padding-top: 0;
+    /* padding-bottom: 4rem; */
+    padding-bottom: 64px;
+}
+/* @media screen and (min-width: 860px) {
+    #commentBGPad {
+        margin: 5% 32px;
+    }
+} */
+
+/* #commentDisplay {
+    margin: 0.5rem;
+    margin: 8px;
+} */
+/* .comment {
+    border-radius: 3px;
+    padding: 0.25rem 1rem 0.25rem;
+    padding: 4px 16px 4px;
+    background-color: #303234;
+} */
+.comment > h3 {
+    width: fit-content;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--accent-med-light);
+}

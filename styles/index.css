@@ -56,12 +56,6 @@ article { margin: 56px 0; }
     margin-bottom: 16px;
 }
 
-.dinkus {
-    display: flex;
-    justify-content: center;
-    letter-spacing: 4px;
-}
-
 .gridVideoWrapper {
     max-width: 512px;
 }

@@ -2,36 +2,29 @@
 layout: mainlayout.liquid
 title: Reilly Spitzfaden, Composer
 ---
-<!-- page content minus header/footer -->
-<div class="content">
-    <br/>
-    <div id="BGpad">
-        <div id="mainBlog">
-            <!-- post contents -->
-            <article class="textBlock">
-                
-                {{ content }}
-                
-                <div class="post-meta">
-                    <span class="meta-icon">
-                        <img src="/media/icon-calendar-ltr.svg" alt="calendar icon" />
-                    </span>
-                    
-                    <span class="meta-text">
-                        <a href="{{ canonical_url }}"><time>{{ date | date: "%A, %B %d, %Y" }}</time></a> 
-                    </span>
-                </div>
+<main>
+    <!-- post contents -->
+    <article class="textBlock">
+        
+        {{ content }}
+        
+        <div class="post-meta">
+            <span class="meta-icon">
+                <img src="/media/icon-calendar-ltr.svg" alt="calendar icon" />
+            </span>
             
-            </article>
-            
-            <!-- close "main" -->
+            <span class="meta-text">
+                <a href="{{ canonical_url }}"><time>{{ date | date: "%A, %B %d, %Y" }}</time></a> 
+            </span>
         </div>
-    <!-- close "BGpad" -->
-    </div>
-<!-- end content -->
-</div>
+    
+    </article>      
+</main>
 
 <script>
     var blogPostURL = "{{ url }}";
 </script>
 <script src="{{ root_folder }}/styles/interactions.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/styles/blogposts.css" />
+<link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />

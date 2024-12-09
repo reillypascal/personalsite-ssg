@@ -272,7 +272,7 @@ section {
     }
 }
 
-article p {
+article p, section p {
     line-height: 1.5;
 }
 
@@ -285,4 +285,11 @@ section {
     width: fit-content;
     padding-bottom: 8px;
     border-bottom: 1px solid var(--accent-med-light);
+}
+
+
+.dinkus {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 4px;
 }

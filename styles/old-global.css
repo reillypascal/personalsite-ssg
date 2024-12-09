@@ -985,10 +985,10 @@ li > ul {
         /* margin-top: 1.5rem; */
         margin-top: 24px;
     }
-    .blogPostAsterism {
-        /* padding: 0.25rem 0 0; */
-        /* padding: 4px 0 0; */
-    }
+    /* .blogPostAsterism {
+        padding: 0.25rem 0 0;
+        padding: 4px 0 0;
+    } */
 }
 
 .post-meta {

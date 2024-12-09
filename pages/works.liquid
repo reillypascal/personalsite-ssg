@@ -7,7 +7,7 @@ canonical_url: https://reillyspitzfaden.com/works
     <h2 class="sectionHeader">List of Works</h2>
     
         <section>
-            <h3>Categories</h3>
+            <h3 class="sectionHeader">Categories</h3>
             <ul id="categories">
                 <li><a href="#2-4-plr">2-4 Players</a></li>
                 <li><a href="#5-8-plr">5-8 Players</a></li>
@@ -18,10 +18,10 @@ canonical_url: https://reillyspitzfaden.com/works
             </ul>
         </section>
         
-        <hr/>
+        {% comment %} <hr/> {% endcomment %}
         
         <section>
-            <h3 id="2-4-plr">2-4 Players</h3>
+            <h3 class="sectionHeader" id="2-4-plr">2-4 Players</h3>
             <table>
                 <tr>
                     <th>2024</th>
@@ -80,10 +80,10 @@ canonical_url: https://reillyspitzfaden.com/works
             </table>
         </section>
         
-        <hr />
+        {% comment %} <hr /> {% endcomment %}
         
         <section>
-            <h3 id="5-8-plr">5-8 Players</h3>
+            <h3 class="sectionHeader" id="5-8-plr">5-8 Players</h3>
             <table>
                 <tr>
                     <th>2020</th>
@@ -114,9 +114,10 @@ canonical_url: https://reillyspitzfaden.com/works
             </table>
         </section>
         
-        <hr />
+        {% comment %} <hr /> {% endcomment %}
+
         <section>
-            <h3 id="solo">Solo</h3>
+            <h3 class="sectionHeader" id="solo">Solo</h3>
             <table>
                 <tr>
                     <th>2019</th>
@@ -144,10 +145,10 @@ canonical_url: https://reillyspitzfaden.com/works
             </table>
         </section>
         
-        <hr />
+        {% comment %} <hr /> {% endcomment %}
     
         <section>
-            <h3 id="large-ens">Large Ensemble</h3>
+            <h3 class="sectionHeader" id="large-ens">Large Ensemble</h3>
             <table>
                 <tr>
                     <th>2019</th>
@@ -168,10 +169,10 @@ canonical_url: https://reillyspitzfaden.com/works
             </table>
         </section>
         
-        <hr />
+        {% comment %} <hr /> {% endcomment %}
     
         <section>
-            <h3 id="orch">Orchestra</h3>
+            <h3 class="sectionHeader" id="orch">Orchestra</h3>
             <table>
                 <tr>
                     <th>2014</th>
@@ -180,9 +181,10 @@ canonical_url: https://reillyspitzfaden.com/works
             </table>
         </section>
         
-        <hr />
+        {% comment %} <hr /> {% endcomment %}
+
         <section>
-            <h3 id="other">Fixed Media/Other</h3>
+            <h3 class="sectionHeader" id="other">Fixed Media/Other</h3>
             
             <table>
                 <tr>
@@ -203,3 +205,20 @@ canonical_url: https://reillyspitzfaden.com/works
 </main>
 
 <link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
+<style>
+    #categories {
+        margin: 0;
+        padding: 0;
+    }
+    #categories li {
+        display: inline;
+        padding-right: 0.5rem;
+    }
+    th {    
+        font-weight: 400;
+        padding: 0 1rem 0.5rem 0;
+    }
+    td {
+        padding: 0 1rem 0.5rem 0;
+    }
+</style>
