@@ -87,24 +87,26 @@ title: Reilly Spitzfaden, Composer
         
     </head>
     <body>
+        {% comment %}
         <!-- fixed background - opened and closed here -->
-        <!-- <div class="bg"></div> -->
+        <div class="bg"></div>
         <!-- moving foreground -->
-        <!-- <div class="foreground"> -->
+        <div class="foreground">
+        {% endcomment %}
         <!-- includes footer - makes it fill the page -->
         <div class="wrapper">
             <!-- navigation menu -->
             <header>
-                <!-- <div id="cardContainer"> -->
-                    <div id="cardImg">
-                        <!-- <img src="/media/map_duochrome_200x250_1.webp" alt="" /> -->
-                        <img src="/media/radio-tower-aliceblue-64px.svg" alt="" id="radio-tower"/>
-                        <img src="/media/save-aliceblue-64px.svg" alt="" id="floppy-disk"/>
-                    </div>
-                    <!-- <div id="cardName">
+                {% comment %} <div id="cardContainer"> {% endcomment %}
+                <div id="cardImg">
+                    <!-- <img src="/media/map_duochrome_200x250_1.webp" alt="" /> -->
+                    <img src="/media/radio-tower-aliceblue-64px.svg" alt="" id="radio-tower"/>
+                    <img src="/media/save-aliceblue-64px.svg" alt="" id="floppy-disk"/>
+                </div>
+                    {% comment %} <div id="cardName">
                         <h1><a href="/">Reilly Spitzfaden</a></h1>
                     </div>
-                </div> -->
+                </div> {% endcomment %}
                 <nav>
                     {% comment %} <a href="/" class="active">Home</a> {% endcomment %}
                     
@@ -196,7 +198,9 @@ title: Reilly Spitzfaden, Composer
             </footer>
         <!-- close "wrapper"-->
         </div>
+        {% comment %}
         <!-- close "foreground" (moving page over bg) -->
-        <!-- </div> -->
+        </div>
+        {% endcomment %}
     </body>
 </html>
