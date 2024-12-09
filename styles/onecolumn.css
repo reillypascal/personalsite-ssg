@@ -4,7 +4,7 @@ footer {
     max-width: 45rem;
 }
 
-@media screen and (min-width: 840px) {
+/* @media screen and (min-width: 840px) {
     :root {
         --global-margin: 10%;
     }
@@ -14,7 +14,7 @@ footer {
     :root {
         --global-margin: 16%;
     }
-}
+} */
 
 /* article {
     margin-top: 32px;
