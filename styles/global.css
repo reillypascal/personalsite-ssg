@@ -19,8 +19,11 @@
 
 @font-face {
     font-family: "Born2bSportyV2";
-    src: url("/styles/fonts/born2bsportyv2/born2bsportyv2-webfont.woff2") format("woff2"),
-        url("/styles/fonts/born2bsportyv2/born2bsportyv2-webfont.woff") format("woff");
+    src:
+        url("/styles/fonts/born2bsportyv2/born2bsportyv2-webfont.woff2")
+            format("woff2"),
+        url("/styles/fonts/born2bsportyv2/born2bsportyv2-webfont.woff")
+            format("woff");
     font-display: swap;
 }
 
@@ -53,16 +56,31 @@
     --article-width: 45rem;
 }
 
-header, h1, h2, h3, h4, h5, h6, footer {
+header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+footer {
     font-family: "Born2bSportyV2", sans-serif;
 }
 header {
     font-size: 22px;
 }
-h2 { font-size: 28px; }
-h3 { font-size: 22px; }
-h4 { font-size: 18px; }
-footer { font-size: 20px; }
+h2 {
+    font-size: 28px;
+}
+h3 {
+    font-size: 22px;
+}
+h4 {
+    font-size: 18px;
+}
+footer {
+    font-size: 20px;
+}
 #cardName {
     font-family: "Born2bSportyV2", sans-serif;
     font-size: 24px;
@@ -238,6 +256,7 @@ nav {
     margin-top: 36px;
     border: 1px solid var(--accent-med-light);
     border-radius: 2px;
+    box-shadow: 2px 2px 2px 2px var(--bg-dark);
 }
 
 input[type="checkbox"]:not(:checked) ~ #about-dropdown-content {
@@ -262,20 +281,20 @@ blockquote {
     }
 }
 
-
 article {
-    margin: 48px 0 ;
+    margin: 48px 0;
 }
 section {
     margin: 48px 0;
 }
 @media screen and (min-width: 660px) {
     article {
-        margin: 64px 0 ;
+        margin: 64px 0;
     }
 }
 
-article p, section p {
+article p,
+section p {
     line-height: 1.5;
 }
 
@@ -289,7 +308,6 @@ section {
     padding-bottom: 8px;
     border-bottom: 1px solid var(--accent-med-light);
 }
-
 
 .dinkus {
     display: flex;
