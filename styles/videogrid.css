@@ -1,0 +1,33 @@
+/* Media, projects, supplemental page */
+.videoGrid {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.videoGrid .containingBlock {
+    /* margin-left: 1rem; */
+    /* margin-right: 1rem; */
+    width: 100%;
+}
+.videoList .containingBlock {
+    max-width: 560px;
+}
+.videoWrapper {
+    position: relative;
+    padding-bottom: 60%;
+    height: 0;
+}
+.videoWrapper object,
+.videoWrapper iframe,
+.videoWrapper > lite-youtube > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+@media screen and (min-width: 640px) {
+    .videoGrid .containingBlock {
+        width: 45%;
+    }
+}

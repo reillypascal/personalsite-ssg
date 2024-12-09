@@ -62,7 +62,7 @@ header {
 h2 { font-size: 28px; }
 h3 { font-size: 22px; }
 h4 { font-size: 18px; }
-footer { font-size: 18px; }
+footer { font-size: 20px; }
 #cardName {
     font-family: "Born2bSportyV2", sans-serif;
     font-size: 24px;
@@ -112,8 +112,11 @@ footer {
     margin-left: var(--global-margin);
     margin-right: var(--global-margin);
     margin-bottom: 32px;
+    & table {
+        margin-top: 16px;
+    }
     & td {
-        padding: 14px 10px 0 0;
+        padding: 0 16px 0 0;
     }
 }
 .octothorpes-badge {
