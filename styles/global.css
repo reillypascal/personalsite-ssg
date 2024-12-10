@@ -67,18 +67,18 @@
     }
 }
 
-@media screen and (min-width: 860px) {
+@media screen and (min-width: 940px) {
     :root {
-        --global-margin: 8%;
+        --global-margin: 5%;
     }
 
     header {
         margin-top: 32px;
     }
 }
-@media screen and (min-width: 1125px) {
+@media screen and (min-width: 1280px) {
     :root {
-        --global-margin: 12%;
+        --global-margin: 10%;
     }
 }
 
