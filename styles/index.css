@@ -12,22 +12,22 @@ main {
 @media screen and (min-width: 768px) {
     #column-left {
         /* max-width: 35rem; */
-        max-width: 55%;
+        max-width: 60%;
     }
     #column-right {
         /* max-width: 18rem; */
-        max-width: 37%;
+        max-width: 32%;
     }
 }
 
 @media screen and (min-width: 1125px) {
     #column-left {
         /* max-width: 35rem; */
-        max-width: 57%;
+        max-width: 60%;
     }
     #column-right {
         /* max-width: 18rem; */
-        max-width: 32%;
+        max-width: 30%;
     }
 }
 
