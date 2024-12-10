@@ -245,6 +245,10 @@ nav {
         /* keeps on right side of screen */
         position: absolute;
         right: 0;
+        /* helps on iOS safari? https://stackoverflow.com/questions/14023677/absolute-positioning-messed-up-in-safari */
+        left: auto;
+        top: 0;
+        bottom: 0;
     }
 
     & #menuLinks {
