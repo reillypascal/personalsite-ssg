@@ -191,8 +191,8 @@ footer {
         border-bottom-style: none;
     }
     & a img {
-        padding-right: 26px;
-        width: 64px;
+        padding-right: 18px;
+        /* width: 64px; */
     }
 }
 /* #floppy-disk {
@@ -447,9 +447,16 @@ section {
 /* define global behavior for certain types of content */
 img {
     max-width: 100%;
+    height: auto; /* allows specifying explicit height/width, while still shrinking with page */
 }
+
 pre,
 code {
     white-space: pre-wrap;
     word-wrap: break-word;
+}
+lite-youtube {
+    max-width: 560px; /* also in videogrid.css on container */
+    max-height: auto;
+    aspect-ratio: 16/9 auto;
 }
