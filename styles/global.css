@@ -55,6 +55,7 @@
     --main-width: 50rem;
     --article-width: 45rem;
     --p-line-height: 1.5;
+    --hamburger-menu-breakpoint: 925px;
 }
 
 @media screen and (min-width: 768px) {
@@ -93,7 +94,10 @@ footer {
     font-family: "Born2bSportyV2", sans-serif;
 }
 header {
-    font-size: 22px;
+    font-size: 26px;
+    & .dropdown-content {
+        font-size: 22px;
+    }
 }
 h2 {
     font-size: 28px;
@@ -192,7 +196,7 @@ footer {
     }
 }
 #floppy-disk {
-    transform: translateY(4px);
+    transform: translateY(9px);
 }
 
 /* #cardContainer {
@@ -229,21 +233,25 @@ nav {
     /* overflow: hidden; */ /* interferes with dropdown sub-menus */
     margin: 16px 0 8px;
     /* width: vw100; */
-    position: relative;
+    /* position: relative;
     display: flex;
     flex-flow: row wrap;
-    justify-content: left;
+    justify-content: left; */
+
+    .navIcon {
+        margin-left: auto;
+    }
 
     & #menuLinks {
         /* display: none; */
-        display: flex;
-        flex-flow: row wrap;
+        /* display: flex;
+        flex-flow: row wrap; */
         justify-content: left;
     }
 
     & .navElement {
         /* margin: 2px 12px 2px 0; */
-        margin-right: 36px;
+        /* margin-left: 36px; */
         padding-bottom: 8px;
     }
 
@@ -277,6 +285,24 @@ nav {
     }
 }
 
+@media screen and (min-width: 925px) {
+    nav {
+        margin: 16px 0 16px;
+
+        & .navElement {
+            /* margin: 2px 12px 2px 0; */
+            margin-left: 36px;
+            padding-bottom: 8px;
+        }
+
+        & #menuLinks {
+            /* display: none; */
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: left;
+        }
+    }
+}
 .dropdown-content {
     background-color: var(--bg-dark);
     /* display: none; */
@@ -300,6 +326,40 @@ input[type="checkbox"]:not(:checked) ~ #blog-dropdown-content {
     display: none;
 }
 
+#menuLinks {
+    /* hamburger menu shown unless box not checked */
+    display: block;
+}
+
+/* toggles hamburger menu on/off */
+/* only apply toggle logic if screen is right size */
+@media screen and (max-width: 924px) {
+    input[type="checkbox"]:not(:checked) ~ #menuLinks {
+        /* hamburger menu contents hidden if box not checked */
+        display: none;
+    }
+}
+
+/* Handles switching between hamburger menu and regular */
+@media screen and (min-width: 925px) {
+    nav #menuLinks {
+        display: contents;
+    }
+    nav {
+        position: relative;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: left;
+    }
+    .navIcon {
+        display: none;
+    }
+    .dropdown-content {
+        position: absolute;
+    }
+}
+
+/* types of page content */
 blockquote {
     margin-left: 0;
     color: hsla(208, 15%, 67%, 1); /* hue from aliceblue */
