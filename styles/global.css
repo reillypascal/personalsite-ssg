@@ -107,10 +107,10 @@ h4 {
 footer {
     font-size: 20px;
 }
-#cardName {
+/* #cardName {
     font-family: "Born2bSportyV2", sans-serif;
     font-size: 24px;
-}
+} */
 
 /* ######## colors, sizes ######## */
 body {
@@ -185,6 +185,10 @@ footer {
     & img {
         padding-right: 32px;
         width: 64px;
+    }
+    & a {
+        text-decoration: none;
+        border-bottom-style: none;
     }
 }
 #floppy-disk {
