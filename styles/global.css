@@ -33,8 +33,8 @@
 *, *:before, *:after {box-sizing: inherit;} */
 
 :root {
-    font-family: "Arimo", sans-serif;
-    /* font-family: "Open Sans", sans-serif; */
+    /* font-family: "Arimo", sans-serif; */
+    font-family: "Open Sans", sans-serif;
     font-weight: 400;
 
     /* color variables */
@@ -95,7 +95,7 @@ footer {
 header {
     font-size: 26px;
     & .dropdown-content {
-        font-size: 22px;
+        font-size: 24px;
     }
 }
 h2 {
@@ -270,6 +270,10 @@ nav {
 
     & input[type="checkbox"] {
         display: none;
+        /* iOS Safari workaround */
+        position: absolute;
+        height: 0;
+        width: 0;
     }
 
     & .active {
@@ -393,9 +397,12 @@ section {
     }
 }
 
-article p,
-section p {
-    line-height: var(--p-line-height);
+article,
+section {
+    & p,
+    ul li {
+        line-height: var(--p-line-height);
+    }
 }
 
 section {
@@ -415,6 +422,12 @@ section {
     letter-spacing: 4px;
 }
 
+/* define global behavior for certain types of content */
 img {
     max-width: 100%;
+}
+pre,
+code {
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
