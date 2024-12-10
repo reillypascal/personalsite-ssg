@@ -15,6 +15,11 @@ for = "/*.png"
 Cache-Control = "public, s-max-age=604800"
 
 [[headers]]
+for = "/*.svg"
+[headers.values]
+Cache-Control = "public, s-max-age=604800"
+
+[[headers]]
 for = "/*.webm"
 [headers.values]
 Cache-Control = "public, s-max-age=604800"
