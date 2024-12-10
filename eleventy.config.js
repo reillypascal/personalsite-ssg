@@ -5,6 +5,7 @@ let markdownItFootnote = require("markdown-it-footnote");
 module.exports = function (eleventyConfig) {
   // passthrough copies
   eleventyConfig.addPassthroughCopy("_redirects");
+  eleventyConfig.addPassthroughCopy("google350d63874edcb6ff.html");
   eleventyConfig.addPassthroughCopy("index.js");
   eleventyConfig.addPassthroughCopy("robots.txt");
 
