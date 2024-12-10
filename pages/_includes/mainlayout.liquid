@@ -23,16 +23,18 @@ title: Reilly Spitzfaden, Composer
         <meta name="description" content="{{ description }}" />
         <title>{{ title }}</title>
         <link rel="canonical" href="{{ canonical_url }}" />
-        <link rel="icon" href="/media/favicon-32px.png" type="image/x-icon"/>
+        {% comment %}<link rel="icon" href="/media/favicon-32px.png" type="image/x-icon"/>{% endcomment %}
+        <link rel="icon" type="image/png" href="/media/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/media/favicon.svg" />
+        <link rel="shortcut icon" href="/media/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/media/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="Reilly Spitzfaden" />
+        <link rel="manifest" href="/media/site.webmanifest" />
         
         <!-- My styles -->
         <link rel="stylesheet" type="text/css" href="/styles/global.css" />
         <script src="/styles/menus.js"></script> 
         {% comment %} <script src="/styles/scripts.js"></script> {% endcomment %}
-        
-        <!-- fonts -->
-        <link rel="preconnect" href="https://rsms.me/" />
-        <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
         
         <!-- lite-youtube -->
         <link rel="stylesheet" href="/styles/videos/lite-yt-embed.css" />
@@ -114,11 +116,11 @@ title: Reilly Spitzfaden, Composer
                 <nav>
                     <a href="/" class="navElementHome">Reilly Spitzfaden</a>
                     <!-- <div class="navWrapper"> -->
-                        <label for="menu" tabindex="0" class="navIcon">    
-                            <!-- <img src="/styles/fonts/light-bars-solid.svg" alt="menu button" class="icon-svg" height="15" width="13.125"></img> -->
-                            <img src="/media/menu-aliceblue-32px.svg" alt="menu button" class="icon-svg" height="18" width="24"></img>
-                        </label>
-                        <input id="menu" type="checkbox" aria-hidden="true" aria-label="Open the menu"/> 
+                    <label for="menu" tabindex="0" class="navIcon">    
+                        <!-- <img src="/styles/fonts/light-bars-solid.svg" alt="menu button" class="icon-svg" height="15" width="13.125"></img> -->
+                        <img src="/media/menu-aliceblue-32px.svg" alt="menu button" class="icon-svg" height="18" width="24"></img>
+                    </label>
+                    <input id="menu" type="checkbox" aria-hidden="true" aria-label="Open the menu"/> 
                     <!-- </div> -->
                     <div id="menuLinks">
                     <!-- <div class="navElement"><a href="/">Reilly Spitzfaden</a></div> -->
@@ -162,15 +164,14 @@ title: Reilly Spitzfaden, Composer
                                     <a href="/blog">Posts</a>
                                     <a href="/likes">Likes</a>
                                 </div>
-                                
-                            <!-- </div> -->
+                            </div>
                         </div>
     
                         <div class="navElement"><a href="/projects">Code</a></div>
                         <div class="navElement"><a href="/contact">Contact</a></div>
                         <div class="navElement"><a href="/blog/feed.xml">RSS</a></div>
                     </div>
-                    </div>
+                    <!-- </div> -->
                 </nav>
                 
             </header>
