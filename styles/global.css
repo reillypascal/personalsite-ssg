@@ -186,13 +186,13 @@ footer {
 #cardImg {
     display: inline-flex;
     flex-flow: row;
-    & img {
-        padding-right: 32px;
-        width: 64px;
-    }
     & a {
         text-decoration: none;
         border-bottom-style: none;
+    }
+    & a img {
+        padding-right: 26px;
+        width: 64px;
     }
 }
 #floppy-disk {
