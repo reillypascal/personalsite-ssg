@@ -21,7 +21,7 @@ module.exports = function (eleventyConfig) {
         <a href="mailto:reillypascal@gmail.com?subject=Re: ${title}">Reply via email</a>
     </div>
     <div class="share-openly">
-        <a href="https://shareopenly.org/share/?url=${url}">Share on the Fediverse</a>&nbsp;<img class="share-openly-icon" src="/media/share-openly.svg">
+        <a href="https://shareopenly.org/share/?url=${url}">Share on the Fediverse</a>&nbsp;<img class="share-openly-icon" src="/media/share-openly.svg" width="20" height="20">
     </div>
     <div class="post-reactions">
         <span class="heart-meta">
@@ -29,7 +29,7 @@ module.exports = function (eleventyConfig) {
         </span>
         <button id="react-btn">
             <span class="heart-react">
-                <img src="/media/icon-heart-pink.svg" alt="heart icon" />
+                <img src="/media/icon-heart-pink.svg" alt="heart icon" width="18" height="18" />
             </span>
         </button>
         <span id="react-ctr"></span>
@@ -47,7 +47,7 @@ module.exports = function (eleventyConfig) {
         </span>
         <button id="react-btn">
             <span class="heart-react">
-                <img src="/media/icon-heart-pink.svg" alt="heart icon" />
+                <img src="/media/icon-heart-pink.svg" alt="heart icon" width="18" height="18" />
             </span>
         </button>
         <span id="react-ctr"></span>
