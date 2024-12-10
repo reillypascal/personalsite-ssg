@@ -414,3 +414,7 @@ section {
     justify-content: center;
     letter-spacing: 4px;
 }
+
+img {
+    max-width: 100%;
+}

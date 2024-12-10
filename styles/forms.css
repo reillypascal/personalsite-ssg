@@ -1,10 +1,9 @@
-
 /* webmentions */
 input#webmention-source {
     border: none;
     border-radius: 3px;
     /* padding: 5px; */
-    width: calc(100% - 7em);
+    width: calc(100% - 7.25em);
     font-family: inherit;
     font-size: 0.875em;
     font-weight: 400;
@@ -31,9 +30,9 @@ input#webmention-source:focus {
 input[id="webmention-submit"] {
     float: right;
     text-align: center;
-    width: 4.75em;
+    width: 5.25em;
     padding: 0 2px; /* keeps text from moving right on mobile */
-    height: 1.75em;
+    height: 1.65em;
 }
 input,
 textarea,
@@ -59,16 +58,16 @@ input[type="submit"] {
 input[id="send-email"] {
     display: flex;
     flex: 0 0 3.5em;
-    height: 1.75em;
+    height: 1.65em;
 }
 input[id="submit-comment"] {
     display: flex;
     flex: 0 0 4.5em;
-    height: 1.75em;
+    height: 1.65em;
 }
 input[id="load-comments"] {
-    width: 8.25em;
-    height: 1.75em;
+    width: 8.85em;
+    height: 1.65em;
 }
 
 /* Makes sizing form elements more consistent */
@@ -111,12 +110,13 @@ fieldset {
     flex: 1 1 30em;
 }
 
-input { 
-    font-family: inherit; 
+input {
+    font-family: inherit;
     font-size: 0.875em;
 }
 
-input, textarea {
+input,
+textarea {
     background-color: var(--accent-med-light);
     height: 1.75em;
     border: none;
