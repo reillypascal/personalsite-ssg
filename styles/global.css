@@ -240,8 +240,19 @@ nav {
     /* display: flex;
     flex-flow: row wrap;
     justify-content: left; */
+    /* flex-wrap: wrap; */
+    /* flex-direction: row-reverse; */
 
+    /* #hamburgerWrapper {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: right;
+    } */
+    & a {
+        display: block;
+    }
     .navIcon {
+        /* margin-left: auto; */
         /* keeps on right side of screen */
         position: absolute;
         right: 0;
@@ -270,6 +281,7 @@ nav {
         padding: 6px 4px;
         display: block;
         width: max-content;
+        position: absolute;
     }
 
     & input[type="checkbox"] {
@@ -329,10 +341,15 @@ input[type="checkbox"]:not(:checked) ~ #blog-dropdown-content {
 /* toggles hamburger menu on/off */
 /* only apply toggle logic if screen is right size */
 @media screen and (max-width: 924px) {
+    /* hamburger menu contents hidden if box not checked */
     input[type="checkbox"]:not(:checked) ~ #menuLinks {
-        /* hamburger menu contents hidden if box not checked */
         display: none;
     }
+    /* input[id="menu"]:not(:checked) {
+        #menuLinks {
+            display: none;
+        }
+    } */
 }
 
 /* Handles switching between hamburger menu and regular */
