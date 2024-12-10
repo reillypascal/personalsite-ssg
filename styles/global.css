@@ -257,7 +257,7 @@ nav {
         position: absolute;
         right: 0;
         /* helps on iOS safari? https://stackoverflow.com/questions/14023677/absolute-positioning-messed-up-in-safari */
-        left: auto;
+        /* left: auto; */
         top: 0;
         bottom: 0;
     }
@@ -281,7 +281,8 @@ nav {
         padding: 6px 4px;
         display: block;
         width: max-content;
-        position: absolute;
+        /* makes menu items pile on single line */
+        /* position: absolute; */
     }
 
     & input[type="checkbox"] {
