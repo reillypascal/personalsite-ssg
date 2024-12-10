@@ -225,8 +225,9 @@ footer {
 } */
 
 /* ######## nav menu ######## */
+/* -0.125em was required for old svg */
 .icon-svg {
-    vertical-align: -0.125em;
+    vertical-align: -2px;
 }
 
 nav {
