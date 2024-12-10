@@ -55,7 +55,6 @@
     --main-width: 50rem;
     --article-width: 45rem;
     --p-line-height: 1.5;
-    --hamburger-menu-breakpoint: 925px;
 }
 
 @media screen and (min-width: 768px) {
@@ -130,6 +129,7 @@ header {
     margin-top: 16px;
     margin-left: var(--global-margin);
     margin-right: var(--global-margin);
+    padding-bottom: 8px;
     border-bottom: 6px solid var(--accent-med-light);
 }
 
@@ -231,22 +231,27 @@ footer {
 
 nav {
     /* overflow: hidden; */ /* interferes with dropdown sub-menus */
-    margin: 16px 0 8px;
+    margin: 16px 0 16px;
     /* width: vw100; */
-    /* position: relative;
-    display: flex;
+    position: relative;
+    /* display: flex;
+    justify-content: space-between; */
+    /* display: flex;
     flex-flow: row wrap;
     justify-content: left; */
 
     .navIcon {
-        margin-left: auto;
+        /* keeps on right side of screen */
+        position: absolute;
+        right: 0;
     }
 
     & #menuLinks {
+        margin: 8px 0;
         /* display: none; */
         /* display: flex;
-        flex-flow: row wrap; */
-        justify-content: left;
+        flex-flow: row wrap;
+        justify-content: left; */
     }
 
     & .navElement {
@@ -279,41 +284,22 @@ nav {
         display: inline-block;
     }
 
+    & .dropdown-content {
+        /* adds margins when in hamburger mode */
+        margin: 8px 0;
+    }
+
     & .dropbtn > img {
         fill: var(--fg-light);
         pointer-events: none;
     }
 }
 
-@media screen and (min-width: 925px) {
-    nav {
-        margin: 16px 0 16px;
-
-        & .navElement {
-            /* margin: 2px 12px 2px 0; */
-            margin-left: 36px;
-            padding-bottom: 8px;
-        }
-
-        & #menuLinks {
-            /* display: none; */
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: left;
-        }
-    }
-}
 .dropdown-content {
     background-color: var(--bg-dark);
     /* display: none; */
     display: block;
-    position: absolute; /* ensures dropdown content doesn't shift other elements; was originally position: static; */
     /* z-index: 1; */
-    padding: 12px 12px;
-    margin-top: 36px;
-    border: 1px solid var(--accent-med-light);
-    border-radius: 2px;
-    box-shadow: 2px 2px 2px 2px var(--bg-dark);
 }
 
 input[type="checkbox"]:not(:checked) ~ #about-dropdown-content {
@@ -342,20 +328,42 @@ input[type="checkbox"]:not(:checked) ~ #blog-dropdown-content {
 
 /* Handles switching between hamburger menu and regular */
 @media screen and (min-width: 925px) {
-    nav #menuLinks {
-        display: contents;
+    header {
+        padding-bottom: 0;
     }
     nav {
         position: relative;
         display: flex;
         flex-flow: row wrap;
-        justify-content: left;
-    }
-    .navIcon {
-        display: none;
-    }
-    .dropdown-content {
-        position: absolute;
+        justify-content: space-between;
+
+        & .navIcon {
+            display: none;
+        }
+
+        & .navElement {
+            margin-left: 36px;
+        }
+
+        # .navElementHome {
+            margin-right: auto;
+        }
+
+        & #menuLinks {
+            margin: 0;
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: right;
+        }
+
+        & .dropdown-content {
+            position: absolute; /* ensures dropdown content doesn't shift other elements; was originally position: static; */
+            padding: 12px 12px;
+            /* margin: 36px 0 0 0; */
+            border: 1px solid var(--accent-med-light);
+            border-radius: 2px;
+            box-shadow: 1px 1px 1px 1px var(--bg-dark);
+        }
     }
 }
 

@@ -1,7 +1,17 @@
-main,
+main {
+    max-width: 45rem;
+}
+
+/* main,
 header,
 footer {
     max-width: 45rem;
+} */
+
+.navElement {
+    /* margin: 2px 12px 2px 0; */
+    /* margin-left: 28px; */
+    /* padding-bottom: 8px; */
 }
 
 /* @media screen and (min-width: 840px) {
