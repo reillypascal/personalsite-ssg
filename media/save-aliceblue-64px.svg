@@ -4,14 +4,34 @@
    viewBox="0 0 24 24"
    version="1.1"
    id="svg1"
-   width="24"
-   height="24"
+   sodipodi:docname="save-aliceblue-64px.svg"
+   inkscape:version="1.4 (e7c3feb1, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
      id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="17.630212"
+     inkscape:cx="12.081534"
+     inkscape:cy="11.202361"
+     inkscape:window-width="1304"
+     inkscape:window-height="916"
+     inkscape:window-x="62"
+     inkscape:window-y="38"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg1" />
   <path
-     d="M 2,0 H 16 V 2 H 2 v 16 h 2 v -6 h 12 v 6 h 2 V 4 h 2 V 20 H 0 V 0 Z m 4,18 h 8 V 14 H 6 Z M 18,4 H 16 V 2 h 2 z M 4,4 h 9 V 8 H 4 Z"
+     d="M4 2h14v2H4v16h2v-6h12v6h2V6h2v16H2V2h2zm4 18h8v-4H8v4zM20 6h-2V4h2v2zM6 6h9v4H6V6z"
      fill="currentColor"
      id="path1"
      style="fill:#f0f8ff;fill-opacity:1" />

@@ -185,7 +185,7 @@ footer {
 } */
 #cardImg {
     display: inline-flex;
-    flex-flow: row;
+    flex-flow: row wrap;
     & a {
         text-decoration: none;
         border-bottom-style: none;
@@ -195,9 +195,9 @@ footer {
         width: 64px;
     }
 }
-#floppy-disk {
+/* #floppy-disk {
     transform: translateY(9px);
-}
+} */
 
 /* #cardContainer {
     display: grid;
