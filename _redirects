@@ -12,3 +12,16 @@ http://reillyspitzfaden.com/blogposts/* http://reillyspitzfaden.com/blog/:splat 
 # CV updates
 https://reillyspitzfaden.com/documents/spitzfaden-CV-2023.pdf https://reillyspitzfaden.com/documents/spitzfaden-CV-2024.pdf 301!
 http://reillyspitzfaden.com/documents/spitzfaden-CV-2023.pdf http://reillyspitzfaden.com/documents/spitzfaden-CV-2024.pdf 301!
+
+# eleventy site migration: blog posts
+https://reillyspitzfaden.com/blog/01-03-2024 https://reillyspitzfaden.com/posts/2024/01/hello-world/ 301!
+http://reillyspitzfaden.com/blog/01-03-2024 http://reillyspitzfaden.com/posts/2024/01/hello-world/ 301!
+
+https://reillyspitzfaden.com/blog/01-14-2024 https://reillyspitzfaden.com/posts/2024/01/do-read-the-comments/ 301!
+http://reillyspitzfaden.com/blog/01-14-2024 http://reillyspitzfaden.com/posts/2024/01/do-read-the-comments/ 301!
+
+https://reillyspitzfaden.com/blog/02-27-2024 https://reillyspitzfaden.com/posts/2024/02/composition-journal/ 301!
+http://reillyspitzfaden.com/blog/02-27-2024 http://reillyspitzfaden.com/posts/2024/02/composition-journal/ 301!
+
+https://reillyspitzfaden.com/blog/03-01-2024 https://reillyspitzfaden.com/posts/2024/03/reading-and-listening/ 301!
+http://reillyspitzfaden.com/blog/03-01-2024 http://reillyspitzfaden.com/posts/2024/03/reading-and-listening/ 301!
