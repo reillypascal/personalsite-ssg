@@ -298,6 +298,7 @@ nav {
 
     & input[type="checkbox"] {
         display: none;
+        visibility: hidden;
         /* iOS Safari workaround */
         --webkit-appearance: none;
         /* position: absolute;
