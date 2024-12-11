@@ -292,9 +292,10 @@ nav {
     & input[type="checkbox"] {
         display: none;
         /* iOS Safari workaround */
-        position: absolute;
+        --webkit-appearance: none;
+        /* position: absolute;
         height: 0;
-        width: 0;
+        width: 0; */
     }
 
     & .active {
