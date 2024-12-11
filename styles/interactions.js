@@ -57,7 +57,8 @@ const handleGetComments = async (event) => {
   // display spinner
   let spinnerBreak = document.createElement("br");
   let spinner = document.createElement("img");
-  spinner.src = "/media/Rolling-1s-64px.gif";
+  // spinner.src = "/media/Rolling-1s-64px.gif";
+  spinner.src = "/media/Rolling@1x-1.0s-64px-64px.svg";
   parentDiv.appendChild(spinnerBreak);
   parentDiv.appendChild(spinner);
 
@@ -101,8 +102,7 @@ const handleGetComments = async (event) => {
           commenterName.textContent = element.name;
           thisComment.textContent = element.comment;
           // commentDateHR.style.color = "#565973";
-          commentDate.innerHTML = 
-          `<span class="meta-icon">
+          commentDate.innerHTML = `<span class="meta-icon">
             <img src="/media/icon-calendar-ltr.svg" alt="calendar icon" />
           </span>
           
