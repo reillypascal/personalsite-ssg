@@ -1,4 +1,2 @@
-require('dotenv').config();
-require('@supabase/supabase-js');
-// require('lite-youtube-embed');
-// require("https");
+require("dotenv").config();
+require("@supabase/supabase-js");
