@@ -376,9 +376,9 @@ input[type="checkbox"]:not(:checked) ~ #blog-dropdown-content {
             margin-left: 36px;
         }
 
-        # .navElementHome {
+        /* & .navElementHome {
             margin-right: auto;
-        }
+        } */
 
         & #menuLinks {
             margin: 0;
