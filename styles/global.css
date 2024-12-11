@@ -8,14 +8,14 @@
     font-display: swap;
 } */
 
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
 
 @font-face {
     font-family: "Open Sans";
     src: local("Open Sans"),
         url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
     font-display: swap;
-}
+} */
 
 @font-face {
     font-family: "Born2bSportyV2";
@@ -24,6 +24,25 @@
             format("woff2"),
         url("/styles/fonts/born2bsportyv2/born2bsportyv2-webfont.woff")
             format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Open Sans";
+    src:
+        url("/styles/fonts/opensans/opensans-variablefont_wdthwght-webfont.woff2")
+            format("woff2"),
+        url("/styles/fonts/opensans/opensans-variablefont_wdthwght-webfont.woff")
+            format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Open Sans";
+    src:
+        url("/styles/fonts/opensans/opensans-italic-variablefont_wdthwght-webfont.woff2")
+            format("woff2"),
+        url("/styles/fonts/opensans/opensans-italic-variablefont_wdthwght-webfont.woff")
+            format("woff");
+    font-style: italic;
     font-display: swap;
 }
 
