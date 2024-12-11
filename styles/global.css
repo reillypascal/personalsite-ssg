@@ -59,9 +59,8 @@
     /* color variables */
     /* --bg-dark: #111318; */
     /* --bg-dark: #181920; */
-    /* --bg-dark: #191c22; */
-    /* --bg-dark: #191b22; */
-    --bg-dark: #191a22;
+    /* --bg-dark: #191a22; */
+    --bg-dark: hsl(233deg 16% 14%);
     --bg-dark-highlight: #181720;
     --fg-light: #d2dde6;
     --accent-light: #e09cc9;
