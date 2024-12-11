@@ -198,8 +198,8 @@ a:active {
     display: inline-flex;
     flex-flow: row wrap;
     & a {
-        text-decoration: none;
-        border-bottom-style: none;
+        text-decoration: none !important;
+        border-bottom-style: none !important;
     }
     & a img {
         padding-right: 18px;
@@ -297,10 +297,11 @@ nav {
     }
 
     & input[type="checkbox"] {
+        /* appearance: none;
         display: none;
-        visibility: hidden;
+        visibility: hidden; */
         /* iOS Safari workaround */
-        --webkit-appearance: none;
+        /* --webkit-appearance: none; */
         /* position: absolute;
         height: 0;
         width: 0; */
@@ -328,6 +329,13 @@ nav {
         fill: var(--fg-light);
         pointer-events: none;
     }
+}
+
+input[type="checkbox"] {
+    appearance: none !important;
+    --webkit-appearance: none !important;
+    display: none !important;
+    visibility: hidden !important;
 }
 
 .dropdown-content {
