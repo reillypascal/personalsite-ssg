@@ -330,7 +330,7 @@ nav {
         /* position: absolute; */
     }
 
-    & input[type="checkbox"] {
+    /* & input[type="checkbox"] { */
         /* appearance: none;
         display: none;
         visibility: hidden; */
@@ -339,7 +339,7 @@ nav {
         /* position: absolute;
         height: 0;
         width: 0; */
-    }
+    /* } */
 
     & .active {
         margin-right: auto;
