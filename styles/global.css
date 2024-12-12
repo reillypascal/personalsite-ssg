@@ -1,21 +1,4 @@
 /* fonts */
-/* @import url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap");
-
-@font-face {
-    font-family: "Arimo";
-    src: local("Arimo"),
-        url("https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap");
-    font-display: swap;
-} */
-
-/* @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-
-@font-face {
-    font-family: "Open Sans";
-    src: local("Open Sans"),
-        url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
-    font-display: swap;
-} */
 
 @font-face {
     font-family: "Born2bSportyV2";
@@ -27,6 +10,28 @@
     font-display: swap;
 }
 @font-face {
+    font-family: "Proza Libre";
+    src:
+        url("/styles/fonts/prozalibre/prozalibre-regular-webfont.woff2")
+            format("woff2"),
+        url("/styles/fonts/prozalibre/prozalibre-regular-webfont.woff")
+            format("woff");
+    font-weight: 400;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Proza Libre";
+    src:
+        url("/styles/fonts/prozalibre/prozalibre-italic-webfont.woff2")
+            format("woff2"),
+        url("/styles/fonts/prozalibre/prozalibre-italic-webfont.woff")
+            format("woff");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+/* @font-face {
     font-family: "Open Sans";
     src:
         url("/styles/fonts/opensans/opensans-variablefont_wdthwght-webfont.woff2")
@@ -44,7 +49,7 @@
             format("woff");
     font-style: italic;
     font-display: swap;
-}
+} */
 
 /* http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice */
 /* Avoid using max- and min- widths and heights with the border-box model. They are known to cause browser problems. */
@@ -52,8 +57,9 @@
 *, *:before, *:after {box-sizing: inherit;} */
 
 :root {
-    /* font-family: "Arimo", sans-serif; */
-    font-family: "Open Sans", sans-serif;
+    /* font-family: "Alegreya Sans", sans-serif; */
+    /* font-family: "Open Sans", sans-serif; */
+    font-family: "Proza Libre", sans-serif;
     font-weight: 400;
 
     /* color variables */
@@ -77,6 +83,13 @@
     --main-width: 50rem;
     --article-width: 45rem;
     --p-line-height: 1.5;
+}
+
+p,
+ul li,
+blockquote,
+table {
+    /* font-size: 1.05em; */
 }
 
 @media screen and (min-width: 768px) {
@@ -115,22 +128,22 @@ footer {
     font-family: "Born2bSportyV2", sans-serif;
 }
 header {
-    font-size: 26px;
+    font-size: 1.625em;
     & .dropdown-content {
-        font-size: 24px;
+        font-size: 0.95em;
     }
 }
 h2 {
-    font-size: 28px;
+    font-size: 1.75em;
 }
 h3 {
-    font-size: 22px;
+    font-size: 1.375em;
 }
 h4 {
-    font-size: 18px;
+    font-size: 1.125em;
 }
 footer {
-    font-size: 20px;
+    font-size: 1.25em;
 }
 /* #cardName {
     font-family: "Born2bSportyV2", sans-serif;
