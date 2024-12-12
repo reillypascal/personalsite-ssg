@@ -43,7 +43,8 @@ main {
     font-size: 1.5em;
 }
 #about-name {
-    color: var(--accent-med-bright);
+    color: var(--accent-med-light);
+    /* color: var(--accent-med-bright); */
 }
 
 article {
