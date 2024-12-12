@@ -278,6 +278,8 @@ nav {
     margin: 16px 0 16px;
     /* width: vw100; */
     position: relative;
+    display: grid;
+    grid-template: 1em / auto auto;
     /* display: flex;
     justify-content: space-between; */
     /* display: flex;
@@ -295,14 +297,14 @@ nav {
         display: block;
     }
     .navIcon {
-        /* margin-left: auto; */
         /* keeps on right side of screen */
-        position: absolute !important;
-        right: 0 !important;
+        margin-left: auto;
+        /* position: absolute !important;
+        right: 0 !important; */
         /* helps on iOS safari? https://stackoverflow.com/questions/14023677/absolute-positioning-messed-up-in-safari */
         /* left: auto; */
-        top: 0;
-        bottom: 0;
+        /* top: 0;
+        bottom: 0; */
     }
 
     & #menuLinks {
