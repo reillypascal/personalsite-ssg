@@ -9,7 +9,28 @@
             format("woff");
     font-display: swap;
 }
+
 @font-face {
+    font-family: "Open Sans";
+    src:
+        url("/styles/fonts/opensans/opensans-variablefont_wdthwght-webfont.woff2")
+            format("woff2"),
+        url("/styles/fonts/opensans/opensans-variablefont_wdthwght-webfont.woff")
+            format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: "Open Sans";
+    src:
+        url("/styles/fonts/opensans/opensans-italic-variablefont_wdthwght-webfont.woff2")
+            format("woff2"),
+        url("/styles/fonts/opensans/opensans-italic-variablefont_wdthwght-webfont.woff")
+            format("woff");
+    font-style: italic;
+    font-display: swap;
+}
+
+/* @font-face {
     font-family: "Proza Libre";
     src:
         url("/styles/fonts/prozalibre/prozalibre-regular-webfont.woff2")
@@ -29,26 +50,6 @@
     font-weight: 400;
     font-style: italic;
     font-display: swap;
-}
-
-/* @font-face {
-    font-family: "Open Sans";
-    src:
-        url("/styles/fonts/opensans/opensans-variablefont_wdthwght-webfont.woff2")
-            format("woff2"),
-        url("/styles/fonts/opensans/opensans-variablefont_wdthwght-webfont.woff")
-            format("woff");
-    font-display: swap;
-}
-@font-face {
-    font-family: "Open Sans";
-    src:
-        url("/styles/fonts/opensans/opensans-italic-variablefont_wdthwght-webfont.woff2")
-            format("woff2"),
-        url("/styles/fonts/opensans/opensans-italic-variablefont_wdthwght-webfont.woff")
-            format("woff");
-    font-style: italic;
-    font-display: swap;
 } */
 
 /* http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice */
@@ -58,8 +59,8 @@
 
 :root {
     /* font-family: "Alegreya Sans", sans-serif; */
-    /* font-family: "Open Sans", sans-serif; */
-    font-family: "Proza Libre", sans-serif;
+    font-family: "Open Sans", sans-serif;
+    /* font-family: "Proza Libre", sans-serif; */
     font-weight: 400;
 
     /* color variables */
