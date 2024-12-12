@@ -69,13 +69,19 @@
     /* --bg-dark: #191a22; */
     /* --fg-light: #d2dde6; */
 
-    --bg-dark: hsl(243, 15%, 14%);
-    --bg-dark-highlight: hsl(247, 16%, 11%);
-    --fg-light: hsl(208, 95%, 95%);
-    --fg-med-light: hsl(208, 15%, 73%);
+    /* --bg-dark: hsl(243deg 16% 14%);
+    --fg-light: #d2dde6;
+    --fg-med-light: hsla(208, 15%, 67%, 1); */
 
-    --accent-light: #e09cc9;
-    --accent-med-light: #c387af;
+    --bg-dark: hsl(243, 23%, 11%);
+    --fg-light: hsl(221, 80%, 95%);
+    --fg-med-light: hsl(243, 32%, 82%);
+
+    --accent-light: hsl(311, 65%, 85%);
+    --accent-med-light: hsl(311, 35%, 65%);
+    
+    /* --accent-light: #e09cc9;
+    --accent-med-light: #c387af; */
     --accent-med: #a66a94;
     --accent-dark: #4d1d3e;
 
