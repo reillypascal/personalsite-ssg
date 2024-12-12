@@ -73,12 +73,12 @@
     --fg-light: #d2dde6;
     --fg-med-light: hsla(208, 15%, 67%, 1); */
 
-    --bg-dark: hsl(243, 23%, 11%);
-    --fg-light: hsl(221, 80%, 95%);
-    --fg-med-light: hsl(243, 32%, 82%);
+    --bg-dark: hsl(227, 35%, 8%);
+    --fg-light: hsl(227, 87%, 95%);
+    --fg-med-light: hsl(227, 20%, 67%);
 
-    --accent-light: hsl(311, 65%, 85%);
-    --accent-med-light: hsl(311, 35%, 65%);
+    --accent-med-bright: hsl(317, 70%, 70%);
+    --accent-med-light: hsl(317, 35%, 65%);
     
     /* --accent-light: #e09cc9;
     --accent-med-light: #c387af; */
