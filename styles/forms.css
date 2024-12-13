@@ -49,7 +49,7 @@ input[id="submit-comment"] {
     flex: 0 0 4.5em;
 }
 input[id="load-comments"] {
-    width: 8.85em;
+    width: 9em;
 }
 
 /* Makes sizing form elements more consistent */
@@ -90,18 +90,20 @@ fieldset {
 }
 
 input {
-    font-family: inherit;
-    font-size: 0.875em;
     padding: 2px 5px;
 }
 
 input,
 textarea {
     color: var(--bg-dark) !important;
+    -webkit-text-fill-color: var(--bg-dark) !important;
     background-color: var(--accent-med-light) !important;
     height: 1.75em;
     border: none;
     border-radius: 3px;
+    font-family: inherit;
+    font-size: 0.875em;
+    font-weight: 400 !important;
 }
 
 textarea {
@@ -110,9 +112,6 @@ textarea {
     border: none;
     border-radius: 3px;
     padding: 5px;
-    font-family: inherit;
-    font-size: 0.875em;
-    font-weight: 400;
     line-height: 1.25;
     resize: none;
     overflow: auto;
