@@ -14,7 +14,7 @@ permalink: /tags/{{ tag }}/
 ---
 <main>
     <article class="tagList">
-        <h2 class="sectionHeader">Tagged "{{ tag }}"</h2>
+        <h2 class="sectionHeader">#{{ tag }}</h2>
         {% comment %} <hr /> {% endcomment %}
         {% assign taglist = collections[tag] %}
         {% for post in taglist reversed %}
