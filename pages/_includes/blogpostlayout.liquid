@@ -28,13 +28,13 @@ title: Reilly Spitzfaden, Composer
         {% endfor %}
     </div>
 
-    <article data-pagefind-body>    
+    <article data-pagefind-body>
     
-    {{ content }}
-    
+        {{ content }}
+
     </article>
     
-    <!-- <div class="email-reply">
+    {% comment %} <div class="email-reply">
         <a href="mailto:reillypascal@gmail.com?subject=Re: {{ title }}">Reply via email</a>
     </div>
 
@@ -50,14 +50,14 @@ title: Reilly Spitzfaden, Composer
         </button>
 
         <span id="react-ctr"></span>
-    </div> -->
+    </div> 
 
-    <!-- <div class="share-openly">
+    <div class="share-openly">
         <img class="share-openly-icon" src="/media/share-openly.svg">&nbsp;
         <a href="https://shareopenly.org/share/?url={{ canonical_url }}">Share on the Fediverse</a>
-    </div>  -->
+    </div>
     
-    <!-- <div class="blogPostAsterism"><p>&#x2042;</p></div> -->
+    <div class="blogPostAsterism"><p>&#x2042;</p></div> {% endcomment %}
 
     <article>
         <div class="webmentionForm">
@@ -92,7 +92,7 @@ title: Reilly Spitzfaden, Composer
             <div id="commentDisplay">
                 <h2 class="sectionHeader">Comments</h2>
                 <input type="submit" id="load-comments" value="Load Comments">
-                <!-- <input type="submit" id="load-comments" value="Load Comments" onclick="this.blur();"> -->
+                {% comment %} <input type="submit" id="load-comments" value="Load Comments" onclick="this.blur();"> {% endcomment %}
                 <div id="comment-section"></div>
             </div>
         </div>
