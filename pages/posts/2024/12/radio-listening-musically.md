@@ -33,16 +33,33 @@ As I scan through the shortwave bands, I notice feelings of loneliness and the s
 ### Telecommunications Sounds in Music
 I'll now discuss some compositions (both others' and my own) that incorporate radio signals as an illustration of how these sounds can be heard as musical. 
 
-John Cage, *Imaginary Landscape, No. 4* (8)
+John Cage's [*Imaginary Landscape No. 4* (1951)](https://en.wikipedia.org/wiki/Imaginary_Landscape_No._4_(March_No._2)) is one classic example of this. The piece is written for 24 performers playing 12 radios as musical instruments. For each radio, one performer controls tuning between stations, and another controls loudness and tone color. Cage composed the piece using chance procedures from the [*I Ching*](https://en.wikipedia.org/wiki/I_Ching) or "Book of Changes" — a classic Chinese divination manual. In addition to the composition process, the performance also involves elements of chance — the sounds coming out of the radio are anything on the airwaves that day, including talk, music, and white noise. I'm including [several](https://www.youtube.com/watch?v=oPfwrFl1FHM) [different](https://www.youtube.com/watch?v=buHYowtQz5w) [recording](https://www.youtube.com/watch?v=0GeiEjJLStA) [links](https://www.youtube.com/watch?v=fz9lRPU51ME) here to show the variety of ways this composition can sound.
 
-William Basinski, *Shortwavemusic*
-(also known for disintegration loops, the river) (4)
+In *Silence: Lectures and Writings*, ^[ See page 59 [here](https://monoskop.org/images/b/b5/Cage_John_Silence_Lectures_and_Writings.pdf) ] Cage writes about his use of chance procedures in *Imaginary Landscape No. 4*:
+> It is thus possible to make a musical composition the continuity of
+which is free of individual taste and memory (psychology) and also of the
+literature and "traditions" of the art.
 
-Nicolas Collins, *Devil's Music* (11)
+In other words, the composer's tastes and preferences are informed by experience of previous music, and if they write based on those preferences, the composition will be informed by previous works. Cage saw removing preference from the equation as a way to create music that was completely new and that broke with tradition.
 
-Anna Friz, *Respire* (17)
+Anna Friz's [*You are far from us* (2006–2008)](https://nicelittlestatic.com/sound-radio-artworks/you-are-far-from-us/) uses 4 FM transmitters and 60–100 small receivers suspended in the air in a darkened gallery. The receivers are tuned to one of the four transmitters, and the transmitters are tuned so their signals overlap. As a result of this overlap, the receivers
+> twitter and oscillate with sounds created by the interactions between transmitters, receivers, and audience members. As people walk among the radios, their bodies also cause sudden eruptions of static and signal.
 
-Sawako Kato, *2.4GHz Scape* (20)
+The sounds of two stations overlapping, or of driving so that a bridge, building, or other object comes between the listener and station are familiar, but usually undesirable. As Cathy van Eck describes in *Between Air and Electricity*, ^[ An open-access copy is available online [here](https://www.bloomsburycollections.com/monograph?docid=b-9781501327636). See pp. 35–36. ] audiences have long been in the habit of listening through the noise of recordings (or in this case, broadcasts), meaning that these interference noises often fall below the level of perception. By composing these noises into the music, Friz pulls them from outside our perception into the category of "musical" sounds.
+
+In creating one of the samples I used in <a href="https://www.youtube.com/watch?v=YtSerbT7C5A"><cite>Outlive everything you know</cite></a>, I took a similar approach to using radio interference. I played a loop of sampled piano/synth through a cheap [FM transmitter](https://www.fivebelow.com/products/wireless-fm-transmitter-for-car) meant to connect to a car radio, and walked around my house, finding the points where adjacent radio stations start to interfere as my signal becomes fainter or obstructed. The recording sounds like this:
+
+<audio controls>
+    <source src="/media/blog/2024/12/80bpm-house-chord-fm-210806_05.15.mp3" type="audio/mp3">
+</audio>
+
+At 1:20 and 5:09 in the recording below, I process that sample in two different ways. At 1:20, the sampler (controlled by a MIDI keyboard) loops short snippets of the sample, adding clicks to the beginning of each loop and making the result sound like a skipping CD. At 5:09, I use [granular synthesis](https://en.wikipedia.org/wiki/Granular_synthesis), chopping the sample into small "grains" that smoothly overlap. This transforms each chord into a sustained, shimmering sound that still contains some of the character of the radio interference. In contrast with Anna Friz's composition, the radio interference-laden chords are a starting place for further processing in my piece.
+
+<div class="containingBlock">
+    <div class="videoWrapper">
+        <lite-youtube videoid="2dz0iKwHrkI" style="background-image: url('https://i.ytimg.com/vi/2dz0iKwHrkI/hqdefault.jpg');"></lite-youtube>
+    </div>
+</div>
 
 Finally, as I wrote in a [blog post](https://reillyspitzfaden.com/posts/2024/04/new-album-announcement/), my piece [*If this reaches you*](https://applytriangle.bandcamp.com/track/if-this-reaches-you) for flute, clarinet, and MIDI keyboard incorporates a number of radio signals. The keyboard is connected to a computer running [Max/MSP](https://en.wikipedia.org/wiki/Max_(software)), which allows the upper part of the keyboard to play electric piano sounds, and the lower octave or so to play radio samples, one to a key. These samples include [pagers](https://www.sigidwiki.com/wiki/POCSAG), [trunking control channels](https://www.sigidwiki.com/wiki/Project_25_(P25)#Audio_Samples), [clock synchronization signals](https://www.sigidwiki.com/wiki/Primex_Wireless_Time_Sync), and home [weather sensors](https://www.sigidwiki.com/wiki/ISM_Band_Weather_sensor), among other data signals, as well as emergency and aviation voice channels. 
 
