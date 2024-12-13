@@ -78,11 +78,10 @@
     --fg-med-light: hsl(272, 20%, 67%);
 
     --accent-med-light: hsl(327, 55%, 75%);
-    --accent-med-bright: hsl(327, 80%, 67%);
-    
+    --accent-med: hsl(327, 25%, 53%);
     /* --accent-light: #e09cc9;
     --accent-med-light: #c387af; */
-    --accent-med: #a66a94;
+    /* --accent-med: #a66a94; */
     --accent-dark: #4d1d3e;
 
     /* --accent-light: #e09cc9;

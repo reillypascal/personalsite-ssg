@@ -2,21 +2,10 @@
 input#webmention-source {
     border: none;
     border-radius: 3px;
-    /* padding: 5px; */
     width: calc(100% - 7.25em);
     font-family: inherit;
     font-size: 0.875em;
     font-weight: 400;
-
-    color: var(--bg-dark);
-    background-color: var(--accent-med-light);
-    outline-color: hsla(209, 100%, 94%, 0.67) !important;
-    /* background-color: #303234; */
-    /* color: #fff; */
-}
-
-input[type="submit"] {
-    background-color: var(--accent-med-light);
 }
 
 input.textinput:focus,
@@ -32,7 +21,6 @@ input[id="webmention-submit"] {
     text-align: center;
     width: 5.25em;
     padding: 0 2px; /* keeps text from moving right on mobile */
-    height: 1.65em;
 }
 input,
 textarea,
@@ -47,27 +35,21 @@ input[type="submit"] {
     /*****/
     font-family: inherit;
     font-size: inherit;
-    font-weight: 300;
     border: none;
     border-radius: 3px;
     margin: 0 0 0 auto;
-    /* background-color: #383a3f; */
-    /* color: #fff; */
     justify-content: center;
 }
 input[id="send-email"] {
     display: flex;
     flex: 0 0 3.5em;
-    height: 1.65em;
 }
 input[id="submit-comment"] {
     display: flex;
     flex: 0 0 4.5em;
-    height: 1.65em;
 }
 input[id="load-comments"] {
     width: 8.85em;
-    height: 1.65em;
 }
 
 /* Makes sizing form elements more consistent */
@@ -100,9 +82,6 @@ legend {
     height: 1px;
     overflow: hidden;
 }
-/* label {
-    flex: 0 0 8em;
-} */
 
 input,
 textarea,
@@ -113,11 +92,13 @@ fieldset {
 input {
     font-family: inherit;
     font-size: 0.875em;
+    padding: 2px 5px;
 }
 
 input,
 textarea {
-    background-color: var(--accent-med-light);
+    color: var(--bg-dark) !important;
+    background-color: var(--accent-med-light) !important;
     height: 1.75em;
     border: none;
     border-radius: 3px;
@@ -135,6 +116,4 @@ textarea {
     line-height: 1.25;
     resize: none;
     overflow: auto;
-    /* background-color: #303234; */
-    /* color: #fff; */
 }
