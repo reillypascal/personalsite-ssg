@@ -1,17 +1,20 @@
 ---
 title: Radio — Listening Musically, Being Haunted
-description: Listening to radio signals, allowing them to haunt me, and composing music with them
+description: Listening to shortwave radio signals, letting them haunt me, and composing music with them
 canonical_url: https://reillyspitzfaden.com/posts/2024/12/radio-listening-musically
-date: 2024-12-14
+date: 2024-12-15
 octothorpes:
   - Audio
   - music
 tags:
   - post
+  - composition
+  - electronicmusic
   - hobbies
   - music
   - radio
   - sdr
+  - sounddesign
 ---
 
 In around 2019 I stumbled across the [Wide-band WebSDR](http://websdr.ewi.utwente.nl:8901/) ^[ A [software-defined radio](https://en.wikipedia.org/wiki/Software-defined_radio) (SDR) system often looks like a simple radio receiver and analog-to-digital converter connecting to a computer, with the tuning, filtering, demodulation, and most other features handled by software. This "WebSDR" consists of a receiver in the Netherlands that makes the signals it receives available to stream over the web. ] at the [University of Twente](https://en.wikipedia.org/wiki/University_of_Twente) in the Netherlands. I was hooked. The cold, alien tones of the many data signals ([clock synchronization](https://www.sigidwiki.com/wiki/DCF77), [pagers](https://www.sigidwiki.com/wiki/POCSAG), [modems](https://www.sigidwiki.com/wiki/STANAG_4285), and more) were unlike anything I'd heard before. Many voice signals sound otherworldly as well — shrouded in noise, filtered to a narrow band, and often automated to read data such as [weather information for pilots](https://www.sigidwiki.com/wiki/Single_Sideband_Voice#Hear_RAF_Volmet_.28USB_Voice.29_Live_at_WebSDR_Univ._of_Twente_.28Alternate_Frequency.29). 
@@ -21,7 +24,7 @@ There's also the awareness that the sounds I'm hearing are at a vast distance, b
 When listening, I still struggle to fully encapsulate my emotive response to the sounds, but from the beginning I knew I had to connect this to my composition somehow.
 
 ### The "Sonic Spectre" — Allowing Our Media to Haunt Us
-Around the same time I discovered the Twente WebSDR, I read Kristen Gallerneaux's book "[High Static, Dead Lines](https://mitpress.mit.edu/9781907222665/high-static-dead-lines/)," which was equally as impactful to me. As she weaves together spurious radio signals during a [1934 high altitude balloon test](https://en.wikipedia.org/wiki/Jeannette_Piccard#Flight); the [Max Headroom signal hijacking](https://en.wikipedia.org/wiki/Max_Headroom_signal_hijacking); and the eerie voices of the [Votrax](https://en.wikipedia.org/wiki/Votrax) speech synthesizer, Gallerneaux calls on us to “allow our media to haunt us," and finds these moments of haunting to be “crucial to understanding” sonic media.
+Around the same time I discovered the Twente WebSDR, I read Kristen Gallerneaux's book "[High Static, Dead Lines; Sonic Spectres & the Object Hereafter](https://mitpress.mit.edu/9781907222665/high-static-dead-lines/)," which was equally as impactful to me. As she weaves together spurious radio signals during a [1934 high altitude balloon test](https://en.wikipedia.org/wiki/Jeannette_Piccard#Flight); the [Max Headroom signal hijacking](https://en.wikipedia.org/wiki/Max_Headroom_signal_hijacking); and the eerie voices of the [Votrax](https://en.wikipedia.org/wiki/Votrax) speech synthesizer, Gallerneaux calls on us to “allow our media to haunt us," and finds these moments of haunting to be “crucial to understanding” sonic media.
 
 As an example of this haunting, she gives the anecdote of being awake at night as a child, roaming the house alone, and trying out a 45 RPM record she had discovered, accidentally playing it back at 33 &frac13; RPM. The resulting sound was "demonic" and terrifying on its own, and coupled with her young age, solitude, the late hour, and the element of surprise, this moment became a much deeper experience than a simple playback error might seem.
 
