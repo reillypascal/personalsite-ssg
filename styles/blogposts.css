@@ -11,11 +11,17 @@
     /* margin-right: 16px; */
 }
 
-.post-reactions {
-    /* padding-top: 24px; */
-    margin: 16px 0;
+article {
+    margin: 32px 0;
 }
+@media screen and (min-width: 660px) {
+    article {
+        margin: 48px 0;
+    }
+}
+
 .post-tags {
+    line-height: var(--p-line-height);
     margin-bottom: 16px;
 }
 .post-tag {
