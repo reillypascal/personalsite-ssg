@@ -308,7 +308,7 @@ nav {
     }
     .navIcon {
         /* keeps on right side of screen */
-        margin-left: auto;
+        margin-left: auto !important;
         /* position: absolute !important;
         right: 0 !important; */
         /* helps on iOS safari? https://stackoverflow.com/questions/14023677/absolute-positioning-messed-up-in-safari */
