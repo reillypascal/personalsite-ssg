@@ -21,7 +21,7 @@ module.exports = function (eleventyConfig) {
         <a href="mailto:reillypascal@gmail.com?subject=Re: ${title}">Reply via email</a>
     </div>
     <div class="share-openly">
-        <a href="https://shareopenly.org/share/?url=${url}">Share on the Fediverse</a>&nbsp;<img class="share-openly-icon" src="/media/share-openly.svg" width="20" height="20">
+        <a href="https://shareopenly.org/share/?url=${url}">Share on the Fediverse</a>&nbsp;<img class="share-openly-icon" src="/media/share-openly.svg" alt="A looping white arrow" width="20" height="20">
     </div>
     <div class="post-reactions">
         <span class="heart-meta">
