@@ -28,9 +28,7 @@
     font-family: "Proza Libre";
     src:
         url("/styles/fonts/prozalibre/prozalibre-regular-webfont.woff2")
-            format("woff2"),
-        url("/styles/fonts/prozalibre/prozalibre-regular-webfont.woff")
-            format("woff");
+            format("woff2");
     font-weight: 400;
     font-display: swap;
 }
@@ -38,9 +36,7 @@
     font-family: "Proza Libre";
     src:
         url("/styles/fonts/prozalibre/prozalibre-italic-webfont.woff2")
-            format("woff2"),
-        url("/styles/fonts/prozalibre/prozalibre-italic-webfont.woff")
-            format("woff");
+            format("woff2");
     font-weight: 400;
     font-style: italic;
     font-display: swap;
