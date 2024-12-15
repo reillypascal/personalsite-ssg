@@ -209,8 +209,8 @@ footer {
     & table {
         margin-top: 16px;
     }
-    & td {
-        padding: 0 14px 0 0;
+    & table td:not(:last-child) {
+        padding-right: 14px;
     }
 }
 .octothorpes-badge {
