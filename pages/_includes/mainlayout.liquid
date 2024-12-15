@@ -41,9 +41,9 @@ title: Reilly Spitzfaden, Composer
         {% endif %} {% endcomment %}
 
         <!-- Fonts -->
-        {% comment %} <link rel="preload" href="/styles/fonts/opensans/opensans-variablefont_wdthwght-webfont.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/styles/fonts/opensans/opensans-variablefont_wdthwght-webfont.woff2" as="font" type="font/woff2" crossorigin>
         <link rel="preload" href="/styles/fonts/opensans/opensans-italic-variablefont_wdthwght-webfont.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="/styles/fonts/born2bsportyv2/born2bsportyv2-webfont.woff2" as="font" type="font/woff2" crossorigin> {% endcomment %}
+        <link rel="preload" href="/styles/fonts/born2bsportyv2/born2bsportyv2-webfont.woff2" as="font" type="font/woff2" crossorigin>
         {% comment %}
         <!-- Fonts -->
         <link rel="preload" id="googlefonts-cs" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
@@ -95,31 +95,6 @@ title: Reilly Spitzfaden, Composer
         
     </head>
     <body>
-        <style>
-            @font-face {
-                font-family: "Born2bSportyV2";
-                src:
-                    url("/styles/fonts/born2bsportyv2/born2bsportyv2-webfont.woff2")
-                        format("woff2");
-                font-display: swap;
-            }
-
-            @font-face {
-                font-family: "Open Sans";
-                src:
-                    url("/styles/fonts/opensans/opensans-variablefont_wdthwght-webfont.woff2")
-                        format("woff2");
-                font-display: swap;
-            }
-            @font-face {
-                font-family: "Open Sans";
-                src:
-                    url("/styles/fonts/opensans/opensans-italic-variablefont_wdthwght-webfont.woff2")
-                        format("woff2");
-                font-style: italic;
-                font-display: swap;
-            }
-        </style>
         {% comment %}
         <!-- fixed background - opened and closed here -->
         <div class="bg"></div>
