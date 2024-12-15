@@ -33,13 +33,17 @@ title: Reilly Spitzfaden, Composer
         
         <!-- My styles -->
         <link rel="stylesheet" type="text/css" href="/styles/global.css" />
-        <script src="/styles/menus.js"></script> 
+        <script src="/styles/menus.js"></script>
         {% comment %} {% if styles %}
             {% for sheet in styles %}
                 <link rel="stylesheet" type="text/css" href="/styles/{{ sheet }}" />
             {% endfor %}
         {% endif %} {% endcomment %}
 
+        <!-- Fonts -->
+        <link rel="preload" href="/styles/fonts/opensans/opensans-variablefont_wdthwght-webfont.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/styles/fonts/opensans/opensans-italic-variablefont_wdthwght-webfont.woff2" as="font" type="font/woff2" crossorigin>
+        <link rel="preload" href="/styles/fonts/born2bsportyv2/born2bsportyv2-webfont.woff2" as="font" type="font/woff2" crossorigin>
         {% comment %}
         <!-- Fonts -->
         <link rel="preload" id="googlefonts-cs" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
