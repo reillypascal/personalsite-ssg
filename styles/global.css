@@ -4,9 +4,7 @@
     font-family: "Born2bSportyV2";
     src:
         url("/styles/fonts/born2bsportyv2/born2bsportyv2-webfont.woff2")
-            format("woff2"),
-        url("/styles/fonts/born2bsportyv2/born2bsportyv2-webfont.woff")
-            format("woff");
+            format("woff2");
     font-display: swap;
 }
 
@@ -14,18 +12,14 @@
     font-family: "Open Sans";
     src:
         url("/styles/fonts/opensans/opensans-variablefont_wdthwght-webfont.woff2")
-            format("woff2"),
-        url("/styles/fonts/opensans/opensans-variablefont_wdthwght-webfont.woff")
-            format("woff");
+            format("woff2");
     font-display: swap;
 }
 @font-face {
     font-family: "Open Sans";
     src:
         url("/styles/fonts/opensans/opensans-italic-variablefont_wdthwght-webfont.woff2")
-            format("woff2"),
-        url("/styles/fonts/opensans/opensans-italic-variablefont_wdthwght-webfont.woff")
-            format("woff");
+            format("woff2");
     font-style: italic;
     font-display: swap;
 }
