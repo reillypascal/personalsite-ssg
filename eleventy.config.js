@@ -2,7 +2,7 @@ const { feedPlugin } = require("@11ty/eleventy-plugin-rss");
 let markdownIt = require("markdown-it");
 let markdownItFootnote = require("markdown-it-footnote");
 
-module.exports = function (eleventyConfig) {
+module.exports = async function (eleventyConfig) {
   // passthrough copies
   eleventyConfig.addPassthroughCopy("_redirects");
   eleventyConfig.addPassthroughCopy("google350d63874edcb6ff.html");
