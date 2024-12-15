@@ -1,10 +1,10 @@
 ---
 layout: mainlayout.liquid
 title: Reilly Spitzfaden, Composer
-styles:
-    - blogposts.css
-    - onecolumn.css
 ---
+<link rel="stylesheet" type="text/css" href="/styles/blogposts.css" />
+<link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
+
 <main>
     <!-- post contents -->
     <article class="textBlock">
@@ -27,7 +27,4 @@ styles:
 <script>
     var blogPostURL = "{{ url }}";
 </script>
-<script src="{{ root_folder }}/styles/interactions.js"></script>
-
-{% comment %} <link rel="stylesheet" type="text/css" href="/styles/blogposts.css" />
-<link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" /> {% endcomment %}
+<script src="/styles/interactions.js"></script>

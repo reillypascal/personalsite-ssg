@@ -14,11 +14,14 @@ pagination:
         - post
 permalink: /tags/{{ tag }}/
 ---
+<link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
+
 <style>
     .taggedPostLink {
         margin: 24px 0;
     }
 </style>
+
 <main>
     <article class="tagList">
         <h2 class="sectionHeader">#{{ tag }}</h2>
@@ -40,6 +43,4 @@ permalink: /tags/{{ tag }}/
         
     </article>
 </main>
-
-{% comment %} <link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" /> {% endcomment %}
 
