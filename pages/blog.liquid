@@ -3,12 +3,37 @@ layout: mainlayout.liquid
 title: Reilly Spitzfaden, Composer | Blog
 description: A blog about my personal interests, including composition/sound design in Max/MSP, C++ audio plugin development with JUCE, the IndieWeb, and web development
 canonical_url: https://reillyspitzfaden.com/blog
+styles:
+    - onecolumn.css
 pagination:
     data: collections.post
     size: 8
     alias: posts
     reverse: true
 ---
+<style>
+    p {
+        line-height: var(--p-line-height);
+    }
+    #search {
+        padding-top: 8px;
+    }
+    @media screen and (min-width: 480px) {
+        #search {
+            padding-top: 12px;
+        }
+    }
+    @media screen and (min-width: 640px) {
+        #search {
+            padding-top: 16px;
+        }
+    }
+    .page-nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
+    
 <main>
     <!-- blog contents -->
     <h2 class="sectionHeader">Blog</h2>
@@ -54,27 +79,4 @@ pagination:
     <!--- close blogPostLinks -->
 </main>
 
-<link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
-
-<style>
-    p {
-        line-height: var(--p-line-height);
-    }
-    #search {
-        padding-top: 8px;
-    }
-    @media screen and (min-width: 480px) {
-        #search {
-            padding-top: 12px;
-        }
-    }
-    @media screen and (min-width: 640px) {
-        #search {
-            padding-top: 16px;
-        }
-    }
-    .page-nav-wrapper {
-        display: flex;
-        justify-content: space-between;
-    }
-</style>
+{% comment %} <link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" /> {% endcomment %}

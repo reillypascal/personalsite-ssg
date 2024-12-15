@@ -3,13 +3,20 @@ layout: mainlayout.liquid
 title: Reilly Spitzfaden, Composer | Likes
 description: Posts I like from around the internet. Formatted using Microformats, and sent with Webmentions when available.
 canonical_url: https://reillyspitzfaden.com/likes
+styles:
+    - onecolumn.css
 pagination:
     data: collections.like
     size: 8
     alias: likes
     reverse: true
 ---
-
+<style>
+    .page-nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
 <main>
         <h2 class="sectionHeader">Likes</h2>
         <p>Posts I like from around the internet. Formatted using <a href="https://indieweb.org/microformats">Microformats</a>, and sent with <a href="https://indieweb.org/Webmention">Webmentions</a> when available. </p>
@@ -38,11 +45,5 @@ pagination:
         </div>
 </main>
 
-<link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
+{% comment %} <link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" /> {% endcomment %}
 
-<style>
-    .page-nav-wrapper {
-        display: flex;
-        justify-content: space-between;
-    }
-</style>

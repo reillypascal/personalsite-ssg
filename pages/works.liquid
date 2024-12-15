@@ -3,7 +3,26 @@ layout: mainlayout.liquid
 title: Reilly Spitzfaden, Composer | Works
 description: Reilly Spitzfaden's compositions, including links to recordings when available
 canonical_url: https://reillyspitzfaden.com/works
+styles:
+    - onecolumn.css
 ---
+<style>
+    #categories {
+        margin: 0;
+        padding: 0;
+    }
+    #categories li {
+        display: inline;
+        padding-right: 8px;
+    }
+    th {
+        font-weight: 400;
+        padding: 8px 12px 8px 0;
+    }
+    td {
+        padding: 8px 0;
+    }
+</style>
 <main>
     <h2 class="sectionHeader">List of Works</h2>
     
@@ -205,21 +224,4 @@ canonical_url: https://reillyspitzfaden.com/works
     <p><a href="#top">Top ⭡</a></p>
 </main>
 
-<link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
-<style>
-    #categories {
-        margin: 0;
-        padding: 0;
-    }
-    #categories li {
-        display: inline;
-        padding-right: 8px;
-    }
-    th {
-        font-weight: 400;
-        padding: 8px 12px 8px 0;
-    }
-    td {
-        padding: 8px 0;
-    }
-</style>
+{% comment %} <link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" /> {% endcomment %}

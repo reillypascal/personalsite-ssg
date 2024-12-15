@@ -3,7 +3,25 @@ layout: mainlayout.liquid
 title: Reilly Spitzfaden | Bio & CV
 description: Reilly Spitzfaden is a composer who likes noise, code, electronics, and nostalgia.
 canonical_url: https://reillyspitzfaden.com/bio
+styles:
+    - onecolumn.css
 ---
+<style>
+    .headshot {
+        margin: 4px 8px 8px 0;
+        float: left;
+        max-width: 128px;
+        height: auto;
+        aspect-ratio: 1;
+    }
+    
+    @media screen and (min-width: 480px) {
+        .headshot {
+            margin-right: 24px;
+            max-width: 192px;
+        }
+    }
+</style>
 <main>
     <article class="textBlock">
         <h2 class="sectionHeader">Bio</h2>
@@ -24,20 +42,4 @@ canonical_url: https://reillyspitzfaden.com/bio
     <h2><a href="../documents/spitzfaden-CV-2024.pdf">CV</a></h2>
 </main>
 
-<link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
-<style>
-    .headshot {
-        margin: 4px 8px 8px 0;
-        float: left;
-        max-width: 128px;
-        height: auto;
-        aspect-ratio: 1;
-    }
-    
-    @media screen and (min-width: 480px) {
-        .headshot {
-            margin-right: 24px;
-            max-width: 192px;
-        }
-    }
-</style>
+{% comment %} <link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" /> {% endcomment %}

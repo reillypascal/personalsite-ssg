@@ -34,8 +34,12 @@ title: Reilly Spitzfaden, Composer
         <!-- My styles -->
         <link rel="stylesheet" type="text/css" href="/styles/global.css" />
         <script src="/styles/menus.js"></script> 
-        {% comment %} <script src="/styles/scripts.js"></script> {% endcomment %}
-        
+        {% if styles %}
+            {% for sheet in styles %}
+                <link rel="stylesheet" type="text/css" href="/styles/{{ sheet }}" />
+            {% endfor %}
+        {% endif %}
+                
         <!-- lite-youtube -->
         <link rel="stylesheet" href="/styles/videos/lite-yt-embed.css" />
         <script src="/styles/videos/lite-yt-embed.js"></script>

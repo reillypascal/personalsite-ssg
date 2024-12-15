@@ -3,6 +3,8 @@ layout: mainlayout.liquid
 title: Reilly Spitzfaden, Composer | Posts by Tag
 description: Blog posts listed by tag
 canonical_url: https://reillyspitzfaden.com/tags/{{ tag }}/
+styles:
+    - onecolumn.css
 pagination:
     data: collections
     size: 1
@@ -12,6 +14,11 @@ pagination:
         - post
 permalink: /tags/{{ tag }}/
 ---
+<style>
+    .taggedPostLink {
+        margin: 24px 0;
+    }
+</style>
 <main>
     <article class="tagList">
         <h2 class="sectionHeader">#{{ tag }}</h2>
@@ -34,11 +41,5 @@ permalink: /tags/{{ tag }}/
     </article>
 </main>
 
-<link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
+{% comment %} <link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" /> {% endcomment %}
 
-
-<style>
-    .taggedPostLink {
-        margin: 24px 0;
-    }
-</style>
