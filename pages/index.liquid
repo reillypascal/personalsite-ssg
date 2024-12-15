@@ -93,23 +93,23 @@ canonical_url: https://reillyspitzfaden.com/
     <div id="column-right">
         <h2 class="sectionHeader">Recently Updated</h2>
         
-        <div id="recentContainer">
+        {% comment %} <div id="recentContainer"> {% endcomment %}
         
-            <div id="recentImg"></div>
+            {% comment %} <div id="recentImg"></div> {% endcomment %}
             
-            <div id="recentItems">
-                {% assign recent_posts = collections.post | slice: -3, 3 %}
-                {% for item in recent_posts reversed %}
-                
-                <section>
-                    <h3><a href="{{item.url}}">{{ item.data.title }}</a></h3>
-                    <p>{{ item.data.description }}</p>
-                </section>
-                
-                <div class="dinkus"><p>***</p></div>
-                
-                {% endfor %}
-            </div>
+        <div id="recentItems">
+            {% assign recent_posts = collections.post | slice: -3, 3 %}
+            {% for item in recent_posts reversed %}
+            
+            <section>
+                <h3><a href="{{item.url}}">{{ item.data.title }}</a></h3>
+                <p>{{ item.data.description }}</p>
+            </section>
+            
+            <div class="dinkus"><p>***</p></div>
+            
+            {% endfor %}
         </div>
+        {% comment %} </div> {% endcomment %}
     </div>
 </main>
