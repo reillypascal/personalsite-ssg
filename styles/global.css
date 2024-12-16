@@ -526,9 +526,9 @@ lite-youtube {
 /* external links - borrowed from Wikipedia; footer > * doesn't work, but footer * does: https://stackoverflow.com/a/68211003 */
 a[href*="//"]:not([href*="reillyspitzfaden.com"]):not(footer *) {
     background-image: url(/media/external-link-paleblue.svg);
-    background-position: top right;
+    background-position: center right;
     background-position-x: right;
-    background-position-y: top;
+    background-position-y: center;
     background-repeat: no-repeat;
     background-size: 0.857em;
     padding-right: 1.15em;
