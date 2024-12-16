@@ -45,16 +45,23 @@ pagination:
     
     <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
     <style>
-        .pagefind-ui__form {
-            background-color: var(--fg-light) !important;
-            color: var(--bg-dark) !important;
+        .pagefind-ui {
+            --pagefind-ui-background: var(--fg-light) !important;
+
+            --pagefind-ui-border: var(--fg-light) !important;
+            --pagefind-ui-tag: var(--fg-light) !important;
+
+            --pagefind-ui-primary: var(--bg-dark) !important;
+            --pagefind-ui-text: var(--bg-dark) !important;
+
+            --pagefind-ui-font: 'Open Sans', sans-serif;
         }
-        .pagefind-ui__drawer {
+        /* .pagefind-ui__drawer {
             color: var(--fg-light);
         }
         .pagefind-ui__result {
             border-top-color: var(--fg-light) !important;
-        }
+        } */
     </style>
     <script src="/pagefind/pagefind-ui.js"></script>
     <div id="search"></div>
