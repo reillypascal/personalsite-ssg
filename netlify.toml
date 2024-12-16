@@ -46,17 +46,6 @@ for = "/*.woff2"
 Cache-Control = "public, max-age=31536000"
 
 
-[[headers]]
-for = "/*.css"
-[headers.values]
-Cache-Control = "public, max-age=31536000"
-
-[[headers]]
-for = "/*.js"
-[headers.values]
-Cache-Control = "public, max-age=31536000"
-
-
 [[redirects]]
   from = "/.well-known/host-meta*"
   to = "https://fed.brid.gy/.well-known/host-meta:splat"
