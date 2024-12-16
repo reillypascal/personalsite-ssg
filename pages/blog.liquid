@@ -52,17 +52,17 @@ pagination:
             --pagefind-ui-tag: var(--fg-light) !important;
 
             --pagefind-ui-primary: var(--bg-dark) !important;
-            --pagefind-ui-text: var(--bg-dark) !important;
+            --pagefind-ui-text: var(--bg-dark);
 
             --pagefind-ui-font: 'Open Sans', sans-serif;
         }
-        .pagefind-ui__drawer {
-            --pagefind-ui-text: var(--fg-light) !important;
-        }
-        /* 
-        .pagefind-ui__result {
-            border-top-color: var(--fg-light) !important;
+        /* .pagefind-ui__drawer {
         } */
+            
+        .pagefind-ui__result {
+            --pagefind-ui-text: var(--fg-light) !important;
+            /* border-top-color: var(--fg-light) !important; */
+        }
     </style>
     <script src="/pagefind/pagefind-ui.js"></script>
     <div id="search"></div>
