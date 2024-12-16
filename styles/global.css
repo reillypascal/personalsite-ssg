@@ -200,7 +200,7 @@ footer {
         margin-top: 16px;
     }
     & table td:not(:last-child) {
-        padding-right: 8px;
+        padding-right: 10px;
     }
 }
 
