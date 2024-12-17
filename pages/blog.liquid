@@ -46,6 +46,12 @@ pagination:
     <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
     <style>
         .pagefind-ui {
+            --pagefind-ui-primary: var(--fg-light);
+            --pagefind-ui-text: var(--fg-light);
+            --pagefind-ui-background: var(--bg-dark);
+            --pagefind-ui-border: var(--bg-dark);
+            --pagefind-ui-tag: var(--bg-dark);
+
             --pagefind-ui-background: var(--fg-light) !important;
 
             --pagefind-ui-border: var(--fg-light) !important;
@@ -59,10 +65,10 @@ pagination:
         /* .pagefind-ui__drawer {
         } */
             
-        .pagefind-ui__result {
+        /* .pagefind-ui__result {
             color: var(--fg-light) !important;
-            /* border-top-color: var(--fg-light) !important; */
-        }
+            border-top-color: var(--fg-light) !important;
+        } */
     </style>
     <script src="/pagefind/pagefind-ui.js"></script>
     <div id="search"></div>
