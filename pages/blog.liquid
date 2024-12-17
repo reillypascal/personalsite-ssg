@@ -48,7 +48,6 @@ pagination:
     
     <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
     <style>
-        /* https://pagefind.app/docs/ui-usage/#customising-the-styles */
         .pagefind-ui {
             --pagefind-ui-primary: var(--fg-light);
             --pagefind-ui-text: var(--fg-light);
@@ -56,6 +55,9 @@ pagination:
             --pagefind-ui-border: var(--accent-med-light);
             --pagefind-ui-tag: var(--accent-med-light);
             --pagefind-ui-font: 'Open Sans', sans-serif;
+        }
+        .pagefind-ui__result-thumb {
+            display: none;
         }
     </style>
     <script src="/pagefind/pagefind-ui.js"></script>
