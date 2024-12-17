@@ -34,6 +34,9 @@ pagination:
         display: flex;
         justify-content: space-between;
     }
+    .RSSValidation {
+        margin-bottom: 24px;
+    }
 </style>
     
 <main>
@@ -62,9 +65,7 @@ pagination:
             new PagefindUI({ element: "#search", showSubResults: true });
         });
     </script>
-    
-    {% comment %} <hr /> {% endcomment %}
-    
+        
     {% for post in posts %}
     <article>
     <h3><a href="{{post.url}}">{{ post.data.title }}</a></h3>
@@ -76,8 +77,9 @@ pagination:
         <time>{{ post.date | date: "%A, %B %d, %Y" }}</time>
         </span>
     </article>
-    {% comment %} <hr /> {% endcomment %}
     {% endfor %}
+
+    <a href="https://validator.w3.org/feed/check.cgi?url=https%3A//reillyspitzfaden.com/blog/feed.xml"><img src="/media/valid-rss-rogers.png" alt="[Valid RSS]" title="Validate my RSS feed" class="RSSValidation"/></a>
     
     <div class="page-nav-wrapper">
         {% if pagination.href.previous %}
@@ -87,7 +89,4 @@ pagination:
             <a href="{{pagination.href.next}}">Next Page</a>
         {% endif %}
     </div>
-        
-    {% comment %} <a href="https://validator.w3.org/feed/check.cgi?url=https%3A//reillyspitzfaden.com/blog/feed.xml" class="RSSValidation"><img src="/media/valid-rss-rogers.png" alt="[Valid RSS]" title="Validate my RSS feed" /></a> {% endcomment %}
-    <!--- close blogPostLinks -->
 </main>
