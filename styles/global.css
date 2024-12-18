@@ -538,6 +538,6 @@ a[href*="//"]:not([href*="reillyspitzfaden.com"]):not(footer *) {
     position: relative;
     top: 2px;
 }
-.meta-text-link {
-    margin-left: 4px;
+.meta-text {
+    margin-left: 3px;
 }
