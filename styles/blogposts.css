@@ -2,14 +2,6 @@
 .post-meta {
     margin-bottom: 16px;
 }
-.meta-icon {
-    position: relative;
-    top: 3px;
-}
-.meta-text {
-    margin-left: 3px;
-    /* margin-right: 16px; */
-}
 
 article {
     margin: 32px 0;

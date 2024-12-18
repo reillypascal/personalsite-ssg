@@ -532,3 +532,12 @@ a[href*="//"]:not([href*="reillyspitzfaden.com"]):not(footer *) {
     background-size: 0.857em;
     padding-right: 1.15em;
 }
+
+/* post info */
+.meta-icon {
+    position: relative;
+    top: 2px;
+}
+.meta-text-link {
+    margin-left: 4px;
+}
