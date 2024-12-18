@@ -56,6 +56,13 @@ pagination:
             --pagefind-ui-tag: var(--accent-med-light);
             --pagefind-ui-font: 'Open Sans', sans-serif;
         }
+        ::placeholder {
+            color: var(--fg-light) !important;
+            opacity: 0.5 !important;
+        }
+        ::-ms-input-placeholder { /* Edge 12 -18 */
+            color: var(--fg-light) !important;
+        }
         .pagefind-ui__result-thumb {
             display: none;
         }
