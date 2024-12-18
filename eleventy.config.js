@@ -78,7 +78,7 @@ module.exports = async function (eleventyConfig) {
       language: "en",
       title: "Reilly Spitzfaden, Composer",
       subtitle:
-        "A blog about my personal interests, including composition/sound design in Max/MSP, C++ audio plugin development with JUCE, the IndieWeb, and web development",
+        "A blog about my personal interests, including composition and sound design; audio development using Max/MSP, C++, JUCE, and Rust; and web development on the IndieWeb",
       base: "https://reillyspitzfaden.com/blog",
       author: {
         name: "Reilly Spitzfaden",
