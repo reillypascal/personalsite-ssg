@@ -146,10 +146,6 @@ h4 {
 footer {
     font-size: 1.25em;
 }
-/* #cardName {
-    font-family: "Born2bSportyV2", sans-serif;
-    font-size: 24px;
-} */
 
 /* ######## colors, sizes ######## */
 body {
@@ -170,7 +166,6 @@ header {
 }
 
 main {
-    /* background-color: var(--bg-dark-highlight); */
     margin-top: 32px;
     margin-bottom: 32px;
     margin-left: var(--global-margin);
@@ -188,10 +183,7 @@ main {
 
 footer {
     background-color: var(--bg-dark);
-    /* background-color: var(--accent-dark); */
     color: var(--fg-light);
-    /* padding: 20px 20px; */
-    /* border-radius: 4px; */
     border-top: 6px solid var(--accent-med-light);
     margin-left: var(--global-margin);
     margin-right: var(--global-margin);
@@ -220,19 +212,7 @@ a:focus,
 a:active {
     color: inherit !important;
 }
-/* footer::before {
-    content: "";
-    display: block;
-    margin-top: 24px;
-    margin-bottom: 0;
-    border-bottom: 1px solid var(--accent-med-light);
-} */
 
-/* ######## myCard ######## */
-/* #cardContainer {
-    display: inline-flex;
-    flex-flow: row;
-} */
 #cardImg {
     display: inline-flex;
     flex-flow: row wrap;
@@ -242,111 +222,39 @@ a:active {
     }
     & a img {
         padding-right: 18px;
-        /* width: 64px; */
     }
 }
 #floppy-disk {
     vertical-align: 1px;
 }
 
-/* #cardContainer {
-    display: grid;
-    grid-template-rows: 14px auto 14px;
-    grid-template-columns: 18px auto 18px;
-    margin-bottom: 24px;
-    width: fit-content;
-}
-#cardImg {
-    border-radius: 4px;
-    grid-area: 1 / 1 / 3 / 3;
-    background: url("/media/map_duochrome_1775x425_1.png");
-}
-#cardName {
-    background-color: var(--accent-dark);
-    color: var(--fg-light);
-    & a {
-        color: inherit;
-    }
-    box-sizing: border-box;
-    marks: none;
-    padding: 2px 24px 2px 24px;
-    border-radius: 4px;
-    grid-area: 2 / 2 / 4 / 4;
-} */
-
-/* ######## nav menu ######## */
-/* -0.125em was required for old svg */
-/* .icon-svg {
-    vertical-align: -2px;
-} */
-
 nav {
-    /* overflow: hidden; */ /* interferes with dropdown sub-menus */
     margin: 16px 0 16px;
-    /* width: vw100; */
     position: relative;
     display: grid;
     grid-template: 1em / auto auto;
-    /* display: flex;
-    justify-content: space-between; */
-    /* display: flex;
-    flex-flow: row wrap;
-    justify-content: left; */
-    /* flex-wrap: wrap; */
-    /* flex-direction: row-reverse; */
 
-    /* #hamburgerWrapper {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: right;
-    } */
     & a {
         display: block;
     }
     .navIcon {
         /* keeps on right side of screen */
         margin-left: auto !important;
-        /* position: absolute !important;
-        right: 0 !important; */
-        /* helps on iOS safari? https://stackoverflow.com/questions/14023677/absolute-positioning-messed-up-in-safari */
-        /* left: auto; */
-        /* top: 0;
-        bottom: 0; */
     }
 
     & #menuLinks {
         margin: 8px 0;
-        /* display: none; */
-        /* display: flex;
-        flex-flow: row wrap;
-        justify-content: left; */
     }
 
     & .navElement {
-        /* margin: 2px 12px 2px 0; */
-        /* margin-left: 36px; */
         padding-bottom: 8px;
     }
 
-    /* & a, */
     & .dropdown-content a {
         padding: 6px 4px;
         display: block;
         width: max-content;
-        /* makes menu items pile on single line */
-        /* position: absolute; */
     }
-
-    /* & input[type="checkbox"] { */
-        /* appearance: none;
-        display: none;
-        visibility: hidden; */
-        /* iOS Safari workaround */
-        /* --webkit-appearance: none; */
-        /* position: absolute;
-        height: 0;
-        width: 0; */
-    /* } */
 
     & .active {
         margin-right: auto;
@@ -355,7 +263,6 @@ nav {
     }
 
     & .dropdown {
-        /* padding: 4px 0; */
         text-decoration: underline;
         position: relative;
         display: inline-block;
@@ -408,11 +315,6 @@ input[type="checkbox"]:not(:checked) ~ #blog-dropdown-content {
     input[type="checkbox"]:not(:checked) ~ #menuLinks {
         display: none;
     }
-    /* input[id="menu"]:not(:checked) {
-        #menuLinks {
-            display: none;
-        }
-    } */
 }
 
 /* Handles switching between hamburger menu and regular */
@@ -434,10 +336,6 @@ input[type="checkbox"]:not(:checked) ~ #blog-dropdown-content {
             margin-left: 36px;
         }
 
-        /* & .navElementHome {
-            margin-right: auto;
-        } */
-
         & #menuLinks {
             margin: 0;
             display: flex;
@@ -448,7 +346,6 @@ input[type="checkbox"]:not(:checked) ~ #blog-dropdown-content {
         & .dropdown-content {
             position: absolute; /* ensures dropdown content doesn't shift other elements; was originally position: static; */
             padding: 12px 12px;
-            /* margin: 36px 0 0 0; */
             border: 1px solid var(--accent-med-light);
             border-radius: 2px;
             box-shadow: 1px 1px 1px 1px var(--bg-dark);
