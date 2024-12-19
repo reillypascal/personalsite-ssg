@@ -202,17 +202,7 @@ footer {
     }
 }
 
-.octothorpes-badge {
-    width: fit-content;
-}
-
-a,
-a:hover,
-a:focus,
-a:active {
-    color: inherit !important;
-}
-
+/* ######## Header and Nav ########*/
 #cardImg {
     display: inline-flex;
     flex-flow: row wrap;
@@ -353,7 +343,7 @@ input[type="checkbox"]:not(:checked) ~ #blog-dropdown-content {
     }
 }
 
-/* types of page content */
+/* ######## types of content ######## */
 blockquote {
     margin-left: 0;
     color: var(--fg-light);; /* hue from aliceblue */
@@ -391,19 +381,6 @@ section {
     margin-bottom: 48px;
 }
 
-.sectionHeader {
-    width: fit-content;
-    padding-bottom: 8px;
-    border-bottom: 1px solid var(--accent-med-light);
-}
-
-.dinkus {
-    display: flex;
-    justify-content: center;
-    letter-spacing: 4px;
-}
-
-/* define global behavior for certain types of content */
 img {
     max-width: 100%;
     height: auto; /* allows specifying explicit height/width, while still shrinking with page */
@@ -420,6 +397,19 @@ lite-youtube {
     aspect-ratio: 16/9 auto;
 }
 
+/* ######## Decorations ######## */
+.sectionHeader {
+    width: fit-content;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--accent-med-light);
+}
+
+.dinkus {
+    display: flex;
+    justify-content: center;
+    letter-spacing: 4px;
+}
+
 /* external links - borrowed from Wikipedia; footer > * doesn't work, but footer * does: https://stackoverflow.com/a/68211003 */
 a[href*="//"]:not([href*="reillyspitzfaden.com"]):not(footer *) {
     background-image: url(/media/external-link-paleblue.svg);
@@ -430,11 +420,24 @@ a[href*="//"]:not([href*="reillyspitzfaden.com"]):not(footer *) {
     padding-right: 1.15em;
 }
 
+.octothorpes-badge {
+    width: fit-content;
+}
+
 /* post info */
 .meta-icon {
     position: relative;
     top: 2px;
 }
+
 .meta-text {
     margin-left: 3px;
+}
+
+/* ######## cleanup ######## */
+a,
+a:hover,
+a:focus,
+a:active {
+    color: inherit !important;
 }
