@@ -39,8 +39,7 @@ John Cage's [*Imaginary Landscape No. 4* (1951)](https://en.wikipedia.org/wiki/I
 
 In *Silence: Lectures and Writings*, ^[ See page 59 [here](https://monoskop.org/images/b/b5/Cage_John_Silence_Lectures_and_Writings.pdf) ] Cage writes about the result of using chance procedures in *Imaginary Landscape No. 4*:
 > It is thus possible to make a musical composition the continuity of
-which is free of individual taste and memory (psychology) and also of the
-literature and "traditions" of the art.
+which is free of individual taste and memory (psychology) and also of the literature and "traditions" of the art.
 
 In other words, the composer's tastes and preferences are informed by experience of previous music, and if they write based on those preferences, the composition will be informed by previous works. Cage saw removing preference from the equation as a way to create music that was completely new and that broke with tradition. The removal of taste is in contrast to my own work, which is strongly influenced by preference — I use the sounds because I enjoy them — but as an early example of of composing with radio sounds, I feel it's useful to include.
 
