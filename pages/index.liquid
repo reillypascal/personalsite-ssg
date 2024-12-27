@@ -42,6 +42,19 @@ canonical_url: https://reillyspitzfaden.com/
         <h2 class="sectionHeader">Featured</h2>
         
         <article>
+            <h3><a href="https://www.youtube.com/watch?v=t_gxCOcNJr8"><cite>Everything lost along the way</cite></a></h3>
+            
+            <p>Part of my Eastman PhD dissertation was featured on <a href="https://www.scorefollower.org/">Score Follower</a>'s YouTube channel. I composed a set of three pieces using MIDI keyboards and Max/MSP. Some of the keyboard range plays electric piano sounds &mdash; in this one, I used <a href="https://asb2m10.github.io/dexed/">Dexed</a> to emulate the classic 80s Yamaha DX7 "E.PIANO 1" sound. Other parts of the keyboard play databending and shortwave radio samples, or trigger noise synthesizers.</p> 
+            
+            <p>This one also has percussion, trumpet, and trombone. The percussionist has metal tins, a music stand, and other "junk" metal running through various contact mics, distortion pedals, and small amps. I hope you enjoy!</p>
+            
+            <div class="gridVideoWrapper">
+                <lite-youtube videoid="t_gxCOcNJr8" style="background-image: url('https://i.ytimg.com/vi/t_gxCOcNJr8/hqdefault.jpg');">
+                </lite-youtube>
+            </div>
+        </article>
+
+        <article>
             <h3><a href="https://applytriangle.bandcamp.com/track/if-this-reaches-you"><cite>If this reaches you</cite></a></h3>
             
             <p>My piece <a href="https://applytriangle.bandcamp.com/track/if-this-reaches-you"><cite>If this reaches you</cite></a> is on Apply Triangle's new album <cite>Oxalis Triangularis</cite>. I was one of the composers selected in the group's <a href="https://applytriangle.com/call_for_scores_2020.html">call for scores</a> in 2020, and the <a href="https://applytriangle.com/oxalis_triangularis.html">album</a> came out on April 12, 2024. It's a 3-CD release, and my piece is on <a href="https://applytriangle.bandcamp.com/album/oxalis-triangularis-vol-2">volume 2</a>.</p>
@@ -54,9 +67,7 @@ canonical_url: https://reillyspitzfaden.com/
             <img src="/media/at-oxalis-2.webp" alt="Album cover for 'Oxalis Triangularis, Volume 2.' Collage of textured red, brown, and gray paper rectangles, with purple, triangular leaves, and a pair of hands playing a bass clarinet." width="512" height="512" id="oxalis_2" /></br>
             {% comment %} <i>Cover for <cite>Oxalis Triangularis, Volume 2</cite></i> {% endcomment %}
         </article>
-        
-        {% comment %} <hr /> {% endcomment %}
-        
+                
         <article>
             
             <h3><a href="https://www.youtube.com/watch?v=YtSerbT7C5A"><cite>Reach Through</cite></a></h3>
@@ -74,9 +85,7 @@ canonical_url: https://reillyspitzfaden.com/
             </div>
         </article>
         
-        {% comment %} <hr/> {% endcomment %}
-        
-        <article>
+        {% comment %} <article>
             <h3><a href="https://www.youtube.com/watch?v=Y_inKSy9K0k"><cite>Afterimage from</cite></a></h3>
             
             <p>Part of my Eastman PhD dissertation was featured on <a href="https://www.scorefollower.org/">Score Follower</a>. I composed a set of three pieces using MIDI keyboards and Max/MSP. Some of the keyboard range plays electric piano sounds &mdash; in this one, I used <a href="https://asb2m10.github.io/dexed/">Dexed</a> to emulate the classic 80s Yamaha DX7 "E.PIANO 1" sound, with the tuning set to a subset of <a href="https://en.xen.wiki/w/19edo">19-edo</a>. Other parts of the keyboard play samples or trigger noise synthesizers.</p> 
@@ -87,13 +96,11 @@ canonical_url: https://reillyspitzfaden.com/
                 <lite-youtube videoid="Y_inKSy9K0k" style="background-image: url('https://i.ytimg.com/vi/Y_inKSy9K0k/hqdefault.jpg');">
                 </lite-youtube>
             </div>
-        </article>
+        </article> {% endcomment %}
     </div>
     
     <div id="column-right">
         <h2 class="sectionHeader">Recently Updated</h2>
-        {% comment %} <div id="recentContainer"> {% endcomment %}
-            {% comment %} <div id="recentImg"></div> {% endcomment %}
         <div id="recentItems">
             {% assign recent_posts = collections.post | slice: -3, 3 %}
             {% for item in recent_posts reversed %}
@@ -107,6 +114,5 @@ canonical_url: https://reillyspitzfaden.com/
             
             {% endfor %}
         </div>
-        {% comment %} </div> {% endcomment %}
     </div>
 </main>

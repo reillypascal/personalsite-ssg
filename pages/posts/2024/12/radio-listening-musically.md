@@ -8,12 +8,11 @@ octothorpes:
   - music
 tags:
   - post
+  - analysis
   - composition
   - electronicmusic
-  - hobbies
   - music
   - radio
-  - sdr
   - sounddesign
 ---
 <!-- lite-youtube -->
