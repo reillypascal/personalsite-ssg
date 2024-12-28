@@ -55,8 +55,26 @@ Another fascinating aspect of this sound is apparent when re-listening to the ex
 
 Similar to what I mention about digital radio transmissions in the "challenges" section of [this post](https://reillyspitzfaden.com/posts/2024/12/radio-listening-musically/), once you listen to the "sonified" data from enough files, commonalities start to become apparent. Many programs use some of the same `.dylib` files, and I imagine Finale either contains this exact file or some of the component code this file uses. The second seems more likely to me, given that a number of other `.dylib` files or program binary files contain the same or similar sounds, and are often smaller than the ~64.7MB of `libicudata.73.dylib`.
 
+Challenge to find new sounds
+
+Slow process — import, adjust levels, filter out DC offset to make audio cleaner, and the variation in rhythmic character more visible, then find
+
+Something interesting to check out is James Bradbury's [FluCoMa](https://www.flucoma.org/) plenary talk titled "[Finding Things in Stuff](https://www.youtube.com/watch?v=IpD_XzW1Az4)," in which he uses Python and the FluCoMa ("Fluid Corpus Manipulation") toolkit for Max/MSP, SuperCollider, and Pure Data to find the "interesting" sections of databending sessions. I haven't tried his methods yet, but they look promising for speeding up the search.
+
 ### Where I've Used Databending
+<cite>Afterimage from</cite>
+- chugging rhythmic patterns in opening
+- chaotic glitches in delay loop
+- high tones at end
 
+<cite>Outlive everything you know</cite>
+- opening, with data at low sample rate
 
+<cite>If this reaches you</cite>
+- low, staticky, rhythmic sound
+
+Since writing <cite>Afterimage from</cite> back in 2021 in particular, I've shied away from heavy use of databending sounds, since <cite>Afterimage from</cite> covered a significant portion of the ground available for these sounds.
+
+Tried Windows/Linux
 
 ### Looking Forward
