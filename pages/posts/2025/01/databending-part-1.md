@@ -2,7 +2,7 @@
 title: Databending Part 1
 description: Did you know you can listen to pretty much any file as an audio file? In this post I'll explain how it works, and in the next, I'll go into more depth about composing with these sounds.
 canonical_url: https://reillyspitzfaden.com/posts/2025/01/databending-part-1
-date: 2025-01-01
+date: 2024-01-01
 octothorpes:
   - Audio
   - music
@@ -51,13 +51,13 @@ This next recording is an excerpt of the file [`libicudata.73.dylib`](https://do
 
 I want to draw your ears to the rhythmic character of this sound. The PDF had two elements — a low motor-like buzz, and a burst of white noise — and rapidly "toggles" between them. In contrast, this library file has high "wheedling" tones; medium-register "beeps" that poke out through the texture; chugging, clicking noises that remind me of a receipt printer; low tones that rapidly bend up and down; sustained, buzzing bass notes; and many other small nuances. These are the kinds of sounds I tend to seek out for composing: rhythmically interesting, containing a mix of pitched and percussive elements, and varied in character.
 
+### Finding New Sounds
+
 Another fascinating aspect of this sound is apparent when re-listening to the excerpt of the Finale binary file at the start of today's article. The two files contain some of the same sounds! 
 
 Similar to what I mention about digital radio transmissions in the "challenges" section of [this post](https://reillyspitzfaden.com/posts/2024/12/radio-listening-musically/), once you listen to the "sonified" data from enough files, commonalities start to become apparent. Many programs use some of the same `.dylib` files, and I imagine Finale either contains this exact file or some of the component code this file uses. The second seems more likely to me, given that a number of other `.dylib` files or program binary files contain the same or similar sounds, and are often smaller than the ~64.7MB of `libicudata.73.dylib`.
 
-Challenge to find new sounds
-
-Slow process — import, adjust levels, filter out DC offset to make audio cleaner, and the variation in rhythmic character more visible, then find
+The process of finding these sounds is also fairly slow and painstaking. ^[ When I import the files, there is a good deal of [DC offset](https://en.wikipedia.org/wiki/DC_bias) and sub-20 Hz noise, and the file is usually at max amplitude. I filter out the frequencies below 20 Hz on each file. This is both useful to remove "mud" and to make it easier to visually distinguish between parts of the audio — what was originally a flat peak amplitude becomes more varied when removing DC offset/infrasound. To make room for the new variation in amplitude, I also have to lower the amplitude prior to filtering. ] After importing and cleaning up the files, there is a huge amount of material to get through, and since the way I divide up the source material is relevant to the composition process, it takes a good deal of back and forth between the long audio files and the composition I'm currently writing before I settle on exactly where my samples should start and end.
 
 Something interesting to check out is James Bradbury's [FluCoMa](https://www.flucoma.org/) plenary talk titled "[Finding Things in Stuff](https://www.youtube.com/watch?v=IpD_XzW1Az4)," in which he uses Python and the FluCoMa ("Fluid Corpus Manipulation") toolkit for Max/MSP, SuperCollider, and Pure Data to find the "interesting" sections of databending sessions. I haven't tried his methods yet, but they look promising for speeding up the search.
 
