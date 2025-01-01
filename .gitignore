@@ -2,6 +2,7 @@
 _site/
 drafts/
 node_modules/
+wip/
 # Local Netlify folder
 .netlify/
 .obsidian/
