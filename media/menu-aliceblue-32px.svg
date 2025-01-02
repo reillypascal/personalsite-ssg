@@ -22,11 +22,11 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      inkscape:zoom="13.545396"
-     inkscape:cx="8.9329243"
-     inkscape:cy="14.654425"
+     inkscape:cx="8.9329245"
+     inkscape:cy="14.654426"
      inkscape:window-width="1248"
      inkscape:window-height="916"
-     inkscape:window-x="60"
+     inkscape:window-x="62"
      inkscape:window-y="38"
      inkscape:window-maximized="0"
      inkscape:current-layer="svg1" />
@@ -34,5 +34,5 @@
      d="M4 6h16v2H4V6zm0 5h16v2H4v-2zm16 5H4v2h16v-2z"
      fill="currentColor"
      id="path1"
-     style="fill:#f0f8ff;fill-opacity:1" />
+     style="fill:#e7ecfd;fill-opacity:1" />
 </svg>
