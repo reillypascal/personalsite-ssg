@@ -7,32 +7,32 @@ publish = "/_site"
 [[headers]]
 for = "/*.ico"
 [headers.values]
-Cache-Control = "public, max-age=604800"
+Cache-Control = "public, max-age=31540000"
 
 [[headers]]
 for = "/*.jpg"
 [headers.values]
-Cache-Control = "public, max-age=604800"
+Cache-Control = "public, max-age=31540000"
 
 [[headers]]
 for = "/*.jpeg"
 [headers.values]
-Cache-Control = "public, max-age=604800"
+Cache-Control = "public, max-age=31540000"
 
 [[headers]]
 for = "/*.png"
 [headers.values]
-Cache-Control = "public, max-age=604800"
+Cache-Control = "public, max-age=31540000"
 
 [[headers]]
 for = "/*.svg"
 [headers.values]
-Cache-Control = "public, max-age=604800"
+Cache-Control = "public, max-age=31540000"
 
 [[headers]]
 for = "/*.webm"
 [headers.values]
-Cache-Control = "public, max-age=604800"
+Cache-Control = "public, max-age=31540000"
 
 
 [[headers]]
