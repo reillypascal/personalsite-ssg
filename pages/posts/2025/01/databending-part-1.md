@@ -84,7 +84,7 @@ The process of finding these sounds is also fairly slow and painstaking. [^4] Af
 
 One thing I've found to help a bit is to databend libraries (e.g., .dylib, .dll, .a, .so files), not full program binaries. Since program binaries often incorporate library data (and are thus likely to share sounds with other programs that incorporate the same libraries), it's easier to find variety by looking for different libraries. I can look at the file names instead of being surprised and disappointed when a program file turns out to sound the same as parts of the last one.
 
-In addition to files on macOS, I've tried files from Linux and Windows computers. The Linux files (usually executable files, or libraries such as .a or .so files) tend to sound fairly similar to the macOS ones, but I have had some luck finding variety on Windows. I haven't noticed a clear “macOS sound” or “Windows sound,” but changing OSes does seem to help avoid the issue of programs containing the *exact* same code.
+In addition to files on macOS, I've tried files from Linux and Windows computers. The Linux files (usually executable files, or libraries such as .a or .so files) tend to sound fairly similar to the macOS ones, but I have had some luck finding variety on Windows. [^5] I haven't noticed a clear “macOS sound” or “Windows sound,” but changing OSes does seem to help avoid the issue of programs containing the *exact* same code.
 
 Even with these approaches, if I want to avoid repeating myself between compositions, at a certain point I need to come up with new ways of using these databending sounds. If I want to retain the interesting character of the sounds, I find that slicing the sample into segments and re-ordering them (rather than e.g., using audio effects, changing playback speed, etc.) is the least “invasive” way of creating variety. Some options include using [granular synthesis](https://en.wikipedia.org/wiki/Granular_synthesis) to make a databending sounds into a glitchy, noisy texture, or chopping up segments of the file and re-sequencing them in a sampler. However, I'm often reluctant to do this, since as previously mentioned, the rhythmic character of the sounds is an important aspect of their charm. How much of this to do is something I'm still experimenting with.
 
@@ -102,5 +102,7 @@ I'm planning to write a part 2 to today's post that goes into more depth analyzi
 [^3]: The second seems more likely to me, given that a number of other .dylib files or program binary files contain the same or similar sounds, and are often smaller than the ~64.7MB of libicudata.73.dylib.
 
 [^4]: When I import the files, there is a good deal of [DC offset](https://en.wikipedia.org/wiki/DC_bias) and sub-20 Hz noise, and the file is usually at max amplitude. I filter out the frequencies below 20 Hz on each file. This is both useful to remove “mud” and to make it easier to visually distinguish between parts of the audio — what was originally a flat peak amplitude becomes more varied when removing DC offset/infrasound. To make room for the new variation in amplitude, I also have to lower the amplitude prior to filtering.
+
+[^5]: I usually have the best luck with .exe files (executables) or .dll files (libraries) on Windows. Try looking in the subfolders in C:\Program Files or C:\Program Files (x86).
 
 {% postfooter title, canonical_url %}
