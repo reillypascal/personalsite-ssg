@@ -349,6 +349,9 @@ blockquote {
     color: var(--fg-light);; /* hue from aliceblue */
     border-left: 1px solid var(--accent-med-light); /* hsla(208, 15%, 67%, 1); */
     padding-left: 12px;
+    & ul, ol {
+        padding-left: 18px;
+    }
 }
 @media screen and (min-width: 480px) {
     blockquote {
@@ -371,7 +374,8 @@ section {
 article,
 section {
     & p,
-    ul li {
+    ul li,
+    ol li {
         line-height: var(--p-line-height);
     }
 }
