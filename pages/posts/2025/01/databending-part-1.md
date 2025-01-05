@@ -1,9 +1,10 @@
 ---
 title: Databending Part 1
-description: Did you know you can listen to pretty much any file as an audio file? Let's look at how it works and what it sounds like.
+description: Did you know you can listen to pretty much any file as an audio file? Let's look at how it works and what it sounds like!
 canonical_url: https://reillyspitzfaden.com/posts/2025/01/databending-part-1
-date: 2025-01-06
+date: 2025-01-05
 octothorpes:
+  - Art
   - Audio
   - music
 tags:
@@ -15,7 +16,7 @@ tags:
 Let's start today off with some sounds right out of the gate:
 
 <audio controls>
-  <source src="/media/blog/2025/01/Finale.7_23.mp3" type="audio/mp3">
+  <source src="/media/blog/2025/01/Finale.7_01.mp3" type="audio/mp3">
 </audio>
 
 What you're listening to is a segment of the recently departed [Finale](https://en.wikipedia.org/wiki/Finale_(scorewriter)) notation program being treated as an audio file. Notice how the tone and [envelope](https://en.wikipedia.org/wiki/Envelope_(music)) *almost* sound like a drum machine. The rhythm is in a wonderful place between random and regular — there are sequences of sounds that almost repeat, and that almost sound like a kick-snare dance beat, but it's not *quite* regular enough to dance to. It reminds me of the rhythmic qualities of some of Autechre's music (see e.g., <cite>[Tapr](https://autechre.bandcamp.com/track/tapr)</cite> at around 1 minute, or <cite>[VI Scose Poise](https://autechre.bandcamp.com/track/vi-scose-poise)</cite>).
@@ -34,9 +35,11 @@ In Audacity, go to File > Import > Raw Data, choose any file and import it. The 
 
 ### What Kinds of Files?
 
-Since I primarily use macOS and some Linux, this discussion will be most specific to those OSes, but similar things work well on Windows. The files I find work best are [binary](https://en.wikipedia.org/wiki/Binary_file) program files (e.g., Unix [executable files](https://en.wikipedia.org/wiki/Executable)/Windows .exe files) and [libraries](https://en.wikipedia.org/wiki/Library_(computing)) (.dylib, .dll, .a, .so files, etc.). While all computer files use binary code in some form, “binary file” usually refers to a file that does not encode text. Let's compare a snippet of a PDF and one from a binary [shared library](https://en.wikipedia.org/wiki/Library_(computing)) file.
+Since I primarily use macOS and some Linux, this discussion will be most specific to those OSes, but similar things work well on Windows. The files I find work best are [binary](https://en.wikipedia.org/wiki/Binary_file) files. While all computer files use binary code in some form, “binary file” usually refers to a file that does not encode text. 
 
-This is an excerpt of the audio generated from a PDF. [^1] Other than white noise, the entire file sounds almost exactly like this. Note the rapid “tremolo” effect. My best guess is that this is because text is fairly repetitive from a data perspective — a few characters grouped into short words, separated by spaces and paragraph breaks. Rapid repetition of short blocks of similar data sounds like a rhythmic tremolo:
+The two categories of binary files I usually end up using most are program files (e.g., Unix [executable files](https://en.wikipedia.org/wiki/Executable)/Windows .exe files) and [libraries](https://en.wikipedia.org/wiki/Library_(computing)) (.dylib, .dll, .a, .so files, etc.). You can think of libraries as “subunits” in a program — a library might handle encoding mp3 files, connecting to the internet, or another small task that many different programs need. The program files I describe above might combine a number of libraries along with unique code for that program, and you can often run a full program by double-clicking on them. I've found both categories to produce interesting sounds, and we will return to some differences between databending program files and libraries.
+
+For now, let's compare a snippet of a PDF and one from a binary [shared library](https://en.wikipedia.org/wiki/Library_(computing)) file. This is an excerpt of the audio generated from a PDF. [^1] Other than white noise, the entire file sounds almost exactly like this. Note the rapid “tremolo” effect. My best guess is that this is because text is fairly repetitive from a data perspective — a few characters grouped into short words, separated by spaces and paragraph breaks. Rapid repetition of short blocks of similar data sounds like a rhythmic tremolo:
 
 <audio controls>
   <source src="/media/blog/2025/01/Olia-Lialina-Dragan-Espenschied-Digital-Folklore-01.mp3" type="audio/mp3">
@@ -44,7 +47,7 @@ This is an excerpt of the audio generated from a PDF. [^1] Other than white nois
 
 It's certainly an interesting enough sound, but since the entire file sounds essentially the same, I don't find it as productive to look at text files, PDFs, etc.
 
-This next recording is an excerpt of the file [libicudata.73.dylib](https://docs.oracle.com/cd/E36784_01/html/E36873/libicudata-3lib.html) found in the [Calibre](https://calibre-ebook.com/) E-book manager on macOS. A macOS application (.app) is technically a folder, and Audacity will refuse to import folders as raw data. To get to this binary file, right-click, “Show Package Contents” and look in Contents > Frameworks. [^2] There are usually a number of folders in macOS applications, and any binary file can potentially be interesting. I usually look for ones that are at least a few megabytes in size — since a good portion of most files is white noise, the “interesting” parts of smaller files are rarely as long and varied as I would like:
+This next recording is an excerpt of the file [libicudata.73.dylib](https://docs.oracle.com/cd/E36784_01/html/E36873/libicudata-3lib.html) found in the [Calibre](https://calibre-ebook.com/) E-book manager on macOS. A macOS application (.app) is technically a folder, and Audacity will refuse to import folders as raw data. To get to this binary file, right-click, “Show Package Contents,” and look in Contents > Frameworks. [^2] There are usually a number of folders in macOS applications, and any binary file can potentially be interesting. I usually look for ones that are at least a few megabytes in size — since a good portion of most files is white noise, the “interesting” parts of smaller files are rarely as long and varied as I would like:
 
 <audio controls>
   <source src="/media/blog/2025/01/libicudata.73.dylib-01.mp3" type="audio/mp3">
@@ -62,7 +65,7 @@ Have a listen for these two features in this sound from the [libavcodec](https:/
 
 <figure>
     <img src="/media/blog/2025/01/libavcodec.58_spectrum.webp" alt="A spectrogram in Audacity showing the audio file 'libavcodec.58_random_glitch_1' from about 2 to 2.5 seconds. There are rapid, sharp discontinuities, both in time and in frequency." width="1898" height="623" >
-    <figcaption>A spectrogram in Audacity showing the audio file “libavcodec.58_random_glitch_1.” Frequency (in Hertz) is listed at the left; time at the top. Brighter corresponds to more energy at a given frequency.</figcaption>
+    <figcaption>A spectrogram in Audacity showing the audio file “libavcodec.58_random_glitch_1.” Frequency (in Hertz) is listed at the left; time (in seconds) at the top. Brighter corresponds to more energy at a given frequency.</figcaption>
 </figure>
 
 Notice the rapid, sharp discontinuities, both in time and in frequency. Extremely short bursts of static have sharp attacks and [releases](https://en.wikipedia.org/wiki/Envelope_(music)#ADSR). Piercing tones — often in a register so high it doesn't even feel like a note, just a needling noise — rapidly appear and disappear, varying significantly in pitch each time. Because these tones are so high, and because they are constantly interrupted with noise and vary in pitch so much, the string of tones sounds like noise, rather than any melody.
@@ -79,7 +82,7 @@ The process of finding these sounds is also fairly slow and painstaking. [^4] Af
 
 ### Finding Variety
 
-One thing I've found to help a bit is to databend libraries (e.g., .dylib, .dll, .a, .so files), not full program binaries. Since program binaries often incorporate library data (and are thus likely to share sounds with other programs that incorporate the same libraries), it's easier to find variety by looking for different libraries. I can look at the file names instead being surprised and disappointed when a program file turns out to sound the same as parts of the last one.
+One thing I've found to help a bit is to databend libraries (e.g., .dylib, .dll, .a, .so files), not full program binaries. Since program binaries often incorporate library data (and are thus likely to share sounds with other programs that incorporate the same libraries), it's easier to find variety by looking for different libraries. I can look at the file names instead of being surprised and disappointed when a program file turns out to sound the same as parts of the last one.
 
 In addition to files on macOS, I've tried files from Linux and Windows computers. The Linux files (usually executable files or libraries, such as .a or .so files) tend to sound fairly similar to the macOS ones, but I have had some luck finding variety on Windows. I haven't noticed a clear “macOS sound” or “Windows sound,” but changing OSes does seem to help avoid the issue of programs containing the *exact* same code.
 
@@ -87,7 +90,7 @@ Even with these approaches, if I want to avoid repeating myself between composit
 
 Something interesting to check out is James Bradbury's [FluCoMa](https://www.flucoma.org/) plenary talk titled “[Finding Things in Stuff](https://www.youtube.com/watch?v=IpD_XzW1Az4),” in which he uses Python and the FluCoMa (“Fluid Corpus Manipulation”) toolkit for Max/MSP, SuperCollider, and Pure Data to find the “interesting” sections of databending sessions. I haven't tried his methods yet, but they look promising for at least speeding up the search.
 
-### Looking Forward
+### Looking Back, Looking Forward
 This past Friday (Jan. 3) marks one year since I was inspired by a [Sophie Koonin talk](https://www.youtube.com/watch?v=H2Ux0hGQcs4) to [start writing on this blog](https://reillyspitzfaden.com/posts/2024/01/hello-world/)! Since then I [coded my own comment system](https://reillyspitzfaden.com/posts/2024/01/do-read-the-comments/), with a similar system to add post likes; [added webmentions](https://reillyspitzfaden.com/posts/2024/05/receiving-webmentions-part-1/); and [set my site up with Eleventy](https://reillyspitzfaden.com/posts/2024/11/ssgs-are-nice/) so that it's extremely easy to post. It makes me happy that I've been able to (mostly) keep up the habit of writing on here, and I'm enjoying writing on here quite a bit.
 
 I'm planning to write a part 2 to today's post that goes into more depth analyzing and discussing works that use this approach. There are a number of composers I like who do this, and I think it'll be interesting to collect my responses to their music in one place. I hope to see you then!
