@@ -71,4 +71,4 @@ I like this idea. It sounds like a great way to feel seen online without the pre
 
 [^1]: Markdown is a lightweight markup language that's designed to be both human-readable and easy to translate into HTML. A markup language is a code system to describe the function of each element in a text document (e.g., paragraph, heading, link, block quote, etc.), with HTML — the Hypertext Markup Language — being the markup language used in webpages.
 
- 
+ {% postfooter title, canonical_url %}
