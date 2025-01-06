@@ -350,7 +350,7 @@ blockquote {
     border-left: 1px solid var(--accent-med-light); /* hsla(208, 15%, 67%, 1); */
     padding-left: 12px;
     & ul, ol {
-        padding-left: 18px;
+        padding-left: 32px;
     }
 }
 @media screen and (min-width: 480px) {
