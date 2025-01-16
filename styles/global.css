@@ -83,11 +83,12 @@
     --global-margin: 16px;
     --main-width: 50rem;
     --article-width: 45rem;
-    --p-line-height: 1.5;
+    --p-line-height: 1.75;
 }
 
 /* p,
 ul li,
+ol li,
 blockquote,
 table {
     font-size: 1.05em;
