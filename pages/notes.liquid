@@ -1,0 +1,54 @@
+---
+layout: mainlayout.liquid
+title: Reilly Spitzfaden, Composer | Notes
+description: Short, microblogging-style posts
+canonical_url: https://reillyspitzfaden.com/notes
+pagination:
+    data: collections.note
+    size: 8
+    alias: notes
+    reverse: true
+---
+<link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
+
+<style>
+    .email-reply {
+        margin: 32px 0 16px 0;
+    }
+</style>
+
+<style>
+    .page-nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
+<main>
+        <h2 class="sectionHeader">Notes</h2>
+        <p>Short, microblogging-style posts</p>
+        
+        {% for note in notes %}
+        <article>
+        <h3><a href="{{note.url}}">{{ note.data.title }}</a></h3>
+
+        {{ note.content }}
+
+        <span class="meta-icon">
+            <img src="/media/icon-calendar-ltr.svg" alt="calendar icon" />
+            </span>
+            <span class="meta-text">
+            <time>{{ note.date | date: "%A, %B %d, %Y" }}</time>
+        </span>
+        
+        </article>
+        {% endfor %}
+        
+        <div class="page-nav-wrapper">
+            {% if pagination.href.previous %}
+                <a href="{{pagination.href.previous}}">Previous Page</a>
+            {% endif %}
+            {% if pagination.href.next %}
+                <a href="{{pagination.href.next}}">Next Page</a>
+            {% endif %}
+        </div>
+</main>
