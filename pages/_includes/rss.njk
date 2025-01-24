@@ -13,7 +13,7 @@
   {%- for post in collections[collection.name] | reverse %}
   	{# {%- if loop.index0 "<" 10 -%} #}
       {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
-      {%- set emailReplyHTML -%}<p><a href="mailto:reillypascal@gmail.com?subject=Re: “{{ post.data.title }}”">Reply via email</a></p>{%- endset -%}
+      {%- set emailReplyHTML -%}<p><a href="mailto:reillypascal@gmail.com?subject=Re: '{{ post.data.title }}'">Reply via email</a></p>{%- endset -%}
       {%- set finalHTMLContent = [post.templateContent, emailReplyHTML] | join -%}
         <entry>
           <title>{{ post.data.title }}</title>
