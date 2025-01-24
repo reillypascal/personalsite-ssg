@@ -1,6 +1,6 @@
 ---
 title: Setting up a "notes" feed
-description: Setting up a "notes" feed
+description: Short posts, thoughts, and interesting things from around the web — it's like Twitter but I own all my posts!
 canonical_url: https://reillyspitzfaden.com/notes/2025/01/setting-up
 date: 2025-01-23
 tags:

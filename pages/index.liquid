@@ -103,7 +103,7 @@ eleventyExcludeFromCollections: true
     <div id="column-right">
         <h2 class="sectionHeader">Recently Updated</h2>
         <div id="recentItems">
-            {% assign recent_posts = collections.post | slice: -3, 3 %}
+            {% assign recent_posts = collections.all | slice: -3, 3 %}
             {% for item in recent_posts reversed %}
             
             <section>
