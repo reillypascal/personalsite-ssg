@@ -101,7 +101,20 @@ eleventyExcludeFromCollections: true
     </div>
     
     <div id="column-right">
-        <h2 class="sectionHeader">Recently Updated</h2>
+        <h2 class="sectionHeader">Featured Posts</h2>
+        <section>
+            <h3><a href="https://reillyspitzfaden.com/posts/2025/01/databending-part-1/">Databending Part 1</a></h3>
+            <p>Did you know you can listen to pretty much any file as an audio file? Let's look at how it works and what it sounds like!</p>
+        </section>
+        
+        <section>
+            <h3><a href="https://reillyspitzfaden.com/posts/2024/12/radio-listening-musically/">Radio &mdash; Listening Musically, Being Haunted</a></h3>
+            <p>Listening to shortwave radio signals, discussing my emotive reaction to the signals, and composing music with them</p>
+        </section>
+        
+        <div class="dinkus"><p>***</p></div>
+
+        <h2 class="sectionHeader">Recent Posts</h2>
         <div id="recentItems">
             {% assign recent_posts = collections.all | slice: -3, 3 %}
             {% for item in recent_posts reversed %}
@@ -111,7 +124,7 @@ eleventyExcludeFromCollections: true
                 <p>{{ item.data.description }}</p>
             </section>
             
-            <div class="dinkus"><p>***</p></div>
+            {% comment %} <div class="dinkus"><p>***</p></div> {% endcomment %}
             
             {% endfor %}
         </div>
