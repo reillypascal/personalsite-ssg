@@ -9,5 +9,3 @@ tags: like
 ---
 
 {% liked "https://artlung.com/blog/2024/11/25/spite-sanity-one-sheet/" %}
-
-{% likedfooter title, canonical_url %}

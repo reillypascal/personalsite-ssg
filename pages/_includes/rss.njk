@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ metadata.title }}</title>
+  <subtitle>{{ metadata.desc }}</subtitle>
+  <link href="{{ metadata.feedUrl }}" rel="self"/>
+  <link href="{{ metadata.url }}"/>
+  <updated>{{ collections[collection.name] | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
+  <id>{{ metadata.url }}/</id>
+  <author>
+    <name>{{ metadata.author.name }}</name>
+    <email>{{ metadata.author.email }}</email>
+  </author>
+  {%- for post in collections[collection.name] | reverse %}
+  	{# {%- if loop.index0 "<" 10 -%} #}
+      {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+      {%- set emailReplyHTML -%}<p><a href="mailto:reillypascal@gmail.com?subject=Re: “{{ post.data.title }}”">Reply via email</a></p>{%- endset -%}
+      {%- set finalHTMLContent = [post.templateContent, emailReplyHTML] | join -%}
+        <entry>
+          <title>{{ post.data.title }}</title>
+          <link href="{{ absolutePostUrl }}"/>
+          <updated>{{ post.date | dateToRfc3339 }}</updated>
+          <id>{{ absolutePostUrl }}</id>
+          <content type="html">
+          {{ finalHTMLContent | htmlToAbsoluteUrls(absolutePostUrl) }}
+          </content>
+        </entry>
+    {# {%- endif -%} #}
+  {%- endfor %}
+</feed>

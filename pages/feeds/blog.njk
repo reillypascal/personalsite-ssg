@@ -1,0 +1,23 @@
+---json
+{
+  "permalink": "/blog/feed.xml",
+  "eleventyExcludeFromCollections": true,
+  "collection": {
+    "name": "post",
+    "limit": 0
+  },
+  "metadata": {
+    "language": "en",
+    "title": "Reilly Spitzfaden, Composer",
+    "subtitle":
+        "A blog about my personal interests, including composition and sound design; audio development using Max/MSP, C++, JUCE, and Rust; and web development on the IndieWeb",
+    "feedUrl": "https://reillyspitzfaden.com/blog/feed.xml",
+    "url": "https://reillyspitzfaden.com/blog",
+    "author": {
+        "name": "Reilly Spitzfaden",
+        "email": "reillypascal@gmail.com"
+    }
+  }
+}
+---
+{%- include "rss.njk" %}

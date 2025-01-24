@@ -9,5 +9,3 @@ tags: like
 ---
 
 {% liked "https://nathan.ho.name/posts/dm-synthesis/" %}
-
-{% likedfooter title, canonical_url %}

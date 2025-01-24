@@ -9,5 +9,3 @@ tags: like
 ---
 
 {% liked "https://meljoann.com/posts/fedimanifesto/" %}
-
-{% likedfooter title, canonical_url %}

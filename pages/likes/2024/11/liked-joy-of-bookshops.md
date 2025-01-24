@@ -9,5 +9,3 @@ tags: like
 ---
 
 {% liked "https://jamesg.blog/2024/11/28/joy-of-bookshops/" %}
-
-{% likedfooter title, canonical_url %}

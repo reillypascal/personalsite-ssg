@@ -1,0 +1,23 @@
+---json
+{
+  "permalink": "/likes/feed.xml",
+  "eleventyExcludeFromCollections": true,
+  "collection": {
+    "name": "like",
+    "limit": 0
+  },
+  "metadata": {
+    "language": "en",
+    "title": "Reilly Spitzfaden, Composer",
+    "subtitle":
+        "Posts I like from around the internet. Formatted using Microformats, and sent with Webmentions when available.",
+    "feedUrl": "https://reillyspitzfaden.com/likes/feed.xml",
+    "url": "https://reillyspitzfaden.com/likes",
+    "author": {
+        "name": "Reilly Spitzfaden",
+        "email": "reillypascal@gmail.com"
+    }
+  }
+}
+---
+{%- include "rss.njk" %}
