@@ -13,12 +13,9 @@ eleventyExcludeFromCollections: true
 <link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
 
 <style>
-    .email-reply {
-        margin: 32px 0 16px 0;
+    p {
+        line-height: var(--p-line-height);
     }
-</style>
-
-<style>
     .page-nav-wrapper {
         display: flex;
         justify-content: space-between;
@@ -27,6 +24,8 @@ eleventyExcludeFromCollections: true
 <main>
         <h2 class="sectionHeader">Notes</h2>
         <p>Short posts, thoughts, and interesting things from around the web — it's like Twitter but I own all my posts!</p>
+
+        <p><a href="/tags">View all tags</a></p>
         
         {% for note in notes %}
         <article>
