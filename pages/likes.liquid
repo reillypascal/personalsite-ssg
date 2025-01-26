@@ -24,14 +24,17 @@ eleventyExcludeFromCollections: true
         {% comment %} <hr /> {% endcomment %}
         
         {% for like in likes %}
-        <article>
-        <h3><a href="{{like.url}}">{{ like.data.title }}</a></h3>
-        <span class="meta-icon">
-        <img src="/media/icon-calendar-ltr.svg" alt="calendar icon" />
-        </span>
-        <span class="meta-text">
-        <time>{{ like.date | date: "%A, %B %d, %Y" }}</time>
-        </span>
+        <article class="h-entry">
+            <h3 class="p-name"><a class="u-url" href="{{like.url}}">{{ like.data.title }}</a></h3>
+
+            <a rel="author" class="p-author h-card" href="https://reillyspitzfaden.com"></a>
+
+            <span class="meta-icon">
+            <img src="/media/icon-calendar-ltr.svg" alt="calendar icon" />
+            </span>
+            <span class="meta-text">
+            <time class="dt-published" datetime="{{ date | postDate }}">{{ like.date | date: "%A, %B %d, %Y" }}</time>
+            </span>
         </article>
         {% comment %} <hr /> {% endcomment %}
         {% endfor %}

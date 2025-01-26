@@ -1,6 +1,7 @@
 const feedPlugin = require("@11ty/eleventy-plugin-rss");
 let markdownIt = require("markdown-it");
 let markdownItFootnote = require("markdown-it-footnote");
+const { DateTime } = require("luxon");
 
 module.exports = async function (eleventyConfig) {
   // passthrough copies
@@ -13,6 +14,11 @@ module.exports = async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("media");
   eleventyConfig.addPassthroughCopy("netlify");
   eleventyConfig.addPassthroughCopy("styles");
+
+  // filters
+  eleventyConfig.addFilter("postDate", (dateObj) => {
+    return DateTime.fromJSDate(dateObj).toISO(DateTime.DATE_MED);
+  });
 
   // shortcodes
   eleventyConfig.addShortcode("postfooter", (title, url) => {
