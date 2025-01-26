@@ -2,7 +2,7 @@
 title: Hypertext, the Memex, and Collaboration as Socialization
 description: What if socializing on the Internet were more like editing Wikipedia? Read on to know why I'm thinking about this!
 canonical_url: https://reillyspitzfaden.com/posts/2024/12/hypertext-memex-collaboration-socialization
-date: 2024-12-01
+date: 2024-12-01 00:00:00 America/New_York
 octothorpes:
   - Audio
   - digitalGardens
