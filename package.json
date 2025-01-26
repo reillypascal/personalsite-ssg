@@ -15,6 +15,7 @@
     "pagefind": "^1.2.0"
   },
   "dependencies": {
+    "@11ty/eleventy-fetch": "^5.0.2",
     "@supabase/supabase-js": "^2.46.1",
     "dotenv": "^16.4.5",
     "markdown-it": "^14.1.0",

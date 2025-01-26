@@ -59,10 +59,13 @@ title: Reilly Spitzfaden, Composer
             <span id="react-ctr"></span>
         </div> 
 
-        <div class="share-openly">
+        {% assign mentions = webmentions.mentions %}
+        <div>Webmentions: {{ webmentions.mentions }}</div>
+
+        {% comment %} <div class="share-openly">
             <img class="share-openly-icon" src="/media/share-openly.svg">&nbsp;
             <a href="https://shareopenly.org/share/?url={{ canonical_url }}">Share on the Fediverse</a>
-        </div>
+        </div> {% endcomment %}
 
     </article>
     
@@ -108,6 +111,7 @@ title: Reilly Spitzfaden, Composer
 
 <script>
     let blogPostURL = "{{ canonical_url }}";
+    console.log(webmentions.mentions);
 </script>
 <script src="/styles/interactions.js"></script>
 
