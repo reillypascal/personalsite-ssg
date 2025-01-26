@@ -10,7 +10,6 @@ module.exports = async function () {
 	});
 	const webmentions = await res;
 	return {
-		// mentions: webmentions.children,
-        mentions: { mention: "test" }
+		mentions: webmentions.children,
 	};
 };
