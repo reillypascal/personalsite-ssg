@@ -30,7 +30,7 @@ title: Reilly Spitzfaden, Composer
         {% assign sorted_categories = tags | sort %}
         {% for tag in sorted_categories %}
             {% comment %} {% if tag != 'note' %} {% endcomment %}
-            <span class="p-category post-tag"><a href="/tags/{{ tag }}">#{{ tag }}</a></span>
+            <span class="p-category"><a class="post-tag" href="/tags/{{ tag }}">#{{ tag }}</a></span>
             {% comment %} {% endif %} {% endcomment %}
         {% endfor %}
     </div>
