@@ -3,7 +3,7 @@ title: Adding multiple RSS feeds
 description: Manually generating RSS feeds so I can have separate ones for different kinds of posts
 canonical_url: https://reillyspitzfaden.com/notes/2025/01/multiple-rss-feeds
 fedi_url: https://hachyderm.io/@reillypascal/113884630531813259
-date: 2025-01-24T00:00:00-0500
+date: 2025-01-24
 tags:
   - note
   - 11ty

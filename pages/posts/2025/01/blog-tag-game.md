@@ -3,7 +3,7 @@ title: Blog Tag Game
 description: Tumblr-style tag game about blogging — I'd love if you join in!
 canonical_url: https://reillyspitzfaden.com/posts/2025/01/blog-tag-game
 fedi_url: https://hachyderm.io/@reillypascal/113782516437417448
-date: 2025-01-06T00:00:00-0500
+date: 2025-01-06
 octothorpes:
   - 11ty
   - blogging
