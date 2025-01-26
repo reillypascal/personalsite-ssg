@@ -12,53 +12,53 @@ title: Reilly Spitzfaden, Composer
     <!-- ###### data-pagefind-body boolean attribute makes only blog posts indexed ###### -->
     <article class="h-entry" data-pagefind-body>
 
-    <h2 class="p-name sectionHeader">{{ title }}</h2>
+        <h2 class="p-name sectionHeader">{{ title }}</h2>
 
-    <div class="post-meta">
-        <span class="meta-icon">
-            <img src="/media/icon-calendar-ltr.svg" alt="calendar icon" width="18" height="18" />
-        </span>
-        
-        <span class="meta-text">
-            <a href="{{ canonical_url }}"><time class="dt-published" datetime="{{ date }}">{{ date | date: "%A, %B %d, %Y" }}</time></a>
-        </span>
-    </div>
-    
-    <div class="post-tags">
-        {% assign sorted_categories = tags | sort %}
-        {% for tag in sorted_categories %}
-            {% comment %} {% if tag != 'post' %} {% endcomment %}
-                <span class="p-category"><a class="post-tag" href="/tags/{{ tag }}">#{{ tag }}</a></span>
-            {% comment %} {% endif %} {% endcomment %}
-        {% endfor %}
-    </div>
-
-    <div class="e-content">
-        {{ content }}
-    </div>
-    
-    <div class="email-reply">
-        <a href='mailto:reillypascal@gmail.com?subject=Re: {{ title }}'>Reply via email</a>
-    </div>
-
-    <div class="post-reactions">
-        <span class="heart-meta">
-            Post Reactions:
-        </span>
-        
-        <button id="react-btn">
-            <span class="heart-react">
-                <img src="/media/icon-heart-pink.svg" alt="heart icon" />
+        <div class="post-meta">
+            <span class="meta-icon">
+                <img src="/media/icon-calendar-ltr.svg" alt="calendar icon" width="18" height="18" />
             </span>
-        </button>
+            
+            <span class="meta-text">
+                <a class="u-url" href="{{ canonical_url }}"><time class="dt-published" datetime="{{ date }}">{{ date | date: "%A, %B %d, %Y" }}</time></a>
+            </span>
+        </div>
+        
+        <div class="post-tags">
+            {% assign sorted_categories = tags | sort %}
+            {% for tag in sorted_categories %}
+                {% comment %} {% if tag != 'post' %} {% endcomment %}
+                    <span class="p-category"><a class="post-tag" href="/tags/{{ tag }}">#{{ tag }}</a></span>
+                {% comment %} {% endif %} {% endcomment %}
+            {% endfor %}
+        </div>
 
-        <span id="react-ctr"></span>
-    </div> 
+        <div class="e-content">
+            {{ content }}
+        </div>
+        
+        <div class="email-reply">
+            <a href='mailto:reillypascal@gmail.com?subject=Re: {{ title }}'>Reply via email</a>
+        </div>
 
-    <div class="share-openly">
-        <img class="share-openly-icon" src="/media/share-openly.svg">&nbsp;
-        <a href="https://shareopenly.org/share/?url={{ canonical_url }}">Share on the Fediverse</a>
-    </div>
+        <div class="post-reactions">
+            <span class="heart-meta">
+                Post Reactions:
+            </span>
+            
+            <button id="react-btn">
+                <span class="heart-react">
+                    <img src="/media/icon-heart-pink.svg" alt="heart icon" />
+                </span>
+            </button>
+
+            <span id="react-ctr"></span>
+        </div> 
+
+        <div class="share-openly">
+            <img class="share-openly-icon" src="/media/share-openly.svg">&nbsp;
+            <a href="https://shareopenly.org/share/?url={{ canonical_url }}">Share on the Fediverse</a>
+        </div>
 
     </article>
     

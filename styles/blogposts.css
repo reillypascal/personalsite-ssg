@@ -3,14 +3,16 @@
     margin-bottom: 16px;
 }
 
-article {
+/* replaced w/ e-content margin */
+/* article {
     margin: 32px 0;
 }
+
 @media screen and (min-width: 660px) {
     article {
         margin: 48px 0;
     }
-}
+} */
 
 .post-tags {
     line-height: var(--p-line-height);
@@ -18,6 +20,18 @@ article {
 }
 .post-tag {
     margin-right: 4px;
+}
+
+.e-content {
+    /* this is an h-entry tag */
+    margin: 32px 0;
+}
+
+@media screen and (min-width: 660px) {
+    .e-content {
+        /* this is an h-entry tag */
+        margin: 48px 0;
+    }
 }
 
 /* after post */
