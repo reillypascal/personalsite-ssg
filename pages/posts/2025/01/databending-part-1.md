@@ -2,6 +2,7 @@
 title: Databending Part 1
 description: Did you know you can listen to pretty much any file as an audio file? Let's look at how it works and what it sounds like!
 canonical_url: https://reillyspitzfaden.com/posts/2025/01/databending-part-1
+fedi_url: https://hachyderm.io/@reillypascal/113776964186364648
 date: 2025-01-05
 octothorpes:
   - Art
