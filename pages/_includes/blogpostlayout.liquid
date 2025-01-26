@@ -18,7 +18,7 @@ title: Reilly Spitzfaden, Composer
         </span>
         
         <span class="meta-text">
-            <a href="{{ canonical_url }}"><time>{{ date | date: "%A, %B %d, %Y" }}</time></a> 
+            <a href="{{ canonical_url }}"><time class="dt-published" datetime="{{ date }}">{{ date | date: "%A, %B %d, %Y" }}</time></a>
         </span>
     </div>
     
@@ -26,15 +26,15 @@ title: Reilly Spitzfaden, Composer
         {% assign sorted_categories = tags | sort %}
         {% for tag in sorted_categories %}
             {% comment %} {% if tag != 'post' %} {% endcomment %}
-                <span class="post-tag"><a href="/tags/{{ tag }}">#{{ tag }}</a></span>
+                <span class="p-category post-tag"><a href="/tags/{{ tag }}">#{{ tag }}</a></span>
             {% comment %} {% endif %} {% endcomment %}
         {% endfor %}
     </div>
 
-    <article data-pagefind-body>
-    
-        {{ content }}
-
+    <article class="h-entry" data-pagefind-body>
+        <div class="e-content">
+            {{ content }}
+        </div>
     </article>
     
     <div class="email-reply">

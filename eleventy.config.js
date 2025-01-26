@@ -65,11 +65,9 @@ module.exports = async function (eleventyConfig) {
 
   eleventyConfig.addShortcode("liked", (url, title) => {
     let display_title = title ? title : url;
-    return `<div class="h-entry">
-      <p class="p-summary"> Liked: <a class="u-like-of" 
+    return `<p class="p-summary"> Liked: <a class="u-like-of" 
       href="${url}">
-      ${display_title}</a> </p>
-    </div>`;
+      ${display_title}</a> </p>`;
   });
 
   eleventyConfig.addShortcode("list_dingbat", () => {
