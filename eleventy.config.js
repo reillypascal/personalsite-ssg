@@ -17,7 +17,7 @@ module.exports = async function (eleventyConfig) {
 
   // filters
   eleventyConfig.addFilter("postDate", (dateObj) => {
-    return DateTime.fromJSDate(dateObj).toISO(DateTime, { zone: 'America/New_York' });
+    return DateTime.fromJSDate(dateObj).setZone("America/New_York").toISO(DateTime);
   });
 
   // shortcodes
