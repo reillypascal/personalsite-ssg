@@ -60,7 +60,7 @@ title: Reilly Spitzfaden, Composer
         </div> 
 
         {% assign mentions = webmentions.mentions %}
-        <div>Webmentions: {{ webmentions.mentions }}</div>
+        {% comment %} <div>Webmentions: {{ webmentions.mentions }}</div> {% endcomment %}
 
         {% comment %} <div class="share-openly">
             <img class="share-openly-icon" src="/media/share-openly.svg">&nbsp;
@@ -111,7 +111,7 @@ title: Reilly Spitzfaden, Composer
 
 <script>
     let blogPostURL = "{{ canonical_url }}";
-    console.log(webmentions.mentions);
+    // console.log(webmentions.mentions);
 </script>
 <script src="/styles/interactions.js"></script>
 
