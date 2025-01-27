@@ -6,11 +6,11 @@ title: Reilly Spitzfaden, Composer
 <link rel="stylesheet" type="text/css" href="/styles/forms.css" />
 <link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
 
-<style>
+{% comment %} <style>
     .email-reply {
         margin: 32px 0 16px 0;
     }
-</style>
+</style> {% endcomment %}
 
 <main>
     <!-- post contents -->
@@ -30,6 +30,9 @@ title: Reilly Spitzfaden, Composer
         </div>
         
         <div class="post-tags">
+            <span class="tag-icon">
+                <img width="18" height="18" src="/media/ui/tag-icon-solid-18px.svg" alt="favorite icon" />
+            </span>
             {% assign sorted_categories = tags | sort %}
             {% for tag in sorted_categories %}
                 {% comment %} {% if tag != 'note' %} {% endcomment %}
@@ -43,30 +46,42 @@ title: Reilly Spitzfaden, Composer
         <div class="e-content">
             {{ content }}
         </div>
-        </article>
-
-        <div class="email-reply">
-            <a href='mailto:reillypascal@gmail.com?subject=Re: {{ title }}'>Reply via email</a>
-        </div>
-
+        
         <div class="post-reactions">
-            <span class="heart-meta">
-                Post Reactions:
-            </span>
-            
             <button id="react-btn">
                 <span class="heart-react">
                     <img src="/media/icon-heart-pink.svg" alt="heart icon" />
                 </span>
             </button>
 
-            <span id="react-ctr"></span>
+            <span id="react-ctr">0</span>
         </div>
         
-        {% comment %} <div class="share-openly">
-            <img class="share-openly-icon" src="/media/share-openly.svg">&nbsp;
-            <a href="https://shareopenly.org/share/?url={{ canonical_url }}">Share on the Fediverse</a>
-        </div> {% endcomment %}
+        <div class="email-reply">
+            <span class="mail-icon">
+                <img width="18" height="18" src="/media/ui/mail-icon-light-18px.svg" alt="mail icon" />
+            </span>
+            <a href='mailto:reillypascal@gmail.com?subject=Re: {{ title }}'>Reply via email</a>
+        </div>
+
+        <div class="webmention-display">
+            <span class="webmention-logo">
+                <img width="18" height="18" src="/media/ui/webmention-logo-light-18px.svg" alt="webmention logo" />
+            </span>
+            <span class="webmention-meta">Webmentions:</span>
+            <span class="webmention-reply-icon">
+                <img width="18" height="18" src="/media/ui/comment-icon-light-18px.svg" alt="reply icon" />
+            </span>
+            <span class="webmention-meta">0</span>
+            <span class="webmention-repost-icon">
+                <img width="18" height="18" src="/media/ui/repost-icon-light-18px.svg" alt="repost icon" />
+            </span>
+            <span class="webmention-meta">0</span>
+            <span class="webmention-fav-icon">
+                <img width="18" height="18" src="/media/ui/favorite-icon-light-18px.svg" alt="favorite icon" />
+            </span>
+            <span class="webmention-meta">0</span>
+        </div>
 
     </article>
     

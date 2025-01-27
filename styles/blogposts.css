@@ -17,7 +17,11 @@
         margin: 48px 0;
     }
 } */
-
+.tag-icon {
+    position: relative;
+    top: 4px;
+    margin-right: 2px;
+}
 .post-tags {
     line-height: var(--p-line-height);
     margin-bottom: 16px;
