@@ -81,7 +81,7 @@ title: Reilly Spitzfaden, Composer
         </div>
 
         {% comment %} {% assign mentions = webmentions | webmentionsByUrl: webmentions, 'canonical_url' %} {% endcomment %}
-        <div>Webmentions: {{ webmentions | log }}</div>
+        {% comment %} <div>Webmentions: {{ webmentions | log }}</div> {% endcomment %}
 
         {% comment %} <div class="share-openly">
             <img class="share-openly-icon" src="/media/share-openly.svg">&nbsp;
