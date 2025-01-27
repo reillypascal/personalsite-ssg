@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   fill="#000000"
+   width="800"
+   height="800"
+   viewBox="0 0 24 24"
+   id="repost-2"
+   data-name="Flat Line"
+   class="icon flat-line"
+   version="1.1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <path
+     id="primary"
+     d="m 18.133767,18.349919 h 2.046721 a 1.0233604,1.0233604 0 0 0 1.02336,-1.02336 V 7.0929541 A 1.0233604,1.0233604 0 0 0 20.180488,6.0695937 H 9.946884"
+     style="fill:none;stroke:#e7ecfd;stroke-width:2.04673;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+  <path
+     id="primary-2"
+     data-name="primary"
+     d="M 5.8534417,6.0695937 H 3.8067209 A 1.0233604,1.0233604 0 0 0 2.7833604,7.0929541 V 17.326559 a 1.0233604,1.0233604 0 0 0 1.0233605,1.02336 H 14.040325"
+     style="fill:none;stroke:#e7ecfd;stroke-width:2.04673;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1" />
+  <polyline
+     id="primary-3"
+     data-name="primary"
+     points="8 12 6 14 4 12"
+     style="fill:none;stroke:#e7ecfd;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+     transform="matrix(0,1.0233604,-1.0233604,0,24.273929,-0.07056882)" />
+  <polyline
+     id="primary-4"
+     data-name="primary"
+     points="16 12 18 10 20 12"
+     style="fill:none;stroke:#e7ecfd;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:1"
+     transform="matrix(0,1.0233604,-1.0233604,0,24.273929,-0.07056882)" />
+</svg>

@@ -159,9 +159,7 @@ const handleGetHeart = async (event) => {
     .then((response) => response.json())
     .then((json) => {
       let reactCount = Object.keys(json).length;
-      if (reactCount > 0) {
-        reactCtr.innerText = `x${reactCount}`;
-      }
+      reactCtr.innerText = `${reactCount}`;
     })
     .catch((error) => {
       reactCtr.innerText = "(error retrieving reactions)";
