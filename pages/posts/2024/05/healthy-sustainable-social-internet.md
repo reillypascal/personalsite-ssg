@@ -1,7 +1,7 @@
 ---
 title: Healthy, Sustainable Social Internet
 description: Thinking through what I want from the social internet, and the difference between a social "network" and social "media"
-canonical_url: https://reillyspitzfaden.com/posts/2024/05/healthy-sustainable-social-internet
+canonical_url: https://reillyspitzfaden.com/posts/2024/05/healthy-sustainable-social-internet/
 date: 2024-05-17
 tags: [ "post", "indieweb", "fediverse", "socialmedia" ]
 ---

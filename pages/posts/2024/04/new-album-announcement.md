@@ -1,7 +1,7 @@
 ---
 title: New Album Announcement
 description: My trio "If this reaches you" is on Apply Triangle's new album, out on April 12!
-canonical_url: https://reillyspitzfaden.com/posts/2024/04/new-album-announcement
+canonical_url: https://reillyspitzfaden.com/posts/2024/04/new-album-announcement/
 date: 2024-04-05
 tags: ["post", "music", "composition", "maxmsp"]
 ---

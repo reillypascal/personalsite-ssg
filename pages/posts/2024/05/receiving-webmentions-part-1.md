@@ -1,7 +1,7 @@
 ---
 title: Receiving Webmentions, Part 1
 description: Setting up my blog to receive Webmentions
-canonical_url: https://reillyspitzfaden.com/posts/2024/05/receiving-webmentions-part-1
+canonical_url: https://reillyspitzfaden.com/posts/2024/05/receiving-webmentions-part-1/
 date: 2024-05-21
 tags: ["post", "webdev", "indieweb", "programming"]
 ---

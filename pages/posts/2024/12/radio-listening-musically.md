@@ -1,7 +1,7 @@
 ---
 title: Radio — Listening Musically, Being Haunted
 description: Listening to shortwave radio signals, discussing my emotive reaction to the signals, and composing music with them
-canonical_url: https://reillyspitzfaden.com/posts/2024/12/radio-listening-musically
+canonical_url: https://reillyspitzfaden.com/posts/2024/12/radio-listening-musically/
 fedi_url: https://hachyderm.io/@reillypascal/113720401445211368
 date: 2024-12-26
 octothorpes:

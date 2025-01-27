@@ -1,7 +1,7 @@
 ---
 title: Hello World!
 description: An introduction to this blog and what I plan to do with it
-canonical_url: https://reillyspitzfaden.com/posts/2024/01/hello-world
+canonical_url: https://reillyspitzfaden.com/posts/2024/01/hello-world/
 date: 2024-01-03
 tags: [ "post", "webdev", "indieweb"]
 ---

@@ -22,13 +22,13 @@ module.exports = async function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toISO(DateTime);
   });
 
-  eleventyConfig.addFilter("webmentionsByUrl", async function(webmentions, url) {
+  eleventyConfig.addFilter("webmentionsByUrl", function(webmentions, url) {
     const allowedTypes = {
       likes: ["like-of"],
       reposts: ["repost-of"],
       comments: ["mention-of", "in-reply-to"],
     };
-  
+    
     const sanitize = (entry) => {
       if (entry.content && entry.content.html) {
         entry.content = sanitizeHTML(entry.content.html, {
@@ -38,9 +38,9 @@ module.exports = async function (eleventyConfig) {
       return entry;
     };
   
-    const pageWebmentions = await webmentions
+    const pageWebmentions = webmentions
       .filter(
-        (mention) => mention["wm-target"] === url
+        (mention) => mention["wm-target"] == url
       )
       .sort((a, b) => new Date(b.published) - new Date(a.published))
       .map(sanitize);
@@ -62,8 +62,10 @@ module.exports = async function (eleventyConfig) {
         return author && author.name && published && content;
       });
   
-    const mentionCount = likes.length + reposts.length + comments.length;
-    const data = { likes, reposts, comments, mentionCount };
+    const likeCount = likes.length;
+    const repostCount = reposts.length;
+    const commentCount = comments.length;
+    const data = { likes, reposts, comments, likeCount, repostCount, commentCount };
     return data;
   });
 
