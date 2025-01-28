@@ -3,7 +3,7 @@ title: Displaying Webmentions
 description: Manually generating RSS feeds so I can have separate ones for different kinds of posts
 canonical_url: https://reillyspitzfaden.com/notes/2025/01/displaying-webmentions/
 fedi_url: 
-date: 2025-01-28T00:52:00-0500
+date: 2025-01-28T00:55:00-0500
 tags:
   - post
   - 11ty
@@ -54,6 +54,9 @@ I ended up using the "[eleventy-plugin-webmentions](https://github.com/CodeFoodP
 My next step is to get it to automatically build every so often so I can get new webmentions. [Thadee](https://www.voorhoede.nl/en/blog/scheduling-netlify-deploys-with-github-actions/) and [Sophie Koonin](https://localghost.dev/blog/how-to-schedule-posts-in-eleventy/) have some discussions I'll look at. Something else I'm considering is just using [cURL](https://en.wikipedia.org/wiki/CURL) to get the webmentions in a .json file. When I manually ran this line, I was able to use the resulting file in Eleventy just fine, so I may try automatically running that line in a GitHub action.
 
 <pre><code class="language-bash">curl 'https://webmention.io/api/mentions.jf2?token=-PsKFuieg-7U9kQK5X8cqg&per-page=1000' -o ./pages/_data/webmentions-static.json</code></pre>
+
+### Design
+While I'm not finished with how I handle displaying the webmentions behind the scenes, I am happy with the design elements for them. I added SVG icons to the tags at the top of the posts (to match the calender icons), to the email reply at the bottom, and to the webmention line — both the webmention icon and the symbols for the categories. I've been thinking about how to keep the site text-focused and minimal but add a bit of visual clarity to the layout, and I think this kind of icon works well for me.
 
 ### Looking Forward
 I think I'll start doing more writeups of/notes about in-progress projects. While I'm still not fully satisfied with my results here, and I have a number of other things I want to get done, it feels nice to write out what I *have* accomplished. Also allowing things to be unfinished helps me write about them — if I wait until I feel truly done (which often doesn't come!) I may not write about it at all.
