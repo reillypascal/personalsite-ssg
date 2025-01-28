@@ -27,47 +27,7 @@ eleventyExcludeFromCollections: true
 
         <p><a href="/tags">View all tags</a></p>
 
-        <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
-        <style>
-            .pagefind-ui {
-                --pagefind-ui-primary: var(--fg-light);
-                --pagefind-ui-text: var(--fg-light);
-                --pagefind-ui-background: var(--bg-dark);
-                --pagefind-ui-border: var(--accent-med-light);
-                --pagefind-ui-tag: var(--accent-med-light);
-                --pagefind-ui-font: 'Open Sans', sans-serif;
-            }
-            ::placeholder {
-                color: var(--fg-light) !important;
-                opacity: 0.5 !important;
-            }
-            ::-ms-input-placeholder { /* Edge 12 -18 */
-                color: var(--fg-light) !important;
-            }
-            .pagefind-ui__result-thumb {
-                display: none;
-            }
-            #search {
-                padding-top: 8px;
-            }
-            @media screen and (min-width: 480px) {
-                #search {
-                    padding-top: 12px;
-                }
-            }
-            @media screen and (min-width: 640px) {
-                #search {
-                    padding-top: 16px;
-                }
-            }
-        </style>
-        <script src="/pagefind/pagefind-ui.js"></script>
-        <div id="search"></div>
-        <script>
-            window.addEventListener('DOMContentLoaded', (event) => {
-                new PagefindUI({ element: "#search", showSubResults: true });
-            });
-        </script>
+        {% include "partials/pagefind-search.html" %}
         
         {% for note in notes %}
         <article class="h-entry">
