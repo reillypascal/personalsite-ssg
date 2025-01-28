@@ -1,6 +1,6 @@
 ---
 title: Displaying Webmentions
-description: I finally figured out displaying webmentions on my site without any client-side JavaScript! I'm happy with the visual design for displaying them too
+description: I finally figured out displaying webmentions on my site without any client-side JavaScript!
 canonical_url: https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/
 fedi_url: https://hachyderm.io/@reillypascal/113907004496812260
 date: 2025-01-28T00:55:00-0500
