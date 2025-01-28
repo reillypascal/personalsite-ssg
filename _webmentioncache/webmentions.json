@@ -1,6 +1,455 @@
 {
-  "lastFetched": "2025-01-28T16:58:33.307Z",
+  "lastFetched": "2025-01-28T20:53:10.401Z",
   "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sami Määttä",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/cd18b8e0cab10e45730638834454cdfc8fe2ca2db7c3abe69b84b06bbccd24cb.jpg",
+        "url": "https://mementomori.social/@SamiMaatta"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113907004496812260#reblogged-by-110769620862658774",
+      "published": null,
+      "wm-received": "2025-01-28T20:46:55Z",
+      "wm-id": 1880930,
+      "wm-source": "https://brid.gy/repost/mastodon/@reillypascal@hachyderm.io/113907004496812260/110769620862658774",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "damianwalsh",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/b3e4305ce87742689f9ce305601348015cd3e33f58a6230903b4ebe8dd0c4524.jpg",
+        "url": "https://mastodon.social/@damianwalsh"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113907004496812260#favorited-by-109365076210108281",
+      "published": null,
+      "wm-received": "2025-01-28T20:46:54Z",
+      "wm-id": 1880929,
+      "wm-source": "https://brid.gy/like/mastodon/@reillypascal@hachyderm.io/113907004496812260/109365076210108281",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Sami Määttä",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/cd18b8e0cab10e45730638834454cdfc8fe2ca2db7c3abe69b84b06bbccd24cb.jpg",
+        "url": "https://mementomori.social/@SamiMaatta"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113907004496812260#favorited-by-110769620862658774",
+      "published": null,
+      "wm-received": "2025-01-28T20:46:53Z",
+      "wm-id": 1880928,
+      "wm-source": "https://brid.gy/like/mastodon/@reillypascal@hachyderm.io/113907004496812260/110769620862658774",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Claudia :prami:",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/328ef5b3b75f249f20d14453c96441cafad3e365fbad621d5363ce59113beb5e.png",
+        "url": "https://social.lol/@claudia"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113907004496812260#favorited-by-113223176456439502",
+      "published": null,
+      "wm-received": "2025-01-28T19:24:49Z",
+      "wm-id": 1880918,
+      "wm-source": "https://brid.gy/like/mastodon/@reillypascal@hachyderm.io/113907004496812260/113223176456439502",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "benji",
+        "photo": "https://webmention.io/avatar/benji.dog/98f50ccee2f72b224906440e0a78cc1fa5ea016ae65e5fa0d42ff5000ad29d24.jpg",
+        "url": "https://benji.dog"
+      },
+      "url": "https://www.benji.dog/notes/1738091887/",
+      "published": "2025-01-28T19:18:07+00:00",
+      "wm-received": "2025-01-28T19:19:29Z",
+      "wm-id": 1880916,
+      "wm-source": "https://www.benji.dog/notes/1738091887/",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-protocol": "webmention",
+      "summary": {
+        "content-type": "text/plain",
+        "value": "Reply to https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/"
+      },
+      "content": {
+        "html": "<p>Just in case you're looking for an approach for fetching webmentions every so often using Github Actions, this is what I do: <a href=\"https://github.com/benjifs/benji/blob/main/.github/workflows/fetch_webmentions.yml\">fetch_webmentions.yml</a></p>\n<p>I like to store the webmentions in my repo just in case something happens to <a href=\"http://webmention.io\">webmention.io</a> but it's not really necessary.</p>",
+        "text": "Just in case you're looking for an approach for fetching webmentions every so often using Github Actions, this is what I do: fetch_webmentions.yml\nI like to store the webmentions in my repo just in case something happens to webmention.io but it's not really necessary."
+      },
+      "in-reply-to": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-property": "in-reply-to",
+      "wm-private": false,
+      "rels": {
+        "canonical": "https://benji.dog/notes/1738091887/"
+      }
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jason :neobread_this_is_fine:",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/56e2f78132196df9816fcc2e0b9355d7f6927742e7e7108e9d3ca3e65197471c.jpg",
+        "url": "https://social.lol/@jasonm"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113907004496812260#reblogged-by-112261848251092248",
+      "published": null,
+      "wm-received": "2025-01-28T18:01:35Z",
+      "wm-id": 1880905,
+      "wm-source": "https://brid.gy/repost/mastodon/@reillypascal@hachyderm.io/113907004496812260/112261848251092248",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Rmdzn. ????",
+        "photo": "https://media.hachyderm.io/cache/accounts/avatars/111/827/946/006/995/775/original/31ef7d69e444a06e.webp",
+        "url": "https://sharkey.world/@rdnmz"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113907004496812260#favorited-by-111827946006995775",
+      "published": null,
+      "wm-received": "2025-01-28T17:37:49Z",
+      "wm-id": 1880898,
+      "wm-source": "https://brid.gy/like/mastodon/@reillypascal@hachyderm.io/113907004496812260/111827946006995775",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "gahlord",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/b0795bd963adb0b3a78fafb7ecf060596a4e4fecd030b7ffe3329b9b84a9f654.jpg",
+        "url": "https://post.lurk.org/@gahlord"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113907004496812260#reblogged-by-109287481802770203",
+      "published": null,
+      "wm-received": "2025-01-28T17:37:49Z",
+      "wm-id": 1880899,
+      "wm-source": "https://brid.gy/repost/mastodon/@reillypascal@hachyderm.io/113907004496812260/109287481802770203",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "smt",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/da839fdf2c2e90714139b44ad61a546f4176186d84b8869dc01b8addae3dc392.jpg",
+        "url": "https://hachyderm.io/@smt"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113907004496812260#favorited-by-110704271346262807",
+      "published": null,
+      "wm-received": "2025-01-28T17:37:48Z",
+      "wm-id": 1880897,
+      "wm-source": "https://brid.gy/like/mastodon/@reillypascal@hachyderm.io/113907004496812260/110704271346262807",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Reilly Spitzfaden (they/them)",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/3af660ed5ecf66c02f75967e5aeb0e28785ae8f9a38f647978411d6b7c61e28f.jpg",
+        "url": "https://hachyderm.io/@reillypascal"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113907113058964554",
+      "published": "2025-01-28T17:16:50+00:00",
+      "wm-received": "2025-01-28T17:37:43Z",
+      "wm-id": 1880896,
+      "wm-source": "https://brid.gy/comment/mastodon/@reillypascal@hachyderm.io/113907004496812260/113907113058964554",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-protocol": "webmention",
+      "content": {
+        "html": "<p><span class=\"h-card\"><a href=\"https://post.lurk.org/@gahlord\" class=\"u-url\">@<span>gahlord</span></a></span> thanks!</p>",
+        "text": "@gahlord thanks!"
+      },
+      "in-reply-to": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "gahlord",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/b0795bd963adb0b3a78fafb7ecf060596a4e4fecd030b7ffe3329b9b84a9f654.jpg",
+        "url": "https://post.lurk.org/@gahlord"
+      },
+      "url": "https://post.lurk.org/@gahlord/113907102053329258",
+      "published": "2025-01-28T17:14:02+00:00",
+      "wm-received": "2025-01-28T17:37:42Z",
+      "wm-id": 1880895,
+      "wm-source": "https://brid.gy/comment/mastodon/@reillypascal@hachyderm.io/113907004496812260/113907102112382006",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-protocol": "webmention",
+      "content": {
+        "html": "<p><span class=\"h-card\"><a href=\"https://hachyderm.io/@reillypascal\" class=\"u-url\">@<span>reillypascal</span></a></span> llooks good!</p>",
+        "text": "@reillypascal llooks good!"
+      },
+      "in-reply-to": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "clew",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/a256d2dddb1ce0d9243c120640ed458e9fb0b4846e7780f56c1507852206fc99.png",
+        "url": "https://ecoevo.social/@clew"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113907004496812260#reblogged-by-113841652509115915",
+      "published": null,
+      "wm-received": "2025-01-28T17:11:06Z",
+      "wm-id": 1880884,
+      "wm-source": "https://brid.gy/repost/mastodon/@reillypascal@hachyderm.io/113907004496812260/113841652509115915",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ufal Salman",
+        "photo": "https://media.hachyderm.io/cache/accounts/avatars/110/158/717/412/052/664/original/5797da651d066920.webp",
+        "url": "https://misskey.id/@ufal"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113907004496812260#reblogged-by-110158717412052664",
+      "published": null,
+      "wm-received": "2025-01-28T17:01:45Z",
+      "wm-id": 1880883,
+      "wm-source": "https://brid.gy/repost/mastodon/@reillypascal@hachyderm.io/113907004496812260/110158717412052664",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "????????????????????",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/588eda74449c4aaee388b5b07b4c1481dfc4c35fb18483e07d9cae3b508a3310.jpg",
+        "url": "https://exposur.es/tothedaring"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113907004496812260#reblogged-by-112737825695603313",
+      "published": null,
+      "wm-received": "2025-01-28T17:01:44Z",
+      "wm-id": 1880882,
+      "wm-source": "https://brid.gy/repost/mastodon/@reillypascal@hachyderm.io/113907004496812260/112737825695603313",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "????????????????????",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/588eda74449c4aaee388b5b07b4c1481dfc4c35fb18483e07d9cae3b508a3310.jpg",
+        "url": "https://exposur.es/tothedaring"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113907004496812260#favorited-by-112737825695603313",
+      "published": null,
+      "wm-received": "2025-01-28T17:01:43Z",
+      "wm-id": 1880881,
+      "wm-source": "https://brid.gy/like/mastodon/@reillypascal@hachyderm.io/113907004496812260/112737825695603313",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "gavcloud",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/690d4a932d63b93a23fc7f9c26c57478aa43e820237022a630203f03961191ac.jpg",
+        "url": "https://sonomu.club/@gavcloud"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113907004496812260#favorited-by-108222553760003163",
+      "published": null,
+      "wm-received": "2025-01-28T17:01:41Z",
+      "wm-id": 1880880,
+      "wm-source": "https://brid.gy/like/mastodon/@reillypascal@hachyderm.io/113907004496812260/108222553760003163",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Michel Salviano",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/b419e2392443ee105d3f9b4e07d1c98b9c761a95490b1ed16edeb63f53ef67c3.png",
+        "url": "https://bsky.brid.gy/r/https://bsky.app/profile/michelslvnqs.bsky.social"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113907004496812260#favorited-by-113907028249038142",
+      "published": null,
+      "wm-received": "2025-01-28T17:01:40Z",
+      "wm-id": 1880879,
+      "wm-source": "https://brid.gy/like/mastodon/@reillypascal@hachyderm.io/113907004496812260/113907028249038142",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jazmine Isa Qureshi (They/She)",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/bcfee46dfb672a95c5628c4c8f056be7aacb36ef9fb2f3c3ea11e78996e261e6.jpg",
+        "url": "https://masto.nu/@wildheartjaz"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113907004496812260#favorited-by-109421239251111165",
+      "published": null,
+      "wm-received": "2025-01-28T17:01:39Z",
+      "wm-id": 1880877,
+      "wm-source": "https://brid.gy/like/mastodon/@reillypascal@hachyderm.io/113907004496812260/109421239251111165",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Reilly Spitzfaden (they/them)",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/3af660ed5ecf66c02f75967e5aeb0e28785ae8f9a38f647978411d6b7c61e28f.jpg",
+        "url": "https://hachyderm.io/@reillypascal"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113907019748027044",
+      "published": "2025-01-28T16:53:07+00:00",
+      "wm-received": "2025-01-28T17:01:39Z",
+      "wm-id": 1880878,
+      "wm-source": "https://brid.gy/comment/mastodon/@reillypascal@hachyderm.io/113907004496812260/113907019748027044",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-protocol": "webmention",
+      "content": {
+        "html": "<p><span class=\"h-card\"><a href=\"https://indieweb.social/@bobmonsour\" class=\"u-url\">@<span>bobmonsour</span></a></span> very cool! Didn't know about that site, but I'll be adding it to my RSS reader</p>",
+        "text": "@bobmonsour very cool! Didn't know about that site, but I'll be adding it to my RSS reader"
+      },
+      "in-reply-to": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jason Li",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/35840d1b5e1e6827f6ee3508185e623f7b67411dcff2d256506b51dc55dfb429.png",
+        "url": "https://mastodon.social/@jasonli"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113907004496812260#favorited-by-109301241390867107",
+      "published": null,
+      "wm-received": "2025-01-28T17:01:38Z",
+      "wm-id": 1880876,
+      "wm-source": "https://brid.gy/like/mastodon/@reillypascal@hachyderm.io/113907004496812260/109301241390867107",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Bob Monsour",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/9bcf154a86ff3cdf9e00050ba7a40f0020d4bc1c52a748eefc2fed94aa02bd6b.png",
+        "url": "https://indieweb.social/@bobmonsour"
+      },
+      "url": "https://indieweb.social/@bobmonsour/113907015865548084",
+      "published": "2025-01-28T16:52:07+00:00",
+      "wm-received": "2025-01-28T17:01:37Z",
+      "wm-id": 1880874,
+      "wm-source": "https://brid.gy/comment/mastodon/@reillypascal@hachyderm.io/113907004496812260/113907015893274435",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-protocol": "webmention",
+      "content": {
+        "html": "<p><span class=\"h-card\"><a href=\"https://hachyderm.io/@reillypascal\" class=\"u-url\">@<span>reillypascal</span></a></span> And you're also, for the moment, at the top of the firehose. <a href=\"https://11tybundle.dev/firehose/\"><span>https://</span><span>11tybundle.dev/firehose/</span><span></span></a></p>\n<a href=\"https://11tybundle.dev/firehose/\">1,338 Blog Posts</a>",
+        "text": "@reillypascal And you're also, for the moment, at the top of the firehose. https://11tybundle.dev/firehose/\n1,338 Blog Posts"
+      },
+      "in-reply-to": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Reilly Spitzfaden (they/them)",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/3af660ed5ecf66c02f75967e5aeb0e28785ae8f9a38f647978411d6b7c61e28f.jpg",
+        "url": "https://hachyderm.io/@reillypascal"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113907028041185735",
+      "published": "2025-01-28T16:55:13+00:00",
+      "wm-received": "2025-01-28T17:01:37Z",
+      "wm-id": 1880875,
+      "wm-source": "https://brid.gy/comment/mastodon/@reillypascal@hachyderm.io/113907004496812260/113907028041185735",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-protocol": "webmention",
+      "content": {
+        "html": "<p><span class=\"h-card\"><a href=\"https://indieweb.social/@bobmonsour\" class=\"u-url\">@<span>bobmonsour</span></a></span> and fun fact, when I added it my reader showed 1337 posts in it — the \"leet\" number</p>",
+        "text": "@bobmonsour and fun fact, when I added it my reader showed 1337 posts in it — the \"leet\" number"
+      },
+      "in-reply-to": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
     {
       "type": "entry",
       "author": {
