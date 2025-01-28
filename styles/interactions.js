@@ -199,6 +199,19 @@ const handleSubmitHeart = async (event) => {
     });
 };
 
+// ###################### WEBMENTIONS #######################
+// const wmComments = document.getElementById("webmention-comments");
+// const wmLikes = document.getElementById("webmention-likes");
+// const wmReposts = document.getElementById("webmention-reposts");
+// fetch(`https://webmention.io/api/count?target=${blogPostURL}`)
+// .then(response => response.json())
+// .then(responseJson => {
+//   const types = responseJson.type;
+//   wmComments.innerText = types.reply ? types.reply : 0;
+//   wmLikes.innerText = types.like ? types.like : 0;
+//   wmReposts.innerText = types.repost ? types.repost : 0;
+// });
+
 // ###################### SET UP/APPLY FUNCTIONS ######################
 
 // add listeners, set up usage of comment/reaction functions
