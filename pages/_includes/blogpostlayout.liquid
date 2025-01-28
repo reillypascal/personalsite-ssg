@@ -62,7 +62,7 @@ title: Reilly Spitzfaden, Composer
         </div>
 
         {% assign mentions = webmentions-static.children | webmentionsByUrl: canonical_url %}
-        {% comment %} <div>Webmentions: {{ mentions | log }}</div> {% endcomment %}
+        {% comment %} <div>{{ webmentions | log }}</div> {% endcomment %}
 
         <div class="webmention-display">
             <span class="webmention-logo">

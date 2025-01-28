@@ -3,6 +3,7 @@ let markdownIt = require("markdown-it");
 let markdownItFootnote = require("markdown-it-footnote");
 const { DateTime } = require("luxon");
 const sanitizeHTML = require("sanitize-html");
+// const Webmentions = require("eleventy-plugin-webmentions");
 
 module.exports = async function (eleventyConfig) {
   // passthrough copies
@@ -148,6 +149,11 @@ module.exports = async function (eleventyConfig) {
   //       email: "reillypascal@gmail.com",
   //     },
   //   },
+  // });
+
+  // eleventyConfig.addPlugin(Webmentions, {
+  //   domain: "reillyspitzfaden.com",
+  //   token: "-PsKFuieg-7U9kQK5X8cqg",
   // });
 
   // markdown-it
