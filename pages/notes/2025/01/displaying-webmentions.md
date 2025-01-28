@@ -1,7 +1,7 @@
 ---
 title: Displaying Webmentions
 description: Manually generating RSS feeds so I can have separate ones for different kinds of posts
-canonical_url: https://reillyspitzfaden.com/notes/2025/01/displaying-webmentions/
+canonical_url: https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/
 fedi_url: 
 date: 2025-01-28T00:55:00-0500
 tags:
