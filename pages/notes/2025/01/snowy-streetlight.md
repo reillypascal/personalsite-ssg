@@ -1,6 +1,6 @@
 ---
 title: "Jan 28, 2025, 6:59 PM"
-description: My partner and I were coming home from Target and I liked how the snow looked.
+description: My partner and I were coming home from Target and I liked how the snow looked
 canonical_url: https://reillyspitzfaden.com/notes/2025/01/snowy-streetlight/
 fedi_url:
 og_image: /media/notes/2025/01/streetlight-snow-target-012825.webp
