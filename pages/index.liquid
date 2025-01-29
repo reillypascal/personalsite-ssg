@@ -71,7 +71,6 @@ eleventyExcludeFromCollections: true
             <p>I also wrote a <a href="https://reillyspitzfaden.com/posts/2024/04/new-album-announcement/">blog post</a> about composing the piece.</p>
                 
             <img src="/media/at-oxalis-2.webp" alt="Album cover for 'Oxalis Triangularis, Volume 2.' Collage of textured red, brown, and gray paper rectangles, with purple, triangular leaves, and a pair of hands playing a bass clarinet." width="512" height="512" id="oxalis_2" /></br>
-            {% comment %} <i>Cover for <cite>Oxalis Triangularis, Volume 2</cite></i> {% endcomment %}
         </article>
                 
         <article>
@@ -84,9 +83,6 @@ eleventyExcludeFromCollections: true
             
             <div class="gridVideoWrapper">
                 <lite-youtube videoid="YtSerbT7C5A" style="background-image: url('https://i.ytimg.com/vi/YtSerbT7C5A/hqdefault.jpg');">
-                    {% comment %} <a href="https://www.youtube.com/watch?v=YtSerbT7C5A" class="lty-playbtn" title="Play Video">
-                        <span class="lyt-visually-hidden">Play Video: Reilly Spitzfaden - Reach Through</span>
-                    </a> {% endcomment %}
                 </lite-youtube>
             </div>
         </article>
@@ -117,18 +113,13 @@ eleventyExcludeFromCollections: true
             <p>Listening to shortwave radio signals, discussing my emotive reaction to the signals, and composing music with them</p>
         </section>
         
-        {% comment %} <div class="dinkus"><p>***</p></div> {% endcomment %}
-
         <h2 class="sectionHeader">Recent Posts</h2>
-        {% comment %} <div id="recentItems"> {% endcomment %}
             {% assign recent_posts = collections.all | slice: -3, 3 %}
             {% for item in recent_posts reversed %}
             <section>
                 <h3><a href="{{item.url}}">{{ item.data.title }}</a></h3>
                 <p>{{ item.data.description }}</p>
             </section>
-            {% comment %} <div class="dinkus"><p>***</p></div> {% endcomment %}
             {% endfor %}
-        {% comment %} </div> {% endcomment %}
     </div>
 </main>
