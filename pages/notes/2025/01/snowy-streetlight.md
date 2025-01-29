@@ -1,6 +1,6 @@
 ---
 title: "Jan 28, 2025, 6:59 PM"
-description: Photoblog entry
+description: My partner and I were coming home from Target and I liked how the snow looked.
 canonical_url: https://reillyspitzfaden.com/notes/2025/01/snowy-streetlight/
 fedi_url:
 date: 2025-01-28T19:48:00-0500
