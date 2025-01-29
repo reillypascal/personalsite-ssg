@@ -35,8 +35,6 @@ Here's a demo of all this in action:
 ### One More Thing
 I figured out how to easily include footnotes when writing blog posts in Markdown! ^[This [blog post](https://www.alpower.com/tutorials/configuring-footnotes-with-eleventy/) shows how to do it using the [markdown-it-footnote](https://github.com/markdown-it/markdown-it-footnote) plugin.] A number of writers I like including [Molly White](https://www.citationneeded.news/ai-isnt-useless/) and [Cory Dransfeldt](https://coryd.dev/posts/2024/did-anyone-ask-for-these-ai-features/) have them in their blogs, and I've wanted to try them for a while. I could just write them by hand using HTML, but as I [mentioned](https://reillyspitzfaden.com/posts/2024/11/ssgs-are-nice/) the other day, any extra work in putting a post online dramatically slows down my use of this blog, so it's nice to avoid that.
 
-{% postfooter title, canonical_url %}
-
 <style>
   video {
     padding-top: 16px;

@@ -76,5 +76,3 @@ In addition to noticing a potential desire for communal knowledge-building/shari
 
 ### Looking Forward
 I originally wanted to include some thoughts on writing about/teaching about computer music, and how that relates to collaborative/associative knowledge-building, but this is long enough, and I think I will write about that a bit later. I hope to see you again then!
-
-{% postfooter title, canonical_url %}

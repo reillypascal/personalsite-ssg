@@ -43,5 +43,3 @@ Brat summer! I've liked Charli XCX since I first heard "Boom Clap" in <cite>The 
 
 ### Final Thoughts
 Thanks for reading about my year in music — my "Not-ify Wrapped," you might call it. If you want to make your own, I think that would be fun to read. Especially if you have a blog or are part of the "[IndieWeb](https://indieweb.org/)" circle, I think this could be a fun thing for people to do. Until next time!
-
-{% postfooter title, canonical_url %}

@@ -16,5 +16,3 @@ Welcome to my blog! I recently listened to [Sophie Koonin](https://localghost.de
 RSS will likely be coming if I'm able to figure that out, as well as potentially a built-in comments feature. For now, I'll be posting updates to my [Mastodon](https://hachyderm.io/@reillypascal) (and if you know me personally, on other personal social media!).
 
 I hope you'll join me!
-
-{% postfooter title, canonical_url %}

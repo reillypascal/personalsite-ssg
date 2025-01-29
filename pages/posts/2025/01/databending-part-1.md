@@ -105,5 +105,3 @@ I'm planning to write a part 2 to today's post that goes into more depth analyzi
 [^4]: When I import the files, there is a good deal of [DC offset](https://en.wikipedia.org/wiki/DC_bias) and sub-20 Hz noise, and the file is usually at max amplitude. I filter out the frequencies below 20 Hz on each file. This is both useful to remove “mud” and to make it easier to visually distinguish between parts of the audio — what was originally a flat peak amplitude becomes more varied when removing DC offset/[infrasound](https://en.wikipedia.org/wiki/Infrasound). To make room for the new variation in amplitude, I also have to lower the amplitude prior to filtering.
 
 [^5]: I usually have the best luck with .exe files (executables) or .dll files (libraries) on Windows. Try looking in the subfolders in C:\Program Files or C:\Program Files (x86).
-
-{% postfooter title, canonical_url %}

@@ -75,5 +75,3 @@ Another challenge is time. The act of scanning through the radio spectrum (as in
 That's all for today! I want to extend thanks to Tracy Durnell, a friend from the [IndieWeb](https://indieweb.org/) community. She kindly [offered to edit people's blog posts this month](https://tracydurnell.com/2024/12/01/gift-to-the-indie-web-i-will-edit-your-blog-post/) and provided some very helpful feedback on a draft of this post.
 
 I've also been interested in writing about electronic music and sound design from the angle of aesthetics and experience — [my](https://reillyspitzfaden.com/posts/2024/02/composition-journal/) [previous](https://reillyspitzfaden.com/posts/2024/05/composition-journal/) [posts](https://reillyspitzfaden.com/posts/2024/11/connecting-notation-programs-to-maxmsp/) on electronic music have tended toward technical rather than aesthetic discussions. I plan to write more like this in the near future. I hope to see you then!
-
-{% postfooter title, canonical_url %}

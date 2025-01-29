@@ -393,9 +393,11 @@ img {
 }
 
 pre,
-code,
-.bare-link-wrap {
+code {
     white-space: pre-wrap;
+    word-wrap: break-word;
+}
+.bare-link-wrap {
     word-wrap: break-word;
 }
 lite-youtube {

@@ -71,9 +71,9 @@ module.exports = async function (eleventyConfig) {
   });
 
   // shortcodes
-  eleventyConfig.addShortcode("postfooter", (title, url) => {
-    return `<div class="blogPostAsterism"><p>&#x2042;</p></div>`;
-  });
+  // eleventyConfig.addShortcode("postfooter", (title, url) => {
+  //   return `<div class="blogPostAsterism"><p>&#x2042;</p></div>`;
+  // });
   // eleventyConfig.addShortcode("postfooter", (title, url) => {
   //   return `<div class="blogPostAsterism"><p>&#x2042;</p></div>
   //   <div class="email-reply">
@@ -121,14 +121,16 @@ module.exports = async function (eleventyConfig) {
 
   eleventyConfig.addShortcode("liked", (url, title) => {
     let display_title = title ? title : url;
-    return `<p class="p-summary"> Liked: <a class="u-like-of" 
+    return `<blockquote>
+    <p class="p-summary"> Liked: <a class="u-like-of" 
       href="${url}">
-      ${display_title}</a> </p>`;
+      ${display_title}</a> </p>
+      </blockquote>`;
   });
 
-  eleventyConfig.addShortcode("list_dingbat", () => {
-    return `<span class="list-dingbat">&#10147;</span>`;
-  });
+  // eleventyConfig.addShortcode("list_dingbat", () => {
+  //   return `<span class="list-dingbat">&#10147;</span>`;
+  // });
   // RSS
   eleventyConfig.addPlugin(feedPlugin);
   // eleventyConfig.addPlugin(feedPlugin, {

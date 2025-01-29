@@ -51,5 +51,3 @@ Here's the announcement from the ensemble:
 > Oxalis Triangularis refers to the scientific name for a purple “false shamrock” due to its triangle-like leaves. Throughout three albums Apply Triangle not only showcases the innovative techniques of 33 living composers but also highlights the embodied cultural nuances inherent in each composer’s style.
 
 Thanks for reading, and I would love if you check out the album!
-
-{% postfooter title, canonical_url %}

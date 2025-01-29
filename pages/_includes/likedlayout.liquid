@@ -13,7 +13,8 @@ title: Reilly Spitzfaden, Composer
         {% include "partials/post-meta.liquid" %}
 
         <div class="e-content">
-            {{ content }}
+            {% liked liked_url liked_title %}
+            {% comment %} {{ content }} {% endcomment %}
             {% comment %} <div class="dinkus"><p>***</p></div> {% endcomment %}
         </div>
 
