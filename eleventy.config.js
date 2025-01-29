@@ -62,15 +62,20 @@ module.exports = async function (eleventyConfig) {
         const { author, published, content } = comment;
         return author && author.name && published && content;
       });
-  
-    const likeCount = likes.length;
-    const repostCount = reposts.length;
-    const commentCount = comments.length;
-    const data = { likes, reposts, comments, likeCount, repostCount, commentCount };
+    
+    const data = { likes, reposts, comments };
     return data;
   });
 
   // shortcodes
+  eleventyConfig.addShortcode("liked", (url, title) => {
+    let display_title = title ? title : url;
+    return `<blockquote>
+    <p class="p-summary"> Liked: <a class="u-like-of" 
+      href="${url}">
+      ${display_title}</a> </p>
+      </blockquote>`;
+  });
   // eleventyConfig.addShortcode("postfooter", (title, url) => {
   //   return `<div class="blogPostAsterism"><p>&#x2042;</p></div>`;
   // });
@@ -119,18 +124,11 @@ module.exports = async function (eleventyConfig) {
   //   </div>`;
   // });
 
-  eleventyConfig.addShortcode("liked", (url, title) => {
-    let display_title = title ? title : url;
-    return `<blockquote>
-    <p class="p-summary"> Liked: <a class="u-like-of" 
-      href="${url}">
-      ${display_title}</a> </p>
-      </blockquote>`;
-  });
-
   // eleventyConfig.addShortcode("list_dingbat", () => {
   //   return `<span class="list-dingbat">&#10147;</span>`;
   // });
+
+  // plugins
   // RSS
   eleventyConfig.addPlugin(feedPlugin);
   // eleventyConfig.addPlugin(feedPlugin, {
