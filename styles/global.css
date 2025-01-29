@@ -393,7 +393,8 @@ img {
 }
 
 pre,
-code {
+code,
+.bare-link-wrap {
     white-space: pre-wrap;
     word-wrap: break-word;
 }

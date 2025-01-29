@@ -9,4 +9,3 @@ tags: like
 ---
 
 {% liked "https://www.fromjason.xyz/p/notebook/copy-acquire-kill-how-meta-could-pull-off-the-most-extraordinary-pivot-in-tech-history/", "Copy, Acquire, Kill— How Meta could pull off the most extraordinary pivot in tech history" %}
-

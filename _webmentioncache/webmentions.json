@@ -1,6 +1,202 @@
 {
-  "lastFetched": "2025-01-29T00:38:33.493Z",
+  "lastFetched": "2025-01-29T02:55:20.613Z",
   "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "J Luke",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/0fe666a23da474ae6bc362847f49b4cd4f622114bc37fecc929d654291b22508.jpg",
+        "url": "https://bsky.app/profile/jlukedude.bsky.social"
+      },
+      "url": "https://bsky.app/profile/reillypascal.bsky.social/post/3lgttyo26l22x#liked_by_did:plc:jbqg4ypdfevtmfosrprfdv36",
+      "published": null,
+      "wm-received": "2025-01-29T02:27:49Z",
+      "wm-id": 1881002,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:7bvcd7usebxsagbrjbgpb75u/at%253A%252F%252Fdid%253Aplc%253A7bvcd7usebxsagbrjbgpb75u%252Fapp.bsky.feed.post%252F3lgttyo26l22x/did%253Aplc%253Ajbqg4ypdfevtmfosrprfdv36",
+      "wm-target": "https://reillyspitzfaden.com/notes/2025/01/snowy-streetlight/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/notes/2025/01/snowy-streetlight/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Robert Petersen :startrek:",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/de311086b197ae6375d9a438c2b12b462379604a5b58b42e990fb18c78c3b96c.jpg",
+        "url": "https://techhub.social/@Sonikku"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113909102756529921#favorited-by-109326229058483712",
+      "published": null,
+      "wm-received": "2025-01-29T02:24:42Z",
+      "wm-id": 1881001,
+      "wm-source": "https://brid.gy/like/mastodon/@reillypascal@hachyderm.io/113909102756529921/109326229058483712",
+      "wm-target": "https://reillyspitzfaden.com/notes/2025/01/snowy-streetlight/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/notes/2025/01/snowy-streetlight/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Michel Salviano",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/4ca308761a52823294a02e671158a0eb1d544b2d607b29327f9aa4f6fd7579cc.jpg",
+        "url": "https://bsky.app/profile/michelslvnqs.bsky.social"
+      },
+      "url": "https://bsky.app/profile/reillypascal.bsky.social/post/3lgsvxvnopk2o#liked_by_did:plc:f3ziipr3ws5rnzqw7ilb6tye",
+      "published": null,
+      "wm-received": "2025-01-29T01:58:51Z",
+      "wm-id": 1880997,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:7bvcd7usebxsagbrjbgpb75u/at%253A%252F%252Fdid%253Aplc%253A7bvcd7usebxsagbrjbgpb75u%252Fapp.bsky.feed.post%252F3lgsvxvnopk2o/did%253Aplc%253Af3ziipr3ws5rnzqw7ilb6tye",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Tucker Johnson",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/fdc4bc8f8c8002ee28209d56fbeb7b2812fa739b0c1a66f974ced21115a3eab7.jpg",
+        "url": "https://bsky.app/profile/newer.systems"
+      },
+      "url": "https://bsky.app/profile/reillypascal.bsky.social/post/3lgsvxvnopk2o#liked_by_did:plc:u7l7gsph47xevmt4opizwdbd",
+      "published": null,
+      "wm-received": "2025-01-29T01:58:50Z",
+      "wm-id": 1880996,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:7bvcd7usebxsagbrjbgpb75u/at%253A%252F%252Fdid%253Aplc%253A7bvcd7usebxsagbrjbgpb75u%252Fapp.bsky.feed.post%252F3lgsvxvnopk2o/did%253Aplc%253Au7l7gsph47xevmt4opizwdbd",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "BinaryDigit ????",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/7bdf356f6b4293ed32fa5274babcac5bfc7ff86b78df4291a4e1dbc23bfa2157.jpg",
+        "url": "https://bsky.app/profile/binarydigit.city"
+      },
+      "url": "https://bsky.app/profile/reillypascal.bsky.social/post/3lgsvxvnopk2o#liked_by_did:plc:vbfvvz7sofixee5gjkmpn3u4",
+      "published": null,
+      "wm-received": "2025-01-29T01:58:49Z",
+      "wm-id": 1880995,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:7bvcd7usebxsagbrjbgpb75u/at%253A%252F%252Fdid%253Aplc%253A7bvcd7usebxsagbrjbgpb75u%252Fapp.bsky.feed.post%252F3lgsvxvnopk2o/did%253Aplc%253Avbfvvz7sofixee5gjkmpn3u4",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "BinaryDigit ????",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/7bdf356f6b4293ed32fa5274babcac5bfc7ff86b78df4291a4e1dbc23bfa2157.jpg",
+        "url": "https://bsky.app/profile/binarydigit.city"
+      },
+      "url": "https://bsky.app/profile/binarydigit.city/post/3lgtizkuxwk2s",
+      "published": "2025-01-28T22:30:55+00:00",
+      "wm-received": "2025-01-29T01:58:48Z",
+      "wm-id": 1880994,
+      "wm-source": "https://brid.gy/comment/bluesky/did:plc:7bvcd7usebxsagbrjbgpb75u/at%253A%252F%252Fdid%253Aplc%253A7bvcd7usebxsagbrjbgpb75u%252Fapp.bsky.feed.post%252F3lgsvxvnopk2o/at%253A%252F%252Fdid%253Aplc%253Avbfvvz7sofixee5gjkmpn3u4%252Fapp.bsky.feed.post%252F3lgtizkuxwk2s",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-protocol": "webmention",
+      "content": {
+        "text": "Ohhh must check this out"
+      },
+      "in-reply-to": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Reilly Spitzfaden (they/them)",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/4d0aea71eabc5291867caa03b9fb6f0738dcb725a3581ff36b21b8a420075b1b.jpg",
+        "url": "https://bsky.app/profile/reillypascal.bsky.social"
+      },
+      "url": "https://bsky.app/profile/reillypascal.bsky.social/post/3lgsvyvdg622o",
+      "published": "2025-01-28T16:50:31+00:00",
+      "wm-received": "2025-01-29T01:58:47Z",
+      "wm-id": 1880993,
+      "wm-source": "https://brid.gy/comment/bluesky/did:plc:7bvcd7usebxsagbrjbgpb75u/at%253A%252F%252Fdid%253Aplc%253A7bvcd7usebxsagbrjbgpb75u%252Fapp.bsky.feed.post%252F3lgsvxvnopk2o/at%253A%252F%252Fdid%253Aplc%253A7bvcd7usebxsagbrjbgpb75u%252Fapp.bsky.feed.post%252F3lgsvyvdg622o",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-protocol": "webmention",
+      "content": {
+        "text": "I plan to do more in-progress writeups of projects instead of waiting around until I'm sure something's \"finished\""
+      },
+      "in-reply-to": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Fubuki Kuwata",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/8f639964e83a7b801b901edec6aa0952b921c41f7577378c7dfd83662be6a23f.jpg",
+        "url": "https://bsky.app/profile/fubukikuwata.bsky.social"
+      },
+      "url": "https://bsky.app/profile/reillypascal.bsky.social/post/3lgttyo26l22x#liked_by_did:plc:4yy6z6mgxun5nkaah7qpxrno",
+      "published": null,
+      "wm-received": "2025-01-29T01:58:46Z",
+      "wm-id": 1880991,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:7bvcd7usebxsagbrjbgpb75u/at%253A%252F%252Fdid%253Aplc%253A7bvcd7usebxsagbrjbgpb75u%252Fapp.bsky.feed.post%252F3lgttyo26l22x/did%253Aplc%253A4yy6z6mgxun5nkaah7qpxrno",
+      "wm-target": "https://reillyspitzfaden.com/notes/2025/01/snowy-streetlight/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/notes/2025/01/snowy-streetlight/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "An Emily, a Two-Bit Do-Gooder",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/51932300454ffacb2f35708cb8109d5b5a07e1c492feec34861a24642df41e24.jpg",
+        "url": "https://bsky.app/profile/rebelmusicteach.bsky.social"
+      },
+      "url": "https://bsky.app/profile/reillypascal.bsky.social/post/3lgttyo26l22x#liked_by_did:plc:vylfb5wdjg5docmmmnm36ofj",
+      "published": null,
+      "wm-received": "2025-01-29T01:58:46Z",
+      "wm-id": 1880992,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:7bvcd7usebxsagbrjbgpb75u/at%253A%252F%252Fdid%253Aplc%253A7bvcd7usebxsagbrjbgpb75u%252Fapp.bsky.feed.post%252F3lgttyo26l22x/did%253Aplc%253Avylfb5wdjg5docmmmnm36ofj",
+      "wm-target": "https://reillyspitzfaden.com/notes/2025/01/snowy-streetlight/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/notes/2025/01/snowy-streetlight/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Lime Bar",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/22d6fd9e4af68386fbecb31059d08754673597c39458e5cab7a954a42c5ac79e.gif",
+        "url": "https://mastodon.social/@limebar"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113909102756529921#favorited-by-109331480352481702",
+      "published": null,
+      "wm-received": "2025-01-29T01:48:59Z",
+      "wm-id": 1880990,
+      "wm-source": "https://brid.gy/like/mastodon/@reillypascal@hachyderm.io/113909102756529921/109331480352481702",
+      "wm-target": "https://reillyspitzfaden.com/notes/2025/01/snowy-streetlight/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/notes/2025/01/snowy-streetlight/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
     {
       "type": "entry",
       "author": {
