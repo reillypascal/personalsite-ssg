@@ -1,0 +1,26 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    & tr {
+        border-bottom: 2px solid var(--accent-med-light);
+    }
+    & th {
+        text-align: left;
+    }
+}
+
+tbody {
+    & tr {
+        border-bottom: 1px solid var(--accent-med-light);
+    }
+    & tr:last-child { border-bottom: none; }
+}
+
+th,
+td {
+    padding: 10px 8px;
+    line-height: 1.5;
+}
