@@ -4,6 +4,8 @@ description: My partner and I were coming home from Target and I liked how the s
 canonical_url: https://reillyspitzfaden.com/notes/2025/01/snowy-streetlight/
 fedi_url:
 og_image: /media/notes/2025/01/streetlight-snow-target-012825.webp
+og_image_width: 1024
+og_image_height: 1365
 date: 2025-01-28T19:48:00-0500
 tags:
   - note
