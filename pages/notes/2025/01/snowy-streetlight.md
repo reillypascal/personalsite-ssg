@@ -21,6 +21,6 @@ tags:
   }
 </style>
 
-<img src="/media/notes/2025/01/streetlight-snow-target-012825.webp" alt="A streetlight with three lamps in a Target parking lot at night. The air is thick with snow, and glowing diffraction lines come from the light at diagonals.">
+![A streetlight with three lamps in a Target parking lot at night. The air is thick with snow, and glowing diffraction lines come from the light at diagonals.](/media/notes/2025/01/streetlight-snow-target-012825.webp)
 
 My partner and I were coming home from Target and I liked how the snow looked. It always makes me happy when the air is thick with snow.

@@ -11,11 +11,9 @@ title: Reilly Spitzfaden, Composer
     <!-- post contents -->
     <!-- ###### data-pagefind-body boolean attribute makes only blog posts indexed ###### -->
     <article class="h-entry" data-pagefind-body>
-
         <h2 class="p-name sectionHeader">{{ title }}</h2>
 
         <a rel="author" class="p-author h-card" href="https://reillyspitzfaden.com"></a>
-        
         <a rel="syndication" class="u-syndication" href="{{ fedi_url }}"></a>
 
         {% include "partials/post-meta.liquid" %}
@@ -23,7 +21,9 @@ title: Reilly Spitzfaden, Composer
         <div class="e-content">
             {{ content }}
         </div>
+        
         <div class="blogPostAsterism"><p>&#x2042;</p></div>
+
         {% include "partials/post-interactions.liquid" %}
 
     </article>
