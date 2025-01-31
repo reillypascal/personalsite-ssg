@@ -15,12 +15,16 @@ thead {
 tbody {
     & tr {
         border-bottom: 1px solid var(--accent-med-light);
+        vertical-align: top;
     }
     & tr:last-child { border-bottom: none; }
 }
 
 th,
 td {
-    padding: 10px 8px;
+    padding: 14px 12px 14px 0;
     line-height: 1.5;
+}
+td:last-child {
+    padding-right: 0;
 }
