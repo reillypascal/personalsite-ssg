@@ -30,13 +30,13 @@ eleventyExcludeFromCollections: true
     <section>
         <h3 class="sectionHeader">Categories</h3>
         <ul id="categories">
-            <li><a href="#musicians-and-artists">Musicians & Artists</a></li>
-            <li><a href="#tech-and-indieweb">Tech & IndieWeb</a></li>
+            <li><a href="#music">Music & Media Art</a></li>
+            <li><a href="#indieweb">IndieWeb</a></li>
         </ul>
     </section>
 
-    <article id="musicians-and-artists">
-        <h2 class="sectionHeader">Musicians & Artists</h2>
+    <article id="music">
+        <h2 class="sectionHeader">Music & Media Art</h2>
         {% for blog in blogroll.music %}
             <h3><a href="{{ blog.htmlUrl }}">{{ blog.title }}</a> (<a class="rss-link" href="{{ blog.xmlUrl }}">RSS Link</a>)</h3>
             {% if blog.description %}
@@ -50,8 +50,8 @@ eleventyExcludeFromCollections: true
         {% endfor %}
     </article>
 
-    <article id="tech-and-indieweb">
-        <h2 class="sectionHeader">Tech & IndieWeb</h2>
+    <article id="indieweb">
+        <h2 class="sectionHeader">IndieWeb</h2>
         {% for blog in blogroll.indieweb %}
             <h3><a href="{{ blog.htmlUrl }}">{{ blog.title }}</a> (<a class="rss-link" href="{{ blog.xmlUrl }}">RSS Link</a>)</h3>
             {% if blog.description %}
