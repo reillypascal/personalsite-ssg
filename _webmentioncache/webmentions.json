@@ -1,6 +1,200 @@
 {
-  "lastFetched": "2025-01-29T20:37:32.459Z",
+  "lastFetched": "2025-01-31T02:10:00.110Z",
   "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "jojjjajjr",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/6c5cc5122a89f22ff13f0b74a611efc98afbe1a5bd590bf18225c2df2cdc82b3.jpg",
+        "url": "https://pixelfed.social/jojjjajjr"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113915566014681066#favorited-by-113879839983563425",
+      "published": null,
+      "wm-received": "2025-01-30T20:30:20Z",
+      "wm-id": 1881562,
+      "wm-source": "https://brid.gy/like/mastodon/@reillypascal@hachyderm.io/113915566014681066/113879839983563425",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/databending-part-1/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/posts/2025/01/databending-part-1/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Minami-o le sabreur",
+        "photo": "https://webmention.io/avatar/hachyderm.io/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://plrm.biboumail.fr/users/minamiols"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113907004496812260#reblogged-by-109751246421365348",
+      "published": null,
+      "wm-received": "2025-01-30T12:29:27Z",
+      "wm-id": 1881334,
+      "wm-source": "https://brid.gy/repost/mastodon/@reillypascal@hachyderm.io/113907004496812260/109751246421365348",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Minami-o le sabreur",
+        "photo": "https://webmention.io/avatar/hachyderm.io/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://plrm.biboumail.fr/users/minamiols"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113907004496812260#favorited-by-109751246421365348",
+      "published": null,
+      "wm-received": "2025-01-30T12:29:26Z",
+      "wm-id": 1881333,
+      "wm-source": "https://brid.gy/like/mastodon/@reillypascal@hachyderm.io/113907004496812260/109751246421365348",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Bastienne Waultier",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/cfd6a78dbeb32fdd89404425955f53a6349229f9b6588be87e48678a9a865723.jpg",
+        "url": "https://mastodon.social/@bastien_ne"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113915566014681066#favorited-by-113896182054967961",
+      "published": null,
+      "wm-received": "2025-01-30T06:50:35Z",
+      "wm-id": 1881248,
+      "wm-source": "https://brid.gy/like/mastodon/@reillypascal@hachyderm.io/113915566014681066/113896182054967961",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/databending-part-1/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/posts/2025/01/databending-part-1/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "h3mmy :v_enby:",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/5bf5338fd845d250489a1242d57da394b0fb35cd0014c6ae80bffbd3ddf44d49.png",
+        "url": "https://tech.lgbt/@h3mmy"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113915566014681066#favorited-by-109366251958295681",
+      "published": null,
+      "wm-received": "2025-01-30T05:16:12Z",
+      "wm-id": 1881235,
+      "wm-source": "https://brid.gy/like/mastodon/@reillypascal@hachyderm.io/113915566014681066/109366251958295681",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/databending-part-1/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/posts/2025/01/databending-part-1/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Verity :transHaskell:​:verifiedtransfem:",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/95f6352ba1584792b85dab67194b5160b44e87c960c19098600420369e6bcec9.png",
+        "url": "https://tech.lgbt/@monoidmusician"
+      },
+      "url": "https://tech.lgbt/@monoidmusician/113915588762071075",
+      "published": "2025-01-30T05:12:19+00:00",
+      "wm-received": "2025-01-30T05:12:44Z",
+      "wm-id": 1881233,
+      "wm-source": "https://brid.gy/comment/mastodon/@reillypascal@hachyderm.io/113915566014681066/113915588799434750",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/databending-part-1/",
+      "wm-protocol": "webmention",
+      "content": {
+        "html": "<p><span class=\"h-card\"><a href=\"https://hachyderm.io/@reillypascal\" class=\"u-url\">@<span>reillypascal</span></a></span> granular synthesis :) I think my professor in college worked a lot with that, but I never gave it a proper try … would be fun to do sometime</p>",
+        "text": "@reillypascal granular synthesis :) I think my professor in college worked a lot with that, but I never gave it a proper try … would be fun to do sometime"
+      },
+      "in-reply-to": "https://reillyspitzfaden.com/posts/2025/01/databending-part-1/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Verity :transHaskell:​:verifiedtransfem:",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/95f6352ba1584792b85dab67194b5160b44e87c960c19098600420369e6bcec9.png",
+        "url": "https://tech.lgbt/@monoidmusician"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113915566014681066#favorited-by-110161206997952330",
+      "published": null,
+      "wm-received": "2025-01-30T05:11:59Z",
+      "wm-id": 1881231,
+      "wm-source": "https://brid.gy/like/mastodon/@reillypascal@hachyderm.io/113915566014681066/110161206997952330",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/databending-part-1/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/posts/2025/01/databending-part-1/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "jeraldina:python_logo:☁️",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/24622d8c83c84799e8210d2e2c2e3369739a2eee08583a5500b1b561a1059479.jpg",
+        "url": "https://hachyderm.io/@ok_devalias"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113915566014681066#favorited-by-109388235268321218",
+      "published": null,
+      "wm-received": "2025-01-30T05:11:59Z",
+      "wm-id": 1881232,
+      "wm-source": "https://brid.gy/like/mastodon/@reillypascal@hachyderm.io/113915566014681066/109388235268321218",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/databending-part-1/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/posts/2025/01/databending-part-1/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Julien :ve: ????:python:",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/3fdd17ba38e4841c33498e11732ec9320c6a58a2030a67fd191178c501136533.jpg",
+        "url": "https://techhub.social/@jdlbt"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113907004496812260#favorited-by-109990588017000546",
+      "published": null,
+      "wm-received": "2025-01-30T04:17:23Z",
+      "wm-id": 1881229,
+      "wm-source": "https://brid.gy/like/mastodon/@reillypascal@hachyderm.io/113907004496812260/109990588017000546",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Julien :ve: ????:python:",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/3fdd17ba38e4841c33498e11732ec9320c6a58a2030a67fd191178c501136533.jpg",
+        "url": "https://techhub.social/@jdlbt"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113907004496812260#reblogged-by-109990588017000546",
+      "published": null,
+      "wm-received": "2025-01-30T04:17:23Z",
+      "wm-id": 1881230,
+      "wm-source": "https://brid.gy/repost/mastodon/@reillypascal@hachyderm.io/113907004496812260/109990588017000546",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
     {
       "type": "entry",
       "author": {

@@ -1,0 +1,66 @@
+---
+layout: mainlayout.liquid
+title: Reilly Spitzfaden, Composer | Blogroll
+description: A list of interesting blogs I follow
+canonical_url: https://reillyspitzfaden.com/blogroll
+eleventyExcludeFromCollections: true
+---
+<link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
+
+<style>
+    p {
+        line-height: var(--p-line-height);
+    }
+    #categories {
+        margin: 0;
+        padding: 0;
+    }
+    #categories li {
+        display: inline;
+        padding-right: 8px;
+    }
+</style>
+
+<main>
+    <h2 class="sectionHeader">Blogroll</h2>
+    <p>An ever-growing list of interesting blogs I follow. Lately I've been into the <a href="https://indieweb.org/">IndieWeb</a> and various aspects of the classic web, so we're doing a <a href="https://en.wikipedia.org/wiki/Glossary_of_blogging#B">blogroll</a>.</p>
+    <p>Blockquote descriptions are taken from the site (sometimes abbreviated, and/or with slightly different formatting). Descriptions without blockquotes are written by me (in cases where the site does not have a description).</p>
+    <p>For info on how to use RSS to follow these blogs, see <a href="https://reillyspitzfaden.com/feeds/#what-is-rss">here</a>.</p>
+
+    <section>
+        <h3 class="sectionHeader">Categories</h3>
+        <ul id="categories">
+            <li><a href="#music">Musicians & Artists</a></li>
+            <li><a href="#indieweb">Tech & IndieWeb</a></li>
+        </ul>
+    </section>
+
+    <article id="music">
+        <h2 class="sectionHeader">Musicians & Artists</h2>
+        {% for blog in blogroll.music %}
+            <h3><a href="{{ blog.htmlUrl }}">{{ blog.title }}</a> (<a class="rss-link" href="{{ blog.xmlUrl }}">RSS Link</a>)</h3>
+            {% if blog.description %}
+                <blockquote>
+                    <p>{{ blog.description }}</p>
+                </blockquote>
+            {% endif %}
+            {% if blog.myDescription %}
+                <p>{{ blog.myDescription }}</p>
+            {% endif %}
+        {% endfor %}
+    </article>
+
+    <article id="indieweb">
+        <h2 class="sectionHeader">Tech & IndieWeb</h2>
+        {% for blog in blogroll.indieweb %}
+            <h3><a href="{{ blog.htmlUrl }}">{{ blog.title }}</a> (<a class="rss-link" href="{{ blog.xmlUrl }}">RSS Link</a>)</h3>
+            {% if blog.description %}
+                <blockquote>
+                    <p>{{ blog.description }}</p>
+                </blockquote>
+            {% elsif blog.myDescription %}
+                <p>{{ blog.myDescription }}</p>
+            {% endif %}
+        {% endfor %}
+    </article>
+</main>
