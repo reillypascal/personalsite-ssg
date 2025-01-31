@@ -86,12 +86,6 @@
         "id" : "media-art",
         "blogs" : [
             {
-                "title" : "olivia jack",
-                "htmlUrl" : "https://ojack.xyz/",
-                "xmlUrl" : "https://ojack.xyz/index.xml",
-                "description" : "coder + artist who likes to collaborate :) Email me: rhizomaticode[at]gmail.com"
-            },
-            {
                 "title" : "Other Networks",
                 "htmlUrl" : "https://othernetworks.net/",
                 "xmlUrl" : "https://othernetworks.net/feed/",
@@ -125,19 +119,19 @@
                 "title" : "Benjamin Parry",
                 "htmlUrl" : "https://benjamin.parry.is/",
                 "xmlUrl" : "https://benjamin.parry.is/writing/feed.xml",
-                "description" : "My name is Benjamin Parry. I live is Lewes, East Sussex, UK. I’m a… design researcher, sushi maker novice, sushi eater expert, Japanophile, mountain bike rider, cold water swimmer, bread baker."
+                "description" : "My name is Benjamin Parry. I live is Lewes, East Sussex, UK. I’m a design researcher, sushi maker novice, sushi eater expert, Japanophile, mountain bike rider, cold water swimmer, bread baker."
             },
             {
                 "title" : "benji",
                 "htmlUrl" : "https://www.benji.dog/",
                 "xmlUrl" : "https://www.benji.dog/feed.xml",
-                "description" : "I'm a software developer from Guayaquil, Ecuador 🇪🇨 now living in Minneapolis, MN with my wife, two kids, and a cat."
+                "description" : "I'm a software developer from Guayaquil, Ecuador now living in Minneapolis, MN with my wife, two kids, and a cat."
             },
             {
                 "title" : "BinaryDigit ˗ˏˋ★ˊˎ˗",
                 "htmlUrl" : "https://binarydigit.city/",
                 "xmlUrl" : "https://binarydigit.city/index.xml",
-                "description" : "Hi, I’m B 👋🏼 I love the small web, sketching art, live streaming, retro tech, travel, and photography. Welcome to my digital brain dump and city center. Say hi on Mastodon, Bluesky or email. I live with my partner and two husky lab twins dogs in Michigan."
+                "description" : "Hi, I’m B. I love the small web, sketching art, live streaming, retro tech, travel, and photography. Welcome to my digital brain dump and city center. Say hi on Mastodon, Bluesky or email. I live with my partner and two husky lab twins dogs in Michigan."
             },
             {
                 "title" : "Fractal Kitty",
@@ -173,7 +167,8 @@
                 "title" : "Nick Simson",
                 "htmlUrl" : "https://nicksimson.com/",
                 "xmlUrl" : "https://nicksimson.com/feed/",
-                "description" : "My name is Nick, short for Nicholas which means “victory of the people.” I’m a graphic and interaction designer, and my favorite medium to work with is the World Wide Web. I have been at this design thing professionally for more than 15 years, with most of that time spent working in-house with higher education institutions. Today I’m a user interface (UI) designer at a nonprofit member association in Washington, DC."
+                "description" : "",
+                "myDescription" : "Nick is someone I know from the IndieWeb Homebrew Website Club. I appreciate his writing about typography, especially his <a href=\"https://nicksimson.com/tags/26daysoftype/\">26 Days of Type</a> series."
             },
             {
                 "title" : "njms",
@@ -185,19 +180,20 @@
                 "title" : "Olu Online",
                 "htmlUrl" : "https://olu.online/",
                 "xmlUrl" : "https://olu.online/feed",
-                "description" : "👋🏿 I’m Olu Niyi-Awosusi. I live in London. 👍🏿 My pronouns are they/them. 🔭 I'm currently a developer in local government with a frontend focus. I’m looking for writing and speaking opportunities; I have written for A List Apart and have spoken at You Got This."
+                "description" : "I’m Olu Niyi-Awosusi. I live in London. My pronouns are they/them. I'm currently a developer in local government with a frontend focus.",
+                "myDescription" : "I especially appreciate Olu's <a href=\"https://notes.olu.online/\">notes</a> page — they use it for \"thinking out loud, sketching things out, getting feedback and learning in public/working with the garage door up/showing my work.\" The notes link to each other, and I appreciate the design."
             },
             {
                 "title" : "Ross A. Baker",
                 "htmlUrl" : "https://rossabaker.com/",
                 "xmlUrl" : "https://rossabaker.com/index.xml",
-                "description" : "Yeah, well, I’m going to go build my own site.     With Emacs! And Nix! In fact, forget the site. This is my personal brand, my love letter to the Indieweb, my finely manicured digital garden, my faffing about as I rediscover the joy of computing. Perpetually under construction. "
+                "description" : "Yeah, well, I’m going to go build my own site.     With Emacs! And Nix! In fact, forget the site. This is my personal brand, my love letter to the Indieweb, my finely manicured digital garden, my faffing about as I rediscover the joy of computing. Perpetually under construction."
             },
             {
                 "title" : "Tracy Durnell's Mind Garden",
                 "htmlUrl" : "https://tracydurnell.com/",
                 "xmlUrl" : "https://tracydurnell.com/feed/",
-                "description" : "I’m a sci-fi writer, graphic designer and urbanist in the Seattle suburbs. Reading and blogging are my favorite pasttimes and I’m an advocate of the indie web. I’m curious about everything from technology to history to ecology. I use this website to: track what I read and watch, write commentary on things that interest me, and     save reference information."
+                "description" : "I’m a sci-fi writer, graphic designer and urbanist in the Seattle suburbs. Reading and blogging are my favorite pasttimes and I’m an advocate of the indie web. I’m curious about everything from technology to history to ecology. I use this website to: track what I read and watch, write commentary on things that interest me, and save reference information."
             }
 
         ]
