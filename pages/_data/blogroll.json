@@ -1,7 +1,7 @@
 [
     {
-        "name" : "Musicians & Media Artists",
-        "id" : "music-media-art",
+        "name" : "Musicians",
+        "id" : "music",
         "blogs" : [
             {
                 "title" : "Blameless Things",
@@ -34,20 +34,32 @@
                 "htmlUrl" : "https://nathan.ho.name/",
                 "xmlUrl" : "https://nathan.ho.name/rss.xml",
                 "description" : "I started this as an outlet to write about music technology, where my main interests concern tools for creating experimental and left-field electronic music (particularly computer music, glitch, noise, and IDM). With my writing, I’m interested in bridging the worlds of music tech journalism with in-depth academic papers to create resources for technically proficient musicians."
-            },
-            {
-                "title" : "olivia jack",
-                "htmlUrl" : "https://ojack.xyz/",
-                "xmlUrl" : "https://ojack.xyz/index.xml",
-                "description" : "coder + artist who likes to collaborate :) Email me: rhizomaticode[at]gmail.com"
-            },
-            {
-                "title" : "Paloma Kop",
-                "htmlUrl" : "https://palomakop.tv/",
-                "xmlUrl" : "https://palomakop.tv/rss.xml",
-                "description" : "I am an experimental multimedia artist and creative technologist currently based in New Haven, CT. My practice incorporates electronic media, from analog video and synthesizers to digital systems and code, as well as various physical materials and processes. I am especially interested in feedback loops, recursion, self-organizing and emergent structures, patterns in nature, psychedelia, and embodied sensory experience."
             }
         ] 
+    },
+    {
+        "name" : "Music News & Reviews",
+        "id" : "music-news-reviews",
+        "blogs" : [
+            {
+                "title" : "a closer listen",
+                "htmlUrl" : "https://acloserlisten.com/",
+                "xmlUrl" : "https://acloserlisten.com/rss",
+                "description" : "Since 2012, A Closer Listen has claimed a specialized niche in the music industry: instrumental album reviews!  By concentrating on this above all else, we’ve built a healthy fanbase and a strong reputation. If music is recorded and nobody listens, does it still make a sound?"
+            },
+            {
+                "title" : "Noise Not Music",
+                "htmlUrl" : "https://noisenotmusic.com/",
+                "xmlUrl" : "https://noisenotmusic.com/rss",
+                "description" : "Welcome to Noise Not Music. Here you’ll find reviews of recent albums, various features and lists, and occasional mixes. I do not agree with the statement I’ve chosen as the title for this site (which has been around much longer than me). Everything I write about here—a great deal of which is called “noise”—is music."
+            },
+            {
+                "title" : "Outside Noise",
+                "htmlUrl" : "https://www.outsidenoise.org/",
+                "xmlUrl" : "https://www.outsidenoise.org/reviews?format=rss",
+                "description" : "We scour the internet for its best kept sonic secrets and deliver them to you daily. Reviews of new underground albums hit our social outlets and blog every day. We also put in our two cents on select major releases that we consider relevant to the world of DIY music."
+            }
+        ]
     },
     {
         "name" : "Music Academia",
@@ -70,9 +82,39 @@
         ] 
     },
     {
+        "name" : "Media Art",
+        "id" : "media-art",
+        "blogs" : [
+            {
+                "title" : "olivia jack",
+                "htmlUrl" : "https://ojack.xyz/",
+                "xmlUrl" : "https://ojack.xyz/index.xml",
+                "description" : "coder + artist who likes to collaborate :) Email me: rhizomaticode[at]gmail.com"
+            },
+            {
+                "title" : "Other Networks",
+                "htmlUrl" : "https://othernetworks.net/",
+                "xmlUrl" : "https://othernetworks.net/feed/",
+                "description" : "“Other Networks” is a cluster of projects headed up by Dr. Lori Emerson and Dr. libi striegl that document and experiment with networks outside of what’s now called “the internet.” We are invested in digging up alternative and forgotten networks so that we can reimagine the future of the internet as the future of networks."
+            },
+            {
+                "title" : "Paloma Kop",
+                "htmlUrl" : "https://palomakop.tv/",
+                "xmlUrl" : "https://palomakop.tv/rss.xml",
+                "description" : "I am an experimental multimedia artist and creative technologist currently based in New Haven, CT. My practice incorporates electronic media, from analog video and synthesizers to digital systems and code, as well as various physical materials and processes. I am especially interested in feedback loops, recursion, self-organizing and emergent structures, patterns in nature, psychedelia, and embodied sensory experience."
+            }
+        ]
+    },
+    {
         "name" : "IndieWeb",
         "id" : "indieweb",
         "blogs" : [
+            {
+                "title" : "anhvn",
+                "htmlUrl" : "https://anhvn.com/",
+                "xmlUrl" : "https://anhvn.com/feed.xml",
+                "description" : "hi there! i’m anh, a designer and artist. this website is where i do silly web experiments and put all my personal content. it’s often experimental and messy so please pardon the dust!!"
+            },
             {
                 "title" : "ArtLung : Joe Crawford",
                 "htmlUrl" : "https://artlung.com/",
