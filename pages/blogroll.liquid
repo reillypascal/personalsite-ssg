@@ -30,14 +30,16 @@ eleventyExcludeFromCollections: true
     <section>
         <h3 class="sectionHeader">Categories</h3>
         <ul id="categories">
-            <li><a href="#music">Music & Media Art</a></li>
-            <li><a href="#indieweb">IndieWeb</a></li>
+            {% for category in blogroll %}
+            <li><a href="#{{ category.id }}">{{ category.name }}</a></li>
+            {% endfor %}
         </ul>
     </section>
-
-    <article id="music">
-        <h2 class="sectionHeader">Music & Media Art</h2>
-        {% for blog in blogroll.music %}
+    
+    {% for category in blogroll %}
+    <article id="{{ category.id }}">
+        <h2 class="sectionHeader">{{ category.name }}</h2>
+        {% for blog in category.blogs %}
             <h3><a href="{{ blog.htmlUrl }}">{{ blog.title }}</a> (<a class="rss-link" href="{{ blog.xmlUrl }}">RSS Link</a>)</h3>
             {% if blog.description %}
                 <blockquote>
@@ -49,18 +51,7 @@ eleventyExcludeFromCollections: true
             {% endif %}
         {% endfor %}
     </article>
+    <p><a href="#top">Top ⭡</a></p>
+    {% endfor %}
 
-    <article id="indieweb">
-        <h2 class="sectionHeader">IndieWeb</h2>
-        {% for blog in blogroll.indieweb %}
-            <h3><a href="{{ blog.htmlUrl }}">{{ blog.title }}</a> (<a class="rss-link" href="{{ blog.xmlUrl }}">RSS Link</a>)</h3>
-            {% if blog.description %}
-                <blockquote>
-                    <p>{{ blog.description }}</p>
-                </blockquote>
-            {% elsif blog.myDescription %}
-                <p>{{ blog.myDescription }}</p>
-            {% endif %}
-        {% endfor %}
-    </article>
 </main>

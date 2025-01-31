@@ -1,104 +1,145 @@
-{
-    "music" : [
-        {
-            "title" : "Ether Diver",
-            "htmlUrl" : "https://www.etherdiver.com/",
-            "xmlUrl" : "https://www.etherdiver.com/feed/",
-            "description" : "Musical journeys through inner space",
-            "myDescription" : "Ether Diver's blog includes the very cool \"Other People's Music\" series, which reviews and promotes independent music from around the web."
-        },
-        {
-            "title" : "Kristoffer Lislegaard",
-            "htmlUrl" : "https://www.kristofferlislegaard.com/",
-            "xmlUrl" : "https://www.kristofferlislegaard.com/blog/rss.xml",
-            "description" : "Kristoffer Lislegaard is a Norwegian experimental ambient musician and producer based in Oslo. Since 2010, he has created, performed and released music as a solo artist as well as in various duo and ensemble formats, combining genres such as ambient, noise, post-rock, club music and more. He has also composed and sound designed contemporary dance, theatre, film, art installations, poetry and performance art."
-        },
-        {
-            "title" : "Meljoann",
-            "htmlUrl" : "https://meljoann.com/",
-            "xmlUrl" : "https://meljoann.com/index.xml",
-            "description" : "Meljoann is an extremely physically attractive Irish multidisciplinary artist. They’ve been supported by Pitchfork, Beats Per Minute, XLR8, KEXP, Dan Hegarty, Cian Ó Cíobháin, Jenny Greene and Tara Stewart of RTÉ radio, Irish Times, Nialler9, Hot Press, BBC’s Gemma Bradley, Dummy Mag, HMUK and the Arts Council of England. She’s currently releasing a series of self-directed video singles. ‘HR’, their anti-capital concept album, is out now. Their third album, ‘Status’, releases in 2025."
-        },
-        {
-            "title" : "olivia jack",
-            "htmlUrl" : "https://ojack.xyz/",
-            "xmlUrl" : "https://ojack.xyz/index.xml",
-            "description" : "coder + artist who likes to collaborate :) Email me: rhizomaticode[at]gmail.com"
-        },
-        {
-            "title" : "Paloma Kop",
-            "htmlUrl" : "https://palomakop.tv/",
-            "xmlUrl" : "https://palomakop.tv/rss.xml",
-            "description" : "I am an experimental multimedia artist and creative technologist currently based in New Haven, CT. My practice incorporates electronic media, from analog video and synthesizers to digital systems and code, as well as various physical materials and processes. I am especially interested in feedback loops, recursion, self-organizing and emergent structures, patterns in nature, psychedelia, and embodied sensory experience."
-        }
-    ],
-    "indieweb" : [
-        {
-            "title" : "ArtLung : Joe Crawford",
-            "htmlUrl" : "https://artlung.com/",
-            "xmlUrl" : "https://artlung.com/feed/",
-            "description" : "Hi. I’m Joe. This is my personal website. It’s got lots of stuff! I’ve written code for a living for a while. ArtLung.com itself runs on WordPress and it looks and works the way it does because I programmed the theme and underlying code."
-        },
-        {
-            "title" : "Benjamin Parry",
-            "htmlUrl" : "https://benjamin.parry.is/",
-            "xmlUrl" : "https://benjamin.parry.is/writing/feed.xml",
-            "description" : "My name is Benjamin Parry. I live is Lewes, East Sussex, UK. I’m a… design researcher, sushi maker novice, sushi eater expert, Japanophile, mountain bike rider, cold water swimmer, bread baker."
-        },
-        {
-            "title" : "benji",
-            "htmlUrl" : "https://www.benji.dog/",
-            "xmlUrl" : "https://www.benji.dog/feed.xml",
-            "description" : "I'm a software developer from Guayaquil, Ecuador 🇪🇨 now living in Minneapolis, MN with my wife, two kids, and a cat."
-        },
-        {
-            "title" : "Fractal Kitty",
-            "htmlUrl" : "https://www.fractalkitty.com/",
-            "xmlUrl" : "https://www.fractalkitty.com/rss/",
-            "myDescription" : "Someone I know from the IndieWeb who makes math art, haikus, and maker projects, among many other things."
-        },
-        {
-            "title" : "gRegor Love",
-            "htmlUrl" : "https://gregorlove.com/",
-            "xmlUrl" : "http://gregorlove.com/articles.atom",
-            "description" : "music · faith · computer geekery · friends · liberty: These six words are probably the most succinct bio I could write."
-        },
-        {
-            "title" : "James' Coffee Blog",
-            "htmlUrl" : "https://jamesg.blog/",
-            "xmlUrl" : "https://jamesg.blog/feeds/posts.xml",
-            "description" : "Hello! Привіт! I'm James (/d͡ʒeɪmz/) (also capjamesg). My pronouns are he/him/his. I live in Scotland. This is my blog. I hope this website can bring a little bit of joy into your day."
-        },
-        {
-            "title" : "Jo's Blog",
-            "htmlUrl" : "https://dead.garden/",
-            "xmlUrl" : "https://dead.garden/blog/feed.rss",
-            "description" : "Hello, my name is Johanna, but online I am called Jo, and this is my website!! I've been putting out internet sites from this address since March 2022, so I haven't been \"self\"-hosting† for long."
-        },
-        {
-            "title" : "Nick Simson",
-            "htmlUrl" : "https://nicksimson.com/",
-            "xmlUrl" : "https://nicksimson.com/feed/",
-            "description" : "My name is Nick, short for Nicholas which means “victory of the people.” I’m a graphic and interaction designer, and my favorite medium to work with is the World Wide Web. I have been at this design thing professionally for more than 15 years, with most of that time spent working in-house with higher education institutions. Today I’m a user interface (UI) designer at a nonprofit member association in Washington, DC."
-        },
-        {
-            "title" : "Olu Online",
-            "htmlUrl" : "https://olu.online/",
-            "xmlUrl" : "https://olu.online/feed",
-            "description" : "👋🏿 I’m Olu Niyi-Awosusi. I live in London. 👍🏿 My pronouns are they/them. 🔭 I'm currently a developer in local government with a frontend focus. I’m looking for writing and speaking opportunities; I have written for A List Apart and have spoken at You Got This."
-        },
-        {
-            "title" : "Ross A. Baker",
-            "htmlUrl" : "https://rossabaker.com/",
-            "xmlUrl" : "https://rossabaker.com/index.xml",
-            "description" : "Yeah, well, I’m going to go build my own site.     With Emacs! And Nix! In fact, forget the site. This is my personal brand, my love letter to the Indieweb, my finely manicured digital garden, my faffing about as I rediscover the joy of computing. Perpetually under construction. "
-        },
-        {
-            "title" : "Tracy Durnell's Mind Garden",
-            "htmlUrl" : "https://tracydurnell.com/",
-            "xmlUrl" : "https://tracydurnell.com/feed/",
-            "description" : "I’m a sci-fi writer, graphic designer and urbanist in the Seattle suburbs. Reading and blogging are my favorite pasttimes and I’m an advocate of the indie web. I’m curious about everything from technology to history to ecology. I use this website to: track what I read and watch, write commentary on things that interest me, and     save reference information."
-        }
+[
+    {
+        "name" : "Musicians & Media Artists",
+        "id" : "music-media-art",
+        "blogs" : [
+            {
+                "title" : "Blameless Things",
+                "htmlUrl" : "https://buttondown.com/HaydnPuff/",
+                "xmlUrl" : "https://buttondown.com/HaydnPuff/rss",
+                "description" : "My name is Haden Plouffe, and I am/do a lot of things. For my do’s, I am a pianist, composer, aspiring musicologist, and perpetual player of any game by FromSoftware. As for who I am, I am an autistic trans lesbian in my mid twenties, lover of my wife and cats, and my life thus far has been a gradual descent into the stranger realms of art. I’ll be reflecting on art, artists, the sort of work I love, and the sort of work I want to make as I move through a world that is increasingly hostile to people like me.",
+                "myDescription" : ""
+            },
+            {
+                "title" : "Ether Diver",
+                "htmlUrl" : "https://www.etherdiver.com/",
+                "xmlUrl" : "https://www.etherdiver.com/feed/",
+                "description" : "Musical journeys through inner space",
+                "myDescription" : "Ether Diver's blog includes the very cool \"Other People's Music\" series, which reviews and promotes independent music from around the web."
+            },
+            {
+                "title" : "Kristoffer Lislegaard",
+                "htmlUrl" : "https://www.kristofferlislegaard.com/",
+                "xmlUrl" : "https://www.kristofferlislegaard.com/blog/rss.xml",
+                "description" : "Kristoffer Lislegaard is a Norwegian experimental ambient musician and producer based in Oslo. Since 2010, he has created, performed and released music as a solo artist as well as in various duo and ensemble formats, combining genres such as ambient, noise, post-rock, club music and more. He has also composed and sound designed contemporary dance, theatre, film, art installations, poetry and performance art."
+            },
+            {
+                "title" : "Meljoann",
+                "htmlUrl" : "https://meljoann.com/",
+                "xmlUrl" : "https://meljoann.com/index.xml",
+                "description" : "Meljoann is an extremely physically attractive Irish multidisciplinary artist. They’ve been supported by Pitchfork, Beats Per Minute, XLR8, KEXP, Dan Hegarty, Cian Ó Cíobháin, Jenny Greene and Tara Stewart of RTÉ radio, Irish Times, Nialler9, Hot Press, BBC’s Gemma Bradley, Dummy Mag, HMUK and the Arts Council of England. She’s currently releasing a series of self-directed video singles. ‘HR’, their anti-capital concept album, is out now. Their third album, ‘Status’, releases in 2025."
+            },
+            {
+                "title" : "Nathan Ho",
+                "htmlUrl" : "https://nathan.ho.name/",
+                "xmlUrl" : "https://nathan.ho.name/rss.xml",
+                "description" : "I started this as an outlet to write about music technology, where my main interests concern tools for creating experimental and left-field electronic music (particularly computer music, glitch, noise, and IDM). With my writing, I’m interested in bridging the worlds of music tech journalism with in-depth academic papers to create resources for technically proficient musicians."
+            },
+            {
+                "title" : "olivia jack",
+                "htmlUrl" : "https://ojack.xyz/",
+                "xmlUrl" : "https://ojack.xyz/index.xml",
+                "description" : "coder + artist who likes to collaborate :) Email me: rhizomaticode[at]gmail.com"
+            },
+            {
+                "title" : "Paloma Kop",
+                "htmlUrl" : "https://palomakop.tv/",
+                "xmlUrl" : "https://palomakop.tv/rss.xml",
+                "description" : "I am an experimental multimedia artist and creative technologist currently based in New Haven, CT. My practice incorporates electronic media, from analog video and synthesizers to digital systems and code, as well as various physical materials and processes. I am especially interested in feedback loops, recursion, self-organizing and emergent structures, patterns in nature, psychedelia, and embodied sensory experience."
+            }
+        ] 
+    },
+    {
+        "name" : "Music Academia",
+        "id" : "music-academia",
+        "blogs" : [
+            {
+                "title" : "it's her factory",
+                "htmlUrl" : "https://www.its-her-factory.com/",
+                "xmlUrl" : "https://www.its-her-factory.com/feed/",
+                "description" : "Robin James is a writer, editor, and former associate professor of philosophy at UNC Charlotte. […] She’s an expert in feminism/gender/race and popular music, pop music and politics, sound studies, electronic dance music studies, and contemporary continental philosophy (especially critical theories of neoliberalism and biopolitics).",
+                "myDescription" : ""
+            },
+            {
+                "title" : "Sounding Out!",
+                "htmlUrl" : "https://soundstudiesblog.com/",
+                "xmlUrl" : "https://soundstudiesblog.com/feed/",
+                "description" : "Sounding Out! is a bi-weekly online publication, a networked academic archive, and a dynamic group platform bringing together sound studies scholars, sound artists and professionals, and readers interested in the cultural politics of sound and listening.  Every Monday, our writers offer well-researched, well-written, and accessible interventions in sound studies, directing the field’s energy toward the social, cultural, and political aspects of sound and listening, particularly their differential construction of and material impacts on variously positioned bodies.",
+                "myDescription" : ""
+            }
+        ] 
+    },
+    {
+        "name" : "IndieWeb",
+        "id" : "indieweb",
+        "blogs" : [
+            {
+                "title" : "ArtLung : Joe Crawford",
+                "htmlUrl" : "https://artlung.com/",
+                "xmlUrl" : "https://artlung.com/feed/",
+                "description" : "Hi. I’m Joe. This is my personal website. It’s got lots of stuff! I’ve written code for a living for a while. ArtLung.com itself runs on WordPress and it looks and works the way it does because I programmed the theme and underlying code."
+            },
+            {
+                "title" : "Benjamin Parry",
+                "htmlUrl" : "https://benjamin.parry.is/",
+                "xmlUrl" : "https://benjamin.parry.is/writing/feed.xml",
+                "description" : "My name is Benjamin Parry. I live is Lewes, East Sussex, UK. I’m a… design researcher, sushi maker novice, sushi eater expert, Japanophile, mountain bike rider, cold water swimmer, bread baker."
+            },
+            {
+                "title" : "benji",
+                "htmlUrl" : "https://www.benji.dog/",
+                "xmlUrl" : "https://www.benji.dog/feed.xml",
+                "description" : "I'm a software developer from Guayaquil, Ecuador 🇪🇨 now living in Minneapolis, MN with my wife, two kids, and a cat."
+            },
+            {
+                "title" : "Fractal Kitty",
+                "htmlUrl" : "https://www.fractalkitty.com/",
+                "xmlUrl" : "https://www.fractalkitty.com/rss/",
+                "myDescription" : "Someone I know from the IndieWeb who makes math art, haikus, and maker projects, among many other things."
+            },
+            {
+                "title" : "gRegor Love",
+                "htmlUrl" : "https://gregorlove.com/",
+                "xmlUrl" : "http://gregorlove.com/articles.atom",
+                "description" : "music · faith · computer geekery · friends · liberty: These six words are probably the most succinct bio I could write."
+            },
+            {
+                "title" : "James' Coffee Blog",
+                "htmlUrl" : "https://jamesg.blog/",
+                "xmlUrl" : "https://jamesg.blog/feeds/posts.xml",
+                "description" : "Hello! Привіт! I'm James (/d͡ʒeɪmz/) (also capjamesg). My pronouns are he/him/his. I live in Scotland. This is my blog. I hope this website can bring a little bit of joy into your day."
+            },
+            {
+                "title" : "Jo's Blog",
+                "htmlUrl" : "https://dead.garden/",
+                "xmlUrl" : "https://dead.garden/blog/feed.rss",
+                "description" : "Hello, my name is Johanna, but online I am called Jo, and this is my website!! I've been putting out internet sites from this address since March 2022, so I haven't been \"self\"-hosting† for long."
+            },
+            {
+                "title" : "Nick Simson",
+                "htmlUrl" : "https://nicksimson.com/",
+                "xmlUrl" : "https://nicksimson.com/feed/",
+                "description" : "My name is Nick, short for Nicholas which means “victory of the people.” I’m a graphic and interaction designer, and my favorite medium to work with is the World Wide Web. I have been at this design thing professionally for more than 15 years, with most of that time spent working in-house with higher education institutions. Today I’m a user interface (UI) designer at a nonprofit member association in Washington, DC."
+            },
+            {
+                "title" : "Olu Online",
+                "htmlUrl" : "https://olu.online/",
+                "xmlUrl" : "https://olu.online/feed",
+                "description" : "👋🏿 I’m Olu Niyi-Awosusi. I live in London. 👍🏿 My pronouns are they/them. 🔭 I'm currently a developer in local government with a frontend focus. I’m looking for writing and speaking opportunities; I have written for A List Apart and have spoken at You Got This."
+            },
+            {
+                "title" : "Ross A. Baker",
+                "htmlUrl" : "https://rossabaker.com/",
+                "xmlUrl" : "https://rossabaker.com/index.xml",
+                "description" : "Yeah, well, I’m going to go build my own site.     With Emacs! And Nix! In fact, forget the site. This is my personal brand, my love letter to the Indieweb, my finely manicured digital garden, my faffing about as I rediscover the joy of computing. Perpetually under construction. "
+            },
+            {
+                "title" : "Tracy Durnell's Mind Garden",
+                "htmlUrl" : "https://tracydurnell.com/",
+                "xmlUrl" : "https://tracydurnell.com/feed/",
+                "description" : "I’m a sci-fi writer, graphic designer and urbanist in the Seattle suburbs. Reading and blogging are my favorite pasttimes and I’m an advocate of the indie web. I’m curious about everything from technology to history to ecology. I use this website to: track what I read and watch, write commentary on things that interest me, and     save reference information."
+            }
 
-    ]
-}
+        ]
+    }
+]
