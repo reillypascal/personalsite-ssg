@@ -134,6 +134,12 @@
                 "description" : "I'm a software developer from Guayaquil, Ecuador 🇪🇨 now living in Minneapolis, MN with my wife, two kids, and a cat."
             },
             {
+                "title" : "BinaryDigit ˗ˏˋ★ˊˎ˗",
+                "htmlUrl" : "https://binarydigit.city/",
+                "xmlUrl" : "https://binarydigit.city/index.xml",
+                "description" : "Hi, I’m B 👋🏼 I love the small web, sketching art, live streaming, retro tech, travel, and photography. Welcome to my digital brain dump and city center. Say hi on Mastodon, Bluesky or email. I live with my partner and two husky lab twins dogs in Michigan."
+            },
+            {
                 "title" : "Fractal Kitty",
                 "htmlUrl" : "https://www.fractalkitty.com/",
                 "xmlUrl" : "https://www.fractalkitty.com/rss/",
@@ -158,10 +164,22 @@
                 "description" : "Hello, my name is Johanna, but online I am called Jo, and this is my website!! I've been putting out internet sites from this address since March 2022, so I haven't been \"self\"-hosting† for long."
             },
             {
+                "title" : "Maggie Appleton",
+                "htmlUrl" : "https://maggieappleton.com/",
+                "xmlUrl" : "https://maggieappleton.com/rss.xml",
+                "description" : "On the side I create illustrated essays and visual explanations about programming and culture. I'm an advocate of digital gardening , end-user programming , and expanding our use of embodied cognition and conceptual metaphors in digital interfaces."
+            },
+            {
                 "title" : "Nick Simson",
                 "htmlUrl" : "https://nicksimson.com/",
                 "xmlUrl" : "https://nicksimson.com/feed/",
                 "description" : "My name is Nick, short for Nicholas which means “victory of the people.” I’m a graphic and interaction designer, and my favorite medium to work with is the World Wide Web. I have been at this design thing professionally for more than 15 years, with most of that time spent working in-house with higher education institutions. Today I’m a user interface (UI) designer at a nonprofit member association in Washington, DC."
+            },
+            {
+                "title" : "njms",
+                "htmlUrl" : "https://www.njms.ca/",
+                "xmlUrl" : "https://www.njms.ca/atom.xml",
+                "description" : "I'm an environmental computer scientist. I write about nature, epistemology, spirituality, and how they pertain to computer things. I've been maintaining this website for as long as I can remember. Here, you can find my art, writing and software."
             },
             {
                 "title" : "Olu Online",
@@ -182,6 +200,30 @@
                 "description" : "I’m a sci-fi writer, graphic designer and urbanist in the Seattle suburbs. Reading and blogging are my favorite pasttimes and I’m an advocate of the indie web. I’m curious about everything from technology to history to ecology. I use this website to: track what I read and watch, write commentary on things that interest me, and     save reference information."
             }
 
+        ]
+    },
+    {
+        "name" : "Tech Blogs",
+        "id" : "tech-blogs",
+        "blogs" : [
+            {
+                "title" : "[citation needed]",
+                "htmlUrl" : "https://www.citationneeded.news/",
+                "xmlUrl" : "https://www.citationneeded.news/rss/",
+                "description" : "Keep up with the happenings in the tech world without all the boosterism. Cryptocurrency critic, technology researcher, and software engineer Molly White publishes Citation Needed, a newsletter that features regular explainers of developments in the cryptocurrency industry, with summaries of the latest disasters featured on her well-known project Web3 is Going Just Great. The newsletter also features deep dives into important events in the technology industry, with added critical context that is too often missing."
+            },
+            {
+                "title" : "maia arson crimew",
+                "htmlUrl" : "https://maia.crimew.gay/",
+                "xmlUrl" : "https://maia.crimew.gay/feed.xml",
+                "description" : "hey! im maia arson crimew (it/she), welcome to my website! this site is primarily home to my blog, containing my investigative journalism, work on hacktivism and technical articles on some of my own hacks. i also write a column called cyber_punk for the swiss online magazine das lamm (in german). outside my journalistic and activist work i try to make music, am a live dj and do various other creative things. "
+            },
+            {
+                "title" : "Where's Your Ed At",
+                "htmlUrl" : "https://www.wheresyoured.at/",
+                "xmlUrl" : "https://www.wheresyoured.at/rss/",
+                "myDescription" : "Ed Zitron writes critically about the rot and growth-at-all-costs mentality in the tech industry, with a frequent focus on the deep-seated problems of “generative AI” corporations."
+            }
         ]
     }
 ]
