@@ -269,6 +269,7 @@ nav {
     & .dropbtn > img {
         fill: var(--fg-light);
         pointer-events: none;
+        margin-left: 4px;
     }
 }
 
