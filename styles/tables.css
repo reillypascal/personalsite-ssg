@@ -1,30 +1,29 @@
-table {
+table:not(footer *) {
     width: 100%;
     border-collapse: collapse;
-}
-
-thead {
-    & tr {
-        border-bottom: 2px solid var(--accent-med-light);
+    & thead {
+        & tr {
+            border-bottom: 2px solid var(--accent-med-light);
+        }
+        & th {
+            text-align: left;
+        }
     }
-    & th {
-        text-align: left;
+    
+    & tbody {
+        & tr {
+            border-bottom: 1px solid var(--accent-med-light);
+            vertical-align: top;
+        }
+        & tr:last-child { border-bottom: none; }
     }
-}
-
-tbody {
-    & tr {
-        border-bottom: 1px solid var(--accent-med-light);
-        vertical-align: top;
+    
+    & th,
+    & td {
+        padding: 14px 12px 14px 0;
+        line-height: 1.5;
     }
-    & tr:last-child { border-bottom: none; }
-}
-
-th,
-td {
-    padding: 14px 12px 14px 0;
-    line-height: 1.5;
-}
-td:last-child {
-    padding-right: 0;
+    & td:last-child {
+        padding-right: 0;
+    }
 }
