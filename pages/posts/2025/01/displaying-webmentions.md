@@ -21,15 +21,17 @@ I got [webmentions](https://en.wikipedia.org/wiki/Webmention) displaying on my [
 
 I originally tried to DIY it, following along with [Bob Monsour's post here](https://bobmonsour.com/blog/adding-webmentions-to-my-site/), but for some reason, no matter what I did, the Eleventy ```webmentions``` data always returned the following:
 
-<pre><code class="language-bash">{
+```bash
+{
   default: [AsyncFunction (anonymous)],
   'module.exports': [AsyncFunction (anonymous)]
 }
-</code></pre>
+```
 
 I got the suggestion to use promises and ```.then()``` syntax instead of the ```async``` function, but that didn't seem to change anything. The code I originally tried (in _data/webmentions.js) is below, if anyone has any idea.
 
-<pre><code class="language-js">const EleventyFetch = require("@11ty/eleventy-fetch");
+```js
+const EleventyFetch = require("@11ty/eleventy-fetch");
 
 module.exports = async function () {
   const url = `https://webmention.io/api/mentions.jf2?token=${process.env.WEBMENTION_IO_TOKEN}&per-page=1000`;
@@ -47,13 +49,15 @@ module.exports = async function () {
     };
   }
 };
-</code></pre>
+```
 
 I ended up using the "[eleventy-plugin-webmentions](https://github.com/CodeFoodPixels/eleventy-plugin-webmentions)" plugin, and that seems to work well. I was a bit hesitant to use the plugin since it hasn't been updated in about 2 years and I want something that will last, but it works well for now, and I can always make another go at DIY-ing it. 
 
 My next step is to get it to automatically build every so often so I can get new webmentions. [Thadee](https://www.voorhoede.nl/en/blog/scheduling-netlify-deploys-with-github-actions/) and [Sophie Koonin](https://localghost.dev/blog/how-to-schedule-posts-in-eleventy/) have some discussions I'll look at. Something else I'm considering is just using [cURL](https://en.wikipedia.org/wiki/CURL) to get the webmentions in a .json file. When I manually ran this line, I was able to use the resulting file in Eleventy just fine, so I may try automatically running that line in a GitHub action.
 
-<pre><code class="language-bash">curl 'https://webmention.io/api/mentions.jf2?token=-PsKFuieg-7U9kQK5X8cqg&per-page=1000' -o ./pages/_data/webmentions-static.json</code></pre>
+```bash
+curl 'https://webmention.io/api/mentions.jf2?token=-PsKFuieg-7U9kQK5X8cqg&per-page=1000' -o ./pages/_data/webmentions-static.json
+```
 
 ### Design
 While I'm not finished with how I handle displaying the webmentions behind the scenes, I am happy with the design elements for them. I added SVG icons to the tags at the top of the posts (to match the calender icons), to the email reply at the bottom, and to the webmention line — both the webmention icon and the symbols for the categories. I've been thinking about how to keep the site text-focused and minimal but add a bit of visual clarity to the layout, and I think this kind of icon works well for me.

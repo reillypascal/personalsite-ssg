@@ -1,6 +1,25 @@
 {
-  "lastFetched": "2025-02-01T20:35:36.481Z",
+  "lastFetched": "2025-02-01T21:52:33.079Z",
   "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/34f42fa3c78bc2d17d68d95cb01482d7b8a9e5f84cfa34f39438301d26aee6e0.jpg",
+        "url": "https://bsky.app/profile/dyandl.bsky.social"
+      },
+      "url": "https://bsky.app/profile/reillypascal.bsky.social/post/3lh2nbhieys2i#liked_by_did:plc:5lc4i2mgsttlq6lye564nq65",
+      "published": null,
+      "wm-received": "2025-02-01T20:56:51Z",
+      "wm-id": 1882001,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:7bvcd7usebxsagbrjbgpb75u/at%253A%252F%252Fdid%253Aplc%253A7bvcd7usebxsagbrjbgpb75u%252Fapp.bsky.feed.post%252F3lh2nbhieys2i/did%253Aplc%253A5lc4i2mgsttlq6lye564nq65",
+      "wm-target": "https://reillyspitzfaden.com/blogroll/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/blogroll/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
     {
       "type": "entry",
       "author": {
