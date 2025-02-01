@@ -48,6 +48,18 @@
                 "description" : "Since 2012, A Closer Listen has claimed a specialized niche in the music industry: instrumental album reviews!  By concentrating on this above all else, we’ve built a healthy fanbase and a strong reputation. If music is recorded and nobody listens, does it still make a sound?"
             },
             {
+                "title" : "Fringes of Sound",
+                "htmlUrl" : "https://www.onthefringesofsound.com/",
+                "xmlUrl" : "https://www.onthefringesofsound.com/feeds/posts/default?alt=rss",
+                "myDescription" : "A blog that covers \"independent experimental, ambient, noise, and other music that falls well outside the mainstream.\" I haven't been able to find out as much as some of the others, but the Instagram page lists just one person, a <a href=\"https://www.instagram.com/lars_haur/\">Lars Haur</a>, so this may be a single-person project."
+            },
+            {
+                "title" : "Igloo Magazine",
+                "htmlUrl" : "https://igloomag.com/",
+                "xmlUrl" : "https://follow.it/igloomag",
+                "description" : "Igloo Magazine is an electronic music e’zine publishing articles about current, classic and upcoming music from around the globe. Our mission is to introduce readers to the burgeoning undergrowth of electronic musicians by covering a wide range of genres including ambient, experimental, dub, glitch, shoegaze, electro, techno, drone, IDM, industrial, post-industrial, and all the debris in between."
+            },
+            {
                 "title" : "Noise Not Music",
                 "htmlUrl" : "https://noisenotmusic.com/",
                 "xmlUrl" : "https://noisenotmusic.com/rss",
