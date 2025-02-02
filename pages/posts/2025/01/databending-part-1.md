@@ -13,6 +13,7 @@ tags:
   - databending
   - music
   - sounddesign
+post_series: databending
 ---
 Let's start today off with some sounds right out of the gate:
 

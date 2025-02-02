@@ -420,6 +420,10 @@ figure {
     }
 }
 
+aside {
+    font-style: italic;
+}
+
 /* ######## Decorations ######## */
 .sectionHeader {
     width: fit-content;

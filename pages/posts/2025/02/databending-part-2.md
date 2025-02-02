@@ -1,7 +1,7 @@
 ---
 title: Databending Part 2 — Hacking MP3s
 description: I'm continuing my databending series with a look at MP3s. We're going to talk about how to corrupt them into oblivion while still leaving them playable!
-canonical_url: https://reillyspitzfaden.com/posts/2025/02/databending-part-2
+canonical_url: https://reillyspitzfaden.com/posts/2025/02/databending-part-2/
 date: 2025-02-02
 octothorpes:
   - Art
@@ -13,6 +13,7 @@ tags:
   - music
   - sounddesign
   - mp3
+post_series: databending
 ---
 <link rel="stylesheet" type="text/css" href="/styles/tables.css" />
 
@@ -28,7 +29,7 @@ I [recently posted](https://reillyspitzfaden.com/posts/2025/01/databending-part-
 
 Composer Yasunao Tone has a series of “[MP3 Deviation](https://yasunaotone.bandcamp.com/album/mp3-deviation-8)” pieces that I like. Because his [previous work with damaged CDs](https://en.wikipedia.org/wiki/Yasunao_Tone#Activity_in_the_United_States_(1972-Present)) ([YouTube link](https://www.youtube.com/watch?v=CEDi-39o5qw)) derives its sounds directly from digital audio errors, I was expecting these pieces to do the same, but as the Bandcamp page above notes, Tone found errors between the MP3 encoder and decoder to be “not satisfactory,” and instead, these “MP3 Deviation” pieces use different MP3 errors to trigger different sample playback lengths. The pieces are full of cool sounds, but the process is not particularly connected to MP3s, and I've remained interested in seeing what's possible directly listening to MP3 errors.
 
-I've done some reading off and on about MPEG compression from a few DSP textbooks [^1] [^2] and managed to get the [GSM 06.10](https://en.wikipedia.org/wiki/Full_Rate) 2G cell phone codec [running in a plugin](https://github.com/reillypascal/RSTelecom), but I hadn't previously figured out how to get the MP3 codec to *glitch*. It turned out to be easier than I assumed! After having Nicolas Collins' book for a while, I recently realized that Nick Briz has a chapter in it on databending, [^3] and among other things, Briz writes about hacking MP3s in a hex editor. To explain how this works, I'll first cover a bit of background about MP3s.
+I've done some reading off and on about MPEG compression (i.e., the family of formats that includes MP3) from a few DSP textbooks [^1] [^2] and managed to get the [GSM 06.10](https://en.wikipedia.org/wiki/Full_Rate) 2G cell phone [codec](https://en.wikipedia.org/wiki/Codec) [running in a plugin](https://github.com/reillypascal/RSTelecom), but I hadn't previously figured out how to get the MP3 codec to *glitch*. It turned out to be easier than I assumed! After having Nicolas Collins' book for a while, I recently realized that Nick Briz has a chapter in it on databending, [^3] and among other things, Briz writes about hacking MP3s in a hex editor. To explain how this works, I'll first cover a bit of background about MP3s.
 
 ### How MP3s Work
 MP3s use [lossy compression](https://en.wikipedia.org/wiki/Lossy_compression). Compression summarizes the data to reduce storage space, and lossy compression additionally discards or makes an inexact summary of some of the data that is less perceptually relevant. An MP3 breaks down the audio into short chunks or "frames"; analyzes the frequencies present in each frame; determines which frequencies are "masked" by others, and thus less perceptually relevant; and based on which sounds are most relevant, allocates different numbers of bits to represent the loudness of each frequency.
