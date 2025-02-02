@@ -82,6 +82,8 @@ Here is the same file after glitching:
 
 I like the weird bubbling quality, and especially the high chirps and clicks. As far as I can tell, editing near the beginning or end of the frame should get different frequencies, and I may try getting more of those high chirps using this information.
 
+### Improving the Process
+
 My results here are extremely short, and the process of doing this by hand makes me feel like [Ben Wyatt making claymation](https://www.youtube.com/watch?v=LCUze7kuNas&t=42s). For a 160kbps MP3, not counting the headers, there should be 40,000 hex digits per second (160,000 bits divided by 4 bits per hex digit), so editing these by hand is beyond tedious. In addition, it would be nice to be able to audition a few different glitched versions of a file and pick the best one — this process feels like poking around in the dark since I don't fully know what will happen until I work for a while and listen back to my results. It would be great if I were able to automate some of this. 
 
 I had a look around, and it looks like it isn't too hard to work with binary data as hex in Python. [This Stack Overflow answer](https://stackoverflow.com/questions/34687516/how-to-read-binary-files-as-hex-in-python/34687617#34687617) mentions that the [built in ```bytes``` object contains a ```.hex()``` method](https://docs.python.org/3/library/stdtypes.html#bytes.hex) and suggests the following code. This example is for opening genome data, but I imagine something similar could work for an MP3:
