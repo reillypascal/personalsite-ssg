@@ -1,11 +1,11 @@
 {% assign series_length = post_series_list[post_series] | size %}
 <section>
     <p class="post-series">All posts in this series:
-        {% for post in post_series_list[post_series] %}
+        {% for url in post_series_list[post_series] %}
             {% if forloop.index < series_length %}
-                <a href="{{ post.url }}">Part {{ forloop.index }}</a>,
+                <a href="{{ url }}">Part {{ forloop.index }}</a>,
             {% else %}
-                <a href="{{ post.url }}">Part {{ forloop.index }}</a>
+                <a href="{{ url }}">Part {{ forloop.index }}</a>
             {% endif %}
         {% endfor %}
     </p>

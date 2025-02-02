@@ -1,6 +1,6 @@
 {
-    "databending" : [
-        { "url" : "/posts/2025/01/databending-part-1/" },
-        { "url" : "/posts/2025/02/databending-part-2/" }
+    "databending" : [ 
+        "/posts/2025/01/databending-part-1/",
+        "/posts/2025/02/databending-part-2/" 
     ]
 }
