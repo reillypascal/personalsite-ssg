@@ -267,7 +267,8 @@ nav {
     }
 
     & .dropbtn > img {
-        fill: var(--fg-light);
+        fill: var(--fg-light) !important;
+        /* color: var(--fg-light); */
         pointer-events: none;
         margin-left: 4px;
     }

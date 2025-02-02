@@ -1,6 +1,242 @@
 {
-  "lastFetched": "2025-02-01T21:52:33.079Z",
+  "lastFetched": "2025-02-02T18:11:45.938Z",
   "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "55aw",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/48e114df3cf2c24f8618d3fc5bc7fdc3118510b04e75a1be8a7b47ff11e9122a.jpg",
+        "url": "https://wandering.shop/@55aw"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113935424662297591#reblogged-by-109430932721628624",
+      "published": null,
+      "wm-received": "2025-02-02T17:57:01Z",
+      "wm-id": 1882144,
+      "wm-source": "https://brid.gy/repost/mastodon/@reillypascal@hachyderm.io/113935424662297591/109430932721628624",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "55aw",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/48e114df3cf2c24f8618d3fc5bc7fdc3118510b04e75a1be8a7b47ff11e9122a.jpg",
+        "url": "https://wandering.shop/@55aw"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113935424662297591#favorited-by-109430932721628624",
+      "published": null,
+      "wm-received": "2025-02-02T17:57:00Z",
+      "wm-id": 1882143,
+      "wm-source": "https://brid.gy/like/mastodon/@reillypascal@hachyderm.io/113935424662297591/109430932721628624",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "t s r o n o",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/0295abee443a3a092bbeaf232b9adafcc15166335aa9a3293a716eb9e937f9c3.jpg",
+        "url": "https://mastodon.social/@tsrono"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113935424662297591#reblogged-by-108297934906963745",
+      "published": null,
+      "wm-received": "2025-02-02T17:39:57Z",
+      "wm-id": 1882142,
+      "wm-source": "https://brid.gy/repost/mastodon/@reillypascal@hachyderm.io/113935424662297591/108297934906963745",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jayson Smith",
+        "photo": "https://webmention.io/avatar/hachyderm.io/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://dragonscave.space/@jaybird110127"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113935424662297591#reblogged-by-109294699394882761",
+      "published": null,
+      "wm-received": "2025-02-02T17:39:56Z",
+      "wm-id": 1882141,
+      "wm-source": "https://brid.gy/repost/mastodon/@reillypascal@hachyderm.io/113935424662297591/109294699394882761",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "gentle colossus",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/1a32d73d092cfcc3d723204b6d507b4abc3746634f5c98bee483cafc3d52bb28.png",
+        "url": "https://mastodon.social/@xlrobot"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113935424662297591#favorited-by-109371328021180535",
+      "published": null,
+      "wm-received": "2025-02-02T17:39:55Z",
+      "wm-id": 1882140,
+      "wm-source": "https://brid.gy/like/mastodon/@reillypascal@hachyderm.io/113935424662297591/109371328021180535",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Reilly Spitzfaden (they/them)",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/3af660ed5ecf66c02f75967e5aeb0e28785ae8f9a38f647978411d6b7c61e28f.jpg",
+        "url": "https://hachyderm.io/@reillypascal"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113935495512506354",
+      "published": "2025-02-02T17:34:52+00:00",
+      "wm-received": "2025-02-02T17:39:53Z",
+      "wm-id": 1882138,
+      "wm-source": "https://brid.gy/comment/mastodon/@reillypascal@hachyderm.io/113935424662297591/113935495512506354",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-protocol": "webmention",
+      "content": {
+        "html": "<p><span class=\"h-card\"><a href=\"https://mastodon.social/@tsrono\" class=\"u-url\">@<span>tsrono</span></a></span> thanks! I will definitely share the results when I get more sounds too</p>",
+        "text": "@tsrono thanks! I will definitely share the results when I get more sounds too"
+      },
+      "in-reply-to": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "tullpen",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/a8053d074f2245d825b61f96309c95d734f6b3196e2d82365bf67c75d1e65154.png",
+        "url": "https://mastodon.social/@tuell"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113935424662297591#favorited-by-110651691011937585",
+      "published": null,
+      "wm-received": "2025-02-02T17:39:53Z",
+      "wm-id": 1882139,
+      "wm-source": "https://brid.gy/like/mastodon/@reillypascal@hachyderm.io/113935424662297591/110651691011937585",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "t s r o n o",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/0295abee443a3a092bbeaf232b9adafcc15166335aa9a3293a716eb9e937f9c3.jpg",
+        "url": "https://mastodon.social/@tsrono"
+      },
+      "url": "https://mastodon.social/@tsrono/113935472432492179",
+      "published": "2025-02-02T17:29:00+00:00",
+      "wm-received": "2025-02-02T17:39:52Z",
+      "wm-id": 1882137,
+      "wm-source": "https://brid.gy/comment/mastodon/@reillypascal@hachyderm.io/113935424662297591/113935472673795116",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-protocol": "webmention",
+      "content": {
+        "html": "<p><span class=\"h-card\"><a href=\"https://hachyderm.io/@reillypascal\" class=\"u-url\">@<span>reillypascal</span></a></span> whoa, that’s thorough and the small example sounds very interesting.</p>",
+        "text": "@reillypascal whoa, that’s thorough and the small example sounds very interesting."
+      },
+      "in-reply-to": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "ｓｅａｂｒｅ",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/a7a8c3d638ed97358443ad430a244087a035c4a8089791eab4f2583aba9bf150.jpg",
+        "url": "https://bsky.app/profile/seabre.bsky.social"
+      },
+      "url": "https://bsky.app/profile/reillypascal.bsky.social/post/3lh7julgxzk22#liked_by_did:plc:o7wcw7xfjxhix5oqaynzzicu",
+      "published": null,
+      "wm-received": "2025-02-02T17:39:44Z",
+      "wm-id": 1882136,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:7bvcd7usebxsagbrjbgpb75u/at%253A%252F%252Fdid%253Aplc%253A7bvcd7usebxsagbrjbgpb75u%252Fapp.bsky.feed.post%252F3lh7julgxzk22/did%253Aplc%253Ao7wcw7xfjxhix5oqaynzzicu",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Meerenai Shim",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/caaf94f1e02928d1aee7c3ed5ffe2f2b32f61b5bc42a78e85baa54518e4f4a42.jpg",
+        "url": "https://bsky.app/profile/meerenai.bsky.social"
+      },
+      "url": "https://bsky.app/profile/reillypascal.bsky.social/post/3lh7julgxzk22#liked_by_did:plc:lxd5u6hjcp5di57fceuv5gux",
+      "published": null,
+      "wm-received": "2025-02-02T17:25:44Z",
+      "wm-id": 1882135,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:7bvcd7usebxsagbrjbgpb75u/at%253A%252F%252Fdid%253Aplc%253A7bvcd7usebxsagbrjbgpb75u%252Fapp.bsky.feed.post%252F3lh7julgxzk22/did%253Aplc%253Alxd5u6hjcp5di57fceuv5gux",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "forestine",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/535093aba4d4e1bd8c7b9be7c8e626053938c71e65c879c2ede2c7e793b2ffa7.jpg",
+        "url": "https://sunny.garden/@forestine"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113935424662297591#reblogged-by-109376440249555210",
+      "published": null,
+      "wm-received": "2025-02-02T17:20:32Z",
+      "wm-id": 1882133,
+      "wm-source": "https://brid.gy/repost/mastodon/@reillypascal@hachyderm.io/113935424662297591/109376440249555210",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Urara ????",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/8bd430bc21a9801a1adb835f88e0aae9c00975719565b7bdf5f2c1a122b4adfc.jpg",
+        "url": "https://bsky.app/profile/hi.its.urara.pl"
+      },
+      "url": "https://bsky.app/profile/reillypascal.bsky.social/post/3lh2nbhieys2i#liked_by_did:plc:iio33zuecbgyh7qwlrvxqkms",
+      "published": null,
+      "wm-received": "2025-02-02T11:53:53Z",
+      "wm-id": 1882076,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:7bvcd7usebxsagbrjbgpb75u/at%253A%252F%252Fdid%253Aplc%253A7bvcd7usebxsagbrjbgpb75u%252Fapp.bsky.feed.post%252F3lh2nbhieys2i/did%253Aplc%253Aiio33zuecbgyh7qwlrvxqkms",
+      "wm-target": "https://reillyspitzfaden.com/blogroll/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/blogroll/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
     {
       "type": "entry",
       "author": {
