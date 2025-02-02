@@ -1,5 +1,5 @@
 ---
-title: Composition Journal — Feb. 27, 2024
+title: Composition Journal, Feb. 27, 2024
 description: Spectral compositing sound design from my work-in-progress "Forget your name"
 canonical_url: https://reillyspitzfaden.com/posts/2024/02/composition-journal/
 date: 2024-02-27

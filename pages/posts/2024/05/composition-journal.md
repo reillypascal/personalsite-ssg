@@ -1,5 +1,5 @@
 ---
-title: Composition Journal — May 4, 2014
+title: Composition Journal, May 4, 2014
 description: Max/MSP sample mangling with lo-fi piano, percussion & vinyl noise for my work-in-progress "Forget your name"
 canonical_url: https://reillyspitzfaden.com/posts/2024/05/composition-journal/
 date: 2024-05-04
