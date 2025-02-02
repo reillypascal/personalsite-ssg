@@ -30,6 +30,12 @@
     margin-right: 4px;
 }
 
+.post-series {
+    /* font-style: italic; */
+    border-left: 1px solid var(--accent-med-light);
+    padding-left: 12px;
+}
+
 .e-content {
     /* this is an h-entry tag */
     margin: 32px 0;

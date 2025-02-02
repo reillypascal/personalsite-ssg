@@ -420,9 +420,10 @@ figure {
     }
 }
 
-aside {
+/* aside {
     font-style: italic;
-}
+    margin-left: 24px;
+} */
 
 /* ######## Decorations ######## */
 .sectionHeader {
