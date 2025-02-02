@@ -2,7 +2,7 @@
 title: Databending Part 2 — Hacking MP3s
 description: I'm continuing my databending series with a look at MP3s. We'll talk about how to glitch and corrupt them into oblivion while still leaving them playable!
 canonical_url: https://reillyspitzfaden.com/posts/2025/02/databending-part-2/
-date: 2025-02-02
+date: 2025-02-02T00:00:00-0500
 octothorpes:
   - Art
   - Audio
