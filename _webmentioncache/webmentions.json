@@ -1,6 +1,402 @@
 {
-  "lastFetched": "2025-02-02T18:11:45.938Z",
+  "lastFetched": "2025-02-02T21:33:44.495Z",
   "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Jo ???? any pronouns",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/b846a3fccdc55573864d56c1ebfca18687585bcf8e0c30e3fc1241f2e041705e.jpg",
+        "url": "https://bsky.app/profile/dead.garden"
+      },
+      "url": "https://bsky.app/profile/reillypascal.bsky.social/post/3lh7julgxzk22#liked_by_did:plc:t3o2pwoialasdwr7ru2jhqgk",
+      "published": null,
+      "wm-received": "2025-02-02T20:51:59Z",
+      "wm-id": 1882200,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:7bvcd7usebxsagbrjbgpb75u/at%253A%252F%252Fdid%253Aplc%253A7bvcd7usebxsagbrjbgpb75u%252Fapp.bsky.feed.post%252F3lh7julgxzk22/did%253Aplc%253At3o2pwoialasdwr7ru2jhqgk",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "feinstruktur",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/94484d0397d56f11bc2deda61c5a0e93d5efdb9b4ade3c30f8da18f338be2566.jpg",
+        "url": "https://bsky.app/profile/feinstruktur.bsky.social"
+      },
+      "url": "https://bsky.app/profile/reillypascal.bsky.social/post/3lh7julgxzk22#liked_by_did:plc:7xtkl2hmmq2icwrj25igkvtn",
+      "published": null,
+      "wm-received": "2025-02-02T20:39:32Z",
+      "wm-id": 1882189,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:7bvcd7usebxsagbrjbgpb75u/at%253A%252F%252Fdid%253Aplc%253A7bvcd7usebxsagbrjbgpb75u%252Fapp.bsky.feed.post%252F3lh7julgxzk22/did%253Aplc%253A7xtkl2hmmq2icwrj25igkvtn",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Chester Jankowski",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/6fbbe6019df8529c3ef53a2e765852019cad2875e7d76dfec7c647f0f54ba561.jpg",
+        "url": "https://bsky.app/profile/chesterjankowski.bsky.social"
+      },
+      "url": "https://bsky.app/profile/reillypascal.bsky.social/post/3lh7julgxzk22#reposted_by_did:plc:5xgh42wz24uy4nu4noujsu6d",
+      "published": null,
+      "wm-received": "2025-02-02T19:59:34Z",
+      "wm-id": 1882180,
+      "wm-source": "https://brid.gy/repost/bluesky/did:plc:7bvcd7usebxsagbrjbgpb75u/at%253A%252F%252Fdid%253Aplc%253A7bvcd7usebxsagbrjbgpb75u%252Fapp.bsky.feed.post%252F3lh7julgxzk22/did%253Aplc%253A5xgh42wz24uy4nu4noujsu6d",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Stan Stewart (muz4now)",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/de408c4da6aa7c2710d60b2d73dddbad10908aa0149d25759c77142784c98c62.jpg",
+        "url": "https://bsky.app/profile/muz4now.com"
+      },
+      "url": "https://bsky.app/profile/reillypascal.bsky.social/post/3lh7julgxzk22#liked_by_did:plc:nuzmmfppfkcsjen2xcii6atl",
+      "published": null,
+      "wm-received": "2025-02-02T19:59:33Z",
+      "wm-id": 1882177,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:7bvcd7usebxsagbrjbgpb75u/at%253A%252F%252Fdid%253Aplc%253A7bvcd7usebxsagbrjbgpb75u%252Fapp.bsky.feed.post%252F3lh7julgxzk22/did%253Aplc%253Anuzmmfppfkcsjen2xcii6atl",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Reilly Spitzfaden (they/them)",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/4d0aea71eabc5291867caa03b9fb6f0738dcb725a3581ff36b21b8a420075b1b.jpg",
+        "url": "https://bsky.app/profile/reillypascal.bsky.social"
+      },
+      "url": "https://bsky.app/profile/reillypascal.bsky.social/post/3lh7ra5e6c22a",
+      "published": "2025-02-02T19:29:43+00:00",
+      "wm-received": "2025-02-02T19:59:33Z",
+      "wm-id": 1882178,
+      "wm-source": "https://brid.gy/comment/bluesky/did:plc:7bvcd7usebxsagbrjbgpb75u/at%253A%252F%252Fdid%253Aplc%253A7bvcd7usebxsagbrjbgpb75u%252Fapp.bsky.feed.post%252F3lh7julgxzk22/at%253A%252F%252Fdid%253Aplc%253A7bvcd7usebxsagbrjbgpb75u%252Fapp.bsky.feed.post%252F3lh7ra5e6c22a",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-protocol": "webmention",
+      "content": {
+        "html": "In that post I mentioned a plugin I made that sounds like a cell phone, and I just made a release for it! There are some features that are still in the works, but it still sounds cool:\n\n<a href=\"https://github.com/reillypascal/RSTelecom/releases\">github.com/reillypascal...</a>\n\n<a href=\"https://bsky.app/search?q=%23JUCE\">#JUCE</a> <a href=\"https://bsky.app/search?q=%23Audio\">#Audio</a> <a href=\"https://bsky.app/search?q=%23Plugin\">#Plugin</a> <a href=\"https://bsky.app/search?q=%23VST\">#VST</a> <a href=\"https://bsky.app/search?q=%23VST3\">#VST3</a> <a href=\"https://bsky.app/search?q=%23AU\">#AU</a> <a href=\"https://bsky.app/search?q=%23CPlusPlus\">#CPlusPlus</a> <a href=\"https://bsky.app/search?q=%23MusicProduction\">#MusicProduction</a> <a href=\"https://bsky.app/search?q=%23LoFi\">#LoFi</a>",
+        "text": "In that post I mentioned a plugin I made that sounds like a cell phone, and I just made a release for it! There are some features that are still in the works, but it still sounds cool:\n\ngithub.com/reillypascal...\n\n#JUCE #Audio #Plugin #VST #VST3 #AU #CPlusPlus #MusicProduction #LoFi"
+      },
+      "in-reply-to": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Chester Jankowski",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/6fbbe6019df8529c3ef53a2e765852019cad2875e7d76dfec7c647f0f54ba561.jpg",
+        "url": "https://bsky.app/profile/chesterjankowski.bsky.social"
+      },
+      "url": "https://bsky.app/profile/reillypascal.bsky.social/post/3lh7julgxzk22#liked_by_did:plc:5xgh42wz24uy4nu4noujsu6d",
+      "published": null,
+      "wm-received": "2025-02-02T19:59:33Z",
+      "wm-id": 1882179,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:7bvcd7usebxsagbrjbgpb75u/at%253A%252F%252Fdid%253Aplc%253A7bvcd7usebxsagbrjbgpb75u%252Fapp.bsky.feed.post%252F3lh7julgxzk22/did%253Aplc%253A5xgh42wz24uy4nu4noujsu6d",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Peter Vágner",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/7a2f4d90401d614291cd91b618eea581fc558610138478c842452ea55bbabaa1.jpg",
+        "url": "https://fedi.ml/profile/pvagner"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113935424662297591#reblogged-by-109332965615163504",
+      "published": null,
+      "wm-received": "2025-02-02T19:51:43Z",
+      "wm-id": 1882175,
+      "wm-source": "https://brid.gy/repost/mastodon/@reillypascal@hachyderm.io/113935424662297591/109332965615163504",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "jacob remin",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/61e997a38831ded4947048c447ca8b0d6674ada5a0ebbb3215ccdabb82f409ab.jpg",
+        "url": "https://sonomu.club/@oooo0v0v0oooo"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113935424662297591#favorited-by-111765806975815884",
+      "published": null,
+      "wm-received": "2025-02-02T19:51:42Z",
+      "wm-id": 1882174,
+      "wm-source": "https://brid.gy/like/mastodon/@reillypascal@hachyderm.io/113935424662297591/111765806975815884",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Reilly Spitzfaden (they/them)",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/3af660ed5ecf66c02f75967e5aeb0e28785ae8f9a38f647978411d6b7c61e28f.jpg",
+        "url": "https://hachyderm.io/@reillypascal"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113935695333993976",
+      "published": "2025-02-02T18:25:41+00:00",
+      "wm-received": "2025-02-02T19:23:56Z",
+      "wm-id": 1882171,
+      "wm-source": "https://brid.gy/comment/mastodon/@reillypascal@hachyderm.io/113935424662297591/113935695333993976",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-protocol": "webmention",
+      "content": {
+        "html": "<p><span class=\"h-card\"><a href=\"https://dragonscave.space/@pitermach\" class=\"u-url\">@<span>pitermach</span></a></span> I was actually surprised I hadn't already done so when I linked the repository in this post the other day! The plugin doesn't have everything completed, but I can definitely make a compiled version. I unfortunately only have setups on Mac and Linux to compile it — I'll probably have to figure out a GitHub action or something to get a Windows version. What OS are you looking for?</p>",
+        "text": "@pitermach I was actually surprised I hadn't already done so when I linked the repository in this post the other day! The plugin doesn't have everything completed, but I can definitely make a compiled version. I unfortunately only have setups on Mac and Linux to compile it — I'll probably have to figure out a GitHub action or something to get a Windows version. What OS are you looking for?"
+      },
+      "in-reply-to": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Reilly Spitzfaden (they/them)",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/3af660ed5ecf66c02f75967e5aeb0e28785ae8f9a38f647978411d6b7c61e28f.jpg",
+        "url": "https://hachyderm.io/@reillypascal"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113935921820199147",
+      "published": "2025-02-02T19:23:17+00:00",
+      "wm-received": "2025-02-02T19:23:55Z",
+      "wm-id": 1882170,
+      "wm-source": "https://brid.gy/comment/mastodon/@reillypascal@hachyderm.io/113935424662297591/113935921820199147",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-protocol": "webmention",
+      "content": {
+        "html": "<p>I mentioned a lo-fi plugin I made with cell phone codecs, and I just published an initial release! There are some features that are still in the works, but there are plugin files available for macOS, and the codecs and downsampling work: </p><p><a href=\"https://github.com/reillypascal/RSTelecom/releases\"><span>https://</span><span>github.com/reillypascal/RSTele</span><span>com/releases</span></a></p><p><span class=\"h-card\"><a href=\"https://dragonscave.space/@pitermach\" class=\"u-url\">@<span>pitermach</span></a></span> </p><p><a href=\"https://hachyderm.io/tags/JUCE\">#<span>JUCE</span></a> <a href=\"https://hachyderm.io/tags/Audio\">#<span>Audio</span></a> <a href=\"https://hachyderm.io/tags/Plugin\">#<span>Plugin</span></a> <a href=\"https://hachyderm.io/tags/VST\">#<span>VST</span></a> <a href=\"https://hachyderm.io/tags/VST3\">#<span>VST3</span></a> <a href=\"https://hachyderm.io/tags/AU\">#<span>AU</span></a> <a href=\"https://hachyderm.io/tags/CPlusPlus\">#<span>CPlusPlus</span></a> <a href=\"https://hachyderm.io/tags/MusicProduction\">#<span>MusicProduction</span></a> <a href=\"https://hachyderm.io/tags/LoFi\">#<span>LoFi</span></a></p>\n<a class=\"p-category\" href=\"https://hachyderm.io/tags/au\">au</a>\n<a class=\"p-category\" href=\"https://hachyderm.io/tags/audio\">audio</a>\n<a class=\"p-category\" href=\"https://hachyderm.io/tags/cplusplus\">cplusplus</a>\n<a class=\"p-category\" href=\"https://hachyderm.io/tags/juce\">juce</a>\n<a class=\"p-category\" href=\"https://hachyderm.io/tags/lofi\">lofi</a>\n<a class=\"p-category\" href=\"https://hachyderm.io/tags/musicproduction\">musicproduction</a>\n<a class=\"p-category\" href=\"https://hachyderm.io/tags/plugin\">plugin</a>\n<a class=\"p-category\" href=\"https://hachyderm.io/tags/vst\">vst</a>\n<a class=\"p-category\" href=\"https://hachyderm.io/tags/vst3\">vst3</a>\n<a href=\"https://github.com/reillypascal/RSTelecom/releases\">Releases · reillypascal/RSTelecom</a>",
+        "text": "I mentioned a lo-fi plugin I made with cell phone codecs, and I just published an initial release! There are some features that are still in the works, but there are plugin files available for macOS, and the codecs and downsampling work: \n\nhttps://github.com/reillypascal/RSTelecom/releases\n\n@pitermach \n\n#JUCE #Audio #Plugin #VST #VST3 #AU #CPlusPlus #MusicProduction #LoFi\nau\naudio\ncplusplus\njuce\nlofi\nmusicproduction\nplugin\nvst\nvst3\nReleases · reillypascal/RSTelecom"
+      },
+      "in-reply-to": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Anja Kreysing",
+        "photo": "https://webmention.io/avatar/cdn.bsky.app/8833c63d833350f24c9f08745f268b53615efc3f50675b9e92a4a3fd03749f03.jpg",
+        "url": "https://bsky.app/profile/anjakreysing.bsky.social"
+      },
+      "url": "https://bsky.app/profile/reillypascal.bsky.social/post/3lh7julgxzk22#liked_by_did:plc:w3nttiiqsmlsr3yff7tezqqr",
+      "published": null,
+      "wm-received": "2025-02-02T19:23:50Z",
+      "wm-id": 1882169,
+      "wm-source": "https://brid.gy/like/bluesky/did:plc:7bvcd7usebxsagbrjbgpb75u/at%253A%252F%252Fdid%253Aplc%253A7bvcd7usebxsagbrjbgpb75u%252Fapp.bsky.feed.post%252F3lh7julgxzk22/did%253Aplc%253Aw3nttiiqsmlsr3yff7tezqqr",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Ojse_no",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/961a1f7e9f8b0a62724835d00fc1a8b554af7593ebf9e3736a17d195ec92c8f9.jpg",
+        "url": "https://autonomous.zone/@Ojse_no"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113935424662297591#reblogged-by-113898040730415332",
+      "published": null,
+      "wm-received": "2025-02-02T18:31:24Z",
+      "wm-id": 1882158,
+      "wm-source": "https://brid.gy/repost/mastodon/@reillypascal@hachyderm.io/113935424662297591/113898040730415332",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "James Beyer",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/6cca75cfa78f2d2ff04347211232e9b7b368add5fdf5d8f142e8325521bb2089.jpg",
+        "url": "https://mathstodon.xyz/@jebeyer"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113935424662297591#favorited-by-109400754306494297",
+      "published": null,
+      "wm-received": "2025-02-02T18:26:59Z",
+      "wm-id": 1882157,
+      "wm-source": "https://brid.gy/like/mastodon/@reillypascal@hachyderm.io/113935424662297591/109400754306494297",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "AstraLuma",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/17737ad3da6ab849bbc1264711f1e35577b9a5a8a80d9c05c20a834481280237.png",
+        "url": "https://tacobelllabs.net/@astraluma"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113935424662297591#reblogged-by-111088222064841490",
+      "published": null,
+      "wm-received": "2025-02-02T18:26:09Z",
+      "wm-id": 1882156,
+      "wm-source": "https://brid.gy/repost/mastodon/@reillypascal@hachyderm.io/113935424662297591/111088222064841490",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Fugue State Audio",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/54a6457484ac1da681c70628ec5242475bac2db752e5e143ea8fad4326630ccf.jpg",
+        "url": "https://mastodon.sdf.org/@fstateaudio"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113935424662297591#reblogged-by-109547565589963060",
+      "published": null,
+      "wm-received": "2025-02-02T18:20:32Z",
+      "wm-id": 1882155,
+      "wm-source": "https://brid.gy/repost/mastodon/@reillypascal@hachyderm.io/113935424662297591/109547565589963060",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Adam Kaliszewski ????",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/73a9d72a1a0c00dac9ec2bdd1fe09006e34a3c35230b627628d5190269a9b1f1.jpg",
+        "url": "https://pol.social/@kalisz79"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113935424662297591#reblogged-by-109948005458543912",
+      "published": null,
+      "wm-received": "2025-02-02T18:20:31Z",
+      "wm-id": 1882154,
+      "wm-source": "https://brid.gy/repost/mastodon/@reillypascal@hachyderm.io/113935424662297591/109948005458543912",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-protocol": "webmention",
+      "repost-of": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-property": "repost-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "luks1996",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/ded993ad9c784f298fcb35fb8ee4e5e8f8b94cb6581ef99bde3a2d8ed3d52d46.jpg",
+        "url": "https://rebel.ar/@luks_1996"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113935424662297591#favorited-by-110679724863946278",
+      "published": null,
+      "wm-received": "2025-02-02T18:20:29Z",
+      "wm-id": 1882153,
+      "wm-source": "https://brid.gy/like/mastodon/@reillypascal@hachyderm.io/113935424662297591/110679724863946278",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Fugue State Audio",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/54a6457484ac1da681c70628ec5242475bac2db752e5e143ea8fad4326630ccf.jpg",
+        "url": "https://mastodon.sdf.org/@fstateaudio"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113935424662297591#favorited-by-109547565589963060",
+      "published": null,
+      "wm-received": "2025-02-02T18:20:28Z",
+      "wm-id": 1882152,
+      "wm-source": "https://brid.gy/like/mastodon/@reillypascal@hachyderm.io/113935424662297591/109547565589963060",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Pitermach",
+        "photo": "https://webmention.io/avatar/hachyderm.io/db1d635fb4356e493a52ae26f48c9f875d733a757cb82141ea43b0221d79f2d5.png",
+        "url": "https://dragonscave.space/@pitermach"
+      },
+      "url": "https://dragonscave.space/@pitermach/113935659021886434",
+      "published": "2025-02-02T18:16:27+00:00",
+      "wm-received": "2025-02-02T18:20:27Z",
+      "wm-id": 1882151,
+      "wm-source": "https://brid.gy/comment/mastodon/@reillypascal@hachyderm.io/113935424662297591/113935659063017085",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-protocol": "webmention",
+      "content": {
+        "html": "<p><span class=\"h-card\"><a href=\"https://hachyderm.io/@reillypascal\" class=\"u-url\">@<span>reillypascal</span></a></span> Very interesting post. I'm also really intrigued by the RSTelecom plugin, are you planning to make a compiled version of that available as well in the future?</p>",
+        "text": "@reillypascal Very interesting post. I'm also really intrigued by the RSTelecom plugin, are you planning to make a compiled version of that available as well in the future?"
+      },
+      "in-reply-to": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-property": "in-reply-to",
+      "wm-private": false
+    },
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Adam Kaliszewski ????",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/73a9d72a1a0c00dac9ec2bdd1fe09006e34a3c35230b627628d5190269a9b1f1.jpg",
+        "url": "https://pol.social/@kalisz79"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113935424662297591#favorited-by-109948005458543912",
+      "published": null,
+      "wm-received": "2025-02-02T18:20:26Z",
+      "wm-id": 1882150,
+      "wm-source": "https://brid.gy/like/mastodon/@reillypascal@hachyderm.io/113935424662297591/109948005458543912",
+      "wm-target": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/posts/2025/02/databending-part-2/",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
     {
       "type": "entry",
       "author": {
