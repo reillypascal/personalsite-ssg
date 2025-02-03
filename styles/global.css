@@ -153,6 +153,27 @@ footer {
     font-size: 1.25em;
 }
 
+/* ######## sticky footer ######## */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Sticky_footers#alternate_method */
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+main {
+    flex-grow: 1; 
+}
+header, 
+footer { 
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
 /* ######## colors, sizes ######## */
 body {
     background-color: var(--bg-dark);
@@ -367,15 +388,15 @@ blockquote {
     }
 }
 
-article {
-    margin: 48px 0;
-}
+article,
 section {
-    margin: 48px 0;
+    margin: 0 0 48px;
 }
+
 @media screen and (min-width: 660px) {
-    article {
-        margin: 64px 0;
+    article,
+    section {
+        margin: 0 0 64px;
     }
 }
 
