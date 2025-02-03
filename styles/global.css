@@ -7,13 +7,6 @@
             format("woff2");
     font-display: swap;
 }
-/* @font-face {
-    font-family: "ChiKareGo";
-    src:
-        url("/styles/fonts/chikarego/chikarego-webfont.woff2")
-            format("woff2");
-    font-display: swap;
-} */
 @font-face {
     font-family: "Open Sans";
     src:
@@ -136,7 +129,6 @@ h5,
 h6,
 footer {
     font-family: "Born2bSportyV2", sans-serif;
-    /* font-family: "ChiKareGo", sans-serif; */
 }
 header {
     font-size: 1.625em;
@@ -277,7 +269,7 @@ nav {
         fill: var(--fg-light) !important;
         /* color: var(--fg-light); */
         pointer-events: none;
-        margin-left: 4px;
+        margin-left: 6px;
     }
 }
 
