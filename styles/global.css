@@ -51,6 +51,8 @@
     font-family: "Open Sans", sans-serif;
     /* font-family: "Proza Libre", sans-serif; */
     font-weight: 400;
+    /* canceled out for elements with display font */
+    text-underline-offset: 0.2em;
 
     /* color variables */
     /* --bg-dark: #111318; */
@@ -129,6 +131,8 @@ h5,
 h6,
 footer {
     font-family: "Born2bSportyV2", sans-serif;
+    /* cancels out offset for :root */
+    text-underline-offset: auto;
 }
 header {
     font-size: 1.625em;
