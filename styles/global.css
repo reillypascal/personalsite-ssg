@@ -155,14 +155,16 @@ footer {
 
 /* ######## sticky footer ######## */
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Sticky_footers#alternate_method */
+/* alt: https://css-tricks.com/couple-takes-sticky-footer/#aa-there-is-flexbox */
 html,
 body {
-    height: 100%;
+    min-height: 100%;
     padding: 0;
     margin: 0;
 }
 main {
-    flex-grow: 1; 
+    /* flex-grow: 1;  */
+    flex: 1 0 auto; /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
 }
 header, 
 footer { 
