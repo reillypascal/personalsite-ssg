@@ -1,6 +1,25 @@
 {
-  "lastFetched": "2025-02-03T23:51:12.289Z",
+  "lastFetched": "2025-02-04T02:12:31.977Z",
   "children": [
+    {
+      "type": "entry",
+      "author": {
+        "type": "card",
+        "name": "Anthony Dardis",
+        "photo": "https://webmention.io/avatar/media.hachyderm.io/e110e4e38c7cd7f21ab704be79e8db7f11a742172528329d89dd06ea2db66da4.jpg",
+        "url": "https://fediphilosophy.org/@adardis"
+      },
+      "url": "https://hachyderm.io/@reillypascal/113942504843170633#favorited-by-110681560735982582",
+      "published": null,
+      "wm-received": "2025-02-04T00:47:25Z",
+      "wm-id": 1882433,
+      "wm-source": "https://brid.gy/like/mastodon/@reillypascal@hachyderm.io/113942504843170633/110681560735982582",
+      "wm-target": "https://reillyspitzfaden.com/404.html",
+      "wm-protocol": "webmention",
+      "like-of": "https://reillyspitzfaden.com/404.html",
+      "wm-property": "like-of",
+      "wm-private": false
+    },
     {
       "type": "entry",
       "author": {

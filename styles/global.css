@@ -216,7 +216,7 @@ footer {
     border-top: 6px solid var(--accent-med-light);
     margin-left: var(--global-margin);
     margin-right: var(--global-margin);
-    margin-bottom: 32px;
+    margin-bottom: 16px;
     & table {
         margin-top: 16px;
     }
