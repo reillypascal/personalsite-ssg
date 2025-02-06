@@ -3,6 +3,8 @@ title: Webmentions Without Plugins
 description: At yesterday's Pacific Homebrew Website Club meeting, I got some great feedback and was able to figure out making my own code to bring in webmentions!
 canonical_url: https://reillyspitzfaden.com/post/2025/02/webmentions-without-plugins/
 fedi_url: 
+  - https://hachyderm.io/@reillypascal/113958562476076617
+  - https://bsky.app/profile/reillypascal.bsky.social/post/3lhjsncmrok2l
 date: 2025-02-06T14:15:00-0500
 tags:
   - post
