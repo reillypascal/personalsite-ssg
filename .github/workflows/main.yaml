@@ -1,4 +1,4 @@
-name: Trigger Netlify Build
+name: Netlify Build via Webhook
 on:
   schedule:
     # Run at 0500 daily
