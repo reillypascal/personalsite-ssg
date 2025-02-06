@@ -2,14 +2,14 @@ name: Netlify Deploy
 
 on:
   schedule:
-    - cron: "50 * * * *"
+    - cron: "54 * * * *"
 
 jobs:
-  deploy:
-    name: Deploy
+  build:
+    name: Request Netlify Webhook
     runs-on: ubuntu-latest
     env:
       BUILD_HOOK: ${{ secrets.NETLIFY_BUILD_HOOK }}
     steps:
-    - name: Curl request
-      run: curl -X POST -d {} "$BUILD_HOOK"
+      - name: Curl request
+        run: curl -X POST -d {} "$BUILD_HOOK"
