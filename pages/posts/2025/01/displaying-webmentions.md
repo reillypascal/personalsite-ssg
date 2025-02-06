@@ -67,7 +67,7 @@ I think I'll start doing more writeups of/notes about in-progress projects. Whil
 
 [^1]: In addition to including this post as a reference for displaying webmentions, I want to respond to these principles in a future post and use them as a jumping-off point to write about how I want to use my own site.
 
-<!-- basic and JavaScript highlighting from "highlight.js" library -->
+<!-- basic, JS, bash highlighting from "highlight.js" library -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/bash.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/javascript.min.js"></script>
