@@ -2,11 +2,11 @@ name: Netlify Deploy
 
 on:
   schedule:
-    - cron: "49 * * * *"
+    - cron: "50 * * * *"
 
 jobs:
   deploy:
-    name: 'Deploy'
+    name: Deploy
     runs-on: ubuntu-latest
     env:
       BUILD_HOOK: ${{ secrets.NETLIFY_BUILD_HOOK }}
