@@ -8,7 +8,5 @@ jobs:
     name: Request Netlify Webhook
     runs-on: ubuntu-latest
     steps:
-      - shell: bash
-        env:
-          BUILD_HOOK: ${{ secrets.NETLIFY_BUILD_HOOK }}
-        run: curl -X POST -d '{}' "$BUILD_HOOK"
+      - name: Curl request
+        run: curl -X POST -d {} https://api.netlify.com/build_hooks/67a53bc75c61637e30fc412e
