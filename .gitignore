@@ -5,6 +5,7 @@ drafts/
 Post\ Drafts/
 node_modules/
 wip/
+.cache/
 # Local Netlify folder
 .netlify/
 .obsidian/
