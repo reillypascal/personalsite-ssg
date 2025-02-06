@@ -2,7 +2,7 @@ name: Netlify Build via Webhook
 on:
   schedule:
     # Run at 0500 daily
-    - cron: '32 * * * *'
+    - cron: '35 * * * *'
 
 jobs:
   build:
