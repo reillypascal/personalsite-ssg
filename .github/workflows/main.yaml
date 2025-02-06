@@ -1,9 +1,8 @@
 name: Netlify Deploy
 
-on: workflow_dispatch
-# on:
-#   schedule:
-#     - cron: "54 * * * *"
+on:
+  schedule:
+    - cron: "0 * * * *"
 
 jobs:
   build:
