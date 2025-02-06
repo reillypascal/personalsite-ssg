@@ -17,7 +17,7 @@
 
 {% comment %} {% assign mentions = webmentions-static.children | webmentionsByUrl: canonical_url %} {% endcomment %}
 {% comment %} <div>{{ webmentions | webmentionsForPage: canonical_url }}</div> {% endcomment %}
-{% assign mentions = webmentions | webmentionsForPage: canonical_url %}
+{% assign mentions = webmentions.mentions | webmentionsByUrl: canonical_url %}
 
 <div class="webmention-display">
     <span class="webmention-logo">
