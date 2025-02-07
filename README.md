@@ -1,4 +1,6 @@
 # Personal Site
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c5cfaf6f-b76e-4019-847b-8773ff9f827f/deploy-status)](https://app.netlify.com/sites/reillyspitzfaden/deploys)
+
 My personal site, [https://reillyspitzfaden.com/](https://reillyspitzfaden.com/) made with the [Eleventy](https://11ty.dev) static site generator.
 
 ## Media
