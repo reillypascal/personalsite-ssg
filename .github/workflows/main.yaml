@@ -11,5 +11,5 @@ jobs:
     env:
       BUILD_HOOK: ${{ secrets.NETLIFY_BUILD_HOOK }}
     steps:
-      - name: Curl request
-        run: curl -X POST -d {} "$BUILD_HOOK"
+    - name: Curl request
+      run: curl -X POST -d {} "$BUILD_HOOK"
