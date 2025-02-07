@@ -2,7 +2,7 @@ name: Netlify Deploy via Webhook
 
 on:
   schedule:
-    - cron: "13 1 * * *"
+    - cron: "43 1 * * *"
   workflow_dispatch:
 
 jobs:
