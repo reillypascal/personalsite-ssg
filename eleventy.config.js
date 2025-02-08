@@ -2,7 +2,7 @@ const feedPlugin = require("@11ty/eleventy-plugin-rss");
 let markdownIt = require("markdown-it");
 let markdownItFootnote = require("markdown-it-footnote");
 const { DateTime } = require("luxon");
-const sanitizeHTML = require("sanitize-html");
+// const sanitizeHTML = require("sanitize-html");
 // const Webmentions = require("eleventy-plugin-webmentions");
 
 module.exports = async function (eleventyConfig) {
@@ -30,21 +30,21 @@ module.exports = async function (eleventyConfig) {
       comments: ["mention-of", "in-reply-to"],
     };
     
-    const sanitize = (entry) => {
-      if (entry.content && entry.content.html) {
-        entry.content = sanitizeHTML(entry.content.html, {
-          allowedTags: ["b", "i", "em", "strong", "a"],
-        });
-      }
-      return entry;
-    };
+    // const sanitize = (entry) => {
+    //   if (entry.content && entry.content.html) {
+    //     entry.content = sanitizeHTML(entry.content.html, {
+    //       allowedTags: ["b", "i", "em", "strong", "a"],
+    //     });
+    //   }
+    //   return entry;
+    // };
   
     const pageWebmentions = webmentions
       .filter(
         (mention) => mention["wm-target"] == url
       )
       .sort((a, b) => new Date(b.published) - new Date(a.published))
-      .map(sanitize);
+      // .map(sanitize);
   
     const likes = pageWebmentions
       .filter((mention) => allowedTypes.likes.includes(mention["wm-property"]))
@@ -76,6 +76,42 @@ module.exports = async function (eleventyConfig) {
       ${display_title}</a> </p>
       </blockquote>`;
   });
+
+  // plugins
+  // RSS
+  eleventyConfig.addPlugin(feedPlugin);
+
+  // markdown-it
+  let options = {
+    html: true,
+    breaks: true,
+    linkify: true,
+  };
+
+  let markdownLib = markdownIt(options).use(markdownItFootnote);
+  eleventyConfig.setLibrary("md", markdownLib);
+
+  // tags
+  eleventyConfig.addCollection("allTags", (collection) => {
+    const allCollections = collection.getAll();
+    let tagSet = new Set();
+    allCollections.forEach((temp) => {
+      if ("tags" in temp.data) {
+        for (const tag of temp.data.tags) {
+          tagSet.add(tag);
+        }
+      }
+    });
+    return [...tagSet].sort();
+  });
+
+  // input directory
+  return {
+    dir: {
+      input: "pages",
+    },
+  };
+  
   // eleventyConfig.addShortcode("postfooter", (title, url) => {
   //   return `<div class="blogPostAsterism"><p>&#x2042;</p></div>`;
   // });
@@ -128,9 +164,6 @@ module.exports = async function (eleventyConfig) {
   //   return `<span class="list-dingbat">&#10147;</span>`;
   // });
 
-  // plugins
-  // RSS
-  eleventyConfig.addPlugin(feedPlugin);
   // eleventyConfig.addPlugin(feedPlugin, {
   //   type: "rss",
   //   outputPath: "/blog/feed.xml",
@@ -155,35 +188,4 @@ module.exports = async function (eleventyConfig) {
   //   domain: "reillyspitzfaden.com",
   //   token: "",
   // });
-
-  // markdown-it
-  let options = {
-    html: true,
-    breaks: true,
-    linkify: true,
-  };
-
-  let markdownLib = markdownIt(options).use(markdownItFootnote);
-  eleventyConfig.setLibrary("md", markdownLib);
-
-  // tags
-  eleventyConfig.addCollection("allTags", (collection) => {
-    const allCollections = collection.getAll();
-    let tagSet = new Set();
-    allCollections.forEach((temp) => {
-      if ("tags" in temp.data) {
-        for (const tag of temp.data.tags) {
-          tagSet.add(tag);
-        }
-      }
-    });
-    return [...tagSet].sort();
-  });
-
-  // input directory
-  return {
-    dir: {
-      input: "pages",
-    },
-  };
 };
