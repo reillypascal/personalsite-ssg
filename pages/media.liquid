@@ -25,7 +25,20 @@ eleventyExcludeFromCollections: true
     
     <article>
         <div class="videoGrid">
-            <div class="containingBlock">
+            {% for video in media.videos %}
+                <div class="containingBlock">
+                    <h3><a href="https://www.youtube.com/watch?v={{ video.yt_id }}"><cite>{{ video.title }}</cite></a></h3>
+                    {% if video.peertube_link %}
+                        <p><a href="{{ video.peertube_link }}">PeerTube link</a></p>
+                    {% endif %}
+                    <div class="videoWrapper">
+                        <lite-youtube videoid="{{ video.yt_id }}" style="background-image: url('https://i.ytimg.com/vi/{{ video.yt_id }}/hqdefault.jpg');">
+                        </lite-youtube>
+                    </div>
+                </div>
+            {% endfor %}
+            
+            {% comment %} <div class="containingBlock">
                 <h3><a href="https://www.youtube.com/watch?v=t_gxCOcNJr8"><cite>Everything lost along the way</cite></a>, score video:</h3>
                 <div class="videoWrapper">
                     <lite-youtube videoid="t_gxCOcNJr8" style="background-image: url('https://i.ytimg.com/vi/t_gxCOcNJr8/hqdefault.jpg');">
@@ -40,7 +53,7 @@ eleventyExcludeFromCollections: true
             </div>
 
             <div class="containingBlock">
-                <h3><a href="https://www.youtube.com/watch?v=YtSerbT7C5A"><cite>Outlive everything you know</cite></a>:</h3>
+                <h3><a href="https://www.youtube.com/watch?v=2dz0iKwHrkI"><cite>Outlive everything you know</cite></a>:</h3>
                 <div class="videoWrapper">
                     <lite-youtube videoid="2dz0iKwHrkI" style="background-image: url('https://i.ytimg.com/vi/2dz0iKwHrkI/hqdefault.jpg');"></lite-youtube>
                 </div>
@@ -51,7 +64,7 @@ eleventyExcludeFromCollections: true
                 <div class="videoWrapper">
                     <lite-youtube videoid="Y_inKSy9K0k" style="background-image: url('https://i.ytimg.com/vi/Y_inKSy9K0k/hqdefault.jpg');"></lite-youtube>
                 </div>
-            </div>
+            </div> {% endcomment %}
             
             {% comment %} <div class="containingBlock">
                 <h3><a href="https://www.youtube.com/watch?v=7FXpG1s1HpE"><cite>Everything lost along the way</cite></a>:</h3>
@@ -62,7 +75,7 @@ eleventyExcludeFromCollections: true
     
             <!-- <h3><i>Scratch:</i></h3> -->
     
-            <div class="containingBlock">
+            {% comment %} <div class="containingBlock">
                 <h3><a href="https://www.youtube.com/watch?v=aYjmpwDuPEI"><cite>Selist</cite></a>:</h3>
                 <div class="videoWrapper">
                     <lite-youtube videoid="aYjmpwDuPEI" style="background-image: url('https://i.ytimg.com/vi/aYjmpwDuPEI/hqdefault.jpg');"></lite-youtube>
@@ -95,8 +108,8 @@ eleventyExcludeFromCollections: true
                 <div class="videoWrapper">
                     <lite-youtube videoid="iQKfKuEqyYs" style="background-image: url('https://i.ytimg.com/vi/iQKfKuEqyYs/hqdefault.jpg');"></lite-youtube>
                 </div>
-            </div>
-            <!-- <p><a href="#top">Top ⭡</a></p> -->
+            </div> {% endcomment %}
+            
         <!-- close "videoGrid" -->
         </div>
     </article>
@@ -131,4 +144,6 @@ eleventyExcludeFromCollections: true
         <!-- close "linksList"-->
         </table>
     </article>
+
+    <p><a href="#top">Top ⭡</a></p>
 </main>
