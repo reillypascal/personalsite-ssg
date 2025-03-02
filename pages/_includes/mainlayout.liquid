@@ -4,10 +4,22 @@ title: Reilly Spitzfaden, Composer
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- OG, social meta properties -->
+        <!-- General metadata -->
+        <title>{{ title }}</title>
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        
+        <meta name="description" content="{{ description }}" />
+        <link rel="canonical" href="{{ canonical_url }}" />
+
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="/media/favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/media/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="/media/favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/media/favicon/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="Reilly Spitzfaden" />
+        <link rel="manifest" href="/media/favicon/site.webmanifest" />
+
+        <!-- OG, social meta properties -->
         <meta property="og:url" content="{{ canonical_url }}" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="{{ title }}"/>
@@ -26,17 +38,6 @@ title: Reilly Spitzfaden, Composer
             <meta property="og:image:alt" content="Pixel art of a radio tower and floppy disk, with pixel art text reading 'Reilly Spitzfaden'" />
         {% endif %}
         <meta name="fediverse:creator" content="reillypascal@hachyderm.io" />
-        
-        <!-- General -->
-        <meta name="description" content="{{ description }}" />
-        <title>{{ title }}</title>
-        <link rel="canonical" href="{{ canonical_url }}" />
-        <link rel="icon" type="image/png" href="/media/favicon/favicon-96x96.png" sizes="96x96" />
-        <link rel="icon" type="image/svg+xml" href="/media/favicon/favicon.svg" />
-        <link rel="shortcut icon" href="/media/favicon/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/media/favicon/apple-touch-icon.png" />
-        <meta name="apple-mobile-web-app-title" content="Reilly Spitzfaden" />
-        <link rel="manifest" href="/media/favicon/site.webmanifest" />
 
         <!-- My styles -->
         <link rel="stylesheet" type="text/css" href="/styles/global.css" />

@@ -209,29 +209,5 @@
             }
 
         ]
-    },
-    {
-        "name" : "Tech Blogs",
-        "id" : "tech-blogs",
-        "blogs" : [
-            {
-                "title" : "[citation needed]",
-                "htmlUrl" : "https://www.citationneeded.news/",
-                "xmlUrl" : "https://www.citationneeded.news/rss/",
-                "description" : "Keep up with the happenings in the tech world without all the boosterism. Cryptocurrency critic, technology researcher, and software engineer Molly White publishes Citation Needed, a newsletter that features regular explainers of developments in the cryptocurrency industry, with summaries of the latest disasters featured on her well-known project Web3 is Going Just Great. The newsletter also features deep dives into important events in the technology industry, with added critical context that is too often missing."
-            },
-            {
-                "title" : "maia arson crimew",
-                "htmlUrl" : "https://maia.crimew.gay/",
-                "xmlUrl" : "https://maia.crimew.gay/feed.xml",
-                "description" : "hey! im maia arson crimew (it/she), welcome to my website! this site is primarily home to my blog, containing my investigative journalism, work on hacktivism and technical articles on some of my own hacks. i also write a column called cyber_punk for the swiss online magazine das lamm (in german). outside my journalistic and activist work i try to make music, am a live dj and do various other creative things. "
-            },
-            {
-                "title" : "Where's Your Ed At",
-                "htmlUrl" : "https://www.wheresyoured.at/",
-                "xmlUrl" : "https://www.wheresyoured.at/rss/",
-                "myDescription" : "Ed Zitron writes critically about the rot and growth-at-all-costs mentality in the tech industry, with a frequent focus on the deep-seated problems of “generative AI” corporations."
-            }
-        ]
     }
 ]
