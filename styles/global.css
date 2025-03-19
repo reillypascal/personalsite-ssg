@@ -290,6 +290,18 @@ nav {
     & .dropdown-content {
         /* adds margins when in hamburger mode */
         margin: 8px 0;
+        display: none;
+    }
+
+    & .dropbtn {
+        color: inherit !important;
+        font-family: inherit !important;
+        font-size: inherit !important;
+        background-color: transparent !important;
+        border: none !important;
+        cursor: pointer !important;
+        margin: 0;
+        padding: 0 !important;
     }
 
     & .dropbtn > img {
@@ -300,11 +312,8 @@ nav {
     }
 }
 
-input[type="checkbox"] {
-    appearance: none !important;
-    --webkit-appearance: none !important;
-    display: none !important;
-    visibility: hidden !important;
+.show {
+    display: block !important;
 }
 
 .dropdown-content {
@@ -314,7 +323,15 @@ input[type="checkbox"] {
     /* z-index: 1; */
 }
 
-input[type="checkbox"]:not(:checked) ~ #about-dropdown-content {
+/* input[type="checkbox"] {
+    appearance: none !important;
+    --webkit-appearance: none !important;
+    display: none !important;
+    visibility: hidden !important;
+} */
+
+
+/* input[type="checkbox"]:not(:checked) ~ #about-dropdown-content {
     display: none;
 }
 input[type="checkbox"]:not(:checked) ~ #music-dropdown-content {
@@ -322,7 +339,7 @@ input[type="checkbox"]:not(:checked) ~ #music-dropdown-content {
 }
 input[type="checkbox"]:not(:checked) ~ #blog-dropdown-content {
     display: none;
-}
+} */
 
 #menuLinks {
     /* hamburger menu shown unless box not checked */
@@ -333,7 +350,7 @@ input[type="checkbox"]:not(:checked) ~ #blog-dropdown-content {
 /* only apply toggle logic if screen is right size */
 @media screen and (max-width: 924px) {
     /* hamburger menu contents hidden if box not checked */
-    input[type="checkbox"]:not(:checked) ~ #menuLinks {
+    #menuLinks {
         display: none;
     }
 }
