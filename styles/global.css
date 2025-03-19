@@ -293,6 +293,7 @@ nav {
         color: inherit !important;
         font-family: inherit !important;
         font-size: inherit !important;
+        text-decoration: underline !important;
         background-color: transparent !important;
         border: none !important;
         cursor: pointer !important;
