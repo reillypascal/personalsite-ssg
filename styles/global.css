@@ -256,10 +256,6 @@ nav {
     & a {
         display: block;
     }
-    .navIcon {
-        /* keeps on right side of screen */
-        margin-left: auto !important;
-    }
 
     & #menuLinks {
         margin: 8px 0;
@@ -300,8 +296,17 @@ nav {
         background-color: transparent !important;
         border: none !important;
         cursor: pointer !important;
-        margin: 0;
+        margin: 0 !important;
         padding: 0 !important;
+    }
+
+    & .navIcon {
+        /* keeps on right side of screen */
+        margin-left: auto !important;
+    }
+
+    & .hamburger-svg {
+        /* want to move this up */
     }
 
     & .dropbtn > img {
