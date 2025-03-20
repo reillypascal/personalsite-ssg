@@ -217,10 +217,10 @@ footer {
     margin-left: var(--global-margin);
     margin-right: var(--global-margin);
     margin-bottom: 16px;
-    & table {
+    & .social-icons {
         margin-top: 16px;
     }
-    & table td:not(:last-child) {
+    & .social-icons a:not(:last-child) {
         padding-right: 10px;
     }
 }
