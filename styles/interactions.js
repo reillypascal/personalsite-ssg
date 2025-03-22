@@ -216,20 +216,27 @@ const handleSubmitHeart = async (event) => {
 
 // add listeners, set up usage of comment/reaction functions
 document.addEventListener("DOMContentLoaded", () => {
-  const webmentionTarget = document.getElementById("webmention-target");
-  webmentionTarget.setAttribute("value", blogPostURL);
+  // add webmention target if element exists
+  if (document.getElementById("webmention-target")) {
+    const webmentionTarget = document.getElementById("webmention-target");
+    webmentionTarget.setAttribute("value", blogPostURL);
+  }
+  // add comment form handlers if element exists
+  if (document.getElementById("comment-form")) {
+    const commentForm = document.getElementById("comment-form");
+    const getCommentButton = document.getElementById("load-comments");
 
-  const commentForm = document.getElementById("comment-form");
-  const getCommentButton = document.getElementById("load-comments");
-
-  commentForm.addEventListener("submit", handleSubmitComment);
-  getCommentButton.addEventListener("click", handleGetComments);
-
-  const reactBtn = document.getElementById("react-btn");
-  reactBtn.addEventListener("click", handleSubmitHeart);
-  handleGetHeart();
-
-  if (window.localStorage.getItem(blogPostURL) == "disabled") {
-    reactBtn.disabled = true;
+    commentForm.addEventListener("submit", handleSubmitComment);
+    getCommentButton.addEventListener("click", handleGetComments);
+  }
+  // add react button handlers if element exists
+  if (document.getElementById("react-btn")) {
+    const reactBtn = document.getElementById("react-btn");
+    reactBtn.addEventListener("click", handleSubmitHeart);
+    handleGetHeart();
+  
+    if (window.localStorage.getItem(blogPostURL) == "disabled") {
+      reactBtn.disabled = true;
+    }
   }
 });
