@@ -12,7 +12,7 @@ tags:
   - photo
 ---
 
-<style>
+<!-- <style>
   img {
     max-width: 520px;
   }
@@ -21,8 +21,12 @@ tags:
       max-width: 100%;
     }
   }
-</style>
+</style> -->
 
-![A streetlight with three lamps in a Target parking lot at night. The air is thick with snow, and glowing diffraction lines come from the light at diagonals.](/media/notes/2025/01/streetlight-snow-target-012825.webp)
+<!-- ![A streetlight with three lamps in a Target parking lot at night. The air is thick with snow, and glowing diffraction lines come from the light at diagonals.](/media/notes/2025/01/streetlight-snow-target-012825.webp) -->
+
+<link rel="stylesheet" type="text/css" href="/styles/notes-photos.css">
+
+<img src="/media/notes/2025/01/streetlight-snow-target-012825.webp" alt="A streetlight with three lamps in a Target parking lot at night. The air is thick with snow, and glowing diffraction lines come from the light at diagonals." class="img-vertical">
 
 My partner and I were coming home from Target and I liked how the snow looked. It always makes me happy when it's falling so thickly and visible in the air like that.

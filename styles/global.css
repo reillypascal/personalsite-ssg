@@ -306,9 +306,9 @@ nav {
         margin-left: auto !important;
     }
 
-    & .hamburger-svg {
-        /* want to move this up */
-    }
+    /* want to move this up */
+    /* & .hamburger-svg {
+    } */
 
     & .dropbtn > img {
         fill: var(--fg-light) !important;

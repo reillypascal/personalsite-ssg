@@ -1,0 +1,8 @@
+.img-vertical {
+    max-width: 520px;
+}
+@media screen and (max-width: 565px) {
+    .img-vertical {
+        max-width: 100%;
+    }
+}
