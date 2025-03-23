@@ -1,5 +1,5 @@
 ---
-title: State Parks — Watkins Glen & Seneca Lake
+title: Photoblog — Watkins Glen & Seneca Lake State Parks
 description: State park trip in the Finger Lakes with my partner
 canonical_url: https://reillyspitzfaden.com/notes/2025/03/watkins-seneca-daytrip/
 fedi_url: 
