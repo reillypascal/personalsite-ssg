@@ -1,7 +1,7 @@
 ---
 title: Photoblog — Mendon Ponds Park
 description: I went to the ”Devil's Bathtub” with my partner this weekend
-canonical_url: https://reillyspitzfaden.com/notes/2025/03/mendon-ponds-park
+canonical_url: https://reillyspitzfaden.com/notes/2025/03/mendon-ponds-park/
 fedi_url:
 og_image: /media/blog/2025/03/mendon-ponds/IMG_20250323_154531_487.webp
 og_image_width: 1411
