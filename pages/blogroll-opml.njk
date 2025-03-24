@@ -1,0 +1,18 @@
+---
+permalink: /blogroll/blogroll.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<opml version="1.0">
+    <head>
+        <title>RSS Feeds for Reilly Spitzfaden's Blogroll</title>
+        <dateCreated>{{ page.date | dateToRfc822 }}</dateCreated>
+    </head>
+    <body>
+        {%- for category in blogroll -%}
+            {%- for site in category.blogs -%}
+                <outline text="{{ site.title }}" title="{{ site.title }}" type="rss" xmlUrl="{{ site.xmlUrl }}" htmlUrl="{{ site.htmlUrl }}"/>
+            {% endfor %}
+        {% endfor %}
+    </body>
+</opml>
