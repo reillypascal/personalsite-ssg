@@ -10,7 +10,7 @@
     <name>{{ metadata.author.name }}</name>
     <email>{{ metadata.author.email }}</email>
   </author>
-  <source:blogroll>https://reillyspitzfaden.com/blogroll/blogroll.xml</source:blogroll>
+  <source:blogroll>https://reillyspitzfaden.com/blogroll.opml</source:blogroll>
   {%- for post in collections[collection.name] | reverse %}
   	{# {%- if loop.index0 "<" 10 -%} #}
       {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}

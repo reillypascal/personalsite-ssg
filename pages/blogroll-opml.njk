@@ -1,12 +1,14 @@
 ---
-permalink: /blogroll/blogroll.xml
+permalink: /blogroll.opml
 eleventyExcludeFromCollections: true
 ---
-<?xml version="1.0" encoding="UTF-8"?>
-<opml version="1.0">
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<opml version="2.0">
     <head>
         <title>RSS Feeds for Reilly Spitzfaden's Blogroll</title>
         <dateCreated>{{ page.date | dateToRfc822 }}</dateCreated>
+        <ownerName>Reilly Spitzfaden</ownerName>
+        <ownerId>https://reillyspitzfaden.com</ownerId>
     </head>
     <body>
         {%- for category in blogroll -%}
