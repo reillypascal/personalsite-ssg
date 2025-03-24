@@ -1,6 +1,6 @@
 ---
 title: Blogrolls as a Social Network
-description: I added an OPML file of my blogroll, and I talk about some really cool ideas from around the IndieWeb for using blogrolls as social web infrastructure.
+description: I added an OPML file of my blogroll, and I talk about some really cool ideas from around the IndieWeb for using blogrolls as social web infrastructure
 canonical_url: https://reillyspitzfaden.com/notes/2025/03/blogrolls-social-network/
 fedi_url:
 date: 2025-03-24T13:37:00-0500
