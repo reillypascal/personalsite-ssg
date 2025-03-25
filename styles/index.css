@@ -12,11 +12,11 @@ main {
 @media screen and (min-width: 768px) {
     #column-left {
         /* max-width: 35rem; */
-        max-width: 60%;
+        max-width: 62%;
     }
     #column-right {
         /* max-width: 18rem; */
-        max-width: 32%;
+        max-width: 28%;
     }
 }
 
