@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build" : "netlify build",
+    "build": "netlify build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -12,11 +12,11 @@
   "description": "",
   "devDependencies": {
     "@11ty/eleventy": "^3.0.0",
-    "@11ty/eleventy-plugin-rss": "^2.0.2",
     "pagefind": "^1.2.0"
   },
   "dependencies": {
     "@11ty/eleventy-fetch": "^5.0.2",
+    "@11ty/eleventy-plugin-rss": "^2.0.3",
     "@supabase/supabase-js": "^2.46.1",
     "dotenv": "^16.4.5",
     "markdown-it": "^14.1.0",
