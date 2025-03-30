@@ -11,7 +11,7 @@ octothorpes:
   - 
 tags:
   - note
-  - outdoors
+  - hiking
   - date
   - stateparks
   - newyork

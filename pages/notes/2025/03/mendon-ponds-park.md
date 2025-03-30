@@ -9,7 +9,7 @@ og_image_height: 1058
 date: 2025-03-23T17:30:00-0500
 tags:
   - note
-  - outdoors
+  - hiking
   - date
   - stateparks
   - newyork
