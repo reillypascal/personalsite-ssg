@@ -69,15 +69,15 @@ module.exports = async function (eleventyConfig) {
     return data;
   });
 
-  // shortcodes
-  eleventyConfig.addShortcode("liked", (url, title) => {
-    let display_title = title ? title : url;
-    return `<blockquote>
-    <p class="p-summary"> Liked: <a class="u-like-of" 
-      href="${url}">
-      ${display_title}</a> </p>
-      </blockquote>`;
-  });
+  // // shortcodes
+  // eleventyConfig.addShortcode("liked", (url, title) => {
+  //   let display_title = title ? title : url;
+  //   return `<blockquote>
+  //   <p class="p-summary"> Liked: <a class="u-like-of" 
+  //     href="${url}">
+  //     ${display_title}</a> </p>
+  //     </blockquote>`;
+  // });
 
   // plugins
   // RSS

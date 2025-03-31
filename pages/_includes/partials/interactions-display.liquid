@@ -1,0 +1,15 @@
+{% if tags contains 'like'%}
+    <div class="interaction">
+        <p class="p-summary">Liked: <a class="u-like-of" href="{{ target_url }}">{{ target_title }}</a> </p>
+    </div>
+{% endif %}
+
+{% if tags contains 'rsvp' %}
+    <div class="interaction">
+        <p class="p-summary">
+            <a href="https://reillyspitzfaden.com" class="p-author h-card">Reilly Spitzfaden</a>
+            RSVPs <data class="p-rsvp" value="yes">yes</data> 
+            to <a href="{{ target_url }}" class="u-in-reply-to">{{ target_title }}</a>
+        </p>
+    </div>
+{% endif %}

@@ -13,16 +13,7 @@ title: Reilly Spitzfaden, Composer
         {% include "partials/post-meta.liquid" %}
 
         <div class="e-content">
-            {% comment %} code for 'like' {% endcomment %}
-            {% if tags contains 'like'%}
-                {% liked liked_url liked_title %}
-            {% elsif tags contains 'rsvp' %}
-                <p class="p-summary">
-                    <a href="https://reillyspitzfaden.com" class="p-author h-card">Reilly Spitzfaden</a>
-                    RSVPs <data class="p-rsvp" value="yes">yes</data> 
-                    to <a href="{{ dest_url }}" class="u-in-reply-to">{{ dest_title }}</a>
-                </p>
-            {% endif %}
+            {% include "partials/interactions-display.liquid" %}
         </div>
 
         {% include "partials/post-interactions.liquid" %}

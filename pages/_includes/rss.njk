@@ -23,6 +23,9 @@
           <id>{{ absolutePostUrl }}</id>
           <content type="html">
           {{ finalHTMLContent | htmlToAbsoluteUrls(absolutePostUrl) }}
+          
+          {# {% include "partials/interactions-display.liquid" %} #}
+
           </content>
         </entry>
     {# {%- endif -%} #}

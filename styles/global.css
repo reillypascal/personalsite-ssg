@@ -520,3 +520,10 @@ a:focus,
 a:active {
     color: inherit !important;
 }
+
+/* moved .post-series style from blogposts.css to have consistent styling with interactions */
+.post-series, .interaction {
+    /* font-style: italic; */
+    border-left: 1px solid var(--accent-med-light);
+    padding-left: 12px;
+}
