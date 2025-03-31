@@ -1,5 +1,4 @@
 ---
-layout: likedlayout.liquid
 title: Liked | Fedimanifesto
 description: Liked | Fedimanifesto
 canonical_url: https://reillyspitzfaden.com/interactions/2024/11/liked-fedimanifesto/

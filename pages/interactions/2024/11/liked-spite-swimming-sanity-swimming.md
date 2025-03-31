@@ -1,5 +1,4 @@
 ---
-layout: likedlayout.liquid
 title: Liked | "spite swimming | sanity swimming"
 description: Liked | "spite swimming | sanity swimming"
 canonical_url: https://reillyspitzfaden.com/interactions/2024/11/liked-spite-swimming-sanity-swimming/

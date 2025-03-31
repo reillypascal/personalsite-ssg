@@ -12,7 +12,7 @@ export default async function () {
 			mentions: webmentions.children,
 		};
 	} catch (e) {
-		console.log(e);
+		// console.log(e);
 		return {
 			mentions: [ "none" ]
 		};

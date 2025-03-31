@@ -1,5 +1,4 @@
 ---
-layout: likedlayout.liquid
 title: Liked | DM Synthesis
 description: Liked | DM Synthesis
 canonical_url: https://reillyspitzfaden.com/interactions/2024/11/liked-dm-synthesis/

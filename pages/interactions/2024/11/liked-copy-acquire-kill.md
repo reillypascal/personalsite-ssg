@@ -1,5 +1,4 @@
 ---
-layout: likedlayout.liquid
 title: Liked | Copy, Acquire, Kill— How Meta could pull off the most extraordinary pivot in tech history
 description: Liked | Copy, Acquire, Kill— How Meta could pull off the most extraordinary pivot in tech history
 canonical_url: https://reillyspitzfaden.com/interactions/2024/11/liked-copy-acquire-kill/

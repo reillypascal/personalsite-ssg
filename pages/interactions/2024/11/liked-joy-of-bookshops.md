@@ -1,5 +1,4 @@
 ---
-layout: likedlayout.liquid
 title: Liked | The joy of bookshops
 description: Liked | The joy of bookshops
 canonical_url: https://reillyspitzfaden.com/interactions/2024/11/liked-joy-of-bookshops/
