@@ -12,10 +12,11 @@
   </author>
   <source:blogroll>https://reillyspitzfaden.com/blogroll.opml</source:blogroll>
   {%- for post in collections[collection.name] | reverse %}
-  	{# {%- if loop.index0 "<" 10 -%} #}
+  	{%- if loop.index0 "<" 20 -%}
       {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+      {%- set interactionHTML -%}{% set tags = post.data.tags %}{% include "partials/interactions-display.liquid" %}{%- endset -%}
       {%- set emailReplyHTML -%}<p><a href="mailto:reillypascal@gmail.com?subject=Re: '{{ post.data.title }}'">Reply via email</a></p>{%- endset -%}
-      {%- set finalHTMLContent = [post.templateContent, emailReplyHTML] | join -%}
+      {%- set finalHTMLContent = [post.templateContent, interactionHTML, emailReplyHTML] | join -%}
         <entry>
           <title>{{ post.data.title }}</title>
           <link href="{{ absolutePostUrl }}"/>
@@ -23,11 +24,8 @@
           <id>{{ absolutePostUrl }}</id>
           <content type="html">
           {{ finalHTMLContent | htmlToAbsoluteUrls(absolutePostUrl) }}
-          
-          {# {% include "partials/interactions-display.liquid" %} #}
-
           </content>
         </entry>
-    {# {%- endif -%} #}
+    {%- endif -%}
   {%- endfor %}
 </feed>
