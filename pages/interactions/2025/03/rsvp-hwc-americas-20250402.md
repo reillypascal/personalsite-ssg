@@ -1,5 +1,5 @@
 ---
-title: RSVP | HWC Americas
+title: RSVP | Homebrew Website Club — Americas
 canonical_url: https://reillyspitzfaden.com/interactions/2025/03/rsvp-hwc-americas-20250402/
 date: 2025-03-31T01:15:00-0500
 tags:
