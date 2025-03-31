@@ -1,12 +1,12 @@
 ---
 layout: mainlayout.liquid
-title: Reilly Spitzfaden, Composer | Likes
-description: Posts I like from around the internet. Formatted using Microformats, and sent with Webmentions when available.
-canonical_url: https://reillyspitzfaden.com/likes
+title: Reilly Spitzfaden, Composer | Interactions
+description: IndieWeb interactions — replies, likes, RSVPs, etc. Formatted using Microformats, and sent with Webmentions when available.
+canonical_url: https://reillyspitzfaden.com/interactions/
 pagination:
-    data: collections.like
+    data: collections.interaction
     size: 10
-    alias: likes
+    alias: interactions
     reverse: true
 eleventyExcludeFromCollections: true
 ---
@@ -22,16 +22,16 @@ eleventyExcludeFromCollections: true
     }
 </style>
 <main>
-        <h2 class="sectionHeader">Likes</h2>
-        <p>Posts I like from around the internet. Formatted using <a href="https://indieweb.org/microformats">Microformats</a>, and sent with <a href="https://indieweb.org/Webmention">Webmentions</a> when available. </p>
+        <h2 class="sectionHeader">Interactions</h2>
+        <p>IndieWeb interactions — replies, likes, RSVPs, etc. Formatted using <a href="https://indieweb.org/microformats">Microformats</a>, and sent with <a href="https://indieweb.org/Webmention">Webmentions</a> when available. </p>
 
         <p><a href="/tags">View all tags</a></p>
 
         {% include "partials/pagefind-search.html" %}
 
-        {% for like in likes %}
+        {% for interaction in interactions %}
         <article class="h-entry">
-            <h3 class="p-name"><a class="u-url" href="{{like.url}}">{{ like.data.title }}</a></h3>
+            <h3 class="p-name"><a class="u-url" href="{{interaction.url}}">{{ interaction.data.title }}</a></h3>
 
             <a rel="author" class="p-author h-card" href="https://reillyspitzfaden.com"></a>
 
@@ -39,7 +39,7 @@ eleventyExcludeFromCollections: true
             <img src="/media/icon-calendar-ltr.svg" alt="calendar icon" />
             </span>
             <span class="meta-text">
-            <time class="dt-published" datetime="{{ date | postDate }}">{{ like.date | date: "%A, %B %d, %Y" }}</time>
+            <time class="dt-published" datetime="{{ date | postDate }}">{{ interaction.date | date: "%A, %B %d, %Y" }}</time>
             </span>
         </article>
         {% comment %} <hr /> {% endcomment %}
