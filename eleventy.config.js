@@ -23,12 +23,13 @@ module.exports = async function (eleventyConfig) {
   eleventyConfig.addFilter("sanitizeHTML", (html) => {
     return sanitizeHTML(html, {
       // adds on to full available list
-      allowedTags: sanitizeHTML.defaults.allowedTags.concat([ 'audio', 'img' ]),
+      allowedTags: sanitizeHTML.defaults.allowedTags.concat([ 'audio', 'img', 'source' ]),
       allowedAttributes: {
         a: [ 'href', 'name', 'target' ],
         audio: [ 'controls', 'src' ],
         img: [ 'src', 'srcset', 'alt', 'title', 'width', 'height', 'loading' ]
       },
+      nonBooleanAttributes: [],
     });
   });
   
