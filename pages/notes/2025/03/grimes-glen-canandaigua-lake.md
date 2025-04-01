@@ -33,7 +33,7 @@ Today we went hiking in Grimes Glen in Naples, NY and stopped by Carolabarb Park
 
   ![A small waterfall in a creek, with a field recorder on a fence in the foreground](/media/blog/2025/03/grimes-canandaigua/IMG_20250330_151308_130.webp) {.img-vertical}
 
-  <audio controls src="/media/blog/2025/03/grimes-canandaigua/grimes-glen-creek-waterfall.mp3" title="Title"></audio>
+  <audio controls src="/media/blog/2025/03/grimes-canandaigua/grimes-glen-creek-waterfall.mp3" title="Waterfall"></audio>
   <figcaption>I made some field recordings of the creek at Grimes Glen. There were several waterfalls like this throughout the creek. This time I brought my nice field recorder instead of using my phone.<figcaption>
 </figure>
 

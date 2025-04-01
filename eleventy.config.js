@@ -32,6 +32,11 @@ module.exports = async function (eleventyConfig) {
         "small", "span", "strong", "sub", "sup", "time", "u", "var", "wbr", "caption",
         "col", "colgroup", "table", "tbody", "td", "tfoot", "th", "thead", "tr", "img", "audio"
       ],
+      allowedAttributes: {
+        a: [ 'href', 'name', 'target' ],
+        audio: [ 'controls', 'src' ],
+        img: [ 'src', 'srcset', 'alt', 'title', 'width', 'height', 'loading' ]
+      },
     });
   });
   
