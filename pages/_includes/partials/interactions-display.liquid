@@ -1,3 +1,5 @@
+<a rel="author" class="p-author h-card" href="https://reillyspitzfaden.com"></a>
+
 {% for tag in tags %}
     
     {% if tag == 'like' %}
@@ -9,7 +11,7 @@
     {% if tag == 'rsvp' %}
         <div class="interaction">
             <p class="p-summary">
-                <a href="https://reillyspitzfaden.com" class="p-author h-card">Reilly Spitzfaden</a> RSVPs 
+                RSVP 
                 {% if rsvp_value %}
                     <data class="p-rsvp" value="{{ rsvp_value }}">{{ rsvp_value }}</data> 
                 {% else %}

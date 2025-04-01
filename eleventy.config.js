@@ -18,7 +18,7 @@ module.exports = async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("media");
   eleventyConfig.addPassthroughCopy("netlify");
   eleventyConfig.addPassthroughCopy("styles");
-
+  
   // filters
   eleventyConfig.addFilter("sanitizeHTML", (html) => {
     return sanitizeHTML(html, {
