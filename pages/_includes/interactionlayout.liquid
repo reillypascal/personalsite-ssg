@@ -9,7 +9,10 @@ title: Reilly Spitzfaden, Composer
     <!-- post contents -->
     <article class="h-entry" data-pagefind-body>
         <a rel="author" class="p-author h-card" href="https://reillyspitzfaden.com"></a>
-
+        {% for url in fedi_url %}
+            <a rel="syndication" class="u-syndication" href="{{ url }}"></a>
+        {% endfor %}
+        
         {% include "partials/post-meta.liquid" %}
 
         <div class="e-content">

@@ -1,6 +1,7 @@
 ---
 title: 'RSVP | Front End Study Hall #025'
 canonical_url: https://reillyspitzfaden.com/interactions/2025/04/rsvp-front-end-study-hall-025/
+fedi_url: https://hachyderm.io/@reillypascal/114264441142359264
 date: 2025-04-01T15:48:00-0500
 tags:
   - interaction
