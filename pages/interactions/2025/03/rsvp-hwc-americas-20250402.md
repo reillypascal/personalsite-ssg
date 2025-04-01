@@ -7,6 +7,7 @@ tags:
   - rsvp
   - indieweb
   - hwc
+rsvp_value: yes
 target_url: https://events.indieweb.org/2025/04/homebrew-website-club-americas-CFLi8G8sA5NS
 target_title: Homebrew Website Club — Americas
 ---

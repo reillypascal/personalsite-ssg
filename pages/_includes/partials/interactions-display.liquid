@@ -9,8 +9,12 @@
     {% if tag == 'rsvp' %}
         <div class="interaction">
             <p class="p-summary">
-                <a href="https://reillyspitzfaden.com" class="p-author h-card">Reilly Spitzfaden</a>
-                RSVPs <data class="p-rsvp" value="yes">yes</data> 
+                <a href="https://reillyspitzfaden.com" class="p-author h-card">Reilly Spitzfaden</a> RSVPs 
+                {% if rsvp_value %}
+                    <data class="p-rsvp" value="{{ rsvp_value }}">{{ rsvp_value }}</data> 
+                {% else %}
+                    <data class="p-rsvp" value="yes">yes</data> 
+                {% endif %}
                 to <a href="{{ target_url }}" class="u-in-reply-to">{{ target_title }}</a>
             </p>
         </div>
