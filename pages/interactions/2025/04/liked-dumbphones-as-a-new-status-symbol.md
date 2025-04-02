@@ -1,6 +1,6 @@
 ---
 title: Liked | dumbphones as a new status symbol
-canonical_url: https://reillyspitzfaden.com/interactions
+canonical_url: https://reillyspitzfaden.com/interactions/2025/04/liked-dumbphones-as-a-new-status-symbol/
 fedi_url: 
 date: 2025-04-02T09:43:00-0500
 tags:
