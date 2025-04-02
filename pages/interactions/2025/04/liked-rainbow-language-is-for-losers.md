@@ -13,4 +13,4 @@ target_title: Rainbow Language (Is For Losers)
 ---
 I've been enjoying [Meljoann's](https://meljoann.com/) new album [Status](https://meljoann.com/posts/status/) — definitely check it out! They describe their music as “hyperjack” — the hyperpop cousin of late 80s/early 90s new jack swing artists like Janet Jackson — and the album is full of rage at the capitalist and technological systems that oppress us. 
 
-The video for ”Rainbow Language (Is For Losers)” in the linked article is full of psychedelic sets and otherworldly costumes (including a plastic trash bag!), and like all Meljoann's videos, it's on the Fediverse on [PeerTube](https://en.wikipedia.org/wiki/PeerTube).
+The [music video](https://tv.gravitons.org/w/ktVrfZ9nrhxFPiEdQLuVSo) for ”Rainbow Language (Is For Losers)” in the linked article is full of psychedelic sets and otherworldly costumes (including a plastic trash bag!), and like all Meljoann's videos, it's on the Fediverse on [PeerTube](https://en.wikipedia.org/wiki/PeerTube).
