@@ -489,7 +489,7 @@ figure {
 }
 
 /* external links - borrowed from Wikipedia; footer > * doesn't work, but footer * does: https://stackoverflow.com/a/68211003 */
-a[href*="//"]:not([href*="https://reillyspitzfaden.com"]):not(footer *):not(.u-syndication):not(.rss-link),
+a[href*="//"]:not([href*="https://reillyspitzfaden.com"]):not(footer *):not(.u-syndication):not(.rss-link):not(lite-youtube *),
 a[href*=mailto] {
     background-image: url(/media/external-link-paleblue.svg);
     background-position-x: right;
