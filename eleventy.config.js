@@ -25,13 +25,13 @@ module.exports = async function (eleventyConfig) {
       // adds on to full available list
       allowedTags: sanitizeHTML.defaults.allowedTags.concat([ 'audio', 'img', 'source' ]),
       allowedAttributes: {
-        a: [ 'href', 'name', 'target' ],
-        audio: [ 'controls', 'src' ],
-        data: [ 'value' ],
+        a: [ 'class', 'href', 'name', 'target' ],
+        audio: [ 'class', 'controls', 'src' ],
+        data: [ 'class', 'value' ],
         div: [ 'class' ],
-        img: [ 'src', 'srcset', 'alt', 'title', 'width', 'height', 'loading' ],
-        source: ['src', 'type' ],
-        time: [ 'datetime' ]
+        img: [ 'class', 'src', 'srcset', 'alt', 'title', 'width', 'height', 'loading' ],
+        source: ['class', 'src', 'type' ],
+        time: [ 'class', 'datetime' ]
       },
       nonBooleanAttributes: [],
     });
