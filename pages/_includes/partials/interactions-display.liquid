@@ -1,5 +1,5 @@
 {%- for tag in tags -%}
-    {% if tag == 'like' %}
+    {%- if tag == 'like' -%}
         <div class="interaction">
             <p class="p-summary">Liked: <a class="u-like-of" href="{{ target_url }}">{{ target_title }}</a> </p>
         </div>
@@ -8,11 +8,11 @@
         <div class="interaction">
             <p class="p-summary">
                 RSVP 
-                {% if rsvp_value %}
+                {%- if rsvp_value -%}
                     <data class="p-rsvp" value="{{ rsvp_value }}">{{ rsvp_value }}</data> 
-                {% else %}
+                {%- else -%}
                     <data class="p-rsvp" value="yes">yes</data> 
-                {% endif %}
+                {%- endif -%}
                 to <a href="{{ target_url }}" class="u-in-reply-to">{{ target_title }}</a>
             </p>
         </div>

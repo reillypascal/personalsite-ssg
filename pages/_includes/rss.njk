@@ -11,14 +11,14 @@
     <email>{{ metadata.author.email }}</email>
   </author>
   <source:blogroll>https://reillyspitzfaden.com/blogroll.opml</source:blogroll>
-  {%- for post in collections[collection.name] | reverse %}
+  {%- for post in collections[collection.name] | reverse -%}
   	{%- if loop.index0 "<" 20 -%}
       {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
       {%- set interactionHTML -%}
         {% set tags = post.data.tags %}
         {% set target_url = post.data.target_url %}
         {% set target_title = post.data.target_title %}
-        {% include "partials/interactions-display.liquid" %}
+        {%- include "partials/interactions-display.liquid" -%}
       {%- endset -%}
       {%- set emailReplyHTML -%}<p><a href="mailto:reillypascal@gmail.com?subject=Re: '{{ post.data.title }}'">Reply via email</a></p>{%- endset -%}
       {%- set finalHTMLContent = [interactionHTML, post.templateContent, emailReplyHTML] | join -%}
@@ -32,5 +32,5 @@
           </content>
         </entry>
     {%- endif -%}
-  {%- endfor %}
+  {%- endfor -%}
 </feed>

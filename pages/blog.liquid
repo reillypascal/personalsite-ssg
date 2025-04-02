@@ -45,7 +45,7 @@ eleventyExcludeFromCollections: true
 
     {% include "partials/pagefind-search.html" %}
     
-    {% for post in posts %}
+    {%- for post in posts -%}
         <article class="h-entry">
             <h3 class="p-name"><a class="u-url" href="{{ post.url }}">{{ post.data.title }}</a></h3>
             <p class="p-summary">{{ post.data.description }}</p>
@@ -58,26 +58,17 @@ eleventyExcludeFromCollections: true
             <span class="meta-text">
                 <time class="dt-published" datetime="{{ date | postDate }}">{{ post.date | date: "%A, %B %d, %Y" }}</time>
             </span>
-
-            {% comment %} <div class="post-tags">
-                {% assign sorted_categories = post.data.tags | sort %}
-                {% for tag in sorted_categories %}
-                    {% if tag != 'post' %}
-                        <span class="post-tag"><a href="/tags/{{ tag }}">#{{ tag }}</a></span>
-                    {% endif %}
-                {% endfor %}
-            </div> {% endcomment %}
         </article>
-    {% endfor %}
+    {%- endfor -%}
 
     {% comment %} <a href="https://validator.w3.org/feed/check.cgi?url=https%3A//reillyspitzfaden.com/blog/feed.xml"><img src="/media/valid-rss-rogers.png" alt="[Valid RSS]" title="Validate my RSS feed" class="RSSValidation"/></a> {% endcomment %}
     
     <div class="page-nav-wrapper">
-        {% if pagination.href.previous %}
+        {%- if pagination.href.previous -%}
             <a href="{{pagination.href.previous}}">Previous Page</a>
-        {% endif %}
-        {% if pagination.href.next %}
+        {%- endif -%}
+        {%- if pagination.href.next -%}
             <a href="{{pagination.href.next}}">Next Page</a>
-        {% endif %}
+        {%- endif -%}
     </div>
 </main>

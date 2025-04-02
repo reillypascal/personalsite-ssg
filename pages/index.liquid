@@ -115,11 +115,11 @@ eleventyExcludeFromCollections: true
         
         <h2 class="sectionHeader">Recent Posts</h2>
             {% assign recent_posts = collections.post | slice: -3, 3 %}
-            {% for item in recent_posts reversed %}
+            {%- for item in recent_posts reversed -%}
             <section>
                 <h3><a href="{{item.url}}">{{ item.data.title }}</a></h3>
                 <p>{{ item.data.description }}</p>
             </section>
-            {% endfor %}
+            {%- endfor -%}
     </div>
 </main>

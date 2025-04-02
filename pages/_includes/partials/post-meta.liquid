@@ -13,9 +13,7 @@
         <img width="18" height="18" src="/media/ui/tag-icon-solid-18px.svg" alt="favorite icon" />
     </span>
     {% assign sorted_categories = tags | sort %}
-    {% for tag in sorted_categories %}
-        {% comment %} {% if tag != 'post' %} {% endcomment %}
+    {%- for tag in sorted_categories %}
             <span class="p-category"><a class="post-tag" href="/tags/{{ tag }}">#{{ tag }}</a></span>
-        {% comment %} {% endif %} {% endcomment %}
-    {% endfor %}
+    {%- endfor %}
 </div>
