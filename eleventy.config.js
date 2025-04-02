@@ -27,8 +27,11 @@ module.exports = async function (eleventyConfig) {
       allowedAttributes: {
         a: [ 'href', 'name', 'target' ],
         audio: [ 'controls', 'src' ],
+        data: [ 'value' ],
+        div: [ 'class' ],
         img: [ 'src', 'srcset', 'alt', 'title', 'width', 'height', 'loading' ],
-        source: ['src', 'type' ]
+        source: ['src', 'type' ],
+        time: [ 'datetime' ]
       },
       nonBooleanAttributes: [],
     });
