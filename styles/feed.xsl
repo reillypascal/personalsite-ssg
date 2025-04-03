@@ -12,13 +12,6 @@
         <title><xsl:value-of select="atom:feed/atom:title"/></title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-        <meta property="og:image" content="https://reillyspitzfaden.com/media/og_image.jpg" />
-        <meta property="og:image:type" content="image/jpeg" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Pixel art of a radio tower and floppy disk, with pixel art text reading 'Reilly Spitzfaden'" />
-
         <style>
           @font-face {
               font-family: "Born2bSportyV2";
