@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+{# <?xml-stylesheet type="text/xsl" href="/styles/feed.xsl"?> #}
 <feed xmlns="http://www.w3.org/2005/Atom" xmlns:source="https://source.scripting.com/">
   <title>{{ metadata.title }}</title>
   <subtitle>{{ metadata.desc }}</subtitle>
@@ -11,8 +12,8 @@
     <email>{{ metadata.author.email }}</email>
   </author>
   <source:blogroll>https://reillyspitzfaden.com/blogroll.opml</source:blogroll>
-  {%- for post in collections[collection.name] | reverse -%}
-  	{%- if loop.index0 "<" 20 -%}
+  {% for post in collections[collection.name] | reverse -%}
+  	{%- if loop.index0 "<" 20 %}
       {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
       {%- set interactionHTML -%}
         {% set tags = post.data.tags %}
@@ -31,6 +32,6 @@
           {{ finalHTMLContent | sanitizeHTML(finalHTMLContent) | htmlToAbsoluteUrls(absolutePostUrl) }}
           </content>
         </entry>
-    {%- endif -%}
+    {%- endif %}
   {%- endfor -%}
 </feed>
