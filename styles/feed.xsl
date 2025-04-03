@@ -76,8 +76,8 @@
               text-decoration: none !important;
               border-bottom-style: none !important;
           }
-          #cardImg a img {
-              padding-right: 18px;
+          #cardImg a img:not(:last-child) {
+              padding-right: 26px;
           }
           #floppy-disk {
               vertical-align: 1px;
