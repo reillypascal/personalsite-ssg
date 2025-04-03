@@ -133,6 +133,7 @@ footer {
     font-family: "Born2bSportyV2", sans-serif;
     /* cancels out offset for :root */
     text-underline-offset: auto;
+    letter-spacing: 0.005em;
 }
 header {
     font-size: 1.625em;
@@ -478,7 +479,7 @@ figure {
 /* ######## Decorations ######## */
 .sectionHeader {
     width: fit-content;
-    padding-bottom: 8px;
+    padding-bottom: 6px;
     border-bottom: 1px solid var(--accent-med-light);
 }
 

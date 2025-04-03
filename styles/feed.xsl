@@ -15,6 +15,13 @@
         <!-- <link rel="stylesheet" type="text/css" href="/styles/global.css" /> -->
         <style>
           @font-face {
+              font-family: "Born2bSportyV2";
+              src:
+                  url("/styles/fonts/born2bsportyv2/born2bsportyv2-webfont.woff2")
+                      format("woff2");
+              font-display: swap;
+          }
+          @font-face {
             font-family: "Open Sans";
             src:
                 url("/styles/fonts/opensans/opensans-variablefont_wdthwght-webfont.woff2")
@@ -35,6 +42,25 @@
             margin: 16px;
             font-family: 'Open Sans', sans-serif;
             text-underline-offset: 0.2em;
+          }
+          h1,
+          h2,
+          h3,
+          h4,
+          h5,
+          h6 {
+              font-family: "Born2bSportyV2", sans-serif;
+              text-underline-offset: auto;
+              letter-spacing: 0.005em;
+          }
+          h2 {
+              font-size: 1.75em;
+          }
+          h3 {
+              font-size: 1.375em;
+          }
+          h4 {
+              font-size: 1.125em;
           }
           main {
             max-width: 45rem;
@@ -66,8 +92,17 @@
           article {
             margin: 48px 0 48px 0;
           }
-          hr {
-            color: hsl(327, 55%, 75%);
+          .sectionHeader {
+            width: fit-content;
+            padding-bottom: 6px;
+            border-bottom: 1px solid hsl(327, 55%, 75%);
+          }
+          .meta-icon {
+            position: relative;
+            top: 2px;
+          }
+          .meta-text {
+            margin-left: 3px;
           }
         </style>
     </head>
@@ -91,15 +126,28 @@
       <header>
         <a href="/">Visit Website →</a>
       </header>
-      <h2>Recent Items</h2>
+      <h2 class="sectionHeader">Recent Items</h2>
       <xsl:for-each select="atom:feed/atom:entry">
         <article>
           <h3><a>
             <xsl:attribute name="href">
-            <xsl:value-of select="atom:link/@href"/>
-          </xsl:attribute>
+              <xsl:value-of select="atom:link/@href"/>
+            </xsl:attribute>
             <xsl:value-of select="atom:title"/></a></h3>
-          <p>Published: <xsl:value-of select="atom:updated"/></p>
+          <!-- <p>Published: <xsl:value-of select="atom:updated"/></p> -->
+          <div class="post-meta">
+            <span class="meta-icon">
+              <img src="/media/icon-calendar-ltr.svg" alt="calendar icon" width="18" height="18" />
+            </span>
+            <span class="meta-text">
+              <time class="dt-published" >
+                <xsl:attribute name="datetime">
+                  <xsl:value-of select="atom:updated"/>
+                </xsl:attribute>
+                <xsl:value-of select="atom:updated"/>
+              </time>
+            </span>
+          </div>
           <!-- <p>Published: <xsl:value-of select="format-date(current-date(), '[M01]-[D01]-[Y0001]')"/></p> -->
         </article>
       </xsl:for-each>
