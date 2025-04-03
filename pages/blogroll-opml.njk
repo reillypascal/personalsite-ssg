@@ -15,6 +15,6 @@ eleventyExcludeFromCollections: true
             {%- for site in category.blogs -%}
                 <outline text="{{ site.title }}" title="{{ site.title }}" type="rss" xmlUrl="{{ site.xmlUrl }}" htmlUrl="{{ site.htmlUrl }}"/>
             {% endfor %}
-        {% endfor %}
+        {%- endfor -%}
     </body>
 </opml>
