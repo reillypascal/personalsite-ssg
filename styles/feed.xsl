@@ -101,7 +101,7 @@
             top: 2px;
           }
           .meta-text {
-            margin-left: 3px;
+            margin-left: 7px;
           }
         </style>
     </head>
