@@ -13,8 +13,10 @@
     <language>en-us</language>
     <pubDate>Sat, 9 Mar 2024 00:00:00 GMT</pubDate>
     <lastBuildDate>{{ collections[collection.name] | getNewestCollectionItemDate | dateToRfc822 }}</lastBuildDate>
-    <atom:link href="{{ metadata.feedUrl }}" rel="self" type="application/rss+xml"/>
+    <docs>https://www.rssboard.org/rss-specification</docs>
+    <managingEditor>{{ metadata.author.email }} ({{ metadata.author.name }})</managingEditor>
     <webMaster>{{ metadata.author.email }} ({{ metadata.author.name }})</webMaster>
+    <atom:link href="{{ metadata.feedUrl }}" rel="self" type="application/rss+xml"/>
     <source:blogroll>https://reillyspitzfaden.com/blogroll.opml</source:blogroll>
     {% for post in collections[collection.name] | reverse -%}
       {%- if (loop.index0 < 20) %}
@@ -34,7 +36,7 @@
             <guid>{{ absolutePostUrl }}</guid>
             <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
             <description>{{ post.data.description }}</description>
-            <content:encoded type="html">
+            <content:encoded>
             {{ finalHTMLContent | sanitizeHTML(finalHTMLContent) | htmlToAbsoluteUrls(absolutePostUrl) }}
             </content:encoded>
           </item>
