@@ -20,12 +20,18 @@ eleventyExcludeFromCollections: true
         display: flex;
         justify-content: space-between;
     }
+    .rss-icon,
+    .tag-icon {
+        position: relative;
+        top: 4px;
+        margin-right: 2px;
+    }
 </style>
 <main>
         <h2 class="sectionHeader">Notes</h2>
         <p>Short posts, photoblogging, and interesting things from around the web — it's like Twitter meets Instagram, but I own all my posts!</p>
-        <p><a href="/feeds">View all RSS feeds</a></p>
-        <p><a href="/tags">View all tags</a></p>
+
+        {% include "partials/post-list-links.liquid" %}
 
         {% include "partials/pagefind-search.html" %}
         
