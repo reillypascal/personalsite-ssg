@@ -8,15 +8,13 @@
     >
   <channel>
     <title>{{ metadata.title }}</title>
-    <link href="{{ metadata.url }}"/>
-    <atom:link href="{{ metadata.feedUrl }}" rel="self" type="application/rss+xml"/>
+    <link>{{ metadata.url }}</link>
     <description>{{ metadata.subtitle }}</description>
-    {# <updated>{{ collections[collection.name] | getNewestCollectionItemDate | dateToRfc3339 }}</updated> #}
-    {# <id>{{ metadata.url }}/</id> #}
-    {# <author>
-      <name>{{ metadata.author.name }}</name>
-      <email>{{ metadata.author.email }}</email>
-    </author> #}
+    <language>en-us</language>
+    <pubDate>Sat, 9 Mar 2024 00:00:00 GMT</pubDate>
+    <lastBuildDate>{{ collections[collection.name] | getNewestCollectionItemDate | dateToRfc822 }}</lastBuildDate>
+    <atom:link href="{{ metadata.feedUrl }}" rel="self" type="application/rss+xml"/>
+    <webMaster>{{ metadata.author.email }} ({{ metadata.author.name }})</webMaster>
     <source:blogroll>https://reillyspitzfaden.com/blogroll.opml</source:blogroll>
     {% for post in collections[collection.name] | reverse -%}
       {%- if (loop.index0 < 20) %}
