@@ -15,7 +15,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
         <style>
         :root {
-          --block-top-bottom-margin: 45px;
+          --block-top-bottom-margin: 48px;
         }
           @font-face {
               font-family: "Born2bSportyV2";
