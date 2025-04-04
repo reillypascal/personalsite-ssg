@@ -1,7 +1,7 @@
 ---
 title: Liked | Rainbow Language (Is For Losers)
 canonical_url: https://reillyspitzfaden.com/interactions/2025/04/liked-liked-rainbow-language-is-for-losers/
-fedi_url: 
+fedi_url: https://hachyderm.io/@reillypascal/114270649159375763
 date: 2025-04-02T17:50:00-0500
 tags:
   - interaction

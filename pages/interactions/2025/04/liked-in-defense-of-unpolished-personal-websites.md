@@ -1,7 +1,7 @@
 ---
 title: Liked | In defense of unpolished personal websites
 canonical_url: https://reillyspitzfaden.com/interactions/2025/04/liked-in-defense-of-unpolished-personal-websites/
-fedi_url: 
+fedi_url: https://hachyderm.io/@reillypascal/114280730333330107
 date: 2025-04-03T23:27:00-0500
 tags:
   - interaction
