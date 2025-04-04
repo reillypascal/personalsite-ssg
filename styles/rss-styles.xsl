@@ -14,6 +14,9 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
         <style>
+        :root {
+          --block-top-bottom-margin: 45px;
+        }
           @font-face {
               font-family: "Born2bSportyV2";
               src:
@@ -58,6 +61,7 @@
           }
           h3 {
               font-size: 1.375em;
+              margin: 12px 0;
           }
           h4 {
               font-size: 1.125em;
@@ -84,13 +88,13 @@
               vertical-align: 1px;
           }
           .alert {
-            margin: 16px 0 48px 0;
+            margin: 16px 0 var(--block-top-bottom-margin) 0;
           }
           header {
-            margin: 48px 0;
+            margin: var(--block-top-bottom-margin) 0;
           }
           article {
-            margin: 48px 0 48px 0;
+            margin: var(--block-top-bottom-margin) 0;
           }
           .sectionHeader {
             width: fit-content;
