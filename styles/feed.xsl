@@ -2,6 +2,7 @@
 <xsl:stylesheet
   version="2.0"
   xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
   xmlns:atom="http://www.w3.org/2005/Atom"
   exclude-result-prefixes="atom"
 >
@@ -133,7 +134,6 @@
               <xsl:value-of select="atom:link/@href"/>
             </xsl:attribute>
             <xsl:value-of select="atom:title"/></a></h3>
-          <!-- <p>Published: <xsl:value-of select="atom:updated"/></p> -->
           <div class="post-meta">
             <span class="meta-icon">
               <img src="/media/icon-calendar-ltr.svg" alt="calendar icon" width="18" height="18" />
@@ -143,7 +143,9 @@
                 <xsl:attribute name="datetime">
                   <xsl:value-of select="atom:updated"/>
                 </xsl:attribute>
-                <xsl:value-of select="atom:updated"/>
+                <!-- <xsl:variable name="srcDate" select="atom:updated" />
+                <xsl:value-of select="format-dateTime($srcDate,'[M01]-[D01]-[Y0001]')"/> -->
+                <xsl:value-of select="substring(atom:updated, 1, 10)"/>
               </time>
             </span>
           </div>
