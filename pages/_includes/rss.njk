@@ -1,37 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="/styles/feed.xsl"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xmlns:source="https://source.scripting.com/">
-  <title>{{ metadata.title }}</title>
-  <subtitle>{{ metadata.desc }}</subtitle>
-  <link href="{{ metadata.feedUrl }}" rel="self"/>
-  <link href="{{ metadata.url }}"/>
-  <updated>{{ collections[collection.name] | getNewestCollectionItemDate | dateToRfc3339 }}</updated>
-  <id>{{ metadata.url }}/</id>
-  <author>
-    <name>{{ metadata.author.name }}</name>
-    <email>{{ metadata.author.email }}</email>
-  </author>
-  <source:blogroll>https://reillyspitzfaden.com/blogroll.opml</source:blogroll>
-  {% for post in collections[collection.name] | reverse -%}
-  	{%- if (loop.index0 < 20) %}
-      {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
-      {%- set interactionHTML -%}
-        {% set tags = post.data.tags %}
-        {% set target_url = post.data.target_url %}
-        {% set target_title = post.data.target_title %}
-        {%- include "partials/interactions-display.liquid" -%}
-      {%- endset -%}
-      {%- set contactInfo -%}<p><a href="mailto:reillypascal@gmail.com?subject=Re: '{{ post.data.title }}'">Reply via email</a> :: <a href="https://reillyspitzfaden.com/feeds/">Subscribe to my other feeds</a></p>{%- endset -%}
-      {%- set finalHTMLContent = [interactionHTML, post.templateContent, contactInfo] | join -%}
-        <entry>
-          <title>{{ post.data.title }}</title>
-          <link href="{{ absolutePostUrl }}"/>
-          <updated>{{ post.date | dateToRfc3339 }}</updated>
-          <id>{{ absolutePostUrl }}</id>
-          <content type="html">
-          {{ finalHTMLContent | sanitizeHTML(finalHTMLContent) | htmlToAbsoluteUrls(absolutePostUrl) }}
-          </content>
-        </entry>
-    {%- endif %}
-  {%- endfor -%}
-</feed>
+<?xml-stylesheet type="text/xsl" href="/styles/rss-styles.xsl"?>
+<rss version="2.0" 
+    xmlns:atom="http://www.w3.org/2005/Atom"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:source="https://source.scripting.com/"
+    >
+  <channel>
+    <title>{{ metadata.title }}</title>
+    <link href="{{ metadata.url }}"/>
+    <atom:link href="{{ metadata.feedUrl }}" rel="self" type="application/rss+xml"/>
+    <description>{{ metadata.subtitle }}</description>
+    {# <updated>{{ collections[collection.name] | getNewestCollectionItemDate | dateToRfc3339 }}</updated> #}
+    {# <id>{{ metadata.url }}/</id> #}
+    {# <author>
+      <name>{{ metadata.author.name }}</name>
+      <email>{{ metadata.author.email }}</email>
+    </author> #}
+    <source:blogroll>https://reillyspitzfaden.com/blogroll.opml</source:blogroll>
+    {% for post in collections[collection.name] | reverse -%}
+      {%- if (loop.index0 < 20) %}
+        {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
+        {%- set interactionHTML -%}
+          {% set tags = post.data.tags %}
+          {% set target_url = post.data.target_url %}
+          {% set target_title = post.data.target_title %}
+          {%- include "partials/interactions-display.liquid" -%}
+        {%- endset -%}
+        {%- set contactInfo -%}<p><a href="mailto:reillypascal@gmail.com?subject=Re: '{{ post.data.title }}'">Reply via email</a> :: <a href="https://reillyspitzfaden.com/feeds/">Subscribe to my other feeds</a></p>{%- endset -%}
+        {%- set finalHTMLContent = [interactionHTML, post.templateContent, contactInfo] | join -%}
+          <item>
+            <title>{{ post.data.title }}</title>
+            <dc:creator>Reilly Spitzfaden</dc:creator>
+            <link>{{ absolutePostUrl }}</link>
+            <guid>{{ absolutePostUrl }}</guid>
+            <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
+            <description>{{ post.data.description }}</description>
+            <content:encoded>
+            {{ finalHTMLContent | sanitizeHTML(finalHTMLContent) | htmlToAbsoluteUrls(absolutePostUrl) }}
+            </content:encoded>
+          </item>
+      {%- endif %}
+    {%- endfor -%}
+  </channel>
+</rss>
