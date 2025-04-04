@@ -36,7 +36,7 @@
             <guid>{{ absolutePostUrl }}</guid>
             <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
             <description>{{ post.data.description }}</description>
-            <content:encoded>
+            <content:encoded type="html">
             {{ finalHTMLContent | sanitizeHTML(finalHTMLContent) | htmlToAbsoluteUrls(absolutePostUrl) }}
             </content:encoded>
           </item>
