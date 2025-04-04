@@ -143,10 +143,7 @@
                 <xsl:attribute name="datetime">
                   <xsl:value-of select="pubDate"/>
                 </xsl:attribute>
-                <!-- <xsl:variable name="srcDate" select="atom:updated" />
-                <xsl:value-of select="format-dateTime($srcDate,'[M01]-[D01]-[Y0001]')"/> -->
-                <!-- <xsl:value-of select="substring(atom:updated, 1, 10)"/> -->
-                <xsl:value-of select="pubDate"/>
+                <xsl:value-of select="substring(pubDate, 1, 16)"/>
               </time>
             </span>
           </div>
