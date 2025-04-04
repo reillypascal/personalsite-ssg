@@ -13,7 +13,7 @@
   </author>
   <source:blogroll>https://reillyspitzfaden.com/blogroll.opml</source:blogroll>
   {% for post in collections[collection.name] | reverse -%}
-  	{%- if loop.index0 < 20 %}
+  	{%- if (loop.index0 < 20) %}
       {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
       {%- set interactionHTML -%}
         {% set tags = post.data.tags %}
