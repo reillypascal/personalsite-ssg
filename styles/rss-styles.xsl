@@ -97,6 +97,7 @@
             margin: var(--block-top-bottom-margin) 0;
           }
           .sectionHeader {
+            <!-- display: inline-block; -->
             width: fit-content;
             padding-bottom: 6px;
             border-bottom: 1px solid hsl(327, 55%, 75%);
@@ -108,6 +109,12 @@
           .meta-text {
             margin-left: 7px;
           }
+          <!-- .rss-icon {
+            display: inline-block;
+            position: relative;
+            top: 2px;
+            margin-left: 12px;
+          } -->
         </style>
     </head>
   <body>
@@ -121,16 +128,23 @@
         </div>
         
         <div class="alert">
-          <p><strong>This is a web feed</strong>, also known as an RSS feed!</p> 
+          <p><strong>This is a web feed</strong>, also known as an RSS feed.</p> 
           
-          <p>You can <strong>subscribe</strong> by copying the URL from the address bar into your newsreader (see <a href="https://reillyspitzfaden.com/feeds/#what-is-rss">here</a> for suggested readers and more info).</p>
+          <p>You can <strong>subscribe for free</strong> by copying the URL from the address bar into your newsreader. See <a href="https://reillyspitzfaden.com/feeds/#what-is-rss">here</a> for suggested readers and more info.</p>
+
+          <p>A full listing of this site's feeds can be found <a href="https://reillyspitzfaden.com/feeds/">here</a>.</p>
         </div>
       </section>
 
       <header>
         <a href="/">Visit Website →</a>
       </header>
+      
       <h2 class="sectionHeader">Recent Items</h2>
+      <!-- <span class="rss-icon">
+        <img width="20" height="20" src="/media/rss-icon-light.svg" alt="rss icon" />
+      </span> -->
+      
       <xsl:for-each select="item">
         <article>
           <h3><a>

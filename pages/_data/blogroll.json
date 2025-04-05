@@ -199,7 +199,14 @@
                 "title" : "Ross A. Baker",
                 "htmlUrl" : "https://rossabaker.com/",
                 "xmlUrl" : "https://rossabaker.com/index.xml",
-                "description" : "Yeah, well, I’m going to go build my own site.     With Emacs! And Nix! In fact, forget the site. This is my personal brand, my love letter to the Indieweb, my finely manicured digital garden, my faffing about as I rediscover the joy of computing. Perpetually under construction."
+                "description" : "Yeah, well, I’m going to go build my own site. With Emacs! And Nix! In fact, forget the site. This is my personal brand, my love letter to the Indieweb, my finely manicured digital garden, my faffing about as I rediscover the joy of computing. Perpetually under construction."
+            },
+            {
+                "title" : "Shellsharks",
+                "htmlUrl" : "https://shellsharks.com/",
+                "xmlUrl" : "https://shellsharks.com/feeds/all-feed.xml",
+                "description" : "Welcome to Shellsharks - a blog, an IndieWeb site, a community, and a central point-of-presence for myself on the web. What I publish here is a reference for myself but is available to be consumed by all. I write about all things Infosec, Technology and Life in general.",
+                "myDescription" : "I particularly like Shellsharks' weekly \"<a href=\"https://shellsharks.com/feeds/scroll-feed.xml\">Scrolls</a>\" newsletter that pulls together interesting writing and activity from around the IndieWeb, Fediverse, and cybersecurity communities."
             },
             {
                 "title" : "Tracy Durnell's Mind Garden",
