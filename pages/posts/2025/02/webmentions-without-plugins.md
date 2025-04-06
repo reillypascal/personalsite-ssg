@@ -15,10 +15,7 @@ tags:
 ---
 
 <!-- Code highlighting CSS -->
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-<noscript>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css" />
-</noscript>
+<link rel="stylesheet" type="text/css" href="/styles/code/prism.css" />
 
 I [recently wrote](/posts/2025/01/displaying-webmentions/) about bringing in [webmentions](https://indieweb.org/Webmention) from both other people's personal sites and from Fediverse/Bluesky interactions and displaying them on my posts. The only issue was that I relied on [a plugin](https://github.com/CodeFoodPixels/eleventy-plugin-webmentions) that hadn't been updated in a bit over 2 years, plus I like DIY-ing things. At yesterday's Pacific [Homebrew Website Club](https://indieweb.org/Homebrew_Website_Club) meeting, I got some great feedback and was able to figure out making my own code!
 
@@ -47,9 +44,3 @@ export default async function () {
   }
 };
 ```
-
-<!-- basic, JS highlighting from "highlight.js" library -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/javascript.min.js"></script>
-
-<script>hljs.highlightAll();</script>

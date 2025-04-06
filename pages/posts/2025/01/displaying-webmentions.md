@@ -12,10 +12,7 @@ tags:
 ---
 
 <!-- Code highlighting CSS -->
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-<noscript>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css" />
-</noscript>
+<link rel="stylesheet" type="text/css" href="/styles/code/prism.css" />
 
 I got [webmentions](https://en.wikipedia.org/wiki/Webmention) displaying on my [Eleventy](https://en.wikipedia.org/wiki/Eleventy_(software)) site! If you look below this post you can see how it looks. I've seen a number of different ways of displaying them — Tracy Durnell displays them as [comments alongside “native” blog comments](https://tracydurnell.com/2025/01/21/guiding-principles-for-my-website/), [^1] and Benji shows [Mastodon interactions in a similar way to how I'm doing mine](https://www.benji.dog/notes/1733601983/). I've also seen someone (I'm forgetting who) show the profile photos of people who interact with the post on the Fediverse, categorized into “likes,” reposts, and replies/comments. I ended up displaying the number of each of those categories from both Fediverse interactions and people sharing my links on their blogs all in one. I like having a minimalist display while still showing when people interact with something.
 
@@ -66,10 +63,3 @@ While I'm not finished with how I handle displaying the webmentions behind the s
 I think I'll start doing more writeups of/notes about in-progress projects. While I'm still not fully satisfied with my results here, and I have a number of other things I want to get done, it feels nice to write out what I *have* accomplished. Also allowing things to be unfinished helps me write about them — if I wait until I feel truly done (which often doesn't come!) I may not write about it at all.
 
 [^1]: In addition to including this post as a reference for displaying webmentions, I want to respond to these principles in a future post and use them as a jumping-off point to write about how I want to use my own site.
-
-<!-- basic, JS, bash highlighting from "highlight.js" library -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/bash.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/javascript.min.js"></script>
-
-<script>hljs.highlightAll();</script>

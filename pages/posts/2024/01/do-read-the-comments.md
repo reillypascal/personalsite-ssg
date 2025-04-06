@@ -7,10 +7,7 @@ tags: ["post", "webdev", "programming" ]
 ---
 
 <!-- Code highlighting CSS -->
-<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-<noscript>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css" />
-</noscript>
+<link rel="stylesheet" type="text/css" href="/styles/code/prism.css" />
 
 My blog now has a comment section! Let's talk about how I made it.
 
@@ -202,9 +199,3 @@ Some of the challenges I had in this project:
 One of my takeaways from this was that I should do more backend stuff. I haven't done much before, but I find it's a lot of fun to connect things together and make them communicate. Maybe a future project could include making my own database on my Raspberry Pi and setting up more complex interactions with it.
 
 Thanks for reading this far! In the near term, I'm planning to make an RSS feed for this blog—look for a similar write-up when I do that.
-
-<!-- basic and JavaScript highlighting from "highlight.js" library -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/javascript.min.js"></script>
-
-<script>hljs.highlightAll();</script>

@@ -19,6 +19,8 @@ tags:
 post_series: databending
 ---
 
+<link rel="stylesheet" type="text/css" href="/styles/code/prism.css" />
+
 In the [previous post](/posts/2025/02/databending-part-2/) in this series, I wrote about how to glitch up an MP3 file in a hex editor, while still leaving it playable. Since this process is incredibly slow and tedious to do by hand I mentioned wanting to automate this in Python. This week I've figured out how to do just that, and I'll walk through how it works.
 
 ### Recap
@@ -28,16 +30,16 @@ When glitching the file, the important thing is to leave the headers as well as 
 
 ### Code Walkthrough
 
-The full code is available online [here](https://github.com/reillypascal/mp3glitch) under the MIT license — please feel free to use and adapt it!
+The full code is available online [here](https://github.com/reillypascal/mp3glitch) under the [MIT license](https://en.wikipedia.org/wiki/MIT_License) — please feel free to use and adapt it!
 
-To use the code, you can run this line from the code folder: `python3 mp3glitch.py <input_file_name> <output_file_name>`. The first argument, `<input_file_name>` is assigned to `args.input` below, and the `'rb'` argument to `open()` means “read as binary data.” The [`.hex()` method](https://docs.python.org/3/library/functions.html#hex) then converts that binary data to a hexadecimal string.
+To use the code, you can run this line from the code folder: `python3 mp3glitch.py <input_file_name> <output_file_name>`. Using the included MP3, you might run `python3 mp3glitch.py beat_1_bip_2_F.mp3 output.mp3`. The first argument, `<input_file_name>` is assigned to `args.input` below, and the `'rb'` argument to `open()` means “read as binary data.” The [`.hex()` method](https://docs.python.org/3/library/functions.html#hex) then converts that binary data to a hexadecimal string.
 
 ```python
 with open(args.input, 'rb') as input_file:
     hexdata = input_file.read().hex()
 ```
 
-This next block takes the hexadecimal data (currently formatted as a string) looks for the substring “fff,” which is the beginning of the header in almost all MP3s. I use the `.find()` string method to get the index for the first occurrence of that substring; store that index in the array `header_start_indices`; and start the search again 8 indices later in the hex data (because the headers are 8 hex digits long). Using this array of indices, I create an array of the opening metadata followed by each frame. 
+This next block takes the hexadecimal data (currently formatted as a string) looks for the substring “fff,” which is the beginning of the header in almost all MP3s. I use the `.find()` string method to get the index for the first occurrence of that substring; store that index in the array `header_start_indices`; and start the search again 8 indices later in the hex data (because the headers are 8 hex digits long). Using the resulting array of indices, I create an array of the opening metadata followed by each frame. 
 
 ```python
 header_start_indices = []
@@ -51,9 +53,9 @@ while hexdata.find("fff", header_start_index) >= 0:
 frames = [hexdata[header_start_indices[i]:header_start_indices[i+1]] for i in range(len(header_start_indices)-1)]
 ```
 
-With my hex data broken up into an array of frames, I iterate through the array, and inside that loop I iterate through each character in the frame. If the frame number is greater than 0 (to leave the opening metadata alone) and the index within the frame is greater than or equal to 8 (to leave the frame header alone), I have the frame data, which is available to glitch.
+With my hex data broken up into an array of frames, I iterate through the array, and inside that loop I iterate through each character in a frame. If the frame number is greater than 0 (to leave the opening metadata alone) and the index within the frame is greater than or equal to 8 (to leave the frame header alone), I'm looking at the frame data, which is available to glitch.
 
-I have some additional conditions for glitching. The `num_glitches_this_frame` variable (if set) limits the number of glitches in a frame; the `glitch_width` variable indicates how many digits in a row to randomly change; the `glitch_prob` variable indicates the probability that a given `glitch_width`-long string should be replaced; and the `frame_min` and `frame_max` variables constrain glitches to a certain stretch along the length of a frame. Since (as far as I understand) the frequencies are distributed along the frame with the lower ones at the beginning and the high ones at the end, this gives a frequency range for the glitches.
+I have some additional conditions for glitching. The `num_glitches_this_frame` variable (if set) limits the number of glitches in a frame; the `glitch_width` variable indicates how many digits in a row to randomly change; the `glitch_prob` variable indicates the probability that a given `glitch_width`-long string should be replaced; and the `frame_min` and `frame_max` variables constrain glitches to a certain stretch along the length of a frame. Since (as far as I understand) the frequencies are distributed along the frame with the lower ones at the beginning and the higher ones at the end, this gives a frequency range for the glitches.
 
 ```python
 hex_digits = '0123456789abcdef'
@@ -89,7 +91,8 @@ for idx_frame, frame in enumerate(frames):
                 digit = random.choice(hex_digits[hex_min:hex_max + 1])
         # append digit regardless of glitching
         output_hex.append(digit)
-    # choose new frame spacing when counter is 0 (max is +1 because randrange is non-inclusive); increment, wrap (run once per frame)
+    # choose new frame spacing when counter is 0 (max is +1 because 
+    # randrange is non-inclusive); increment, wrap (run once per frame)
     if frame_counter == 0:
         frame_spacing = random.randrange(frame_spacing_min, frame_spacing_max + 1)
     frame_counter += 1
@@ -110,5 +113,13 @@ with open(args.output, 'wb') as output_file:
 ### Wrapping Up
 I glossed over using the [`argparse`](https://docs.python.org/3/library/argparse.html) package to parse command-line arguments — that's more of a convenience-of-use feature, and I don't want to go on too long. If you want more info on it, there's an `argparse` tutorial at [this link](https://docs.python.org/3/howto/argparse.html).
 
-If anyone tries this code out, I would love to hear about it! Especially I would be interested to know if there are any specific MP3s it fails to glitch. I will be adding support for a few more niche variants of the format in which the header starts with ”ffe” instead of ”fff,” so that will be addressed soon.
+If anyone tries this code out, I would love to hear about it! I would be especially interested to know if there are any specific MP3s it fails to glitch. I will be adding support for a few more niche variants of the format in which the header starts with ”ffe” instead of ”fff,” so that at least will be addressed soon.
 
+### Website Updates
+I added styling to all my [RSS Feeds](/feeds) using [XSLT](https://en.wikipedia.org/wiki/XSLT) or “Extensible Stylesheet Language Transformations,” which makes it so they're human-readable and nice-looking! XSLT is a very old format that translates the XML feed into (in this case) HTML with CSS styling as the browser reads it. It's fun to come across something from *way* back when and get to use it. I had been wanting to figure out how to do this since seeing it on [Rach Smith](https://rachsmith.com/) and [Shellsharks'](https://shellsharks.com/) sites – I figure if someone new to RSS stumbles across the link, this way they won't just see the raw XML and think something's “broken,” and this will make it easier to get into RSS [^1].
+
+Speaking of feeds, my [RSS page](/feeds) now includes multiple different feed options. In addition to this blog feed, you can follow [all posts on this site](/feed.xml), which includes posts from my [notes](/notes) and [interactions](/interactions) pages — photoblogging/short personal posts, and IndieWeb likes/replies/etc., respectively.
+
+Thanks for reading and I hope to see you again soon!
+
+[^1]: See [this note](/feeds/#what-is-rss) for more info on RSS and suggested readers.
