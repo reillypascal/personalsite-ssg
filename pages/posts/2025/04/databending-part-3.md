@@ -29,7 +29,7 @@ First, here are some sounds. The examples in the last post were incredibly short
 
 And here's the glitched-up result:
 
-<audio controls src="/media/blog/2025/04/output.mp3" title="Title"></audio>
+<audio controls src="/media/blog/2025/04/binary_mp3.mp3" title="Title"></audio>
 
 I like it a lot! Now let's talk about the code.
 
