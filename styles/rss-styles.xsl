@@ -149,7 +149,7 @@
         <article>
           <h3><a>
             <xsl:attribute name="href">
-              <xsl:value-of select="link/@href"/>
+              <xsl:value-of select="link"/>
             </xsl:attribute>
             <xsl:value-of select="title"/></a></h3>
           <div class="post-meta">
