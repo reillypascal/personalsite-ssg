@@ -25,17 +25,17 @@ title: Reilly Spitzfaden, Composer
         <meta property="og:title" content="{{ title }}"/>
         <meta property="og:description" content="{{ description }}" />
         {%- if og_image %}
-            <meta property="og:image" content="https://reillyspitzfaden.com{{ og_image }}" />
-            {% if og_image_width and og_image_height %}
-                <meta property="og:image:width" content="{{ og_image_width }}" />
-                <meta property="og:image:height" content="{{ og_image_height }}" />
-            {% endif %}
+        <meta property="og:image" content="https://reillyspitzfaden.com{{ og_image }}" />
+        {% if og_image_width and og_image_height %}
+        <meta property="og:image:width" content="{{ og_image_width }}" />
+        <meta property="og:image:height" content="{{ og_image_height }}" />
+        {% endif %}
         {%- else %}
-            <meta property="og:image" content="https://reillyspitzfaden.com/media/og_image.jpg" />
-            <meta property="og:image:type" content="image/jpeg" />
-            <meta property="og:image:width" content="1200" />
-            <meta property="og:image:height" content="630" />
-            <meta property="og:image:alt" content="Pixel art of a radio tower and floppy disk, with pixel art text reading 'Reilly Spitzfaden'" />
+        <meta property="og:image" content="https://reillyspitzfaden.com/media/og_image.jpg" />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Pixel art of a radio tower and floppy disk, with pixel art text reading 'Reilly Spitzfaden'" />
         {%- endif %}
         <meta name="fediverse:creator" content="@reillypascal@hachyderm.io">
 
@@ -73,26 +73,26 @@ title: Reilly Spitzfaden, Composer
         <link rel="webmention" href="https://webmention.io/reillyspitzfaden.com/webmention" />
         <link rel="pingback" href="https://webmention.io/reillyspitzfaden.com/xmlrpc" />
         
-        {%- if octothorpes -%}
-            <!-- Octothorpes -->
-            <!-- Indexing -->
-            <link 
-            rel="preload" 
-            as="fetch" 
-            href="https://octothorp.es/?uri={{ canonical_url }}" />
-            
-            <!-- Tags -->
-            {%- for tag in octothorpes -%}
-            <link 
-            rel="octo:octothorpes"
-            href="{{ tag }}" />
-            {%- endfor -%}
-            
-            <!-- Endorse backlinks -->
-            <link 
-            rev="octo:octothorpes" 
-            href="*" />
-        {%- endif -%}
+        {%- if octothorpes %}
+        <!-- Octothorpes -->
+        <!-- Indexing -->
+        <link 
+        rel="preload" 
+        as="fetch" 
+        href="https://octothorp.es/?uri={{ canonical_url }}" />
+        
+        <!-- Tags -->
+        {%- for tag in octothorpes %}
+        <link 
+        rel="octo:octothorpes"
+        href="{{ tag }}" />
+        {%- endfor %}
+        
+        <!-- Endorse backlinks -->
+        <link 
+        rev="octo:octothorpes" 
+        href="*" />
+        {%- endif %}
         
     </head>
     <body onresize="hamburgerOnOff()">
