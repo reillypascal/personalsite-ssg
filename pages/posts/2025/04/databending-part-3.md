@@ -23,7 +23,18 @@ post_series: databending
 
 In the [previous post](/posts/2025/02/databending-part-2/) in this series, I wrote about how to glitch up an MP3 file in a hex editor, while still leaving it playable. Since this process is incredibly slow and tedious to do by hand I mentioned wanting to automate this in Python. This week I've figured out how to do just that, and I'll walk through how it works.
 
+First, here's the resulting sound. The examples in the last post were incredibly short because of how difficult it is to do by hand, so here's a longer one. First the source MP3:
+
+<audio controls src="/media/blog/2025/04/beat_1_bip_2_F.mp3" title="lo-fi beat without glitching"></audio>
+
+And here's the glitched-up result:
+
+<audio controls src="/media/blog/2025/04/output.mp3" title="Title"></audio>
+
+I like it a lot! Now let's talk about the code.
+
 ### Recap
+
 I previously described how an MP3 chops an audio file into short “frames” and analyzes the frequencies present in those frames. The file is structured with a “header” consiting of 8 [hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal) digits, some further information about the file, and then the list of frames, each prefixed by its own header. 
 
 When glitching the file, the important thing is to leave the headers as well as the data before the list of frames alone, and to only change the data in the frames. My Python code loads the file as binary data, converts it to a hexadecimal string, finds the headers, and then makes random changes to data within the frames, using the headers as a reference for where the frames are located. Let's walk through how the code does this.
