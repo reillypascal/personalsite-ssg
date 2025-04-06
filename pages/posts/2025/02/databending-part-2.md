@@ -19,7 +19,7 @@ post_series: databending
 <link rel="stylesheet" type="text/css" href="/styles/tables.css" />
 
 <!-- Code highlighting CSS -->
-<link rel="stylesheet" type="text/css" href="/styles/code/prism.css" />
+<link rel="stylesheet" type="text/css" href="/styles/code/prism-dracula.css" />
 {% comment %}<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
 <noscript>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css" />
