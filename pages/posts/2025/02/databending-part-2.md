@@ -20,10 +20,6 @@ post_series: databending
 
 <!-- Code highlighting CSS -->
 <link rel="stylesheet" type="text/css" href="/styles/code/prism-dracula.css" />
-{% comment %}<link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
-<noscript>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css" />
-</noscript>{% endcomment %}
 
 I [recently posted](https://reillyspitzfaden.com/posts/2025/01/databending-part-1/) about “databending,” which includes importing raw data into Audacity to make glitchy noises, changing the data in an image using a text/hex editor, and many other ways of creatively reinterpreting/damaging data. Since writing that post, I've learned some more fun ways of creating glitchy sounds with data, and I'll be discussing that today.
 
@@ -110,11 +106,3 @@ I will have a go at this soon, and if I get anywhere, I will do another writeup 
 [^3]: Nick Briz, “Data Hacking: The Foundations of Glitch Art,” in [Handmade Electronic Music, 3rd ed.](https://www.nicolascollins.com/handmade.htm) (Routledge, 2020), 377–90.
 
 [^4]: Ibid., 386
-
-{% comment %}
-<!-- basic and Python highlighting from "highlight.js" library -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/python.min.js"></script>
-
-<script>hljs.highlightAll();</script>
-{% endcomment %}
