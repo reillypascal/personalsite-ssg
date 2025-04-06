@@ -23,7 +23,7 @@ post_series: databending
 
 In the [previous post](/posts/2025/02/databending-part-2/) in this series, I wrote about how to glitch up an MP3 file in a hex editor, while still leaving it playable. Since this process is incredibly slow and tedious to do by hand I mentioned wanting to automate this in Python. This week I've figured out how to do just that, and I'll walk through how it works.
 
-First, here's the resulting sound. The examples in the last post were incredibly short because of how difficult it is to do by hand, so here's a longer one. First the source MP3:
+First, here are some sounds. The examples in the last post were incredibly short because of how difficult it is to do by hand, so here's a longer one. This is the source MP3:
 
 <audio controls src="/media/blog/2025/04/beat_1_bip_2_F.mp3" title="lo-fi beat without glitching"></audio>
 
