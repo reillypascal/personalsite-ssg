@@ -20,4 +20,4 @@ The presenter showed us how the skies change with season and latitude, and demon
 
 ![A large cylindrical blue and black metal truss with a pivot passing through the center, held up on a large forked cradle. There is a blue sphere covered in lenses at each end and a number of projectors and lenses mounted on and around the truss.](/media/blog/2025/04/stars-with-carl/IMG_20250405_194437_613.webp)
 
-<!-- ![Another view of the same truss and spheres, this time showing the A-frame mount and some auxiliary projectors in the foreground](/media/blog/2025/04/stars-with-carl/IMG_20250405_194229_644.webp) -->
+{% comment %} ![Another view of the same truss and spheres, this time showing the A-frame mount and some auxiliary projectors in the foreground](/media/blog/2025/04/stars-with-carl/IMG_20250405_194229_644.webp) {% endcomment %}
