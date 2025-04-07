@@ -2,12 +2,14 @@
 title: Photoblog — Stars with Carl
 canonical_url: https://reillyspitzfaden.com/notes/2025/04/photoblog-stars-with-carl/
 fedi_url: https://hachyderm.io/@reillypascal/114297925178833375
-og_image: https://reillyspitzfaden.com/media/blog/2025/04/stars-with-carl/IMG_20250405_194437_613.webp
+og_image: /media/blog/2025/04/stars-with-carl/IMG_20250405_194437_613.webp
 og_image_width: 1411
 og_image_height: 1058
 date: 2025-04-07T12:36:00-0500
 tags:
   - note
+  - astronomy
+  - planetarium
 ---
 
 <link rel="stylesheet" type="text/css" href="/styles/notes-photos.css">
