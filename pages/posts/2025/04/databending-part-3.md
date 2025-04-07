@@ -47,7 +47,7 @@ with open(args.input, 'rb') as input_file:
     hexdata = input_file.read().hex()
 ```
 
-This next block takes the hexadecimal data (currently formatted as a string) looks for the substring “fff,” which is the beginning of the header in almost all MP3s. I use the `.find()` string method to get the index for the first occurrence of that substring; store that index in the array `header_start_indices`; and start the search again 8 indices later in the hex data (because the headers are 8 hex digits long). Using the resulting array of indices, I create an array of the opening metadata followed by each frame. 
+This next block takes the hexadecimal data (currently formatted as a string) and looks for the substring “fff,” which is the beginning of the header in almost all MP3s. I use the `.find()` string method to get the index for the first occurrence of that substring; store that index in the array `header_start_indices`; and start the search again 8 indices later in the hex data (because the headers are 8 hex digits long). Using the resulting array of indices, I create an array of the opening metadata followed by each frame. 
 
 ```python
 header_start_indices = []
