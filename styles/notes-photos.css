@@ -1,3 +1,7 @@
+img {
+    border-radius: 8px;
+}
+
 .img-vertical {
     max-width: 520px;
 }
