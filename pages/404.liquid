@@ -1,23 +1,24 @@
 ---
 layout: mainlayout.liquid
-title: The Treachery of 404s
+title: '404 Not Found'
 description: There is no page here
 canonical_url: https://reillyspitzfaden.com/404.html
 permalink: /404.html
 eleventyExcludeFromCollections: true
 ---
 <link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
-
-<style>
-    .not-found-content {
-        min-height: 340px;
-    }
-</style>
+<!-- lite-youtube -->
+<link rel="stylesheet" href="/styles/videos/lite-yt-embed.css" />
+<script src="/styles/videos/lite-yt-embed.js"></script>
 
 <main role="main" id="content">
     <div class="not-found-content">
         <h2 class="sectionHeader">404 Not Found</h2>
-        <p>Ceci n'est pas une page.</p>
-        <p><a href="/">Return to home page:</a></p>
+        <p><a href="/">Return to home page →</a></p>
+        <p>Or while you're here, why not have some music on a <a href="https://en.wikipedia.org/wiki/Roland_SP-404">404</a>?</p>
+
+        <lite-youtube videoid="-T14xSc8c-4" style="background-image: url('https://i.ytimg.com/vi/-T14xSc8c-4/hqdefault.jpg');">
+            <a href="https://www.youtube.com/watch?v=-T14xSc8c-4" class="lyt-playbtn" title="Play Video"><span class="lyt-visually-hidden">Watch on YouTube: “Oneohtrix Point Never - Sleep Dealer (SP-404SX Cover)”</span></a>
+        </lite-youtube>
     </div>
 </main>
