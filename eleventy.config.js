@@ -18,6 +18,14 @@ module.exports = async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("media");
   eleventyConfig.addPassthroughCopy("netlify");
   eleventyConfig.addPassthroughCopy("styles");
+
+  // preprocessors
+  // https://www.11ty.dev/docs/config-preprocessors/#example-drafts
+  eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
+		if(data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
+			return false;
+		}
+	});
   
   // filters
   eleventyConfig.addFilter("sanitizeHTML", (html) => {
