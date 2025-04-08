@@ -1,7 +1,7 @@
 ---
 title: Glitch Art Reading
 description: 
-canonical_url: https://reillyspitzfaden.com/posts/2025/04/glitch-art-Reading/
+canonical_url: https://reillyspitzfaden.com/digital-garden/reading/glitch-art-reading/
 fedi_url:
 og_image: 
 og_image_width: 
