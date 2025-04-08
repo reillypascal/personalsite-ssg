@@ -544,3 +544,7 @@ a:active {
 .skip-link {
     display: none;
 }
+
+.bibliography {
+    margin-bottom: 32px;
+}

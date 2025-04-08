@@ -2,6 +2,7 @@ const feedPlugin = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const markdownIt = require("markdown-it");
 const markdownItFootnote = require("markdown-it-footnote");
+const mdBiblatex = require('@arothuis/markdown-it-biblatex');
 // for classes in markdown: https://dev.to/giulia_chiola/add-html-classes-to-11ty-markdown-content-18ic
 const markdownItAttrs = require('markdown-it-attrs');
 const { DateTime } = require("luxon");
@@ -96,7 +97,7 @@ module.exports = async function (eleventyConfig) {
     linkify: true,
   };
 
-  let markdownLib = markdownIt(options).use(markdownItFootnote).use(markdownItAttrs);
+  let markdownLib = markdownIt(options).use(markdownItAttrs).use(markdownItFootnote).use(mdBiblatex, { bibPath: 'documents/bibliography/library.bib', });
   eleventyConfig.setLibrary("md", markdownLib);
 
   // plugins: syntax highlighting
