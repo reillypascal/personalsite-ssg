@@ -175,6 +175,7 @@ body {
     /* new small viewport height for modern browsers */
     min-height:100svh;
 }
+
 /* ######## colors, sizes ######## */
 body {
     background-color: var(--bg-dark);
