@@ -426,9 +426,17 @@ section {
     }
 }
 
-article,
+/* article,
 section {
     & p,
+    ul li,
+    ol li {
+        line-height: var(--p-line-height);
+    }
+} */
+main {
+    & p,
+    blockquote,
     ul li,
     ol li {
         line-height: var(--p-line-height);

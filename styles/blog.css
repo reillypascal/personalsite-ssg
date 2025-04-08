@@ -1,0 +1,14 @@
+.rss-icon,
+.tag-icon {
+    position: relative;
+    top: 4px;
+    margin-right: 2px;
+}
+
+p {
+    line-height: var(--p-line-height);
+}
+.page-nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+}

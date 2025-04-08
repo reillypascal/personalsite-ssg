@@ -11,26 +11,17 @@ eleventyExcludeFromCollections: true
 
 <link rel="stylesheet" type="text/css" href="/styles/videogrid.css" />
 
-<style>
-    article {
-        margin-top: 48px;
-    }
-    td {
-        padding: 8px 0;
-    }
-</style>
-
 <main role="main" id="content">
     <h2 class="sectionHeader">Media</h2>
     
     <article>
         <div class="videoGrid">
-            {% for video in media.videos %}
+            {%- for video in media.videos %}
                 <div class="containingBlock">
                     <h3><a href="https://www.youtube.com/watch?v={{ video.yt_id }}"><cite>{{ video.title }}</cite></a></h3>
-                    {% if video.peertube_link %}
+                    {%- if video.peertube_link %}
                         <p><a href="{{ video.peertube_link }}">PeerTube link</a></p>
-                    {% endif %}
+                    {%- endif %}
                     <div class="videoWrapper">
                         <lite-youtube videoid="{{ video.yt_id }}" style="background-image: url('https://i.ytimg.com/vi/{{ video.yt_id }}/hqdefault.jpg');">
                         </lite-youtube>
@@ -38,7 +29,7 @@ eleventyExcludeFromCollections: true
                 </div>
             {% endfor %}
             
-            {% comment %} <div class="containingBlock">
+            {%- comment %} <div class="containingBlock">
                 <h3><a href="https://www.youtube.com/watch?v=t_gxCOcNJr8"><cite>Everything lost along the way</cite></a>, score video:</h3>
                 <div class="videoWrapper">
                     <lite-youtube videoid="t_gxCOcNJr8" style="background-image: url('https://i.ytimg.com/vi/t_gxCOcNJr8/hqdefault.jpg');">
@@ -71,11 +62,11 @@ eleventyExcludeFromCollections: true
                 <div class="videoWrapper">
                     <lite-youtube videoid="7FXpG1s1HpE" style="background-image: url('https://i.ytimg.com/vi/7FXpG1s1HpE/hqdefault.jpg');"></lite-youtube>
                 </div>
-            </div> {% endcomment %}
+            </div> {%- endcomment %}
     
             <!-- <h3><i>Scratch:</i></h3> -->
     
-            {% comment %} <div class="containingBlock">
+            {%- comment %} <div class="containingBlock">
                 <h3><a href="https://www.youtube.com/watch?v=aYjmpwDuPEI"><cite>Selist</cite></a>:</h3>
                 <div class="videoWrapper">
                     <lite-youtube videoid="aYjmpwDuPEI" style="background-image: url('https://i.ytimg.com/vi/aYjmpwDuPEI/hqdefault.jpg');"></lite-youtube>
@@ -108,41 +99,22 @@ eleventyExcludeFromCollections: true
                 <div class="videoWrapper">
                     <lite-youtube videoid="iQKfKuEqyYs" style="background-image: url('https://i.ytimg.com/vi/iQKfKuEqyYs/hqdefault.jpg');"></lite-youtube>
                 </div>
-            </div> {% endcomment %}
+            </div> {%- endcomment %}
             
         <!-- close "videoGrid" -->
         </div>
     </article>
-    
-    {% comment %} <hr /> {% endcomment %}
-    
+        
     <article>
         <h2 class="sectionHeader">Links to appearances around the internet</h2>
-        <table>
-            <tr>
-                <td><a href="https://icareifyoulisten.com/2024/04/5-questions-to-apply-triangle/">Review</a> of Apply Triangle's <cite>Oxalis Triangularis</cite>, containing my track <a href="https://applytriangle.bandcamp.com/track/if-this-reaches-you"><cite>If this reaches you</cite></a></td>
-            </tr>
-            <tr>
-                <td><a href="https://nowandxen.libsyn.com/14-tone-reilly-spitzfaden">Interview</a> on <cite>Now&Xen</cite> Podcast</td>
-            </tr>
-                            
-            {% comment %} 
-            <iframe style="border-radius:12px; width: 100%" src="https://open.spotify.com/embed/episode/2KJotkrdUJ7c1sF5WCYeJK?utm_source=generator" height="152" allowfullscreen="" allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-            {% endcomment %}
-            {% comment %} <iframe title="Libsyn Player" style="border: none; width: 100%" src="https://html5-player.libsyn.com/embed/episode/id/11999960/height/90/theme/custom/thumbnail/yes/direction/forward/render-playlist/no/custom-color/12507b/" height="90" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>  {% endcomment %}
-            <tr>
-                <td><a href="https://wayofm.org/shows/episodes/12042018-0">Interview</a> about Eastman OSSIA New Music commission on WAYO 104.3 FM</td>
-            </tr>
-            {% comment %} <iframe style="width: 100%" height="120" src="https://www.mixcloud.com/widget/iframe/?hide_cover=1&feed=%2FSoundspace_Roc%2Fsoundspace-12-4-18-ossia-reilly-spitzfaden-and-erik-gibelyou%2F" ></iframe> {% endcomment %}
-            <tr>
-                <td><a href="https://yeahiknowitsucks.wordpress.com/2018/01/04/how-things-are-made-with-reilly-spitzfaden-jamie-vandermolen-maurice-rickard-and-an-eel/">Blog review</a> of my piece <a href="https://howthingsaremade.bandcamp.com/track/reilly-spitzfaden-combination-locks"><cite>Combination Locks</cite></a></td>
-            </tr>
-            {% comment %}<h3><a href="https://composerstoolbox.com/2017/09/23/reilly-spitzfaden-resonances/">Blog feature</a> of "Resonances" as a teaching tool for composers</h3>{% endcomment %}
-            <tr>
-                <td><a href="https://www.icadenza.com/elf-multimedia-performance/">Concert review</a> I wrote for iCadenza.</td>
-            </tr>
+
+        <p><a href="https://icareifyoulisten.com/2024/04/5-questions-to-apply-triangle/">Review</a> of Apply Triangle's <cite>Oxalis Triangularis</cite>, containing my track <a href="https://applytriangle.bandcamp.com/track/if-this-reaches-you"><cite>If this reaches you</cite></a></p>
+        <p><a href="https://nowandxen.libsyn.com/14-tone-reilly-spitzfaden">Interview</a> on <cite>Now&Xen</cite> Podcast</p>
+        <p><a href="https://wayofm.org/shows/episodes/12042018-0">Interview</a> about Eastman OSSIA New Music commission on WAYO 104.3 FM</p>
+        <p><a href="https://yeahiknowitsucks.wordpress.com/2018/01/04/how-things-are-made-with-reilly-spitzfaden-jamie-vandermolen-maurice-rickard-and-an-eel/">Blog review</a> of my piece <a href="https://howthingsaremade.bandcamp.com/track/reilly-spitzfaden-combination-locks"><cite>Combination Locks</cite></a></p>
+        {%- comment %}<h3><a href="https://composerstoolbox.com/2017/09/23/reilly-spitzfaden-resonances/">Blog feature</a> of "Resonances" as a teaching tool for composers</h3>{%- endcomment %}
+        <p><a href="https://www.icadenza.com/elf-multimedia-performance/">Concert review</a> I wrote for iCadenza.</p>
         <!-- close "linksList"-->
-        </table>
     </article>
 
     <p><a href="#top">Top ⭡</a></p>

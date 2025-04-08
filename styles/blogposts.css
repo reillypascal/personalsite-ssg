@@ -7,24 +7,10 @@
     margin-bottom: 16px;
 }
 
-/* replaced w/ e-content margin */
-/* article {
-    margin: 32px 0;
-}
-
-@media screen and (min-width: 660px) {
-    article {
-        margin: 48px 0;
-    }
-} */
-.tag-icon {
-    position: relative;
-    top: 4px;
-    margin-right: 2px;
-}
 .post-tags {
     line-height: var(--p-line-height);
     margin-bottom: 16px;
+    font-size: 0.95em;
 }
 .post-tag {
     margin-right: 4px;
@@ -103,13 +89,6 @@
 }
 .email-reply {
     margin: 16px 0;
-}
-.share-openly {
-    margin: 16px 0 0 0;
-}
-.share-openly-icon {
-    position: relative;
-    top: 4px;
 }
 
 .webmention-logo {

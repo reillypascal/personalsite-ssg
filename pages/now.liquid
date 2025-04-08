@@ -7,20 +7,12 @@ eleventyExcludeFromCollections: true
 ---
 <link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
 
-<style>
-    h3 {
-        width: fit-content;
-        padding-bottom: 8px;
-        border-bottom: 1px solid var(--accent-med-light);
-    }
-</style>
-
 <main role="main" id="content">
     <h2 class="sectionHeader">Now</h2>
     <p>This page is for periodic updates about my current activities, projects, interests, and thoughts.</p>
     
     <article>
-        <h3>Statuslog</h3>
+        <h3 class="sectionHeader">Statuslog</h3>
         <p>It's raining just right so all the streetlights in Rochester have a misty halo around them</p>
         <span class="meta-icon">
         <img src="{{ root_folder }}/media/icon-calendar-ltr.svg" alt="calendar icon" width="18" height="18" />
@@ -31,18 +23,18 @@ eleventyExcludeFromCollections: true
     </article>
     
     <article>
-        <h3>Currently Listening</h3>
+        <h3 class="sectionHeader">Currently Listening</h3>
         <p>Autechre, <a href="https://autechre.bandcamp.com/album/exai"><cite>Oversteps</cite></a>: I particularly like the track <cite>qplay</cite> &mdash; it's been giving me some great ideas about rhythm</p>
     </article>
     
     <article>
-        <h3>Currently Reading</h3>
+        <h3 class="sectionHeader">Currently Reading</h3>
         <p><a href="https://subcutanean.textories.com/"><cite>Subcutanean</cite></a> by Aaron A. Reed: this book is <em>amazing</em>. I'm about halfway through, and it's very "The Backrooms."</p>
         <p><cite>Count Zero</cite> by William Gibson: I read <cite>Neuromancer</cite> (the previous book in the series) and really liked that. I'm just getting started with <cite>Count Zero</cite>, but it's also shaping up to be a great time.</p>
     </article>
     
     <article>
-        <h3>Current Projects</h3>
+        <h3 class="sectionHeader">Current Projects</h3>
         <p>I've learned enough Rust to get started on an <a href="https://github.com/reillypascal/rs_rust_audio">audio library</a>. My plan is to use this as the source to build a plugin in Rust, but I think it'll be helpful to figure out the basic audio processing before trying to learn a new plugin toolset outside of JUCE.</p>
     </article>
     
