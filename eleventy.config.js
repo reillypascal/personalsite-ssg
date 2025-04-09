@@ -97,7 +97,7 @@ module.exports = async function (eleventyConfig) {
     linkify: true,
   };
 
-  let markdownLib = markdownIt(options).use(markdownItAttrs).use(markdownItFootnote).use(mdBiblatex, { bibPath: 'documents/bibliography/library.bib', });
+  let markdownLib = markdownIt(options).use(markdownItAttrs).use(markdownItFootnote).use(mdBiblatex, { bibPath: 'documents/bibliography/library.bib', linkToBibliography: true, });
   eleventyConfig.setLibrary("md", markdownLib);
 
   // plugins: syntax highlighting
