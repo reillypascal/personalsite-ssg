@@ -1,8 +1,17 @@
 .rss-icon,
-.tag-icon {
+.tag-icon,
+.search-icon {
     position: relative;
-    top: 4px;
     margin-right: 2px;
+}
+.rss-icon {
+    top: 3px;
+}
+.tag-icon {
+    top: 4px;
+}
+.search-icon {
+    top: 4px;
 }
 
 p {
