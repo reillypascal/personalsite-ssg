@@ -15,11 +15,14 @@ eleventyExcludeFromCollections: true
 
 <main role="main" id="content">
         <h2 class="sectionHeader">Interactions</h2>
-        <p>IndieWeb interactions — replies, likes, RSVPs, etc. Formatted using <a href="https://indieweb.org/microformats">Microformats</a>, and sent with <a href="https://indieweb.org/Webmention">Webmentions</a> when available. </p>
         
-        {% include "partials/post-list-links.liquid" %}
+        <section class="postFeedDescription">
+            <p>IndieWeb interactions — replies, likes, RSVPs, etc. Formatted using <a href="https://indieweb.org/microformats">Microformats</a>, and sent with <a href="https://indieweb.org/Webmention">Webmentions</a> when available. </p>
+            
+            {% include "partials/post-list-links.liquid" %}
+        </section>
 
-        {% include "partials/pagefind-search.html" %}
+        {% comment %} {% include "partials/pagefind-search.html" %} {% endcomment %}
 
         {% for interaction in interactions %}
         <article class="h-entry">

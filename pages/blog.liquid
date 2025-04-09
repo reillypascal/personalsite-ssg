@@ -18,11 +18,15 @@ eleventyExcludeFromCollections: true
 <main role="main" id="content">
     <!-- blog contents -->
     <h2 class="sectionHeader">Blog</h2>
-    <p>A blog about my personal interests, including composition and sound design; audio development using <a href="https://en.wikipedia.org/wiki/Max_(software)">Max/MSP</a>, C++, <a href="https://juce.com/">JUCE</a>, and Rust; and web development on the <a href="https://indieweb.org/">IndieWeb</a></p>
-    
-    {% include "partials/post-list-links.liquid" %}
 
-    {% include "partials/pagefind-search.html" %}
+    <section class="postFeedDescription">
+        <p>A blog about my personal interests, including composition and sound design; audio development using <a href="https://en.wikipedia.org/wiki/Max_(software)">Max/MSP</a>, C++, <a href="https://juce.com/">JUCE</a>, and Rust; and web development on the <a href="https://indieweb.org/">IndieWeb</a></p>
+        
+        {% include "partials/post-list-links.liquid" %}
+    </section>
+
+
+    {% comment %} {% include "partials/pagefind-search.html" %} {% endcomment %}
     
     {%- for post in posts -%}
         <article class="h-entry">

@@ -15,11 +15,14 @@ eleventyExcludeFromCollections: true
 
 <main role="main" id="content">
         <h2 class="sectionHeader">Notes</h2>
-        <p>Short posts, photoblogging, and interesting things from around the web — it's like Twitter meets Instagram, but I own all my posts!</p>
 
-        {% include "partials/post-list-links.liquid" %}
+        <section class="postFeedDescription">
+            <p>Short posts, photoblogging, and interesting things from around the web — it's like Twitter meets Instagram, but I own all my posts!</p>
+    
+            {% include "partials/post-list-links.liquid" %}
+        </section>
 
-        {% include "partials/pagefind-search.html" %}
+        {% comment %} {% include "partials/pagefind-search.html" %} {% endcomment %}
         
         {% for note in notes %}
         <article class="h-entry">

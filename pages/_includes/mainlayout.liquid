@@ -120,7 +120,7 @@ title: Reilly Spitzfaden, Composer
                                 {% comment %} <label for="about-dropdown-btn" tabindex="0" class="dropbtn"> {% endcomment %}
                                     
                                 <button onclick="showDropdown('about-dropdown-content')" class="dropbtn">
-                                    About<img src="/media/ui/chevron-down-svgrepo-com.svg" alt="dropdown menu arrow for 'about'section" height="11" width="18" />
+                                    About<img src="/media/ui/chevron-down-svgrepo-com.svg" alt="dropdown menu arrow for 'about' section" height="11" width="18" />
                                 </button>
                                 
                                 {% comment %} </label>
@@ -139,7 +139,7 @@ title: Reilly Spitzfaden, Composer
                                 
                                 {% comment %} <label for="music-dropdown-btn" tabindex="0" class="dropbtn"> {% endcomment %}
                                 <button onclick="showDropdown('music-dropdown-content')" class="dropbtn">
-                                    Music<img src="/media/ui/chevron-down-svgrepo-com.svg" alt="dropdown menu arrow for 'music'section" height="11" width="18" />
+                                    Music<img src="/media/ui/chevron-down-svgrepo-com.svg" alt="dropdown menu arrow for 'music' section" height="11" width="18" />
                                 </button>
                                 {% comment %} </label>
                                 <input id="music-dropdown-btn" type="checkbox" class="dropdown-checkbox" aria-hidden="true" /> {% endcomment %}
@@ -159,7 +159,7 @@ title: Reilly Spitzfaden, Composer
                                 
                                 {% comment %} <label for="blog-dropdown-btn" tabindex="0" class="dropbtn"> {% endcomment %}
                                 <button onclick="showDropdown('blog-dropdown-content')" class="dropbtn">
-                                    Writing<img src="/media/ui/chevron-down-svgrepo-com.svg" alt="dropdown menu arrow for 'blog'section" height="11" width="18" />
+                                    Writing<img src="/media/ui/chevron-down-svgrepo-com.svg" alt="dropdown menu arrow for 'writing' section" height="11" width="18" />
                                 </button>
                                 {% comment %} </label>
                                 <input id="blog-dropdown-btn" type="checkbox" class="dropdown-checkbox" aria-hidden="true" /> {% endcomment %}
@@ -175,7 +175,20 @@ title: Reilly Spitzfaden, Composer
                         </div>
     
                         <div class="navElement"><a href="/code">Code</a></div>
-                        <div class="navElement"><a href="/contact">Contact</a></div>
+                        <div class="navElement">
+                            <div id="posts-dropdown" class="dropdown">
+                                
+                                <button onclick="showDropdown('site-info-dropdown-content')" class="dropbtn">
+                                    Site Info<img src="/media/ui/chevron-down-svgrepo-com.svg" alt="dropdown menu arrow for 'site info' section" height="11" width="18" />
+                                </button>
+                                
+                                <div id="site-info-dropdown-content" class="dropdown-content">
+                                    <a href="/contact">Contact</a>
+                                    <a href="/search">Search</a>
+                                </div>
+                            </div>
+                        </div>
+
                         <div class="navElement"><a href="/feeds">RSS</a></div>
                     </div>
                     {% comment %} </div> {% endcomment %}

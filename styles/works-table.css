@@ -1,8 +1,11 @@
+table * {
+    line-height: var(--p-line-height);
+}
 th {
     font-weight: 400;
-    padding: 8px 12px 8px 0;
+    padding: 6px 12px 6px 0;
     vertical-align: top !important;
 }
 td {
-    padding: 8px 0;
+    padding: 6px 0;
 }

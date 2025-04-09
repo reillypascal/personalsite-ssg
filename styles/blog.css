@@ -12,3 +12,7 @@ p {
     display: flex;
     justify-content: space-between;
 }
+
+.postFeedDescription {
+    margin: 0 0 64px 0;
+}

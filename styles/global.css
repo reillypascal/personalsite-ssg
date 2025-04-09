@@ -217,7 +217,8 @@ footer {
     border-top: 6px solid var(--accent-med-light);
     margin-left: var(--global-margin);
     margin-right: var(--global-margin);
-    margin-bottom: 16px;
+    margin-bottom: 8px;
+    padding: 0;
     & .social-icons {
         margin-top: 16px;
     }
