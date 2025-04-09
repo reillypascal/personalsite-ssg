@@ -129,8 +129,7 @@ h2,
 h3,
 h4,
 h5,
-h6,
-footer {
+h6 {
     font-family: "Born2bSportyV2", sans-serif;
     /* cancels out offset for :root */
     text-underline-offset: auto;
@@ -151,9 +150,9 @@ h3 {
 h4 {
     font-size: 1.125em;
 }
-footer {
+/* footer {
     font-size: 1.25em;
-}
+} */
 
 /* ######## sticky footer ######## */
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Sticky_footers#alternate_method */
@@ -435,7 +434,7 @@ section {
         line-height: var(--p-line-height);
     }
 } */
-main {
+main, footer {
     & p,
     blockquote,
     ul li,

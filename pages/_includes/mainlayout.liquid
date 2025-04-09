@@ -92,12 +92,6 @@ title: Reilly Spitzfaden, Composer
     </head>
     <body onresize="hamburgerOnOff()">
         <a class="skip-link" href="#content">Skip to content</a>
-        {% comment %}
-        <!-- fixed background - opened and closed here -->
-        <div class="bg"></div>
-        <!-- moving foreground -->
-        <div class="foreground">
-        {% endcomment %}
         <!-- includes footer - makes it fill the page -->
         <div class="wrapper">
             <!-- navigation menu -->
@@ -116,59 +110,39 @@ title: Reilly Spitzfaden, Composer
                     <div id="menuLinks">
                         <div class="navElement">
                             <div id="about-dropdown" class="dropdown">
-                                
-                                {% comment %} <label for="about-dropdown-btn" tabindex="0" class="dropbtn"> {% endcomment %}
-                                    
                                 <button onclick="showDropdown('about-dropdown-content')" class="dropbtn">
                                     About<img src="/media/ui/chevron-down-svgrepo-com.svg" alt="dropdown menu arrow for 'about' section" height="11" width="18" />
                                 </button>
-                                
-                                {% comment %} </label>
-                                <input id="about-dropdown-btn" type="checkbox" class="dropdown-checkbox" aria-hidden="true" /> {% endcomment %}
-                                
                                 <div id="about-dropdown-content" class="dropdown-content">
                                     <a href="/bio">Bio</a>
                                     <a href="/now">Now</a>
                                 </div>
-                                
                             </div>
                         </div>
     
                         <div class="navElement">
                             <div id="music-dropdown" class="dropdown">
-                                
-                                {% comment %} <label for="music-dropdown-btn" tabindex="0" class="dropbtn"> {% endcomment %}
                                 <button onclick="showDropdown('music-dropdown-content')" class="dropbtn">
                                     Music<img src="/media/ui/chevron-down-svgrepo-com.svg" alt="dropdown menu arrow for 'music' section" height="11" width="18" />
                                 </button>
-                                {% comment %} </label>
-                                <input id="music-dropdown-btn" type="checkbox" class="dropdown-checkbox" aria-hidden="true" /> {% endcomment %}
-                                
                                 <div id="music-dropdown-content" class="dropdown-content">
                                     <a href="/works">Works List</a>
                                     <a href="/media">Media</a>
                                     <a href="/shop">Shop</a>
                                     <a href="/supplemental">Supplemental Materials</a>
                                 </div>
-                                
                             </div>
                         </div>
                         
                         <div class="navElement">
                             <div id="posts-dropdown" class="dropdown">
-                                
-                                {% comment %} <label for="blog-dropdown-btn" tabindex="0" class="dropbtn"> {% endcomment %}
                                 <button onclick="showDropdown('blog-dropdown-content')" class="dropbtn">
                                     Writing<img src="/media/ui/chevron-down-svgrepo-com.svg" alt="dropdown menu arrow for 'writing' section" height="11" width="18" />
                                 </button>
-                                {% comment %} </label>
-                                <input id="blog-dropdown-btn" type="checkbox" class="dropdown-checkbox" aria-hidden="true" /> {% endcomment %}
-                                
                                 <div id="blog-dropdown-content" class="dropdown-content">
                                     <a href="/blog">Blog</a>
                                     <a href="/notes">Notes</a>
                                     <a href="/interactions">Interactions</a>
-                                    {% comment %} <a href="/digital-garden">Digital Garden</a> {% endcomment %}
                                     <a href="/blogroll">Blogroll</a>
                                 </div>
                             </div>
@@ -191,7 +165,6 @@ title: Reilly Spitzfaden, Composer
 
                         <div class="navElement"><a href="/feeds">RSS</a></div>
                     </div>
-                    {% comment %} </div> {% endcomment %}
                 </nav>
                 
             </header>
@@ -218,14 +191,12 @@ title: Reilly Spitzfaden, Composer
                     <a href="https://xn--sr8hvo.ws/next" class="webring-next-arrow">→</a>
                 </p>
 
-                <p><a href="https://github.com/reillypascal/personalsite-ssg">View Source Code</a></p>
-                <p>&copy; 2022–2025 by Reilly Spitzfaden. This site supports <a href="https://webmention.net/">webmentions</a>.</p>
+                {% comment %} <p><a href="https://github.com/reillypascal/personalsite-ssg">View Source Code</a></p> {% endcomment %}
+                {% comment %} <p>&copy; 2022–2025 by Reilly Spitzfaden. This site supports <a href="https://webmention.net/">webmentions</a>.</p> {% endcomment %}
+                
+                <p>Text and images licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> :: <a href="https://github.com/reillypascal/personalsite-ssg">Source code</a> licensed under the <a href="https://github.com/reillypascal/personalsite-ssg/blob/main/LICENSE">MIT License</a> :: Music &copy; & &copysr; Reilly Spitzfaden</p>
             </footer>
         <!-- close "wrapper"-->
         </div>
-        {% comment %}
-        <!-- close "foreground" (moving page over bg) -->
-        </div>
-        {% endcomment %}
     </body>
 </html>
