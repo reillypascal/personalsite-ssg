@@ -1,0 +1,54 @@
+---
+layout: mainlayout.liquid
+title: Reilly Spitzfaden, Composer
+---
+<link rel="stylesheet" type="text/css" href="/styles/blog.css" />
+<link rel="stylesheet" type="text/css" href="/styles/blogposts.css" />
+<link rel="stylesheet" type="text/css" href="/styles/forms.css" />
+<link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
+
+<!-- page content minus header/footer -->
+<main role="main" id="content">
+    <!-- post contents -->
+    <!-- ###### data-pagefind-body boolean attribute makes only blog posts indexed ###### -->
+    <article class="h-entry">
+        <h2 class="p-name sectionHeader">{{ title }}</h2>
+
+        <a rel="author" class="p-author h-card" href="https://reillyspitzfaden.com"></a>
+        {%- for url in fedi_url %}
+            <a rel="syndication" class="u-syndication" href="{{ url }}"></a>
+        {%- endfor %}
+        
+        {%- include "partials/post-meta.liquid" -%}
+
+        <div class="e-content">
+            {{ content }}
+        </div>
+        
+        {% include "partials/post-interactions.liquid" %}
+
+    </article>
+    
+    <article>
+        <div class="webmentionForm">
+            <form id="webmention-form" action="https://webmention.io/reillyspitzfaden.com/webmention" method="POST">
+                <h2 class="sectionHeader">Send me a webmention</h2>
+                <p>
+                    <label for="webmention-form">This post accepts <a href="https://en.wikipedia.org/wiki/Webmention">webmentions</a>. If you link to and write about this on your website, you can enter the web address of your post below:</label>
+                </p>
+
+                <input id="webmention-source" type="url" autocomplete="url" required="" pattern="^https?:\/\/(.*)" name="source" placeholder="URL/Permalink of your article" class="error" aria-invalid="true">
+                
+                <input id="webmention-submit" type="submit" name="submit" value="Ping me!">
+
+                <input id="webmention-format" type="hidden" name="format" value="html">
+                <input id="webmention-target" type="hidden" name="target" value="">
+            </form>
+        </div>
+    </article>
+</main>
+
+<script>
+    let blogPostURL = "{{ canonical_url }}";
+</script>
+<script src="/styles/interactions.js"></script>

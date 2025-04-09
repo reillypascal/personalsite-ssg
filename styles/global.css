@@ -87,6 +87,7 @@
     --main-width: 50rem;
     --article-width: 45rem;
     --p-line-height: 1.75;
+    --section-header-padding: 6px;
 }
 
 /* p,
@@ -491,7 +492,7 @@ figure {
 /* ######## Decorations ######## */
 .sectionHeader {
     width: fit-content;
-    padding-bottom: 6px;
+    padding-bottom: var(--section-header-padding);
     border-bottom: 1px solid var(--accent-med-light);
 }
 
