@@ -45,7 +45,7 @@ eleventyExcludeFromCollections: true
         <p>This line is what I use to apply EXIF rotation data to photos from my phone, resize them, and convert to .webp for use on my website. It uses <a href="https://www.sentex.ca/~mwandel/jhead/">jhead</a>, <a href="https://imagemagick.org/index.php">imagemagick</a>, and <code>zsh</code>.</p>
 
         {% highlight shell %}
-        for file in ./**/*(.); jhead -autorot *.jpg && magick $file -quality 65 -resize 35% $file.webp
+        for file in ./**/*(.); jhead -autorot $file && magick $file -quality 65 -resize 35% $file.webp
         {% endhighlight %}
 
     </article>
