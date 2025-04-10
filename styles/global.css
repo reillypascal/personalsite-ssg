@@ -418,12 +418,18 @@ article,
 section {
     margin: 0 0 48px;
 }
+.sectionDescription {
+    margin-bottom: 48px;
+}
 
 @media screen and (min-width: 660px) {
     article,
     section {
         margin: 0 0 64px;
     }
+    /* .sectionDescription {
+        margin-bottom: 64px;
+    } */
 }
 
 /* article,
