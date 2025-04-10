@@ -9,7 +9,9 @@ eleventyExcludeFromCollections: true
 
 <main role="main" id="content">
     <h2 class="sectionHeader">Search</h2>
-    <p>Search the entire site. Uses <a href="https://pagefind.app/">Pagefind</a></p>
-
-    {% include "partials/pagefind-search.html" %}
+    <p>Search the entire site using <a href="https://pagefind.app/">Pagefind</a></p>
+    
+    {% include "partials/pagefind-search.liquid" %}
+    
+    <p class="searchIndexDate">Last indexed {{ generated }}</p>
 </main>
