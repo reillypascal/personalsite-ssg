@@ -120,7 +120,7 @@ module.exports = async function (eleventyConfig) {
   eleventyConfig.addGlobalData('generated', () => {
     let now = new Date();
     return new Intl.DateTimeFormat(
-      'en-US', { dateStyle: 'full', timeStyle: 'long' }
+      'en-US', { dateStyle: 'long', timeStyle: 'short' }
     ).format(now);
   });
 
