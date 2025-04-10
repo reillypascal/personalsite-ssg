@@ -64,7 +64,7 @@ To convert the title to a post slug/filename, I use the following line. `tr` rep
 slug=$(echo $name | tr '[:upper:]' '[:lower:]' | tr -cd '[:alnum:] ' | tr -s " " "-")
 ```
 
-I put my posts in the folder `posts/<year>/<month>/`, and for that I need the year and date. Getting the date is pretty simple — just use the `date` command. Creating the variables just requires the formatting strings described [here](https://ss64.com/bash/date.html) to get ISO format (for the post frontmatter date tag), and the year and month (for the folders). I use the same syntax as above with the brackets substituting for the `test` command to check if the required file path exists, and create the necessary folders if not.
+I put my posts in the folder `posts/<year>/<month>/`, and for that I need the year and date. Getting the date is pretty simple — just use the `date` command. Creating the variables just requires the formatting strings described [here](https://ss64.com/bash/date.html) to get ISO format (for the post frontmatter date tag), and the year and month (for the folders). I use the same syntax as above with the brackets substituting for the `test` command to check if the required file path exists, and create the necessary folders if not. The `-d` flag for `test` [checks if the file exists and is a directory](https://www.man7.org/linux/man-pages/man1/test.1.html).
 
 ```sh
 isodate=$(date +"%Y-%m-%dT%H:%M:%S%z")
@@ -90,7 +90,7 @@ cat >> $fullpath << EOF && codium $fullpath
 EOF
 ```
 
-`$fullpath` contains the desired Markdown file name plus the path at which to put it. Since it doesn't look like you can write any further commands after the `EOF` file end marker, it took me a bit to figure out how to open the file after creating it, but it turns out I can just add `&& codium $fullpath` on the first line, instead of needing to put it after the block of text to write.
+`$fullpath` contains the desired Markdown file name plus the path at which to put it. Since it doesn't look like you can write any further commands after the `EOF` file end marker, it took me a bit to figure out how to open the file after creating it, but it turns out I can just add `&& codium $fullpath` on the `cat` line, instead of needing to put it after the block of text to write.
 
 ### Fun Fact of the Day
 
