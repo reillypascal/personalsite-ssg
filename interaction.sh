@@ -6,7 +6,8 @@ else
     name="Interaction"
 fi
 
-slug=$(echo $name | tr '[:upper:]' '[:lower:]' | tr " " "-")
+# tr replace first w/ second; -c means "complement", -d "delete", -s "squeeze repeats"
+slug=$(echo $name | tr '[:upper:]' '[:lower:]' | tr -cd '[:alnum:] ' | tr -s " " "-")
 
 isodate=$(date +"%Y-%m-%dT%H:%M:%S%z")
 year=$(date +"%Y")
