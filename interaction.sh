@@ -20,7 +20,9 @@ if ! [ -d pages/interactions/$year/$month ]; then
     mkdir pages/interactions/$year/$month
 fi
 
-cat >> pages/interactions/$year/$month/$slug.md << EOF
+fullpath=pages/interactions/$year/$month/$slug.md
+
+cat >> $fullpath << EOF && $fullpath
 ---
 title: $name
 canonical_url: https://reillyspitzfaden.com/interactions/$year/$month/$slug/

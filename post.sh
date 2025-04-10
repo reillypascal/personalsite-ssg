@@ -26,7 +26,9 @@ if ! [ -d pages/posts/$year/$month ]; then
     mkdir pages/posts/$year/$month
 fi
 
-cat >> pages/posts/$year/$month/$slug.md << EOF
+fullpath=pages/posts/$year/$month/$slug.md
+
+cat >> $fullpath << EOF && codium $fullpath
 ---
 title: $name
 description: $description

@@ -20,7 +20,9 @@ if ! [ -d pages/notes/$year/$month ]; then
     mkdir pages/notes/$year/$month
 fi
 
-cat >> pages/notes/$year/$month/$slug.md << EOF
+fullpath=pages/notes/$year/$month/$slug.md
+
+cat >> $fullpath << EOF && codium $fullpath
 ---
 title: $name
 canonical_url: https://reillyspitzfaden.com/notes/$year/$month/$slug/
