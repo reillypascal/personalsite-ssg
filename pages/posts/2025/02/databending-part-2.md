@@ -7,7 +7,9 @@ date: 2025-02-02T00:00:00-0500
 octothorpes:
   - Art
   - Audio
+  - audio
   - music
+  - sound
 tags:
   - post
   - databending

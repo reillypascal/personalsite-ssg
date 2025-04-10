@@ -5,8 +5,11 @@ canonical_url: https://reillyspitzfaden.com/posts/2025/04/databending-part-3/
 fedi_url: https://hachyderm.io/@reillypascal/114291930621155178
 date: 2025-04-06T00:00:00-0500
 octothorpes:
+  - Art
   - Audio
+  - audio
   - music
+  - sound
 tags:
   - post
   - databending 
