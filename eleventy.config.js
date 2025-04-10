@@ -120,8 +120,11 @@ module.exports = async function (eleventyConfig) {
   eleventyConfig.addGlobalData('generated', () => {
     let now = new Date();
     return new Intl.DateTimeFormat(
-      'en-US', { dateStyle: 'long', timeStyle: 'short' }
-    ).format(now);
+      'en-US', { 
+        dateStyle: 'long', 
+        timeStyle: 'short',
+        timeZone: "America/New_York",
+      }).format(now);
   });
 
   // input directory
