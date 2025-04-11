@@ -4,7 +4,7 @@ if [ ${1+x} ]; then
     name=$1
 else
     # %l is equivalent to %_I (no zero, pad w/ space), hyphen removes padding
-    name=$(date +"%b %d, %Y, %-l:%M%p")
+    name=$(date +"%b %d, %Y, %-l:%M %p")
 fi
 
 # tr replace first w/ second; -c means "complement", -d "delete", -s "squeeze repeats"
