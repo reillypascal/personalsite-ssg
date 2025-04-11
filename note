@@ -13,13 +13,8 @@ isodate=$(date +"%Y-%m-%dT%H:%M:%S%z")
 year=$(date +"%Y")
 month=$(date +"%m")
 
-if ! [ -d pages/notes/$year ]; then
-    mkdir pages/notes/$year
-fi
-
-if ! [ -d pages/notes/$year/$month ]; then
-    mkdir pages/notes/$year/$month
-fi
+# -p: make intermediate directories and don't complain if the full path already exists
+mkdir -p pages/posts/$year/$month
 
 fullpath=pages/notes/$year/$month/$slug.md
 

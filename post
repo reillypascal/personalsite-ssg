@@ -19,13 +19,8 @@ isodate=$(date +"%Y-%m-%dT%H:%M:%S%z")
 year=$(date +"%Y")
 month=$(date +"%m")
 
-if ! [ -d pages/posts/$year ]; then
-    mkdir pages/posts/$year
-fi
-
-if ! [ -d pages/posts/$year/$month ]; then
-    mkdir pages/posts/$year/$month
-fi
+# -p: make intermediate directories and don't complain if the full path already exists
+mkdir -p pages/posts/$year/$month
 
 fullpath=pages/posts/$year/$month/$slug.md
 
