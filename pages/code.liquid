@@ -58,6 +58,12 @@ eleventyExcludeFromCollections: true
         {% highlight shell %}
         ./post "<post-title>" "<post-description>"
         {% endhighlight %}
+
+        <p>My <a href="https://github.com/reillypascal/personalsite-ssg/blob/main/interaction">script</a> for creating an <a href="/interactions">interaction</a> post (e.g., likes, RSVPs, etc. using <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Microformats">Microformats</a>) is able to take in a flag to indicate the type of interaction and the URL of the post with which I'm interacting and 1&rpar; retrieve the target post's title and 2&rpar; create the correct title/tags/etc. (e.g., "Liked | Example Post" for the title).</p>
+
+        {% highlight shell %}
+        ./interaction -r "<target-url>"
+        {% endhighlight %}
     </article>
     
 </main>
