@@ -15,7 +15,7 @@ year=$(date +"%Y")
 month=$(date +"%m")
 
 # -p: make intermediate directories and don't complain if the full path already exists
-mkdir -p pages/posts/$year/$month
+mkdir -p pages/notes/$year/$month
 
 fullpath=pages/notes/$year/$month/$slug.md
 

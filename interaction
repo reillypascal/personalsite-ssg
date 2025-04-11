@@ -1,34 +1,40 @@
 #!/bin/sh
 
 if [ ${1+x} ]; then
-    name=$1
-else
-    name="Interaction"
+    target_url=$1
 fi
 
+if [ ${target_url+x} ]; then
+    target_title=$(curl -s $target_url | grep -o "<title>[^<]*" | tail -c+8)
+else
+    target_title="Interaction"
+fi
+
+target_title=$(curl -s $target_url | grep -o "<title>[^<]*" | tail -c+8)
+
 # tr replace first w/ second; -c means "complement", -d "delete", -s "squeeze repeats"
-slug=$(echo $name | tr '[:upper:]' '[:lower:]' | tr -cd '[:alnum:] ' | tr -s " " "-")
+slug=$(echo $target_title | tr '[:upper:]' '[:lower:]' | tr -cd '[:alnum:] ' | tr -s " " "-" | cut -c1-30)
 
 isodate=$(date +"%Y-%m-%dT%H:%M:%S%z")
 year=$(date +"%Y")
 month=$(date +"%m")
 
 # -p: make intermediate directories and don't complain if the full path already exists
-mkdir -p pages/posts/$year/$month
+mkdir -p pages/interactions/$year/$month
 
 fullpath=pages/interactions/$year/$month/$slug.md
 
-cat >> $fullpath << EOF && $fullpath
+cat >> $fullpath << EOF && codium $fullpath
 ---
-title: $name
+title: $target_title
 canonical_url: https://reillyspitzfaden.com/interactions/$year/$month/$slug/
 fedi_url:
 date: $isodate
 tags:
   - interaction
 rsvp_value:
-target_url:
-target_title:
+target_url: $target_url
+target_title: $target_title
 draft: true
 ---
 EOF
