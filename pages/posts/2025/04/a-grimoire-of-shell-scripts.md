@@ -2,7 +2,7 @@
 title: A Grimoire of Shell Scripts
 description: Today I'm discussing my thoughts on “home-cooked” and “situated” software, and how that's inspired me to start a collection of useful script tools for myself.
 canonical_url: https://reillyspitzfaden.com/posts/2025/04/a-grimoire-of-shell-scripts/
-fedi_url:
+fedi_url: https://hachyderm.io/@reillypascal/114316315194731170
 date: 2025-04-10T18:35:00-0400
 octothorpes:
   - web
