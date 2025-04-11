@@ -1,5 +1,19 @@
 #!/bin/sh
 
+while getopts ":lr" option; do
+    case "${option}" in
+        l)
+            interaction_title="Liked"
+            interaction_tag=like
+            ;;
+        r)
+            interaction_title="RSVP"
+            interaction_tag="rsvp"
+            ;;
+    esac
+    shift $((OPTIND-1))
+done
+
 if [ ${1+x} ]; then
     target_url=$1
 fi
@@ -11,7 +25,7 @@ else
 fi
 
 # tr replace first w/ second; -c means "complement", -d "delete", -s "squeeze repeats"
-slug=$(echo $target_title | tr '[:upper:]' '[:lower:]' | tr -cd '[:alnum:] ' | tr -s " " "-" | cut -c1-30)
+slug=$(echo "${interaction_title} ${target_title}" | tr '[:upper:]' '[:lower:]' | tr -cd '[:alnum:] ' | tr -s " " "-" | cut -c1-45)
 
 isodate=$(date +"%Y-%m-%dT%H:%M:%S%z")
 year=$(date +"%Y")
@@ -24,13 +38,14 @@ fullpath=pages/interactions/$year/$month/$slug.md
 
 cat >> $fullpath << EOF && codium $fullpath
 ---
-title: $target_title
+title: "${interaction_title} | ${target_title}"
 canonical_url: https://reillyspitzfaden.com/interactions/$year/$month/$slug/
-fedi_url:
+fedi_url: 
 date: $isodate
 tags:
   - interaction
-rsvp_value:
+  - $interaction_tag
+rsvp_value: 
 target_url: $target_url
 target_title: $target_title
 draft: true
