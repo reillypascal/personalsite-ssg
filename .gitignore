@@ -1,4 +1,5 @@
 .DS_Store
+test.sh
 _site/
 _webmentioncache/
 drafts/
