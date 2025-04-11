@@ -1,5 +1,6 @@
 .DS_Store
 test.sh
+webmentions.json
 _site/
 _webmentioncache/
 drafts/

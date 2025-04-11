@@ -65,5 +65,15 @@ eleventyExcludeFromCollections: true
         ./interaction -r "<target-url>"
         {% endhighlight %}
     </article>
+
+    <article>
+        <h3>Filter Webmentions</h3>
+
+        <p>This <a href="https://github.com/reillypascal/personalsite-ssg/blob/main/webmentions.py">Python script</a> gets my webmentions, filters out all mentions received over Bridgy (which I use to pull in Mastodon/Bluesky interactions as webmentions), and writes the rest to a file <code>webmentions.json</code>. This is nice because non-Mastodon/Bluesky webmentions are much more interesting to me, but they're much more rare than social media interactions, and tend to get lost in the shuffle. I run this from my root folder to get the mentions and open the file in my editor.</p>
+
+        {% highlight shell %}
+        ./webmentions.py && codium webmentions.json
+        {% endhighlight %}
+    </article>
     
 </main>
