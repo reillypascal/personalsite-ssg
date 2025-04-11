@@ -10,8 +10,6 @@ else
     target_title="Interaction"
 fi
 
-target_title=$(curl -s $target_url | grep -o "<title>[^<]*" | tail -c+8)
-
 # tr replace first w/ second; -c means "complement", -d "delete", -s "squeeze repeats"
 slug=$(echo $target_title | tr '[:upper:]' '[:lower:]' | tr -cd '[:alnum:] ' | tr -s " " "-" | cut -c1-30)
 
