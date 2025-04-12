@@ -121,7 +121,12 @@ module.exports = async function (eleventyConfig) {
   // collections
   // all posts — so I don't need to exclude other pages from collections.all
   eleventyConfig.addCollection("feedGlobal", function (collectionApi) {
-    return collectionApi.getFilteredByTag("post", "note", "interaction");
+    const posts = collectionApi.getFilteredByTag("post");
+    const notes = collectionApi.getFilteredByTag("note");
+    const interactions = collectionApi.getFilteredByTag("interaction");
+    return posts.concat(notes).concat(interactions).sort(function (a, b) {
+      return a.date - b.date;
+    });
   });
 
   eleventyConfig.addGlobalData('generated', () => {
