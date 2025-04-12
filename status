@@ -2,6 +2,8 @@
 
 date=$(date +"%Y-%m-%dT%H:%M:%S%z")
 
+location=$(curl -s ipinfo.io | jq -r '.city + ", " + .region')
+
 slug="${date}-status"
 
 fullpath=pages/now/$slug.md
@@ -9,7 +11,7 @@ fullpath=pages/now/$slug.md
 cat >> $fullpath << EOF && codium $fullpath
 ---
 date: $date
-location: Rochester, NY
+location: $location
 tags:
   - status
 permalink: false
