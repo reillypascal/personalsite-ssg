@@ -35,7 +35,7 @@ pagination:
                 <img src="/media/icon-calendar-ltr.svg" alt="calendar icon" />
                 </span>
                 <span class="meta-text">
-                <time class="dt-published" datetime="{{ date | postDate }}">{{ note.date | date: "%A, %B %d, %Y" }}</time>
+                <time class="dt-published" datetime="{{ note.date }}">{{ note.date | date: "%A, %B %d, %Y" }}</time>
             </span>
         </article>
         {% endfor %}
