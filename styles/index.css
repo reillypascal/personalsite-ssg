@@ -10,7 +10,8 @@ main {
 }
 
 @media screen and (min-width: 768px) {
-    #column-left {
+    #column-left,
+    #homepageStatus {
         /* max-width: 35rem; */
         max-width: 62%;
     }
@@ -21,7 +22,8 @@ main {
 }
 
 @media screen and (min-width: 1125px) {
-    #column-left {
+    #column-left,
+    #homepageStatus {
         /* max-width: 35rem; */
         max-width: 60%;
     }
@@ -29,6 +31,10 @@ main {
         /* max-width: 18rem; */
         max-width: 30%;
     }
+}
+
+#homepageStatus {
+    margin-top: 0;
 }
 
 /* #column-left article {
