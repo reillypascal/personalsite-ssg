@@ -1,0 +1,17 @@
+#!/bin/sh
+
+date=$(date +"%Y-%m-%dT%H:%M:%S%z")
+
+slug="${date}-status"
+
+fullpath=pages/now/$slug.md
+
+cat >> $fullpath << EOF && codium $fullpath
+---
+date: $date
+location: Rochester, NY
+tags:
+  - status
+permalink: false
+---
+EOF
