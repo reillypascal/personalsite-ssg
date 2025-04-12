@@ -25,3 +25,10 @@ p {
 .postFeedDescription {
     margin: 0 0 64px 0;
 }
+
+.RSSValidationLink {
+    background-image: none !important;
+}
+.RSSValidationImg {
+    margin-bottom: 16px;
+}

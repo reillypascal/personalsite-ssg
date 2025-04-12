@@ -19,14 +19,11 @@ pagination:
     <h2 class="sectionHeader">Blog</h2>
 
     <section class="postFeedDescription">
-        <p>A blog about my personal interests, including composition and sound design; audio development using <a href="https://en.wikipedia.org/wiki/Max_(software)">Max/MSP</a>, C++, <a href="https://juce.com/">JUCE</a>, and Rust; and web development on the <a href="https://indieweb.org/">IndieWeb</a></p>
+        <p>A blog about my personal interests, including composition and sound design; audio programming using <a href="https://en.wikipedia.org/wiki/Max_(software)">Max/MSP</a>, C++, <a href="https://juce.com/">JUCE</a>, Python, and more; and web development on the <a href="https://indieweb.org/">IndieWeb</a></p>
         
         {% include "partials/post-list-links.liquid" %}
     </section>
 
-
-    {% comment %} {% include "partials/pagefind-search.html" %} {% endcomment %}
-    
     {%- for post in posts -%}
         <article class="h-entry">
             <h3 class="p-name"><a class="u-url" href="{{ post.url }}">{{ post.data.title }}</a></h3>
@@ -43,7 +40,7 @@ pagination:
         </article>
     {%- endfor -%}
 
-    {% comment %} <a href="https://validator.w3.org/feed/check.cgi?url=https%3A//reillyspitzfaden.com/blog/feed.xml"><img src="/media/valid-rss-rogers.png" alt="[Valid RSS]" title="Validate my RSS feed" class="RSSValidation"/></a> {% endcomment %}
+    <a class="RSSValidationLink" href="https://validator.w3.org/feed/check.cgi?url=https%3A//reillyspitzfaden.com/blog/feed.xml"><img src="/media/valid-rss-rogers.png" alt="[Valid RSS]" title="Validate my RSS feed" class="RSSValidationImg"/></a>
     
     <div class="page-nav-wrapper">
         {%- if pagination.href.previous -%}

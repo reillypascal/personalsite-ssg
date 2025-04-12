@@ -21,8 +21,6 @@ pagination:
             {% include "partials/post-list-links.liquid" %}
         </section>
 
-        {% comment %} {% include "partials/pagefind-search.html" %} {% endcomment %}
-
         {% for interaction in interactions %}
         <article class="h-entry">
             <h3 class="p-name"><a class="u-url" href="{{interaction.url}}">{{ interaction.data.title }}</a></h3>
@@ -36,8 +34,9 @@ pagination:
             <time class="dt-published" datetime="{{ date | postDate }}">{{ interaction.date | date: "%A, %B %d, %Y" }}</time>
             </span>
         </article>
-        {% comment %} <hr /> {% endcomment %}
         {% endfor %}
+
+        <a class="RSSValidationLink" href="https://validator.w3.org/feed/check.cgi?url=https%3A//reillyspitzfaden.com/interactions/feed.xml"><img src="/media/valid-rss-rogers.png" alt="[Valid RSS]" title="Validate my RSS feed" class="RSSValidationImg"/></a>
         
         <div class="page-nav-wrapper">
             {% if pagination.href.previous %}
