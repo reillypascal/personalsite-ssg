@@ -103,6 +103,7 @@ module.exports = async function (eleventyConfig) {
   // plugins: syntax highlighting
   eleventyConfig.addPlugin(syntaxHighlight);
 
+  // collections
   // tags
   eleventyConfig.addCollection("allTags", (collection) => {
     const allCollections = collection.getAll();
@@ -115,6 +116,12 @@ module.exports = async function (eleventyConfig) {
       }
     });
     return [...tagSet].sort();
+  });
+
+  // collections
+  // all posts — so I don't need to exclude other pages from collections.all
+  eleventyConfig.addCollection("feedGlobal", function (collectionApi) {
+    return collectionApi.getFilteredByTag("post", "note", "interaction");
   });
 
   eleventyConfig.addGlobalData('generated', () => {
