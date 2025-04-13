@@ -128,9 +128,9 @@
         </div>
         
         <div class="alert">
-          <p><strong>This is a web feed</strong>, also known as an RSS feed.</p> 
-          
-          <p>You can <strong>subscribe for free</strong> by copying the URL from the address bar into your newsreader. See <a href="https://reillyspitzfaden.com/feeds/#what-is-rss">here</a> for suggested readers and more info.</p>
+          <p>This is a preview of the feed. You can subscribe for free by copying the URL from the address bar into your newsreader.</p>
+
+          <p>See <a href="https://reillyspitzfaden.com/feeds/#what-is-rss">here</a> for suggested readers and more info. You can also <a href="https://www.mnot.net/rss/tutorial/">learn how to set up your own feed</a>!</p>
 
           <p>A full listing of this site's feeds can be found <a href="https://reillyspitzfaden.com/feeds/">here</a>.</p>
         </div>
