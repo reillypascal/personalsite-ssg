@@ -12,7 +12,6 @@ tags:
   - post
   - indieweb
   - movies
-draft: true
 ---
 This month's [IndieWeb Movie Club](https://indieweb.org/IndieWeb_Movie_Club) is <cite>[The Castle](https://en.wikipedia.org/wiki/The_Castle_(1997_Australian_film))</cite> (1997), and Zachary wrote the introduction post [here](https://zacharykai.net/notes/iwmapr25). Spoilers will follow in this post!
 
