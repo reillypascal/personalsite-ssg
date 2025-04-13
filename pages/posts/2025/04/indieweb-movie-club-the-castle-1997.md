@@ -2,7 +2,7 @@
 title: IndieWeb Movie Club — The Castle (1997)
 description: My watch and discussion of this month's IndieWeb Movie Club pick — it's nice to participate in a group blogging activity!
 canonical_url: https://reillyspitzfaden.com/posts/2025/04/indieweb-movie-club-the-castle-1997/
-fedi_url:
+fedi_url: https://hachyderm.io/@reillypascal/114331768042130524
 date: 2025-04-12T23:15:00-0400
 octothorpes:
   - indieweb
