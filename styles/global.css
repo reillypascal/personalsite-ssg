@@ -529,12 +529,12 @@ a[href*=mailto] {
     position: relative;
     top: 2px;
 }
-.loc-icon {
-    right: 1px;
-}
 
 .meta-text {
     margin-left: 3px;
+}
+.loc-text {
+    margin-left: 2px;
 }
 
 .post-meta,
