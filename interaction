@@ -40,7 +40,6 @@ fullpath=pages/interactions/$year/$month/$slug.md
 cat >> $fullpath << EOF && codium $fullpath
 ---
 title: "${interaction_title} | ${target_title}"
-canonical_url: https://reillyspitzfaden.com/interactions/$year/$month/$slug/
 fedi_url: 
 date: $isodate
 tags:

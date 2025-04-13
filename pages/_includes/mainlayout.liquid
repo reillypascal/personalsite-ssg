@@ -9,7 +9,7 @@ title: Reilly Spitzfaden, Composer
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <meta name="description" content="{{ description }}" />
-        <link rel="canonical" href="{{ canonical_url }}" />
+        <link rel="canonical" href="https://reillyspitzfaden.com{{ page.url }}" />
 
         <!-- Favicon -->
         <link rel="icon" type="image/png" href="/media/favicon/favicon-96x96.png" sizes="96x96" />
@@ -20,7 +20,7 @@ title: Reilly Spitzfaden, Composer
         <link rel="manifest" href="/media/favicon/site.webmanifest" />
 
         <!-- OG, social meta properties -->
-        <meta property="og:url" content="{{ canonical_url }}" />
+        <meta property="og:url" content="https://reillyspitzfaden.com{{ page.url }}" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="{{ title }}"/>
         <meta property="og:description" content="{{ description }}" />
@@ -74,7 +74,7 @@ title: Reilly Spitzfaden, Composer
         <link 
         rel="preload" 
         as="fetch" 
-        href="https://octothorp.es/?uri={{ canonical_url }}" />
+        href="https://octothorp.es/?uri=https://reillyspitzfaden.com{{ page.url }}" />
         
         <!-- Tags -->
         {%- for tag in octothorpes %}

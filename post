@@ -28,7 +28,6 @@ cat >> $fullpath << EOF && codium $fullpath
 ---
 title: $name
 description: $description
-canonical_url: https://reillyspitzfaden.com/posts/$year/$month/$slug/
 fedi_url:
 og_image: 
 og_image_width: 
