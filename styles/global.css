@@ -523,14 +523,20 @@ a[href*=mailto] {
     width: fit-content;
 }
 
-/* post info */
-.meta-icon {
+/* post info, statuslog info */
+.meta-icon,
+.loc-icon {
     position: relative;
     top: 2px;
 }
 
 .meta-text {
     margin-left: 3px;
+}
+
+.post-meta,
+.post-loc {
+    margin-bottom: 16px;
 }
 
 /* ######## cleanup ######## */
