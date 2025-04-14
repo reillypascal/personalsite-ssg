@@ -1,11 +1,10 @@
 .DS_Store
-test.sh
 webmentions.json
 _site/
 _webmentioncache/
 drafts/
-Post\ Drafts/
 node_modules/
+Post\ Drafts/
 wip/
 .cache/
 # Local Netlify folder
