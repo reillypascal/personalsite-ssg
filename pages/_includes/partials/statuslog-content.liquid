@@ -1,6 +1,6 @@
 {% assign latest_status = collections.status | slice: -1, 1 %}
 
-<p>{{ latest_status[0].content }}</p>
+{{ latest_status[0].content }}
 
 <div class="post-meta">
     <span class="meta-icon">
