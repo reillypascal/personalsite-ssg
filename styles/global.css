@@ -484,6 +484,9 @@ figure {
     margin-right: 0;
     margin-bottom: 2em;
 }
+figcaption {
+    margin-top: 16px;
+}
 @media screen and (min-width: 480px) {
     figure {
         margin-left: 1em;

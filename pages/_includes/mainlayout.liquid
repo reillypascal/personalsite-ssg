@@ -106,7 +106,6 @@ title: Reilly Spitzfaden, Composer
                     <button onclick="hamburgerToggle()" class="dropbtn navIcon" aria-label="Open the menu">    
                         <img src="/media/menu-aliceblue-32px.svg" alt="menu button" class="icon-svg hamburger-svg" height="32" width="32"></img>
                     </button>
-
                     <div id="menuLinks">
                         <div class="navElement">
                             <div id="about-dropdown" class="dropdown">
@@ -119,7 +118,6 @@ title: Reilly Spitzfaden, Composer
                                 </div>
                             </div>
                         </div>
-    
                         <div class="navElement">
                             <div id="music-dropdown" class="dropdown">
                                 <button onclick="showDropdown('music-dropdown-content')" class="dropbtn">
@@ -128,12 +126,12 @@ title: Reilly Spitzfaden, Composer
                                 <div id="music-dropdown-content" class="dropdown-content">
                                     <a href="/works">Works</a>
                                     <a href="/media">Media</a>
+                                    <a href="/downloads">Downloads</a>
                                     <a href="/shop">Shop</a>
-                                    <a href="/supplemental">Supplemental</a>
+                                    <a href="/sounds">Sounds</a>
                                 </div>
                             </div>
                         </div>
-                        
                         <div class="navElement">
                             <div id="posts-dropdown" class="dropdown">
                                 <button onclick="showDropdown('blog-dropdown-content')" class="dropbtn">
@@ -147,7 +145,6 @@ title: Reilly Spitzfaden, Composer
                                 </div>
                             </div>
                         </div>
-    
                         <div class="navElement"><a href="/code">Code</a></div>
                         <div class="navElement">
                             <div id="posts-dropdown" class="dropdown">
@@ -162,11 +159,9 @@ title: Reilly Spitzfaden, Composer
                                 </div>
                             </div>
                         </div>
-
                         <div class="navElement"><a href="/feeds">RSS</a></div>
                     </div>
                 </nav>
-                
             </header>
             
             {{ content }}
@@ -183,7 +178,7 @@ title: Reilly Spitzfaden, Composer
                     <a href="/feeds" title="RSS"><img src="/media/rss-icon-light.svg" alt="RSS" width="32" height="32" /></a>
                 </div>
                 
-                {% comment %} <p class="octothorpes-badge"><a href="https://octothorp.es" class="img-badge"><img src="/media/octothorpes-badge.png" alt="Badge for the Octothorpes main ring" height="31" width="88" /></a></p> {% endcomment %}
+                {%- comment -%} <p class="octothorpes-badge"><a href="https://octothorp.es" class="img-badge"><img src="/media/octothorpes-badge.png" alt="Badge for the Octothorpes main ring" height="31" width="88" /></a></p> {%- endcomment -%}
 
                 <p>
                     <a href="https://xn--sr8hvo.ws/previous" class="webring-prev-arrow">←</a>
@@ -191,8 +186,8 @@ title: Reilly Spitzfaden, Composer
                     <a href="https://xn--sr8hvo.ws/next" class="webring-next-arrow">→</a>
                 </p>
 
-                {% comment %} <p><a href="https://github.com/reillypascal/personalsite-ssg">View Source Code</a></p> {% endcomment %}
-                {% comment %} <p>&copy; 2022–2025 by Reilly Spitzfaden. This site supports <a href="https://webmention.net/">webmentions</a>.</p> {% endcomment %}
+                {%- comment -%} <p><a href="https://github.com/reillypascal/personalsite-ssg">View Source Code</a></p> {%- endcomment -%}
+                {%- comment -%} <p>&copy; 2022–2025 by Reilly Spitzfaden. This site supports <a href="https://webmention.net/">webmentions</a>.</p> {%- endcomment -%}
                 
                 <p>Text and images licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> :: <a href="https://github.com/reillypascal/personalsite-ssg">Source code</a> licensed under the <a href="https://github.com/reillypascal/personalsite-ssg/blob/main/LICENSE">MIT License</a> :: Music &copy; & &copysr; Reilly Spitzfaden</p>
             </footer>
