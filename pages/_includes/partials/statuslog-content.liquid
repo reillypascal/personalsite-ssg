@@ -1,4 +1,4 @@
-{% assign latest_status = collections.status | slice: -1, 1 %}
+{%- assign latest_status = collections.status | slice: -1, 1 -%}
 
 {{ latest_status[0].content }}
 

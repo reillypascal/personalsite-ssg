@@ -42,7 +42,7 @@ description: I'm Reilly Spitzfaden, a composer who likes noise, code, electronic
             </div>
         </article>
         
-        {% comment %} <article>
+        {%- comment %} <article>
             <h3><a href="https://www.youtube.com/watch?v=t_gxCOcNJr8"><cite>Everything lost along the way</cite></a></h3>
             
             <p>Part of my Eastman PhD dissertation was featured on <a href="https://www.scorefollower.org/">Score Follower</a>'s YouTube channel. I composed a set of three pieces using MIDI keyboards and Max/MSP. Some of the keyboard range plays electric piano sounds &mdash; in this one, I used <a href="https://asb2m10.github.io/dexed/">Dexed</a> to emulate the classic 80s Yamaha DX7 “E.PIANO 1” sound. Other parts of the keyboard play databending and shortwave radio samples, or trigger noise synthesizers.</p> 
@@ -53,7 +53,7 @@ description: I'm Reilly Spitzfaden, a composer who likes noise, code, electronic
                 <lite-youtube videoid="t_gxCOcNJr8" style="background-image: url('https://i.ytimg.com/vi/t_gxCOcNJr8/hqdefault.jpg');">
                 </lite-youtube>
             </div>
-        </article> {% endcomment %}
+        </article> {%- endcomment %}
 
         <article>
             <h3><a href="https://applytriangle.bandcamp.com/track/if-this-reaches-you"><cite>If this reaches you</cite></a></h3>
@@ -98,12 +98,12 @@ description: I'm Reilly Spitzfaden, a composer who likes noise, code, electronic
         
         <h2 class="sectionHeader">Recent Posts</h2>
             {% assign recent_posts = collections.post | slice: -3, 3 %}
-            {%- for item in recent_posts reversed -%}
+            {%- for item in recent_posts reversed %}
             <section>
                 <h3><a href="{{item.url}}">{{ item.data.title }}</a></h3>
                 <p>{{ item.data.description }}</p>
             </section>
-            {%- endfor -%}
+            {%- endfor %}
     </div>
 
     <section id="homepageStatus">
