@@ -14,7 +14,7 @@ json_dict = json.loads(res.decode("utf-8"))
 
 webmentions = { "mentions" : [] }
 for entry in json_dict.get("children"):
-    if "https://brid.gy/" not in entry.get("wm-source"):
+    if ("https://brid.gy/" not in entry.get("wm-source")) and ("https://bsky.brid.gy/" not in entry.get("wm-source")):
         webmentions.get("mentions").append(entry)
 
 output_filename = 'webmentions.json'
