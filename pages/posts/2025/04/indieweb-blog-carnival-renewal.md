@@ -25,7 +25,7 @@ I have a similar desire to tinker on and “renew” my site, and recently that 
 
 ### Writing about Projects
 
-I have received positive feedback for some of the writing I've done here, and I find myself chasing the high of having someone else appreciate something I've made. The kind of writing that I most want to do requires an additional step beforehand. I want to do write-ups of interesting code or music projects and that requires me to actually do a code or music project. Because the writing I'm most proud of requires these steps beforehand, when I contemplate writing for my blog I'm really thinking of two separate things — the project itself and then the writeup.
+I have received positive feedback for some of the writing I've done here, and I find myself chasing the high of having someone else appreciate something I've made. The kind of writing that I most want to do requires an additional step beforehand. I want to do write-ups of interesting code or music projects and that requires me to actually do a code or music project. Because the writing I'm most proud of requires these extra steps, when I contemplate writing for my blog I'm really thinking of two separate things — the project itself and then the writeup.
 
 Since this site is one of the more public-facing expressions of my skills and personality, small changes to it can feel like easy ways to seek validation of those skills. Rather than having to do a whole project and then still know I need to complete a writeup, if I add an interesting feature to the site, I can share about that on Mastodon or Bluesky and the feature is immediately legible to a viewer without needing much of a writeup to communicate it. 
 
