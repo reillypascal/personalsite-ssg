@@ -1,8 +1,8 @@
 ---
 title: Databending Part 4 — Codecs & Realtime Glitches
-description: Today I'm returning to a lo-fi cellphone codec plugin and breaking/glitching the codec in real time!
+description: Today I'm returning to a lo-fi cellphone codec plugin, and I'm breaking/glitching the codec in real time!
 fedi_url:
-date: 2025-04-12T15:40:36-0400
+date: 2025-05-01T00:00:00-0400
 octothorpes:
   - Art
   - Audio
