@@ -1,6 +1,6 @@
 ---
 title: IndieWeb Blog Carnival — “Renewal”
-description: I often feel compelled to tweak and redesign my website. I talk about how I would prefer to spend my time, and avoiding treating my leisure and projects as if I need to impress someone.
+description: I often feel compelled to tweak and redesign my website at the expense of other things I value. I talk about reconnecting with what I most enjoy about composing and coding, and avoiding treating my leisure and projects as if I need to impress someone.
 fedi_url:
 og_image: 
 og_image_width: 
