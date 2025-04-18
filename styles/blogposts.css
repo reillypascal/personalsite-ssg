@@ -28,6 +28,10 @@
     }
 }
 
+article h3 {
+    margin-top: 48px;
+}
+
 /* after post */
 .blogPostAsterism {
     font-size: 16pt;
