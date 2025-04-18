@@ -40,4 +40,8 @@ tags:
 post_series: 
 draft: true
 ---
+
+<a href="https://news.indieweb.org/en" class="u-syndication indienews">
+  Also posted on IndieNews
+</a>
 EOF

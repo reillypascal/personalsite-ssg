@@ -24,6 +24,7 @@
 @media screen and (min-width: 660px) {
     .e-content {
         /* this is an h-entry tag */
+        /* smaller on bottom because asterism looks funny when it's in the center and there's extra space to the upper left of it */
         margin: 48px 0 40px 0;
     }
 }

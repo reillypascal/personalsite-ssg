@@ -133,10 +133,17 @@ h6 {
     font-family: "Born2bSportyV2", sans-serif;
     /* cancels out offset for :root */
     text-underline-offset: auto;
-    letter-spacing: 0.005em;
+    letter-spacing: 0.005rem;
 }
 header {
     font-size: 1.625em;
+    & h1 {
+        /* remove default styling for h1; h1 only syntactic, no presentation change */
+        font-size: inherit;
+        font-weight: normal;
+        margin: 0;
+        padding: 0;
+    }
     & .dropdown-content {
         font-size: 0.95em;
     }
