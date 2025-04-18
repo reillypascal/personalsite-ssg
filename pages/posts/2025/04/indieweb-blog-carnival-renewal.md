@@ -74,3 +74,7 @@ What do I want to do with this information about how I approach the things I enj
 I also want to allow myself to write about exactly what interests me, regardless of how I think it will be received. For example, I've [written](/posts/2024/11/connecting-notation-programs-to-maxmsp/) a [few posts](/posts/2024/05/composition-journal/) about [sound design in Max/MSP](/posts/2024/02/composition-journal/) and they seemed not to get as much attention as some of the other posts I've done. This wasn't a surprise — Max/MSP is a little niche, and in contrast, some of my [posts](/posts/2025/01/databending-part-1/) on [databending](/posts/2025/02/databending-part-2/) have a lower bar of entry, only requiring basic use of the Audacity sound editor or a hex editor. It may also be that I had fewer people following me at the time that I posted about Max/MSP. Regardless, I don't want to allow chasing “likes” to dictate what I write, and I think it would be nice to write more about what I do with Max/MSP.
 
 Overall, I want to take a step back and reconnect with my interests in a way that affirms what I most enjoy about them and lets go of the need to impress or be “productive” — a renewal of sorts for the spring.
+
+<a href="https://news.indieweb.org/en" class="u-syndication indienews">
+  Also posted on IndieNews
+</a>

@@ -24,7 +24,7 @@
 @media screen and (min-width: 660px) {
     .e-content {
         /* this is an h-entry tag */
-        margin: 48px 0;
+        margin: 48px 0 40px 0;
     }
 }
 
@@ -134,4 +134,11 @@ article h3 {
     width: fit-content;
     padding-bottom: 8px;
     border-bottom: 1px solid var(--accent-med-light);
+}
+
+.indienews {
+    padding: 4px 0 4px 8px;
+    margin: 32px 0 0 8px;
+    display: flow-root;
+    border-left: 1px solid var(--accent-med-light);
 }
