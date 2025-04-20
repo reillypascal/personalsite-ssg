@@ -222,13 +222,13 @@ document.addEventListener("DOMContentLoaded", () => {
     webmentionTarget.setAttribute("value", blogPostURL);
   }
   // add comment form handlers if element exists
-  if (document.getElementById("comment-form")) {
-    const commentForm = document.getElementById("comment-form");
-    const getCommentButton = document.getElementById("load-comments");
+  // if (document.getElementById("comment-form")) {
+  //   const commentForm = document.getElementById("comment-form");
+  //   const getCommentButton = document.getElementById("load-comments");
 
-    commentForm.addEventListener("submit", handleSubmitComment);
-    getCommentButton.addEventListener("click", handleGetComments);
-  }
+  //   commentForm.addEventListener("submit", handleSubmitComment);
+  //   getCommentButton.addEventListener("click", handleGetComments);
+  // }
   // add react button handlers if element exists
   if (document.getElementById("react-btn")) {
     const reactBtn = document.getElementById("react-btn");
