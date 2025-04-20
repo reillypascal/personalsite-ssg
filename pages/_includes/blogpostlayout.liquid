@@ -34,23 +34,9 @@ title: Reilly Spitzfaden, Composer
     </article>
     
     <article>
-        <div class="webmentionForm">
-            <form id="webmention-form" action="https://webmention.io/reillyspitzfaden.com/webmention" method="POST">
-                <h2 class="sectionHeader">Send me a webmention</h2>
-                <p>
-                    <label for="webmention-form">This post accepts <a href="https://en.wikipedia.org/wiki/Webmention">webmentions</a>. If you link to and write about this on your website, you can enter the web address of your post below:</label>
-                </p>
-
-                <input id="webmention-source" type="url" autocomplete="url" required="" pattern="^https?:\/\/(.*)" name="source" placeholder="URL/Permalink of your article" class="error" aria-invalid="true">
-                
-                <input id="webmention-submit" type="submit" name="submit" value="Ping me!">
-
-                <input id="webmention-format" type="hidden" name="format" value="html">
-                <input id="webmention-target" type="hidden" name="target" value="">
-            </form>
-        </div>
+        {% include "partials/webmention-form.liquid" %}    
             
-        {% comment %} <div class="commentSection">
+        {%- comment %} <div class="commentSection">
             <form id="comment-form" name="comments" action="" method="POST">
                 <h2 class="sectionHeader">Leave a comment</h2>
                 <fieldset>
@@ -68,7 +54,7 @@ title: Reilly Spitzfaden, Composer
                 <input type="submit" id="load-comments" value="Load Comments">
                 <div id="comment-section"></div>
             </div>
-        </div> {% endcomment %}
+        </div> {% endcomment -%}
     </article>
 </main>
 

@@ -3,6 +3,7 @@ layout: mainlayout.liquid
 title: Reilly Spitzfaden, Composer
 ---
 <link rel="stylesheet" type="text/css" href="/styles/blogposts.css" />
+<link rel="stylesheet" type="text/css" href="/styles/forms.css" />
 <link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
 
 <main role="main" id="content">
@@ -23,6 +24,11 @@ title: Reilly Spitzfaden, Composer
         {% include "partials/post-interactions.liquid" %}
 
     </article>
+
+    <article>
+        {% include "partials/webmention-form.liquid" %}    
+    </article>
+
 </main>
 
 <script>
