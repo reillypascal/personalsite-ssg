@@ -1,13 +1,13 @@
 ---
 title: How to Explore Samples in 2D | Max/MSP & Pd
 description: 
-fedi_url:
-og_image: 
-og_image_width: 
-og_image_height: 
+fedi_url: 
 date: 2025-04-22T13:08:55-0400
 octothorpes:
-  - 
+  - Audio
+  - audio
+  - Art
+  - music
 tags:
   - post
 post_series: 

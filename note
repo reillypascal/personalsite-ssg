@@ -22,7 +22,7 @@ fullpath=pages/notes/$year/$month/$slug.md
 cat >> $fullpath << EOF && codium $fullpath
 ---
 title: $name
-fedi_url:
+fedi_url: 
 og_image: 
 og_image_width: 
 og_image_height: 
