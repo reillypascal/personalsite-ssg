@@ -102,7 +102,7 @@ Welcome to the source code - here, have some frogs!
         {%- endif %}
         
     </head>
-    <body onresize="hamburgerOnOff()">
+    <body>
         <a class="skip-link" href="#content">Skip to content</a>
         <!-- includes footer - makes it fill the page -->
         <div class="wrapper">
@@ -114,8 +114,14 @@ Welcome to the source code - here, have some frogs!
                     </a>
                 </div>
                 <nav>
-                    <h1><a href="/" class="navElementHome">Reilly Spitzfaden</a></h1>
-                    <button onclick="hamburgerToggle()" class="dropbtn navIcon" aria-label="Open the menu">    
+                    <h1 class="name-heading"><a href="/" class="navElementHome">Reilly Spitzfaden</a></h1>
+                    {% comment %} <div class="hamburger-contents"> {% endcomment %}
+                    <button 
+                        class="dropbtn navIcon" 
+                        aria-label="Open the menu"
+                        aria-expanded="false"
+                        aria-controls="menu-dropdown"
+                    >    
                         <img src="/media/menu-aliceblue-32px.svg" alt="menu button" class="icon-svg hamburger-svg" height="32" width="32"></img>
                     </button>
                     <div id="menuLinks">
@@ -193,6 +199,8 @@ Welcome to the source code - here, have some frogs!
                         </div>
                         <div class="navElement"><a href="/feeds">RSS</a></div>
                     </div>
+                    <!-- end hamburger-contents -->
+                    {% comment %} </div> {% endcomment %}
                 </nav>
             </header>
             

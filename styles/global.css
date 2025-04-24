@@ -366,6 +366,17 @@ input[type="checkbox"]:not(:checked) ~ #blog-dropdown-content {
     #menuLinks {
         display: none;
     }
+    .dropdown-content {
+        position: static;
+    }
+    nav {
+        &:focus,
+        &:focus-within {
+            #menuLinks {
+                display: block;
+            }
+        }
+    }
 }
 
 /* Handles switching between hamburger menu and regular */
