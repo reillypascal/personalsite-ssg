@@ -53,7 +53,7 @@ Welcome to the source code - here, have some frogs!
 
         <!-- My styles -->
         <link rel="stylesheet" type="text/css" href="/styles/global.css" />
-        <script src="/styles/menus.js"></script>
+        {%- comment %} <script src="/styles/menus.js"></script> {%- endcomment %}
 
         <!-- Fonts -->
         <link rel="preload" href="/styles/fonts/opensans/opensans-variablefont_wdthwght-webfont.woff2" as="font" type="font/woff2" crossorigin>
@@ -121,7 +121,12 @@ Welcome to the source code - here, have some frogs!
                     <div id="menuLinks">
                         <div class="navElement">
                             <div id="about-dropdown" class="dropdown">
-                                <button onclick="showDropdown('about-dropdown-content')" class="dropbtn">
+                                <button 
+                                    type="button"
+                                    class="dropbtn"
+                                    aria-expanded="false"
+                                    aria-controls="about-dropdown" 
+                                >
                                     About<img src="/media/ui/chevron-down-svgrepo-com.svg" alt="dropdown menu arrow for 'about' section" height="11" width="18" />
                                 </button>
                                 <div id="about-dropdown-content" class="dropdown-content">
@@ -132,7 +137,12 @@ Welcome to the source code - here, have some frogs!
                         </div>
                         <div class="navElement">
                             <div id="music-dropdown" class="dropdown">
-                                <button onclick="showDropdown('music-dropdown-content')" class="dropbtn">
+                                <button 
+                                    type="button"
+                                    class="dropbtn"
+                                    aria-expanded="false"
+                                    aria-controls="music-dropdown" 
+                                >
                                     Music<img src="/media/ui/chevron-down-svgrepo-com.svg" alt="dropdown menu arrow for 'music' section" height="11" width="18" />
                                 </button>
                                 <div id="music-dropdown-content" class="dropdown-content">
@@ -145,8 +155,13 @@ Welcome to the source code - here, have some frogs!
                             </div>
                         </div>
                         <div class="navElement">
-                            <div id="posts-dropdown" class="dropdown">
-                                <button onclick="showDropdown('blog-dropdown-content')" class="dropbtn">
+                            <div id="writing-dropdown" class="dropdown">
+                                <button 
+                                    type="button"
+                                    class="dropbtn"
+                                    aria-expanded="false"
+                                    aria-controls="writing-dropdown" 
+                                >
                                     Writing<img src="/media/ui/chevron-down-svgrepo-com.svg" alt="dropdown menu arrow for 'writing' section" height="11" width="18" />
                                 </button>
                                 <div id="blog-dropdown-content" class="dropdown-content">
@@ -159,9 +174,14 @@ Welcome to the source code - here, have some frogs!
                         </div>
                         <div class="navElement"><a href="/code">Code</a></div>
                         <div class="navElement">
-                            <div id="posts-dropdown" class="dropdown">
+                            <div id="site-info-dropdown" class="dropdown">
                                 
-                                <button onclick="showDropdown('site-info-dropdown-content')" class="dropbtn">
+                                <button 
+                                    type="button"
+                                    class="dropbtn"
+                                    aria-expanded="false"
+                                    aria-controls="site-info-dropdown" 
+                                >
                                     Site Info<img src="/media/ui/chevron-down-svgrepo-com.svg" alt="dropdown menu arrow for 'site info' section" height="11" width="18" />
                                 </button>
                                 

@@ -86,12 +86,12 @@ function hideDropdown(event) {
   // }
 }
 
-window.addEventListener('click', hideDropdown);
+// window.addEventListener('click', hideDropdown);
 
-// wait until window fully loads before adding event listeners to dropdowns
-window.addEventListener("load", (event) => {
-  let checkboxes = document.getElementsByClassName("dropdown-checkbox");
-  for (const element of checkboxes) {
-    element.addEventListener("click", dropdownCleanup);
-  }
-});
+// // wait until window fully loads before adding event listeners to dropdowns
+// window.addEventListener("load", (event) => {
+//   let checkboxes = document.getElementsByClassName("dropdown-checkbox");
+//   for (const element of checkboxes) {
+//     element.addEventListener("click", dropdownCleanup);
+//   }
+// });

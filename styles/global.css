@@ -292,6 +292,7 @@ nav {
     }
 
     & .dropdown-content {
+        background-color: var(--bg-dark);
         /* adds margins when in hamburger mode */
         margin: 8px 0;
         display: none;
@@ -326,15 +327,13 @@ nav {
     }
 }
 
-.show {
-    display: block !important;
-}
-
-.dropdown-content {
-    background-color: var(--bg-dark);
-    /* display: none; */
-    display: block;
-    /* z-index: 1; */
+.dropdown {
+    &:focus,
+    &:focus-within {
+        .dropdown-content {
+            display: block !important;
+        }
+    }
 }
 
 /* input[type="checkbox"] {
