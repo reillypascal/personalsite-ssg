@@ -1,6 +1,6 @@
 ---
-title: How to Explore Samples in 2D | Max/MSP & Pd
-description: 
+title: How to Explore Samples in 2D — Max/MSP & Pd
+description: Want to explore a large collection of samples or a complex databending session without getting overwhelmed? Read on to find out how!
 fedi_url: 
 date: 2025-04-22T13:08:55-0400
 octothorpes:
@@ -22,24 +22,30 @@ In that post I noted that
 
 The first problem is that there are a limited number of ways the program file data will sound. As I mention in “Databending Part 1,” when I hunt through the program files on my Macintosh, I notice the same sounds cropping up again and again, likely due to re-use of code between programs. Even putting aside the literal repetition, at a certain level of sonic complexity, it can become difficult to track the individuality of a sound or pattern, and my ear tends to fall back on perceiving the overall “vibe.” 
 
+In addition to seeking variety over the body of sounds, I want to have variety between occurrences of a sound in a composition. What once sounded chaotic and rhythmically varied rapidly becomes familiar if I play a rhythmically-distinctive sample multiple times. It would be nice to have the presentation of a sample vary between occurrences, keeping a similar character without repeating a pattern exactly.
+
 Today, I'll talk about ways to change the quality of these databending sounds, pulling together segments with related characteristics to create something new. This is all possible to do yourself with either Max/MSP or Pure Data/plugdata. Let's get into it!
 
 ### The Tools
 
 
-### Loading Externals
-
-The FluCoMa externals for Pure Data/plugdata can be dowloaded [here](https://github.com/flucoma/flucoma-pd/releases). Externals go in the folder ~/Documents/Pd/externals/ (or ~/Documents/plugdata/externals/). In Pure Data, add an object (cmd + 1 or ctrl + 1) and type `declare -lib FluidCorpusManipulation -path FluidCorpusManipulation`. The \[declare] object makes a set of externals available in a given patch, and this syntax will bring in FluCoMa. The same method works in plugdata, or you can make externals always available without the \[declare] object. To do this, go to Settings > Paths > Add Search Path, and add the folder ~/Documents/plugdata/externals/FluidCorpusManipulation.
 
 In Max/MSP, simply go to File > Show Package Manager, and search for “FluCoMa” or “MuBu.” Once you install a package via the manager, it is globally available.
 
 ### Exploring a Collection with FluCoMa
+
+### Resources
+
+look up Diemo Schwarz concatenative synthesis
+
+### Learning Resources
 
 
 
 Mubu
 - <https://github.com/ircam-ismm/catart-mubu>
 	- <https://cycling74.com/packages/catart-mubu>
+  - <https://rodrigoconstanzo.com/sp-tools/>
 Flucoma
 - <https://learn.flucoma.org/learn/2d-corpus-explorer/>
 	- <https://github.com/flucoma/flucoma-pd>
@@ -59,8 +65,6 @@ In other words, while the serial compositional techniques of the era involved a 
 
 [^1]: Explain total serialism, link to resource (either music theory site or wiki)
 
-[^2]: Iannis Xenakis, <cite>Formalized Music</cite>
-
-	- <https://monoskop.org/images/7/74/Xenakis_Iannis_Formalized_Music_Thought_and_Mathematics_in_Composition.pdf> (p. 8)
+[^2]: Iannis Xenakis, <cite>Formalized Music</cite> — <https://monoskop.org/images/7/74/Xenakis_Iannis_Formalized_Music_Thought_and_Mathematics_in_Composition.pdf> (p. 8)
 
 [^3]: Include Klavierstuck link
