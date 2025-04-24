@@ -261,6 +261,12 @@ nav {
     display: grid;
     grid-template: 1em / auto auto;
 
+    & .hamburger-contents {
+        position: relative;
+        display: grid;
+        /* grid-template: auto auto / 1em; */
+    }
+
     & a {
         display: block;
     }
@@ -310,7 +316,7 @@ nav {
         padding: 0 !important;
     }
 
-    & .navIcon {
+    & .navIcon, .hamburger-contents {
         /* keeps on right side of screen */
         margin-left: auto !important;
     }
@@ -369,6 +375,7 @@ input[type="checkbox"]:not(:checked) ~ #blog-dropdown-content {
     .dropdown-content {
         position: static;
     }
+    /* .hamburger-contents, */
     nav {
         &:focus,
         &:focus-within {
@@ -377,6 +384,16 @@ input[type="checkbox"]:not(:checked) ~ #blog-dropdown-content {
             }
         }
     }
+    /* .navIcon:focus, 
+    .navIcon:focus-within {
+        + #menuLinks {
+            display: block;
+        }
+    }
+    #menuLinks:focus,
+    #menuLinks:focus-within {
+        display: block;
+    } */
 }
 
 /* Handles switching between hamburger menu and regular */
