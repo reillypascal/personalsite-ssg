@@ -323,15 +323,17 @@ nav {
     }
 }
 
-/* when clicked, switches to pointer and allows closing */
-/* remove this when JavaScript running */
-.dropbtn.navIcon:focus {  
-    pointer-events: none;  
-}
-/* if I do this in hamburger, *whole thing* closes */
-@media screen and (min-width: 60em) {
-    .dropdown .dropbtn:focus {
-        pointer-events: none;
+/* only when JS disabled */
+@media (scripting: none) {
+    /* when clicked, switches to pointer and allows closing */
+    .dropbtn.navIcon:focus {  
+        pointer-events: none;  
+    }
+    /* if I do this in hamburger, *whole thing* closes */
+    @media screen and (min-width: 60em) {
+        .dropdown .dropbtn:focus {
+            pointer-events: none;
+        }
     }
 }
 
