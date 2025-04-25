@@ -53,7 +53,7 @@ Welcome to the source code - here, have some frogs!
 
         <!-- My styles -->
         <link rel="stylesheet" type="text/css" href="/styles/global.css" />
-        {%- comment %} <script src="/styles/menus.js"></script> {%- endcomment %}
+        <script src="/styles/menus.js"></script>
 
         <!-- Fonts -->
         <link rel="preload" href="/styles/fonts/opensans/opensans-variablefont_wdthwght-webfont.woff2" as="font" type="font/woff2" crossorigin>
@@ -118,6 +118,7 @@ Welcome to the source code - here, have some frogs!
                     <div class="hamburger-contents">
                         <button 
                             class="dropbtn navIcon" 
+                            id="hamburger-button"
                             aria-label="Open the menu"
                         >    
                             <img src="/media/menu-aliceblue-32px.svg" alt="menu button" class="icon-svg hamburger-svg" height="32" width="32"></img>
@@ -127,6 +128,7 @@ Welcome to the source code - here, have some frogs!
                                 <div id="about-dropdown" class="dropdown">
                                     <button 
                                         type="button"
+                                        id="about-button"
                                         class="dropbtn"
                                     >
                                         About<img src="/media/ui/chevron-down-svgrepo-com.svg" alt="dropdown menu arrow for 'about' section" height="11" width="18" />
@@ -141,6 +143,7 @@ Welcome to the source code - here, have some frogs!
                                 <div id="music-dropdown" class="dropdown">
                                     <button 
                                         type="button"
+                                        id="music-button"
                                         class="dropbtn"
                                     >
                                         Music<img src="/media/ui/chevron-down-svgrepo-com.svg" alt="dropdown menu arrow for 'music' section" height="11" width="18" />
@@ -158,6 +161,7 @@ Welcome to the source code - here, have some frogs!
                                 <div id="writing-dropdown" class="dropdown">
                                     <button 
                                         type="button"
+                                        id="writing-button"
                                         class="dropbtn"
                                     >
                                         Writing<img src="/media/ui/chevron-down-svgrepo-com.svg" alt="dropdown menu arrow for 'writing' section" height="11" width="18" />
@@ -176,9 +180,8 @@ Welcome to the source code - here, have some frogs!
                                     
                                     <button 
                                         type="button"
+                                        id="site-info-button"
                                         class="dropbtn"
-                                        aria-expanded="false"
-                                        aria-controls="site-info-dropdown" 
                                     >
                                         Site Info<img src="/media/ui/chevron-down-svgrepo-com.svg" alt="dropdown menu arrow for 'site info' section" height="11" width="18" />
                                     </button>
