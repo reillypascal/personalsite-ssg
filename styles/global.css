@@ -220,6 +220,7 @@ nav {
         /* z-index needed because .hamburger-contents overlaps */
         z-index: 1;
         width: fit-content;
+        height: fit-content; /* necessary so it doesn't overlap hamburger content, prevent clicking */
     }
 
     & .hamburger-contents {
