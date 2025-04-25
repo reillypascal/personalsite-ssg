@@ -325,10 +325,15 @@ nav {
 
 /* when clicked, switches to pointer and allows closing */
 /* remove this when JavaScript running */
-.dropbtn.navIcon:focus,
-.dropdown .dropbtn:focus {  
+.dropbtn.navIcon:focus {  
     pointer-events: none;  
-}  
+}
+/* if I do this in hamburger, *whole thing* closes */
+@media screen and (min-width: 60em) {
+    .dropdown .dropbtn:focus {
+        pointer-events: none;
+    }
+}
 
 /* toggles hamburger menu on/off */
 /* only apply toggle logic if screen is right size */
