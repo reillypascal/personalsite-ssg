@@ -257,14 +257,29 @@ footer {
 
 nav {
     margin: 16px 0 16px;
+    /* padding-bottom: 0; */
     position: relative;
     display: grid;
-    grid-template: 1em / auto auto;
+    /* grid-template: 1em / auto auto; */
+
+    > * {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
 
     & .hamburger-contents {
+        /* top: -1em; */
+        /* grid-column-start: 1; */
         position: relative;
         display: grid;
-        /* grid-template: auto auto / 1em; */
+        grid-template-rows: 1em auto;
+        width: 100%;
+        & #menuLinks {
+            grid-column-start: 1;
+            grid-row-start: 2;
+            background-color: var(--bg-dark);
+            margin-right: auto;
+        }
     }
 
     & a {
@@ -375,8 +390,7 @@ input[type="checkbox"]:not(:checked) ~ #blog-dropdown-content {
     .dropdown-content {
         position: static;
     }
-    /* .hamburger-contents, */
-    nav {
+    .hamburger-contents {
         &:focus,
         &:focus-within {
             #menuLinks {
