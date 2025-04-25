@@ -121,7 +121,7 @@ Welcome to the source code - here, have some frogs!
                             id="hamburger-button"
                             aria-label="Open the menu"
                         >    
-                            <img src="/media/menu-aliceblue-32px.svg" alt="menu button" class="icon-svg hamburger-svg" height="32" width="32"></img>
+                            <img src="/media/menu-aliceblue-32px.svg" alt="menu button" class="icon-svg hamburger-svg" height="32" width="32" />
                         </button>
                         <div id="menuLinks">
                             <div class="navElement">
@@ -130,6 +130,7 @@ Welcome to the source code - here, have some frogs!
                                         type="button"
                                         id="about-button"
                                         class="dropbtn"
+                                        aria-controls="about-dropdown-content"
                                     >
                                         About<img src="/media/ui/chevron-down-svgrepo-com.svg" alt="dropdown menu arrow for 'about' section" height="11" width="18" />
                                     </button>
@@ -145,6 +146,7 @@ Welcome to the source code - here, have some frogs!
                                         type="button"
                                         id="music-button"
                                         class="dropbtn"
+                                        aria-controls="music-dropdown-content"
                                     >
                                         Music<img src="/media/ui/chevron-down-svgrepo-com.svg" alt="dropdown menu arrow for 'music' section" height="11" width="18" />
                                     </button>
@@ -163,10 +165,11 @@ Welcome to the source code - here, have some frogs!
                                         type="button"
                                         id="writing-button"
                                         class="dropbtn"
+                                        aria-controls="writing-dropdown-content"
                                     >
                                         Writing<img src="/media/ui/chevron-down-svgrepo-com.svg" alt="dropdown menu arrow for 'writing' section" height="11" width="18" />
                                     </button>
-                                    <div id="blog-dropdown-content" class="dropdown-content">
+                                    <div id="writing-dropdown-content" class="dropdown-content">
                                         <a href="/blog">Blog</a>
                                         <a href="/notes">Notes</a>
                                         <a href="/interactions">Interactions</a>
@@ -182,6 +185,7 @@ Welcome to the source code - here, have some frogs!
                                         type="button"
                                         id="site-info-button"
                                         class="dropbtn"
+                                        aria-controls="site-info-dropdown-content"
                                     >
                                         Site Info<img src="/media/ui/chevron-down-svgrepo-com.svg" alt="dropdown menu arrow for 'site info' section" height="11" width="18" />
                                     </button>
