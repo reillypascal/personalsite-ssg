@@ -240,6 +240,9 @@ footer {
 }
 
 /* ######## Header and Nav ########*/
+header {
+    padding-bottom: 0;
+}
 #cardImg {
     display: inline-flex;
     flex-flow: row wrap;
@@ -274,12 +277,26 @@ nav {
         display: grid;
         grid-template-rows: 1em auto;
         width: 100%;
-        & #menuLinks {
-            grid-column-start: 1;
-            grid-row-start: 2;
-            background-color: var(--bg-dark);
-            margin-right: auto;
+
+        @media screen and (max-width: 59.9999em) {
+            & #menuLinks {
+                grid-column-start: 1;
+                grid-row-start: 2;
+                margin-right: auto;
+            }
         }
+
+        @media screen and (min-width: 60em) {
+            & #menuLinks {
+                grid-row-start: 1;
+                margin-left: auto;
+            }
+        }
+
+        /* want to move this up */
+        /* & .hamburger-svg {
+            top: -2px;
+        } */
     }
 
     & a {
@@ -336,10 +353,6 @@ nav {
         margin-left: auto !important;
     }
 
-    /* want to move this up */
-    /* & .hamburger-svg {
-    } */
-
     & .dropbtn > img {
         fill: var(--fg-light) !important;
         /* color: var(--fg-light); */
@@ -375,14 +388,14 @@ input[type="checkbox"]:not(:checked) ~ #blog-dropdown-content {
     display: none;
 } */
 
-#menuLinks {
-    /* hamburger menu shown unless box not checked */
+/* hamburger menu shown unless box not checked */
+/* #menuLinks {
     display: block;
-}
+} */
 
 /* toggles hamburger menu on/off */
 /* only apply toggle logic if screen is right size */
-@media screen and (max-width: 924px) {
+@media screen and (max-width: 59.9999em) {
     /* hamburger menu contents hidden if box not checked */
     #menuLinks {
         display: none;
@@ -411,15 +424,13 @@ input[type="checkbox"]:not(:checked) ~ #blog-dropdown-content {
 }
 
 /* Handles switching between hamburger menu and regular */
-@media screen and (min-width: 925px) {
-    header {
-        padding-bottom: 0;
-    }
+@media screen and (min-width: 60em) {
     nav {
-        position: relative;
+        /* don't need this now that it's using grid */
+        /* position: relative;
         display: flex;
         flex-flow: row wrap;
-        justify-content: space-between;
+        justify-content: space-between; */
 
         & .navIcon {
             display: none;
