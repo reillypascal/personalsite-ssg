@@ -23,46 +23,11 @@
     font-display: swap;
 }
 
-/* @font-face {
-    font-family: "Proza Libre";
-    src:
-        url("/styles/fonts/prozalibre/prozalibre-regular-webfont.woff2")
-            format("woff2");
-    font-weight: 400;
-    font-display: swap;
-}
-@font-face {
-    font-family: "Proza Libre";
-    src:
-        url("/styles/fonts/prozalibre/prozalibre-italic-webfont.woff2")
-            format("woff2");
-    font-weight: 400;
-    font-style: italic;
-    font-display: swap;
-} */
-
-/* http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice */
-/* Avoid using max- and min- widths and heights with the border-box model. They are known to cause browser problems. */
-/* html {box-sizing: border-box;}
-*, *:before, *:after {box-sizing: inherit;} */
-
 :root {
-    /* font-family: "Alegreya Sans", sans-serif; */
     font-family: "Open Sans", sans-serif;
-    /* font-family: "Proza Libre", sans-serif; */
     font-weight: 400;
     /* canceled out for elements with display font */
     text-underline-offset: 0.2em;
-
-    /* color variables */
-    /* --bg-dark: #111318; */
-    /* --bg-dark: #181920; */
-    /* --bg-dark: #191a22; */
-    /* --fg-light: #d2dde6; */
-
-    /* --bg-dark: hsl(243deg 16% 14%);
-    --fg-light: #d2dde6;
-    --fg-med-light: hsla(208, 15%, 67%, 1); */
 
     --bg-dark: hsl(227, 26%, 11%);
     --bg-med-dark: hsl(227, 12%, 17%);
@@ -72,15 +37,7 @@
 
     --accent-med-light: hsl(327, 55%, 75%);
     --accent-med: hsl(327, 25%, 53%);
-    /* --accent-light: #e09cc9;
-    --accent-med-light: #c387af; */
-    /* --accent-med: #a66a94; */
     --accent-dark: #4d1d3e;
-
-    /* --accent-light: #e09cc9;
-    --accent-med-light: #c387af;
-    --accent-med: #565973;
-    --accent-dark: #363847; */
 
     /* size variables */
     --global-margin: 16px;
@@ -89,14 +46,6 @@
     --p-line-height: 1.75;
     --section-header-padding: 6px;
 }
-
-/* p,
-ul li,
-ol li,
-blockquote,
-table {
-    font-size: 1.05em;
-} */
 
 @media screen and (min-width: 768px) {
     :root {
@@ -157,9 +106,6 @@ h3 {
 h4 {
     font-size: 1.125em;
 }
-/* footer {
-    font-size: 1.25em;
-} */
 
 /* ######## sticky footer ######## */
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Sticky_footers#alternate_method */
@@ -241,7 +187,7 @@ footer {
 
 /* ######## Header and Nav ########*/
 header {
-    padding-bottom: 0;
+    padding-bottom: 4px;
 }
 #cardImg {
     display: inline-flex;
@@ -268,6 +214,12 @@ nav {
     > * {
         grid-column-start: 1;
         grid-row-start: 1;
+    }
+
+    & .name-heading {
+        /* z-index needed because .hamburger-contents overlaps */
+        z-index: 1;
+        width: fit-content;
     }
 
     & .hamburger-contents {
@@ -370,29 +322,6 @@ nav {
     }
 }
 
-/* input[type="checkbox"] {
-    appearance: none !important;
-    --webkit-appearance: none !important;
-    display: none !important;
-    visibility: hidden !important;
-} */
-
-
-/* input[type="checkbox"]:not(:checked) ~ #about-dropdown-content {
-    display: none;
-}
-input[type="checkbox"]:not(:checked) ~ #music-dropdown-content {
-    display: none;
-}
-input[type="checkbox"]:not(:checked) ~ #blog-dropdown-content {
-    display: none;
-} */
-
-/* hamburger menu shown unless box not checked */
-/* #menuLinks {
-    display: block;
-} */
-
 /* toggles hamburger menu on/off */
 /* only apply toggle logic if screen is right size */
 @media screen and (max-width: 59.9999em) {
@@ -411,27 +340,11 @@ input[type="checkbox"]:not(:checked) ~ #blog-dropdown-content {
             }
         }
     }
-    /* .navIcon:focus, 
-    .navIcon:focus-within {
-        + #menuLinks {
-            display: block;
-        }
-    }
-    #menuLinks:focus,
-    #menuLinks:focus-within {
-        display: block;
-    } */
 }
 
 /* Handles switching between hamburger menu and regular */
 @media screen and (min-width: 60em) {
     nav {
-        /* don't need this now that it's using grid */
-        /* position: relative;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between; */
-
         & .navIcon {
             display: none;
         }
@@ -551,11 +464,6 @@ figcaption {
         margin-left: 1em;
     }
 }
-
-/* aside {
-    font-style: italic;
-    margin-left: 24px;
-} */
 
 /* ######## Decorations ######## */
 .sectionHeader {
