@@ -21,6 +21,3 @@ post_series: databending
 draft: true
 ---
 
-<a href="https://news.indieweb.org/en" class="u-syndication indienews">
-  Also posted on IndieNews
-</a>
