@@ -2,7 +2,7 @@
 title: How to Explore Samples in 2D — Max/MSP & Pd
 description: Want to explore a large collection of samples or a complex databending session without getting overwhelmed? Read on to find out how!
 fedi_url: 
-date: 2025-04-22T13:08:55-0400
+date: 2025-05-15T13:08:55-0400
 octothorpes:
   - Audio
   - audio
