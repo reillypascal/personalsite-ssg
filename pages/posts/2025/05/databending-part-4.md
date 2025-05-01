@@ -5,7 +5,7 @@ fedi_url:
 og_image: /media/blog/2025/05/databending-part-4/libicudata.73.1.jpg
 og_image_width: 1200
 og_image_height: 630
-date: 2025-05-02T12:30:00-0400
+date: 2025-05-01T17:24:00-0400
 octothorpes:
   - Art
   - Audio
