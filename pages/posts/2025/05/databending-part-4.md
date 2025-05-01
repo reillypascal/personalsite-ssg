@@ -249,6 +249,6 @@ The [symphonia](https://lib.rs/crates/symphonia#readme-codecs-decoders) Rust cra
 
 I hope to see you again soon!
 
-[^1]: Steven W. Smith, “The Scientist and Engineer’s Guide to Digital Signal Processing,” accessed April 30, 2025, https://www.dspguide.com/.
+[^1]: Steven W. Smith, “The Scientist and Engineer’s Guide to Digital Signal Processing,” accessed April 30, 2025, https://www.dspguide.com/. This one is a bit older (and includes some BASIC and FORTRAN examples), but it's freely available online, and the math parts are very helpful.
 
-[^2]: Will Pirkle, Designing Audio Effect Plugins in C++: For AAX, AU, and VST3 with DSP Theory (Routledge, 2019), https://www.taylorfrancis.com/books/mono/10.4324/9780429490248/designing-audio-effect-plugins-pirkle.
+[^2]: Will Pirkle, Designing Audio Effect Plugins in C++: For AAX, AU, and VST3 with DSP Theory (Routledge, 2019), https://www.taylorfrancis.com/books/mono/10.4324/9780429490248/designing-audio-effect-plugins-pirkle. Chapters 10–12 in this one have a good discussion of filter math, and I (very loosely) based my filter on some of the examples here.
