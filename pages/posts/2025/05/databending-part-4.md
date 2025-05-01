@@ -32,7 +32,23 @@ When I first wrote about this process, I mentioned that
 
 In addition to simply speeding up the search for interesting files, automation also makes it more practical to “audition” different *ways* of importing a given interesting file. I usually convert the data into an audio file in which each “sample” is a [16-bit integer](https://en.wikipedia.org/wiki/Audio_bit_depth) — in many cases, I find I like the sound result of this best. However, treating it as an 8-bit, 24-bit or 32-bit integer (or some of the more unique sample formats available in Audacity, such as [ADPCM](https://en.wikipedia.org/wiki/Differential_pulse-code_modulation)) can give additional variety and get around the sonic commonalities I mentioned.
 
-This is still very much a work in progress, but I thought I'd do a writeup of what I have so far. If you want to use it or just follow along, the code is available [here on GitHub](https://github.com/reillypascal/data2audio) — if you're comfortable using Rust's ```cargo``` package manager, it should be perfectly usable, and I'll look into providing compiled releases at some point!
+<aside>
+
+The ADPCM input format is still in the works, but just because I like to include audio at the start of things, I want to take a brief sidebar about why ADPCM could be cool. Audacity has the VOX or [Dialogic ADPCM](https://en.wikipedia.org/wiki/Dialogic_ADPCM) flavor as one of its import formats, and I've had some interesting results importing data using it and similar formats. 
+
+If my math is correct, the audio examples here should be from the same portion of the source data (the ```libicudata.73.1``` library file from the macOS release of the [calibre](https://calibre-ebook.com/) e-book manager). The first one is imported in Audacity as signed 16-bit integer at 44.1 kHz sampling rate:
+
+<audio controls src="/media/blog/2025/05/databending-part-4/libicudata.73.1 i16.mp3" title="Title"></audio>
+
+The second is imported into Audacity as VOX ADPCM (also at 44.1 kHz):
+
+<audio controls src="/media/blog/2025/05/databending-part-4/libicudata.73.1 VOX ADPCM.mp3" title="Title"></audio>
+
+The VOX ADPCM file is ~4x as long (since it only uses 4 bits per sample, instead of 16), and the result is *sort of* like a time-stretched version of the 16-bit one, but the voice-focused algorithm of the VOX ADPCM format introduces new strange characteristics as well.
+
+</aside>
+
+Anyway, my Rust tool is still a work in progress, but I thought I'd do a writeup of what I have so far. If you want to use it or just follow along, the code is available [here on GitHub](https://github.com/reillypascal/data2audio) — if you're comfortable using Rust's ```cargo``` package manager, it should be usable, and I'll look into providing compiled releases at some point!
 
 ### Importing the Files
 
@@ -227,25 +243,14 @@ fn write_file_as_wav(data: Vec<i16>, name: path::PathBuf) {
 
 To review:
   1. We use the [walkdir](https://crates.io/crates/walkdir) crate and ```fs::read()``` to recursively traverse the files in the folder and open each as a ```Vec<u8>```
-  2. The [clap](https://crates.io/crates/clap) crate handles CLI arguments, including selecting the input sample format, and we use ```core::slice::chunks_exact()``` and (e.g.) ```i16::from_le_bytes()``` to convert groupings of bytes into 16-, 24-, or 32-bit samples.
-  3. We use a biquad [filter](https://github.com/reillypascal/rs_rust_audio) I wrote to cut out sub-audible frequencies.
-  4. Finally, we use a ```WavWriter``` struct from the [hound](https://crates.io/crates/hound) crate to write each WAV file.
+  2. The [clap](https://crates.io/crates/clap) crate handles CLI arguments, including selecting the input sample format.
+  3. We use ```core::slice::chunks_exact()``` and (e.g.) ```i16::from_le_bytes()``` to convert groupings of bytes into 16-, 24-, or 32-bit samples.
+  4. We use a biquad [filter](https://github.com/reillypascal/rs_rust_audio) I wrote to cut out sub-audible frequencies, casting to/from 64-bit floats for the filtering.
+  5. Finally, we use a ```WavWriter``` struct from the [hound](https://crates.io/crates/hound) crate to write each WAV file.
 
 ### Future Goals
 
-I mentioned the [ADPCM](https://en.wikipedia.org/wiki/Differential_pulse-code_modulation) sample format at the start, and one of my next goals is to include that option when importing files. Audacity has the VOX or [Dialogic ADPCM](https://en.wikipedia.org/wiki/Dialogic_ADPCM) flavor as one of its import formats, and I've had some interesting results importing data using it and similar formats. 
-
-If my math is correct, the audio examples here should be from the same portion of the source data (the ```libicudata.73.1``` library file from the macOS release of the [calibre](https://calibre-ebook.com/) e-book manager). The first one is imported in Audacity as signed 16-bit integer at 44.1 kHz sampling rate:
-
-<audio controls src="/media/blog/2025/05/databending-part-4/libicudata.73.1 i16.mp3" title="Title"></audio>
-
-The second is imported into Audacity as VOX ADPCM (also at 44.1 kHz):
-
-<audio controls src="/media/blog/2025/05/databending-part-4/libicudata.73.1 VOX ADPCM.mp3" title="Title"></audio>
-
-The VOX ADPCM file is ~4x as long (since it only uses 4 bits per sample, instead of 16), and the result is *sort of* like a time-stretched version of the 16-bit one, but the voice-focused algorithm of the VOX ADPCM introduces new strange characteristics as well.
-
-The [symphonia](https://lib.rs/crates/symphonia#readme-codecs-decoders) Rust crate has an ADPCM decoder (sadly not the VOX version — symphonia [has Microsoft and IMA flavors](https://lib.rs/crates/symphonia-codec-adpcm#readme-support)). I'll need to do some poking around to figure out how to use it, but I definitely plan to do so in the near future.
+I mentioned the [ADPCM](https://en.wikipedia.org/wiki/Differential_pulse-code_modulation) sample format at the start, and one of my next goals is to include that option when importing files. The [symphonia](https://lib.rs/crates/symphonia#readme-codecs-decoders) Rust crate has an ADPCM decoder (sadly not the VOX version — symphonia [has Microsoft and IMA flavors](https://lib.rs/crates/symphonia-codec-adpcm#readme-support)). I'll need to do some poking around to figure out how to use it, but I definitely plan to do so in the near future.
 
 I hope to see you again soon!
 
