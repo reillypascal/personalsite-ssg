@@ -327,7 +327,7 @@ nav {
 /* @media (scripting: none) { */
 /* when clicked, switches to pointer and allows closing */
 .dropbtn.navIcon:focus {  
-    pointer-events: none;  
+    pointer-events: none;
 }
 /* if I do this in hamburger, *whole thing* closes */
 @media screen and (min-width: 60em) {
@@ -451,7 +451,8 @@ code {
     white-space: pre-wrap;
     word-wrap: break-word;
 }
-code {
+/* the :not() keeps the padding from affecting the source code blocks */
+code:not(code[class*="language-"]) {
     background-color: var(--bg-med-dark);
     padding: 3px 5px;
     border-radius: 2px;
