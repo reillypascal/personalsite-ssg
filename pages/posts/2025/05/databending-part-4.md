@@ -18,7 +18,6 @@ tags:
   - rust
   - programming
 post_series: databending
-draft: true
 ---
 
 <link rel="stylesheet" type="text/css" href="/styles/code/prism-dracula.css" />
@@ -44,7 +43,7 @@ The second is imported into Audacity as VOX ADPCM (also at 44.1 kHz):
 
 <audio controls src="/media/blog/2025/05/databending-part-4/libicudata.73.1 VOX ADPCM.mp3" title="Title"></audio>
 
-The VOX ADPCM file is ~4x as long (since it only uses 4 bits per sample, instead of 16), and the result is *sort of* like a time-stretched version of the 16-bit one, but the voice-focused algorithm of the VOX ADPCM format introduces new strange characteristics as well.
+The VOX ADPCM file is 4x as long (since it only uses 4 bits per sample, instead of 16), and the result is *sort of* like a time-stretched version of the 16-bit one, but the voice-focused algorithm of the VOX ADPCM format introduces new strange characteristics as well.
 
 </aside>
 
@@ -58,7 +57,7 @@ As a refresher on the databending process, I wrote in the first post that in dig
 
 > Since any computer file is just a list of \[binary] numbers…we can take the list of numbers from any file and treat them as a list of amplitudes in an audio file.
 
-First, we want to import files as a list of bytes, and we want to be able to traverse through a large folder of files, with possible sub-folders. The [walkdir](https://crates.io/crates/walkdir) Rust crate is useful for traversing directories, and [these examples](https://rust-lang-nursery.github.io/rust-cookbook/file/dir.html#recursively-find-all-files-with-given-predicate) from the Rust Cookbook are a good model. ```WalkDir::new()``` returns a recursive iterator into the directory, and we can check if the metadata is good; check if the metadata says an entry is a file and is bigger than the minimum size we've chosen (1MB here); and if so, use ```fs::read()``` to read in the file. ```fs::read()``` returns a ```Result<Vec<u8>>```, so we can use ```.expect()``` to get the vector out of the ```Result<T,E>```.
+First, we want to import files as a list of bytes, and we want to be able to traverse through a large folder of files, with possible sub-folders. The [walkdir](https://crates.io/crates/walkdir) Rust crate is useful for traversing directories, and [these examples](https://rust-lang-nursery.github.io/rust-cookbook/file/dir.html#recursively-find-all-files-with-given-predicate) from the Rust Cookbook are a good model. ```WalkDir::new()``` returns a recursive iterator into the directory, and we can check if the metadata is good; check if the metadata says an entry is a file and is bigger than the minimum size we've chosen (0 is the default); and if so, use ```fs::read()``` to read in the file. ```fs::read()``` returns a ```Result<Vec<u8>>```, so we can use ```.expect()``` to get the vector out of the ```Result<T,E>```.
 
 ```rust
 use std::fs;
@@ -85,7 +84,7 @@ fn main() {
 
 ### Converting Files to Audio
 
-I'm using the [clap](https://crates.io/crates/clap) crate to handle command-line arguments. I won't get into too much detail here, but just to cover other contexts it shows up, ```WalkDir::new(&args.input)``` above is taking an input path from these arguments, but that could be replaced with another source of ```&str```/```&String``` reading e.g., ```"input"```; ```args.min``` above is an integer giving the minimum filesize in bytes; and below, the user's choice of sample format is recorded as one of the options in my ```SampleFormat``` enum, which derives from ```clap```'s ```ValueEnum```.
+I'm using the [clap](https://crates.io/crates/clap) crate to handle command-line arguments. I won't get into too much detail here, but just to cover where it shows up, ```WalkDir::new(&args.input)``` above is taking an input path from these arguments, but that could be replaced with another source of ```&str```/```&String``` reading e.g., ```"input"```; ```args.min``` above is an integer giving the minimum filesize in bytes, and defaulting to 0; and below, the user's choice of sample format is recorded as one of the options in my ```SampleFormat``` enum, which derives from ```clap```'s ```ValueEnum```.
 
 ```rust
 use clap::{Parser, ValueEnum};
@@ -159,9 +158,9 @@ if metadata.is_file() && metadata.len() >= 1000000 {
 }
 ```
 
-For the 16-, 24-, and 32-bit versions, I need the ```core::slice::chunks_exact()``` function, which returns an iterator over a slice of the specified length. The function ```from_le_bytes()``` takes in an array of bytes and converts them into a single little-endian number. The type (e.g., in ```i32::from_le_bytes```) specifies which version of the function to use. For the 24-bit version, there is no 24-bit integer type, so I use a 32-bit integer and fill the upper byte with zeroes. For the 8-bit version, I simply get an iterator for the ```data``` variable. All of these use ```.map()``` to process each value in the ```Vec<u8>```, and ```.collect()``` collects those processed values into a new ```Vec<f64>``` for processing by the audio filter.
+For the 16-, 24-, and 32-bit versions, I need the ```core::slice::chunks_exact()``` function, which returns an iterator over a slice of the specified length. The function ```from_le_bytes()``` takes in an array of bytes and converts them into a single little-endian number. The type (e.g., in ```i32::from_le_bytes()```) specifies which version of the function to use. For the 24-bit version, there is no 24-bit integer type, so I use a 32-bit integer and fill the upper byte with zeroes. For the 8-bit version, I simply get an iterator over the ```data``` ```Vec<u8>```. All of the ```match``` “arms” use ```.map()``` to process each value in the ```Vec<u8>```, and ```.collect()``` collects those processed values into a new ```Vec<f64>``` for processing by the audio filter.
 
-Note that all the sample formats except 16-bit integer use the bit-shift operators (```<<``` or ```>>```) to scale the values to the range needed to output a 16-bit WAV file. 16 bits is plenty to get good-quality sound, and the input formats are primarily for the different sound result, so I'm fine with converting everything to 16-bit at the end. I temporarily convert everything to floating point numbers for filtering because the filter math is nicer to work with that way.
+Note that all the sample formats except 16-bit integer use the bit-shift operators (```<<``` or ```>>```) to scale the values to the range needed to output a 16-bit WAV file. 16 bits is plenty to get good-quality sound, and the input formats are primarily for the different sound results, so I'm fine with converting everything to 16-bit at the end. I temporarily convert everything to floating point numbers for filtering because the filter math is nicer to work with that way.
 
 
 ### Filtering
@@ -239,7 +238,7 @@ fn write_file_as_wav(data: Vec<i16>, name: path::PathBuf) {
 }
 ```
 
-### Summary
+### Summary and Future Goals
 
 To review:
   1. We use the [walkdir](https://crates.io/crates/walkdir) crate and ```fs::read()``` to recursively traverse the files in the folder and open each as a ```Vec<u8>```
@@ -247,8 +246,6 @@ To review:
   3. We use ```core::slice::chunks_exact()``` and (e.g.) ```i16::from_le_bytes()``` to convert groupings of bytes into 16-, 24-, or 32-bit samples.
   4. We use a biquad [filter](https://github.com/reillypascal/rs_rust_audio) I wrote to cut out sub-audible frequencies, casting to/from 64-bit floats for the filtering.
   5. Finally, we use a ```WavWriter``` struct from the [hound](https://crates.io/crates/hound) crate to write each WAV file.
-
-### Future Goals
 
 I mentioned the [ADPCM](https://en.wikipedia.org/wiki/Differential_pulse-code_modulation) sample format at the start, and one of my next goals is to include that option when importing files. The [symphonia](https://lib.rs/crates/symphonia#readme-codecs-decoders) Rust crate has an ADPCM decoder (sadly not the VOX version — symphonia [has Microsoft and IMA flavors](https://lib.rs/crates/symphonia-codec-adpcm#readme-support)). I'll need to do some poking around to figure out how to use it, but I definitely plan to do so in the near future.
 

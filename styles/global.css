@@ -30,6 +30,8 @@
     text-underline-offset: 0.2em;
 
     --bg-dark: hsl(227, 26%, 11%);
+    /* maybe switch around med-dark/accent names? 
+    I use med-dark for code highlights and accent for <aside>, so far */
     --bg-med-dark: hsl(227, 12%, 17%);
     --bg-accent: hsl(227, 22%, 15%);
     --ui-line-dark: hsl(226, 24%, 29%);
