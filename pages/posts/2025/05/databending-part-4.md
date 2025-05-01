@@ -2,10 +2,10 @@
 title: Databending Part 4 – Making a Rust Tool
 description: Manually importing files as raw data in Audacity is slow — let's automate it in Rust!
 fedi_url: 
-og_image: 
-og_image_width: 
-og_image_height: 
-date: 2025-05-04T12:30:00-0400
+og_image: /media/blog/2025/05/databending-part-4/libicudata.73.1.jpg
+og_image_width: 1200
+og_image_height: 630
+date: 2025-05-01T12:30:00-0400
 octothorpes:
   - Art
   - Audio
@@ -22,6 +22,7 @@ draft: true
 ---
 
 <link rel="stylesheet" type="text/css" href="/styles/code/prism-dracula.css" />
+<link rel="stylesheet" type="text/css" href="/styles/code/code-tweaks.css" />
 
 Earlier this year I [wrote](/posts/2025/01/databending-part-1/) about how to import any file into Audacity and convert it to audio. Today I want to make the process less tedious, as well as get some practice with the [Rust](https://en.wikipedia.org/wiki/Rust_(programming_language)) programming language. 
 
@@ -33,8 +34,6 @@ In addition to simply speeding up the search for interesting files, automation a
 
 This is still very much a work in progress, but I thought I'd do a writeup of what I have so far. If you want to use it or just follow along, the code is available [here on GitHub](https://github.com/reillypascal/data2audio) — if you're comfortable using Rust's ```cargo``` package manager, it should be perfectly usable, and I'll look into providing compiled releases at some point!
 
-<!-- Even with the additional work of writing this code, it's already been helpful for composing to not have to think too hard before importing a file with a given format — I can do all options and more easily comb through the results, plus there's less mouse usage, which tends to be bad for my wrists, even with my ergonomic vertical mouse. -->
-
 ### Importing the Files
 
 As a refresher on the databending process, I wrote in the first post that in digital audio files
@@ -43,7 +42,7 @@ As a refresher on the databending process, I wrote in the first post that in dig
 
 > Since any computer file is just a list of \[binary] numbers…we can take the list of numbers from any file and treat them as a list of amplitudes in an audio file.
 
-First, we want to import files as a list of bytes, and we want to be able to traverse through a large folder of files, with possible sub-folders. The [walkdir](https://crates.io/crates/walkdir) Rust crate is useful for traversing directories, and [these examples](https://rust-lang-nursery.github.io/rust-cookbook/file/dir.html#recursively-find-all-files-with-given-predicate) from the Rust Cookbook are a good model.```WalkDir::new()``` returns a recursive iterator into the directory, and we can check if the metadata is good; check if the metadata says an entry is a file and is bigger than the minimum size we've chosen (1MB here); and if so, use ```fs::read()``` to read in the file. ```fs::read()``` returns a ```Result<Vec<u8>>```, so we can use ```.expect()``` to get the vector out of the ```Result<T,E>```.
+First, we want to import files as a list of bytes, and we want to be able to traverse through a large folder of files, with possible sub-folders. The [walkdir](https://crates.io/crates/walkdir) Rust crate is useful for traversing directories, and [these examples](https://rust-lang-nursery.github.io/rust-cookbook/file/dir.html#recursively-find-all-files-with-given-predicate) from the Rust Cookbook are a good model. ```WalkDir::new()``` returns a recursive iterator into the directory, and we can check if the metadata is good; check if the metadata says an entry is a file and is bigger than the minimum size we've chosen (1MB here); and if so, use ```fs::read()``` to read in the file. ```fs::read()``` returns a ```Result<Vec<u8>>```, so we can use ```.expect()``` to get the vector out of the ```Result<T,E>```.
 
 ```rust
 use std::fs;
@@ -51,8 +50,8 @@ use walkdir::WalkDir;
 
 fn main() {
   // WalkDir "walks" recursively through a directory and all its subfolders
-  // In actual code, use CLI inputs for input folder name
-  WalkDir::new("input/")
+  // args.input is from CLI arguments via clap
+  WalkDir::new(&args.input)
   .into_iter()
   .filter_map(|entry| entry.ok())
   .for_each(|entry| {
@@ -74,7 +73,9 @@ I'm using the [clap](https://crates.io/crates/clap) crate to handle command-line
 
 ```rust
 use clap::{Parser, ValueEnum};
+
 // ...
+
 #[derive(ValueEnum, Clone, Debug)]
 enum SampleFormat {
     Uint8,
@@ -85,10 +86,11 @@ enum SampleFormat {
 
 ```
 
-Picking up where we left off when importing the file, I can take that ```Vec<u8>``` holding our file data and, depending on the sample format, convert it to appropriately-sized values. If the contents of the “arms” of a Rust ```match``` statement are an [expression](https://doc.rust-lang.org/book/ch03-03-how-functions-work.html#statements-and-expressions), you can have something like ```let converted_data: Vec<f64> = match args.format```, and the variable ```converted_data``` will hold the appropriate value, based on the arm chosen. In this case, simply not putting a semicolon after (e.g.) ```data.chunks_exact(2).map().collect()``` causes that piece of code to be an expression. 
+Picking up where we left off when importing the file, I can take that ```Vec<u8>``` holding our file data and, depending on the sample format, convert it to appropriately-sized values. If the contents of the “arms” of a Rust ```match``` statement are an [expression](https://doc.rust-lang.org/book/ch03-03-how-functions-work.html#statements-and-expressions), you can have something like ```let converted_data: Vec<f64> = match args.format {}```, and the variable ```converted_data``` will hold the appropriate value, based on the arm chosen. In this case, simply not putting a semicolon after (e.g.) ```data.chunks_exact(2).map().collect()``` causes that piece of code to be an expression. 
 
 ```rust
 // ...
+
 if metadata.is_file() && metadata.len() >= 1000000 {
   // ...read in file as a vector of unsigned 8-bit integers
   let data: Vec<u8> = fs::read(entry.path()).expect("Error reading file");
@@ -117,12 +119,12 @@ if metadata.is_file() && metadata.len() >= 1000000 {
       data
         .chunks_exact(3)
         .map(|chunks| {
-          // no i24, so we take 3 bytes + 0x00 
-          // to fill out hi byte in i32
+          // get values from chunks_exact(3), put in array
           let low_part: [u8; 3] = chunks.try_into().expect("Could not import as 24-bit");
+          // no i24, so we add this 0x00 to fill out hi byte in i32
           let high_part: [u8; 1] = [0x00];
+          // copy to "joined" from low/hi parts as slices
           let mut joined: [u8; 4] = [0; 4];
-          
           joined[3..].copy_from_slice(&high_part);
           joined[..3].copy_from_slice(&low_part);
           
@@ -141,14 +143,14 @@ if metadata.is_file() && metadata.len() >= 1000000 {
 }
 ```
 
-For the 16-, 24-, and 32-bit versions, I need the ```.chunks_exact()``` function, which returns an iterator over a slice of the specified length. The function ```from_le_bytes()``` takes in an array of bytes and converts them into a single little-endian number. The type (e.g., in ```i32::from_le_bytes```) specifies which version of the function to use. For the 24-bit version, there is no 24-bit integer type, so I use a 32-bit integer and fill the upper byte with zeroes. For the 8-bit version, I simply get an iterator for the ```data``` variable. All of these use ```.map()``` to process each value in the ```Vec<u8>```, and ```.collect()``` collects those processed values into a new ```Vec<f64>``` for processing by the audio filter.
+For the 16-, 24-, and 32-bit versions, I need the ```core::slice::chunks_exact()``` function, which returns an iterator over a slice of the specified length. The function ```from_le_bytes()``` takes in an array of bytes and converts them into a single little-endian number. The type (e.g., in ```i32::from_le_bytes```) specifies which version of the function to use. For the 24-bit version, there is no 24-bit integer type, so I use a 32-bit integer and fill the upper byte with zeroes. For the 8-bit version, I simply get an iterator for the ```data``` variable. All of these use ```.map()``` to process each value in the ```Vec<u8>```, and ```.collect()``` collects those processed values into a new ```Vec<f64>``` for processing by the audio filter.
 
 Note that all the sample formats except 16-bit integer use the bit-shift operators (```<<``` or ```>>```) to scale the values to the range needed to output a 16-bit WAV file. 16 bits is plenty to get good-quality sound, and the input formats are primarily for the different sound result, so I'm fine with converting everything to 16-bit at the end. I temporarily convert everything to floating point numbers for filtering because the filter math is nicer to work with that way.
 
 
 ### Filtering
 
-I wrote [the filter](https://github.com/reillypascal/rs_rust_audio) I'm using here myself over summer 2024. Filter math gets *intense* really fast (and I can only barely muddle through it myself!) so I won't go into it here, but I'll put some reading materials/reference in the footnotes if you're interested in reading further. [^1] In short, I have a filter module called ```biquad```; ```biquad::AudioFilter::new()``` creates a filter; ```filter.calculate_filter_coeffs()``` sets it up; and ```filter.process_sample()``` takes in the audio, one ```f64``` sample at a time, returning another ```f64``` on each pass. All this ends up cast as 16-bit integers in a ```Vec<i16>``` to be written to the WAV file. Note that I multiply each sample by 0.4 before filtering — this is necessary because filtering out sub-audible noise results in higher peaks in the sound, so I need more headroom to compensate.
+I wrote [the filter](https://github.com/reillypascal/rs_rust_audio) I'm using here myself over summer 2024. Filter math gets *intense* really fast (and I can only barely muddle through it myself!) so I won't go into it here, but I'll put some reading materials/references in the footnotes if you're interested in reading further. [^1] [^2] In short, I have a filter module called ```biquad```; ```biquad::AudioFilter::new()``` creates a filter; ```filter.calculate_filter_coeffs()``` sets it up; and ```filter.process_sample()``` takes in the audio, one ```f64``` sample at a time, returning another ```f64``` on each pass. All this ends up cast as 16-bit integers in a ```Vec<i16>``` to be written to the WAV file. Note that I multiply each sample by 0.4 before filtering — this is necessary because filtering out sub-audible noise results in higher peaks in the sound, so I need more headroom to compensate.
 
 ```rust
 // make filter
@@ -165,12 +167,86 @@ for sample in &converted_data {
 
 ### Writing to WAV
 
-
+I create a [PathBuf](https://doc.rust-lang.org/std/path/struct.PathBuf.html) from the output path selected by the user, which defaults to ```output/```. This uses the ```clap``` crate (which again, I'm not covering to save time), but could be replaced with a hardcoded string literal (```"output/"```). ```create_dir()``` uses ```fs::create_dir_all()```, which the [documentation](https://doc.rust-lang.org/beta/std/fs/fn.create_dir_all.html) says is equivalent to multiple ```mkdir``` calls on a Unix-like system. I can then use ```PathBuf::push()``` to add the file name (taken from the entry's path), and ```PathBuf::set_extension()``` to change the previous file extension to ```.wav``` before using my ```write_file_as_wav()``` function.
 
 ```rust
+// args.output is from CLI arguments via clap
+let mut write_path = PathBuf::from(&args.output);
+// create output dir if doesn't exist - create_dir returns Result<T,E>, so match it and print if error
+let out_dir = create_dir(&args.output);
+match out_dir {
+  Ok(()) => {},
+  Err(e) => {
+    eprintln!("{}", e)
+  },
+};
+// entry.path().file_name() returns an Option, so if let Some() handles/extracts value
+if let Some(file_name) = entry.path().file_name() {
+  write_path.push(file_name);
+  write_path.set_extension("wav");
+  write_file_as_wav(filtered_vec, write_path);
+}
 
+// ...
+
+fn create_dir(dir: &str) -> std::io::Result<()> {
+    // create_dir_all - like multiple mkdir calls
+    fs::create_dir_all(dir.to_string())?;
+    Ok(())
+}
 
 ```
 
+I use the [```hound```](https://crates.io/crates/hound) crate to handle writing WAV files (see [documentation](https://docs.rs/hound/latest/hound/struct.WavWriter.html) for ```hound```'s ```WavWriter``` struct). In addition to the filename, ```hound::WavWriter::create()``` requires a “spec” giving the number of channels, sample rate, sample [bit depth](https://en.wikipedia.org/wiki/Audio_bit_depth), and the sample format (from the ```hound::SampleFormat``` enum). Once I have an appropriate ```WavWriter``` made, I write the file one sample at a time with the ```hound::WavWriter::write_sample()``` method, after which I need to call ```hound::WavWriter::finalize()``` to update the WAVE header with the final file size.
 
-[^1]: https://www.dspguide.com/
+```rust
+use hound;
+
+// ...
+
+fn write_file_as_wav(data: Vec<i16>, name: path::PathBuf) {
+  // write WAV file
+  // spec
+  let spec = hound::WavSpec {
+    channels: 1,
+    sample_rate: 44100,
+    bits_per_sample: 16,
+    sample_format: hound::SampleFormat::Int,
+  };
+  
+  // writer
+  let mut writer = hound::WavWriter::create(name, spec).expect("Could not create writer");
+  for t in 0..data.len() {
+    writer.write_sample(data[t]).expect("Could not write sample");
+  }
+  writer.finalize().expect("Could not finalize WAV file");
+}
+```
+
+### Summary
+
+To review:
+  1. We use the [walkdir](https://crates.io/crates/walkdir) crate and ```fs::read()``` to recursively traverse the files in the folder and open each as a ```Vec<u8>```
+  2. The [clap](https://crates.io/crates/clap) crate handles CLI arguments, including selecting the input sample format, and we use ```core::slice::chunks_exact()``` and (e.g.) ```i16::from_le_bytes()``` to convert groupings of bytes into 16-, 24-, or 32-bit samples.
+  3. We use a biquad [filter](https://github.com/reillypascal/rs_rust_audio) I wrote to cut out sub-audible frequencies.
+  4. Finally, we use a ```WavWriter``` struct from the [hound](https://crates.io/crates/hound) crate to write each WAV file.
+
+### Future Goals
+
+I mentioned the [ADPCM](https://en.wikipedia.org/wiki/Differential_pulse-code_modulation) sample format at the start, and one of my next goals is to include that option when importing files. Audacity has the VOX or [Dialogic ADPCM](https://en.wikipedia.org/wiki/Dialogic_ADPCM) flavor as one of its import formats, and I've had some interesting results importing data using it and similar formats. 
+
+If my math is correct, the audio examples here should be from the same data. I imported the ```libicudata.73.1``` library file from the macOS release of the [calibre](https://calibre-ebook.com/) e-book manager. The first one is imported in Audacity as signed 16-bit integer at 44.1 kHz sampling rate:
+
+<audio controls src="/media/blog/2025/05/databending-part-4/libicudata.73.1 i16.mp3" title="Title"></audio>
+
+The second is imported into Audacity as VOX ADPCM (also at 44.1 kHz):
+
+<audio controls src="/media/blog/2025/05/databending-part-4/libicudata.73.1 VOX ADPCM.mp3" title="Title"></audio>
+
+The VOX ADPCM file is ~4x as long (since it only uses 4 bits per sample, instead of 16), and the result is *sort of* like a time-stretched version of the 16-bit one, but the voice-focused algorithm of the VOX ADPCM introduces new strange characteristics as well.
+
+The [symphonia](https://lib.rs/crates/symphonia#readme-codecs-decoders) Rust crate has an ADPCM decoder (sadly not the VOX version — symphonia [has Microsoft and IMA flavors](https://lib.rs/crates/symphonia-codec-adpcm#readme-support)), but I'll need to do some poking around to figure out how to use it. I hope to see you again soon!
+
+[^1]: Steven W. Smith, “The Scientist and Engineer’s Guide to Digital Signal Processing,” accessed April 30, 2025, https://www.dspguide.com/.
+
+[^2]: Will Pirkle, Designing Audio Effect Plugins in C++: For AAX, AU, and VST3 with DSP Theory (Routledge, 2019), https://www.taylorfrancis.com/books/mono/10.4324/9780429490248/designing-audio-effect-plugins-pirkle.
