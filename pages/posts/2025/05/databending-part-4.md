@@ -1,11 +1,11 @@
 ---
-title: Databending Part 4 – Making a Rust Tool
+title: Databending Part 4 – Data to Audio with a Rust Tool
 description: Manually importing files as raw data in Audacity is slow — let's automate it in Rust!
 fedi_url: 
 og_image: /media/blog/2025/05/databending-part-4/libicudata.73.1.jpg
 og_image_width: 1200
 og_image_height: 630
-date: 2025-05-01T12:30:00-0400
+date: 2025-05-01T11:00:00-0400
 octothorpes:
   - Art
   - Audio
@@ -30,7 +30,7 @@ When I first wrote about this process, I mentioned that
 
 > once you listen to the “sonified” data from enough files, commonalities start to become apparent…\[and] the process of finding these sounds is also fairly slow and painstaking.
 
-In addition to simply speeding up the search for interesting files, automation also makes it more practical to “audition” different *ways* of importing a given interesting file. I usually convert the data into an audio file in which each “sample” is a  [16-bit integer](https://en.wikipedia.org/wiki/Audio_bit_depth) — in many cases, I find I like the sound result of this best. However, treating it as an 8-bit, 24-bit or 32-bit integer (or some of the more unique sample formats available in Audacity, such as [ADPCM](https://en.wikipedia.org/wiki/Differential_pulse-code_modulation)) can give additional variety and get around the sonic commonalities I mentioned.
+In addition to simply speeding up the search for interesting files, automation also makes it more practical to “audition” different *ways* of importing a given interesting file. I usually convert the data into an audio file in which each “sample” is a [16-bit integer](https://en.wikipedia.org/wiki/Audio_bit_depth) — in many cases, I find I like the sound result of this best. However, treating it as an 8-bit, 24-bit or 32-bit integer (or some of the more unique sample formats available in Audacity, such as [ADPCM](https://en.wikipedia.org/wiki/Differential_pulse-code_modulation)) can give additional variety and get around the sonic commonalities I mentioned.
 
 This is still very much a work in progress, but I thought I'd do a writeup of what I have so far. If you want to use it or just follow along, the code is available [here on GitHub](https://github.com/reillypascal/data2audio) — if you're comfortable using Rust's ```cargo``` package manager, it should be perfectly usable, and I'll look into providing compiled releases at some point!
 
@@ -52,24 +52,24 @@ fn main() {
   // WalkDir "walks" recursively through a directory and all its subfolders
   // args.input is from CLI arguments via clap
   WalkDir::new(&args.input)
-  .into_iter()
-  .filter_map(|entry| entry.ok())
-  .for_each(|entry| {
-    // extract metadata from Result<T,E> for each entry in dir
-    if let Ok(metadata) = entry.metadata() {
-      // if it's a file and greater/equal to min size (which is CLI argument in actual code)...
-      if metadata.is_file() && metadata.len() >= 1000000 {
-        // ...read in file as a vector of unsigned 8-bit integers
-        let data: Vec<u8> = fs::read(entry.path()).expect("Error reading file");
+    .into_iter()
+    .filter_map(|entry| entry.ok())
+    .for_each(|entry| {
+      // extract metadata from Result<T,E> for each entry in dir
+      if let Ok(metadata) = entry.metadata() {
+        // if it's a file and greater/equal to min size (from CLI args via clap)
+        if metadata.is_file() && metadata.len() >= args.min {
+          // ...read in file as a vector of unsigned 8-bit integers
+          let data: Vec<u8> = fs::read(entry.path()).expect("Error reading file");
+        }
       }
-    }
-  });
+    });
 }
 ```
 
 ### Converting Files to Audio
 
-I'm using the [clap](https://crates.io/crates/clap) crate to handle command-line arguments. I won't get into too much detail here, but the relevant part is that the user's choice of sample format is recorded as one of the options in my ```SampleFormat``` enum, which derives from ```clap```'s ```ValueEnum```.
+I'm using the [clap](https://crates.io/crates/clap) crate to handle command-line arguments. I won't get into too much detail here, but just to cover other contexts it shows up, ```WalkDir::new(&args.input)``` above is taking an input path from these arguments, but that could be replaced with another source of ```&str```/```&String``` reading e.g., ```"input"```; ```args.min``` above is an integer giving the minimum filesize in bytes; and below, the user's choice of sample format is recorded as one of the options in my ```SampleFormat``` enum, which derives from ```clap```'s ```ValueEnum```.
 
 ```rust
 use clap::{Parser, ValueEnum};
@@ -167,7 +167,7 @@ for sample in &converted_data {
 
 ### Writing to WAV
 
-I create a [PathBuf](https://doc.rust-lang.org/std/path/struct.PathBuf.html) from the output path selected by the user, which defaults to ```output/```. This uses the ```clap``` crate (which again, I'm not covering to save time), but could be replaced with a hardcoded string literal (```"output/"```). ```create_dir()``` uses ```fs::create_dir_all()```, which the [documentation](https://doc.rust-lang.org/beta/std/fs/fn.create_dir_all.html) says is equivalent to multiple ```mkdir``` calls on a Unix-like system. I can then use ```PathBuf::push()``` to add the file name (taken from the entry's path), and ```PathBuf::set_extension()``` to change the previous file extension to ```.wav``` before using my ```write_file_as_wav()``` function.
+I create a [PathBuf](https://doc.rust-lang.org/std/path/struct.PathBuf.html) from the output path selected by the user, which defaults to ```output/```. This uses the ```clap``` crate (which again, I'm not covering to save time), but ```&args.output``` could be replaced with another source of ```&str```/```&String``` reading e.g., ```"output"```. ```create_dir()``` uses ```fs::create_dir_all()```, which the [documentation](https://doc.rust-lang.org/beta/std/fs/fn.create_dir_all.html) says is equivalent to multiple ```mkdir``` calls on a Unix-like system. I can then use ```PathBuf::push()``` to add the file name (taken from the entry's path), and ```PathBuf::set_extension()``` to change the previous file extension to ```.wav``` before using my ```write_file_as_wav()``` function.
 
 ```rust
 // args.output is from CLI arguments via clap
@@ -235,7 +235,7 @@ To review:
 
 I mentioned the [ADPCM](https://en.wikipedia.org/wiki/Differential_pulse-code_modulation) sample format at the start, and one of my next goals is to include that option when importing files. Audacity has the VOX or [Dialogic ADPCM](https://en.wikipedia.org/wiki/Dialogic_ADPCM) flavor as one of its import formats, and I've had some interesting results importing data using it and similar formats. 
 
-If my math is correct, the audio examples here should be from the same data. I imported the ```libicudata.73.1``` library file from the macOS release of the [calibre](https://calibre-ebook.com/) e-book manager. The first one is imported in Audacity as signed 16-bit integer at 44.1 kHz sampling rate:
+If my math is correct, the audio examples here should be from the same portion of the source data (the ```libicudata.73.1``` library file from the macOS release of the [calibre](https://calibre-ebook.com/) e-book manager). The first one is imported in Audacity as signed 16-bit integer at 44.1 kHz sampling rate:
 
 <audio controls src="/media/blog/2025/05/databending-part-4/libicudata.73.1 i16.mp3" title="Title"></audio>
 
@@ -245,7 +245,9 @@ The second is imported into Audacity as VOX ADPCM (also at 44.1 kHz):
 
 The VOX ADPCM file is ~4x as long (since it only uses 4 bits per sample, instead of 16), and the result is *sort of* like a time-stretched version of the 16-bit one, but the voice-focused algorithm of the VOX ADPCM introduces new strange characteristics as well.
 
-The [symphonia](https://lib.rs/crates/symphonia#readme-codecs-decoders) Rust crate has an ADPCM decoder (sadly not the VOX version — symphonia [has Microsoft and IMA flavors](https://lib.rs/crates/symphonia-codec-adpcm#readme-support)), but I'll need to do some poking around to figure out how to use it. I hope to see you again soon!
+The [symphonia](https://lib.rs/crates/symphonia#readme-codecs-decoders) Rust crate has an ADPCM decoder (sadly not the VOX version — symphonia [has Microsoft and IMA flavors](https://lib.rs/crates/symphonia-codec-adpcm#readme-support)). I'll need to do some poking around to figure out how to use it, but I definitely plan to do so in the near future.
+
+I hope to see you again soon!
 
 [^1]: Steven W. Smith, “The Scientist and Engineer’s Guide to Digital Signal Processing,” accessed April 30, 2025, https://www.dspguide.com/.
 

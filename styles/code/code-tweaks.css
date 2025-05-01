@@ -7,6 +7,6 @@ code {
 
 code[class*="language-"],
 pre[class*="language-"] {
-    /* white-space: pre-wrap; */
+    white-space: pre-wrap;
     font-size: 0.9rem;
 }
