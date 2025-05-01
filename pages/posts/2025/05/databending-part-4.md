@@ -37,17 +37,19 @@ The ADPCM input format is still in the works, but just because I like to include
 
 If my math is correct, the audio examples here should be from the same portion of the source data (the ```libicudata.73.1``` library file from the macOS release of the [calibre](https://calibre-ebook.com/) e-book manager). The first one is imported in Audacity as signed 16-bit integer at 44.1 kHz sampling rate:
 
-<audio controls src="/media/blog/2025/05/databending-part-4/libicudata.73.1 i16.mp3" title="Title"></audio>
+<audio controls src="/media/blog/2025/05/databending-part-4/libicudata.73.1 i16.mp3" title="libicudata.73.1 imported to Audacity as 16-bit audio"></audio>
 
 The second is imported into Audacity as VOX ADPCM (also at 44.1 kHz):
 
-<audio controls src="/media/blog/2025/05/databending-part-4/libicudata.73.1 VOX ADPCM.mp3" title="Title"></audio>
+<audio controls src="/media/blog/2025/05/databending-part-4/libicudata.73.1 VOX ADPCM.mp3" title="libicudata.73.1 imported to Audacity as VOX ADPCM audio"></audio>
 
 The VOX ADPCM file is 4x as long (since it only uses 4 bits per sample, instead of 16), and the result is *sort of* like a time-stretched version of the 16-bit one, but the voice-focused algorithm of the VOX ADPCM format introduces new strange characteristics as well.
 
 </aside>
 
-Anyway, my Rust tool is still a work in progress, but I thought I'd do a writeup of what I have so far. If you want to use it or just follow along, the code is available [here on GitHub](https://github.com/reillypascal/data2audio) — if you're comfortable using Rust's ```cargo``` package manager, it should be usable, and I'll look into providing compiled releases at some point!
+Anyway, my Rust tool is still a work in progress, but I thought I'd do a writeup of what I have so far. If you want to use it or just follow along, the code is available [here on GitHub](https://github.com/reillypascal/data2audio) — if you're comfortable using Rust's ```cargo``` package manager, it should be usable, and I'll look into providing compiled releases at some point! You can hear the result of this tool here:
+
+<audio controls src="https://media.hachyderm.io/media_attachments/files/114/410/358/926/835/338/original/5a33b44d29ec6fba.mp3" title="databent audio using my Rust tool"></audio>
 
 ### Importing the Files
 
