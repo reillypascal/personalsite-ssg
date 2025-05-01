@@ -148,5 +148,9 @@ aside {
     background-color: var(--bg-accent);
     padding: 2px 20px;
     border-radius: 8px;
-    margin: 28px 0 32px 16px;
+    margin: 28px 0 32px 0;
+    @media screen and (min-width: 480px) {
+        /* add left margin on wider screens */
+        margin: 28px 0 32px 16px;
+    }
 }
