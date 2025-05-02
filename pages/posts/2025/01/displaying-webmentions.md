@@ -13,6 +13,7 @@ tags:
 
 <!-- Code highlighting CSS -->
 <link rel="stylesheet" type="text/css" href="/styles/code/prism-dracula.css" />
+<link rel="stylesheet" type="text/css" href="/styles/code/code-tweaks.css" />
 
 I got [webmentions](https://en.wikipedia.org/wiki/Webmention) displaying on my [Eleventy](https://en.wikipedia.org/wiki/Eleventy_(software)) site! If you look below this post you can see how it looks. I've seen a number of different ways of displaying them — Tracy Durnell displays them as [comments alongside “native” blog comments](https://tracydurnell.com/2025/01/21/guiding-principles-for-my-website/), [^1] and Benji shows [Mastodon interactions in a similar way to how I'm doing mine](https://www.benji.dog/notes/1733601983/). I've also seen someone (I'm forgetting who) show the profile photos of people who interact with the post on the Fediverse, categorized into “likes,” reposts, and replies/comments. I ended up displaying the number of each of those categories from both Fediverse interactions and people sharing my links on their blogs all in one. I like having a minimalist display while still showing when people interact with something.
 

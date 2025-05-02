@@ -8,6 +8,7 @@ tags: ["post", "webdev", "programming" ]
 
 <!-- Code highlighting CSS -->
 <link rel="stylesheet" type="text/css" href="/styles/code/prism-dracula.css" />
+<link rel="stylesheet" type="text/css" href="/styles/code/code-tweaks.css" />
 
 My blog now has a comment section! Let's talk about how I made it.
 
