@@ -16,6 +16,7 @@ tags:
 
 <!-- Code highlighting CSS -->
 <link rel="stylesheet" type="text/css" href="/styles/code/prism-dracula.css" />
+<link rel="stylesheet" type="text/css" href="/styles/code/code-tweaks.css" />
 
 I [recently wrote](/posts/2025/01/displaying-webmentions/) about bringing in [webmentions](https://indieweb.org/Webmention) from both other people's personal sites and from Fediverse/Bluesky interactions and displaying them on my posts. The only issue was that I relied on [a plugin](https://github.com/CodeFoodPixels/eleventy-plugin-webmentions) that hadn't been updated in a bit over 2 years, plus I like DIY-ing things. At yesterday's Pacific [Homebrew Website Club](https://indieweb.org/Homebrew_Website_Club) meeting, I got some great feedback and was able to figure out making my own code!
 
