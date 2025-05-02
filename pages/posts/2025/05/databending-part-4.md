@@ -31,7 +31,7 @@ When I first wrote about this process, I mentioned that
 
 In addition to simply speeding up the search for interesting files, automation also makes it more practical to “audition” different *ways* of importing a given interesting file. I usually convert the data into an audio file in which each “sample” is a [16-bit integer](https://en.wikipedia.org/wiki/Audio_bit_depth) — in many cases, I find I like the sound result of this best. However, treating it as an 8-bit, 24-bit or 32-bit integer (or some of the more unique sample formats available in Audacity, such as [ADPCM](https://en.wikipedia.org/wiki/Differential_pulse-code_modulation)) can give additional variety and get around the sonic commonalities I mentioned.
 
-<aside>
+<aside id="adpcm">
 
 The ADPCM input format is still in the works, but just because I like to include audio at the start of things, I want to take a brief sidebar about why ADPCM could be cool. Audacity has the VOX or [Dialogic ADPCM](https://en.wikipedia.org/wiki/Dialogic_ADPCM) flavor as one of its import formats, and I've had some interesting results importing data using it and similar formats. 
 
