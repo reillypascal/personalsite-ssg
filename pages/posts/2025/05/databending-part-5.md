@@ -1,15 +1,23 @@
 ---
 title: Databending Part 5 — Listening to Telephone Codecs
-description: 
+description: One way to get more variety when transforming data into audio is to change the encoding. Today I'm using the VOX ADPCM telephone codec — which I've found to be especially interesting — to do this.
 fedi_url: 
 og_image: /media/blog/2025/05/databending-part-5/dpcm-block-og-image.jpg
 og_image_width: 1200
 og_image_height: 630
 date: 2025-05-03T12:55:02-0400
 octothorpes:
-  - 
+  - Art
+  - Audio
+  - audio
+  - music
 tags:
   - post
+  - databending
+  - sounddesign
+  - rust
+  - programming
+  - telecommunications
 post_series: databending
 draft: true
 ---
@@ -23,7 +31,7 @@ Today we'll be talking about the VOX or [Dialogic ADPCM](https://en.wikipedia.or
 
 > once you listen to the “sonified” data from enough files, commonalities start to become apparent. Many programs use some of the same \[library] files, and…\[even] differently-named library files sometimes contain similar elements — likely re-used code patterns, or further library code compiled in.
 
-One way I've found of getting more variety from the data is to change the sample format in which I import it. If I divide or group the raw bytes in different ways, or treat them as coming from audio files with different encodings, I can get different audio results from the exact same data. Let's talk about how ADPCM and VOX formats work; how to do this yourself in Audacity; and how I incorporated these formats into the [Rust tool](https://github.com/reillypascal/data2audio) I made in my [last post](/posts/2025/05/databending-part-4/) to automate the process of converting data to audio.
+One way I've found of getting more variety from the data is to change the sample format in which I import it. If I divide or group the raw bytes in different ways, or treat them as coming from audio files with different encodings, I can get different sound results from the exact same data. Let's talk about how ADPCM and VOX formats work; how to do this yourself in Audacity; and how I incorporated these formats into the [Rust tool](https://github.com/reillypascal/data2audio) I made in my [last post](/posts/2025/05/databending-part-4/) to automate the process of converting data to audio.
 
 ### What is ADPCM?
 
@@ -57,7 +65,7 @@ The next diagram shows the adaptive version of the encoder (A) and decoder (B).
 
 ### VOX
 
-There are a number of ADPCM algorithms, and Audacity has the VOX format and something listed as NMS ADPCM. To avoid spending a while on something with a disappointing sound result, I tested importing raw data as audio using these two, and the VOX format was by far the most interesting. You can hear the same data imported as 16-bit integer and VOX ADPCM in [this aside](/posts/2025/05/databending-part-4/#adpcm) from my previous post. I love the result, but unfortunately I wasn't able to find anything in Rust to handle this — the [symphonia crate](https://crates.io/crates/symphonia) that was recommended to me only has [Microsoft and IMA flavors](https://lib.rs/crates/symphonia-codec-adpcm#readme-support) of ADPCM. 
+There are a number of ADPCM algorithms, and Audacity has the VOX format and something listed as NMS ADPCM. To avoid spending a while coding something with a disappointing sound result, I just used Audacity to import raw data as audio using these two, and the VOX format was by far the most interesting. You can hear the same data imported as 16-bit integer and VOX ADPCM in [this aside](/posts/2025/05/databending-part-4/#adpcm) from my previous post. I love the result, but unfortunately I wasn't able to find anything pre-existing in Rust to handle this — the [symphonia crate](https://crates.io/crates/symphonia) that was recommended to me only has [Microsoft and IMA flavors](https://lib.rs/crates/symphonia-codec-adpcm#readme-support) of ADPCM. Looks like I need to code it myself!
 
 I did find [this](https://github.com/dreamflyforever/vox/) VOX implementation in C, but it doesn't have a license, and I find reading block diagrams to be easier than trying to convert from C to DSP concepts, so I will be referencing the original VOX ADPCM paper [^2] from Oki Electric.
 
