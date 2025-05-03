@@ -37,21 +37,29 @@ In other words, if we can predict the output to within a decent approximation, a
 
 <figure>
 
-![differential pulse code modulation (DPCM) block diagram. A quantizer feeds back into a prediction of the output; the prediction is compared to the actual next sample; and the difference is used for the next prediction.](/media/blog/2025/05/databending-part-5/dpcm-block-diagram.webp)
+![Differential pulse code modulation (DPCM) block diagram. A quantizer feeds back into a prediction of the output; the prediction is compared to the actual next sample; and the difference is used for the next prediction.](/media/blog/2025/05/databending-part-5/dpcm-block-diagram.webp)
 
 <figcaption>DPCM block diagram from Tan and Jiang (487)</figcaption>
 
 </figure>
 
-Note that while we describe a “predictor,” there isn't anything fancy here — we simply “predict” that the current sample will equal the previous one and take the difference between that and the actual current sample.
+Note that while we describe a “predictor,” there isn't anything fancy here — we simply “predict” that the current sample will equal the previous one and take the (quantized) difference between that and the actual current sample.
 
+The next diagram shows the adaptive version of the encoder (A) and decoder (B).
 
+<figure>
+
+![Adaptive differential pulse code modulation (DPCM) block diagram.](/media/blog/2025/05/databending-part-5/adpcm-block-diagram.webp)
+
+<figcaption>ADPCM block diagram from Tan and Jiang (491)</figcaption>
+
+</figure>
 
 ### VOX
 
-There are a number of ADPCM algorithms, and Audacity has the VOX format and something listed as NMS ADPCM. To avoid spending a while on something with a disappointing sound result, I tested importing raw data as audio using these two, and the VOX format was by far the most interesting. You can hear the same data imported as 16-bit integer and VOX ADPCM in [this aside](/posts/2025/05/databending-part-4/#adpcm) from my previous post. I love the result, but unfortunately I wasn't able to find anything in Rust to handle this. 
+There are a number of ADPCM algorithms, and Audacity has the VOX format and something listed as NMS ADPCM. To avoid spending a while on something with a disappointing sound result, I tested importing raw data as audio using these two, and the VOX format was by far the most interesting. You can hear the same data imported as 16-bit integer and VOX ADPCM in [this aside](/posts/2025/05/databending-part-4/#adpcm) from my previous post. I love the result, but unfortunately I wasn't able to find anything in Rust to handle this — the [symphonia crate](https://crates.io/crates/symphonia) that was recommended to me only has [Microsoft and IMA flavors](https://lib.rs/crates/symphonia-codec-adpcm#readme-support) of ADPCM. 
 
-I did find [this](https://github.com/dreamflyforever/vox/) C implementation, but it doesn't have a license, and I find reading block diagrams to be easier than trying to convert from C to DSP concepts, so I will be referencing the original VOX ADPCM paper [^2] from Oki Electric.
+I did find [this](https://github.com/dreamflyforever/vox/) VOX implementation in C, but it doesn't have a license, and I find reading block diagrams to be easier than trying to convert from C to DSP concepts, so I will be referencing the original VOX ADPCM paper [^2] from Oki Electric.
 
 [^1]: Li Tan and Jean Jiang, Digital Signal Processing: Fundamentals and Applications (Academic Press, 2018).
 
