@@ -58,7 +58,7 @@ module.exports = async function (eleventyConfig) {
     //   }
     //   return entry;
     // };
-  
+    
     const pageWebmentions = webmentions
       .filter(
         (mention) => mention["wm-target"] == url.split("#", 1)
