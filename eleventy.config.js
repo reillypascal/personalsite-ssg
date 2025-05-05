@@ -61,7 +61,7 @@ module.exports = async function (eleventyConfig) {
   
     const pageWebmentions = webmentions
       .filter(
-        (mention) => mention["wm-target"] == url
+        (mention) => mention["wm-target"] == url.split("#", 1)
       )
       .sort((a, b) => new Date(b.published) - new Date(a.published))
       // .map(sanitize);
