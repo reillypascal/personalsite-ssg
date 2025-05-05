@@ -77,7 +77,7 @@ The next diagram shows the adaptive version of the decoder as shown in the origi
 
 There are a number of ADPCM algorithms, and Audacity has the VOX format and something listed as NMS ADPCM. To avoid spending a while coding something with a disappointing sound result, I just used Audacity to import raw data as audio using these two, and the VOX format was by far the most interesting. You can hear the same data imported as 16-bit integer and VOX ADPCM in [this aside](/posts/2025/05/databending-part-4/#adpcm) from my previous post. I love the result, but unfortunately I wasn't able to find anything pre-existing in Rust to use the VOX format — the [symphonia crate](https://crates.io/crates/symphonia) that was recommended to me only has [Microsoft and IMA flavors](https://lib.rs/crates/symphonia-codec-adpcm#readme-support) of ADPCM. Looks like I need to code it myself!
 
-Now we will discuss the implementation details of the VOX format. We've already seen the block diagram of the VOX algorithm above. We need to calculate the step size ```ss(n)``` and use that and the 4-bit input sample ```L(n)``` to calculate the difference ```d(n)```. That difference plus the previous output ```X(n-1)``` will be our 12-bit output value. Below is the pseudocode from the Dialogic paper (1988, 5) for calculating ```d(n)``` given a value of ```ss(n)``` and an incoming sample. Note the values B3–B0 — these refer to the 4 bits in the incoming sample. This tripped me up for a bit since the paper wasn't very explicit about this, but I came across a usage of the same terminology in Dialogic's Voice API Programming Guide (2010, 78) which pointed me in the right direction. [^3]
+Now we will discuss the implementation details of the VOX format. We've already seen the block diagram of the VOX algorithm above. We need to calculate the step size ```ss(n)``` and use that and the 4-bit input sample ```L(n)``` to calculate the difference ```d(n)```. That difference plus the previous output ```X(n-1)``` will be our 12-bit output value. Below is the pseudocode from the Dialogic paper (1988, 5) for calculating ```d(n)``` given a value of ```ss(n)``` and an incoming sample. Note the values B3–B0 — these refer to the 4 bits in the incoming sample. This tripped me up for a bit since the paper wasn't very explicit about what these values refer to, but I came across a usage of the same terminology in Dialogic's Voice API Programming Guide (2010, 78) which pointed me in the right direction. [^3]
 
 ```c
 d(n) = (ss(n)*B2)+(ss(n)/2*B1)+(ss(n)/4*BO)+(ss(n)/8) 
@@ -86,18 +86,22 @@ if (B3 = 1)
 X(n) = X(n-1) + d(n)
 ```
 
-To do this, we also need the step size ```ss(n)```. The pseudocode is shown below:
+To make this calculation, we also need the step size ```ss(n)```. The pseudocode for that is shown below:
 
 ```c
 ss(n+1) = ss(n) * 1.1M(L(n))
 ```
 
-The paper includes a pair of lookup tables to efficiently calculate this. Here they are as I use them in my Rust code. We use the 4-bit incoming value to look up an “adjustment factor” in the first table, and we move a pointer into the ```STEP_SIZE``` table by the resulting amount, initialized to the first value, 16. Note that incoming values below 4 cause the step size to decrease, and values 4 or greater cause it to increase.
+The paper includes a pair of lookup tables to efficiently calculate this value. Here they are as I use them in my Rust code. We use the 4-bit incoming value to look up an “adjustment factor” in the first table, and we move a pointer into the ```STEP_SIZE``` table by the resulting amount, initialized to the first value, 16. Note that incoming values below 4 cause the step size to decrease, and values 4 or greater cause it to increase.
 
+vox\.rs
 ```rust
-const ADJUSTMENT_FACTOR: [i16; 8] = [-1, -1, -1, -1, 2, 4, 6, 8,];
+const ADPCM_INDEX_TABLE: [i16; 16] = [
+    -1, -1, -1, -1, 2, 4, 6, 8,
+    -1, -1, -1, -1, 2, 4, 6, 8,
+];
 
-const STEP_SIZE: [i16; 49] = [
+const VOX_STEP_TABLE: [i16; 49] = [
     16, 17, 19, 21, 23, 25, 28, 31, 34, 37, 41, 45,
     50, 55, 60, 66, 73, 80, 88, 97, 107, 118, 130, 143, 
     157, 173, 190, 209, 230, 253, 279, 307, 337, 371, 408, 449, 
@@ -105,7 +109,71 @@ const STEP_SIZE: [i16; 49] = [
 ];
 ```
 
+vox\.rs
+```rust
+pub struct VoxState {
+    predictor: i16,
+    step_index: i16,
+}
+```
 
+vox\.rs
+```rust
+impl VoxState {
+    // ...
+    pub fn vox_decode(&mut self, in_nibble: &u8) -> i16 {
+        // get step size from last time's index before updating
+        let step_size = VOX_STEP_TABLE[self.step_index as usize];
+        // use in_nibble to index into adpcm step table; add to step
+        let mut step_index = self.step_index + ADPCM_INDEX_TABLE[*in_nibble as usize];
+        // clamp index to size of step table — for next time
+        step_index = i16::clamp(step_index, 0, (VOX_STEP_TABLE.len() - 1) as i16);
+        
+        // sign is 4th bit; magnitude is 3 LSBs
+        let sign = in_nibble & 8;
+        let delta = in_nibble & 7;
+        let diff = ((2 * delta + 1) as i16 * step_size) >> 3;
+        // last time's value
+        let mut predictor = self.predictor;
+        // if sign bit (4th one) is set, value is negative
+        if sign != 0 { predictor -= diff; } 
+        else { predictor += diff; }
+        
+        // clamp output between -(2^p), (2^p-1), p = 11
+        self.predictor = i16::clamp(predictor, -i16::pow(2, 11), i16::pow(2, 10));
+        // update for next time through; ss(n+1) into z-1 from block diagram
+        self.step_index = step_index;
+        // return updated predictor, which is also saved for next time; X(n) into z-1
+        self.predictor * 16
+    }
+}
+```
+
+main\.rs
+```rust
+// import file as Vec<u8>
+let data: Vec<u8> = fs::read(entry.path()).expect("Error reading file");
+// need to filter as f64 anyway, so best to do in match arms here for consistency
+let converted_data: Vec<f64> = match args.format {
+    // ...
+    SampleFormat::Vox => {
+        let mut output: Vec<f64> = Vec::new();
+        let mut vox_state = vox::VoxState::new();
+        data
+            .iter()
+            // using for_each and...
+            .for_each(|chunk| {
+                for nibble in [(chunk >> 4) & 0xf, chunk & 0xf].iter() {
+                    // vox output is 12-bit, from i16::MIN <-> i16::MAX/2
+                    // but *don't* shift — changes spectrum, envelope!
+                    output.push(vox_state.vox_decode(nibble) as f64);
+                }
+            });
+        // ...returning outside of pipeline since we need to handle *two* nibbles per element in iter()
+        output
+    }
+};
+```
 
 <!-- <figure>
 
