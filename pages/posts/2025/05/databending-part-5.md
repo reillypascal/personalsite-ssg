@@ -185,13 +185,7 @@ let converted_data: Vec<f64> = match args.format {
 };
 ```
 
-<!-- <figure>
 
-![Two lookup tables. The first has the values -1, -1, -1, -1, +2, +4, +6, and +8; the second has 49 values incrementing from 16 to 1552, with the step size progressively increasing.](/media/blog/2025/05/databending-part-5/vox-adpcm-lookup-tables.webp)
-
-<figcaption>VOX ADPCM decoder lookup tables from the Dialogic Corporation (1988, 6)</figcaption>
-
-</figure> -->
 
 [^1]: Li Tan and Jean Jiang, Digital Signal Processing: Fundamentals and Applications (Academic Press, 2018).
 
