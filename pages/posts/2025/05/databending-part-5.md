@@ -46,11 +46,6 @@ While I will be doing this in Rust, you can make the exact same sounds (minus th
 - in Audacity, go to File > Import > Raw Data…, choose your file, and click “Open”
 - in the settings menu that pops up, set encoding to “VOX ADPCM,” byte order to “default endianness,” channels to “1 channel (mono),” and sample rate to 44100 (or change sample rate to taste)
 
-<!-- - (optional) if you want to clean up sub-audible frequencies, once you have the file imported, 
-    - press ctrl + A (Win/Linux) or cmd + A (Mac) to select all audio
-    - go to Effect > Volume and Compression > Amplify…, and set “New Peak Amplitude (dB)” to something around -9
-    - go to Effect > EQ and Filters > High-Pass Filter…, and set the frequency to somewhere around 20–35 Hz and the roll-off to 12 dB -->
-
 ### What is ADPCM?
 
 Tan and Jiang [^1] have a helpful discussion of the basics of ADPCM, or “adaptive differential pulse-code modulation.” First, with differential pulse-code modulation (the “non-adaptive” flavor),
@@ -69,7 +64,7 @@ In other words, if we can predict the output to within a decent approximation, a
 
 Note that while we describe a “predictor,” there isn't anything fancy here — we simply “predict” that the current sample will equal the previous one and take the (quantized) difference between that and the actual current sample.
 
-The next diagram shows the adaptive version of the decoder as shown in the original VOX ADPCM paper from the Dialogic Corporation. [^2] The primary difference here is the addition of an adaptive scaling factor for the difference between prediction and actual value. This scaling factor is based on the amplitude of the predicted value, and we will discuss the specifics of the scaling in the next section.
+The next diagram shows the adaptive version of the decoder as shown in the original VOX ADPCM paper from the Dialogic Corporation. [^2] The primary difference here is the addition of an adaptive scaling factor for the difference between prediction and actual value. This scaling factor is based on the amplitude of the incoming difference, and we will discuss the specifics of the scaling in the next section.
 
 <figure>
 
@@ -249,4 +244,3 @@ You can follow the [RSS feeds](/feeds) for this blog to see any future updates o
 [^3]: This notation comes from the idea of the [Z-transform](https://en.wikipedia.org/wiki/Z-transform).
 
 [^4]: FFmpeg, *libavcodec/adpcm.c*. FFmpeg team, 2024. \[Online]. Available: https://ffmpeg.org/doxygen/7.0/adpcm_8c_source.html#l00553. \[Accessed May 3, 2025].
-
