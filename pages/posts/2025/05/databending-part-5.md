@@ -5,7 +5,7 @@ fedi_url:
 og_image: /media/blog/2025/05/databending-part-5/dpcm-block-og-image.jpg
 og_image_width: 1200
 og_image_height: 630
-date: 2025-05-06T12:10:00-0400
+date: 2025-05-08T12:10:00-0400
 octothorpes:
   - Art
   - Audio
@@ -19,6 +19,7 @@ tags:
   - programming
   - telecommunications
 post_series: databending
+draft: true
 ---
 
 <link rel="stylesheet" type="text/css" href="/styles/code/prism-dracula.css" />
