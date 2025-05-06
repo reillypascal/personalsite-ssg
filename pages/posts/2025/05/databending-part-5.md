@@ -45,10 +45,11 @@ While I will be doing this in Rust, you can make the exact same sounds (minus th
 
 - in Audacity, go to File > Import > Raw Data…, choose your file, and click “Open”
 - in the settings menu that pops up, set encoding to “VOX ADPCM,” byte order to “default endianness,” channels to “1 channel (mono),” and sample rate to 44100 (or change sample rate to taste)
-- (optional) if you want to clean up sub-audible frequencies, once you have the file imported, 
+
+<!-- - (optional) if you want to clean up sub-audible frequencies, once you have the file imported, 
     - press ctrl + A (Win/Linux) or cmd + A (Mac) to select all audio
     - go to Effect > Volume and Compression > Amplify…, and set “New Peak Amplitude (dB)” to something around -9
-    - go to Effect > EQ and Filters > High-Pass Filter…, and set the frequency to somewhere around 20–35 Hz and the roll-off to 12 dB
+    - go to Effect > EQ and Filters > High-Pass Filter…, and set the frequency to somewhere around 20–35 Hz and the roll-off to 12 dB -->
 
 ### What is ADPCM?
 
@@ -68,7 +69,7 @@ In other words, if we can predict the output to within a decent approximation, a
 
 Note that while we describe a “predictor,” there isn't anything fancy here — we simply “predict” that the current sample will equal the previous one and take the (quantized) difference between that and the actual current sample.
 
-The next diagram shows the adaptive version of the decoder as shown in the original VOX ADPCM paper from the Dialogic Corporation. [^2] The primary difference here is the addition of an adaptive scaling factor for the step size. This scaling factor is based on the amplitude of the predicted value, and we will discuss the specifics of the scaling in the next section.
+The next diagram shows the adaptive version of the decoder as shown in the original VOX ADPCM paper from the Dialogic Corporation. [^2] The primary difference here is the addition of an adaptive scaling factor for the difference between prediction and actual value. This scaling factor is based on the amplitude of the predicted value, and we will discuss the specifics of the scaling in the next section.
 
 <figure>
 
@@ -80,7 +81,7 @@ The next diagram shows the adaptive version of the decoder as shown in the origi
 
 ### VOX
 
-There are a number of ADPCM algorithms — many different ways to adapt our step size based on the amplitude of the prediction — and Audacity has VOX and something listed as NMS ADPCM. To avoid spending a while coding something with a disappointing sound result, I just used Audacity to import raw data as audio using these two, and the VOX format was by far the most interesting. Unfortunately I wasn't able to find anything pre-existing in Rust to use the VOX format — the [symphonia crate](https://crates.io/crates/symphonia) that was recommended to me only has [Microsoft and IMA flavors](https://lib.rs/crates/symphonia-codec-adpcm#readme-support) of ADPCM. Looks like I need to code it myself! You can find the resulting code [here](https://github.com/reillypascal/data2audio).
+There are a number of ADPCM algorithms — many different ways to adapt our step size based on the amplitude of the prediction — and after testing some out while importing data as audio in Audacity, I decided VOX was by far my favorite. Unfortunately I wasn't able to find anything pre-existing in Rust for VOX — the [symphonia crate](https://crates.io/crates/symphonia) that was recommended to me only has [Microsoft and IMA flavors](https://lib.rs/crates/symphonia-codec-adpcm#readme-support) of ADPCM. Looks like I need to code it myself! You can find the resulting code [here](https://github.com/reillypascal/data2audio).
 
 Here's a snippet of audio databent through my resulting VOX ADPCM implementation:
 
@@ -90,7 +91,7 @@ The file is ```libQt5Core.5.dylib``` which I *believe* I pulled from DaVinci Res
 
 ### Reading the VOX Spec
 
-To figure out how to code my own implementation, I again referred to the Dialogic Corporation's spec for the VOX format. [^3] First, we need to calculate the step size ```ss(n)``` and use that and the 4-bit input sample ```L(n)``` to calculate the difference ```d(n)```. That difference plus the previous output ```X(n-1)``` will give our 12-bit output value. Below is the pseudocode from the Dialogic paper for calculating ```d(n)``` given a value of ```ss(n)``` and an incoming sample. 
+First, we need to calculate the step size ```ss(n)``` and use that and the 4-bit input sample ```L(n)``` to calculate the difference ```d(n)```. That difference plus the previous output ```X(n-1)``` will give our 12-bit output value. Below is the pseudocode from the Dialogic paper for calculating ```d(n)``` given a value of ```ss(n)``` and an incoming sample. Note the values B3–B0 — these refer to the 4 bits in the incoming sample, with B3 as the sign and the rest as the magnitude. 
 
 ```c
 d(n) = (ss(n)*B2)+(ss(n)/2*B1)+(ss(n)/4*BO)+(ss(n)/8) 
@@ -99,10 +100,7 @@ if (B3 = 1)
 X(n) = X(n-1) + d(n)
 ```
 
-Note the values B3–B0 — these refer to the 4 bits in the incoming sample, with B3 as the sign and the rest as the magnitude. This tripped me up for a bit since the paper wasn't very explicit about what these values refer to, but I came across another document from Dialogic, [^4] which used the same terminology, pointing me in the right direction.
-
-
-To make this calculation, we also need the step size ```ss(n)```. The pseudocode for that is shown below:
+To make this calculation, we need to get the step size ```ss(n)```. The pseudocode for that is shown below:
 
 ```c
 ss(n+1) = ss(n) * 1.1M(L(n))
@@ -132,7 +130,7 @@ Note that incoming magnitudes (first 3 bits) below 4 cause the step size to decr
 
 ### Implementing VOX in Rust
 
-To start, I have a struct called ```VoxState``` that stores the predictor and step index. Note in the diagram above that these two values are fed into single-sample delays (the blocks labeled “Z<sup>-1</sup>”), [^5] so having them stored in a struct allows us to maintain state between calls to the decoder function.
+To start, I have a struct called ```VoxState``` that stores the predictor and step index. Note in the diagram above that these two values are fed into single-sample delays (the blocks labeled “Z<sup>-1</sup>”), [^3] so having them stored in a struct allows us to maintain state between calls to the decoder function.
 
 <div class="code-file">vox.rs</div>
 
@@ -230,17 +228,17 @@ Before we discuss the challenges, just for funsies I put the compiled binary for
 
 ### Challenges
 
-At this point, our code works! There were a few things in the VOX spec that tripped me up though, so let's talk about how I got my code working. First, when my attempt at implementing the spec gave me trouble, I looked at the source for FFmpeg, which Audacity uses — specifically the function ```adpcm_ima_oki_expand_nibble()``` in ```libavcodec/adpcm.c```, line 553. [^6] This is where I got the line ```let mut delta = ((2 * (magnitude as i16) + 1) * step_size) >> 3;``` from ```vox.rs``` above.
+At this point, our code works! There were a few things in the VOX spec that tripped me up though, so let's talk about how I got my code working. First, when my attempt at implementing the spec gave me trouble, I looked at the source for FFmpeg, which Audacity uses — specifically the function ```adpcm_ima_oki_expand_nibble()``` in ```libavcodec/adpcm.c```, line 553. [^4] This is where I got the line ```let mut delta = ((2 * (magnitude as i16) + 1) * step_size) >> 3;``` from ```vox.rs``` above.
 
 Let's consider the line of pseudocode ```d(n) = (ss(n)*B2)+(ss(n)/2*B1)+(ss(n)/4*BO)+(ss(n)/8)``` — this is how we combine the incoming magnitude and the step size to get the difference between the current and previous samples. B2, B1, and B0 are the three magnitude bits from the incoming nibble. If, for example, B1 is zero, ```ss(n)/2*B1``` will divide by zero. Not only will we need to check whether each bit is zero or not, but division is more costly than the other arithmetic operations. However, we can think about this another way.
 
-With ```(ss(n)*B2)+(ss(n)/2*B1)+(ss(n)/4*BO)+(ss(n)/8)```, if we leave out the multiplication by ```ss(n)``` for the time being, we have 1 or 0 times 1; 1 or 0 times 1/2; 1 or 0 times 1/4; and 1 times 1/8. That's just the ones place and first 3 binary floating point places. If we shift those values 3 places left, we have no more fractions/division, and if we shift the incoming 3 magnitude bits 1 place left (i.e., multiply by 2) and add one, our magnitude and that thing that was e.g., 0b1.111 line up the same way as before. We can multiply what we have now by the step size, and ```>> 3``` “undoes” the left shift we did to get rid of the fraction. Thus ```((2 * (magnitude as i16) + 1) * step_size) >> 3``` is equivalent to ```(ss(n)*B2)+(ss(n)/2*B1)+(ss(n)/4*BO)+(ss(n)/8)```, but we don't need to work around dividing by zero, and things are a bit faster to boot.
+With ```(ss(n)*B2)+(ss(n)/2*B1)+(ss(n)/4*BO)+(ss(n)/8)```, if we leave out the multiplication by ```ss(n)``` for the time being, we have 1 or 0 times 1; 1 or 0 times 1/2; 1 or 0 times 1/4; and 1 times 1/8. That's just the ones place and first 3 binary floating point places. If we shift those values 3 places left, we have no more fractions/division, and if we shift the incoming 3 magnitude bits 1 place left (i.e., multiply by 2) and add one, our magnitude and the previous values we shifted line up the same way as before. We can multiply what we have now by the step size, and ```>> 3``` “undoes” the left shift we did to get rid of the fraction. Thus ```((2 * (magnitude as i16) + 1) * step_size) >> 3``` is equivalent to ```(ss(n)*B2)+(ss(n)/2*B1)+(ss(n)/4*BO)+(ss(n)/8)```, but we don't need to work around dividing by zero, and things are a bit faster to boot.
 
 ### Looking Forward
 
 Lately I've been enjoying windytan (Oona Räisänen)'s [blog](https://www.windytan.com/2013/11/broadcast-messages-on-darc-side.html) — a “blog about sound & signals” where she discusses a variety of telecommunications encoding formats, both in terms of their sound and decoding them. I got an [RTL-SDR](https://www.rtl-sdr.com/about-rtl-sdr/) [software-defined radio](https://en.wikipedia.org/wiki/Software-defined_radio) dongle back in 2020, and got excited about tracking down and decoding interesting signals. Now that I have more programming skills, I think I'll do more discussion of and coding with different telecommunications formats — both for radio, and for telephony, as I did today.
 
-One thing that [@EveHasWords](https://toot.cat/@EveHasWords/114377893125307935) mentioned recently, and I also saw [on windytan's blog](https://www.windytan.com/2012/08/vintage-bits-on-cassettes.html) is using cassette tapes to store digital data such as software or games. Nostalgia Nerd also [demonstrates it](https://www.youtube.com/watch?v=DoMxl_RqQlQ) over on YouTube, but the general idea is that you modulate a tone to encode digital data, and then record that as audio on a regular cassette tape. I have a few cassette devices around the house, and it could be fun to write some software to send a modulated tone out my computer's audio jack and decode such a tone coming in.
+One thing that [@EveHasWords](https://toot.cat/@EveHasWords/114377893125307935) mentioned recently, and I also saw [on windytan's blog](https://www.windytan.com/2012/08/vintage-bits-on-cassettes.html) is using cassette tapes to store digital data such as software or games. [This YouTube video](https://www.youtube.com/watch?v=_9SM9lG47Ew) discusses and demonstrates them, but the general idea is that you modulate a tone to encode digital data, and then record that as audio on a regular cassette tape. I have a few cassette devices around the house, and it could be fun to write some software to send a modulated tone out my computer's audio jack and decode such a tone coming in.
 
 You can follow the [RSS feeds](/feeds) for this blog to see any future updates on such projects — hope to see you then!
 
@@ -248,13 +246,7 @@ You can follow the [RSS feeds](/feeds) for this blog to see any future updates o
 
 [^2]: Dialogic Corporation, *Dialogic ADPCM Algorithm*, 1988. \[Online]. Available: https://people.cs.ksu.edu/~tim/vox/dialogic_adpcm.pdf. \[Accessed May 3, 2025]
 
-[^3]: Ibid.
+[^3]: This notation comes from the idea of the [Z-transform](https://en.wikipedia.org/wiki/Z-transform).
 
-[^4]: Dialogic Corporation, *Dialogic® Voice API Programming Guide*, p. 78, 2010. \[Online]. Available: https://www.dialogic.com/~/media/manuals/docs/voice_programming_hmp_v7.pdf. \[Accessed May 4, 2025].
-
-[^5]: This notation comes from the idea of the [Z-transform](https://en.wikipedia.org/wiki/Z-transform).
-
-[^6]: FFmpeg, *libavcodec/adpcm.c*. FFmpeg team, 2024. \[Online]. Available: https://ffmpeg.org/doxygen/7.0/adpcm_8c_source.html#l00553. \[Accessed May 3, 2025].
-
-<!-- [^7]: T. Bower, “Vox Audio File Conversion,” 2004. \[Online]. Available: https://people.cs.ksu.edu/~tim/vox/. \[Accessed May 5, 2025].  -->
+[^4]: FFmpeg, *libavcodec/adpcm.c*. FFmpeg team, 2024. \[Online]. Available: https://ffmpeg.org/doxygen/7.0/adpcm_8c_source.html#l00553. \[Accessed May 3, 2025].
 
