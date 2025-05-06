@@ -36,7 +36,7 @@
     --bg-accent: hsl(227, 22%, 15%);
     --ui-line-dark: hsl(226, 24%, 29%);
     --fg-light: hsl(227, 87%, 95%);
-    --fg-med-light: hsl(228, 45%, 75%);
+    --fg-med-light: hsl(227, 45%, 75%);
 
     --accent-med-light: hsl(327, 55%, 75%);
     --accent-med: hsl(327, 25%, 53%);
@@ -553,4 +553,10 @@ a:active {
 
 .bibliography {
     margin-bottom: 32px;
+}
+
+.code-file {
+    color: var(--fg-med-light);
+    font-size: 0.95em;
+    margin-left: 16px;
 }
