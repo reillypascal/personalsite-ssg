@@ -66,6 +66,11 @@ article h3 {
 .webmention-fav-icon {
     top: 2px;
 }
+#webmention-comments,
+#webmention-reposts {
+    margin-right: 8px;
+}
+
 
 /* https://stackoverflow.com/questions/22672368/how-to-make-a-transparent-html-button */
 #react-btn {
@@ -114,7 +119,7 @@ article h3 {
     border-top: 1px solid var(--ui-line-dark);
     padding: 12px 4px 0 4px;
     vertical-align: middle;
-    font-size: 0.95em;
+    /* font-size: 0.95em; */
 
     > *:first-child {
         margin-right: 48px;

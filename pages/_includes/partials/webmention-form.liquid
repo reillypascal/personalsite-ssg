@@ -1,8 +1,11 @@
 <div class="webmentionForm">
+    <h2 class="sectionHeader">Reply</h2>
+
+    <p>You can reply to this post via <a href='mailto:reillypascal@gmail.com?subject=Re: {{ title }}'>email</a>.</p>
+
     <form id="webmention-form" action="https://webmention.io/reillyspitzfaden.com/webmention" method="POST">
-        <h2 class="sectionHeader">Send me a webmention</h2>
         <p>
-            <label for="webmention-form">This post accepts <a href="https://en.wikipedia.org/wiki/Webmention">webmentions</a>. If you link to and write about this on your website, you can enter the web address of your post below:</label>
+            <label for="webmention-form">You can also send me a <a href="https://en.wikipedia.org/wiki/Webmention">webmention</a>. If you link to and write about this on your website, you can enter the web address of your post below:</label>
         </p>
 
         <input id="webmention-source" type="url" autocomplete="url" required="" pattern="^https?:\/\/(.*)" name="source" placeholder="URL/Permalink of your article" class="error" aria-invalid="true">
