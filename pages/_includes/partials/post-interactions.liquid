@@ -1,11 +1,4 @@
 <div class="post-interactions">
-    <div class="email-reply">
-        <span class="mail-icon">
-            <img width="18" height="18" src="/media/ui/mail-icon-light-18px.svg" alt="mail icon" />
-        </span>
-        <a href='mailto:reillypascal@gmail.com?subject=Re: {{ title }}'>Reply</a>
-    </div>
-    
     {% assign pageUrl = "https://reillyspitzfaden.com" | append: page.url %}
     {% assign mentions = webmentions.mentions | webmentionsByUrl: pageUrl %}
 
@@ -26,6 +19,13 @@
             <img width="18" height="18" src="/media/ui/favorite-icon-light-18px.svg" alt="favorite icon" />
         </span>
         <span id="webmention-likes">{{ mentions.likes | size }}</span>
+    </div>
+
+    <div class="email-reply">
+        <span class="mail-icon">
+            <img width="18" height="18" src="/media/ui/mail-icon-light-18px.svg" alt="mail icon" />
+        </span>
+        <a href='mailto:reillypascal@gmail.com?subject=Re: {{ title }}'>Reply</a>
     </div>
 
     <div class="post-reactions">
