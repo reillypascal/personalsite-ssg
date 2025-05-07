@@ -109,14 +109,17 @@ article h3 {
 .post-interactions {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
     row-gap: 16px;
+    justify-content: flex-start;
+    @media screen and (max-width: 400px) {
+        justify-content: space-between;
+    }
 
     /* width: fit-content; */
     border-top: 1px solid var(--ui-line-dark);
     padding-top: 12px;
-    > * {
-        margin-right: 24px;
+    > *:not(:last-child) {
+        margin-right: 28px;
     }
 }
 
