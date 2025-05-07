@@ -2,6 +2,8 @@
 title: Databending Part 5 — Listening to Telephone Codecs
 description: One way to get more variety when transforming data into audio is to change the encoding. Today I'm implementing the VOX ADPCM telephone codec — which I especially like — in Rust to accomplish this!
 fedi_url: 
+  - https://hachyderm.io/@reillypascal/114467479727280788
+  - https://bsky.app/profile/reillypascal.bsky.social/post/3lolssltkxc24
 og_image: /media/blog/2025/05/databending-part-5/dpcm-block-og-image.jpg
 og_image_width: 1200
 og_image_height: 630

@@ -67,10 +67,6 @@ article h3 {
     top: 2px;
 }
 
-.post-reactions {
-    /* padding-top: 24px; */
-    margin: 16px 0;
-}
 /* https://stackoverflow.com/questions/22672368/how-to-make-a-transparent-html-button */
 #react-btn {
     background-color: transparent;
@@ -97,14 +93,27 @@ article h3 {
 #react-ctr {
     font-weight: 300;
 }
-.email-reply {
-    margin: 16px 0;
-}
 
 .webmention-logo {
     position: relative;
     top: 2px;
     margin: 0 4px 0 0;
+}
+
+/* .post-reactions,
+.email-reply,
+.webmention-display {
+    margin: 16px 0;
+} */
+
+.post-interactions {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    row-gap: 16px;
+    > * {
+        margin-right: 24px;
+    }
 }
 
 /* class name from markdown-it-footnote library */

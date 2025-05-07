@@ -1,42 +1,43 @@
-<div class="post-reactions">
-    <button id="react-btn">
-        <span class="heart-react">
-            <img src="/media/icon-heart-pink.svg" alt="heart icon" />
+<div class="post-interactions">
+    <div class="post-reactions">
+        <button id="react-btn">
+            <span class="heart-react">
+                <img src="/media/icon-heart-pink.svg" alt="heart icon" />
+            </span>
+        </button>
+
+        <span id="react-ctr">0</span>
+    </div>
+
+    <div class="email-reply">
+        <span class="mail-icon">
+            <img width="18" height="18" src="/media/ui/mail-icon-light-18px.svg" alt="mail icon" />
         </span>
-    </button>
+        <a href='mailto:reillypascal@gmail.com?subject=Re: {{ title }}'>Email</a>
+    </div>
 
-    <span id="react-ctr">0</span>
+    {% assign pageUrl = "https://reillyspitzfaden.com" | append: page.url %}
+    {% assign mentions = webmentions.mentions | webmentionsByUrl: pageUrl %}
+
+    <div class="webmention-display">
+        <span class="webmention-logo">
+            <img width="18" height="18" src="/media/ui/webmention-logo-light-18px.svg" alt="webmention logo" />
+        </span>
+        {% comment %} <span class="webmention-meta">Webmentions:</span> {% endcomment %}
+        <span class="webmention-reply-icon">
+            <img width="18" height="18" src="/media/ui/comment-icon-light-18px.svg" alt="reply icon" />
+        </span>
+        <span id="webmention-comments">{{ mentions.comments | size }}</span>
+        <span class="webmention-repost-icon">
+            <img width="18" height="18" src="/media/ui/repost-icon-light-18px.svg" alt="repost icon" />
+        </span>
+        <span id="webmention-reposts">{{ mentions.reposts | size }}</span>
+        <span class="webmention-fav-icon">
+            <img width="18" height="18" src="/media/ui/favorite-icon-light-18px.svg" alt="favorite icon" />
+        </span>
+        <span id="webmention-likes">{{ mentions.likes | size }}</span>
+    </div>
 </div>
-
-<div class="email-reply">
-    <span class="mail-icon">
-        <img width="18" height="18" src="/media/ui/mail-icon-light-18px.svg" alt="mail icon" />
-    </span>
-    <a href='mailto:reillypascal@gmail.com?subject=Re: {{ title }}'>Reply via email</a>
-</div>
-
-{% assign pageUrl = "https://reillyspitzfaden.com" | append: page.url %}
-{% assign mentions = webmentions.mentions | webmentionsByUrl: pageUrl %}
-
-<div class="webmention-display">
-    <span class="webmention-logo">
-        <img width="18" height="18" src="/media/ui/webmention-logo-light-18px.svg" alt="webmention logo" />
-    </span>
-    <span class="webmention-meta">Webmentions:</span>
-    <span class="webmention-reply-icon">
-        <img width="18" height="18" src="/media/ui/comment-icon-light-18px.svg" alt="reply icon" />
-    </span>
-    <span id="webmention-comments">{{ mentions.comments | size }}</span>
-    <span class="webmention-repost-icon">
-        <img width="18" height="18" src="/media/ui/repost-icon-light-18px.svg" alt="repost icon" />
-    </span>
-    <span id="webmention-reposts">{{ mentions.reposts | size }}</span>
-    <span class="webmention-fav-icon">
-        <img width="18" height="18" src="/media/ui/favorite-icon-light-18px.svg" alt="favorite icon" />
-    </span>
-    <span id="webmention-likes">{{ mentions.likes | size }}</span>
-</div>
-
 {% comment %} <div class="share-openly">
     <img class="share-openly-icon" src="/media/share-openly.svg">&nbsp;
     <a href="https://shareopenly.org/share/?url=https://reillyspitzfaden.com{{ page.url }}">Share on the Fediverse</a>
