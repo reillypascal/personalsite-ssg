@@ -43,7 +43,7 @@ article h3 {
     /* font-size: 16pt; */
     max-width: fit-content;
     margin: 64px auto;
-    color: var(--fg-med-light);
+    /* color: var(--fg-med-light); */
 }
 
 .mail-icon {
