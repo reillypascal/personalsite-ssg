@@ -76,13 +76,17 @@ The next diagram shows the adaptive version of the decoder as shown in the origi
 
 ### VOX
 
-There are a number of ADPCM algorithms — many different ways to adapt our step size based on the amplitude of the prediction — and after testing some out while importing data as audio in Audacity, I decided VOX was by far my favorite. Unfortunately I wasn't able to find anything pre-existing in Rust for VOX — the [symphonia crate](https://crates.io/crates/symphonia) that was recommended to me only has [Microsoft and IMA flavors](https://lib.rs/crates/symphonia-codec-adpcm#readme-support) of ADPCM. Looks like I need to code it myself! You can find the resulting code [here](https://github.com/reillypascal/data2audio).
+There are a number of ADPCM algorithms — many different ways to adapt our step size based on the amplitude of the difference and/or prediction — and after testing some out while importing data as audio in Audacity, I decided VOX was by far my favorite. Unfortunately I wasn't able to find anything pre-existing in Rust for VOX — the [symphonia crate](https://crates.io/crates/symphonia) that was recommended to me only has [Microsoft and IMA flavors](https://lib.rs/crates/symphonia-codec-adpcm#readme-support) of ADPCM. Looks like I need to code it myself! You can find the resulting code [here](https://github.com/reillypascal/data2audio).
 
 Here's a snippet of audio databent through my resulting VOX ADPCM implementation:
 
 <audio controls src="/media/blog/2025/05/databending-part-5/libQt5Core.5.mp3" title="libQt5Core.5.dylib file databent through VOX ADPCM codec"></audio>
 
-The file is ```libQt5Core.5.dylib``` which I *believe* I pulled from DaVinci Resolve a week or two ago.
+The file is ```libQt5Core.5.dylib``` which I *believe* I pulled from DaVinci Resolve a week or two ago. Also, just as a check, here's a voice file (8 kHz sample rate) I encoded as VOX ADPCM with Audacity [^3] and decoded with this Rust tool:
+
+<audio controls src="/media/blog/2025/05/databending-part-5/this-is-a-test.mp3" title="me saying 'this is a test of my voice to import as VOX ADPCM' at 8 kHz sample rate"></audio>
+
+Sounds just as expected — a bit crunchy and lo-fi like a telephone, but clear and comprehensible.
 
 ### Reading the VOX Spec
 
@@ -125,7 +129,7 @@ Note that incoming magnitudes (first 3 bits) below 4 cause the step size to decr
 
 ### Implementing VOX in Rust
 
-To start, I have a struct called ```VoxState``` that stores the predictor and step index. Note in the diagram above that these two values are fed into single-sample delays (the blocks labeled “Z<sup>-1</sup>”), [^3] so having them stored in a struct allows us to maintain state between calls to the decoder function.
+To start, I have a struct called ```VoxState``` that stores the predictor and step index. Note in the diagram above that these two values are fed into single-sample delays (the blocks labeled “Z<sup>-1</sup>”), [^4] so having them stored in a struct allows us to maintain state between calls to the decoder function.
 
 <div class="code-file">vox.rs</div>
 
@@ -151,7 +155,7 @@ impl VoxState {
         // use in_nibble to index into adpcm step table; add to step
         let mut step_index = self.step_index + ADPCM_INDEX_TABLE[*in_nibble as usize];
         // clamp index to size of step table — for next time
-        step_index = i16::clamp(step_index, 0, (VOX_STEP_TABLE.len() as i16) - 1);
+        step_index = i16::clamp(step_index, 0, 48);
         
         // sign is 4th bit; magnitude is 3 LSBs
         let sign = in_nibble & 0b1000;
@@ -223,7 +227,7 @@ Before we discuss the challenges, just for funsies I put the compiled binary for
 
 ### Challenges
 
-At this point, our code works! There were a few things in the VOX spec that tripped me up though, so let's talk about how I got my code working. First, when my attempt at implementing the spec gave me trouble, I looked at the source for FFmpeg, which Audacity uses — specifically the function ```adpcm_ima_oki_expand_nibble()``` in ```libavcodec/adpcm.c```, line 553. [^4] This is where I got the line ```let mut delta = ((2 * (magnitude as i16) + 1) * step_size) >> 3;``` from ```vox.rs``` above.
+At this point, our code works! There were a few things in the VOX spec that tripped me up though, so let's talk about how I got my code working. First, when my attempt at implementing the spec gave me trouble, I looked at the source for FFmpeg, which Audacity uses — specifically the function ```adpcm_ima_oki_expand_nibble()``` in ```libavcodec/adpcm.c```, line 553. [^5] This is where I got the line ```let mut delta = ((2 * (magnitude as i16) + 1) * step_size) >> 3;``` from ```vox.rs``` above.
 
 Let's consider the line of pseudocode ```d(n) = (ss(n)*B2)+(ss(n)/2*B1)+(ss(n)/4*BO)+(ss(n)/8)``` — this is how we combine the incoming magnitude and the step size to get the difference between the current and previous samples. B2, B1, and B0 are the three magnitude bits from the incoming nibble. If, for example, B1 is zero, ```ss(n)/2*B1``` will divide by zero. Not only will we need to check whether each bit is zero or not, but division is more costly than the other arithmetic operations. However, we can think about this another way.
 
@@ -231,7 +235,7 @@ With ```(ss(n)*B2)+(ss(n)/2*B1)+(ss(n)/4*BO)+(ss(n)/8)```, if we leave out the m
 
 ### Looking Forward
 
-Lately I've been enjoying windytan (Oona Räisänen)'s [blog](https://www.windytan.com/2013/11/broadcast-messages-on-darc-side.html) — a “blog about sound & signals” where she discusses a variety of telecommunications encoding formats, both in terms of their sound and decoding them. I got an [RTL-SDR](https://www.rtl-sdr.com/about-rtl-sdr/) [software-defined radio](https://en.wikipedia.org/wiki/Software-defined_radio) dongle back in 2020, and got excited about tracking down and decoding interesting signals. Now that I have more programming skills, I think I'll do more discussion of and coding with different telecommunications formats — both for radio, and for telephony, as I did today.
+Lately I've been enjoying windytan (Oona Räisänen)'s [blog](https://www.windytan.com/2013/11/broadcast-messages-on-darc-side.html) — a “blog about sound & signals” where she discusses a variety of telecommunications encoding formats, both in terms of their sound and decoding them. I got an [RTL-SDR](https://www.rtl-sdr.com/about-rtl-sdr/) [software-defined radio](https://en.wikipedia.org/wiki/Software-defined_radio) dongle back in 2020, and greatly enjoyed tracking down and decoding interesting signals. Now that I have more programming skills, I think I'll do more discussion of and coding with different telecommunications formats — both for radio, and for telephony, as I did today.
 
 One thing that [@EveHasWords](https://toot.cat/@EveHasWords/114377893125307935) mentioned recently, and I also saw [on windytan's blog](https://www.windytan.com/2012/08/vintage-bits-on-cassettes.html) is using cassette tapes to store digital data such as software or games. [This YouTube video](https://www.youtube.com/watch?v=_9SM9lG47Ew) discusses and demonstrates them, but the general idea is that you modulate a tone to encode digital data, and then record that as audio on a regular cassette tape. I have a few cassette devices around the house, and it could be fun to write some software to send a modulated tone out my computer's audio jack and decode such a tone coming in.
 
@@ -239,8 +243,10 @@ You can follow the [RSS feeds](/feeds) for this blog to see any future updates o
 
 [^1]: L. Tan and J. Jiang, *Digital Signal Processing: Fundamentals and Applications*. Academic Press, 2018, pp. 486–496.
 
-[^2]: Dialogic Corporation, *Dialogic ADPCM Algorithm*, 1988. \[Online]. Available: https://people.cs.ksu.edu/~tim/vox/dialogic_adpcm.pdf. \[Accessed May 3, 2025]
+[^2]: Dialogic Corporation, *Dialogic ADPCM Algorithm*, 1988. \[Online]. Available: https://people.cs.ksu.edu/~tim/vox/dialogic_adpcm.pdf.
 
-[^3]: This notation comes from the idea of the [Z-transform](https://en.wikipedia.org/wiki/Z-transform).
+[^3]: Here's a [link](https://forum.audacityteam.org/t/dialogic-vox-format/40080/2) to the Audacity forum explaining where to find the settings to do this.
 
-[^4]: FFmpeg, *libavcodec/adpcm.c*. FFmpeg team, 2024. \[Online]. Available: https://ffmpeg.org/doxygen/7.0/adpcm_8c_source.html#l00553. \[Accessed May 3, 2025].
+[^4]: This notation comes from the idea of the [Z-transform](https://en.wikipedia.org/wiki/Z-transform).
+
+[^5]: FFmpeg, *libavcodec/adpcm.c*. \[Online]. Available: https://ffmpeg.org/doxygen/7.0/adpcm_8c_source.html#l00553.
