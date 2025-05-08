@@ -2,7 +2,7 @@
 {% assign web_mentions = webmentions.mentions | webWebmentions: pageUrl %}
 {% assign fedi_mentions = webmentions.mentions | fediWebmentions: pageUrl %}
 
-{%- if web_mentions.size > 0 or fedi_mentions.comments.size > 0 or fedi_mentions.reposts.size > 0 or fedi_mentions.likes.size > 0 %}
+{%- if fedi_url or web_mentions.size > 0 or fedi_mentions.comments.size > 0 or fedi_mentions.reposts.size > 0 or fedi_mentions.likes.size > 0 %}
     <article class="webmention-display">
         <h2 class="sectionHeader">Interactions</h2>
         
@@ -33,63 +33,66 @@
             </section>
         {%- endif %}
 
-        {%- if fedi_mentions.comments.size > 0 or fedi_mentions.reposts.size > 0 or fedi_mentions.likes.size > 0 %}
+        {%- if fedi_url or fedi_mentions.comments.size > 0 or fedi_mentions.reposts.size > 0 or fedi_mentions.likes.size > 0 %}
             <section class="fedi-webmention-display">
-                {% comment %} <span class="fedi-asterism">
-                    &#x2042;
-                </span>  {% endcomment %}
-                {% comment %} <span class="webmention-reply-icon">
-                    <img width="18" height="18" src="/media/ui/comment-icon-light-18px.svg" alt="reply icon" />
-                </span>
-                <span id="webmention-comments">{{ fedi_mentions.comments | size }} comments,</span>
-                <span class="webmention-repost-icon">
-                    <img width="18" height="18" src="/media/ui/repost-icon-light-18px.svg" alt="repost icon" />
-                </span>
-                <span id="webmention-reposts">{{ fedi_mentions.reposts | size }} reposts,</span>
-                 <span class="webmention-fav-icon">
-                    <img width="18" height="18" src="/media/ui/favorite-icon-light-18px.svg" alt="favorite icon" />
-                </span> 
-                <span id="webmention-likes">{{ fedi_mentions.likes | size }} likes</span>  {% endcomment %}
-
-                <span class="fedi-interactions">
-                    {%- if fedi_mentions.comments.size == 1 -%}
-                        {{ fedi_mentions.comments | size }} comment 
-                    {%- elsif fedi_mentions.comments.size > 1 -%}
-                        {{ fedi_mentions.comments | size }} comments 
-                    {%- endif -%}
-                    {%- if fedi_mentions.comments.size > 0 and fedi_mentions.reposts.size > 0 or fedi_mentions.likes.size > 0 -%}
-                    ,
-                    {% endif -%}
-                    {%- if fedi_mentions.reposts.size == 1 -%}
-                        {{ fedi_mentions.reposts | size }} repost 
-                    {%- elsif fedi_mentions.reposts.size > 1 -%}
-                        {{ fedi_mentions.reposts | size }} reposts 
-                    {%- endif -%}
-                    {%- if fedi_mentions.reposts.size > 0 and fedi_mentions.likes.size -%}
-                    ,
-                    {%- endif -%}
-                    {%- if fedi_mentions.likes.size == 1 %}
-                        {{ fedi_mentions.likes | size }} like
-                    {%- elsif fedi_mentions.likes.size > 1 %}
-                        {{ fedi_mentions.likes | size }} likes
-                    {%- endif %}
-                    on the Fediverse
-                    {%- if fedi_url -%}
-                    : 
+                {%- if fedi_url -%}
+                    <div class="fedi-syndication-links">
+                        Syndicated on the Fediverse: 
                         {%- comment %} fedi_url.first (i.e., first descendant) returns nil if not an array {%- endcomment %}
                         {%- if fedi_url.first %}
                             {%- for url in fedi_url %}
-                                <a href="{{ url }}">syndication link {{ forloop.index }}</a>
+                                <a href="{{ url }}">link {{ forloop.index }}</a>
                                 {%- if not forloop.last -%}
                                 ,
                                 {%- endif -%}
                             {%- endfor %}
                         {%- else %}
-                            <a href="{{ fedi_url }}">syndication link</a>
+                            <a href="{{ fedi_url }}">link</a>
                         {%- endif %}
-                    {% endif %}
-                </span>
+                    </div>
+                {%- endif %}
+            
+                {%- if fedi_mentions.comments.size > 0 or fedi_mentions.reposts.size > 0 or fedi_mentions.likes.size > 0 %}
+                    <div class="fedi-interactions">
+                        {%- if fedi_mentions.comments.size == 1 -%}
+                            {{ fedi_mentions.comments | size }} comment 
+                        {%- elsif fedi_mentions.comments.size > 1 -%}
+                            {{ fedi_mentions.comments | size }} comments 
+                        {%- endif -%}
+                        {%- if fedi_mentions.comments.size > 0 and fedi_mentions.reposts.size > 0 or fedi_mentions.likes.size > 0 -%}
+                        ,
+                        {% endif -%}
+                        {%- if fedi_mentions.reposts.size == 1 -%}
+                            {{ fedi_mentions.reposts | size }} repost 
+                        {%- elsif fedi_mentions.reposts.size > 1 -%}
+                            {{ fedi_mentions.reposts | size }} reposts 
+                        {%- endif -%}
+                        {%- if fedi_mentions.reposts.size > 0 and fedi_mentions.likes.size -%}
+                        ,
+                        {%- endif -%}
+                        {%- if fedi_mentions.likes.size == 1 %}
+                            {{ fedi_mentions.likes | size }} like
+                        {%- elsif fedi_mentions.likes.size > 1 %}
+                            {{ fedi_mentions.likes | size }} likes
+                        {%- endif %}
+                    </div>
+                {%- endif %}
             </section>
         {%- endif %}
     </article>
 {%- endif %}
+{% comment %} <span class="fedi-asterism">
+    &#x2042;
+</span>  {% endcomment %}
+{% comment %} <span class="webmention-reply-icon">
+    <img width="18" height="18" src="/media/ui/comment-icon-light-18px.svg" alt="reply icon" />
+</span>
+<span id="webmention-comments">{{ fedi_mentions.comments | size }} comments,</span>
+<span class="webmention-repost-icon">
+    <img width="18" height="18" src="/media/ui/repost-icon-light-18px.svg" alt="repost icon" />
+</span>
+<span id="webmention-reposts">{{ fedi_mentions.reposts | size }} reposts,</span>
+<span class="webmention-fav-icon">
+    <img width="18" height="18" src="/media/ui/favorite-icon-light-18px.svg" alt="favorite icon" />
+</span> 
+<span id="webmention-likes">{{ fedi_mentions.likes | size }} likes</span>  {% endcomment %}
