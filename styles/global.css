@@ -435,6 +435,7 @@ main, footer {
     blockquote,
     ul li,
     ol li,
+    .webmention-comment,
     .fedi-interactions {
         line-height: var(--p-line-height);
     }
