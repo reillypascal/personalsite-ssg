@@ -8,28 +8,28 @@
         
         {%- if web_mentions.size > 0 %}
             <section class="web-webmention-display">
-                    {% for mention in web_mentions reversed %}
-                        <div class="webmention-comment">
-                            {%- if  mention.author.name and mention.author.name != "" %}
-                                {{ mention.author.name }}
-                            {%- else %}
-                                Someone
-                            {%- endif %}
+                {% for mention in web_mentions reversed %}
+                    <div class="webmention-comment">
+                        {%- if  mention.author.name and mention.author.name != "" %}
+                            {{ mention.author.name }}
+                        {%- else %}
+                            Someone
+                        {%- endif %}
 
-                            <a href="{{ mention.url }}">
-                                {%- if mention["wm-property"] == "like-of" -%}
-                                    liked
-                                {%- elsif mention["wm-property"] == "in-reply-to" -%}
-                                    replied to
-                                {%- else -%}
-                                    mentioned
-                                {%- endif -%}
-                            </a> this post
-                            {%- if mention.content.text %}
-                                <blockquote>{{ mention.content.text | truncate: 175 }}</blockquote>
-                            {%- endif %}
-                        </div>
-                    {% endfor %}
+                        <a href="{{ mention.url }}">
+                            {%- if mention["wm-property"] == "like-of" -%}
+                                liked
+                            {%- elsif mention["wm-property"] == "in-reply-to" -%}
+                                replied to
+                            {%- else -%}
+                                mentioned
+                            {%- endif -%}
+                        </a> this post
+                        {%- if mention.content.text %}
+                            <blockquote>{{ mention.content.text | truncate: 175 }}</blockquote>
+                        {%- endif %}
+                    </div>
+                {% endfor %}
             </section>
         {%- endif %}
 
@@ -59,7 +59,7 @@
                     {%- endif -%}
                     {%- if fedi_mentions.comments.size > 0 and fedi_mentions.reposts.size > 0 or fedi_mentions.likes.size > 0 -%}
                     ,
-                    {% endif %}
+                    {% endif -%}
                     {%- if fedi_mentions.reposts.size == 1 -%}
                         {{ fedi_mentions.reposts | size }} repost 
                     {%- elsif fedi_mentions.reposts.size > 1 -%}
@@ -67,19 +67,29 @@
                     {%- endif -%}
                     {%- if fedi_mentions.reposts.size > 0 and fedi_mentions.likes.size -%}
                     ,
-                    {% endif %}
-                    {% comment %} {% if fedi_mentions.comments.size > 0 and fedi_mentions.reposts.size > 0 and fedi_mentions.likes.size > 0 %}
-                    and
-                    {% endif %} {% endcomment %}
-                    {% if fedi_mentions.likes.size == 1 %}
+                    {%- endif -%}
+                    {%- if fedi_mentions.likes.size == 1 %}
                         {{ fedi_mentions.likes | size }} like
-                    {% elsif fedi_mentions.likes.size > 1 %}
+                    {%- elsif fedi_mentions.likes.size > 1 %}
                         {{ fedi_mentions.likes | size }} likes
-                    {% endif %}
+                    {%- endif %}
                     on the Fediverse
+                    {%- if fedi_url -%}
+                    : 
+                        {%- comment %} fedi_url.first (i.e., first descendant) returns nil if not an array {%- endcomment %}
+                        {%- if fedi_url.first %}
+                            {%- for url in fedi_url %}
+                                <a href="{{ url }}">syndication link {{ forloop.index }}</a>
+                                {%- if not forloop.last -%}
+                                ,
+                                {%- endif -%}
+                            {%- endfor %}
+                        {%- else %}
+                            <a href="{{ fedi_url }}">syndication link</a>
+                        {%- endif %}
+                    {% endif %}
                 </span>
             </section>
         {%- endif %}
-
     </article>
 {%- endif %}
