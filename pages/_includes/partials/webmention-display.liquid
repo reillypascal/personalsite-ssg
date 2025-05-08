@@ -38,18 +38,39 @@
                 {% comment %} <span class="fedi-asterism">
                     &#x2042;
                 </span>  {% endcomment %}
-                <span class="webmention-reply-icon">
+                {% comment %} <span class="webmention-reply-icon">
                     <img width="18" height="18" src="/media/ui/comment-icon-light-18px.svg" alt="reply icon" />
                 </span>
-                <span id="webmention-comments">{{ fedi_mentions.comments | size }}</span>
+                <span id="webmention-comments">{{ fedi_mentions.comments | size }} comments,</span>
                 <span class="webmention-repost-icon">
                     <img width="18" height="18" src="/media/ui/repost-icon-light-18px.svg" alt="repost icon" />
                 </span>
-                <span id="webmention-reposts">{{ fedi_mentions.reposts | size }}</span>
-                <span class="webmention-fav-icon">
+                <span id="webmention-reposts">{{ fedi_mentions.reposts | size }} reposts,</span>
+                 <span class="webmention-fav-icon">
                     <img width="18" height="18" src="/media/ui/favorite-icon-light-18px.svg" alt="favorite icon" />
+                </span> 
+                <span id="webmention-likes">{{ fedi_mentions.likes | size }} likes</span>  {% endcomment %}
+
+                <span>
+                    {% if fedi_mentions.comments.size == 1 %}
+                        {{ fedi_mentions.comments | size }} comment,
+                    {% elsif fedi_mentions.comments.size != 1 %}
+                        {{ fedi_mentions.comments | size }} comments,
+                    {% endif %}
+    
+                    {% if fedi_mentions.reposts.size == 1 %}
+                        {{ fedi_mentions.reposts | size }} repost,
+                    {% elsif fedi_mentions.reposts.size != 1 %}
+                        {{ fedi_mentions.reposts | size }} reposts,
+                    {% endif %}
+                    and 
+                    {% if fedi_mentions.likes.size == 1 %}
+                        {{ fedi_mentions.likes | size }} like
+                    {% elsif fedi_mentions.likes.size != 1 %}
+                        {{ fedi_mentions.likes | size }} likes
+                    {% endif %}
+                    on the Fediverse
                 </span>
-                <span id="webmention-likes">{{ fedi_mentions.likes | size }}</span>
             </section>
         {%- endif %}
 
