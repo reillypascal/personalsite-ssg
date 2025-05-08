@@ -436,7 +436,8 @@ main, footer {
     ul li,
     ol li,
     .webmention-comment,
-    .fedi-interactions {
+    .fedi-interactions,
+    .fedi-syndication-links {
         line-height: var(--p-line-height);
     }
 }
