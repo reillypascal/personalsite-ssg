@@ -8,7 +8,7 @@
         
         {%- if web_mentions.size > 0 %}
             <section class="web-webmention-display">
-                    {% for mention in web_mentions %}
+                    {% for mention in web_mentions reversed %}
                         <div class="webmention-comment">
                             {%- if  mention.author.name and mention.author.name != "" %}
                                 {{ mention.author.name }}
