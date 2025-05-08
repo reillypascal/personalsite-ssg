@@ -52,9 +52,8 @@ module.exports = async function (eleventyConfig) {
     };
     
     const pageWebmentions = webmentions
-      .filter(
-        (mention) => mention["wm-target"] == url
-      )
+      .filter((mention) => mention["wm-target"] == url)
+      .filter((mention) => mention["wm-source"].includes("https://brid.gy/") || mention["wm-source"].includes("https://bsky.brid.gy/"))
       .sort((a, b) => new Date(b.published) - new Date(a.published))
   
     const likes = pageWebmentions
@@ -78,13 +77,7 @@ module.exports = async function (eleventyConfig) {
     return data;
   });
 
-  eleventyConfig.addFilter("webWebmentions", function(webmentions, url) {
-    const allowedTypes = {
-      likes: ["like-of"],
-      reposts: ["repost-of"],
-      comments: ["mention-of", "in-reply-to"],
-    };
-    
+  eleventyConfig.addFilter("webWebmentions", function(webmentions, url) {  
     const sanitize = (entry) => {
       if (entry.content && entry.content.html) {
         entry.content.html = sanitizeHTML(entry.content.html, {
