@@ -43,28 +43,19 @@ module.exports = async function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toISO(DateTime);
   });
 
-  eleventyConfig.addFilter("webmentionsByUrl", function(webmentions, url) {
+  // was webmentionsByUrl
+  eleventyConfig.addFilter("fediWebmentions", function(webmentions, url) {
     const allowedTypes = {
       likes: ["like-of"],
       reposts: ["repost-of"],
       comments: ["mention-of", "in-reply-to"],
     };
     
-    // const sanitize = (entry) => {
-    //   if (entry.content && entry.content.html) {
-    //     entry.content = sanitizeHTML(entry.content.html, {
-    //       allowedTags: ["b", "i", "em", "strong", "a"],
-    //     });
-    //   }
-    //   return entry;
-    // };
-    
     const pageWebmentions = webmentions
       .filter(
-        (mention) => mention["wm-target"] == url.split("#", 1)
+        (mention) => mention["wm-target"] == url
       )
       .sort((a, b) => new Date(b.published) - new Date(a.published))
-      // .map(sanitize);
   
     const likes = pageWebmentions
       .filter((mention) => allowedTypes.likes.includes(mention["wm-property"]))
@@ -85,6 +76,51 @@ module.exports = async function (eleventyConfig) {
     
     const data = { likes, reposts, comments };
     return data;
+  });
+
+  eleventyConfig.addFilter("webWebmentions", function(webmentions, url) {
+    const allowedTypes = {
+      likes: ["like-of"],
+      reposts: ["repost-of"],
+      comments: ["mention-of", "in-reply-to"],
+    };
+    
+    const sanitize = (entry) => {
+      if (entry.content && entry.content.html) {
+        entry.content.html = sanitizeHTML(entry.content.html, {
+          allowedTags: ["b", "i", "em", "strong", "a"],
+          allowedAttributes: {},
+        });
+      }
+      return entry;
+    };
+    
+    const pageWebmentions = webmentions
+      .filter((mention) => mention["wm-target"] == url)
+      .filter((mention) => !mention["wm-source"].includes("https://brid.gy/"))
+      .filter((mention) => !mention["wm-source"].includes("https://bsky.brid.gy/"))
+      .sort((a, b) => new Date(b.published) - new Date(a.published))
+      .map(sanitize);
+
+    return pageWebmentions;
+  });
+
+  eleventyConfig.addFilter("allWebmentionsByUrl", function(webmentions, url) {
+    const sanitize = (entry) => {
+      if (entry.content && entry.content.html) {
+        entry.content.html = sanitizeHTML(entry.content.html, {
+          allowedTags: ["b", "i", "em", "strong", "a"],
+        });
+      }
+      return entry;
+    };
+    
+    const pageWebmentions = webmentions
+      .filter((mention) => mention["wm-target"] == url)
+      .sort((a, b) => new Date(b.published) - new Date(a.published))
+      .map(sanitize);
+
+    return pageWebmentions;
   });
 
   // plugins: RSS
