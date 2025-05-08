@@ -56,13 +56,13 @@ module.exports = async function (eleventyConfig) {
       .filter((mention) => mention["wm-source"].includes("https://brid.gy/") || mention["wm-source"].includes("https://bsky.brid.gy/"))
       .sort((a, b) => new Date(b.published) - new Date(a.published))
     
-    let urls = [];
-    pageWebmentions.forEach((mention) => { 
-      let url = mention.url.split("#", 1)[0];
-      if (!urls.includes(url)) {
-        urls.push(url);
-      }
-    });
+    // let urls = [];
+    // pageWebmentions.forEach((mention) => { 
+    //   let url = mention.url.split("#", 1)[0];
+    //   if (!urls.includes(url)) {
+    //     urls.push(url);
+    //   }
+    // });
 
     const likes = pageWebmentions
       .filter((mention) => allowedTypes.likes.includes(mention["wm-property"]))
@@ -81,7 +81,8 @@ module.exports = async function (eleventyConfig) {
         return author && author.name && published && content;
       });
     
-    const data = { likes, reposts, comments, urls };
+    // const data = { likes, reposts, comments, urls };
+    const data = { likes, reposts, comments };
     return data;
   });
 

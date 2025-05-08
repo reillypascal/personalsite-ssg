@@ -1,7 +1,8 @@
 ---
 title: Photoblog — Stars with Carl
-canonical_url: https://reillyspitzfaden.com/notes/2025/04/photoblog-stars-with-carl/
-fedi_url: https://hachyderm.io/@reillypascal/114297925178833375
+fedi_url: 
+  - https://hachyderm.io/@reillypascal/114297925178833375
+  - https://bsky.app/profile/reillypascal.bsky.social/post/3lmagwvbcxs2l
 og_image: /media/blog/2025/04/stars-with-carl/IMG_20250405_194437_613.webp
 og_image_width: 1411
 og_image_height: 1058

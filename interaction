@@ -41,7 +41,8 @@ fullpath=pages/interactions/$year/$month/$slug.md
 cat >> $fullpath << EOF && codium $fullpath
 ---
 title: "${interaction_title} | ${target_title}"
-fedi_url: 
+fedi_url:
+  - 
 date: $isodate
 tags:
   - interaction

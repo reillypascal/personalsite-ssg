@@ -38,20 +38,16 @@
                 {%- if fedi_url -%}
                     <div class="fedi-syndication-links">
                         Syndicated on the Fediverse: 
-                        {%- comment %} fedi_url.first (i.e., first descendant) returns nil if not an array {%- endcomment %}
-                        {%- if fedi_url.first %}
-                            {%- for url in fedi_url %}
-                                <a href="{{ url }}">link {{ forloop.index }}</a>
-                                {%- if not forloop.last -%}
-                                ,
-                                {%- endif -%}
-                            {%- endfor %}
-                        {%- else %}
-                            <a href="{{ fedi_url }}">link</a>
-                        {%- endif %}
+                        {%- for url in fedi_url %}
+                            {% assign filtered_url = url |  remove: 'https://' |  split: '/' %}
+                            <a href="{{ url }}">{{ filtered_url[0] }}</a>
+                            {%- if not forloop.last -%}
+                            ,
+                            {%- endif -%}
+                        {%- endfor %}
                     </div>
                 {%- endif %}
-            
+                
                 {%- if fedi_mentions.comments.size > 0 or fedi_mentions.reposts.size > 0 or fedi_mentions.likes.size > 0 %}
                     <div class="fedi-interactions">
                         {%- if fedi_mentions.comments.size == 1 -%}

@@ -1,8 +1,9 @@
 ---
 title: Databending Part 3 — Glitching MP3s with Python
 description: I'm continuing my databending series. Today we'll discuss how to use Python to easily glitch up MP3s, adding warbles, clicks, and other cool noise!
-canonical_url: https://reillyspitzfaden.com/posts/2025/04/databending-part-3/
-fedi_url: https://hachyderm.io/@reillypascal/114291930621155178
+fedi_url: 
+  - https://hachyderm.io/@reillypascal/114291930621155178
+  - https://bsky.app/profile/reillypascal.bsky.social/post/3lm5u4dyu2s2f
 date: 2025-04-06T00:00:00-0500
 octothorpes:
   - Art

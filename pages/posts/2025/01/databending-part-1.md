@@ -1,8 +1,9 @@
 ---
 title: Databending Part 1 — Raw Data in Audacity
 description: Did you know you can listen to pretty much any file as an audio file? Let's look at how it works and what it sounds like!
-canonical_url: https://reillyspitzfaden.com/posts/2025/01/databending-part-1/
-fedi_url: https://hachyderm.io/@reillypascal/113776964186364648
+fedi_url: 
+  - https://hachyderm.io/@reillypascal/113776964186364648
+  - https://bsky.app/profile/reillypascal.bsky.social/post/3lez5zyuwcs2h
 date: 2025-01-05
 octothorpes:
   - Art

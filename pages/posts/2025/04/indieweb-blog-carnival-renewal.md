@@ -2,6 +2,8 @@
 title: IndieWeb Blog Carnival — “Renewal”
 description: I often feel compelled to tweak and redesign my website at the expense of other things I value. I talk about reconnecting with what I most enjoy about composing and coding, and avoiding treating my leisure and projects as if I need to impress someone.
 fedi_url:
+  - https://hachyderm.io/@reillypascal/114359898702500681
+  - https://bsky.app/profile/reillypascal.bsky.social/post/3ln42564m7s2n
 date: 2025-04-18T00:00:00-0400
 octothorpes:
   - Art
