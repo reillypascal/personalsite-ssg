@@ -72,6 +72,10 @@ article h3 {
     margin-right: 6px;
 }
 
+.webmentionForm,
+.webmention-display {
+    margin-top: 96px;
+}
 
 /* https://stackoverflow.com/questions/22672368/how-to-make-a-transparent-html-button */
 #react-btn {
