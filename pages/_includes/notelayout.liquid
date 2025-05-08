@@ -28,13 +28,15 @@ title: Reilly Spitzfaden, Composer
             {{ content }}
         </div>
         
+        <div class="blogPostEndText"><p>---END OF TRANSMISSION---</p></div>
+
         {% include "partials/post-interactions.liquid" %}
         
     </article>
     
-    <article>
-        {% include "partials/webmention-form.liquid" %}    
-    </article>
+    {% include "partials/webmention-form.liquid" %}
+
+    {% include "partials/webmention-display.liquid" %}
 </main>
 
 <script>
