@@ -51,7 +51,7 @@
                 </span> 
                 <span id="webmention-likes">{{ fedi_mentions.likes | size }} likes</span>  {% endcomment %}
 
-                <span>
+                <span class="fedi-interactions">
                     {% if fedi_mentions.comments.size == 1 %}
                         {{ fedi_mentions.comments | size }} comment,
                     {% elsif fedi_mentions.comments.size != 1 %}

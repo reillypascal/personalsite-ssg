@@ -434,7 +434,8 @@ main, footer {
     & p,
     blockquote,
     ul li,
-    ol li {
+    ol li,
+    .fedi-interactions {
         line-height: var(--p-line-height);
     }
 }
