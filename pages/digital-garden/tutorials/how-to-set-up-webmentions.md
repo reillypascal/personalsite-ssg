@@ -1,5 +1,5 @@
 ---
-title: How to Receive, Parse & Display Webmentions with 11ty & Webmention.io
+title: How to Set Up, Parse, and Display Webmentions
 description: 
 fedi_url:
   - 
@@ -10,8 +10,7 @@ date: 2025-05-08T22:49:33-0400
 octothorpes:
   - 
 tags:
-  - post
-post_series: 
+  - 
 draft: true
 ---
 
