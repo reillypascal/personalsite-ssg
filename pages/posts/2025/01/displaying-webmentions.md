@@ -1,8 +1,9 @@
 ---
 title: Displaying Webmentions
 description: I finally figured out displaying webmentions on my site without any client-side JavaScript!
-canonical_url: https://reillyspitzfaden.com/posts/2025/01/displaying-webmentions/
-fedi_url: https://hachyderm.io/@reillypascal/113907004496812260
+fedi_url: 
+  - https://hachyderm.io/@reillypascal/113907004496812260
+  - https://bsky.app/profile/reillypascal.bsky.social/post/3lgsvxvnopk2o
 date: 2025-01-28T00:55:00-0500
 tags:
   - post
