@@ -145,6 +145,7 @@ module.exports = async function (eleventyConfig) {
   // tags
   eleventyConfig.addCollection("allTags", (collection) => {
     const allCollections = collection.getAll();
+    // Set() — ES6 feature with only one occurrence of each item
     let tagSet = new Set();
     allCollections.forEach((temp) => {
       if ("tags" in temp.data) {
@@ -165,6 +166,10 @@ module.exports = async function (eleventyConfig) {
     return posts.concat(notes).concat(interactions).sort(function (a, b) {
       return a.date - b.date;
     });
+  });
+
+  eleventyConfig.addCollection("gardenTutorials", function (collectionApi) {
+    return collectionApi.getFilteredByTags("tutorial", "digital-garden");
   });
 
   eleventyConfig.addGlobalData('generated', () => {

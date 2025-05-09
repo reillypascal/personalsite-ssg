@@ -1,6 +1,6 @@
 ---
 title: How to Set Up, Parse, and Display Webmentions
-description: 
+description: Comprehensive tutorial on webmentions using Webmention.io, Eleventy, and Netlify. Addresses many different levels of complexity — you can get up and running with only two lines of HTML!
 fedi_url:
   - 
 og_image: 
@@ -10,7 +10,8 @@ date: 2025-05-08T22:49:33-0400
 octothorpes:
   - 
 tags:
-  - 
+  - digital-garden
+  - tutorial
 draft: true
 ---
 
