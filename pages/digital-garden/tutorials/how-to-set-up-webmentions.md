@@ -27,16 +27,16 @@ draft: true
     <summary>Table of Contents</summary>
 
 - [The Basics with Webmention.io](#the-basics-with-webmentionio)
+- [Sending Webmentions](#sending-webmentions)
 - [Making a Webmentions Form](#making-a-webmentions-form)
 - [Accessing Mentions in Eleventy](#accessing-mentions-in-eleventy)
 - [Automatically Bringing in New Mentions](#automatically-bringing-in-new-mentions)
-- [Sending Webmentions](#sending-webmentions)
 - [Fediverse Interactions as Webmentions with Bridgy](#fediverse-interactions-as-webmentions-with-bridgy)
 
   </details>
 </nav>
 
-I've [written](/posts/2024/05/receiving-webmentions-part-1/) a [few](/posts/2025/01/displaying-webmentions/) times [before](/posts/2025/02/webmentions-without-plugins/) about setting up [webmentions](https://en.wikipedia.org/wiki/Webmention) on my site, and today I'm bringing all that information into one post and discussing some recent additions to my system.
+I've [written](/posts/2024/05/receiving-webmentions-part-1/) a [few](/posts/2025/01/displaying-webmentions/) times [before](/posts/2025/02/webmentions-without-plugins/) about setting up [webmentions](https://en.wikipedia.org/wiki/Webmention) on my site, and today I'm bringing all that information into one writeup and discussing some recent additions to my system. I've done my best to be comprehensive and keep sections fairly self-contained, so please feel free to skip between sections using the table of contents.
 
 Webmentions are a nice way to use personal websites to interact with other sites, and a popular tool for the [IndieWeb](https://indieweb.org/). With them enabled, you can notify another site when you link to them, and receive notifications when someone links to you. I'm going to explain a few levels of setting them up — you can do something very simple, with just a few links added to the ```<head>``` tag on your page, all the way up to something more complex where you automatically display the mentions like comments. Here are the tools we'll be using:
 
@@ -65,6 +65,8 @@ In summary: two lines of HTML in the `<head>` tag, plus a link to your endpoint 
 <link rel="me" href="https://github.com/reillypascal" />
 <link rel="webmention" href="https://webmention.io/reillyspitzfaden.com/webmention" />
 ```
+
+### Sending Webmentions{#sending-webmentions}
 
 ### Making a Webmentions Form{#making-a-webmentions-form}
 
@@ -101,23 +103,7 @@ I don't mind enough to bother changing this behavior, plus I prefer to minimize 
 
 ### Accessing Mentions in Eleventy{#accessing-mentions-in-eleventy}
 
-Eleventy lets you use [JavaScript data files](https://www.11ty.dev/docs/data-js/) which will run when the site builds and make the resulting data globally available. These files go in the `_data` subfolder in your site publish directory, and the data is available as an object with the same name as the file (e.g., the file `webmentions.mjs` will make the data available as the `webmentions` object globally).
-
-To get the API [^1] key for Webmention\.io, go to <https://webmention.io/settings> after signing in. In the section “API Key,” there is a value you can copy. As this page mentions, 
-
-> If you don't mind anyone being able to retrieve webmentions to your domain, you don't need to keep this private. The only thing this token can do is retrieve all webmentions to your domain. It can't modify any data on your account.
-
-If you don't mind the key being public, you can hard-code it in the URL in `_data/webmentions.mjs` and skip the next paragraph.
-
-If you do want to keep it private, you can add the key as an [environment variable in Netlify](https://docs.netlify.com/environment-variables/get-started/#import-variables-with-the-netlify-ui). Note in `index.js`, I'm importing the [`dotenv`](https://www.npmjs.com/package/dotenv) Node package, which allows my site to access these variables. If you substitute your key into the line `https://webmention.io/api/mentions.jf2?token=${process.env.WEBMENTION_IO_TOKEN}&per-page=1000`, you get all webmentions available as an object, with the list of mentions in the `children` field. 
-
-<div class="code-file">index.js</div>
-
-```js
-require("dotenv").config();
-```
-
-Note that this file is `webmentions.mjs`, rather than using the `.js` extension, and it uses [ES Modules](https://flaviocopes.com/es-modules/) syntax. As I mentioned [here](/posts/2025/02/webmentions-without-plugins/), while some tutorials/documentation show CommonJS syntax and the `.js` extension, I could never get it to work like that. I'm not 100% sure, but it seems to be a difference with Eleventy version 3.
+Eleventy lets you use [JavaScript data files](https://www.11ty.dev/docs/data-js/) which will run when the site builds and make the resulting data globally available. These files go in the `_data` subfolder in your site source directory, and the data is available as an object with the same name as the file (e.g., the file `webmentions.mjs` will make the data available as the `webmentions` object globally).
 
 <div class="code-file">_data/webmentions.mjs</div>
 
@@ -140,6 +126,22 @@ export default async function () {
 		};
 	}
 };
+```
+
+Note that this file is `webmentions.mjs`, rather than using the `.js` extension, and it uses [ES Modules](https://flaviocopes.com/es-modules/) syntax. As I mentioned [here](/posts/2025/02/webmentions-without-plugins/), while some tutorials/documentation show CommonJS syntax and the `.js` extension, I could never get it to work like that. I'm not 100% sure, but it seems to be a difference with Eleventy v3.x.x.
+
+To get the API [^1] key for Webmention\.io, go to <https://webmention.io/settings> after signing in. In the section “API Key,” there is a value you can copy. As this page mentions, 
+
+> \[if] you don't mind anyone being able to retrieve webmentions to your domain, you don't need to keep this private. The only thing this token can do is retrieve all webmentions to your domain. It can't modify any data on your account.
+
+If you don't mind the key being public, you can hard-code it in the URL in `_data/webmentions.mjs` and skip the next paragraph and the `index.js` file.
+
+If you do want to keep it private, you can add the key as an [environment variable in Netlify](https://docs.netlify.com/environment-variables/get-started/#import-variables-with-the-netlify-ui). Note in `index.js`, I'm importing the [`dotenv`](https://www.npmjs.com/package/dotenv) Node package, which allows my site to access these variables. If you substitute your key into the line `https://webmention.io/api/mentions.jf2?token=${process.env.WEBMENTION_IO_TOKEN}&per-page=1000`, you get all webmentions available as an object, with the list of mentions in the `children` field. 
+
+<div class="code-file">index.js</div>
+
+```js
+require("dotenv").config();
 ```
 
 Below is the Liquid template I use to import these mentions. 
@@ -191,8 +193,6 @@ On my home server, however, `cron` was super easy to use. `cron` syntax has 5 fi
 0 2 * * * curl -X POST -d {} "https://api.netlify.com/build_hooks/<your-hook-here>"
 ```
 
-### Sending Webmentions{#sending-webmentions}
-
 ### Fediverse Interactions as Webmentions with Bridgy{#fediverse-interactions-as-webmentions-with-bridgy}
 
 [Bridgy](https://brid.gy/)
@@ -205,4 +205,4 @@ Thanks for reading! Hopefully this can be of assistance to someone.
 
 [^1]: You can find more information about the complete Webmention\.io API [here](https://github.com/aaronpk/webmention.io#api).
 
-[^2]: I use this server for a ton of things, including a [Jellyfin](https://jellyfin.org/) home streaming server — instructions included in the [server guide]() linked above — and a copy of [Syncthing](https://syncthing.net/) so my devices are always synced, even if only some are active at any given time. It's very nice, and I'll definitely do a tutorial about some of that later!
+[^2]: I use this server for a ton of things, including a [Jellyfin](https://jellyfin.org/) home streaming server — instructions included in the [server guide]() linked above — and a copy of [Syncthing](https://syncthing.net/) so my devices are always synced, even if only some are active at any given time. It's very nice, and I'll definitely discuss more about that later!

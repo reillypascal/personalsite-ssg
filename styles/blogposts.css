@@ -178,7 +178,7 @@ article h3 {
 
 .indienews {
     padding: 4px 0 4px 8px;
-    margin: 32px 0 0 8px;
+    margin: 32px 0 32px 8px;
     display: flow-root;
     border-left: 1px solid var(--accent-med-light);
 }
