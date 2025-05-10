@@ -27,7 +27,8 @@ draft: true
     <summary>Table of Contents</summary>
 
 - [The Basics with Webmention.io](#the-basics-with-webmentionio)
-- [Sending Webmentions](#sending-webmentions)
+- [Sending Webmentions (No Command Line)](#sending-webmentions-no-command-line)
+- [Sending Webmentions (Command Line)](#sending-webmentions-command-line)
 - [Making a Webmentions Form](#making-a-webmentions-form)
 - [Accessing Mentions in Eleventy](#accessing-mentions-in-eleventy)
 - [Automatically Bringing in New Mentions](#automatically-bringing-in-new-mentions)
@@ -36,11 +37,21 @@ draft: true
   </details>
 </nav>
 
-I've [written](/posts/2024/05/receiving-webmentions-part-1/) a [few](/posts/2025/01/displaying-webmentions/) times [before](/posts/2025/02/webmentions-without-plugins/) about setting up [webmentions](https://en.wikipedia.org/wiki/Webmention) on my site, and today I'm bringing all that information into one writeup and discussing some recent additions to my system. I've done my best to be comprehensive and keep sections fairly self-contained, so please feel free to skip between sections using the table of contents.
+[Webmentions](https://indieweb.org/Webmention) are [great](https://amberwilson.co.uk/blog/grow-the-indieweb-with-webmentions/)! They're a way that personal websites can interact with each other — you can notify another site when you link to them, and receive notifications when someone links to you. I find them to allow for some of the nicer parts of social interaction on the web, but with much more agency and much less inflammatory or harmful material than something like Facebook or Instagram. However, then can also be a bit intimidating, especially for [non-developers](https://tracydurnell.com/2025/01/09/sanding-off-friction-from-indie-web-connection/). 
 
-Webmentions are a nice way to use personal websites to interact with other sites, and a popular tool for the [IndieWeb](https://indieweb.org/). With them enabled, you can notify another site when you link to them, and receive notifications when someone links to you. I'm going to explain a few levels of setting them up — you can do something very simple, with just a few links added to the ```<head>``` tag on your page, all the way up to something more complex where you automatically display the mentions like comments. Here are the tools we'll be using:
+My goal with this tutorial is that people with a wide range of experience with coding/working in a command line — including no experience — can benefit from it. In particular, if you just read the first two sections, you'll be able to use webmentions by signing up for two services (GitHub and Webmention\.io) and adding two lines of HTML to your site:
+
+```html
+<link rel="me" href="https://github.com/reillypascal" />
+<link rel="webmention" href="https://webmention.io/reillyspitzfaden.com/webmention" />
+```
+
+This even works with tools like Squarespace or Wordpress! Beyond that, each section builds gently on the last, so depending on how much you're comfortable with and/or interested in, you can choose your own adventure. You can do anything from getting a dashboard where you see private notifications all the way up to something more complex where you automatically display the mentions like comments. 
+
+Here are the tools we'll be using:
 
 - [Webmention.io](https://webmention.io/) — this is the only strictly necessary one. It's a service by [Aaron Parecki](https://aaronparecki.com/) to receive and transmit webmentions so you don't have to run your own server.
+  - The easiest way to log in to Webmention\.io does require a trusted third party account such as [GitHub](https://github.com/). You don't actually have to *do* anything with your GitHub account though — as long as it exists and you can log in, you're good.
 - [Eleventy](https://www.11ty.dev/) — the static site generator I use to build my site, although you can do the basics of this on any site setup.
 - [Netlify](https://www.netlify.com/) — the hosting service I use. I use their [build hooks](https://docs.netlify.com/configure-builds/build-hooks/) to instruct my site to rebuild nightly and pull in new mentions.
 - [Bridgy](https://brid.gy/) — if you share a post from your site on Mastodon/Bluesky/etc., this service can turn interactions with that post into webmentions that go to your site. You can then display these as comments on your blog.
@@ -51,26 +62,55 @@ Let's get started!
 
 ### The Basics with Webmention\.io{#the-basics-with-webmentionio}
 
-As I mentioned in my [first post](/posts/2024/05/receiving-webmentions-part-1/) on the topic, to start, go to [Webmention.io](http://webmention.io/) and sign in using your site URL. You'll need a tag in the `<head>` of your site that looks something like this: `<link rel="me" href="https://github.com/reillypascal" />`. Substitute the URL in the `href=""` field with your own GitHub URL. This allows you to use a GitHub account to sign in to Webmention\.io.
+As I mentioned in my [first post](/posts/2024/05/receiving-webmentions-part-1/) on the topic, to start, go to [Webmention.io](http://webmention.io/) and sign in using your site URL. You'll need a tag in the `<head>` of your site that looks something like this: `<link rel="me" href="https://github.com/reillypascal" />`. Substitute the URL in the `href=""` field with your own GitHub profile URL. This allows you to use a GitHub account to sign in to Webmention\.io.
 
-Once you're logged in, you can go to the “sites” tab of your dashboard (<https://webmention.io/settings/sites>) and enter your site in the “Create a new Site” field. This tripped me up the first time through, but Aaron [mentioned](https://github.com/aaronpk/webmention.io/issues/182) he didn't want Webmention\.io to automatically accept mentions for people who didn't want them, so you have to manually add the site after signing in.
+Once you're logged in, you can go to the “sites” tab of your dashboard (<https://webmention.io/settings/sites>) and enter your site in the “Create a new Site” field. This tripped me up the first time through, but Aaron [mentioned](https://github.com/aaronpk/webmention.io/issues/182) he didn't want Webmention\.io to automatically accept mentions for people who hadn't asked for them, so you have to manually add the site after signing in.
 
-Once you've added it, you can click “Get Setup Code” next to your site (should appear on your “sites” tab after adding the URL). This will generate a tag you can copy and paste into the `<head>` element of your page — something like `<link rel="webmention" href="https://webmention.io/reillyspitzfaden.com/webmention" />`. You can also just copy my example here, replacing “reillyspitzfaden.com” with your own URL. You're now ready to go! 
+Once you've added it, you can click “Get Setup Code” next to your site (should be available on your “[sites](https://webmention.io/settings/sites)” tab after adding the URL). This will generate a tag you can copy and paste into the `<head>` element of your page — something like `<link rel="webmention" href="https://webmention.io/reillyspitzfaden.com/webmention" />`. You can also just copy my example here, replacing “reillyspitzfaden.com” with your own URL. You're now ready to go! 
 
 If you want to stop here, you can simply link to the endpoint for your site — should look like <https://webmention.io/reillyspitzfaden.com/webmention>, or in other words, the URL you put in the `href=""` field above. People can send you webmentions by putting their post link in the “Source URL” field and your post link in the “Target URL” one. If you want to validate that your mentions are working properly, you can use [webmention.rocks](https://webmention.rocks/), which has a list of tests you can run with helpful feedback.
 
 In summary: two lines of HTML in the `<head>` tag, plus a link to your endpoint on each post is plenty to get up and running!
 
-```html
-<link rel="me" href="https://github.com/reillypascal" />
-<link rel="webmention" href="https://webmention.io/reillyspitzfaden.com/webmention" />
+### Sending Webmentions (No Command Line){#sending-webmentions-no-command-line}
+
+There are a number of ways to send webmentions to someone whose post you link to. In many cases, people will include a form at the bottom of posts (e.g., see the bottom of this post), but if you can't find that, you have a few options.
+
+The simplest way to find someone's endpoint if it's not clearly listed:
+- Right-click on the page and choose “View Page Source”
+- Cmd + F (Mac) or ctrl + F (Win/Linux) for “webmention”
+- If you get a result, it should look something like `<link rel="webmention" href="https://webmention.io/reillyspitzfaden.com/webmention" />` from above.
+- If you go to the URL in the `href=""` field, that should be the person's endpoint. You should be able to put your URL in the first field and the target post in the second and mention them!
+
+A quick way to check if the page supports webmentions before bothering with this: Brent Lineberry has a [Supports Webmentions?](https://orangegnome.com/posts/2929/supports-webmentions-bookmarklet) bookmarklet. If you bookmark this in your browser, you can click the bookmark while on a page and it will let you know if it supports webmentions. [^1]
+
+### Sending Webmentions (Command Line){#sending-webmentions-command-line}
+
+The previous option is not too hard to do, but it's also not very convenient. Two ways to send webmentions using the terminal are to use cURL, or to use [Webmention.app](https://webmention.app/docs#using-the-command-line). With cURL, you format your command as `curl -i -d source=source -d target=target endpoint`. So for example, to RSVP to the Homebrew Website Club, I might run
+
+```sh
+curl -i -d source="https://reillyspitzfaden.com/interactions/2025/04/rsvp-homebrew-website-club-americas-april-16/" -d target="https://events.indieweb.org/2025/04/homebrew-website-club-americas-xCttvgRnN4Pl" https://events.indieweb.org/webmention
 ```
 
-### Sending Webmentions{#sending-webmentions}
+This again requires knowing the endpoint (either with a bookmarklet or viewing the source). Webmention\.app has a command line tool that makes it particularly easy. Once you've [installed NodeJS](https://nodejs.org/en/download) (note that you can download and install it without the command line if you look down on the page), simply run `npm install @remy/webmention` in your terminal in the folder where you want to install this tool. From that folder, you can run 
+
+```sh
+npx webmention https://reillyspitzfaden.com/feed.xml
+```
+
+This uses your site's RSS feed to get your most recent posts, so you would substitute your feed URL for mine. This tool will display all links that have webmention endpoints — no manual checking required! You can send webmentions for your latest post by running
+
+```sh
+npx webmention https://reillyspitzfaden.com/feed.xml --limit 1 --send
+```
+
+(again, replacing the feed URL with your own). 
+
+One potential issue is that this package seems to be a little outdated these days. When I tried to install it on my site, NodeJS showed some critical vulnerabilities. When I installed it in its own separate folder, this wasn't as much of an issue, so you might try that — just make a folder, open it in the terminal, and then run `npm install @remy/webmention`. The [Webmention.app](https://webmention.app/) site also offers some other tools, so you might play with those, although I haven't used them myself.
 
 ### Making a Webmentions Form{#making-a-webmentions-form}
 
-One thing I haven't posted about at all is how to add a form to your site for people to send you mentions more easily. Below is the HTML I use. Notice the URL in the `action=""` field — that's the only thing you should have to change to make this work on your site. Replace “reillyspitzfaden.com” with your own URL and you should be set! 
+If you want to make things easier for your visitors, here's how to add a form to your site for people to send you mentions. Below is the HTML I use. Notice the URL in the `action=""` field — that's the only thing you should have to change to make this work on your site. Replace “reillyspitzfaden.com” with your own URL and you should be set! 
 
 ```html
 <form id="webmention-form" action="https://webmention.io/reillyspitzfaden.com/webmention" method="POST">
@@ -130,7 +170,7 @@ export default async function () {
 
 Note that this file is `webmentions.mjs`, rather than using the `.js` extension, and it uses [ES Modules](https://flaviocopes.com/es-modules/) syntax. As I mentioned [here](/posts/2025/02/webmentions-without-plugins/), while some tutorials/documentation show CommonJS syntax and the `.js` extension, I could never get it to work like that. I'm not 100% sure, but it seems to be a difference with Eleventy v3.x.x.
 
-To get the API [^1] key for Webmention\.io, go to <https://webmention.io/settings> after signing in. In the section “API Key,” there is a value you can copy. As this page mentions, 
+To get the API [^2] key for Webmention\.io, go to <https://webmention.io/settings> after signing in. In the section “API Key,” there is a value you can copy. As this page mentions, 
 
 > \[if] you don't mind anyone being able to retrieve webmentions to your domain, you don't need to keep this private. The only thing this token can do is retrieve all webmentions to your domain. It can't modify any data on your account.
 
@@ -185,7 +225,7 @@ Client-side JS
 
 Because the `_data/webmentions.mjs` script brings in new mentions when the site builds, rebuilding the site is a good way to bring in mentions without client-side JavaScript. My site is hosted on [Netlify](https://www.netlify.com/), and a simple way to make the site automatically rebuild is to use [build hooks](https://docs.netlify.com/configure-builds/build-hooks/). This is a URL and when you send an HTTP POST request to it, the site will build. You can do this with cURL: `curl -X POST -d {} "https://api.netlify.com/build_hooks/<your-hook-here>"`. 
 
-I send out these POST requests from my home server. The server is a 2015 ASUS laptop running Ubuntu Server, which I set up according to [this guide](https://chriskalos.notion.site/The-0-Home-Server-Written-Guide-5d5ff30f9bdd4dfbb9ce68f0d914f1f6). [^2] GitHub actions are also another good way of scheduling this — Benji links to how he does that [here](https://www.benji.dog/notes/1738091887/). I actually tried doing it with GitHub actions first, but for some reason, I couldn't get scheduled actions with [`cron`](https://en.wikipedia.org/wiki/Cron). to work for me. 
+I send out these POST requests from my home server. The server is a 2015 ASUS laptop running Ubuntu Server, which I set up according to [this guide](https://chriskalos.notion.site/The-0-Home-Server-Written-Guide-5d5ff30f9bdd4dfbb9ce68f0d914f1f6). [^3] GitHub actions are also another good way of scheduling this — Benji links to how he does that [here](https://www.benji.dog/notes/1738091887/). I actually tried doing it with GitHub actions first, but for some reason, I couldn't get scheduled actions with [`cron`](https://en.wikipedia.org/wiki/Cron). to work for me. 
 
 On my home server, however, `cron` was super easy to use. `cron` syntax has 5 fields: minute, hour, day (month), month, day (week). You can give them a value, or use an asterisk (“*”) to allow all values. `0 2 * * *` in the example below means “run every day at 2:00 GMT, regardless of month or day.” This [crontab.guru](https://crontab.guru/) tool may be helpful in figuring out the syntax. Note that the times are in GMT, rather than the local time zone, so you would need to convert to local time. To set up a `cron` job, type `crontab -e` (i.e., “edit the crontab file”) into your server's terminal, and add a line like the following to the file that opens:
 
@@ -203,6 +243,8 @@ Thanks for reading! Hopefully this can be of assistance to someone.
   Also posted on IndieNews
 </a>
 
-[^1]: You can find more information about the complete Webmention\.io API [here](https://github.com/aaronpk/webmention.io#api).
+[^1]: At one point when looking at Brent Lineberry's post, I got an error, so if you're experiencing that, Juha-Matti Santala also has a [bookmarklet](https://hamatti.org/posts/webmention-bookmarklet/) that does something similar. If you right-click in your bookmark bar and paste the code snippet from the bottom of the post into the URL field, it should work.
 
-[^2]: I use this server for a ton of things, including a [Jellyfin](https://jellyfin.org/) home streaming server — instructions included in the [server guide]() linked above — and a copy of [Syncthing](https://syncthing.net/) so my devices are always synced, even if only some are active at any given time. It's very nice, and I'll definitely discuss more about that later!
+[^2]: You can find more information about the complete Webmention\.io API [here](https://github.com/aaronpk/webmention.io#api).
+
+[^3]: I use this server for a ton of things, including a [Jellyfin](https://jellyfin.org/) home streaming server — instructions included in the [server guide]() linked above — and a copy of [Syncthing](https://syncthing.net/) so my devices are always synced, even if only some are active at any given time. It's very nice, and I'll definitely discuss more about that later!
