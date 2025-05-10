@@ -103,7 +103,13 @@ I don't mind enough to bother changing this behavior, plus I prefer to minimize 
 
 Eleventy lets you use [JavaScript data files](https://www.11ty.dev/docs/data-js/) which will run when the site builds and make the resulting data globally available. These files go in the `_data` subfolder in your site publish directory, and the data is available as an object with the same name as the file (e.g., the file `webmentions.mjs` will make the data available as the `webmentions` object globally).
 
-To get the API [^1] key for Webmention\.io, go to <https://webmention.io/settings> after signing in. In the section “API Key,” there is a value you  can copy. You can add this key as an [environment variable in Netlify](https://docs.netlify.com/environment-variables/get-started/#import-variables-with-the-netlify-ui) to keep it private. Note in `index.js`, I'm importing the [`dotenv`](https://www.npmjs.com/package/dotenv) Node package, which allows my site to access these variables. If you substitute your key into the line `https://webmention.io/api/mentions.jf2?token=${process.env.WEBMENTION_IO_TOKEN}&per-page=1000`, you get all webmentions available as an object, with the list of mentions in the `children` field. 
+To get the API [^1] key for Webmention\.io, go to <https://webmention.io/settings> after signing in. In the section “API Key,” there is a value you can copy. As this page mentions, 
+
+> If you don't mind anyone being able to retrieve webmentions to your domain, you don't need to keep this private. The only thing this token can do is retrieve all webmentions to your domain. It can't modify any data on your account.
+
+If you don't mind the key being public, you can hard-code it in the URL in `_data/webmentions.mjs` and skip the next paragraph.
+
+If you do want to keep it private, you can add the key as an [environment variable in Netlify](https://docs.netlify.com/environment-variables/get-started/#import-variables-with-the-netlify-ui). Note in `index.js`, I'm importing the [`dotenv`](https://www.npmjs.com/package/dotenv) Node package, which allows my site to access these variables. If you substitute your key into the line `https://webmention.io/api/mentions.jf2?token=${process.env.WEBMENTION_IO_TOKEN}&per-page=1000`, you get all webmentions available as an object, with the list of mentions in the `children` field. 
 
 <div class="code-file">index.js</div>
 
@@ -172,6 +178,8 @@ Possible values for “wm-property” are `in-reply-to`, `like-of`, `repost-of`,
 ```
 
 ### Automatically Bringing in New Mentions{#automatically-bringing-in-new-mentions}
+
+Client-side JS
 
 Because the `_data/webmentions.mjs` script brings in new mentions when the site builds, rebuilding the site is a good way to bring in mentions without client-side JavaScript. My site is hosted on [Netlify](https://www.netlify.com/), and a simple way to make the site automatically rebuild is to use [build hooks](https://docs.netlify.com/configure-builds/build-hooks/). This is a URL and when you send an HTTP POST request to it, the site will build. You can do this with cURL: `curl -X POST -d {} "https://api.netlify.com/build_hooks/<your-hook-here>"`. 
 
