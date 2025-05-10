@@ -563,3 +563,19 @@ a:active {
     font-size: 0.95em;
     /* margin-left: 14px; */
 }
+
+.table-of-contents {
+    background-color: var(--bg-accent);
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 32px;
+    & ul {
+        list-style: none;
+        margin-block-start: 1.25em;
+        margin-block-end: 1em;
+        padding-inline-start: 32px;
+    }
+    & ul li {
+        margin: 16px 0;
+    }
+}
