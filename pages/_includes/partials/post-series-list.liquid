@@ -1,5 +1,5 @@
 {% assign series_length = post_series_list[post_series] | size %}
-<section>
+{% comment %} <section> {% endcomment %}
     <p class="post-series">All posts in this series:
         {%- for url in post_series_list[post_series] %}
         <a href="{{ url }}">Part {{ forloop.index }}</a>
@@ -8,4 +8,4 @@
         {%- endif -%}
         {% endfor %}
     </p>
-</section>
+{% comment %} </section> {% endcomment %}

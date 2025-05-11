@@ -549,6 +549,7 @@ a:active {
     /* font-style: italic; */
     border-left: 1px solid var(--accent-med-light);
     padding-left: 12px;
+    margin-top: 40px;
 }
 .skip-link {
     display: none;
@@ -568,7 +569,8 @@ a:active {
     background-color: var(--bg-accent);
     padding: 16px;
     border-radius: 8px;
-    margin-bottom: 32px;
+    margin-top: 40px;
+    margin-bottom: 40px;
     & ul {
         list-style: none;
         margin-block-start: 1.25em;

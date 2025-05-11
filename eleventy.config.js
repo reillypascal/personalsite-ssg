@@ -1,12 +1,13 @@
 // needed for e.g., dateToRfc822 filter
 const feedPlugin = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-// const pluginTOC = require('@uncenter/eleventy-plugin-toc');
+const pluginTOC = require('@uncenter/eleventy-plugin-toc');
 const markdownIt = require("markdown-it");
 const markdownItFootnote = require("markdown-it-footnote");
 // const mdBiblatex = require('@arothuis/markdown-it-biblatex');
 // for classes in markdown: https://dev.to/giulia_chiola/add-html-classes-to-11ty-markdown-content-18ic
 const markdownItAttrs = require('markdown-it-attrs');
+const markdownItAnchor = require('markdown-it-anchor');
 const { DateTime } = require("luxon");
 const sanitizeHTML = require("sanitize-html");
 const cheerio = require("cheerio");
@@ -128,20 +129,21 @@ module.exports = async function (eleventyConfig) {
     return pageWebmentions;
   });
   
-  eleventyConfig.addFilter("tableOfContents", function(content) {
-    const headerTags = ["h3","h4","h5","h6"];
-    const $ = cheerio.load(content);
-    const tocList = $('h3').map((idx, element) => {
-      let text = $(element).text();
-      return `<li><a href="#${slugify(text)}">${text}</a></li>`
-    }).toArray();
+  // eleventyConfig.addFilter("tableOfContents", function(content) {
+  //   // const headerTags = ["h3","h4","h5","h6"];
+  //   const $ = cheerio.load(content);
+  //   const tocList = $('h3').map((idx, element) => {
+  //     let text = $(element).text();
+  //     // return `<li><a href="#${slugify(text)}">${text}</a></li>`
+  //     return `<li><a href="#${$(element).attr('id')}">${text}</a></li>`
+  //   }).toArray();
 
-    let tocParent = cheerio.load(`<nav class="table-of-contents" aria-label="table-of-contents"><details><summary>Table of Contents</summary><ul></ul></details></nav>`);
+  //   let tocParent = cheerio.load(`<nav class="table-of-contents" aria-label="table-of-contents"><details><summary>Table of Contents</summary><ul></ul></details></nav>`);
 
-    tocParent('ul').append(tocList);
+  //   tocParent('ul').append(tocList);
 
-    return tocParent.html();
-  })
+  //   return tocParent.html();
+  // })
 
   // plugins: RSS
   eleventyConfig.addPlugin(feedPlugin);
@@ -153,21 +155,33 @@ module.exports = async function (eleventyConfig) {
     linkify: true,
   };
 
-  let markdownLib = markdownIt(options).use(markdownItAttrs).use(markdownItFootnote);//.use(mdBiblatex, { bibPath: 'documents/bibliography/library.bib', linkToBibliography: true, });
+  let markdownLib = markdownIt(options).use(markdownItAttrs).use(markdownItFootnote).use(markdownItAnchor);//.use(mdBiblatex, { bibPath: 'documents/bibliography/library.bib', linkToBibliography: true, });
   eleventyConfig.setLibrary("md", markdownLib);
 
   // plugins: syntax highlighting
   eleventyConfig.addPlugin(syntaxHighlight);
 
-  const { IdAttributePlugin } = await import("@11ty/eleventy");
+  // const { IdAttributePlugin } = await import("@11ty/eleventy");
 
-  eleventyConfig.addPlugin(IdAttributePlugin, {
-    selector: "h2,h3,h4,h5,h6",
-  });
-
-  // eleventyConfig.addPlugin(pluginTOC,{
-  //   tags: ["h3"], // tags (heading levels) to include
+  // eleventyConfig.addPlugin(IdAttributePlugin, {
+  //   selector: "h2,h3,h4,h5,h6",
   // });
+
+  eleventyConfig.addPlugin(pluginTOC,{
+    tags: ["h3", "h4", "h5", "h6"], // tags (heading levels) to include
+    ignoredHeadings: ["[data-toc-exclude]"], // headings to ignore (list of selectors)
+    ignoredElements: [], // elements (within the headings) to ignore when generating the TOC (list of selectors)
+    ul: true, // whether to a use a `ul` or `ol`
+    wrapper: function (toc) {
+        // wrapper around the generated TOC
+        return `<nav class="table-of-contents">
+        <details>
+        <summary>Table of Contents</summary>
+        ${toc}
+        </details>
+        </nav>`;
+    },
+  });
 
   // collections
   // tags
