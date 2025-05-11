@@ -1,5 +1,8 @@
 .e-content img {
     border-radius: 8px;
+    &:not(figure *) {
+        margin-top: 16px;
+    }
 }
 
 .img-vertical {

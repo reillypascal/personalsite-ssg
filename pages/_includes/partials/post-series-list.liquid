@@ -1,11 +1,11 @@
 {% assign series_length = post_series_list[post_series] | size %}
 {% comment %} <section> {% endcomment %}
-    <p class="post-series">All posts in this series:
-        {%- for url in post_series_list[post_series] %}
-        <a href="{{ url }}">Part {{ forloop.index }}</a>
-        {%- if not forloop.last -%}
-        ,
-        {%- endif -%}
-        {% endfor %}
-    </p>
+<p class="post-series">All posts in this series:
+    {%- for url in post_series_list[post_series] %}
+    <a href="{{ url }}">Part {{ forloop.index }}</a>
+    {%- if not forloop.last -%}
+    ,
+    {%- endif -%}
+    {% endfor %}
+</p>
 {% comment %} </section> {% endcomment %}
