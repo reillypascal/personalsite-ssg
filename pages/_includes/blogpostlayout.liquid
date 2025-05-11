@@ -24,7 +24,7 @@ title: Reilly Spitzfaden, Composer
             {% include "partials/post-series-list.liquid" %}
         {%- endif -%}
                 
-        {{ content | tableOfContents }}
+        {% comment %} {{ content | tableOfContents }} {% endcomment %}
 
         <div class="e-content">
             {{ content }}
