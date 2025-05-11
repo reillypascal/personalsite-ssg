@@ -1,7 +1,8 @@
 ---
 title: IndieWeb Stickers from Benji
 fedi_url:
-  - 
+  - https://hachyderm.io/@reillypascal/114491437400834700
+  - https://bsky.app/profile/reillypascal.bsky.social/post/3lowhay5yt22m
 og_image: /media/notes/2025/05/IMG_20250511_172404_375_cr.jpg
 og_image_width: 1411
 og_image_height: 1005
