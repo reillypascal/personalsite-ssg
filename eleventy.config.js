@@ -3,14 +3,13 @@ const feedPlugin = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginTOC = require('@uncenter/eleventy-plugin-toc');
 const markdownIt = require("markdown-it");
+const markdownItAnchor = require('markdown-it-anchor');
+const markdownItAttrs = require('markdown-it-attrs');
 const markdownItFootnote = require("markdown-it-footnote");
 // const mdBiblatex = require('@arothuis/markdown-it-biblatex');
-// for classes in markdown: https://dev.to/giulia_chiola/add-html-classes-to-11ty-markdown-content-18ic
-const markdownItAttrs = require('markdown-it-attrs');
-const markdownItAnchor = require('markdown-it-anchor');
+// const cheerio = require("cheerio");
 const { DateTime } = require("luxon");
 const sanitizeHTML = require("sanitize-html");
-const cheerio = require("cheerio");
 
 module.exports = async function (eleventyConfig) {
   // passthrough copies
@@ -233,11 +232,11 @@ module.exports = async function (eleventyConfig) {
 };
 
 // https://dev.to/bybydev/how-to-slugify-a-string-in-javascript-4o9n
-function slugify(str) {
-  str = str.replace(/^\s+|\s+$/g, ''); // trim leading/trailing white space
-  str = str.toLowerCase(); // convert string to lowercase
-  str = str.replace(/[^a-z0-9 -]/g, '') // remove any non-alphanumeric characters
-           .replace(/\s+/g, '-') // replace spaces with hyphens
-           .replace(/-+/g, '-'); // remove consecutive hyphens
-  return str;
-}
+// function slugify(str) {
+//   str = str.replace(/^\s+|\s+$/g, ''); // trim leading/trailing white space
+//   str = str.toLowerCase(); // convert string to lowercase
+//   str = str.replace(/[^a-z0-9 -]/g, '') // remove any non-alphanumeric characters
+//            .replace(/\s+/g, '-') // replace spaces with hyphens
+//            .replace(/-+/g, '-'); // remove consecutive hyphens
+//   return str;
+// }
