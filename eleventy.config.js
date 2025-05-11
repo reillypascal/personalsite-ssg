@@ -1,12 +1,15 @@
+// needed for e.g., dateToRfc822 filter
 const feedPlugin = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+// const pluginTOC = require('@uncenter/eleventy-plugin-toc');
 const markdownIt = require("markdown-it");
 const markdownItFootnote = require("markdown-it-footnote");
-const mdBiblatex = require('@arothuis/markdown-it-biblatex');
+// const mdBiblatex = require('@arothuis/markdown-it-biblatex');
 // for classes in markdown: https://dev.to/giulia_chiola/add-html-classes-to-11ty-markdown-content-18ic
 const markdownItAttrs = require('markdown-it-attrs');
 const { DateTime } = require("luxon");
 const sanitizeHTML = require("sanitize-html");
+const cheerio = require("cheerio");
 
 module.exports = async function (eleventyConfig) {
   // passthrough copies
@@ -124,6 +127,21 @@ module.exports = async function (eleventyConfig) {
 
     return pageWebmentions;
   });
+  
+  eleventyConfig.addFilter("tableOfContents", function(content) {
+    const headerTags = ["h3","h4","h5","h6"];
+    const $ = cheerio.load(content);
+    const tocList = $('h3').map((idx, element) => {
+      let text = $(element).text();
+      return `<li><a href="#${slugify(text)}">${text}</a></li>`
+    }).toArray();
+
+    let tocParent = cheerio.load(`<nav class="table-of-contents" aria-label="table-of-contents"><details><summary>Table of Contents</summary><ul></ul></details></nav>`);
+
+    tocParent('ul').append(tocList);
+
+    return tocParent.html();
+  })
 
   // plugins: RSS
   eleventyConfig.addPlugin(feedPlugin);
@@ -135,11 +153,21 @@ module.exports = async function (eleventyConfig) {
     linkify: true,
   };
 
-  let markdownLib = markdownIt(options).use(markdownItAttrs).use(markdownItFootnote).use(mdBiblatex, { bibPath: 'documents/bibliography/library.bib', linkToBibliography: true, });
+  let markdownLib = markdownIt(options).use(markdownItAttrs).use(markdownItFootnote);//.use(mdBiblatex, { bibPath: 'documents/bibliography/library.bib', linkToBibliography: true, });
   eleventyConfig.setLibrary("md", markdownLib);
 
   // plugins: syntax highlighting
   eleventyConfig.addPlugin(syntaxHighlight);
+
+  const { IdAttributePlugin } = await import("@11ty/eleventy");
+
+  eleventyConfig.addPlugin(IdAttributePlugin, {
+    selector: "h2,h3,h4,h5,h6",
+  });
+
+  // eleventyConfig.addPlugin(pluginTOC,{
+  //   tags: ["h3"], // tags (heading levels) to include
+  // });
 
   // collections
   // tags
@@ -189,3 +217,13 @@ module.exports = async function (eleventyConfig) {
     },
   };
 };
+
+// https://dev.to/bybydev/how-to-slugify-a-string-in-javascript-4o9n
+function slugify(str) {
+  str = str.replace(/^\s+|\s+$/g, ''); // trim leading/trailing white space
+  str = str.toLowerCase(); // convert string to lowercase
+  str = str.replace(/[^a-z0-9 -]/g, '') // remove any non-alphanumeric characters
+           .replace(/\s+/g, '-') // replace spaces with hyphens
+           .replace(/-+/g, '-'); // remove consecutive hyphens
+  return str;
+}

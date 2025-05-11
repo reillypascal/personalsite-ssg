@@ -20,10 +20,15 @@ title: Reilly Spitzfaden, Composer
         
         {%- include "partials/post-meta.liquid" -%}
 
+        {%- if post_series -%}
+            {% include "partials/post-series-list.liquid" %}
+        {%- endif -%}
+
+        {% comment %} {% include "partials/table-of-contents.liquid" %} {% endcomment %}
+        
+        {{ content | tableOfContents }}
+
         <div class="e-content">
-            {%- if post_series -%}
-                {% include "partials/post-series-list.liquid" %}
-            {%- endif -%}
             {{ content }}
         </div>
         
