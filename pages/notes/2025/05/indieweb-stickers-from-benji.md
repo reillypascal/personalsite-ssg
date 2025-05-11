@@ -2,7 +2,7 @@
 title: IndieWeb Stickers from Benji
 fedi_url:
   - 
-og_image: /media/notes/2025/05/IMG_20250511_172404_375.webp
+og_image: /media/notes/2025/05/IMG_20250511_172404_375_cr.jpg
 og_image_width: 1411
 og_image_height: 1005
 date: 2025-05-11T17:50:00-0400
