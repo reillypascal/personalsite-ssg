@@ -1,6 +1,6 @@
 ---
 title: A Quick Guide to Everything I Know about Webmentions
-description: Collection of tutorials on webmentions including the basics — you can get up and running with only two lines of HTML! — using microformats to enrich your mentions, adding a webmention form, and parsing and displaying them with Eleventy, Netlify, and Bridgy.
+description: Collection of tutorials on webmentions including the basics — you can get up and running with only two lines of HTML! — using microformats to enrich your mentions; adding a webmention form; and parsing, displaying, and updating them with Eleventy, Netlify, and Bridgy.
 fedi_url:
   - 
 og_image: 
