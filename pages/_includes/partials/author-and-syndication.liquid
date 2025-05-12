@@ -1,11 +1,12 @@
 <div hidden>
-    <a rel="author" class="p-author h-card u-url u-uid" href="https://reillyspitzfaden.com">
+    <div class="p-author h-card">
+        <a rel="author" class="u-url u-uid" href="https://reillyspitzfaden.com"></a>
         <img class="u-photo" src="https://reillyspitzfaden.com/media/headshot_gbc_kirby_300px.jpg" alt="Reilly Spitzfaden">
         <span class="p-name">
             <span class="p-given-name">Reilly</span>
             <span class="p-family-name">Spitzfaden</span>
         </span>
-    </a>
+        </div>
     {%- for url in fedi_url %}
         <a rel="syndication" class="u-syndication" href="{{ url }}"></a>
     {%- endfor %}
