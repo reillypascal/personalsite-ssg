@@ -13,10 +13,12 @@ title: Reilly Spitzfaden, Composer
     <article class="h-entry">
         <h2 class="p-name sectionHeader">{{ title }}</h2>
 
-        <a rel="author" class="p-author h-card" href="https://reillyspitzfaden.com"></a>
+        {% include "partials/author-and-syndication.liquid" %}
+
+        {% comment %} <a rel="author" class="p-author h-card" href="https://reillyspitzfaden.com"></a>
         {%- for url in fedi_url %}
             <a rel="syndication" class="u-syndication" href="{{ url }}"></a>
-        {%- endfor %}
+        {%- endfor %} {% endcomment %}
         
         {% comment %} {%- include "partials/post-meta.liquid" -%} {% endcomment %}
 
@@ -39,6 +41,8 @@ title: Reilly Spitzfaden, Composer
                 <span class="p-category"><a class="post-tag" href="/tags/{{ tag }}">#{{ tag }}</a></span>
             {%- endfor %}
         </div>
+
+        {{ content | toc }}
 
         <div class="e-content">
             {{ content }}

@@ -22,20 +22,8 @@ draft: true
 <link rel="stylesheet" type="text/css" href="/styles/code/prism-dracula.css" />
 <link rel="stylesheet" type="text/css" href="/styles/code/code-tweaks.css" />
 
-<nav class="table-of-contents" aria-label="table-of-contents">
-  <details>
-    <summary>Table of Contents</summary>
-
-- [The Basics with Webmention.io](#the-basics-with-webmentionio)
-- [Sending Webmentions (No Command Line)](#sending-webmentions-no-command-line)
-- [Making a Webmentions Form](#making-a-webmentions-form)
-- [Sending Webmentions (Command Line)](#sending-webmentions-command-line)
-- [Accessing Mentions in Eleventy](#accessing-mentions-in-eleventy)
-- [Automatically Bringing in New Mentions](#automatically-bringing-in-new-mentions)
-- [Fediverse Interactions as Webmentions with Bridgy](#fediverse-interactions-as-webmentions-with-bridgy)
-
-  </details>
-</nav>
+https://css-tricks.com/de-mystifying-indieweb-on-a-wordpress-site/ 
+- references https://www.miriamsuzanne.com/2022/06/04/indiweb/ - “Am I on the IndieWeb Yet?”
 
 [Webmentions](https://indieweb.org/Webmention) are [great](https://amberwilson.co.uk/blog/grow-the-indieweb-with-webmentions/)! They're a way that personal websites can interact with each other — you can notify another site when you link to them, and receive notifications when someone links to you. I find them to allow for some of the nicer parts of social interaction on the web, but with much more agency and much less inflammatory or harmful material than something like Facebook or Instagram. However, then can also be a bit intimidating, especially for [non-developers](https://tracydurnell.com/2025/01/09/sanding-off-friction-from-indie-web-connection/). 
 
@@ -60,7 +48,7 @@ If you have any trouble, the folks on the [IndieWeb Chat](https://chat.indieweb.
 
 Let's get started!
 
-### The Basics with Webmention\.io{#the-basics-with-webmentionio}
+### The Basics with Webmention\.io
 
 As I mentioned in my [first post](/posts/2024/05/receiving-webmentions-part-1/) on the topic, to start, go to [Webmention.io](http://webmention.io/) and sign in using your site URL. You'll need a tag in the `<head>` of your site that looks something like this: `<link rel="me" href="https://github.com/reillypascal" />`. Substitute the URL in the `href=""` field with your own GitHub profile URL. This allows you to use a GitHub account to sign in to Webmention\.io.
 
@@ -74,7 +62,7 @@ If you want to validate that your mentions are working properly, you can use [we
 
 In summary: two lines of HTML in the `<head>` tag, plus a link to your endpoint on each post is plenty to get up and running!
 
-### Sending Webmentions (No Command Line){#sending-webmentions-no-command-line}
+### Sending Webmentions (No Command Line)
 
 There are a number of ways to send webmentions to someone whose post you link to. In many cases, people will include a form at the bottom of posts (e.g., see the bottom of this post), but if you can't find that, you have a few options.
 
@@ -86,7 +74,7 @@ The simplest way to find someone's endpoint if it's not clearly listed:
 
 A quick way to check if the page supports webmentions before bothering with this is Brent Lineberry's [Supports Webmentions?](https://orangegnome.com/posts/2929/supports-webmentions-bookmarklet) bookmarklet. If you bookmark this in your browser, you can click the bookmark while on a page and it will let you know if the page supports webmentions. Juha-Matti Santala also has a [bookmarklet](https://hamatti.org/posts/webmention-bookmarklet/) that does something similar. If you right-click in your bookmark bar and paste the code snippet from the bottom of the post into the URL field, it should work. The benefit to this is that clicking on it copies the endpoint URL to your clipboard, so you can ctrl + V/cmd + V it easily.
 
-### Making a Webmentions Form{#making-a-webmentions-form}
+### Making a Webmentions Form
 
 If you want to make things easier for your visitors, here's how to add a form to your site for people to send you mentions. Below is the HTML I use. Notice the URL in the `action=""` field — that's the only thing you should have to change to make this work on your site. Replace “reillyspitzfaden.com” with your own URL and you should be set! 
 
@@ -119,7 +107,7 @@ One thing to note is that without some further JavaScript, the page will reload 
 
 I don't mind enough to bother changing this behavior, plus I prefer to minimize client-side JavaScript — which would be necessary — but just something to be aware of.
 
-### Sending Webmentions (Command Line){#sending-webmentions-command-line}
+### Sending Webmentions (Command Line)
 
 Searching the page for a mention endpoint and typing into that is not too hard to do, but it's also not very convenient. Two ways to send webmentions using the terminal are to use cURL, or to use [Webmention.app](https://webmention.app/docs#using-the-command-line). With cURL, you format your command as `curl -i -d source=source -d target=target endpoint`. So for example, to RSVP to the Homebrew Website Club, I might run
 
@@ -143,7 +131,7 @@ npx webmention https://reillyspitzfaden.com/feed.xml --limit 1 --send
 
 One potential issue is that this package seems to be a little outdated these days. When I tried to install it on my site, NodeJS showed some critical vulnerabilities. When I installed it in its own separate folder, this wasn't as much of an issue for some reason, so you might try that — make a folder, open it in the terminal, and then run `npm install @remy/webmention`. The [Webmention.app](https://webmention.app/) site also offers some other tools, so you might play with those, although I haven't used them myself.
 
-### Accessing Mentions in Eleventy{#accessing-mentions-in-eleventy}
+### Accessing Mentions in Eleventy
 
 Eleventy lets you use [JavaScript data files](https://www.11ty.dev/docs/data-js/) which will run when the site builds and make the resulting data globally available. These files go in the `_data` subfolder in your site source directory, and the data is available as an object with the same name as the file (e.g., the file `webmentions.mjs` will make the data available as the `webmentions` object globally).
 
@@ -221,7 +209,7 @@ Possible values for “wm-property” are `in-reply-to`, `like-of`, `repost-of`,
 {% endfor %}{% endraw %}
 ```
 
-### Automatically Bringing in New Mentions{#automatically-bringing-in-new-mentions}
+### Automatically Bringing in New Mentions
 
 Client-side JS
 
@@ -235,7 +223,7 @@ On my home server, however, `cron` was super easy to use. `cron` syntax has 5 fi
 0 2 * * * curl -X POST -d {} "https://api.netlify.com/build_hooks/<your-hook-here>"
 ```
 
-### Fediverse Interactions as Webmentions with Bridgy{#fediverse-interactions-as-webmentions-with-bridgy}
+### Fediverse Interactions as Webmentions with Bridgy
 
 [Bridgy](https://brid.gy/)
 
