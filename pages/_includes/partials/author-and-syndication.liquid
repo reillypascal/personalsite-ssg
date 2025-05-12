@@ -1,0 +1,10 @@
+<div hidden>
+    <div class="u-author h-card">
+        <a class="u-url u-uid" href="https://reillyspitzfaden.com">
+            <img class="u-photo p-name" src="https://reillyspitzfaden.com/media/headshot_gbc_kirby_300px.jpg" alt="Reilly">
+        </a>
+        {%- for url in fedi_url %}
+            <a rel="syndication" class="u-syndication" href="{{ url }}"></a>
+        {%- endfor %}
+    </div>
+</div>
