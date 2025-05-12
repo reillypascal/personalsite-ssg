@@ -118,7 +118,7 @@ I don't mind enough to bother changing this behavior, plus I prefer to minimize 
 
 ### Making Your Mentions Richer with Microformats
 
-If you go to the URL `https://webmention.io/api/mentions.jf2?token=<your-webmention-token>`, you can view the raw JSON data for webmentions sent to your site, which can be useful for understanding what's going on under the hood. When I first viewed this, I noticed that some people's mentions included details in an “author” field. When I tested sending mentions to myself, my “author” field was blank, and the difference seemed to be [microformats](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Microformats) — after adding them, my “author” field was filled out, as shown below:
+If you go to the URL `https://webmention.io/api/mentions.jf2?token=<your-webmention-token>` (get your token [here](https://webmention.io/settings) after signing in to Webmention\.io), you can view the raw JSON data for webmentions sent to your site, which can be useful for understanding what's going on under the hood. When I first viewed this, I noticed that some people's mentions included details in an “author” field. When I tested sending mentions to myself, my “author” field was blank, and the difference seemed to be [microformats](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Microformats) — after adding them, my “author” field was filled out, as shown below:
 
 ```json
 "author": {
