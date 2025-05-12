@@ -9,5 +9,4 @@ tags:
 rsvp_value: yes
 target_url: https://events.indieweb.org/2025/05/homebrew-website-club-americas-38aqOgHBPN0F
 target_title: Homebrew Website Club - Americas | May 14, 2025 | IndieWeb Events
-draft: true
 ---
