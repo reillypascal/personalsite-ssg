@@ -209,7 +209,8 @@ module.exports = async function (eleventyConfig) {
     const posts = collectionApi.getFilteredByTag("post");
     const notes = collectionApi.getFilteredByTag("note");
     const interactions = collectionApi.getFilteredByTag("interaction");
-    return posts.concat(notes).concat(interactions).sort(function (a, b) {
+    const digital_garden = collectionApi.getFilteredByTag("digital-garden");
+    return posts.concat(notes).concat(interactions).concat(digital_garden).sort(function (a, b) {
       return a.date - b.date;
     });
   });
