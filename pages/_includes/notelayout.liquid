@@ -18,10 +18,18 @@ title: Reilly Spitzfaden, Composer
     <article class="h-entry">
         <h2 class="p-name sectionHeader">{{ title }}</h2>
 
-        <a rel="author" class="p-author h-card" href="https://reillyspitzfaden.com"></a>
-        {%- for url in fedi_url -%}
-            <a rel="syndication" class="u-syndication" href="{{ url }}"></a>
-        {%- endfor -%}
+        {% comment %} <a rel="author" class="p-author h-card" href="https://reillyspitzfaden.com"></a> {% endcomment %}
+        
+        <div hidden>
+            <div class="u-author h-card">
+                <a class="u-url u-uid" href="https://reillyspitzfaden.com">
+                    <img class="u-photo p-name" src="https://reillyspitzfaden.com/media/headshot_gbc_kirby_300px.jpg" alt="Reilly's face in profile with purple pixel art filter">
+                </a>
+                {%- for url in fedi_url %}
+                    <a rel="syndication" class="u-syndication" href="{{ url }}"></a>
+                {%- endfor %}
+            </div>
+        </div>
 
         {% include "partials/post-meta.liquid" %}
         
