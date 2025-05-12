@@ -110,23 +110,28 @@ module.exports = async function (eleventyConfig) {
     return pageWebmentions;
   });
 
-  eleventyConfig.addFilter("allWebmentionsByUrl", function(webmentions, url) {
-    const sanitize = (entry) => {
-      if (entry.content && entry.content.html) {
-        entry.content.html = sanitizeHTML(entry.content.html, {
-          allowedTags: ["b", "i", "em", "strong", "a"],
-        });
-      }
-      return entry;
-    };
-    
-    const pageWebmentions = webmentions
-      .filter((mention) => mention["wm-target"] == url)
-      .sort((a, b) => new Date(b.published) - new Date(a.published))
-      .map(sanitize);
+  // eleventyConfig.addFilter("formatDateRfc822", (dateStr, formatStr = "EEE, dd MMM yyyy HH:mm:ss ZZZZ") => {
+  //   // requires post.data.date, not post.date
+  //   return DateTime.fromISO(dateStr).toFormat(formatStr);
+  // });
 
-    return pageWebmentions;
-  });
+  // eleventyConfig.addFilter("allWebmentionsByUrl", function(webmentions, url) {
+  //   const sanitize = (entry) => {
+  //     if (entry.content && entry.content.html) {
+  //       entry.content.html = sanitizeHTML(entry.content.html, {
+  //         allowedTags: ["b", "i", "em", "strong", "a"],
+  //       });
+  //     }
+  //     return entry;
+  //   };
+    
+  //   const pageWebmentions = webmentions
+  //     .filter((mention) => mention["wm-target"] == url)
+  //     .sort((a, b) => new Date(b.published) - new Date(a.published))
+  //     .map(sanitize);
+
+  //   return pageWebmentions;
+  // });
   
   // eleventyConfig.addFilter("tableOfContents", function(content) {
   //   // const headerTags = ["h3","h4","h5","h6"];
