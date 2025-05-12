@@ -31,11 +31,8 @@ date: $isodate
 tags:
   - note
 draft: true
+indienews: true
 ---
 
 <link rel="stylesheet" type="text/css" href="/styles/notes-photos.css">
-
-<a href="https://news.indieweb.org/en" class="u-syndication indienews">
-  Also posted on IndieNews
-</a>
 EOF

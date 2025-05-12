@@ -40,7 +40,7 @@
                         Also on:
                         {%- for url in fedi_url %}
                             {% assign filtered_url = url |  remove: 'https://' |  split: '/' %}
-                            <a href="{{ url }}">{{ filtered_url[0] }}</a>
+                            <a rel="syndication" class="u-syndication" href="{{ url }}">{{ filtered_url[0] }}</a>
                             {%- if not forloop.last -%}
                             ,
                             {%- endif -%}

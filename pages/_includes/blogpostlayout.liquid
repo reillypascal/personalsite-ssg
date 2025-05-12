@@ -14,9 +14,9 @@ title: Reilly Spitzfaden, Composer
         <h2 class="p-name sectionHeader">{{ title }}</h2>
 
         <a rel="author" class="p-author h-card" href="https://reillyspitzfaden.com"></a>
-        {%- for url in fedi_url %}
+        {% comment %} {%- for url in fedi_url %}
             <a rel="syndication" class="u-syndication" href="{{ url }}"></a>
-        {%- endfor %}
+        {%- endfor %} {% endcomment %}
         
         {%- include "partials/post-meta.liquid" -%}
 
@@ -28,6 +28,9 @@ title: Reilly Spitzfaden, Composer
 
         <div class="e-content">
             {{ content }}
+            {% if indienews %}
+                {% include "partials/indienews.liquid" %}
+            {% endif %}
         </div>
         
         {% comment %} <div class="blogPostAsterism"><p>&#x2042;</p></div> {% endcomment %}
