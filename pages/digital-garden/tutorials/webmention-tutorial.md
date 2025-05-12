@@ -1,6 +1,6 @@
 ---
 title: A Quick Guide to Everything I Know about Webmentions
-description: Comprehensive tutorial on webmentions using Webmention.io, Eleventy, and Netlify. Addresses many different levels of complexity — you can get up and running with only two lines of HTML!
+description: Collection of tutorials on webmentions including the basics — you can get up and running with only two lines of HTML! — using microformats to enrich your mentions, adding a webmention form, and parsing and displaying them with Eleventy, Netlify, and Bridgy.
 fedi_url:
   - 
 og_image: 
@@ -8,7 +8,12 @@ og_image_width:
 og_image_height: 
 date: 2025-05-12T15:15:00-0400
 octothorpes:
-  - 
+  - webmentions
+  - web
+  - web-development
+  - websites
+  - indieweb
+  - html
 tags:
   - digital-garden
   - 11ty
