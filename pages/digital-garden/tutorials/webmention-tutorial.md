@@ -16,16 +16,14 @@ tags:
   - tutorial
   - webdev
   - webmentions
-draft: true
 ---
 
 <link rel="stylesheet" type="text/css" href="/styles/code/prism-dracula.css" />
 <link rel="stylesheet" type="text/css" href="/styles/code/code-tweaks.css" />
 
-https://css-tricks.com/de-mystifying-indieweb-on-a-wordpress-site/ 
-- references https://www.miriamsuzanne.com/2022/06/04/indiweb/ - “Am I on the IndieWeb Yet?”
+[Webmentions](https://indieweb.org/Webmention) are [great](https://amberwilson.co.uk/blog/grow-the-indieweb-with-webmentions/)! They're a way that personal websites can interact with each other — you can notify another site when you link to them, and receive notifications when someone links to you. I find them to allow for some of the nicer parts of social interaction on the web, but with much more agency and much less inflammatory or harmful material than something like Facebook or Instagram. However, then can also be a bit intimidating, especially for [non-developers](https://tracydurnell.com/2025/01/09/sanding-off-friction-from-indie-web-connection/).
 
-[Webmentions](https://indieweb.org/Webmention) are [great](https://amberwilson.co.uk/blog/grow-the-indieweb-with-webmentions/)! They're a way that personal websites can interact with each other — you can notify another site when you link to them, and receive notifications when someone links to you. I find them to allow for some of the nicer parts of social interaction on the web, but with much more agency and much less inflammatory or harmful material than something like Facebook or Instagram. However, then can also be a bit intimidating, especially for [non-developers](https://tracydurnell.com/2025/01/09/sanding-off-friction-from-indie-web-connection/). 
+<!-- , so I'm writing this tutorial to share what I've learned. Since it's part of my [digital garden](/digital-garden), it will continue to grow and develop over time. -->
 
 My goal with this tutorial is that people with a wide range of experience with coding/working in a command line — including no experience — can benefit from it. In particular, if you just read the first two sections, you'll be able to use webmentions by signing up for two services (GitHub and Webmention\.io) and adding two lines of HTML to your site:
 
@@ -107,6 +105,47 @@ One thing to note is that without some further JavaScript, the page will reload 
 
 I don't mind enough to bother changing this behavior, plus I prefer to minimize client-side JavaScript — which would be necessary — but just something to be aware of.
 
+### Making Your Mentions Richer with Microformats
+
+If you go to the URL `https://webmention.io/api/mentions.jf2?token=<your-webmention-token>`, you can view the raw JSON data for webmentions sent to your site, which can be useful for understanding what's going on under the hood. When I first viewed this, I noticed that some people's mentions included details in an “author” field. When I tested sending mentions to myself, my “author” field was blank, and the difference seemed to be [microformats](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Microformats) — after adding them, my “author” field was filled out, as shown below:
+
+```json
+"author": {
+    "type": "card",
+    "name": "Reilly Spitzfaden",
+    "photo": "https://avatars.webmention.io/reillyspitzfaden.com/10ca64df4721d256914c260109486f3051ac27b5586304a64c6c90d776cd6146.jpg",
+    "url": "https://reillyspitzfaden.com/"
+}
+```
+
+Microformats allow embedding properties in a page, to be read by social software, aggregators, search engines, and the like. Microformat tags are added as HTML class names. According to the [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Microformats)
+
+> - To create a microformats object, `h-*` class names are used in the class attribute.
+
+> - To add a property to an object, the `p-*`, `u-*`, `dt-*`, `e-*` class names are used on one of the object's descendants.
+
+Below is the [`h-card`](https://microformats.org/wiki/h-card) markup I use above each of my posts. MDN gives further information about the different prefixes you'll see in my markup [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Microformats#microformats_prefixes).
+
+```html
+<div hidden>
+    <div class="p-author h-card">
+        <a rel="author" class="u-url u-uid" href="https://reillyspitzfaden.com"></a>
+        <img class="u-photo" src="https://reillyspitzfaden.com/media/headshot_gbc_kirby_300px.jpg" alt="Reilly Spitzfaden">
+        <span class="p-name">
+            <span class="p-given-name">Reilly</span>
+            <span class="p-family-name">Spitzfaden</span>
+        </span>
+        </div>
+    <a rel="syndication" class="u-syndication" href="<mastodon-or-bsky-url>"></a>
+</div>
+```
+
+The outer `<div>` ensures the markup is not diplayed to users. The inner `<div>` creates a microformats object with the `h-card` class; the `p-author` property adds that this card is for an author. The `u-url` and `u-uid` classes indicate that “https://reillyspitzfaden.com” is my site URL, with the `u-*` prefix indicating a link; similarly, `u-photo` gives a link to a photo to act as an avatar, and `u-syndication` gives link(s) to where I [POSSE](https://www.citationneeded.news/posse/) my posts. The `p-name`, `p-given-name`, and `p-family-name` classes give plain-text information about me (plain-text indicated by the `p-*` prefix). 
+
+In addition to this card, the entire article (including the card) is surrounded in an `<article>` tag with the class `h-entry`, creating a microformat object for the entire entry. The `<h2>` for the post title within that `<article` has the class `p-name`, and the content of the post is in a `<div>` with the class `e-content`. As described in the MDN link above, the `e-*` prefix is for “element tree properties where the entire contained element hierarchy is the value” — i.e., because `e-content` refers to the entire post contents, rather than any one single HTML element, we use `e-*`.
+
+In addition to enriching webmention data, microformats make a number of other [IndieWeb](https://indieweb.org/) practices possible, which I will describe more in a future post.
+
 ### Sending Webmentions (Command Line)
 
 Searching the page for a mention endpoint and typing into that is not too hard to do, but it's also not very convenient. Two ways to send webmentions using the terminal are to use cURL, or to use [Webmention.app](https://webmention.app/docs#using-the-command-line). With cURL, you format your command as `curl -i -d source=source -d target=target endpoint`. So for example, to RSVP to the Homebrew Website Club, I might run
@@ -174,11 +213,7 @@ If you do want to keep it private, you can add the key as an [environment variab
 require("dotenv").config();
 ```
 
-Below is the Liquid template I use to import these mentions. 
-
-
-
-Possible values for “wm-property” are `in-reply-to`, `like-of`, `repost-of`, `bookmark-of`, `mention-of`, and `rsvp`. 
+Below is the Liquid template I use to import these mentions. As I mentioned above, if you go to the URL `https://webmention.io/api/mentions.jf2?token=<your-webmention-token>`, you can view the raw JSON data, in which you'll see the field “wm-property.” Possible values for “wm-property” are `in-reply-to`, `like-of`, `repost-of`, `bookmark-of`, `mention-of`, and `rsvp`, according to the Webmention\.io [API guide](https://github.com/aaronpk/webmention.io?tab=readme-ov-file#api). As shown in my code below, I use this list of properties to display, e.g., “someone liked this post,” or “someone replied to this post,” falling back on the generic “mentioned” for the rest of the properties.
 
 
 ```liquid
@@ -209,9 +244,32 @@ Possible values for “wm-property” are `in-reply-to`, `like-of`, `repost-of`,
 {% endfor %}{% endraw %}
 ```
 
+Notice the custom [Liquid filter](https://shopify.dev/docs/api/liquid/filters) `webWebmentions`. The vertical pipe character “|” sends the value `webmentions.mentions` from `_data/webmentions.mjs` into the filter, with the colon after `webWebmentions` allowing me to send the additional value of `pageUrl` to the filter. The code for the filter is in my `eleventy.config.js` file, and is shown below:
+
+```js
+eleventyConfig.addFilter("webWebmentions", function(webmentions, url) {  
+  const pageWebmentions = webmentions
+    .filter((mention) => mention["wm-target"] == url)
+    .filter((mention) => !mention["wm-source"].includes("https://brid.gy/"))
+    .filter((mention) => !mention["wm-source"].includes("https://bsky.brid.gy/"))
+    .sort((a, b) => new Date(b.published) - new Date(a.published))
+  
+  return pageWebmentions;
+});
+```
+
+I filter the mentions by the following rules:
+
+- The `wm-target` property is the URL for the page — i.e., the mention refers to this post
+- The `wm-source` property does not include “<https://brid.gy/>” or “<https://bsky.brid.gy/>” — i.e., the mention is from someone's blog, rather than being a Mastodon/Bluesky interaction bridged over with Ryan Barrett's [Bridgy](https://brid.gy/) service.
+  - The counterpart to this filter, `fediWebmentions` does the opposite, only allowing mentions that *are* from those two URLs. This lets me show a separate counter of Fediverse/Bluesky interactions on the [POSSE](https://www.citationneeded.news/posse/)-ed copies.
+- I sort the mentions in reverse chronological order, using the “published” field which you can view in the raw JSON data at `https://webmention.io/api/mentions.jf2?token=<your-webmention-token>`.
+
+I then use the Liquid keyword `assign` to assign the results of the `webWebmentions` filter to the `web_mentions` variable, allowing me to access and further parse them in the Liquid template.
+
 ### Automatically Bringing in New Mentions
 
-Client-side JS
+<!-- Client-side JS -->
 
 Because the `_data/webmentions.mjs` script brings in new mentions when the site builds, rebuilding the site is a good way to bring in mentions without client-side JavaScript. My site is hosted on [Netlify](https://www.netlify.com/), and a simple way to make the site automatically rebuild is to use [build hooks](https://docs.netlify.com/configure-builds/build-hooks/). This is a URL and when you send an HTTP POST request to it, the site will build. You can do this with cURL: `curl -X POST -d {} "https://api.netlify.com/build_hooks/<your-hook-here>"`. 
 
@@ -223,16 +281,16 @@ On my home server, however, `cron` was super easy to use. `cron` syntax has 5 fi
 0 2 * * * curl -X POST -d {} "https://api.netlify.com/build_hooks/<your-hook-here>"
 ```
 
-### Fediverse Interactions as Webmentions with Bridgy
+<!-- ### Fediverse Interactions as Webmentions with Bridgy
 
-[Bridgy](https://brid.gy/)
+[Bridgy](https://brid.gy/) -->
 
 Thanks for reading! Hopefully this can be of assistance to someone.
-
-<a href="https://news.indieweb.org/en" class="u-syndication indienews">
-  Also posted on IndieNews
-</a>
 
 [^1]: You can find more information about the complete Webmention\.io API [here](https://github.com/aaronpk/webmention.io#api).
 
 [^2]: I use this server for a ton of things, including a [Jellyfin](https://jellyfin.org/) home streaming server — instructions included in the [server guide]() linked above — and a copy of [Syncthing](https://syncthing.net/) so my devices are always synced, even if only some are active at any given time. It's very nice, and I'll definitely discuss more about that later!
+
+
+<!-- https://css-tricks.com/de-mystifying-indieweb-on-a-wordpress-site/ 
+- references https://www.miriamsuzanne.com/2022/06/04/indiweb/ - “Am I on the IndieWeb Yet?” -->
