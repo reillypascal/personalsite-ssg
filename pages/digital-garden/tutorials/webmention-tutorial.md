@@ -26,6 +26,12 @@ tags:
 <link rel="stylesheet" type="text/css" href="/styles/code/prism-dracula.css" />
 <link rel="stylesheet" type="text/css" href="/styles/code/code-tweaks.css" />
 
+<aside class="preface-note">
+
+Please feel free to use the table of contents to skip around — individual sections can be read on their own as mini-tutorials on a topic!
+
+</aside>
+
 [Webmentions](https://indieweb.org/Webmention) are [great](https://amberwilson.co.uk/blog/grow-the-indieweb-with-webmentions/)! They're a way that personal websites can interact with each other — you can notify another site when you link to them, and receive notifications when someone links to you. I find them to allow for some of the nicer parts of social interaction on the web, but with much more agency and much less inflammatory or harmful material than something like Facebook or Instagram. However, then can also be a bit intimidating, especially for [non-developers](https://tracydurnell.com/2025/01/09/sanding-off-friction-from-indie-web-connection/).
 
 <!-- , so I'm writing this tutorial to share what I've learned. Since it's part of my [digital garden](/digital-garden), it will continue to grow and develop over time. -->
