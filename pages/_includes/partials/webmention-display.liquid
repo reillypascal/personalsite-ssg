@@ -47,36 +47,30 @@
                         {%- endfor %}
                     </div>
                 {%- endif %}
-                
+
                 {%- if fedi_mentions.comments.size > 0 or fedi_mentions.reposts.size > 0 or fedi_mentions.likes.size > 0 %}
                     <div class="fedi-interactions">
-                        {%- if fedi_mentions.comments.size == 1 -%}
-                            {{ fedi_mentions.comments | size }} comment 
-                        {%- elsif fedi_mentions.comments.size > 1 -%}
-                            {{ fedi_mentions.comments | size }} comments 
-                        {%- endif -%}
-                        {%- if fedi_mentions.comments.size > 0 and fedi_mentions.reposts.size > 0 or fedi_mentions.likes.size > 0 -%}
-                        ,
-                        {% endif -%}
-                        {%- if fedi_mentions.reposts.size == 1 -%}
-                            {{ fedi_mentions.reposts | size }} repost 
-                        {%- elsif fedi_mentions.reposts.size > 1 -%}
-                            {{ fedi_mentions.reposts | size }} reposts 
-                        {%- endif -%}
-                        {%- if fedi_mentions.reposts.size > 0 and fedi_mentions.likes.size -%}
-                        ,
-                        {%- endif -%}
-                        {%- if fedi_mentions.likes.size == 1 %}
-                            {{ fedi_mentions.likes | size }} like
-                        {%- elsif fedi_mentions.likes.size > 1 %}
-                            {{ fedi_mentions.likes | size }} likes
-                        {%- endif %}
+                        {% assign valid_categories = 0 %}
+                        {%- for category in fedi_mentions %}
+                            {%- if category[1].size > 0 %}
+                                {%- assign valid_categories = valid_categories | plus: 1 %}
+                                {%- if valid_categories > 1 -%}
+                                ,
+                                {%- endif %}
+                                {% assign interaction_type = category[0] %}
+                                {% if category[1].size == 1 %}
+                                    {% assign interaction_type = interaction_type | slice: 0, -1 %}
+                                {% endif %}
+                                {{ category[1].size }} {{ interaction_type }}
+                            {%- endif %}
+                        {%- endfor %}
                     </div>
                 {%- endif %}
             </section>
         {%- endif %}
     </article>
 {%- endif %}
+
 {% comment %} <span class="fedi-asterism">
     &#x2042;
 </span>  {% endcomment %}
