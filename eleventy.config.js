@@ -76,7 +76,7 @@ module.exports = async function (eleventyConfig) {
         return author && author.name && published && content;
       });
         
-    const data = { likes, reposts, comments };
+    const data = { comments, reposts, likes };
     return data;
   });
 
