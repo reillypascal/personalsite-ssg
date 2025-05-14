@@ -1,18 +1,18 @@
 // needed for e.g., dateToRfc822 filter
-const feedPlugin = require("@11ty/eleventy-plugin-rss");
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const interlinker = require("@photogabble/eleventy-plugin-interlinker");
-const pluginTOC = require('@uncenter/eleventy-plugin-toc');
-const markdownIt = require("markdown-it");
-const markdownItAnchor = require('markdown-it-anchor');
-const markdownItAttrs = require('markdown-it-attrs');
-const markdownItFootnote = require("markdown-it-footnote");
-// const mdBiblatex = require('@arothuis/markdown-it-biblatex');
-// const cheerio = require("cheerio");
-const { DateTime } = require("luxon");
-const sanitizeHTML = require("sanitize-html");
+import feedPlugin from "@11ty/eleventy-plugin-rss";
+import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import interlinker from "@photogabble/eleventy-plugin-interlinker";
+import pluginTOC from '@uncenter/eleventy-plugin-toc';
+import markdownIt from "markdown-it";
+import markdownItAnchor from 'markdown-it-anchor';
+import markdownItAttrs from 'markdown-it-attrs';
+import markdownItFootnote from "markdown-it-footnote";
+// import mdBiblatex from '@arothuis/markdown-it-biblatex';
+// import cheerio from "cheerio";
+import { DateTime } from "luxon";
+import sanitizeHTML from "sanitize-html";
 
-module.exports = async function (eleventyConfig) {
+export default async function (eleventyConfig) {
   // passthrough copies
   eleventyConfig.addPassthroughCopy("_redirects");
   eleventyConfig.addPassthroughCopy("google350d63874edcb6ff.html");
