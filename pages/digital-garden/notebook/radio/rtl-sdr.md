@@ -44,12 +44,12 @@ implying that the blog dongles use pin four/pin five.
 		- Source: <https://github.com/merbanan/rtl_433>
 		- Google Groups discussion: <https://groups.google.com/g/rtl_433/>
 - ADS-B
-	- dump1090 — see [[ads-b#software|ADS-B]]
+	- dump1090 — see [[ads-b#Software|ADS-B]]
 - RTL-SDR: 
 	- rtl-sdr/librtlsdr 
 		- Install on macOS: `brew install librtlsdr`
 		- Source: <https://github.com/osmocom/rtl-sdr>
 	- SDR++
 		- Install: download nightly release at <https://github.com/AlexandreRouma/SDRPlusPlus/releases>
-			- See [[macos-terminal-commands#gatekeeper|Gatekeeper]] notes for Gatekeeper issues
+			- See [[macos-terminal-commands#Gatekeeper|Gatekeeper]] notes for Gatekeeper issues
 		- Source: <https://github.com/AlexandreRouma/SDRPlusPlus>
