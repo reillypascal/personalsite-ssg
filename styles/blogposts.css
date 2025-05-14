@@ -73,7 +73,8 @@ article h3 {
 }
 
 .webmentionForm,
-.webmention-display {
+.webmention-display,
+.featuredRecentCompact {
     margin-top: 96px;
 }
 
