@@ -1,6 +1,8 @@
 ---
 title: "Liked | The Tyranny of Public Opinion"
-fedi_url: 
+fedi_url:
+  - https://hachyderm.io/@reillypascal/114503276150867282
+  - https://bsky.app/profile/reillypascal.bsky.social/post/3lp3pkbhmwc26
 date: 2025-05-13T20:03:49-0400
 tags:
   - interaction
