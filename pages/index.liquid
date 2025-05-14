@@ -86,25 +86,7 @@ h_card_p_note: Composer and audio programmer who likes noise, obsolete media, el
     </div>
     
     <div id="column-right">
-        <h2 class="sectionHeader">Featured Posts</h2>
-        <section>
-            <h3><a href="/posts/2025/01/databending-part-1/">Databending Part 1 &mdash; Raw Data in Audacity</a></h3>
-            <p>Did you know you can listen to pretty much any file as an audio file? Let's look at how it works and what it sounds like!</p>
-        </section>
-        
-        <section>
-            <h3><a href="/posts/2024/12/radio-listening-musically/">Radio &mdash; Listening Musically, Being Haunted</a></h3>
-            <p>Listening to shortwave radio signals, discussing my emotive reaction to the signals, and composing music with them</p>
-        </section>
-        
-        <h2 class="sectionHeader">Recent Posts</h2>
-            {% assign recent_posts = collections.post | slice: -3, 3 %}
-            {%- for item in recent_posts reversed %}
-            <section>
-                <h3><a href="{{item.url}}">{{ item.data.title }}</a></h3>
-                <p>{{ item.data.description }}</p>
-            </section>
-            {%- endfor %}
+        {% include "partials/featured-recent-full.liquid" %}
     </div>
 
     {% comment %} <section id="homepageStatus">
@@ -115,9 +97,5 @@ h_card_p_note: Composer and audio programmer who likes noise, obsolete media, el
 
     <!-- h-card (hidden) -->
     {% include "partials/author-and-syndication.liquid" %}
-    {%- comment %} <div class="h-card" hidden>
-        <img class="u-photo" src="/media/headshot_gbc_kirby_512px.png" loading="lazy"/><br />
-        <a class="p-name u-url" rel="me" href="https://reillyspitzfaden.com/">Reilly Spitzfaden</a> (they/them)<br />
-        <p class="p-note">Composer and audio programmer who likes noise, obsolete media, electronics, and nostalgia</p>
-    </div> {%- endcomment %}
+    
 </main>

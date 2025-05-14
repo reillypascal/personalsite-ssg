@@ -17,6 +17,7 @@ tags:
   - radio
   - sounddesign
   - telecommunications
+featured: true
 ---
 <!-- lite-youtube -->
 <link rel="stylesheet" href="/styles/videos/lite-yt-embed.css" />

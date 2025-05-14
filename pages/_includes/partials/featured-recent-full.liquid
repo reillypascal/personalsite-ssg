@@ -1,0 +1,18 @@
+<h2 class="sectionHeader">Featured Posts</h2>
+{%- for item in collections.post reversed %}
+    {%- if item.data.featured %}
+        <section>
+            <h3><a href="{{item.url}}">{{ item.data.title }}</a></h3>
+            <p>{{ item.data.description }}</p>
+        </section>
+    {%- endif %}
+{%- endfor %}
+
+<h2 class="sectionHeader">Recent Posts</h2>
+{% assign recent_posts = collections.post | slice: -3, 3 %}
+{%- for item in recent_posts reversed %}
+    <section>
+        <h3><a href="{{item.url}}">{{ item.data.title }}</a></h3>
+        <p>{{ item.data.description }}</p>
+    </section>
+{%- endfor %}

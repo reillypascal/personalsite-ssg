@@ -1,5 +1,5 @@
 ---
-title: Databending Part 4 – Data to Audio with a Rust Tool
+title: Databending Part 4 — Data to Audio with a Rust Tool
 description: Manually importing data as audio in Audacity sounds super cool but takes a while and slows down my composition. Today I'm automating it in Rust!
 fedi_url: 
   - https://hachyderm.io/@reillypascal/114434723302418270
