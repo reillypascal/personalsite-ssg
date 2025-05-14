@@ -1,6 +1,8 @@
 ---
 title: "Liked | Your Own Core Rope Memory | Hackaday"
-fedi_url: 
+fedi_url:
+  - https://hachyderm.io/@reillypascal/114508543467613146
+  - https://bsky.app/profile/reillypascal.bsky.social/post/3lp62dumgjc2i
 date: 2025-05-14T18:25:01-0400
 tags:
   - interaction
