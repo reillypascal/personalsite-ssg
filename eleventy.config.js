@@ -1,6 +1,7 @@
 // needed for e.g., dateToRfc822 filter
 const feedPlugin = require("@11ty/eleventy-plugin-rss");
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const interlinker = require("@photogabble/eleventy-plugin-interlinker");
 const pluginTOC = require('@uncenter/eleventy-plugin-toc');
 const markdownIt = require("markdown-it");
 const markdownItAnchor = require('markdown-it-anchor');
@@ -162,6 +163,8 @@ module.exports = async function (eleventyConfig) {
   //   selector: "h2,h3,h4,h5,h6",
   // });
 
+  eleventyConfig.addPlugin(interlinker);
+
   eleventyConfig.addPlugin(pluginTOC,{
     tags: ["h3", "h4", "h5", "h6"], // tags (heading levels) to include
     ignoredHeadings: ["[data-toc-exclude]"], // headings to ignore (list of selectors)
@@ -203,6 +206,10 @@ module.exports = async function (eleventyConfig) {
     // const digital_garden = collectionApi.getFilteredByTag("digital-garden");
     // return posts.concat(notes).concat(interactions).concat(digital_garden).sort(function (a, b) { return a.date - b.date; });
     return posts.concat(notes).concat(interactions).sort(function (a, b) { return a.date - b.date; });
+  });
+
+  eleventyConfig.addCollection("gardenNotebook", function (collectionApi) {
+    return collectionApi.getFilteredByTags("notebook", "digital-garden");
   });
 
   eleventyConfig.addCollection("gardenTutorials", function (collectionApi) {
