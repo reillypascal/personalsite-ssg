@@ -286,7 +286,7 @@ I then use the Liquid keyword `assign` to assign the results of the `webWebmenti
 
 Because the `_data/webmentions.mjs` script brings in new mentions when the site builds, rebuilding the site is a good way to bring in mentions without client-side JavaScript. My site is hosted on [Netlify](https://www.netlify.com/), and a simple way to make the site automatically rebuild is to use [build hooks](https://docs.netlify.com/configure-builds/build-hooks/). This is a URL and when you send an HTTP POST request to it, the site will build. You can do this with cURL: `curl -X POST -d {} "https://api.netlify.com/build_hooks/<your-hook-here>"`. 
 
-I send out these POST requests from my home server. The server is a 2015 ASUS laptop running Ubuntu Server, which I set up according to [this guide](https://chriskalos.notion.site/The-0-Home-Server-Written-Guide-5d5ff30f9bdd4dfbb9ce68f0d914f1f6). [^2] GitHub actions are also another good way of scheduling this — Benji links to how he does that [here](https://www.benji.dog/notes/1738091887/). I actually tried doing it with GitHub actions first, but for some reason, I couldn't get scheduled actions with [`cron`](https://en.wikipedia.org/wiki/Cron). to work for me. 
+I send out these POST requests from my home server. The server is a 2015 ASUS laptop running Ubuntu Server, which I set up as I describe [[tv-media-server|here]]. [^2] GitHub actions are also another good way of scheduling this — Benji links to how he does that [here](https://www.benji.dog/notes/1738091887/). I actually tried doing it with GitHub actions first, but for some reason, I couldn't get scheduled actions with [`cron`](https://en.wikipedia.org/wiki/Cron). to work for me. 
 
 On my home server, however, `cron` was super easy to use. `cron` syntax has 5 fields: minute, hour, day (month), month, day (week). You can give them a value, or use an asterisk (“*”) to allow all values. `0 2 * * *` in the example below means “run every day at 2:00 GMT, regardless of month or day.” This [crontab.guru](https://crontab.guru/) tool may be helpful in figuring out the syntax. Note that the times are in GMT, rather than the local time zone, so you would need to convert to local time. To set up a `cron` job, type `crontab -e` (i.e., “edit the crontab file”) into your server's terminal, and add a line like the following to the file that opens:
 
@@ -302,7 +302,7 @@ Thanks for reading! Hopefully this can be of assistance to someone.
 
 [^1]: You can find more information about the complete Webmention\.io API [here](https://github.com/aaronpk/webmention.io#api).
 
-[^2]: I use this server for a ton of things, including a [Jellyfin](https://jellyfin.org/) home streaming server — instructions included in the [server guide]() linked above — and a copy of [Syncthing](https://syncthing.net/) so my devices are always synced, even if only some are active at any given time. It's very nice, and I'll definitely discuss more about that later!
+[^2]: I use this server for a ton of things, including a [Jellyfin](https://jellyfin.org/) home streaming server — instructions included [[tv-media-server|here]] — and a copy of [Syncthing](https://syncthing.net/) so my devices are always synced, even if only some are active at any given time. It's very nice, and I'll definitely discuss more about that later!
 
 
 <!-- https://css-tricks.com/de-mystifying-indieweb-on-a-wordpress-site/ 
