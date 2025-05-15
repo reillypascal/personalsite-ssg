@@ -13,6 +13,9 @@ tags:
   - tech-projects
 ---
 
+<link rel="stylesheet" type="text/css" href="/styles/code/prism-dracula.css" />
+<link rel="stylesheet" type="text/css" href="/styles/code/code-tweaks.css" />
+
 ### Guide (Some Natalie's Blog)
 - [Kodi setup on a Raspberry Pi 4](https://some-natalie.dev/blog/kodi-setup/)
 	- Includes how to start Kodi on startup
