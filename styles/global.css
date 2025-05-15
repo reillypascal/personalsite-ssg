@@ -581,3 +581,8 @@ a:active {
         margin: 16px 0;
     }
 }
+
+.digital-garden-preface {
+    border-left: 1px solid var(--accent-med-light);
+    padding-left: 12px;
+}

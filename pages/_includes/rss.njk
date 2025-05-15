@@ -20,14 +20,23 @@
     {% for post in collections[collection.name] | reverse -%}
       {%- if (loop.index0 < 20) %}
         {% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
-        {%- set interactionHTML -%}
+        {%- set headerHTML -%}
+
           {% set tags = post.data.tags %}
           {% set target_url = post.data.target_url %}
           {% set target_title = post.data.target_title %}
-          {%- include "partials/interactions-display.liquid" -%}
+          
+          {%- for tag in tags -%}
+            {%- if tag === "interaction" -%}
+              {%- include "partials/interactions-display.liquid" -%}
+            {% elseif tag === "digital-garden" %}
+              {%- include "partials/digital-garden-description.html" -%}
+            {%- endif -%}
+          {%- endfor -%}
+
         {%- endset -%}
         {%- set contactInfo -%}<p><a href="mailto:reillypascal@gmail.com?subject=Re: '{{ post.data.title }}'">Reply via email</a> :: <a href="https://reillyspitzfaden.com/feeds/">Subscribe to my other feeds</a></p>{%- endset -%}
-        {%- set finalHTMLContent = [interactionHTML, post.templateContent, contactInfo] | join -%}
+        {%- set finalHTMLContent = [headerHTML, post.templateContent, contactInfo] | join -%}
           <item>
             <title>{{ post.data.title }}</title>
             <author>{{ metadata.author.email }} ({{ metadata.author.name }})</author>
