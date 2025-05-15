@@ -34,7 +34,7 @@ sudo apt dist-upgrade
 sudo reboot
 ```
 
-### Install Kodi
+### Installing Kodi
 - Install Kodi and desktop manager
 ```sh
 sudo apt install kodi lightdm
@@ -66,8 +66,7 @@ sudo systemctl enable kodi.service
 
 ---
 
-### Adding Streaming Extensions to Kodi
-#### [Hulu](https://www.ivacy.com/blog/how-to-install-hulu-on-kodi/) (etc.) in Kodi
+### Adding Streaming Extensions to Kodi | [Hulu](https://www.ivacy.com/blog/how-to-install-hulu-on-kodi/) (etc.)
 - N.B., you can use the “SlyGuy” repo below for other streaming services such as Disney+, Max, etc. — the only ones I haven't been able to get there so far are Netflix (see below) and Apple TV+
 - Enable unknown sources
 	- Settings > System > Add-ons, turn on Unknown Sources option
@@ -88,12 +87,13 @@ sudo systemctl enable kodi.service
 	- Choose **Hulu** > **Install** > OK
 	- Now, click on **Hulu** > **Login** 
 
-### [Netflix](https://www.vpnmentor.com/blog/ultimate-guide-install-netflix-kodi/) on Kodi
+### Adding Streaming Extensions to Kodi | [Netflix](https://www.vpnmentor.com/blog/ultimate-guide-install-netflix-kodi/)
 - Install [CastagnaIT](https://github.com/CastagnaIT/plugin.video.netflix) repo, Netflix plugin
 - Create an [authentication key](https://github.com/CastagnaIT/plugin.video.netflix/wiki/Login-with-Authentication-key) to log in
 - Python [virtual environment](https://stackoverflow.com/questions/75608323/how-do-i-solve-error-externally-managed-environment-every-time-i-use-pip-3)
 
 ---
+
 ### [Subtitles](https://www.comparitech.com/kodi/kodi-subtitles/) in Kodi
 - **N.B., I don't have this set up yet — just notes for my records**
 - First, visit Opensubtitles.org and create an account.
@@ -111,6 +111,7 @@ sudo systemctl enable kodi.service
 - After searching for a few seconds, you’ll see a list of subtitle sets. Sets with five stars are the most highly rated. Select the subtitle set you want to use
 
 ---
+
 ### YouTube
 - Not yet working!
 - Best information seems to be here: <https://github.com/anxdpanic/plugin.video.youtube/wiki/Personal-API-Keys>
