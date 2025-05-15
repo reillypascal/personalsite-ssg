@@ -67,7 +67,6 @@ sudo systemctl enable kodi.service
 ---
 
 ### Adding Streaming Extensions to Kodi
-
 #### [Hulu](https://www.ivacy.com/blog/how-to-install-hulu-on-kodi/) in Kodi
 - Enable unknown sources
 	- Settings > System > Add-ons, turn on Unknown Sources option
@@ -87,8 +86,6 @@ sudo systemctl enable kodi.service
 	- Now click on **Install from Repository** > **SlyGuy Repository (slyguy.uk)** > **Video Addons**
 	- Choose **Hulu** > **Install** > OK
 	- Now, click on **Hulu** > **Login** 
-
----
 
 ### [Netflix](https://www.vpnmentor.com/blog/ultimate-guide-install-netflix-kodi/) on Kodi
 - Install [CastagnaIT](https://github.com/CastagnaIT/plugin.video.netflix) repo, Netflix plugin
