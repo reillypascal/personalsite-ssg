@@ -5,9 +5,8 @@ fedi_url:
 og_image: 
 og_image_width: 
 og_image_height: 
-date: 2025-05-14T02:48:00-0400
-octothorpes:
-  - 
+date: 2025-05-14T19:56:00-0400
+octothorpes: 
 tags:
   - digital-garden
   - notebook
@@ -27,7 +26,7 @@ I use an [[rtl-sdr|RTL-SDR]] dongle to receive these signals.
 
 ### Software
 - dump1090
-	- Install: `git clone https://github.com/antirez/dump1090.git`, run `make` (successful on macOS 14.7.5)
+	- Install: `git clone https://github.com/antirez/dump1090.git`, run `make` (successful on macOS 14.7.5 and on Raspberry Pi after following [[rtl-sdr#Raspberry Pi|these instructions]]).
 	- Run:
 		- `./dump1090` — basic run command
 		- `./dump1090 --raw` — hexadecimal output
