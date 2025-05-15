@@ -69,7 +69,6 @@ sudo systemctl enable kodi.service
 ```
 - "Then reboot and configure Kodi as you’d like. Here’s the official [quick start guide](https://kodi.wiki/view/Quick_start_guide) to get going."
 
----
 
 ### Adding Streaming Extensions to Kodi | [Hulu](https://www.ivacy.com/blog/how-to-install-hulu-on-kodi/) (etc.)
 - N.B., you can use the “SlyGuy” repo below for other streaming services such as Disney+, Max, etc. — the only ones I haven't been able to get there so far are Netflix (see below) and Apple TV+
@@ -97,7 +96,6 @@ sudo systemctl enable kodi.service
 - Create an [authentication key](https://github.com/CastagnaIT/plugin.video.netflix/wiki/Login-with-Authentication-key) to log in
 - Python [virtual environment](https://stackoverflow.com/questions/75608323/how-do-i-solve-error-externally-managed-environment-every-time-i-use-pip-3)
 
----
 
 ### [Subtitles](https://www.comparitech.com/kodi/kodi-subtitles/) in Kodi
 - **N.B., I don't have this set up yet — just notes for my records**
@@ -115,7 +113,6 @@ sudo systemctl enable kodi.service
 - Select **Download subtitle…** (if the **Enable** subtitle button can be checked, it means that this particular film already has subtitles available. However, it’s still a good idea to install a subtitle addon because this won’t always be the case)
 - After searching for a few seconds, you’ll see a list of subtitle sets. Sets with five stars are the most highly rated. Select the subtitle set you want to use
 
----
 
 ### YouTube
 - Not yet working!

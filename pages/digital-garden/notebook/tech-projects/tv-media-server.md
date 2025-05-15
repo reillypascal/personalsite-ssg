@@ -23,7 +23,6 @@ Here are my notes on setting up an old laptop as a home server. This discussion 
 - [The Zero Dollar Home Server](https://chriskalos.notion.site/The-0-Home-Server-Written-Guide-5d5ff30f9bdd4dfbb9ce68f0d914f1f6)
   - Includes how to run with lid closed
 
----
 
 ### Jellyfin
 #### Kodi
@@ -34,7 +33,7 @@ Here are my notes on setting up an old laptop as a home server. This discussion 
     - [MakeMKV](https://www.makemkv.com/download/) for ripping
     - [MKVToolNix](https://mkvtoolnix.download/downloads.html) for transcoding
 
----
+
 ### Copying Files
 
 ```bash
@@ -67,18 +66,14 @@ sudo fuser -km /mnt/share
 sudo umount /mnt/share
 ```
 
-
----
 ### Finding DVDs
 - [DVDCompare](https://www.dvdcompare.net/)
 
----
 
 ### IR Remote
 - Use [FLIRC](https://flirc.tv/downloads) to map remote buttons
   - Works w/ [FLIRC USB](https://thepihut.com/products/flirc-usb-dongle-for-the-raspberry-pi) dongle
 
----
 
 ### YouTube
 - http://191.168.1.66:50152/youtube/api
