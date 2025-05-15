@@ -70,11 +70,6 @@ sudo umount /mnt/share
 - [DVDCompare](https://www.dvdcompare.net/)
 
 
-### IR Remote
-- Use [FLIRC](https://flirc.tv/downloads) to map remote buttons
-  - Works w/ [FLIRC USB](https://thepihut.com/products/flirc-usb-dongle-for-the-raspberry-pi) dongle
-
-
 ### YouTube
 - http://191.168.1.66:50152/youtube/api
 - https://github.com/anxdpanic/plugin.video.youtube/issues/1016

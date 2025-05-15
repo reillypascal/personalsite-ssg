@@ -96,6 +96,10 @@ sudo systemctl enable kodi.service
 - Create an [authentication key](https://github.com/CastagnaIT/plugin.video.netflix/wiki/Login-with-Authentication-key) to log in
 - Python [virtual environment](https://stackoverflow.com/questions/75608323/how-do-i-solve-error-externally-managed-environment-every-time-i-use-pip-3)
 
+### IR Remote
+- Use [FLIRC](https://flirc.tv/downloads) to map remote buttons
+  - Works w/ [FLIRC USB](https://thepihut.com/products/flirc-usb-dongle-for-the-raspberry-pi) dongle
+- N.B., this is cool, but I mostly end up using a Bluetooth keyboard — arrow, esc, enter, and media keys are actually easier than a remote.
 
 ### [Subtitles](https://www.comparitech.com/kodi/kodi-subtitles/) in Kodi
 - **N.B., I don't have this set up yet — just notes for my records**
