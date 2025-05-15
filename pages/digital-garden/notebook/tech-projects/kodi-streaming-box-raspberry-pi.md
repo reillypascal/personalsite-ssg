@@ -16,6 +16,8 @@ tags:
 <link rel="stylesheet" type="text/css" href="/styles/code/prism-dracula.css" />
 <link rel="stylesheet" type="text/css" href="/styles/code/code-tweaks.css" />
 
+This is a guide to setting up a Raspberry Pi as a TV streaming box using the [Kodi](https://kodi.tv/) media center. I've compiled instructions from a few different sources, and I'm putting it in one place to help keep track of everything; guard against the linked sites going down; and share what I know with others in one convenient place.
+
 ### Guide (Some Natalie's Blog)
 - [Kodi setup on a Raspberry Pi 4](https://some-natalie.dev/blog/kodi-setup/)
 	- Includes how to start Kodi on startup
