@@ -582,6 +582,19 @@ a:active {
     }
 }
 
+aside {
+    background-color: var(--bg-accent);
+    padding: 2px 20px;
+    border-radius: 8px;
+    margin: 28px 0 32px 0;
+    @media screen and (min-width: 480px) {
+        &:is(.post-body-aside) {
+            /* add left margin on wider screens */
+            margin: 28px 0 32px 16px;
+        }
+    }
+}
+
 .digital-garden-preface {
     border-left: 1px solid var(--accent-med-light);
     padding-left: 12px;
