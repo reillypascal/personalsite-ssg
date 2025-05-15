@@ -1,6 +1,6 @@
 ---
 title: TV & Media Server
-description: Setting up home server using an old laptop, and running Jellyfin on it.
+description: Setting up a home server using an old laptop, and running Jellyfin on it
 fedi_url: 
 og_image: 
 og_image_width: 
