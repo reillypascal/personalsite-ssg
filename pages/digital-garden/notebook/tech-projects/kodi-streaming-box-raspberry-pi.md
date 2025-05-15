@@ -40,7 +40,8 @@ sudo reboot
 sudo apt install kodi lightdm
 ```
 - "Now have it automatically launch at boot using systemd. Use `sudo` to create a file at `/lib/systemd/system/kodi.service` with the following contents:
-```
+
+```sh
 [Unit]
 Description = Kodi Media Center
 After = remote-fs.target network-online.target
