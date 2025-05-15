@@ -42,9 +42,6 @@ implying that the blog dongles use pin four/pin five.
 	- Previously had issues with requirement for `libusb-1.0-0-dev` on macOS (dev version hardcoded in), but seemed to work fine on RPi as of May 14, 2025.
 	- Lines after `rtl_test` not necessary unless using AIS decoder (see [AIS](https://en.wikipedia.org/wiki/Automatic_identification_system), or see [posts](https://www.rtl-sdr.com/tag/ais/) from the blog on AIS).
 
-> [!todo]
-> Need to disable anything using port 8080 for `--net` mode to work on `dump1090` — check Kodi web interface on Pi
-
 ### Software
 - 433 MHz [ISM band](https://en.wikipedia.org/wiki/ISM_radio_band) devices, such as home weather stations, tire pressure gauges, etc.
 	- rtl_433 
