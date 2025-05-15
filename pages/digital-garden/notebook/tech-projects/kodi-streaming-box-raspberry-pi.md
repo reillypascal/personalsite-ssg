@@ -68,7 +68,7 @@ sudo systemctl enable kodi.service
 
 ### Adding Streaming Extensions to Kodi
 #### [Hulu](https://www.ivacy.com/blog/how-to-install-hulu-on-kodi/) (etc.) in Kodi
-- N.B., you can use the “SlyGuy” repo below for other streaming services such as Disney+, Max, etc. — the only ones I haven't been able to get there are Netflix (see below) and Apple TV+
+- N.B., you can use the “SlyGuy” repo below for other streaming services such as Disney+, Max, etc. — the only ones I haven't been able to get there so far are Netflix (see below) and Apple TV+
 - Enable unknown sources
 	- Settings > System > Add-ons, turn on Unknown Sources option
 - Add source

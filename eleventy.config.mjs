@@ -7,7 +7,8 @@ import markdownIt from "markdown-it";
 import markdownItAnchor from 'markdown-it-anchor';
 import markdownItAttrs from 'markdown-it-attrs';
 import markdownItFootnote from "markdown-it-footnote";
-import markdownItGitHubAlerts from 'markdown-it-github-alerts';
+import mdItObsidianCallouts from 'markdown-it-obsidian-callouts';
+// import markdownItGitHubAlerts from 'markdown-it-github-alerts';
 // import mdBiblatex from '@arothuis/markdown-it-biblatex';
 // import cheerio from "cheerio";
 import { DateTime } from "luxon";
@@ -152,7 +153,7 @@ export default async function (eleventyConfig) {
     linkify: true,
   };
 
-  let markdownLib = markdownIt(options).use(markdownItAnchor, { tabIndex: false }).use(markdownItAttrs).use(markdownItFootnote).use(markdownItGitHubAlerts, { markers: '*' });//.use(mdBiblatex, { bibPath: 'documents/bibliography/library.bib', linkToBibliography: true, });
+  let markdownLib = markdownIt(options).use(markdownItAnchor, { tabIndex: false }).use(markdownItAttrs).use(markdownItFootnote).use(mdItObsidianCallouts);//.use(markdownItGitHubAlerts, { markers: '*' }).use(mdBiblatex, { bibPath: 'documents/bibliography/library.bib', linkToBibliography: true, });
   eleventyConfig.setLibrary("md", markdownLib);
 
   // plugins: syntax highlighting
