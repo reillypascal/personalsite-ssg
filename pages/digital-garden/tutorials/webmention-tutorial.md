@@ -137,22 +137,25 @@ Microformats allow embedding properties in a page, to be read by social software
 Below is the [`h-card`](https://microformats.org/wiki/h-card) markup I use above each of my posts. MDN gives further information about the different prefixes you'll see in my markup [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Microformats#microformats_prefixes).
 
 ```html
-<div hidden>
-    <div class="p-author h-card">
-        <a rel="author" class="u-url u-uid" href="https://reillyspitzfaden.com"></a>
-        <img class="u-photo" src="https://reillyspitzfaden.com/media/headshot_gbc_kirby_300px.jpg" alt="Reilly Spitzfaden">
-        <span class="p-name">
-            <span class="p-given-name">Reilly</span>
-            <span class="p-family-name">Spitzfaden</span>
-        </span>
-        </div>
-    <a rel="syndication" class="u-syndication" href="<mastodon-or-bsky-url>"></a>
+<div class="p-author h-card" style="display:none;">
+    <a rel="author" class="u-url u-uid" href="https://reillyspitzfaden.com"></a>
+    <img class="u-photo" src="https://reillyspitzfaden.com/media/profile-300px-sqr.jpg" alt="Reilly Spitzfaden">
+    <span class="p-name">
+        <span class="p-given-name">Reilly</span>
+        <span class="p-family-name">Spitzfaden</span>
+    </span>
 </div>
 ```
+<!-- <div style="display:none;">
+    <a rel="syndication" class="u-syndication" href="https://hachyderm.io/@reillypascal/113776964186364648"></a>
+    <a rel="syndication" class="u-syndication" href="https://bsky.app/profile/reillypascal.bsky.social/post/3lez5zyuwcs2h"></a>
+</div>
+```
+and `u-syndication` gives link(s) to where I [POSSE](https://www.citationneeded.news/posse/) my posts. -->
 
-The outer `<div>` ensures the markup is not diplayed to users. The inner `<div>` creates a microformats object with the `h-card` class; the `p-author` property adds that this card is for an author. The `u-url` and `u-uid` classes indicate that “https://reillyspitzfaden.com” is my site URL, with the `u-*` prefix indicating a link; similarly, `u-photo` gives a link to a photo to act as an avatar, and `u-syndication` gives link(s) to where I [POSSE](https://www.citationneeded.news/posse/) my posts. The `p-name`, `p-given-name`, and `p-family-name` classes give plain-text information about me (plain-text indicated by the `p-*` prefix). 
+The `style="display:none;"` markup in the outer `<div>` ensures the card is not diplayed to users. The `class="p-author h-card"` in this `<div>` creates a microformats object with the `h-card` class; the `p-author` property adds that this card is for an author. The `u-url` and `u-uid` classes indicate that “https://reillyspitzfaden.com” is my site URL, with the `u-*` prefix indicating a link; similarly, `u-photo` gives a link to a photo to act as an avatar. The `p-name`, `p-given-name`, and `p-family-name` classes give plain-text information about me (plain-text indicated by the `p-*` prefix). 
 
-In addition to this card, the entire article (including the card) is surrounded in an `<article>` tag with the class `h-entry`, creating a microformat object for the entire entry. The `<h2>` for the post title within that `<article` has the class `p-name`, and the content of the post is in a `<div>` with the class `e-content`. As described in the MDN link above, the `e-*` prefix is for “element tree properties where the entire contained element hierarchy is the value” — i.e., because `e-content` refers to the entire post contents, rather than any one single HTML element, we use `e-*`.
+In addition to this card, the entire article (including the card) is surrounded in an `<article>` tag with the class `h-entry`, creating a microformat object for the entire entry. The `<h2>` for the post title within that `<article` has the class `p-name`, and the content of the post is in a `<div>` with the class `e-content`. As described in the MDN link above, the `e-*` prefix is for “element tree properties where the entire contained element hierarchy is the value” — i.e., because `e-content` refers to the entire post contents, rather than any one single HTML element, we use `e-*`. The second `<div>`
 
 In addition to enriching webmention data, microformats make a number of other [IndieWeb](https://indieweb.org/) practices possible, which I will describe more in a future post.
 
