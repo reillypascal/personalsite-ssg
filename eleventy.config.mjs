@@ -7,7 +7,7 @@ import markdownIt from "markdown-it";
 import markdownItAnchor from 'markdown-it-anchor';
 import markdownItAttrs from 'markdown-it-attrs';
 import markdownItFootnote from "markdown-it-footnote";
-import markdownItGitHubAlerts from 'markdown-it-github-alerts'
+import markdownItGitHubAlerts from 'markdown-it-github-alerts';
 // import mdBiblatex from '@arothuis/markdown-it-biblatex';
 // import cheerio from "cheerio";
 import { DateTime } from "luxon";
@@ -204,9 +204,8 @@ export default async function (eleventyConfig) {
     const posts = collectionApi.getFilteredByTag("post");
     const notes = collectionApi.getFilteredByTag("note");
     const interactions = collectionApi.getFilteredByTag("interaction");
-    // const digital_garden = collectionApi.getFilteredByTag("digital-garden");
-    // return posts.concat(notes).concat(interactions).concat(digital_garden).sort(function (a, b) { return a.date - b.date; });
-    return posts.concat(notes).concat(interactions).sort(function (a, b) { return a.date - b.date; });
+    const digital_garden = collectionApi.getFilteredByTag("digital-garden");
+    return posts.concat(notes).concat(interactions).concat(digital_garden).sort(function (a, b) { return a.date - b.date; });
   });
 
   eleventyConfig.addCollection("gardenNotebook", function (collectionApi) {
