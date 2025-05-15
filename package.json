@@ -21,6 +21,7 @@
     "@photogabble/eleventy-plugin-interlinker": "^1.1.0",
     "@supabase/supabase-js": "^2.46.1",
     "@uncenter/eleventy-plugin-toc": "^1.0.3",
+    "cheerio": "^1.0.0",
     "dotenv": "^16.4.5",
     "markdown-it": "^14.1.0",
     "markdown-it-anchor": "^9.2.0",

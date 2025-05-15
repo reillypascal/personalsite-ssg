@@ -1,16 +1,18 @@
-<div style="display:none;">
-    <div class="p-author h-card">
-        <a rel="author" class="u-url u-uid" href="https://reillyspitzfaden.com"></a>
-        <img class="u-photo" src="https://reillyspitzfaden.com/media/profile-300px-sqr.jpg" alt="Reilly Spitzfaden">
-        <span class="p-name">
-            <span class="p-given-name">Reilly</span>
-            <span class="p-family-name">Spitzfaden</span>
-        </span>
-        {%- if h_card_p_note %}
-            <p class="p-note">{{ h_card_p_note }}</p>
-        {%- endif %}
-    </div>
-    {%- for url in fedi_url %}
-        <a rel="syndication" class="u-syndication" href="{{ url }}"></a>
-    {%- endfor %}
+<div class="p-author h-card" style="display:none;">
+    <a rel="author" class="u-url u-uid" href="https://reillyspitzfaden.com"></a>
+    <img class="u-photo" src="https://reillyspitzfaden.com/media/profile-300px-sqr.jpg" alt="Reilly Spitzfaden">
+    <span class="p-name">
+        <span class="p-given-name">Reilly</span>
+        <span class="p-family-name">Spitzfaden</span>
+    </span>
+    {%- if h_card_p_note %}
+        <p class="p-note">{{ h_card_p_note }}</p>
+    {%- endif %}
 </div>
+{% if fedi_url %}
+    <div style="display:none;">
+        {%- for url in fedi_url %}
+            <a rel="syndication" class="u-syndication" href="{{ url }}"></a>
+        {%- endfor %}
+    </div>
+{% endif %}
