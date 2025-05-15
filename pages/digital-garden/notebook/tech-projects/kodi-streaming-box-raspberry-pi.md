@@ -114,4 +114,3 @@ sudo systemctl enable kodi.service
 - Not yet working!
 - Best information seems to be here: <https://github.com/anxdpanic/plugin.video.youtube/wiki/Personal-API-Keys>
 
----
