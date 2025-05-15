@@ -21,9 +21,9 @@ permalink: /digital-garden/
     <p>A place for writing I will continually return to and develop. Research notes, tutorials, and other writing on composition, digital arts, programming, maker projects, and more.</p>
 
     <section>
-        <h2 class="sectionHeader">Notebook</h2>
-
-        {%- for post in collections.gardenNotebook reversed -%}
+        <h2 class="sectionHeader">Tutorials</h2>
+        
+        {%- for post in collections.gardenTutorials reversed -%}
             <article class="h-entry">
                 <h3 class="p-name"><a class="u-url" href="{{ post.url }}">{{ post.data.title }}</a></h3>
                 <p class="p-summary">{{ post.data.description }}</p>
@@ -38,12 +38,12 @@ permalink: /digital-garden/
                 </span>
             </article>
         {%- endfor -%}
-    </section> 
+    </section>
 
     <section>
-        <h2 class="sectionHeader">Tutorials</h2>
-        
-        {%- for post in collections.gardenTutorials reversed -%}
+        <h2 class="sectionHeader">Notebook</h2>
+
+        {%- for post in collections.gardenNotebook reversed -%}
             <article class="h-entry">
                 <h3 class="p-name"><a class="u-url" href="{{ post.url }}">{{ post.data.title }}</a></h3>
                 <p class="p-summary">{{ post.data.description }}</p>
