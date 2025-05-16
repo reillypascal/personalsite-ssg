@@ -19,6 +19,10 @@
                         <a href="{{ mention.url }}">
                             {%- if mention["wm-property"] == "like-of" -%}
                                 liked
+                            {%- elsif mention["wm-property"] == "bookmark-of" -%}
+                                bookmarked
+                            {%- elsif mention["wm-property"] == "repost-of" -%}
+                                reposted
                             {%- elsif mention["wm-property"] == "in-reply-to" -%}
                                 replied to
                             {%- else -%}

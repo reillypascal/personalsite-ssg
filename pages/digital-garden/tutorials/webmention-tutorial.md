@@ -226,7 +226,7 @@ If you do want to keep it private, you can add the key as an [environment variab
 require("dotenv").config();
 ```
 
-Below is the Liquid template I use to import these mentions. As I mentioned above, if you go to the URL `https://webmention.io/api/mentions.jf2?token=<your-webmention-token>`, you can view the raw JSON data, in which you'll see the field “wm-property.” Possible values for “wm-property” are `in-reply-to`, `like-of`, `repost-of`, `bookmark-of`, `mention-of`, and `rsvp`, according to the Webmention\.io [API guide](https://github.com/aaronpk/webmention.io?tab=readme-ov-file#api). As shown in my code below, I use this list of properties to display, e.g., “someone liked this post,” or “someone replied to this post,” falling back on the generic “mentioned” for the rest of the properties.
+Below is the Liquid template I use to import these mentions. As I mentioned above, if you go to the URL `https://webmention.io/api/mentions.jf2?token=<your-webmention-token>`, you can view the raw JSON data, in which you'll see the field “wm-property.” Possible values for “wm-property” are `in-reply-to`, `like-of`, `repost-of`, `bookmark-of`, `mention-of`, and `rsvp`, according to the Webmention\.io [API guide](https://github.com/aaronpk/webmention.io?tab=readme-ov-file#api). As shown in my code below, I use this list of properties to display, e.g., “someone liked this post,” or “someone replied to this post,” falling back on the generic “mentioned” if there is any issue retrieving this property.
 
 
 ```liquid
@@ -244,6 +244,10 @@ Below is the Liquid template I use to import these mentions. As I mentioned abov
         <a href="{{ mention.url }}">
             {%- if mention["wm-property"] == "like-of" -%}
                 liked
+            {%- elsif mention["wm-property"] == "bookmark-of" -%}
+                bookmarked
+            {%- elsif mention["wm-property"] == "repost-of" -%}
+                reposted
             {%- elsif mention["wm-property"] == "in-reply-to" -%}
                 replied to
             {%- else -%}
