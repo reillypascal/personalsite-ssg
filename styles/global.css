@@ -28,11 +28,7 @@
 } */
 
 :root {
-    font-family: "Hanken Grotesk", sans-serif;
-    /* font-weight: 400; */
-    /* canceled out for elements with display font */
-    /* text-underline-offset: 0.2em; */
-
+    /* color variables */
     --bg-dark: hsl(227, 26%, 11%);
     /* maybe switch around med-dark/accent names? 
     I use med-dark for code highlights and accent for <aside>, so far */
@@ -52,6 +48,17 @@
     --article-width: 45rem;
     --p-line-height: 1.75;
     --section-header-padding: 6px;
+
+    /* font variables */
+    --body-font: "Hanken Grotesk", sans-serif;
+    --body-font-weight: 400;
+    --heading-font: 'Funnel Sans', sans-serif;
+    --heading-font-weight: 700;
+
+    font-family: var(--body-font);
+    /* font-weight: var(--body-font-weight); */
+    /* canceled out for elements with display font */
+    /* text-underline-offset: 0.2em; */
 }
 
 @media screen and (min-width: 768px) {
@@ -87,14 +94,14 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Funnel Sans';
+    font-family: var(--heading-font);
     /* text-underline-offset: auto; */
-    font-weight: 800;
+    font-weight: var(--heading-font-weight);
 }
 header, header * {
-    font-family: 'Funnel Sans';
+    font-family: var(--heading-font);
     /* text-underline-offset: auto; */
-    font-weight: 800;
+    font-weight: var(--heading-font-weight);
     font-size: 1.4rem;
     & h1 {
         font-size: inherit;
