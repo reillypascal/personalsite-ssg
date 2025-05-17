@@ -197,7 +197,7 @@
     /* --heading-font: "Funnel Sans", sans-serif; */
     --heading-font: "Be Vietnam Pro", sans-serif;
     --heading-font-weight: 700;
-    --heading-font-size: 1.15rem;
+    --heading-font-size: 1.2rem;
 
     font-family: var(--body-font);
     font-weight: var(--body-font-weight);
