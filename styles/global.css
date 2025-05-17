@@ -1,6 +1,10 @@
 /* fonts */
 
-@font-face {
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* @font-face {
     font-family: "Born2bSportyV2";
     src:
         url("/styles/fonts/born2bsportyv2/born2bsportyv2-webfont.woff2")
@@ -21,13 +25,13 @@
             format("woff2");
     font-style: italic;
     font-display: swap;
-}
+} */
 
 :root {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
+    font-family: "Hanken Grotesk", sans-serif;
+    /* font-weight: 400; */
     /* canceled out for elements with display font */
-    text-underline-offset: 0.2em;
+    /* text-underline-offset: 0.2em; */
 
     --bg-dark: hsl(227, 26%, 11%);
     /* maybe switch around med-dark/accent names? 
@@ -75,31 +79,35 @@
     }
 }
 
-header,
+/* header,
+*/
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-    font-family: "Born2bSportyV2", sans-serif;
-    /* cancels out offset for :root */
-    text-underline-offset: auto;
-    letter-spacing: 0.005rem;
+    font-family: 'Funnel Sans';
+    /* text-underline-offset: auto; */
+    font-weight: 800;
 }
-header {
-    font-size: 1.625em;
+header, header * {
+    font-family: 'Funnel Sans';
+    /* text-underline-offset: auto; */
+    font-weight: 800;
+    font-size: 1.4rem;
     & h1 {
-        /* remove default styling for h1; h1 only syntactic, no presentation change */
         font-size: inherit;
         font-weight: normal;
         margin: 0;
         padding: 0;
     }
+    /*
     & .dropdown-content {
         font-size: 0.95em;
-    }
+    } */
 }
+    /*
 h2 {
     font-size: 1.75em;
 }
@@ -108,7 +116,7 @@ h3 {
 }
 h4 {
     font-size: 1.125em;
-}
+} */
 
 /* ######## sticky footer ######## */
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Sticky_footers#alternate_method */
