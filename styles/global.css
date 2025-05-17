@@ -241,7 +241,7 @@ h5,
 h6 {
     font-family: var(--heading-font);
     /* text-underline-offset: auto; */
-    font-weight: var(--heading-font-weight);
+    font-weight: var(--heading-font-weight) !important;
 }
 header, header * {
     font-family: var(--heading-font);
@@ -253,9 +253,9 @@ header, header * {
         font-size: 0.95em;
     }
 }
-h1 { font-size: 1.6em; }
+h1 { font-size: 1.5em; }
 h2 { font-size: 1.25em; }
-h3 { font-size: 1.15em; }
+h3 { font-size: 1.1em; }
     /*
 h2 {
     font-size: 1.75em;

@@ -86,7 +86,24 @@ h_card_p_note: Composer and audio programmer who likes noise, obsolete media, el
     </div>
     
     <div id="column-right">
-        {% include "partials/featured-recent-full.liquid" %}
+        <h1 class="sectionHeader">Featured Posts</h1>
+        {%- for item in collections.post reversed %}
+            {%- if item.data.featured %}
+                <section>
+                    <h2><a href="{{item.url}}">{{ item.data.title }}</a></h2>
+                    <p>{{ item.data.description }}</p>
+                </section>
+            {%- endif %}
+        {%- endfor %}
+
+        <h1 class="sectionHeader">Recent Posts</h1>
+        {% assign recent_posts = collections.post | slice: -3, 3 %}
+        {%- for item in recent_posts reversed %}
+            <section>
+                <h2><a href="{{item.url}}">{{ item.data.title }}</a></h2>
+                <p>{{ item.data.description }}</p>
+            </section>
+        {%- endfor %}
     </div>
 
     {% comment %} <section id="homepageStatus">
