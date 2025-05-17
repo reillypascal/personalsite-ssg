@@ -19,15 +19,11 @@ eleventyExcludeFromCollections: true
     <h2 class="sectionHeader">All tags</h2>
     <div id="allTagsList">
         {% for tag in collections.allTags %}
-            {% comment %} {% if tag != 'like' %}
-            {% if tag != 'note' %}
-            {% if tag != 'post' %} {% endcomment %}
-            <figure>
-                <p class="tag" id="{{ tag }}"><a href="/tags/{{ tag }}">#{{ tag }}</a> ({{ collections[tag].length }}) </p>
-            </figure>
-            {% comment %} {% endif %}
+            {% if tag != 'interaction' and tag != 'note' and tag != 'post' %}
+                <figure>
+                    <p class="tag" id="{{ tag }}"><a href="/tags/{{ tag }}">#{{ tag | replace: "-", " "  }}</a> ({{ collections[tag].length }}) </p>
+                </figure>
             {% endif %}
-            {% endif %} {% endcomment %}
         {% endfor %}
         
     </div>

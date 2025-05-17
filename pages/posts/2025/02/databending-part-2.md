@@ -15,7 +15,7 @@ tags:
   - post
   - databending
   - music
-  - sounddesign
+  - sound-design
   - mp3
 post_series: databending
 ---

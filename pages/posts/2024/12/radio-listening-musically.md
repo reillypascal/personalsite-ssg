@@ -12,10 +12,10 @@ tags:
   - post
   - analysis
   - composition
-  - electronicmusic
+  - electronic-music
   - music
   - radio
-  - sounddesign
+  - sound-design
   - telecommunications
 featured: true
 ---

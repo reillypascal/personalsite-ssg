@@ -7,7 +7,7 @@ tags:
   - interaction
   - like
   - indieweb
-  - generativeart
+  - generative-art
 target_url: https://www.fractalkitty.com/time-at-the-recurse-center/
 target_title: Time at the Recurse Center
 ---

@@ -15,7 +15,7 @@ tags:
   - post
   - databending
   - music
-  - sounddesign
+  - sound-design
 post_series: databending
 featured: true
 ---

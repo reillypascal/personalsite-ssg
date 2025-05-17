@@ -16,7 +16,7 @@ tags:
   - indieweb
   - hypertext
   - academia
-  - socialmedia
+  - social-media
 ---
 
 A few days ago I was part of a Facebook thread about music notation. Composer Christopher Cerrone posted asking what way of notating a complex rhythm would be most readable. The general consensus was something akin to what Thomas Adés does in e.g., "Lieux Retrouves," [movement 2](https://www.youtube.com/watch?v=5DOoCEF1c2Q&t=300s) in the piano part: notate it two different ways, with one shown above the other to clarify how the instruments align.

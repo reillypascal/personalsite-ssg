@@ -4,7 +4,7 @@ description: Getting Dorico and Max/MSP to talk via MIDI — it really helps my 
 canonical_url: https://reillyspitzfaden.com/posts/2024/11/connecting-notation-programs-to-maxmsp/
 date: 2024-11-24
 octothorpes: [ "Audio", "music", "projects" ]
-tags: [ "post", "maxmsp", "music", "composition", "electronicmusic" ]
+tags: [ "post", "maxmsp", "music", "composition", "electronic-music" ]
 ---
 
 I like to compose music for a combination of acoustic instruments and a pianist playing a MIDI keyboard that's connected to [Max/MSP](https://en.wikipedia.org/wiki/Max_(software)). I'm not much of a pianist myself, plus it's nice to just watch and listen to MIDI playback when I'm composing, so earlier this year I thought to have my notation program send MIDI to Max just as the keyboardist would. I originally figured this out in [Finale](https://en.wikipedia.org/wiki/Finale_(scorewriter)), but with the recent [sunsetting](https://www.finalemusic.com/blog/end-of-finale-new-journey-dorico-letter-from-president/) of Finale, I've switched to [Dorico](https://en.wikipedia.org/wiki/Dorico) for notation, and there have been both some benefits and challenges in connecting Dorico to Max.

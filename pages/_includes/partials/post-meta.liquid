@@ -14,6 +14,8 @@
     </span>
     {% assign sorted_categories = tags | sort %}
     {%- for tag in sorted_categories %}
-        <span class="p-category"><a class="post-tag" href="/tags/{{ tag }}">#{{ tag }}</a></span>
+        {% if tag != 'interaction' and tag != 'note' and tag != 'post' %}
+            <span class="p-category"><a class="post-tag" href="/tags/{{ tag }}">#{{ tag |  replace: "-", " "  }}</a></span>
+        {% endif %}
     {%- endfor %}
 </div>

@@ -11,8 +11,8 @@ tags:
   - note
   - hiking
   - date
-  - stateparks
-  - newyork
+  - state-parks
+  - new-york
   - photoblog
 ---
 

@@ -3,7 +3,7 @@ title: Making Journaling More Enjoyable
 description: Coming up with a new system for bullet journaling, as well as the fountain pen inks and paper I'm using
 canonical_url: https://reillyspitzfaden.com/posts/2024/06/making-journaling-more-enjoyable/
 date: 2024-06-04
-tags: [ "post", "fountainpens", "bujo", "hobbies"]
+tags: [ "post", "fountain-pens", "bujo", "hobbies"]
 ---
 <style>
     @media screen and (min-width: 760px) {

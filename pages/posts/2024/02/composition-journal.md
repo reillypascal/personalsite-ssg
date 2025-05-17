@@ -3,7 +3,7 @@ title: Composition Journal, Feb. 27, 2024
 description: Spectral compositing sound design from my work-in-progress "Forget your name"
 canonical_url: https://reillyspitzfaden.com/posts/2024/02/composition-journal/
 date: 2024-02-27
-tags: ["post", "music", "composition", "maxmsp", "sounddesign"]
+tags: ["post", "music", "composition", "maxmsp", "sound-design"]
 ---
 
 I\'m currently working on a piece for (tentatively) B-flat clarinet; MIDI keyboard/Max; and a percussionist playing a mix of standard instruments, \"junk,\" and feedback setups.

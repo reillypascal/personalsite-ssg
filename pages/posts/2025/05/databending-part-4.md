@@ -16,7 +16,7 @@ octothorpes:
 tags:
   - post
   - databending
-  - sounddesign
+  - sound-design
   - rust
   - programming
 post_series: databending
