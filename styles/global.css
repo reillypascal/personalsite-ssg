@@ -165,17 +165,17 @@ header, header * {
     font-family: var(--heading-font);
     /* text-underline-offset: auto; */
     font-weight: var(--heading-font-weight);
-    font-size: 1.4rem;
+    font-size: 1.25rem;
     & h1 {
         font-size: inherit;
         font-weight: normal;
         margin: 0;
         padding: 0;
     }
-    /*
+    
     & .dropdown-content {
         font-size: 0.95em;
-    } */
+    }
 }
     /*
 h2 {
