@@ -1,11 +1,5 @@
 /* fonts */
 
-/* @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap'); */
-
-@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 /* be-vietnam-pro-100 - latin */
 /* @font-face {
   font-display: swap; 
@@ -168,7 +162,11 @@
   src: url('/fonts/be-vietnam-pro/be-vietnam-pro-v11-latin-900italic.woff2') format('woff2');
 } */
 
+/* @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap'); */
 
+/* @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     /* color variables */
@@ -194,12 +192,13 @@
 
     /* font variables */
     /* --body-font: "Hanken Grotesk", sans-serif; */
-    --body-font: "Be Vietnam Pro", sans-serif;
-    --body-font-weight: 300;
-    /* --heading-font: "Funnel Sans", sans-serif; */
-    --heading-font: "Be Vietnam Pro", sans-serif;
+    /* --body-font: "Be Vietnam Pro", sans-serif; */
+    --body-font: "Libre Franklin", sans-serif;
+    --body-font-weight: 400;
+    /* --heading-font: "Be Vietnam Pro", sans-serif; */
+    --heading-font: "Libre Franklin", sans-serif;
     --heading-font-weight: 700;
-    --heading-font-size: 1.15rem;
+    --heading-font-size: 1.2rem;
 
     font-family: var(--body-font);
     font-weight: var(--body-font-weight);
