@@ -165,10 +165,10 @@ header, header * {
     font-family: var(--heading-font);
     /* text-underline-offset: auto; */
     font-weight: var(--heading-font-weight);
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     & h1 {
         font-size: inherit;
-        font-weight: normal;
+        font-weight: inherit;
         margin: 0;
         padding: 0;
     }
@@ -278,7 +278,7 @@ header {
         border-bottom-style: none !important;
     }
     & a img:not(:last-child) {
-        padding-right: 26px;
+        padding-right: 22px;
     }
 }
 #floppy-disk {
