@@ -13,7 +13,7 @@ pagination:
     
 <main role="main" id="content">
     <!-- blog contents -->
-    <h2 class="sectionHeader">Blog</h2>
+    <h1 class="sectionHeader">Blog</h2>
 
     <section class="postFeedDescription">
         <p>A blog about my personal interests, including composition and sound design; audio programming using Max/MSP, C++/JUCE, Rust, Python, and more; and web development and philosophy on the IndieWeb</p>
@@ -23,7 +23,7 @@ pagination:
 
     {%- for post in posts -%}
         <article class="h-entry">
-            <h3 class="p-name"><a class="u-url" href="{{ post.url }}">{{ post.data.title }}</a></h3>
+            <h2 class="p-name"><a class="u-url" href="{{ post.url }}">{{ post.data.title }}</a></h2>
             <p class="p-summary">{{ post.data.description }}</p>
 
             <a rel="author" class="p-author h-card" href="https://reillyspitzfaden.com"></a>

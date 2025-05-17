@@ -8,14 +8,14 @@ eleventyExcludeFromCollections: true
 <link rel="stylesheet" type="text/css" href="/styles/code/code-tweaks.css" />
 
 <main role="main" id="content">
-    <h2 class="sectionHeader">Search</h2>
+    <h1 class="sectionHeader">Search</h1>
     <p>Search the entire site using <a href="https://pagefind.app/">Pagefind</a></p>
-
-    <aside>
-        <p>Note: search requires JavaScript. To search without JavaScript, use the search filter <code>site:reillyspitzfaden.com</code> in e.g., <a href="https://duckduckgo.com/?t=h_&q=site:reillyspitzfaden.com">DuckDuckGo</a></p>
-    </aside>
     
     {% include "partials/pagefind-search.liquid" %}
     
     <p class="searchIndexDate">Last indexed {{ generated }}</p>
+
+    <aside>
+        <p>To search without JavaScript, use the search filter <code>site:reillyspitzfaden.com</code> in e.g., <a href="https://duckduckgo.com/?t=h_&q=site:reillyspitzfaden.com">DuckDuckGo</a></p>
+    </aside>
 </main>

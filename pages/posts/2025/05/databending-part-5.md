@@ -40,14 +40,14 @@ One way I've found of getting more variety from the data is to change the sample
 
 Both very cool, and both very different, despite coming from the same data! Today, let's talk about how ADPCM and VOX formats work; how to do this yourself in Audacity; and how I incorporated these formats into the [Rust tool](https://github.com/reillypascal/data2audio) I made in my [last post](/posts/2025/05/databending-part-4/) to automate the process of converting data to audio. Also check out the end of today's post for some fun stuff to look forward to!
 
-### Following along in Audacity
+## Following along in Audacity
 
 While I will be doing this in Rust, you can make the exact same sounds (minus the convenience of automation) in Audacity. See my [first post](/posts/2025/01/databending-part-1/) on databending for a discussion of how to find the best files to use. Once you have the file you want to convert to audio,
 
 - in Audacity, go to File > Import > Raw Data…, choose your file, and click “Open”
 - in the settings menu that pops up, set encoding to “VOX ADPCM,” byte order to “default endianness,” channels to “1 channel (mono),” and sample rate to 44100 (or change sample rate to taste)
 
-### What is ADPCM?
+## What is ADPCM?
 
 Tan and Jiang [^1] have a helpful discussion of the basics of ADPCM, or “adaptive differential pulse-code modulation.” First, with differential pulse-code modulation (the “non-adaptive” flavor),
 
@@ -75,7 +75,7 @@ The next diagram shows the adaptive version of the decoder as shown in the origi
 
 </figure>
 
-### VOX
+## VOX
 
 There are a number of ADPCM algorithms — many different ways to adapt our step size based on the amplitude of the difference and/or prediction — and after testing some out while importing data as audio in Audacity, I decided VOX was by far my favorite. Unfortunately I wasn't able to find anything pre-existing in Rust for VOX — the [symphonia crate](https://crates.io/crates/symphonia) that was recommended to me only has [Microsoft and IMA flavors](https://lib.rs/crates/symphonia-codec-adpcm#readme-support) of ADPCM. Looks like I need to code it myself! You can find the resulting code [here](https://github.com/reillypascal/data2audio).
 
@@ -89,7 +89,7 @@ The file is ```libQt5Core.5.dylib``` which I *believe* I pulled from DaVinci Res
 
 Sounds just as expected — a bit crunchy and lo-fi like a telephone, but clear and comprehensible.
 
-### Reading the VOX Spec
+## Reading the VOX Spec
 
 First, we need to calculate the step size ```ss(n)``` and use that and the 4-bit input sample ```L(n)``` to calculate the difference ```d(n)```. That difference plus the previous output ```X(n-1)``` will give our 12-bit output value. Below is the pseudocode from the Dialogic paper for calculating ```d(n)``` given a value of ```ss(n)``` and an incoming sample. Note the values B3–B0 — these refer to the 4 bits in the incoming sample, with B3 as the sign and the rest as the magnitude. 
 
@@ -128,7 +128,7 @@ const VOX_STEP_TABLE: [i16; 49] = [
 
 Note that incoming magnitudes (first 3 bits) below 4 cause the step size to decrease, and values 4 or greater cause it to increase. The values in ```ADPCM_INDEX_TABLE``` are duplicated so I can use the whole 4-bit value (including bit 4, the sign bit) to index the table.
 
-### Implementing VOX in Rust
+## Implementing VOX in Rust
 
 To start, I have a struct called ```VoxState``` that stores the predictor and step index. Note in the diagram above that these two values are fed into single-sample delays (the blocks labeled “Z<sup>-1</sup>”), [^4] so having them stored in a struct allows us to maintain state between calls to the decoder function.
 
@@ -226,7 +226,7 @@ Before we discuss the challenges, just for funsies I put the compiled binary for
 
 <audio controls src="/media/blog/2025/05/databending-part-5/data2audio.mp3" title="data2audio binary file databent through VOX ADPCM codec"></audio>
 
-### Challenges
+## Challenges
 
 At this point, our code works! There were a few things in the VOX spec that tripped me up though, so let's talk about how I got my code working. First, when my attempt at implementing the spec gave me trouble, I looked at the source for FFmpeg, which Audacity uses — specifically the function ```adpcm_ima_oki_expand_nibble()``` in ```libavcodec/adpcm.c```, line 553. [^5] This is where I got the line ```let mut delta = ((2 * (magnitude as i16) + 1) * step_size) >> 3;``` from ```vox.rs``` above.
 
@@ -234,7 +234,7 @@ Let's consider the line of pseudocode ```d(n) = (ss(n)*B2)+(ss(n)/2*B1)+(ss(n)/4
 
 With ```(ss(n)*B2)+(ss(n)/2*B1)+(ss(n)/4*BO)+(ss(n)/8)```, if we leave out the multiplication by ```ss(n)``` for the time being, we have 1 or 0 times 1; 1 or 0 times 1/2; 1 or 0 times 1/4; and 1 times 1/8. That's just the ones place and first 3 binary floating point places. If we shift those values 3 places left, we have no more fractions/division, and if we shift the incoming 3 magnitude bits 1 place left (i.e., multiply by 2) and add one, our magnitude and the previous values we shifted line up the same way as before. We can multiply what we have now by the step size, and ```>> 3``` “undoes” the left shift we did to get rid of the fraction. Thus ```((2 * (magnitude as i16) + 1) * step_size) >> 3``` is equivalent to ```(ss(n)*B2)+(ss(n)/2*B1)+(ss(n)/4*BO)+(ss(n)/8)```, but we don't need to work around dividing by zero, and things are a bit faster to boot.
 
-### Looking Forward
+## Looking Forward
 
 Lately I've been enjoying windytan (Oona Räisänen)'s [blog](https://www.windytan.com/2013/11/broadcast-messages-on-darc-side.html) — a “blog about sound & signals” where she discusses a variety of telecommunications encoding formats, both in terms of their sound and decoding them. I got an [RTL-SDR](https://www.rtl-sdr.com/about-rtl-sdr/) [software-defined radio](https://en.wikipedia.org/wiki/Software-defined_radio) dongle back in 2020, and greatly enjoyed tracking down and decoding interesting signals. Now that I have more programming skills, I think I'll do more discussion of and coding with different telecommunications formats — both for radio, and for telephony, as I did today.
 

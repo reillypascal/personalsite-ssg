@@ -16,7 +16,7 @@ tags:
 <link rel="stylesheet" type="text/css" href="/styles/code/prism-dracula.css" />
 <link rel="stylesheet" type="text/css" href="/styles/code/code-tweaks.css" />
 
-### Gatekeeper
+## Gatekeeper
 - [Remove Gatekeeper](https://www.igorski.nl/on-plugins-and-macos) from individual plugin
     - Security policy control: add rule
 ```sh
@@ -41,7 +41,7 @@ xattr -cr /Applications/Betterbird.app
 xattr -r -d com.apple.quarantine .
 ```
 
-### Get Rid of Update Notifications
+## Get Rid of Update Notifications
 - https://macperformanceguide.com/blog/2024/20240215_1700-macOSSonoma-blockForcedUpdates.html
 	- Referenced: https://eclecticlight.co/2024/02/12/can-you-avoid-a-forced-upgrade-to-sonoma/
 		- https://lapcatsoftware.com/articles/2024/2/2.html
@@ -54,7 +54,7 @@ defaults write com.apple.SoftwareUpdate MajorOSUserNotificationDate -date "2026-
 defaults read com.apple.SoftwareUpdate
 ```
 
-### iTerm2
+## iTerm2
 - <https://iterm2.com/features.html>
 - <https://iterm2.com/documentation.html>
 - <https://iterm2.com/faq.html>

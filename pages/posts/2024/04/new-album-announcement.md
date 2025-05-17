@@ -11,7 +11,7 @@ One of my compositions is on an upcoming album! It's performed by [Apply Triangl
 The album is a [3-disc set](https://applytriangle.bandcamp.com/album/oxalis-triangularis-complete-volumes-1-3), and my piece — "If this reaches you" — will be on [volume 2](https://applytriangle.bandcamp.com/album/oxalis-triangularis-vol-2).  
 It comes out on April 12, and you can pre-order in digital and CD format now!
 
-### Composing *If this reaches you*
+## Composing *If this reaches you*
 
 When I wrote the piece, I had recently discovered [software-defined radio](https://en.wikipedia.org/wiki/Software-defined_radio). I use an [RTL-SDR](https://www.rtl-sdr.com/about-rtl-sdr/) receiver — a small USB dongle that contains a tuner and ADC chip — and the tuning and demodulation is handled in the computer, using software like [SDR++](https://www.sdrpp.org/) or [SDRSharp](https://airspy.com/download/).
 
@@ -19,11 +19,11 @@ The receiver can pick up analog voice communication (e.g., ambulances, air traff
 
 Especially in [shortwave bands](https://en.wikipedia.org/wiki/Shortwave_bands), the signals I picked up often came from great distances — at one point, I picked up a station from Japan. As I listened, I felt both connected to all the signals' sources, but also a great sense of distance and loneliness. As I found ways to combine the radio sounds with unusual and experimental sounds from the instruments, the radio sounds strongly evoked memory, loss, nostalgia, and distance for me.
 
-### Technical Notes
+## Technical Notes
 
 To play the radio sounds, I made a Max/MSP patch for the pianist that assigns radio samples to the lower keys, and has a bright, electric piano sound on the higher ones. The clarinetist plays a variety of [multiphonics](https://heatherroche.net/category/multiphonic/) and other extended techniques, and the flutist also has a cardboard box to scrape with a cello/bass bow.
 
-### Program Note
+## Program Note
 
 I wrote a short poem as a program note for the piece:
 
@@ -42,7 +42,7 @@ I wrote a short poem as a program note for the piece:
 
 > A letter came, but the sky had already touched the ground behind me, so I kept walking
 
-### The Project
+## The Project
 
 Here's the announcement from the ensemble:
 

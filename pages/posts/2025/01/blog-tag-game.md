@@ -39,28 +39,28 @@ Ava's original post was aimed at the [Bear](https://bearblog.dev/) blogging plat
 
 Here are my answers. If you blog, I think it would be fun to do this, and if you have [webmentions](https://indieweb.org/Webmention) on your site, please let me know if you post about it!
 
-### 1. Why did you make the blog in the first place?
+## 1. Why did you make the blog in the first place?
 A bunch of things came together to inspire me. I was reading about the [Gemini protocol](https://geminiprotocol.net/); giving the [Fediverse](https://en.wikipedia.org/wiki/Fediverse) a serious go; reading about the [IndieWeb](https://indieweb.org/); and I listened to [Sophie Koonin](https://localghost.dev/)'s talk “[This Talk Is Under Construction: A Love Letter to the Personal Website](https://www.youtube.com/watch?v=H2Ux0hGQcs4),” as well as [this blog post](https://localghost.dev/blog/remembering-the-early-00s-teen-website-scene/) about the early-aughts teen website scene. I wanted to interact on the Internet in a way that gave me more agency, so I decided to start a blog on my existing personal website.
 
-### 2. Why did you choose \[the blogging software/platform/tool you use\]?
+## 2. Why did you choose \[the blogging software/platform/tool you use\]?
 I use the [static site generator](https://en.wikipedia.org/wiki/Static_site_generator) [Eleventy](https://www.11ty.dev/). A static site generator takes in a series of template files and produces [HTML]([HTML](https://en.wikipedia.org/wiki/HTML)) pages. The purpose is to automate repetitive parts of writing HTML — each page has the same header and footer, for example, and now I only need to type the code for that once. I settled on Eleventy because a number of people I know or whose blogs I read suggest it, including [Benji](https://www.benji.dog/), and I like that it uses a large number of [template languages](https://www.11ty.dev/docs/languages/) so I have the freedom to choose which one I want, and to change that decision later on.
 
-### 3. Have you blogged on other platforms before?
+## 3. Have you blogged on other platforms before?
 I used to write this entire site by hand! Even the [RSS](https://en.wikipedia.org/wiki/RSS) feed was hand-written. This made blogging much slower, although doing it that way did make it easier to get started. I hand-wrote my site in 2022 as my first web development project, and since it started as a static portfolio, hand-coding wasn't too inconvenient at the beginning, before I had 15+ blog posts.
 
-### 4. Do you write your posts directly in the editor or in another software?
+## 4. Do you write your posts directly in the editor or in another software?
 I used to write my blog directly in the VS Code editor, but lately I've been enjoying using the [Zettlr](https://en.wikipedia.org/wiki/Zettlr) note-taking program. I enjoy writing in [Markdown](https://en.wikipedia.org/wiki/Markdown) [^1] because it's human-readable, but still lets me write [hypertext](https://en.wikipedia.org/wiki/Hypertext) directly. [Hypertext](https://reillyspitzfaden.com/posts/2024/12/hypertext-memex-collaboration-socialization/) [is](https://en.wikipedia.org/wiki/Hypertext_fiction) [awesome](https://en.wikipedia.org/wiki/Patchwork_Girl_(hypertext))! Zettlr is nice because it makes Markdown even more human-readable, especially for links, which makes it easier to edit my writing.
 
-### 5. When do you feel most inspired to write?
+## 5. When do you feel most inspired to write?
 My inspiration tends to come and go unexpectedly. Sometimes things that get me excited about the “vibe” of writing — books like <cite>[This Is How You Lose the Time War](https://en.wikipedia.org/wiki/This_Is_How_You_Lose_the_Time_War)</cite>, or thinking about nice typography or [stationery](https://reillyspitzfaden.com/posts/2024/06/making-journaling-more-enjoyable/) — will encourage me to write, but for the most part, I keep things as easy and readily available as possible to do a bit of writing as the mood strikes. I have the [Syncthing](https://en.wikipedia.org/wiki/Syncthing) file synchronization program running on my MacBook, as well as on my phone and my partner's old laptop that I inherited and use as a Linux computer. This way I always have my work-in-progress writing available and I can dash out a few lines the moment I'm inspired to do so.
 
-### 6. Do you publish immediately after writing or do you let it simmer a bit as a draft?
+## 6. Do you publish immediately after writing or do you let it simmer a bit as a draft?
 I used to rush right to publishing, but I really enjoyed the experience with [this post](https://reillyspitzfaden.com/posts/2024/12/radio-listening-musically/) of letting myself wait until I was good and ready. Tracy Durnell [offered](https://tracydurnell.com/2024/12/01/gift-to-the-indie-web-i-will-edit-your-blog-post/) to edit people's blog posts for December, and I received her edits right as I was finishing up grading for my fall 2024 classes, so I had to wait. I found this unexpectedly pleasant — I got to sit with the ideas for longer, and I feel my writing ended up better as a result.
 
-### 7. Your favorite post on your blog?
+## 7. Your favorite post on your blog?
 <cite>[Radio — Listening Musically, Being Haunted](https://reillyspitzfaden.com/posts/2024/12/radio-listening-musically/)</cite>, the one I mentioned for the previous question. I enjoyed writing about the sounds I love from an aesthetic, rather than technical/sound design perspective, and taking it slow and getting outside input helped make the writing something I'm very happy with.
 
-### 8. Any future plans for your blog? Maybe a redesign, changing the tag system, etc.?
+## 8. Any future plans for your blog? Maybe a redesign, changing the tag system, etc.?
 I'm planning to start using more academic citations, and to add a [digital garden](https://maggieappleton.com/garden-history/). Zettlr integrates nicely with the open-source [Zotero](https://en.wikipedia.org/wiki/Zotero) citation manager and the [BibTeX](https://en.wikipedia.org/wiki/BibTeX) set of citation tools, and this got me thinking it would be cool to try integrating that with my site. It could give me a fun reason to start reading more [sound studies](https://en.wikipedia.org/wiki/Sound_studies) papers and referencing them as I write about composing with the weird sounds I love. In Maggie Appleton's [latest post](https://maggieappleton.com/growing-a-human), she has academic citations that have a little SVG graduation cap icon and mouse-over previews of the linked page. I like how this looks and want to try something like it myself.
 
 Maggie Appleton has also written about digital gardens. She comments that 

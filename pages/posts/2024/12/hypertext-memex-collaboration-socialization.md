@@ -24,7 +24,7 @@ A few days ago I was part of a Facebook thread about music notation. Composer Ch
 Within the thread, there were a number of interesting finer points raised, but as I watched the discussion continue, I was a bit sad to think that it would all disappear in the stream of future posts, and that even if the discussion were somehow pinned, it would not be easily accessible from a search engine.
 
 I have seen a number of people express similar sentiments in the free and open-source software world. Services like Discord are popular (and admittedly easy) ways to discuss the development process. However, there are two big issues: 1) the discussion is not easily searchable from the rest of the Internet, and 2) the linear nature of a chat means that the same questions are raised again and again. 
-### We could be much more daring
+## We could be much more daring
 
 The problem of platforms that are not searchable on the "[clearnet](https://en.wikipedia.org/wiki/Clearnet_(networking))" (e.g., Discord) is better on platforms such as the [Fediverse](https://en.wikipedia.org/wiki/Fediverse), but even there, posts still appear in a linear format, and the platform design doesn't make it easy to create a complex, interlinked, lasting database of knowledge that is easy to return to or discover.
 
@@ -35,7 +35,7 @@ It didn't previously occur to me that a linear "feed" of posts was something to 
 In "[against the dark forest](https://www.wrecka.ge/against-the-dark-forest/)," Erin Kissane similarly writes that "…our failure to remember that it doesn’t have to be this way is a failure not only of imagination, but of nerve."
 
 What would it look like to interact with other people on the Internet if we were daring and started from first principles? Are there ways to do this that we miss if we try to reform existing models? I don't know, but it's been on my mind, and I want to discuss some of the perspectives on hypertext I've recently read in order to at least start thinking about alternatives to reforming the endlessly-scrolling feed.
-### Gardens vs Streams
+## Gardens vs Streams
 I love [hypertext](https://en.wikipedia.org/wiki/Hypertext). Lately I've been on a kick of rediscovering how nice and powerful the humble hyperlink is (and thinking about how [some parts of the Internet](https://archive.ph/1CWQN) don't give it enough value). I have, for example, started using the note-taking program [Obsidian](https://obsidian.md/), which makes it easy to hyperlink between notes and to visualize the nets of links in graph form, giving me a new way to look at my personal knowledge store. In another cool use of hypertext, the band Magdalena Bay did a [promotional page](https://imaginaldisk.world/map) for a recent album that includes a map of linked pages with art and multimedia, reminding me how compelling the older practice of [hypertext fiction](https://en.wikipedia.org/wiki/Hypertext_fiction) and art can be. 
 
 An article by misinformation researcher Mike Caulfield, "[The Garden and the Stream: A Technopastoral](https://hapgood.us/2015/10/17/the-garden-and-the-stream-a-technopastoral/)" started me thinking about different *approaches to* hypertext. Some of those approaches are much more conducive than others to the kinds of communal knowledge-building I mentioned at the start. Caulfield contrasts the "garden" and the "stream." The stream
@@ -60,7 +60,7 @@ In contrast with the use of hypertext on the modern Web (perhaps excluding wikis
 
 While both the Fediverse and IndieWeb tend to value hyperlinks much more than e.g., Twitter or Facebook (which want to keep users on the platform), links still rarely form shareable associative webs, and are more likely to be used as a means of saying "hey, this is cool." What would it look like to incorporate at least some of this associative and nonlinear nature (and maybe even the collaborative knowledge-building, and the sharing of knowledge webs) into interactions with people on the Internet?
 
-### Why Garden at All?
+## Why Garden at All?
 First of all, you might ask "why?" Vannevar Bush proposed the memex for use by academics. We don't tend to take minutes when in a casual gathering with friends. Why should interactions on the Internet look like editing Wikipedia?
 
 Even in the most radical re-imagining of interaction on the Internet, there is of course still room for status updates, greetings, jokes — for transient, linear posting. However I frequently engage in one form or another of discussion online. Sometimes that looks like the technical musical discussion I began this post with. Sometimes that looks like discussions of the best way to set up a home media center on a Raspberry Pi (a fun [project](https://some-natalie.dev/blog/kodi-setup/) if you're interested!). Sometimes it's discussion of switches for mechanical keyboards, fountain pen preferences, good restaurants in an area, and so on. 
@@ -73,5 +73,5 @@ In short, I think there really is a desire for communal knowledge-building and k
 
 In addition to noticing a potential desire for communal knowledge-building/sharing, I want to see some wild swings, even if they are misses. Would something like this catch on? Who knows! Who cares! The current state of things on the social web is untenable, and we will never know all the results of an approach if we don't try it. Reforming existing models certainly won't tell us all the wild possibilities that could be out there.
 
-### Looking Forward
+## Looking Forward
 I originally wanted to include some thoughts on writing about/teaching about computer music, and how that relates to collaborative/associative knowledge-building, but this is long enough, and I think I will write about that a bit later. I hope to see you again then!

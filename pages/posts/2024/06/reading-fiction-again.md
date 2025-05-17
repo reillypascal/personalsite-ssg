@@ -22,7 +22,7 @@ In keeping with my previous habit of reading about weird things happening in mun
 
 A few weeks ago I got *Neuromancer* by William Gibson from the bookstore, and I just finished reading it the other day. I'm currently reading *This Is How You Lose the Time War* by Amal El-Mohtar and Max Gladstone. Both of these books feel a lot more "snappy" and exciting than some of the things I had been reading, and they're both relatively short. My book choices seem to be working for me a lot better now, and I'm finally starting to feel like I have some momentum in reading fiction again. I'm very excited to have rediscovered this part of my childhood.
 
-### Fun Fact of the Day
+## Fun Fact of the Day
 
 *This Is How You Lose the Time War* is written as a series of letters between the characters "Red" and "Blue." I read [this article](https://locusmag.com/2020/02/amal-el-mohtar-max-gladstone-letter-space/) interviewing the authors of the book — Amal El-Mohtar and Max Gladstone. The authors also wrote the book by sending letters to each other, and El-Mohtar had this to say about the writing process:
 

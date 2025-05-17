@@ -19,7 +19,7 @@ The movie is an Australian comedy about the Kerrigan family whose house is set t
 
 The Kerrigan family is portrayed as “unsophisticated” and clueless, and their house not particularly “nice,” with the humor often coming from the disconnect between this and how happy they are with their house and lives.
 
-### Reactions
+## Reactions
 
 I watched this with my partner who works for the courts, and it was fun to see their reaction to the legal proceedings. For example, the incompetent small-time lawyer Dennis Denuto the Kerrigans and their neighbors bring on for the case frantically shuffles through his notes for uncomfortably long stretches; says he never learned Roman numerals (while trying to read the Australian constitution and devise his argument in real time); and repeatedly argues that the eviction goes against “the vibe” of the constitution. My partner commented that there sometimes really are “vibes-based” arguments made, and that they will definitely be using the phrase “do you have any legal precedent to support ‘the vibe’?”
 
@@ -29,6 +29,6 @@ As a counter-example to illustrate what I think bummed me out, I like <cite>[Bob
 
 The narrative of <cite>The Castle</cite> ultimately wants me to root for the Kerrigans, but it did get to the point that laughing at them started to feel mean-spirited. As their fortunes improved though, that feeling went away again, and overall I enjoyed the film a lot — just an interesting contrast I noticed with other things I like.
 
-### Wrapping Up
+## Wrapping Up
 
 I enjoyed participating in a group blogging activity. I haven't done a [blog carnival](https://indieweb.org/blog_carnival) or other such thing before. I'm planning to do more of these — hope to see you then!

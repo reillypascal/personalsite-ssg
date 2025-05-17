@@ -10,13 +10,13 @@ description: A collection of videos, podcast links, and other appearances around
 <link rel="stylesheet" type="text/css" href="/styles/videogrid.css" />
 
 <main role="main" id="content">
-    <h2 class="sectionHeader">Media</h2>
+    <h1 class="sectionHeader">Media</h1>
     
     <article>
         <div class="videoGrid">
             {%- for video in media.videos %}
                 <div class="containingBlock">
-                    <h3><a href="https://www.youtube.com/watch?v={{ video.yt_id }}"><cite>{{ video.title }}</cite></a></h3>
+                    <h2><a href="https://www.youtube.com/watch?v={{ video.yt_id }}"><cite>{{ video.title }}</cite></a></h2>
                     {%- if video.peertube_link %}
                         <p><a href="{{ video.peertube_link }}">PeerTube link</a></p>
                     {%- endif %}
@@ -31,7 +31,7 @@ description: A collection of videos, podcast links, and other appearances around
     </article>
         
     <article>
-        <h2 class="sectionHeader">Links to appearances around the internet</h2>
+        <h1 class="sectionHeader">Links to appearances around the internet</h1>
 
         <p><a href="https://icareifyoulisten.com/2024/04/5-questions-to-apply-triangle/">Review</a> of Apply Triangle's <cite>Oxalis Triangularis</cite>, containing my track <a href="https://applytriangle.bandcamp.com/track/if-this-reaches-you"><cite>If this reaches you</cite></a></p>
 

@@ -58,10 +58,10 @@ My next step is to get it to automatically build every so often so I can get new
 curl 'https://webmention.io/api/mentions.jf2?token=-PsKFuieg-7U9kQK5X8cqg&per-page=1000' -o ./pages/_data/webmentions-static.json
 ```
 
-### Design
+## Design
 While I'm not finished with how I handle displaying the webmentions behind the scenes, I am happy with the design elements for them. I added SVG icons to the tags at the top of the posts (to match the calender icons), to the email reply at the bottom, and to the webmention line — both the webmention icon and the symbols for the categories. I've been thinking about how to keep the site text-focused and minimal but add a bit of visual clarity to the layout, and I think this kind of icon works well for me.
 
-### Looking Forward
+## Looking Forward
 I think I'll start doing more writeups of/notes about in-progress projects. While I'm still not fully satisfied with my results here, and I have a number of other things I want to get done, it feels nice to write out what I *have* accomplished. Also allowing things to be unfinished helps me write about them — if I wait until I feel truly done (which often doesn't come!) I may not write about it at all.
 
 [^1]: In addition to including this post as a reference for displaying webmentions, I want to respond to these principles in a future post and use them as a jumping-off point to write about how I want to use my own site.

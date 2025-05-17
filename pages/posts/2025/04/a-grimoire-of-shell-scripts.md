@@ -32,7 +32,7 @@ I think the idea of not worrying about “scalability” or something needing to
 
 Working on an [MP3 glitching tool in Python](/posts/2025/04/databending-part-3/) recently gave me a nice idea about this. Most of my software engineering projects have been [VST/AU plugins](/code/#plugins), which are fun and useful, but since they're in C++ with a GUI, they're a lot more work than a script that runs in the terminal. While GUI programs are more accessible in terms of non-programmer *users*, I also like the idea of making the *creation* of useful things more accessible and situated. All of this inspired me to start getting better at shell scripting to create some simple-to-make tools for myself.
 
-### My Scripts
+## My Scripts
 
 For automating my photo resizing/transcoding, [imagemagick](https://imagemagick.org/index.php) plus a bit of shell script to loop over the files turned out to get me most of the way there, but unfortunately some were still rotated when I displayed them on my site. So far, I'm using [jhead](https://www.sentex.ca/~mwandel/jhead/), which has the `-autorot` command to losslessly apply the EXIF rotation data. This only works on JPEGs, and my partner (who takes some of our pictures) uses an iPhone, which usually does .HEIC, so if someone has a better, more file-agnostic solution I'm interested to hear it!
 
@@ -96,7 +96,7 @@ EOF
 
 `$fullpath` contains the desired Markdown file name plus the path at which to put it. Since it doesn't look like you can write any further commands after the `EOF` file end marker, it took me a bit to figure out how to open the file after creating it, but it turns out I can just add `&& codium $fullpath` on the `cat` line, instead of needing to put it after the block of text to write.
 
-### Fun Fact of the Day
+## Fun Fact of the Day
 
 It [turns out](https://www.etymonline.com/word/grimoire) that the word “grimoire” is a cognate with “grammar.” Etymonline's [entry](https://www.etymonline.com/word/grammar) on the word “grammar” comments that
 

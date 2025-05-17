@@ -14,7 +14,7 @@ pagination:
 <link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
 
 <main role="main" id="content">
-        <h2 class="sectionHeader">Notes</h2>
+        <h1 class="sectionHeader">Notes</h1>
 
         <section class="postFeedDescription">
             <p>Short posts, photoblogging, and interesting things from around the web — it's like Twitter meets Instagram, but I own all my posts!</p>
@@ -24,7 +24,7 @@ pagination:
 
         {% for note in notes %}
         <article class="h-entry">
-            <h3 class="p-name"><a class="u-url" href="{{note.url}}">{{ note.data.title }}</a></h3>
+            <h2 class="p-name"><a class="u-url" href="{{note.url}}">{{ note.data.title }}</a></h2>
 
             <a rel="author" class="p-author h-card" href="https://reillyspitzfaden.com"></a>
 

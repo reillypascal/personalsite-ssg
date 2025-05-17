@@ -24,7 +24,7 @@ I love the reference to "[carcinization](https://en.wikipedia.org/wiki/Carcinisa
 
 I don't have anything against entertaining posts from strangers, but I want somewhere I regularly interact with people as I would if we were socializing in person. I recently finished grad school, and my job as a college lecturer involves a lot of working on my own, which means my days don't have the kind of regular, casual interaction I valued so much in school built into them anymore. I'm very introverted, so "ambient" interactions with people are a lot easier than scheduling more intense, focused interactions as I have to do now. I think the internet has the capacity to provide some of that "ambient" interaction I crave, but now I need to think about how to accomplish this.
 
-### How should I find or create these interactions?
+## How should I find or create these interactions?
 
 One thing that has helped me was that earlier this year I saw someone (I forget who) mention that the Fediverse places a high premium on directly interacting with people, even strangers, and that has emboldened me to join in on conversations, which led to positive interactions.
 
@@ -34,6 +34,6 @@ As I interact with [IndieWeb](https://indieweb.org/) circles more, I want to con
 
 It's nice to be reminded that small, "ambient" interactions have value, not only to me, but to the people around me.
 
-### Final Thoughts
+## Final Thoughts
 
 That's all for today! I'm still figuring out my thoughts on all this, but I've been inspired by Maggie Appleton's discussion of "[digital gardens](https://maggieappleton.com/garden-history)," and I'm pushing myself to write even if I'm still working through an idea.

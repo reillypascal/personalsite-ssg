@@ -12,7 +12,7 @@ pagination:
 <link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
 
 <main role="main" id="content">
-        <h2 class="sectionHeader">Interactions</h2>
+        <h1 class="sectionHeader">Interactions</h1>
         
         <section class="postFeedDescription">
             <p>IndieWeb interactions — replies, likes, RSVPs, etc. Formatted using <a href="https://indieweb.org/microformats">Microformats</a>, and sent with <a href="https://indieweb.org/Webmention">Webmentions</a> when available. </p>
@@ -22,7 +22,7 @@ pagination:
 
         {% for interaction in interactions %}
         <article class="h-entry">
-            <h3 class="p-name"><a class="u-url" href="{{interaction.url}}">{{ interaction.data.title }}</a></h3>
+            <h2 class="p-name"><a class="u-url" href="{{interaction.url}}">{{ interaction.data.title }}</a></h2>
 
             <a rel="author" class="p-author h-card" href="https://reillyspitzfaden.com"></a>
 

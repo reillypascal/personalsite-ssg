@@ -35,13 +35,13 @@ And here's the glitched-up result:
 
 I like it a lot! Now let's talk about the code.
 
-### Recap
+## Recap
 
 I previously described how an MP3 chops an audio file into short “frames” and analyzes the frequencies present in those frames. The file is structured with a “header” consiting of 8 [hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal) digits, some further information about the file, and then the list of frames, each prefixed by its own header. 
 
 When glitching the file, the important thing is to leave the headers as well as the data before the list of frames alone, and to only change the data in the frames. My Python code loads the file as binary data, converts it to a hexadecimal string, finds the headers, and then makes random changes to data within the frames, using the headers as a reference for where the frames are located. Let's walk through how the code does this.
 
-### Code Walkthrough
+## Code Walkthrough
 
 The full code is available online [here](https://github.com/reillypascal/mp3glitch) under the [MIT license](https://en.wikipedia.org/wiki/MIT_License) — please feel free to use and adapt it!
 
@@ -123,12 +123,12 @@ with open(args.output, 'wb') as output_file:
     output_file.write(binascii.unhexlify(rejoined_frames))
 ```
 
-### Wrapping Up
+## Wrapping Up
 I glossed over using the [`argparse`](https://docs.python.org/3/library/argparse.html) package to parse command-line arguments — that's more of a convenience-of-use feature, and I don't want to go on too long. If you want more info on it, there's an `argparse` tutorial at [this link](https://docs.python.org/3/howto/argparse.html).
 
 If anyone tries this code out, I would love to hear about it! I would be especially interested to know if there are any specific MP3s it fails to glitch. I will be adding support for a few more niche variants of the format in which the header starts with ”ffe” instead of ”fff,” so that at least will be addressed soon.
 
-### Website Updates
+## Website Updates
 I added styling to all my [RSS Feeds](/feeds) using [XSLT](https://en.wikipedia.org/wiki/XSLT) or “Extensible Stylesheet Language Transformations,” which makes it so they're human-readable and nice-looking! XSLT is a very old format that translates the XML feed into (in this case) HTML with CSS styling as the browser reads it. It's fun to come across something from *way* back when and get to use it. I had been wanting to figure out how to do this since seeing it on [Rach Smith](https://rachsmith.com/) and [Shellsharks'](https://shellsharks.com/) sites – I figure if someone new to RSS stumbles across the link, this way they won't just see the raw XML and think something's “broken,” and this will make it easier to get into RSS [^1].
 
 Speaking of feeds, my [RSS page](/feeds) now includes multiple different feed options. In addition to this blog feed, you can follow [all posts on this site](/feed.xml), which includes posts from my [notes](/notes) and [interactions](/interactions) pages — photoblogging/short personal posts, and IndieWeb likes/replies/etc., respectively.

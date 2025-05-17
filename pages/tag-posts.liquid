@@ -23,7 +23,7 @@ eleventyExcludeFromCollections: true
 
 <main role="main" id="content">
     <article class="tagList">
-        <h2 class="sectionHeader">#{{ tag |  replace: "-", " "  }}</h2>
+        <h1 class="sectionHeader">#{{ tag |  replace: "-", " "  }}</h1>
         {% assign taglist = collections[tag] %}
         {% for post in taglist reversed %}
             <article>

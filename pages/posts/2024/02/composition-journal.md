@@ -17,7 +17,7 @@ One of the sound design techniques I\'ve been enjoying lately is making a \"spec
 
 I particularly like the effect of taking the quieter of the two. It\'s great for combining a more sustained sound and one with a percussive envelope. As the percussive sound decays, more and more of its bins \"win out,\" imparting a percussive envelope on the output.
 
-### Sound 1: tonal/sustained
+## Sound 1: tonal/sustained
 
 For today\'s sound, my sustained, tonal source was made with the open-source [Surge XT](https://surge-synthesizer.github.io) synthesizer. Surge XT contains an oscillator titled \"Twist\" that appears to be an implementation of Mutable Instruments\' \"[Plaits](https://pichenettes.github.io/mutable-instruments-documentation/modules/plaits/)\" Eurorack module. I\'m using one of the organ-like wavetables to create a sound that rapidly morphs between low and high harmonics. Additionally, Surge XT supports microtuning, and I\'m using the 131313\... mode of [20-edo](https://en.xen.wiki/w/20edo).
 
@@ -37,7 +37,7 @@ In addition to sounding cool, the static gives the next stage something to \"che
     <source src="/media/blog/2024/02/radio_synth_fft_pvoc.mp3" type="audio/mp3">
 </audio>
 
-### Sound 2: noisy/rhythmic
+## Sound 2: noisy/rhythmic
 
 On the other side, I started with a sine wave oscillator in gen\~ frequency-modulating itself at a single-sample delay (it was this short delay that made me need to use gen\~). I used the rand\~ object to modulate a number of parameters, including the starting frequency and modulation depth. This produces some nice staticky, rhythmic noises that sound like a very light synthetic snare.
 
@@ -53,7 +53,7 @@ I play two copies (one for left and one for right) of the sample with random mod
     <source src="/media/blog/2024/02/fm-fb-osc-rand_bip.7_proc.mp3" type="audio/mp3">
 </audio>
 
-### Sound 1 & 2 combined
+## Sound 1 & 2 combined
 
 Finally, when I put both the sustained and percussive sources into `fftz.ether~` the end result sounds like this:
 
@@ -63,7 +63,7 @@ Finally, when I put both the sustained and percussive sources into `fftz.ether~`
 
 I was going for something to fill out and add activity to the upper register, and I\'m very happy with how it turned out.
 
-### Conclusion
+## Conclusion
 
 I want to give a shout out to [Nathan Ho](https://nathan.ho.name/archive.html). I appreciate his blogging about making sounds in SuperCollider, and it\'s inspired me to do write-ups of my own sound design.
 

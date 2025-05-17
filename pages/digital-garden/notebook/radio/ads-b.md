@@ -11,6 +11,7 @@ tags:
   - digital-garden
   - notebook
   - radio
+  - raspberry-pi
   - sdr
   - adsb
 ---
@@ -21,10 +22,10 @@ I also see this type of signal referred as Mode S, such as in the [dump1090](htt
 
 I use an [[rtl-sdr|RTL-SDR]] dongle to receive these signals.
 
-### Sites
+## Sites
 - ADS-B Exchange — live map: <https://globe.adsbexchange.com/>
 
-### Software
+## Software
 - dump1090
 	- Install: `git clone https://github.com/antirez/dump1090.git`, run `make` (successful on macOS 14.7.5 and on Raspberry Pi after following [[rtl-sdr#Raspberry Pi|these instructions]]).
 	- Run:

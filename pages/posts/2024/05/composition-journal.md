@@ -24,7 +24,7 @@ I mentioned in my [Feb. 27 post](https://reillyspitzfaden.com/blog/02-27-2024) t
 
 Since I'm busy finishing up my semester of teaching, I'll be splitting this between two or so posts. Today, let's look at how I made the looping piano snippets. You can download the patch [here](https://mega.nz/folder/ge9wVAqT#3PeZp-8-t6B7plrMvAICJg).
 
-### Making the Piano Snippets
+## Making the Piano Snippets
 
 To start, I combined some lofi piano, bell, and percussion sounds, and used iZotope's [Vinyl](https://www.izotope.com/en/products/vinyl.html) plugin to add a **large** amount of record noise. The source samples are by [holizna](https://freesound.org/people/holizna/) on freesound.org, and he kindly released them under a [CC0](https://creativecommons.org/publicdomain/zero/1.0/) license. I used Logic Pro to split the audio at the [transients](https://support.apple.com/en-ca/guide/logicpro/lgcp21586c87/mac) (select a region; ctrl + cmd + shift + S). I then exported all of the resulting snips as individual audio files. Here is the audio before chopping at the transients:
 
@@ -32,7 +32,7 @@ To start, I combined some lofi piano, bell, and percussion sounds, and used iZot
     <source src="/media/blog/2024/05/kpo_beat_transient_loop_1.mp3" type="audio/mp3">
 </audio>
 
-### Loading the Snippets into a [`polybuffer~`](https://docs.cycling74.com/max8/refpages/polybuffer~) in Max/MSP
+## Loading the Snippets into a [`polybuffer~`](https://docs.cycling74.com/max8/refpages/polybuffer~) in Max/MSP
 
 The `polybuffer~` object can load multiple sound files into a collection of buffers that it manages, which can be independently accessed and assigned to a `groove~` object for playback. I send the `polybuffer~` the message "readfolder" followed by the absolute path to the subfolder in which I store the audio snippets. You can get the absolute path to the parent patch by sending `thispatcher` a "path" message, and then use `combine` to add the path for the subfolders.
 
@@ -42,7 +42,7 @@ After instructing `polybuffer~` to load the files, I send it the message "getbuf
     alt="Max/MSP patch described by the previous two paragraphs, with two polybuffer~ objects being loaded with samples from folders, and the lists of buffers from the polybuffer~s being loaded into a coll named cylinder_samp." 
     id="polybuffer_loader_img"/>
 
-### Looping and Mangling the Snippets
+## Looping and Mangling the Snippets
 
 By naming the `coll` objects in the `sample_chooser` subpatcher the same as the one from the previous step, I'm able to access this list of buffers in the playback section of the patch. First I dump the entire list of buffers and use `zl.len` (gets length of a list) to get the number of sub-buffers. I can then use this length to set the size for an `urn` object (random without repeats), and use the random numbers from the `urn` along with the "nth" message to select buffers at the appropriate index from the `coll`. Note that you will have to add one to the random values from `urn` because the "nth" method starts at one instead of zero — this fact regularly trips me up. The `vinyl_pops_chooser` subpatcher does the same thing with the list of samples at index 1 in the `coll`. The contents of this subpatcher are shown below:
 
@@ -69,6 +69,6 @@ Finally, I have another `polybuffer~` loaded with short vinyl scrapes and pops, 
     <source src="/media/blog/2024/05/kpo_beat_transient_mangle_1.mp3" type="audio/mp3">
 </audio>
 
-### Conclusion
+## Conclusion
 
 That's all for today! I'm finishing up my semester of teaching, and you can expect a part two for this soon. Please feel free to download [this patch](https://mega.nz/folder/ge9wVAqT#3PeZp-8-t6B7plrMvAICJg) and play around with it in the meantime. I'm also interested in feedback on this post. My aim is for it to be a good amount of explanation for a relatively broad audience — not so deep that it loses people, but not leaving out necessary detail. If you could comment letting me know how you found it, that would be appreciated!

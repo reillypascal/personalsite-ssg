@@ -248,17 +248,14 @@ header, header * {
     /* text-underline-offset: auto; */
     font-weight: var(--heading-font-weight);
     font-size: var(--heading-font-size);
-    & h1 {
-        font-size: inherit;
-        font-weight: inherit;
-        margin: 0;
-        padding: 0;
-    }
     
     & .dropdown-content {
         font-size: 0.95em;
     }
 }
+h1 { font-size: 1.6em; }
+h2 { font-size: 1.25em; }
+h3 { font-size: 1.15em; }
     /*
 h2 {
     font-size: 1.75em;

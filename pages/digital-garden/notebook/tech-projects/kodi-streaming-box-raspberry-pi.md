@@ -21,11 +21,11 @@ This is a guide to setting up a Raspberry Pi as a TV streaming box using the [Ko
 
 This discussion pairs nicely with Jellyfin running on a home server, as I discuss [[tv-media-server|here]].
 
-### Guide (Some Natalie's Blog)
+## Guide (Some Natalie's Blog)
 - [Kodi setup on a Raspberry Pi 4](https://some-natalie.dev/blog/kodi-setup/)
 	- Includes how to start Kodi on startup
 
-### Setting up Pi
+## Setting up Pi
 - Install OS; use `sudo raspi-config` to do the following:
   - Username and password
   - Localization settings
@@ -39,7 +39,7 @@ sudo apt dist-upgrade
 sudo reboot
 ```
 
-### Installing Kodi
+## Installing Kodi
 - Install Kodi and desktop manager
 ```sh
 sudo apt install kodi lightdm
@@ -96,11 +96,6 @@ sudo systemctl enable kodi.service
 - Create an [authentication key](https://github.com/CastagnaIT/plugin.video.netflix/wiki/Login-with-Authentication-key) to log in
 - Python [virtual environment](https://stackoverflow.com/questions/75608323/how-do-i-solve-error-externally-managed-environment-every-time-i-use-pip-3)
 
-### IR Remote
-- Use [FLIRC](https://flirc.tv/downloads) to map remote buttons
-  - Works w/ [FLIRC USB](https://thepihut.com/products/flirc-usb-dongle-for-the-raspberry-pi) dongle
-- N.B., this is cool, but I mostly end up using a Bluetooth keyboard — arrow, esc, enter, and media keys are actually easier than a remote.
-
 ### [Subtitles](https://www.comparitech.com/kodi/kodi-subtitles/) in Kodi
 - **N.B., I don't have this set up yet — just notes for my records**
 - First, visit Opensubtitles.org and create an account.
@@ -122,3 +117,8 @@ sudo systemctl enable kodi.service
 - Not yet working!
 - Best information seems to be here: <https://github.com/anxdpanic/plugin.video.youtube/wiki/Personal-API-Keys>
 
+
+## IR Remote
+- Use [FLIRC](https://flirc.tv/downloads) to map remote buttons
+  - Works w/ [FLIRC USB](https://thepihut.com/products/flirc-usb-dongle-for-the-raspberry-pi) dongle
+- N.B., this is cool, but I mostly end up using a Bluetooth keyboard — arrow, esc, enter, and media keys are actually easier than a remote.

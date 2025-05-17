@@ -11,6 +11,7 @@ tags:
   - digital-garden
   - notebook
   - radio
+  - raspberry-pi
   - sdr
 ---
 
@@ -24,7 +25,7 @@ By default, the dongle can tune between about 28.8 MHz and 1.7 GHz — roughly t
 
 implying that the blog dongles use pin four/pin five.
 
-### Hardware
+## Hardware
 - Nooelec
 	- [Balun One Nine (Barebones)](https://www.nooelec.com/store/balun-one-nine-v2-barebones.html)
 		- This is a [balun](https://en.wikipedia.org/wiki/Balun) (balanced-unbalanced converter) for impedance-matching large antennas with the SDR (e.g., for HF reception via direct sampling).
@@ -36,13 +37,13 @@ implying that the blog dongles use pin four/pin five.
 	- [RTL-SDR V3 kit with dipole antenna](https://www.rtl-sdr.com/buy-rtl-sdr-dvb-t-dongles/)
 		- This includes the receiver as well as a [dipole antenna](https://www.rtl-sdr.com/using-our-new-dipole-antenna-kit/) and mount. The antenna link above includes instructions on the length of antenna to use for different frequencies.
 
-### Raspberry Pi
+## Raspberry Pi
 - [These instructions](https://gist.github.com/floehopper/99a0c8931f9d779b0998) worked for me — `dump1090` (see [[ads-b|ADS-B]]) compiles and runs.
 	- `git-core` [appears](https://forums.raspberrypi.com/viewtopic.php?t=88655) to be obsolete — just use `git`
 	- Previously had issues with requirement for `libusb-1.0-0-dev` on macOS (dev version hardcoded in), but seemed to work fine on RPi as of May 14, 2025.
 	- Lines after `rtl_test` not necessary unless using AIS decoder (see [AIS](https://en.wikipedia.org/wiki/Automatic_identification_system), or see [posts](https://www.rtl-sdr.com/tag/ais/) from the blog on AIS).
 
-### Software
+## Software
 - 433 MHz [ISM band](https://en.wikipedia.org/wiki/ISM_radio_band) devices, such as home weather stations, tire pressure gauges, etc.
 	- rtl_433 
 		- Install on macOS: `brew install rtl_433`

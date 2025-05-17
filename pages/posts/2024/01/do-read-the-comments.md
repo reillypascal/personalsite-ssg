@@ -16,7 +16,7 @@ It uses the [Supabase](https://supabase.com/) Postgres database, which bills its
 
 I considered several ways of getting the comments to display, including embedding a server-side-rendered page in an \<iframe\>, and using the pre-made "[SupaComments](https://jsrepos.com/repo/a-blazing-fast-lightweight-and-open-source-comment-system-for-your-static-website-blogs-powered-by-supabase)" library, but it actually turned out to be easier to just do it myself with vanilla JavaScript. For the full code, see the [Netlify functions](https://github.com/reillypascal/personalsite/tree/main/reillyspitzfaden/netlify/functions), [global JS file](https://github.com/reillypascal/personalsite/blob/main/reillyspitzfaden/styles/scripts.js), and the [blog posts'](https://github.com/reillypascal/personalsite/tree/main/reillyspitzfaden/blog) HTML files on GitHub. I'll walk through some of the most relevant parts here.
 
-### Handling Comment Submissions
+## Handling Comment Submissions
 
 In the form submission handler function, I make the form data into a FormData object. I then retrieve the commenter's name, email, and comment, as well as the URL of the blog post on which they're commenting. Note that in the code examples, I have left out the DOM-manipulating code to focus on handling the comment data.
 
@@ -99,7 +99,7 @@ const handleGetComments = async (event) => {
 }
 ```
 
-### Supabase: Storing and Retrieving Comments
+## Supabase: Storing and Retrieving Comments
 
 The serverless functions to interface with Supabase need the 'dotenv' and 'supabase-js' Node packages, which are required from index.js in the root directory.
 
@@ -190,7 +190,7 @@ exports.handler = async (event, context, callback) => {
 }
 ```
 
-### Conclusions
+## Conclusions
 
 Some of the challenges I had in this project:
 

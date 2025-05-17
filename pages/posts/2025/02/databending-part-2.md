@@ -27,13 +27,13 @@ post_series: databending
 
 I [recently posted](https://reillyspitzfaden.com/posts/2025/01/databending-part-1/) about “databending,” which includes importing raw data into Audacity to make glitchy noises, changing the data in an image using a text/hex editor, and many other ways of creatively reinterpreting/damaging data. Since writing that post, I've learned some more fun ways of creating glitchy sounds with data, and I'll be discussing that today.
 
-### Hacking MP3s
+## Hacking MP3s
 
 Composer Yasunao Tone has a series of “[MP3 Deviation](https://yasunaotone.bandcamp.com/album/mp3-deviation-8)” pieces that I like. Because his [previous work with damaged CDs](https://en.wikipedia.org/wiki/Yasunao_Tone#Activity_in_the_United_States_(1972-Present)) ([YouTube link](https://www.youtube.com/watch?v=CEDi-39o5qw)) derives its sounds directly from digital audio errors, I was expecting these pieces to do the same, but as the Bandcamp page above notes, Tone found errors between the MP3 encoder and decoder to be “not satisfactory,” and instead, these “MP3 Deviation” pieces use different MP3 errors to trigger different sample playback lengths. The pieces are full of cool sounds, but the process is not particularly connected to MP3s, and I've remained interested in seeing what's possible directly listening to MP3 errors.
 
 I've done some reading off and on about MPEG compression (i.e., the family of formats that includes MP3) from a few DSP textbooks [^1] [^2] and managed to get the [GSM 06.10](https://en.wikipedia.org/wiki/Full_Rate) 2G cell phone [codec](https://en.wikipedia.org/wiki/Codec) [running in a plugin](https://github.com/reillypascal/RSTelecom), but I hadn't previously figured out how to get the MP3 codec to *glitch*. It turned out to be easier than I assumed! After having Nicolas Collins' book for a while, I recently realized that Nick Briz has a chapter in it on databending, [^3] and among other things, Briz writes about hacking MP3s in a hex editor. To explain how this works, I'll first cover a bit of background about MP3s.
 
-### How MP3s Work
+## How MP3s Work
 MP3s use [lossy compression](https://en.wikipedia.org/wiki/Lossy_compression). Compression summarizes the data to reduce storage space, and lossy compression additionally discards or makes an inexact summary of some of the data that is less perceptually relevant. An MP3 breaks down the audio into short chunks or “frames”; analyzes the frequencies present in each frame; determines which frequencies are “masked” by others, and thus less perceptually relevant; and based on which sounds are most relevant, allocates different numbers of bits to represent the loudness of each frequency.
 
 The most important part of this for trying to glitch up an MP3 is that there is a header at the beginning of each frame that contains data about the file and must be left intact in order for the file to be readable. Additionally, there is a larger header at the beginning of the file, which must also be left intact. This where the Nick Briz article comes in. He goes into detail about what the header looks like, how to find it, and different ways the header may vary.
@@ -62,14 +62,14 @@ Most MP3 headers will begin with FFFB, as shown here. Briz gives a long list of 
 
 One thing to note is that some MP3s are [variable bitrate](https://en.wikipedia.org/wiki/Variable_bitrate), and since the 5th hex digit in the header tells the bitrate, this digit will change between headers. On one file I tested, this tripped me up for a little while.
 
-### Notes on the Process
+## Notes on the Process
 
 Here are some of my observations:
 - It's usually enough to replace 1 string of 8 characters (i.e., 4 bytes) per frame, and it's not necessary to mangle each frame. Jumping around and listening to the result, and returning to a spot if it needs more glitching helps keep me from getting bogged down.
 - It tends to produce better results to use smaller numbers in each byte (i.e., each pair of digits). Smaller numbers correlate to lower amplitudes for the frequencies in each frame, and this tends to sound like watery burbling. Higher numbers tend to give bursts of white noise.
 - It doesn't seem to matter too much if you repeat strings of numbers. A strategy that's worked well is to make a sequence of 8 hexadecimal digits with mostly smaller values in each byte and repeatedly paste it in as a replacement for one string with higher values every few frames.
 
-### My Results
+## My Results
 First, here is a short “un-glitched” MP3 file I used as the source for this process:
 
 <audio controls>
@@ -84,7 +84,7 @@ Here is the same file after glitching:
 
 I like the weird bubbling quality, and especially the high chirps and clicks. As far as I can tell, editing near the beginning or end of the frame should get different frequencies, and I may try getting more of those high chirps using this information.
 
-### Improving the Process
+## Improving the Process
 
 My results here are extremely short, and the process of doing this by hand makes me feel like [Ben Wyatt making claymation](https://www.youtube.com/watch?v=LCUze7kuNas&t=42s). For a 160kbps MP3, not counting the headers, there should be 40,000 hex digits per second (160,000 bits divided by 4 bits per hex digit), so editing these by hand is beyond tedious. In addition, it would be nice to be able to audition a few different glitched versions of a file and pick the best one — this process feels like poking around in the dark since I don't fully know what will happen until I work for a while and listen back to my results. It would be great if I were able to automate some of this. 
 

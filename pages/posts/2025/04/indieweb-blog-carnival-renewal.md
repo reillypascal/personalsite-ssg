@@ -26,7 +26,7 @@ Initially I wasn't sure if this topic would apply to anything on which I current
 
 I have a similar desire to tinker on and “renew” my site, and recently that has interfered not only with sitting down to write for the site, but with my project and leisure time more generally. In addition to my website tinkering, I'm going to discuss my relationship more broadly to leisure and to projects that interest me.
 
-### Writing about Projects
+## Writing about Projects
 
 I have received positive feedback for some of the writing I've done here, and I find myself chasing the high of having someone else appreciate something I've made. The kind of writing that I most want to do requires an additional step beforehand. I want to do write-ups of interesting code or music projects and that requires me to actually do a code or music project. Because the writing I'm most proud of requires these extra steps, when I contemplate writing for my blog I'm really thinking of two separate things — the project itself and then the writeup.
 
@@ -36,7 +36,7 @@ Since this site is one of the more public-facing expressions of my skills and pe
 
 A second motivator to endlessly tinker is that my compulsion to stare at and revisit my own site tends to reveal small “flaws” in it, and leaving things the way they are when they aren't “perfect” feels like a little itch in the back of my head. Even if I feel intimidated by the prospect of getting a personal project to the point it can be written up on my blog (and then actually doing the writeup), poring over my existing website and writing can let me revisit nice things that people said about specific aspects of it, but since looking at it naturally reveals any small flaws, I end up with a laundry list of things that could be tweaked, and that I might prefer were a little better.
 
-### The Character of My Projects
+## The Character of My Projects
 
 In addition to the ease of receiving feedback on my site and the list of small flaws I accumulate, most of the other projects I want to do (audio software development, composition, sound design in Max/MSP, etc.) are more complex and/or subjective than site tinkering. My website already exists, and HTML/CSS are a little more forgiving than C++, so (for example) starting a brand new audio plugin or tweaking an existing one both feel more intimidating. 
 
@@ -46,7 +46,7 @@ Composing music (and since designing Max/MSP patches is part of composing for me
 
 Overall, it's much harder to get myself to start these more subjective and intimidating projects, and much easier to perseverate on tweaks to my site.
 
-### Instrumentalizing Leisure and Creation
+## Instrumentalizing Leisure and Creation
 
 I found an essay by Anne Helen Petersen via [Tracy Durnell's blog](https://tracydurnell.com/2025/04/13/on-hobbies-and-the-difficulty-of-embracing-slowness/) that was helpful for me in thinking about how I approach all of my projects, both in coding and composing. Petersen [writes](https://annehelen.substack.com/p/what-is-millennial-hobby-energy) about the way she notices herself and other millennials approaching hobbies and leisure. This approach is
 
@@ -70,7 +70,7 @@ Composing was not even an “extra-curricular,” it was just a “curricular”
 
 This difficulty extricating my favorite activities from ideas about “productivity” and capitalist utility further contributes to the anxiety around pursuing these activities, again, making small tweaks to my site much less intimidating by comparison.
 
-### Reconnecting with What Drew Me Here in the First Place
+## Reconnecting with What Drew Me Here in the First Place
 
 What do I want to do with this information about how I approach the things I enjoy? First, I want to allow myself “mess around“ more. If something doesn't have immediate capitalist utility, that's OK — it's desirable, even! It sounds much more healthy to let myself do things simply because I feel like it. I want to share what I do in smaller, easier-to-create chunks, without worrying whether each chunk is “impressive” enough.
 

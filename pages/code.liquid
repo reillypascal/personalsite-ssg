@@ -8,44 +8,44 @@ description: My code, including sound design tools, VST/AU plugin programming, a
 <link rel="stylesheet" type="text/css" href="/styles/code/code-tweaks.css" />
 
 <main role="main" id="content">
-    <h2 id="cli-tools" class="sectionHeader">Command-Line Tools</h2>
+    <h1 id="cli-tools" class="sectionHeader">Command-Line Tools</h1>
 
     <article>
-        <h3><a href="https://github.com/reillypascal/data2audio">data2audio</a></h3>
+        <h2><a href="https://github.com/reillypascal/data2audio">data2audio</a></h2>
         <p>Rust tool to import a folder of files, convert to audio, and normalize/filter out sub-audible frequencies. This is the same process described in <a href="/posts/2025/01/databending-part-1/">this post</a>, but automated to be much less time-consuming.</p>
     </article>
 
     <article>
-        <h3><a href="https://github.com/reillypascal/mp3glitch">mp3glitch</a></h3>
+        <h2><a href="https://github.com/reillypascal/mp3glitch">mp3glitch</a></h2>
         <p>Python tool for glitching MP3s while leaving them playable. Includes many options to shape glitching amount, character, and timbre.</p>
         
         <p>The mechanics behind this are described in <a href="/posts/2025/02/databending-part-2/">this post</a>, and I discuss using Python to do the glitching in <a href="/posts/2025/04/databending-part-3/">this post</a>.</p>
     </article>
 
-    <h2 id="plugins" class="sectionHeader">Plugins</h2>
+    <h1 id="plugins" class="sectionHeader">Plugins</h1>
         
     <article>
-        <h3><a href="https://github.com/reillypascal/RSAlgorithmicVerb">RS Algorithmic Verb</a></h3>
+        <h2><a href="https://github.com/reillypascal/RSAlgorithmicVerb">RS Algorithmic Verb</a></h2>
         <p>Retro algorithmic reverb plugin in <a href="https://juce.com/">JUCE</a> with multiple algorithms (including emulations of classic hardware) and more to come. </p>
         <p>Includes plate and hall reverbs from Dattorro; Gardner's 1992 room reverbs; 4 feedback delay network reverbs using the "<a href="https://www.researchgate.net/publication/344467473_FDNTB_The_Feedback_Delay_Network_Toolbox">FDN Toolbox</a>"; and two experimental/special-effect reverbs. Recently updated for code clarity and maintainability.</p>
     </article>
         
     <article>
-        <h3><a href="https://github.com/reillypascal/RSBrokenMedia">RS Broken Media</a></h3>
+        <h2><a href="https://github.com/reillypascal/RSBrokenMedia">RS Broken Media</a></h2>
         <p>Stereo glitch plugin that records a buffer of recent audio and mangles it, giving tape-warping effects, CD skips, bitcrushing, cell phone codecs, and more.</p>
         {% comment %}<img src="media/rsbrokenmedia.jpg" alt="The UI of a plugin, showing an 'analog FX,' 'digital FX,' 'distortion FX,' 'clock speed,' 'buffer length,' 'repeats,' and 'dry/wet mix' knob">{% endcomment %}
     </article>
         
     <article>
-        <h3><a href="https://github.com/reillypascal/RSTelecom">RS Telecom</a></h3>
+        <h2><a href="https://github.com/reillypascal/RSTelecom">RS Telecom</a></h2>
         <p>Lo-fi plugin with options of various telecommunications codecs including Mu-Law and A-Law 8-bit, and GSM 06.10. Work in progress&mdash;more codecs and glitching effects coming soon.</p>
     </article>
 
-    <h2 id="grimoire" class="sectionHeader">Grimoire</h2>
+    <h1 id="grimoire" class="sectionHeader">Grimoire</h1>
     <p class="sectionDescription">A <a href="https://en.wikipedia.org/wiki/Grimoire">grimoire</a> is a book of spells or incantations. This one is my place to keep shell scripts and other short snippets of code I find useful.</p>
 
     <article>
-        <h3>Format Images for Website</h3>
+        <h2>Format Images for Website</h2>
 
         <p>This line is what I use to apply EXIF rotation data to photos from my phone, resize them, and convert to .webp for use on my website. It uses <a href="https://www.sentex.ca/~mwandel/jhead/">jhead</a>, <a href="https://imagemagick.org/index.php">imagemagick</a>, and <code>zsh</code>.</p>
 
@@ -56,7 +56,7 @@ description: My code, including sound design tools, VST/AU plugin programming, a
     </article>
 
     <article>
-        <h3>Make New Post</h3>
+        <h2>Make New Post</h2>
 
         <p>This <a href="https://github.com/reillypascal/personalsite-ssg/blob/main/post">script</a> generates a new post file with the correct file name, directory, title, description, and date; and then opens it in VSCodium. Equivalent versions are included in my site files for notes and interactions. Run the following line from the root folder:</p>
 
@@ -72,7 +72,7 @@ description: My code, including sound design tools, VST/AU plugin programming, a
     </article>
 
     <article>
-        <h3>Filter Webmentions</h3>
+        <h2>Filter Webmentions</h2>
 
         <p>This <a href="https://github.com/reillypascal/personalsite-ssg/blob/main/webmentions.py">Python script</a> gets my webmentions, filters out all mentions received over Bridgy (which I use to pull in Mastodon/Bluesky interactions as webmentions), and writes the rest to a file <code>webmentions.json</code>. This is nice because non-Mastodon/Bluesky webmentions are much more interesting to me, but they're much more rare than social media interactions, and tend to get lost in the shuffle. I run this from my root folder to get the mentions and open the file in my editor.</p>
 

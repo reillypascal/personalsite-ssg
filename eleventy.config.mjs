@@ -170,7 +170,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addPlugin(interlinker);
 
   eleventyConfig.addPlugin(pluginTOC,{
-    tags: ["h3", "h4", "h5", "h6"], // tags (heading levels) to include
+    tags: ["h2", "h3", "h4", "h5", "h6"], // tags (heading levels) to include
     ignoredHeadings: ["[data-toc-exclude]"], // headings to ignore (list of selectors)
     ignoredElements: [], // elements (within the headings) to ignore when generating the TOC (list of selectors)
     ul: true, // whether to a use a `ul` or `ol`

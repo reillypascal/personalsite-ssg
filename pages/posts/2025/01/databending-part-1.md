@@ -29,17 +29,17 @@ What you're listening to is a segment of the recently departed [Finale](https://
 
 This process of treating non-audio data as if it's an audio file (along with other such artistic data reinterpretations) is often called “[databending](https://en.wikipedia.org/wiki/Databending).” Today I'll talk about how this reinterpretation works for audio, how to do it using simple tools such as [Audacity](https://www.audacityteam.org/), and what kinds of files tend to produce different kinds of sounds. In further post(s), I will dive deeper into analyzing music and art that uses this and similar techniques — both my and others' work.
 
-### How It Works
+## How It Works
 
 First, sound is compressions and rarefactions (i.e., the opposite of compression) in the air or another substance ([see an animation here](https://www.youtube.com/watch?v=z_gxBUP1aec&t=49s)). These increases and decreases in pressure can be represented as a rising and falling line. In a [digital audio](https://en.wikipedia.org/wiki/Digital_audio) file, we take repeated readings or “[samples](https://en.wikipedia.org/wiki/Sampling_(signal_processing))” of this rising and falling pressure at very rapid intervals in time (the “sample rate”), and represent the height of the rising and falling line at each reading using an integer value.
 
 Since any computer file is just a list of numbers — binary values stored on the computer's drive — we can take the list of numbers from any file and treat them as a list of amplitudes in an audio file. For significant portions of many files, the resulting audio mostly sounds like white noise, but most files have at least some stretches in which percussive rhythms and glitchy, buzzing pitches appear.
 
-### How to Do It
+## How to Do It
 
 In Audacity, go to File > Import > Raw Data, choose any file and import it. The “Raw Data” import instructs Audacity to ignore the encoding of the original file (executable, document, image, library, etc.) and allows any file to be treated as audio. There are a number of settings in the “Import” menu, but this is enough to get started. I usually use signed [16-bit](https://en.wikipedia.org/wiki/Audio_bit_depth) PCM, default [endianness](https://en.wikipedia.org/wiki/Endianness), one channel, and 44100 Hz for the sample rate. I chose 16 bits and 44100 Hz because those are the values in CD-quality audio, one channel so all the data is laid out linearly in a single sound, and default endianness because it seems to often produce the clearest results.
 
-### What Kinds of Files?
+## What Kinds of Files?
 
 Since I primarily use macOS and some Linux, this discussion will be most specific to those OSes, but similar things work well on Windows. The files I find work best are [binary](https://en.wikipedia.org/wiki/Binary_file) files. While all computer files use binary code in some form, “binary file” usually refers to a file that does not encode text. 
 
@@ -78,7 +78,7 @@ Notice the rapid, sharp discontinuities, both in time and in frequency. Extremel
 
 These are the kinds of sounds I tend to seek out for composing: rhythmically interesting, containing a mix of pitched and percussive elements, and with detailed, complex transients and frequency content.
 
-### Similarity and Scarcity
+## Similarity and Scarcity
 
 Now that you've listened to libicudata.73.dylib as audio, try comparing it to the excerpt of the Finale binary file at the start of today's article. The two files contain some of the same sounds!
 
@@ -86,7 +86,7 @@ This creates a challenge in finding new sounds. Similar to my experience composi
 
 The process of finding these sounds is also fairly slow and painstaking. [^4] After importing and cleaning up the files, there is a huge amount of material to get through, and since the way I divide up the source material is relevant to the composition process, it takes a good deal of back and forth between the long audio files and the composition I'm currently writing before I settle on exactly where my samples should start and end.
 
-### Finding Variety
+## Finding Variety
 
 One thing I've found to help a bit is to databend libraries (e.g., .dylib, .dll, .a, .so files), not full program binaries. Since program binaries often incorporate library data (and are thus likely to share sounds with other programs that incorporate the same libraries), it's easier to find variety by looking for different libraries. I can look at the file names instead of being surprised and disappointed when a program file turns out to sound the same as parts of the last one.
 
@@ -96,7 +96,7 @@ Even with these approaches, if I want to avoid repeating myself between composit
 
 Something interesting to check out is James Bradbury's [FluCoMa](https://www.flucoma.org/) plenary talk titled “[Finding Things in Stuff](https://www.youtube.com/watch?v=IpD_XzW1Az4),” in which he uses Python and the FluCoMa (“Fluid Corpus Manipulation”) toolkit for Max/MSP, SuperCollider, and Pure Data to find the “interesting” sections of databending sessions. I haven't tried his methods yet, but they look promising for at least speeding up the search.
 
-### Looking Back, Looking Forward
+## Looking Back, Looking Forward
 This past Friday (Jan. 3) marks one year since I was inspired by a [Sophie Koonin talk](https://www.youtube.com/watch?v=H2Ux0hGQcs4) to [start writing on this blog](https://reillyspitzfaden.com/posts/2024/01/hello-world/)! Since then I [coded my own comment system](https://reillyspitzfaden.com/posts/2024/01/do-read-the-comments/), with a similar system to add post likes; [added webmentions](https://reillyspitzfaden.com/posts/2024/05/receiving-webmentions-part-1/); and [set my site up with Eleventy](https://reillyspitzfaden.com/posts/2024/11/ssgs-are-nice/) so that it's extremely easy to post. It makes me happy that I've been able to (mostly) keep up the habit of writing on here, and I'm enjoying writing on here quite a bit.
 
 I'm planning to write a part 2 to today's post that goes into more depth analyzing and discussing works that use databending. There are a number of composers I like who do this, and I think it'll be interesting to collect my responses to their music in one place. I hope to see you then!

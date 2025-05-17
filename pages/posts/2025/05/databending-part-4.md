@@ -53,7 +53,7 @@ Anyway, my Rust tool is still a work in progress, but I thought I'd do a writeup
 
 <audio controls src="https://media.hachyderm.io/media_attachments/files/114/410/358/926/835/338/original/5a33b44d29ec6fba.mp3" title="databent audio using my Rust tool"></audio>
 
-### Importing the Files
+## Importing the Files
 
 As a refresher on the databending process, I wrote in the first post that in digital audio files
 
@@ -86,7 +86,7 @@ fn main() {
 }
 ```
 
-### Converting Files to Audio
+## Converting Files to Audio
 
 I'm using the [clap](https://crates.io/crates/clap) crate to handle command-line arguments. I won't get into too much detail here, but just to cover where it shows up, ```WalkDir::new(&args.input)``` above is taking an input path from these arguments, but that could be replaced with another source of ```&str```/```&String``` reading e.g., ```"input"```; ```args.min``` above is an integer giving the minimum filesize in bytes, and defaulting to 0; and below, the user's choice of sample format is recorded as one of the options in my ```SampleFormat``` enum, which derives from ```clap```'s ```ValueEnum```.
 
@@ -167,7 +167,7 @@ For the 16-, 24-, and 32-bit versions, I need the ```core::slice::chunks_exact()
 Note that all the sample formats except 16-bit integer use the bit-shift operators (```<<``` or ```>>```) to scale the values to the range needed to output a 16-bit WAV file. 16 bits is plenty to get good-quality sound, and the input formats are primarily for the different sound results, so I'm fine with converting everything to 16-bit at the end. I temporarily convert everything to floating point numbers for filtering because the filter math is nicer to work with that way.
 
 
-### Filtering
+## Filtering
 
 I wrote [the filter](https://github.com/reillypascal/rs_rust_audio) I'm using here myself over summer 2024. Filter math gets *intense* really fast (and I can only barely muddle through it myself!) so I won't go into it here, but I'll put some reading materials/references in the footnotes if you're interested in reading further. [^1] [^2] In short, I have a filter module called ```biquad```; ```biquad::AudioFilter::new()``` creates a filter; ```filter.calculate_filter_coeffs()``` sets it up; and ```filter.process_sample()``` takes in the audio, one ```f64``` sample at a time, returning another ```f64``` on each pass. All this ends up cast as 16-bit integers in a ```Vec<i16>``` to be written to the WAV file. Note that I multiply each sample by 0.4 before filtering — this is necessary because filtering out sub-audible noise results in higher peaks in the sound, so I need more headroom to compensate.
 
@@ -184,7 +184,7 @@ for sample in &converted_data {
 }
 ```
 
-### Writing to WAV
+## Writing to WAV
 
 I create a [PathBuf](https://doc.rust-lang.org/std/path/struct.PathBuf.html) from the output path selected by the user, which defaults to ```output/```. This uses the ```clap``` crate (which again, I'm not covering to save time), but ```&args.output``` could be replaced with another source of ```&str```/```&String``` reading e.g., ```"output"```. ```create_dir()``` uses ```fs::create_dir_all()```, which the [documentation](https://doc.rust-lang.org/beta/std/fs/fn.create_dir_all.html) says is equivalent to multiple ```mkdir``` calls on a Unix-like system. I can then use ```PathBuf::push()``` to add the file name (taken from the entry's path), and ```PathBuf::set_extension()``` to change the previous file extension to ```.wav``` before using my ```write_file_as_wav()``` function.
 
@@ -242,7 +242,7 @@ fn write_file_as_wav(data: Vec<i16>, name: path::PathBuf) {
 }
 ```
 
-### Summary and Future Goals
+## Summary and Future Goals
 
 To review:
   1. We use the [walkdir](https://crates.io/crates/walkdir) crate and ```fs::read()``` to recursively traverse the files in the folder and open each as a ```Vec<u8>```
