@@ -26,7 +26,7 @@ h_card_p_note: Composer and audio programmer who likes noise, obsolete media, el
         <h1 class="sectionHeader">Featured Music</h1>
 
         <article>
-            <h2><a href="https://www.youtube.com/watch?v=Y_inKSy9K0k"><cite>Afterimage from</cite></a></h2>
+            <h2 class="video-link"><a href="https://www.youtube.com/watch?v=Y_inKSy9K0k"><cite>Afterimage from</cite></a></h2>
 
             <blockquote>
                 I have been drawn for years to Reilly's playful, absurdist, and critical lens towards humanity's now near-inextricable relationship to technology in the 21st century
@@ -57,7 +57,7 @@ h_card_p_note: Composer and audio programmer who likes noise, obsolete media, el
         </article> {%- endcomment %}
 
         <article>
-            <h2><a href="https://applytriangle.bandcamp.com/track/if-this-reaches-you"><cite>If this reaches you</cite></a></h2>
+            <h2 class="video-link"><a href="https://applytriangle.bandcamp.com/track/if-this-reaches-you"><cite>If this reaches you</cite></a></h2>
             
             <p>My piece <a href="https://applytriangle.bandcamp.com/track/if-this-reaches-you"><cite>If this reaches you</cite></a> is on Apply Triangle's 2024 album <a href="https://applytriangle.bandcamp.com/album/oxalis-triangularis-complete-volumes-1-3"><cite>Oxalis Triangularis</cite></a> &mdash; I was one of the composers selected in the group's <a href="https://applytriangle.com/call_for_scores_2020.html">call for scores</a>. The album is a 3-CD release, and my piece is on <a href="https://applytriangle.bandcamp.com/album/oxalis-triangularis-vol-2">volume 2</a>.</p>
             
@@ -71,7 +71,7 @@ h_card_p_note: Composer and audio programmer who likes noise, obsolete media, el
                 
         <article>
             
-            <h2><a href="https://www.youtube.com/watch?v=YtSerbT7C5A"><cite>Reach Through</cite></a></h2>
+            <h2 class="video-link"><a href="https://www.youtube.com/watch?v=YtSerbT7C5A"><cite>Reach Through</cite></a></h2>
             
             <p>The TaPIR Lab at the University of Toronto commissioned me for the 2023 <a href="https://tapirlab.music.utoronto.ca/composers/">Composer in Residence</a> Concert. I wrote for percussion quartet, with each performer using the accelerometer/gyroscope data from a mobile phone to trigger and control sounds in Max/MSP.</p>
             
@@ -90,7 +90,7 @@ h_card_p_note: Composer and audio programmer who likes noise, obsolete media, el
         {%- for item in collections.post reversed %}
             {%- if item.data.featured %}
                 <section>
-                    <h2><a href="{{item.url}}">{{ item.data.title }}</a></h2>
+                    <h2 class="post-link"><a href="{{item.url}}">{{ item.data.title }}</a></h2>
                     <p>{{ item.data.description }}</p>
                 </section>
             {%- endif %}
@@ -100,7 +100,7 @@ h_card_p_note: Composer and audio programmer who likes noise, obsolete media, el
         {% assign recent_posts = collections.post | slice: -3, 3 %}
         {%- for item in recent_posts reversed %}
             <section>
-                <h2><a href="{{item.url}}">{{ item.data.title }}</a></h2>
+                <h2 class="post-link"><a href="{{item.url}}">{{ item.data.title }}</a></h2>
                 <p>{{ item.data.description }}</p>
             </section>
         {%- endfor %}

@@ -10,6 +10,7 @@ tags:
   - radio
   - sdr
   - adsb
+  - raspberry-pi
 ---
 
 <link rel="stylesheet" type="text/css" href="/styles/notes-photos.css">

@@ -16,7 +16,7 @@ description: A collection of videos, podcast links, and other appearances around
         <div class="videoGrid">
             {%- for video in media.videos %}
                 <div class="containingBlock">
-                    <h2><a href="https://www.youtube.com/watch?v={{ video.yt_id }}"><cite>{{ video.title }}</cite></a></h2>
+                    <h2 class="video-link"><a href="https://www.youtube.com/watch?v={{ video.yt_id }}"><cite>{{ video.title }}</cite></a></h2>
                     {%- if video.peertube_link %}
                         <p><a href="{{ video.peertube_link }}">PeerTube link</a></p>
                     {%- endif %}
