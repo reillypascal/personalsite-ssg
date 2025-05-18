@@ -24,6 +24,9 @@
     --p-line-height: 1.75;
     --section-header-padding: 6px;
 
+    /* lines, margins, borders */
+    --header-footer-border-thickness: 3px;
+
     /* font variables */
     --body-font: "Libre Franklin", sans-serif;
     --body-font-weight: 400;
@@ -122,7 +125,7 @@ header {
     margin-left: var(--global-margin);
     margin-right: var(--global-margin);
     padding-bottom: 8px;
-    border-bottom: 6px solid var(--accent-med-light);
+    border-bottom: var(--header-footer-border-thickness) solid var(--accent-med-light);
 }
 
 main {
@@ -142,7 +145,7 @@ main {
 footer {
     background-color: var(--bg-dark);
     color: var(--fg-light);
-    border-top: 6px solid var(--accent-med-light);
+    border-top: var(--header-footer-border-thickness) solid var(--accent-med-light);
     margin-left: var(--global-margin);
     margin-right: var(--global-margin);
     margin-bottom: 8px;

@@ -73,3 +73,7 @@ sudo umount /mnt/share
 ## YouTube
 - http://191.168.1.66:50152/youtube/api
 - https://github.com/anxdpanic/plugin.video.youtube/issues/1016
+
+
+## Misc
+- <https://turner.enemyterritory.org/shared/repo/user/carrvo/website/homeserver-bom-calculator.html>
