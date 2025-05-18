@@ -4,7 +4,17 @@
     </span>
     
     <span class="meta-text">
-        <a class="u-url" href="{{ url }}"><time class="dt-published" datetime="{{ date | postDate }}">{{ date | date: "%A, %B %d, %Y" }}</time></a>
+        {%- assign is_garden = false -%}
+        {%- for tag in tags -%}
+            {%- if tag == "digital-garden" -%}
+                {%- assign is_garden = true -%}
+            {%- endif -%}
+        {%- endfor -%}
+        {%- if is_garden -%}
+            <a class="u-url" href="{{ url }}"><time class="dt-published" datetime="{{ date | postDate }}">Last updated {{ date | date: "%B %d, %Y" }}</time></a>
+        {%- else -%}
+            <a class="u-url" href="{{ url }}"><time class="dt-published" datetime="{{ date | postDate }}">{{ date | date: "%A, %B %d, %Y" }}</time></a>
+        {%- endif -%}
     </span>
 </div>
 
