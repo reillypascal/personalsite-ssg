@@ -17,15 +17,15 @@ permalink: /digital-garden/
 
 <main role="main" id="content">
 
-    <h2 class="sectionHeader">Digital Garden</h2>
+    <h1 class="sectionHeader">Digital Garden</h1>
     <p>A place for writing I will continually return to and develop. Research notes, tutorials, and other writing on composition, digital arts, programming, maker projects, and more.</p>
 
     <section>
-        <h2 class="sectionHeader">Tutorials</h2>
+        <h1 class="sectionHeader">Tutorials</h1>
         
         {%- for post in collections.gardenTutorials reversed -%}
             <article class="h-entry">
-                <h3 class="p-name"><a class="u-url" href="{{ post.url }}">{{ post.data.title }}</a></h3>
+                <h2 class="p-name post-link"><a class="u-url" href="{{ post.url }}">{{ post.data.title }}</a></h2>
                 <p class="p-summary">{{ post.data.description }}</p>
 
                 <a rel="author" class="p-author h-card" href="https://reillyspitzfaden.com"></a>
@@ -41,11 +41,11 @@ permalink: /digital-garden/
     </section>
 
     <section>
-        <h2 class="sectionHeader">Notebook</h2>
+        <h1 class="sectionHeader">Notebook</h1>
 
         {%- for post in collections.gardenNotebook reversed -%}
             <article class="h-entry">
-                <h3 class="p-name"><a class="u-url" href="{{ post.url }}">{{ post.data.title }}</a></h3>
+                <h2 class="p-name post-link"><a class="u-url" href="{{ post.url }}">{{ post.data.title }}</a></h2>
                 <p class="p-summary">{{ post.data.description }}</p>
 
                 <a rel="author" class="p-author h-card" href="https://reillyspitzfaden.com"></a>
@@ -61,7 +61,7 @@ permalink: /digital-garden/
     </section>
 
     <section>
-        <h2 class="sectionHeader">What is a Digital Garden?</h2>
+        <h1 class="sectionHeader">What is a Digital Garden?</h1>
 
         <p>I have seen a number of people around the IndieWeb circles experimenting with “digital gardens” on their sites. Maggie Appleton, for example, <a href="https://maggieappleton.com/garden-history/">comments that</a></p>
 
