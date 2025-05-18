@@ -17,4 +17,15 @@
             </p>
         </div>
     {%- endif -%}
+    {%- if tag == 'reply' -%}
+        <div class="interaction">
+            <p class="p-summary">Reply to: <a href="{{ target_url }}" class="u-in-reply-to">
+                {% if target_title %}
+                    {{ target_title }}
+                {% else %}
+                    {{ target_url }}
+            {% endif %}
+            </a></p>
+        </div>
+    {%- endif -%}
 {%- endfor -%}
