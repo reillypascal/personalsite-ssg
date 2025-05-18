@@ -5,7 +5,7 @@ fedi_url:
 og_image: 
 og_image_width: 
 og_image_height: 
-date: 2025-05-12T16:13:00-0400
+date: 2025-05-18T16:57:00-0400
 octothorpes:
   - webmentions
   - web
@@ -155,7 +155,9 @@ and `u-syndication` gives link(s) to where I [POSSE](https://www.citationneeded.
 
 The `style="display:none;"` markup in the outer `<div>` ensures the card is not diplayed to users. The `class="p-author h-card"` in this `<div>` creates a microformats object with the `h-card` class; the `p-author` property adds that this card is for an author. The `u-url` and `u-uid` classes indicate that “https://reillyspitzfaden.com” is my site URL, with the `u-*` prefix indicating a link; similarly, `u-photo` gives a link to a photo to act as an avatar. The `p-name`, `p-given-name`, and `p-family-name` classes give plain-text information about me (plain-text indicated by the `p-*` prefix). 
 
-In addition to this card, the entire article (including the card) is surrounded in an `<article>` tag with the class `h-entry`, creating a microformat object for the entire entry. The `<h2>` for the post title within that `<article` has the class `p-name`, and the content of the post is in a `<div>` with the class `e-content`. As described in the MDN link above, the `e-*` prefix is for “element tree properties where the entire contained element hierarchy is the value” — i.e., because `e-content` refers to the entire post contents, rather than any one single HTML element, we use `e-*`. The second `<div>`
+In addition to this card, the entire article (including the card) is surrounded in an `<article>` tag with the class `h-entry`, creating a microformat object for the entire entry. The `<h1>` for the post title within that `<article` has the class `p-name`, and the content of the post is in a `<div>` with the class `e-content`. As described in the MDN link above, the `e-*` prefix is for “element tree properties where the entire contained element hierarchy is the value” — i.e., because `e-content` refers to the entire post contents, rather than any one single HTML element, we use `e-*`. 
+
+<!-- The second `<div>` -->
 
 In addition to enriching webmention data, microformats make a number of other [IndieWeb](https://indieweb.org/) practices possible, which I will describe more in a future post.
 
