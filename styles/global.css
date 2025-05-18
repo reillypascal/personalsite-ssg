@@ -76,15 +76,15 @@ header, header * {
     & .dropdown-content { font-size: 0.95em; }
 }
 h1 { 
-    font-size: 1.6em; 
+    font-size: 1.5em; 
     margin: 24px 0;
 }
 h2 { 
-    font-size: 1.25em; 
+    font-size: 1.2em; 
     margin: 40px 0 8px;
 }
 /* make post title links/video links slightly smaller */
-h2:is(.post-link), h2:is(.video-link) { font-size: 1.2em; }
+h2:is(.post-link), h2:is(.video-link) { font-size: 1.15em; }
 h3 { 
     font-size: 1.1em;
     margin: 40px 0 8px !important;
