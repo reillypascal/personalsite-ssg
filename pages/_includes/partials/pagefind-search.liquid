@@ -32,9 +32,12 @@
         }
     }
     .searchIndexDate {
-    float: right;
-    font-size: 0.85em;
-}
+        /* float: right; */
+        /* float would overlap with other elements' margins; padding-left: auto; is invalid; margin-left requires <div> or something else that's not inline */
+        width: fit-content;
+        margin-left: auto;
+        font-size: 0.85em;
+    }
 </style>
 <script src="/pagefind/pagefind-ui.js"></script>
 <div id="search"></div>
@@ -43,3 +46,4 @@
         new PagefindUI({ element: "#search", showSubResults: true });
     });
 </script>
+<div class="searchIndexDate"><p>Last indexed {{ generated }}</p></div>
