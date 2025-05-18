@@ -17,85 +17,12 @@
           :root {
             --block-top-bottom-margin: 48px;
           }
-          @font-face {
-              font-family: "Funnel Sans";
-              src:
-                  url("/styles/fonts/funnelsans/funnelsans_latin_variable.woff2")
-                      format("woff2");
-              font-weight: 100 900;
-              font-display: swap;
-              unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-          }
-          @font-face {
-              font-family: "Funnel Sans";
-              src:
-                  url("/styles/fonts/funnelsans/funnelsans_latin_ext_variable.woff2")
-                      format("woff2");
-              font-weight: 100 900;
-              font-display: swap;
-              unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-          }
-          @font-face {
-              font-family: "Funnel Sans";
-              src:
-                  url("/styles/fonts/funnelsans/funnelsans_italic_latin_variable.woff2")
-                      format("woff2");
-              font-style: italic;
-              font-weight: 100 900;
-              font-display: swap;
-              unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-          }
-          @font-face {
-              font-family: "Funnel Sans";
-              src:
-                  url("/styles/fonts/funnelsans/funnelsans_italic_latin_ext_variable.woff2")
-                      format("woff2");
-              font-style: italic;
-              font-weight: 100 900;
-              font-display: swap;
-              unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-          }
-          @font-face {
-              font-family: "Hanken Grotesk";
-              src:
-                  url("/styles/fonts/hankengrotesk/hankengrotesk_latin_variable.woff2")
-                      format("woff2");
-              font-weight: 100 900;
-              font-display: swap;
-              unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-          }
-          @font-face {
-              font-family: "Hanken Grotesk";
-              src:
-                  url("/styles/fonts/hankengrotesk/hankengrotesk_latin_ext_variable.woff2")
-                      format("woff2");
-              font-display: swap;
-              unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-          }
-          @font-face {
-              font-family: "Hanken Grotesk";
-              src:
-                  url("/styles/fonts/hankengrotesk/hankengrotesk_italic_latin_variable.woff2")
-                      format("woff2");
-              font-style: italic;
-              font-weight: 100 900;
-              font-display: swap;
-              unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-          }
-          @font-face {
-              font-family: "Hanken Grotesk";
-              src:
-                  url("/styles/fonts/hankengrotesk/hankengrotesk_italic_latin_ext_variable.woff2")
-                      format("woff2");
-              font-style: italic;
-              font-display: swap;
-              unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
-          }
+          @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900");
           body {
             background-color: hsl(227, 26%, 11%);
             color: hsl(227, 87%, 95%);
             margin: 16px;
-            font-family: 'Hanken Grotesk', sans-serif;
+            font-family: 'Libre Franklin', sans-serif;
           }
           h1,
           h2,
@@ -103,7 +30,7 @@
           h4,
           h5,
           h6 {
-              font-family: "Funnel Sans", sans-serif;
+              font-family: "Libre Franklin", sans-serif;
               font-weight: 800;
           }
           main {

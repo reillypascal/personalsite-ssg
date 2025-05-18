@@ -1,5 +1,6 @@
 .DS_Store
 webmentions.json
+webmentions-sent.json
 _site/
 _webmentioncache/
 drafts/
