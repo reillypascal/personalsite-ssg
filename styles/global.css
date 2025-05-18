@@ -38,28 +38,18 @@
 }
 
 @media screen and (min-width: 768px) {
-    :root {
-        --global-margin: 4%;
-    }
+    :root { --global-margin: 4%; }
 
-    header {
-        margin-top: 32px;
-    }
+    header { margin-top: 32px; }
 }
 
 @media screen and (min-width: 940px) {
-    :root {
-        --global-margin: 5%;
-    }
+    :root { --global-margin: 5%; }
 
-    header {
-        margin-top: 32px;
-    }
+    header { margin-top: 32px; }
 }
 @media screen and (min-width: 1325px) {
-    :root {
-        --global-margin: 10%;
-    }
+    :root { --global-margin: 10%; }
 }
 
 /* header,
@@ -80,25 +70,22 @@ header, header * {
     font-weight: var(--heading-font-weight);
     font-size: var(--heading-font-size);
     
-    & .dropdown-content {
-        font-size: 0.95em;
-    }
+    & .dropdown-content { font-size: 0.95em; }
 }
-h1 { font-size: 1.6em; }
-h2 { font-size: 1.25em; }
+h1 { 
+    font-size: 1.6em; 
+    margin: 24px 0;
+}
+h2 { 
+    font-size: 1.25em; 
+    margin: 40px 0 8px;
+}
 /* make post title links/video links slightly smaller */
 h2:is(.post-link), h2:is(.video-link) { font-size: 1.2em; }
-h3 { font-size: 1.1em; }
-    /*
-h2 {
-    font-size: 1.75em;
+h3 { 
+    font-size: 1.1em;
+    margin: 40px 0 8px !important;
 }
-h3 {
-    font-size: 1.375em;
-}
-h4 {
-    font-size: 1.125em;
-} */
 
 /* ######## sticky footer ######## */
 /* https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Sticky_footers#alternate_method */
@@ -126,9 +113,7 @@ body {
 body {
     background-color: var(--bg-dark);
     color: var(--fg-light);
-    & a {
-        color: inherit;
-    }
+    & a { color: inherit; }
 }
 
 header {
@@ -151,9 +136,7 @@ main {
     }
 }
 @media screen and (min-width: 660px) {
-    main {
-        margin-top: 64px;
-    }
+    main { margin-top: 64px; }
 }
 
 footer {
@@ -164,24 +147,16 @@ footer {
     margin-right: var(--global-margin);
     margin-bottom: 8px;
     padding: 0;
-    & .social-icons {
-        margin-top: 16px;
-    }
-    & .social-icons a:not(:last-child) {
-        padding-right: 12px;
-    }
+    & .social-icons { margin-top: 16px; }
+    & .social-icons a:not(:last-child) { padding-right: 12px; }
 }
 
 @media screen and (min-width: 480px) {
-    footer table td:not(:last-child) {
-        padding-right: 14px;
-    }
+    footer table td:not(:last-child) { padding-right: 14px; }
 }
 
 /* ######## Header and Nav ########*/
-header {
-    padding-bottom: 4px;
-}
+header { padding-bottom: 4px; }
 #cardImg {
     display: inline-flex;
     flex-flow: row wrap;
@@ -189,13 +164,9 @@ header {
         text-decoration: none !important;
         border-bottom-style: none !important;
     }
-    & a img:not(:last-child) {
-        padding-right: 22px;
-    }
+    & a img:not(:last-child) { padding-right: 22px; }
 }
-#floppy-disk {
-    vertical-align: 1px;
-}
+#floppy-disk { vertical-align: 1px; }
 
 nav {
     margin: 16px 0 16px;
@@ -245,17 +216,11 @@ nav {
         } */
     }
 
-    & a {
-        display: block;
-    }
+    & a { display: block; }
 
-    & #menuLinks {
-        margin: 8px 0;
-    }
+    & #menuLinks {  margin: 8px 0; }
 
-    & .navElement {
-        padding-bottom: 8px;
-    }
+    & .navElement { padding-bottom: 8px; }
 
     & .dropdown-content a {
         padding: 6px 8px;
@@ -310,23 +275,17 @@ nav {
 .dropdown {
     &:focus,
     &:focus-within {
-        .dropdown-content {
-            display: block !important;
-        }
+        .dropdown-content { display: block !important; }
     }
 }
 
 /* only when JS disabled */
 /* @media (scripting: none) { */
 /* when clicked, switches to pointer and allows closing */
-.dropbtn.navIcon:focus {  
-    pointer-events: none;
-}
+.dropbtn.navIcon:focus { pointer-events: none; }
 /* if I do this in hamburger, *whole thing* closes */
 @media screen and (min-width: 60em) {
-    .dropdown .dropbtn:focus {
-        pointer-events: none;
-    }
+    .dropdown .dropbtn:focus { pointer-events: none; }
 }
 /* } */
 
@@ -338,18 +297,12 @@ nav {
         margin-top: 12px !important;
     }
     /* hamburger menu contents hidden if box not checked */
-    #menuLinks {
-        display: none;
-    }
-    .dropdown-content {
-        position: static;
-    }
+    #menuLinks { display: none; }
+    .dropdown-content { position: static; }
     .hamburger-contents {
         &:focus,
         &:focus-within {
-            #menuLinks {
-                display: block;
-            }
+            #menuLinks { display: block; }
         }
     }
 }
@@ -357,13 +310,9 @@ nav {
 /* Handles switching between hamburger menu and regular */
 @media screen and (min-width: 60em) {
     nav {
-        & .navIcon {
-            display: none;
-        }
+        & .navIcon { display: none; }
 
-        & .navElement {
-            margin-left: 36px;
-        }
+        & .navElement { margin-left: 36px; }
 
         & #menuLinks {
             margin: 0;
@@ -399,18 +348,12 @@ blockquote {
 }
 
 article,
-section {
-    margin: 0 0 48px;
-}
-.sectionDescription {
-    margin-bottom: 48px;
-}
+section { margin: 0 0 48px; }
+.sectionDescription { margin-bottom: 48px; }
 
 @media screen and (min-width: 660px) {
     article,
-    section {
-        margin: 0 0 64px;
-    }
+    section { margin: 0 0 64px; }
     /* .sectionDescription {
         margin-bottom: 64px;
     } */
@@ -431,9 +374,7 @@ main, footer {
     ol li,
     .webmention-comment,
     .fedi-interactions,
-    .fedi-syndication-links {
-        line-height: var(--p-line-height);
-    }
+    .fedi-syndication-links { line-height: var(--p-line-height); }
 }
 
 section {
@@ -457,9 +398,7 @@ code:not(code[class*="language-"]) {
     padding: 3px 5px;
     border-radius: 2px;
 }
-.bare-link-wrap {
-    word-wrap: break-word;
-}
+.bare-link-wrap { word-wrap: break-word; }
 lite-youtube {
     max-width: 560px; /* also in videogrid.css on container */
     max-height: auto;
@@ -472,13 +411,9 @@ figure {
     margin-right: 0;
     margin-bottom: 2em;
 }
-figcaption {
-    margin-top: 16px;
-}
+figcaption { margin-top: 16px; }
 @media screen and (min-width: 480px) {
-    figure {
-        margin-left: 1em;
-    }
+    figure { margin-left: 1em; }
 }
 
 /* ######## Decorations ######## */
@@ -507,9 +442,7 @@ a[href*="//"]:not([href*="https://reillyspitzfaden.com"]):not(footer *):not(.u-s
 }
 
 
-.octothorpes-badge {
-    width: fit-content;
-}
+.octothorpes-badge { width: fit-content; }
 
 /* post info, statuslog info */
 .meta-icon,
@@ -518,25 +451,17 @@ a[href*="//"]:not([href*="https://reillyspitzfaden.com"]):not(footer *):not(.u-s
     top: 2px;
 }
 
-.meta-text {
-    margin-left: 3px;
-}
-.loc-text {
-    margin-left: 2px;
-}
+.meta-text { margin-left: 3px; }
+.loc-text { margin-left: 2px; }
 
 .post-meta,
-.post-loc {
-    margin-bottom: 16px;
-}
+.post-loc { margin-bottom: 16px; }
 
 /* ######## cleanup ######## */
 a,
 a:hover,
 a:focus,
-a:active {
-    color: inherit !important;
-}
+a:active { color: inherit !important; }
 
 /* moved .post-series style from blogposts.css to have consistent styling with interactions */
 .post-series, .interaction {
@@ -545,13 +470,9 @@ a:active {
     padding-left: 12px;
     margin-top: 40px;
 }
-.skip-link {
-    display: none;
-}
+.skip-link { display: none; }
 
-.bibliography {
-    margin-bottom: 32px;
-}
+.bibliography { margin-bottom: 32px; }
 
 .code-file {
     color: var(--fg-med-light);
@@ -571,9 +492,7 @@ a:active {
         margin-block-end: 1em;
         padding-inline-start: 32px;
     }
-    & ul li {
-        margin: 16px 0;
-    }
+    & ul li { margin: 16px 0; }
 }
 
 aside {
