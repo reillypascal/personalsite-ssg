@@ -13,11 +13,10 @@
     --fg-light: hsl(227, 87%, 95%);
     --fg-med-light: hsl(227, 45%, 75%);
 
-    --accent-light: hsl(327, 100%, 88%);
+    --accent-light: hsl(327, 100%, 85%);
     --accent-med-light: hsl(327, 55%, 75%);
     --accent-med: hsl(327, 25%, 53%);
-    --accent-bright: hsl(327, 54%, 65%);
-    --accent-dark: hsl(326, 50%, 47%);
+    --accent-dark: hsl(326, 50%, 40%);
 
     /* size variables */
     --global-margin: 16px;
@@ -342,6 +341,7 @@ nav {
 blockquote {
     /* allows positioning of :before relative to <blockquote> */
     position: relative;
+    /* was 0 */
     margin-left: 16px;
     /* color: var(--fg-light); */
     color: var(--accent-light);
@@ -363,6 +363,7 @@ blockquote {
 }
 @media screen and (min-width: 768px) {
     blockquote {
+        /* was 12px */
         margin-left: 20px;
         &:before {
             font-size: 46px;
