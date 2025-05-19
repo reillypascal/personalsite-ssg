@@ -1,7 +1,7 @@
 /* webmentions */
 input#webmention-source {
     border: none;
-    border-radius: 3px;
+    border-radius: var(--border-radius-small);
     width: calc(100% - 7.25em);
     font-family: inherit;
     font-size: 0.875em;
@@ -36,7 +36,7 @@ input[type="submit"] {
     font-family: inherit;
     font-size: inherit;
     border: none;
-    border-radius: 3px;
+    border-radius: var(--border-radius-small);
     margin: 0 0 0 auto;
     justify-content: center;
 }
@@ -100,7 +100,7 @@ textarea {
     background-color: var(--accent-med-light) !important;
     height: 1.75em;
     border: none;
-    border-radius: 3px;
+    border-radius: var(--border-radius-small);
     font-family: inherit;
     font-size: 0.875em;
     font-weight: 400 !important;
@@ -110,7 +110,7 @@ textarea {
     display: block;
     height: 10em;
     border: none;
-    border-radius: 3px;
+    border-radius: var(--border-radius-small);
     padding: 5px;
     line-height: 1.25;
     resize: none;

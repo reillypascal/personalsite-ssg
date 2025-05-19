@@ -6,16 +6,18 @@
     /* color variables */
     --bg-dark: hsl(227, 26%, 11%);
     /* maybe switch around med-dark/accent names? 
-    I use med-dark for code highlights and accent for <aside>, so far */
+    I use med-dark for code highlights, and accent for <aside>, so far */
     --bg-med-dark: hsl(227, 12%, 17%);
     --bg-accent: hsl(227, 22%, 15%);
     --ui-line-dark: hsl(226, 24%, 29%);
     --fg-light: hsl(227, 87%, 95%);
     --fg-med-light: hsl(227, 45%, 75%);
 
+    --accent-light: hsl(327, 100%, 88%);
     --accent-med-light: hsl(327, 55%, 75%);
     --accent-med: hsl(327, 25%, 53%);
-    --accent-dark: #4d1d3e;
+    --accent-bright: hsl(327, 54%, 65%);
+    --accent-dark: hsl(326, 50%, 47%);
 
     /* size variables */
     --global-margin: 16px;
@@ -26,6 +28,8 @@
 
     /* lines, margins, borders */
     --header-footer-border-thickness: 3px;
+    --border-radius-small: 2px;
+    --border-radius-large: 8px;
 
     /* font variables */
     --body-font: "Libre Franklin", sans-serif;
@@ -328,7 +332,7 @@ nav {
             position: absolute; /* ensures dropdown content doesn't shift other elements; was originally position: static; */
             padding: 12px 12px;
             border: 1px solid var(--accent-med-light);
-            border-radius: 2px;
+            border-radius: var(--border-radius-small);
             box-shadow: 1px 1px 1px 1px var(--bg-dark);
         }
     }
@@ -336,15 +340,38 @@ nav {
 
 /* ######## types of content ######## */
 blockquote {
-    margin-left: 0;
-    color: var(--fg-light);; /* hue from aliceblue */
-    border-left: 1px solid var(--accent-med-light); /* hsla(208, 15%, 67%, 1); */
+    /* allows positioning of :before relative to <blockquote> */
+    position: relative;
+    margin-left: 16px;
+    /* color: var(--fg-light); */
+    color: var(--accent-light);
+    /* border-left: 1px solid var(--accent-med-light); */
+    &:before {
+        position: absolute;
+        top: -14px;
+        left: -18px;
+        content: "“";
+        font-weight: 900;
+        font-size: 40px;
+        color: var(--accent-dark);
+        display: inline;
+    }
     padding-left: 12px;
     & ul, ol {
         padding-left: 32px;
     }
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 768px) {
+    blockquote {
+        margin-left: 20px;
+        &:before {
+            font-size: 46px;
+            top: -18px;
+            left: -20px;
+        }
+    }
+}
+@media screen and (min-width: 1325px) {
     blockquote {
         margin-left: 12px;
     }
@@ -399,7 +426,7 @@ code {
 code:not(code[class*="language-"]) {
     background-color: var(--bg-med-dark);
     padding: 3px 5px;
-    border-radius: 2px;
+    border-radius: var(--border-radius-small);
 }
 .bare-link-wrap { word-wrap: break-word; }
 lite-youtube {
@@ -486,7 +513,7 @@ a:active { color: inherit !important; }
 .table-of-contents {
     background-color: var(--bg-accent);
     padding: 16px;
-    border-radius: 8px;
+    border-radius: var(--border-radius-large);
     margin-top: 40px;
     margin-bottom: 40px;
     & ul {
@@ -501,7 +528,7 @@ a:active { color: inherit !important; }
 aside {
     background-color: var(--bg-accent);
     padding: 2px 20px;
-    border-radius: 8px;
+    border-radius: var(--border-radius-large);
     margin: 28px 0 32px 0;
     @media screen and (min-width: 480px) {
         &:is(.post-body-aside) {
