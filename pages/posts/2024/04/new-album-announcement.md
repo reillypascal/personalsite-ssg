@@ -1,7 +1,6 @@
 ---
 title: New Album Announcement
 description: My trio "If this reaches you" is on Apply Triangle's new album, out on April 12!
-canonical_url: https://reillyspitzfaden.com/posts/2024/04/new-album-announcement/
 date: 2024-04-05
 tags: ["post", "music", "composition", "maxmsp"]
 ---
@@ -46,7 +45,7 @@ I wrote a short poem as a program note for the piece:
 
 Here's the announcement from the ensemble:
 
-> Announcing "Oxalis Triangularis" - a triple album of thirty-three new works from thirty-three composers recorded in a fully remote setting by Apply Triangle. The project was developed through a call for scores in the summer of 2020 and stems from the resilience of artists to continue to create through a global pandemic. It is a testament to the flexibility and creativity possible through electroacoustic composition.
+> Announcing “Oxalis Triangularis” - a triple album of thirty-three new works from thirty-three composers recorded in a fully remote setting by Apply Triangle. The project was developed through a call for scores in the summer of 2020 and stems from the resilience of artists to continue to create through a global pandemic. It is a testament to the flexibility and creativity possible through electroacoustic composition.
 
 > Oxalis Triangularis refers to the scientific name for a purple “false shamrock” due to its triangle-like leaves. Throughout three albums Apply Triangle not only showcases the innovative techniques of 33 living composers but also highlights the embodied cultural nuances inherent in each composer’s style.
 

@@ -1,7 +1,6 @@
 ---
 title: Static Site Generators Are Nice
 description: Making it easier to blog, and to use my site instead of social media
-canonical_url: https://reillyspitzfaden.com/posts/2024/11/ssgs-are-nice/
 date: 2024-11-23
 tags: [ "post", "webdev", "indieweb", "programming" ]
 ---

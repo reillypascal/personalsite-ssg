@@ -1,7 +1,6 @@
 ---
 title: Composition Journal, May 4, 2014
 description: Max/MSP sample mangling with lo-fi piano, percussion & vinyl noise for my work-in-progress "Forget your name"
-canonical_url: https://reillyspitzfaden.com/posts/2024/05/composition-journal/
 date: 2024-05-04
 tags: [ "post", "music", "composition", "maxmsp", "sound-design" ]
 ---
@@ -20,7 +19,7 @@ tags: [ "post", "music", "composition", "maxmsp", "sound-design" ]
 
 Hi everyone! Today's post is on [Max/MSP](https://en.wikipedia.org/wiki/Max_(software)) sound design. I'll be talking about how I got [this sound](https://hachyderm.io/@reillypascal/112242684024114281) I posted about on my [Mastodon](https://hachyderm.io/@reillypascal) a few weeks ago. It's part of a trio I'm writing for MIDI keyboard, clarinet, and percussion tentatively titled *Forget your name*.
 
-I mentioned in my [Feb. 27 post](https://reillyspitzfaden.com/blog/02-27-2024) that I've been using the [`fftz.ether~`](https://github.com/ericlyon/FFTease3.0-MaxMSP) Max/MSP object to combine the spectra of two sounds. It compares each FFT bin between the two sounds, and selects the one that's either quieter or louder, depending on the settings. Here I'm using it to combine glitching lofi piano/percussion with various radio sounds.
+I mentioned in my [Feb. 27 post](/posts/2024/02/composition-journal/) that I've been using the [`fftz.ether~`](https://github.com/ericlyon/FFTease3.0-MaxMSP) Max/MSP object to combine the spectra of two sounds. It compares each FFT bin between the two sounds, and selects the one that's either quieter or louder, depending on the settings. Here I'm using it to combine glitching lofi piano/percussion with various radio sounds.
 
 Since I'm busy finishing up my semester of teaching, I'll be splitting this between two or so posts. Today, let's look at how I made the looping piano snippets. You can download the patch [here](https://mega.nz/folder/ge9wVAqT#3PeZp-8-t6B7plrMvAICJg).
 
@@ -50,7 +49,7 @@ By naming the `coll` objects in the `sample_chooser` subpatcher the same as the 
     alt="Max/MSP patch described by the previous paragraph, with a coll object named cylinder_samp as before, and logic to get the length at index 0; generate random numbers without repeats up to that length; and retrieve the buffer name at index 0, and a random point into the list of buffers." 
     id="coll_random_select_img"/>
 
-I have a metronome object plus a random number generator sending out a clock pulse that varies in rate with each pulse. I use that with a chain of counters to periodically load new buffers from the `polybuffer~` into `groove~` for playback. Throughout the patch I have subpatchers labeled `%_gate` — these are "Bernoulli gates." When a message or bang enters the gate, the subpatcher makes a random number between 0–100; checks if that value is less than or equal to a threshold; and if so, allows the message/bang through. The `patcherargs` object in these subpatchers gets the number typed after the patcher name and uses this as a threshold/probability for the gate. See below:
+I have a metronome object plus a random number generator sending out a clock pulse that varies in rate with each pulse. I use that with a chain of counters to periodically load new buffers from the `polybuffer~` into `groove~` for playback. Throughout the patch I have subpatchers labeled `%_gate` — these are “Bernoulli gates.” When a message or bang enters the gate, the subpatcher makes a random number between 0–100; checks if that value is less than or equal to a threshold; and if so, allows the message/bang through. The `patcherargs` object in these subpatchers gets the number typed after the patcher name and uses this as a threshold/probability for the gate. See below:
 
 <img src="/media/blog/2024/05/metro_counter_logic.webp" 
     alt="The metronome, on/off toggle, and counter logic from the patch."/>

@@ -274,7 +274,7 @@ nav {
         fill: var(--fg-light) !important;
         /* color: var(--fg-light); */
         pointer-events: none;
-        margin-left: 8px;
+        margin-left: 6px;
     }
 }
 

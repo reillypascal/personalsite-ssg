@@ -1,7 +1,6 @@
 ---
 title: Do Read the Comments
 description: A writeup of using Netlify serverless functions and Supabase to code a comments section on a static site
-canonical_url: https://reillyspitzfaden.com/posts/2024/01/do-read-the-comments/
 date: 2024-01-14
 tags: ["post", "webdev", "programming" ]
 ---
@@ -12,9 +11,9 @@ tags: ["post", "webdev", "programming" ]
 
 My blog now has a comment section! Let's talk about how I made it.
 
-It uses the [Supabase](https://supabase.com/) Postgres database, which bills itself as an "open-source Firebase alternative." There are a number of ways of communicating with the database. I chose the [supabase-js](https://github.com/supabase/supabase-js) JavaScript client since I'm familiar with JS, and because I wanted to use Netlify's ["serverless" function](https://www.netlify.com/blog/intro-to-serverless-functions/) capabilities to run the code that communicates with the database.
+It uses the [Supabase](https://supabase.com/) Postgres database, which bills itself as an “open-source Firebase alternative.” There are a number of ways of communicating with the database. I chose the [supabase-js](https://github.com/supabase/supabase-js) JavaScript client since I'm familiar with JS, and because I wanted to use Netlify's [“serverless” function](https://www.netlify.com/blog/intro-to-serverless-functions/) capabilities to run the code that communicates with the database.
 
-I considered several ways of getting the comments to display, including embedding a server-side-rendered page in an \<iframe\>, and using the pre-made "[SupaComments](https://jsrepos.com/repo/a-blazing-fast-lightweight-and-open-source-comment-system-for-your-static-website-blogs-powered-by-supabase)" library, but it actually turned out to be easier to just do it myself with vanilla JavaScript. For the full code, see the [Netlify functions](https://github.com/reillypascal/personalsite/tree/main/reillyspitzfaden/netlify/functions), [global JS file](https://github.com/reillypascal/personalsite/blob/main/reillyspitzfaden/styles/scripts.js), and the [blog posts'](https://github.com/reillypascal/personalsite/tree/main/reillyspitzfaden/blog) HTML files on GitHub. I'll walk through some of the most relevant parts here.
+I considered several ways of getting the comments to display, including embedding a server-side-rendered page in an \<iframe\>, and using the pre-made “[SupaComments](https://jsrepos.com/repo/a-blazing-fast-lightweight-and-open-source-comment-system-for-your-static-website-blogs-powered-by-supabase)” library, but it actually turned out to be easier to just do it myself with vanilla JavaScript. For the full code, see the [Netlify functions](https://github.com/reillypascal/personalsite/tree/main/reillyspitzfaden/netlify/functions), [global JS file](https://github.com/reillypascal/personalsite/blob/main/reillyspitzfaden/styles/scripts.js), and the [blog posts'](https://github.com/reillypascal/personalsite/tree/main/reillyspitzfaden/blog) HTML files on GitHub. I'll walk through some of the most relevant parts here.
 
 ## Handling Comment Submissions
 

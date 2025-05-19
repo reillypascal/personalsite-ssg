@@ -1,7 +1,6 @@
 ---
 title: Receiving Webmentions, Part 1
 description: Setting up my blog to receive Webmentions
-canonical_url: https://reillyspitzfaden.com/posts/2024/05/receiving-webmentions-part-1/
 date: 2024-05-21
 tags: ["post", "webdev", "indieweb", "programming"]
 ---
@@ -30,7 +29,7 @@ Where "`<username>`" is usually the URL of your site.
 
 ## One More Thing
 
-At this point you could previously go [here](https://webmention.io/dashboard) and see any Webmentions that came in. However, there is one new feature to be aware of. I tested out my site using the "[Receiver Test #1](https://webmention.rocks/receive/1)" at [webmention.rocks](https://webmention.rocks), and it was giving me a 404 error. When I talked to Webmention.io's creator Aaron Parecki in the [IndieWeb chat](https://chat.indieweb.org/), I learned that there are some new updates. As discussed in [this](https://github.com/aaronpk/webmention.io/issues/182) GitHub issue, Aaron wants to prevent Webmention.io from automatically accepting mentions for anybody who does not explicitly  ask for it. As a result, one final step is that you need to go [here](https://webmention.io/settings/sites) after signing into Webmention.io, and enter your site URL in the box. At this point, the receiver test worked flawlessly for me.
+At this point you could previously go [here](https://webmention.io/dashboard) and see any Webmentions that came in. However, there is one new feature to be aware of. I tested out my site using the “[Receiver Test #1](https://webmention.rocks/receive/1)” at [webmention.rocks](https://webmention.rocks), and it was giving me a 404 error. When I talked to Webmention.io's creator Aaron Parecki in the [IndieWeb chat](https://chat.indieweb.org/), I learned that there are some new updates. As discussed in [this](https://github.com/aaronpk/webmention.io/issues/182) GitHub issue, Aaron wants to prevent Webmention.io from automatically accepting mentions for anybody who does not explicitly  ask for it. As a result, one final step is that you need to go [here](https://webmention.io/settings/sites) after signing into Webmention.io, and enter your site URL in the box. At this point, the receiver test worked flawlessly for me.
 
 ## Going Forward
 
@@ -38,4 +37,4 @@ If you have Webmentions set up, please send me one if you link to my blog posts!
 
 ## Fun Fact of the Day
 
-Speaking of blogs, "blog" comes from "web-log," but did you know that "log" (in the sense of "log-book") comes from "log" as in a log from a tree? I like to browse [Etymonline](https://etymonline.com) for fun, and the page for [log](https://www.etymonline.com/word/log#etymonline_v_43590) (as in "log-book") explains that sailors would place a chip of a tree log in the water on the end of a rope with knots at regular intervals, and used the rate at which the knots passed by to tell the ship's speed. Isn't etymology great?
+Speaking of blogs, “blog” comes from “web-log,” but did you know that "log" (in the sense of “log-book”) comes from “log” as in a log from a tree? I like to browse [Etymonline](https://etymonline.com) for fun, and the page for [log](https://www.etymonline.com/word/log#etymonline_v_43590) (as in “log-book”) explains that sailors would place a chip of a tree log in the water on the end of a rope with knots at regular intervals, and used the rate at which the knots passed by to tell the ship's speed. Isn't etymology great?

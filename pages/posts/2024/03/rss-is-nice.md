@@ -1,14 +1,13 @@
 ---
 title: RSS Is Nice
 description: My process of adding RSS to my blog, my rediscovery of how nice RSS is, and some music blogs I've been enjoying
-canonical_url: https://reillyspitzfaden.com/posts/2024/03/rss-is-nice/
 date: 2024-03-10
 tags: ["post", "webdev", "indieweb", "music"]
 ---
 
 ## RSS Is Nice
 
-This past week I added [RSS](https://en.wikipedia.org/wiki/RSS) to my blog! Here I'll talk about the process of doing that, my rediscovery of how nice RSS is, and some music blogs I've been enjoying. If you want to follow my blog, [here's the link](https://reillyspitzfaden.com/blog/feed.xml).
+This past week I added [RSS](https://en.wikipedia.org/wiki/RSS) to my blog! Here I'll talk about the process of doing that, my rediscovery of how nice RSS is, and some music blogs I've been enjoying. If you want to follow my blog, [here's the link](/blog/feed.xml).
 
 ## RSS for my Blog
 
@@ -16,9 +15,9 @@ I started out by trying to make my blog automatically generate the RSS feed — 
 
 When I looked into it, I found that hand-writing an RSS XML file was even easier than I assumed, and didn't hinder my wanting to make new posts. The [RSS specification](https://www.rssboard.org/rss-specification) is all clearly laid out, and the official page includes [sample files](https://www.rssboard.org/rss-specification#sampleFiles) for v0.91, v0.92, and v2.0. My current system is that I have a [template](https://github.com/reillypascal/personalsite/blob/main/reillyspitzfaden/blog/templates/template.xml) in my site files, and I can copy/paste the `<item>` section into the main feed file and fill in the blanks.
 
-This method is still a little "rough-and-ready," what with the copy-pasting, but the important thing for me is that it *works*. After seeing Molly White [mention](https://hachyderm.io/@molly0xfff/111960696197094015) it, I have been eyeing the IndieWeb wiki's discussion of [making your own CMS](https://indieweb.org/content_management_system#Why_write_your_own), and I may try improving my system with something like that — not integrated with Netlify, but I could run a homemade static site generator before uploading my files. My best guess so far is I could use the [rss](https://www.npmjs.com/package/rss) NPM package as one way of handing the RSS part of a CMS, but if people have suggested tools, I would love to hear about them!
+This method is still a little “rough-and-ready,” what with the copy-pasting, but the important thing for me is that it *works*. After seeing Molly White [mention](https://hachyderm.io/@molly0xfff/111960696197094015) it, I have been eyeing the IndieWeb wiki's discussion of [making your own CMS](https://indieweb.org/content_management_system#Why_write_your_own), and I may try improving my system with something like that — not integrated with Netlify, but I could run a homemade static site generator before uploading my files. My best guess so far is I could use the [rss](https://www.npmjs.com/package/rss) NPM package as one way of handing the RSS part of a CMS, but if people have suggested tools, I would love to hear about them!
 
-Side note: one final tweak I did outside of RSS is adding a typographical [asterism](https://en.wikipedia.org/wiki/Asterism_%28typography%29) to my blog posts, inspired by jamesg's recent "[100 things you can do on your personal website](https://jamesg.blog/2024/02/19/personal-website-ideas/)" post.
+Side note: one final tweak I did outside of RSS is adding a typographical [asterism](https://en.wikipedia.org/wiki/Asterism_%28typography%29) to my blog posts, inspired by jamesg's recent “[100 things you can do on your personal website](https://jamesg.blog/2024/02/19/personal-website-ideas/)” post.
 
 ## Why RSS
 
@@ -33,9 +32,9 @@ I follow a variety of things, but one area that's been especially nice is experi
 - [a closer listen](https://acloserlisten.com/)
     - This site focuses on instrumental album reviews. I appreciate that the [writers](https://acloserlisten.com/staff/) are numerous and prolific — I get reviews in my inbox every day. [RSS](https://acloserlisten.com/rss)
 - [Avant Music News](https://avantmusicnews.com/)
-    - AMN has been a particularly helpful jumping-off point. They do a mixture of their own reviews and sharing reviews from other sites. They describe themselves as covering music that's "challenging, interesting, different, progressive, introspective, or just plain weird" — exactly what I like to hear. [RSS](https://avantmusicnews.com/rss)
+    - AMN has been a particularly helpful jumping-off point. They do a mixture of their own reviews and sharing reviews from other sites. They describe themselves as covering music that's “challenging, interesting, different, progressive, introspective, or just plain weird” — exactly what I like to hear. [RSS](https://avantmusicnews.com/rss)
 - [Fringes of Sound](http://www.onthefringesofsound.com/)
-    - A blog that covers "independent experimental, ambient, noise, and other music that falls well outside the mainstream." I haven't been able to find out as much as some of the others, but the Instagram page lists just one person, a [Lars Haur](https://www.instagram.com/lars_haur/), so this may be a single-person project. [RSS](https://www.onthefringesofsound.com/feeds/posts/default?alt=rss)
+    - A blog that covers “independent experimental, ambient, noise, and other music that falls well outside the mainstream.” I haven't been able to find out as much as some of the others, but the Instagram page lists just one person, a [Lars Haur](https://www.instagram.com/lars_haur/), so this may be a single-person project. [RSS](https://www.onthefringesofsound.com/feeds/posts/default?alt=rss)
 - [Outside Noise](https://www.outsidenoise.org/reviews/)
     - I had known about this blog for a while, but I found that keeping my news and blogs in a bookmarks folder and having to repeatedly check to see if anything new was posted discouraged me from reading. I also find managing bookmarks on my phone to be especially irritating, and unfortunately, if I don't have something on my phone I'm less likely to check it. [RSS](https://www.outsidenoise.org/reviews?format=rss)
 - [Yeah I Know It Sucks](https://yeahiknowitsucks.wordpress.com/)
@@ -45,4 +44,4 @@ I follow a variety of things, but one area that's been especially nice is experi
 
 That's all for today! I'm looking at adding some new features to my site ([Webmentions](https://en.wikipedia.org/wiki/Webmention) are high on my list), and I'm continuing to do sound design and composition. When I get more interesting sounds made or site features added, I'll definitely do a writeup of those here as well.
 
-I've also been getting back into reading for fun, now that I'm out of school (finished my composition PhD in 2022), and I may discuss some of the books I'm reading. I recently got "[High Static; Dead Lines](http://www.kristengallerneaux.com/high-static-dead-lines)" by Kristen Gallerneaux, "[House of Leaves](https://en.wikipedia.org/wiki/House_of_Leaves)" by Mark Z. Danielewski, and "[This Is How They Tell Me the World Ends](https://en.wikipedia.org/wiki/This_Is_How_They_Tell_Me_the_World_Ends)" by Nicole Perlroth, and I'm excited for all of them.
+I've also been getting back into reading for fun, now that I'm out of school (finished my composition PhD in 2022), and I may discuss some of the books I'm reading. I recently got “[High Static; Dead Lines](http://www.kristengallerneaux.com/high-static-dead-lines)” by Kristen Gallerneaux, “[House of Leaves](https://en.wikipedia.org/wiki/House_of_Leaves)” by Mark Z. Danielewski, and “[This Is How They Tell Me the World Ends](https://en.wikipedia.org/wiki/This_Is_How_They_Tell_Me_the_World_Ends)” by Nicole Perlroth, and I'm excited for all of them.
