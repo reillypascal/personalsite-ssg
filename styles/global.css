@@ -364,7 +364,7 @@ blockquote {
         font-weight: 900;
         font-size: 40px;
         color: var(--accent-dark);
-        margin: -12px 8px 0 0;
+        margin: -13px 8px 0 0;
     }
     & ul, ol {
         padding-left: 32px;
@@ -383,6 +383,7 @@ blockquote {
             /* top: -18px;
             left: -20px; */
             margin-top: -18px;
+            margin-right: 10px;
             font-size: 46px;
         }
     }
