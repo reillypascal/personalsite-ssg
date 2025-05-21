@@ -340,44 +340,58 @@ nav {
 /* ######## types of content ######## */
 blockquote {
     /* allows positioning of :before relative to <blockquote> */
-    position: relative;
+    /* position: relative; */
     /* was 0 */
-    margin-left: 16px;
+    /* margin-left: 16px; */
     /* color: var(--fg-light); */
-    color: var(--accent-light);
     /* color: var(--accent-med-light); */
     /* border-left: 1px solid var(--accent-med-light); */
+    /* padding-left: 12px; */
+    color: var(--accent-light);
+    display: flex;
+    /* align & justify were recommended to me on fedi, but seem unnecessary */
+    /* align-items: start; */
+    /* justify-content: center; */
+    margin-left: 0;
     &:before {
-        position: absolute;
+        /* float: left;
+        margin: -14px 18px auto 0; */
+        /* position: absolute;
         top: -14px;
-        left: -18px;
+        left: -18px; 
+        display: inline; */
         content: "“";
         font-weight: 900;
         font-size: 40px;
         color: var(--accent-dark);
-        display: inline;
+        margin: -12px 8px 0 0;
     }
-    padding-left: 12px;
     & ul, ol {
         padding-left: 32px;
+    }
+    & p {
+        /* because 11ty inserts child <p> */
+        margin: 0;
+        padding: 0;
     }
 }
 @media screen and (min-width: 768px) {
     blockquote {
         /* was 12px */
-        margin-left: 20px;
+        /* margin-left: 20px; */
         &:before {
+            /* top: -18px;
+            left: -20px; */
+            margin-top: -18px;
             font-size: 46px;
-            top: -18px;
-            left: -20px;
         }
     }
 }
-@media screen and (min-width: 1325px) {
+/* @media screen and (min-width: 1325px) {
     blockquote {
         margin-left: 12px;
     }
-}
+} */
 
 article,
 section { margin: 0 0 48px; }
