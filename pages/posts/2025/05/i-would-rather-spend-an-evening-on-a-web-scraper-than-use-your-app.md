@@ -1,7 +1,9 @@
 ---
 title: I Would Rather Spend an Evening on a Web Scraper than Use Your App
 description: My Swedish textbook publisher wanted me to listen to audio examples on their site or in their app. I had other ideas.
-fedi_url: 
+fedi_url:
+  - https://hachyderm.io/@reillypascal/114559446968424613
+  - https://bsky.app/profile/reillypascal.bsky.social/post/3lpunq4h42s2p
 og_image: /media/blog/2025/05/mp3-scraper/complete-swedish-page-info.jpg
 og_image_width: 1200
 og_image_height: 630
