@@ -7,9 +7,21 @@
 
 .img-vertical {
     max-width: 520px;
+    @media screen and (max-width: 565px) {
+        max-width: 100%;
+    }
 }
-@media screen and (max-width: 565px) {
-    .img-vertical {
+
+.img-strip {
+    max-width: 530px;
+    @media screen and (max-width: 575px) {
+        max-width: 100%;
+    }
+}
+
+.img-square {
+    max-width: 575px;
+    @media screen and (max-width: 620px) {
         max-width: 100%;
     }
 }
