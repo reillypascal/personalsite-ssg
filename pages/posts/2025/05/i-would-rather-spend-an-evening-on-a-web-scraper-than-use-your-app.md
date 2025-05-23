@@ -2,9 +2,9 @@
 title: I Would Rather Spend an Evening on a Web Scraper than Use Your App
 description: My Swedish textbook publisher wanted me to listen to audio examples on their site or in their app. I had other ideas.
 fedi_url: 
-og_image: 
-og_image_width: 
-og_image_height: 
+og_image: /media/blog/2025/05/mp3-scraper/complete-swedish-page-info.jpg
+og_image_width: 1200
+og_image_height: 630
 date: 2025-05-22T23:48:09-0400
 octothorpes:
   - javascript
