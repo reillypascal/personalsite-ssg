@@ -25,6 +25,9 @@ title: Reilly Spitzfaden, Composer
         
         <div class="e-content">
             {{ content }}
+            {% if indienews %}
+                {% include "partials/indienews.liquid" %}
+            {% endif %}
         </div>
         
         {% include "partials/post-interactions.liquid" %}
