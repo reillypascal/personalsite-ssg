@@ -134,7 +134,6 @@ If you go to the URL `https://webmention.io/api/mentions.jf2?token=<your-webment
 Microformats allow embedding properties in a page, to be read by social software, aggregators, search engines, and the like. Microformat tags are added as HTML class names. According to the [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Microformats)
 
 > - To create a microformats object, `h-*` class names are used in the class attribute.
-
 > - To add a property to an object, the `p-*`, `u-*`, `dt-*`, `e-*` class names are used on one of the object's descendants.
 
 Below is the [`h-card`](https://microformats.org/wiki/h-card) markup I use above each of my posts. MDN gives further information about the different prefixes you'll see in my markup [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Microformats#microformats_prefixes).
