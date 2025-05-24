@@ -20,6 +20,7 @@ tags:
   - tutorial
   - webdev
   - webmentions
+indienews: true
 ---
 
 <link rel="stylesheet" type="text/css" href="/styles/code/prism-dracula.css" />
@@ -56,7 +57,7 @@ If you have any trouble, the folks on the [IndieWeb Chat](https://chat.indieweb.
 
 Let's get started!
 
-### The Basics with Webmention\.io
+## The Basics with Webmention\.io
 
 As I mentioned in my [first post](/posts/2024/05/receiving-webmentions-part-1/) on the topic, to start, go to [Webmention.io](http://webmention.io/) and sign in using your site URL. You'll need a tag in the `<head>` of your site that looks something like this: `<link rel="me" href="https://github.com/reillypascal" />`. Substitute the URL in the `href=""` field with your own GitHub profile URL. This allows you to use your website to sign in to Webmention\.io, with your GitHub page acting as a trusted third party to verify your identity.
 
@@ -70,7 +71,7 @@ If you want to validate that your mentions are working properly, you can use [we
 
 In summary: two lines of HTML in the `<head>` tag, plus a link to your endpoint on each post is plenty to get up and running!
 
-### Sending Webmentions (No Command Line)
+## Sending Webmentions (No Command Line)
 
 There are a number of ways to send webmentions to someone whose post you link to. In many cases, people will include a form at the bottom of posts (e.g., see the bottom of this post), but if you can't find that, you have a few options.
 
@@ -82,7 +83,7 @@ The simplest way to find someone's endpoint if it's not clearly listed:
 
 A quick way to check if the page supports webmentions before bothering with this is Brent Lineberry's [Supports Webmentions?](https://orangegnome.com/posts/2929/supports-webmentions-bookmarklet) bookmarklet. If you bookmark this in your browser, you can click the bookmark while on a page and it will let you know if the page supports webmentions. Juha-Matti Santala also has a [bookmarklet](https://hamatti.org/posts/webmention-bookmarklet/) that does something similar. If you right-click in your bookmark bar and paste the code snippet from the bottom of the post into the URL field, it should work. The benefit to this is that clicking on it copies the endpoint URL to your clipboard, so you can ctrl + V/cmd + V it easily.
 
-### Making a Webmentions Form
+## Making a Webmentions Form
 
 If you want to make things easier for your visitors, here's how to add a form to your site for people to send you mentions. Below is the HTML I use. Notice the URL in the `action=""` field — that's the only thing you should have to change to make this work on your site. Replace “reillyspitzfaden.com” with your own URL and you should be set! 
 
@@ -115,7 +116,7 @@ One thing to note is that without some further JavaScript, the page will reload 
 
 I don't mind enough to bother changing this behavior, plus I prefer to minimize client-side JavaScript — which would be necessary — but just something to be aware of.
 
-### Making Your Mentions Richer with Microformats
+## Making Your Mentions Richer with Microformats
 
 If you go to the URL `https://webmention.io/api/mentions.jf2?token=<your-webmention-token>` (get your token [here](https://webmention.io/settings) after signing in to Webmention\.io), you can view the raw JSON data for webmentions sent to your site, which can be useful for understanding what's going on under the hood. When I first viewed this, I noticed that some people's mentions included details in an “author” field. When I tested sending mentions to myself, my “author” field was blank, and the difference seemed to be [microformats](https://developer.mozilla.org/en-US/docs/Web/HTML/Guides/Microformats) — after adding them, my “author” field was filled out, as shown below:
 
@@ -161,7 +162,7 @@ In addition to this card, the entire article (including the card) is surrounded 
 
 In addition to enriching webmention data, microformats make a number of other [IndieWeb](https://indieweb.org/) practices possible, which I will describe more in a future post.
 
-### Sending Webmentions (Command Line)
+## Sending Webmentions (Command Line)
 
 Searching the page for a mention endpoint and typing into that is not too hard to do, but it's also not very convenient. Two ways to send webmentions using the terminal are to use cURL, or to use [Webmention.app](https://webmention.app/docs#using-the-command-line). With cURL, you format your command as `curl -i -d source=source -d target=target endpoint`. So for example, to RSVP to the Homebrew Website Club, I might run
 
@@ -185,7 +186,7 @@ npx webmention https://reillyspitzfaden.com/feed.xml --limit 1 --send
 
 One potential issue is that this package seems to be a little outdated these days. When I tried to install it on my site, NodeJS showed some critical vulnerabilities. When I installed it in its own separate folder, this wasn't as much of an issue for some reason, so you might try that — make a folder, open it in the terminal, and then run `npm install @remy/webmention`. The [Webmention.app](https://webmention.app/) site also offers some other tools, so you might play with those, although I haven't used them myself.
 
-### Accessing Mentions in Eleventy
+## Accessing Mentions in Eleventy
 
 Eleventy lets you use [JavaScript data files](https://www.11ty.dev/docs/data-js/) which will run when the site builds and make the resulting data globally available. These files go in the `_data` subfolder in your site source directory, and the data is available as an object with the same name as the file (e.g., the file `webmentions.mjs` will make the data available as the `webmentions` object globally).
 
@@ -286,7 +287,7 @@ I filter the mentions by the following rules:
 
 I then use the Liquid keyword `assign` to assign the results of the `webWebmentions` filter to the `web_mentions` variable, allowing me to access and further parse them in the Liquid template.
 
-### Automatically Bringing in New Mentions
+## Automatically Bringing in New Mentions
 
 <!-- Client-side JS -->
 
@@ -300,9 +301,49 @@ On my home server, however, `cron` was super easy to use. `cron` syntax has 5 fi
 0 2 * * * curl -X POST -d {} "https://api.netlify.com/build_hooks/<your-hook-here>"
 ```
 
-<!-- ### Fediverse Interactions as Webmentions with Bridgy
+## Fediverse Interactions as Webmentions with Bridgy
 
-[Bridgy](https://brid.gy/) -->
+I like to [POSSE](https://www.citationneeded.news/posse/) my posts (“Publish on Your Own Site, Syndicate Elsewhere”) on Mastodon and Bluesky. It's a nice balance between the ownership of my data that having my own site provides, and the broader reach of social media platforms. It turns out it's also possible to bring in Mastodon/Bluesky responses, likes, and reposts, and display them on my site using the [Bridgy](https://brid.gy/) service. The IndieWeb community calls this [backfeeding](https://indieweb.org/backfeed), and comments that
+
+> We POSSE to make it easier for our friends and others to read our posts.
+
+> The point of implementing backfeed is to similarly make it easy for those same people to interact with those POSSE copies in a way that makes it back to the original, thus make it easier for you, the author of those original posts on your indieweb site to read their comments, and view other interactions. 
+
+Here, I'll go through how to set up Bridgy to do this. From [brid.gy](https://brid.gy/), you can click on one of the buttons under “connect your accounts.” The process then looks a bit different for Mastodon and Bluesky. 
+
+### Mastodon and Bridgy
+
+After clicking on the Mastodon button, you'll have the option to “cross-post to a Mastodon account” or “connect directly to the fediverse.” Choose the “cross-post to a Mastodon account” option. On the next page, enter your Mastodon instance (e.g., mastodon\.social, etc. — just the instance/server name, not your username) in the field labeled ”enter a Mastodon instance.” This should start backfeeding your posts. 
+
+For both Mastodon and Bluesky (but it seems especially for Mastodon), include the following in each post:
+
+```html
+<a rel="syndication" class="u-syndication" href="https://hachyderm.io/@reillypascal/114559446968424613"></a>
+```
+
+Replace the ``href""` contents with the URL of the Mastodon post where you share the link to your website post. Note that you will likely need to come back and add this after sharing your post, in order to actually have the URL! I have a `fedi_url` field in the Eleventy [frontmatter](https://www.11ty.dev/docs/data-frontmatter/) of my blog posts, and the following code in my blog post [layout](https://www.11ty.dev/docs/layouts/):
+
+```liquid
+{% raw %}{% if fedi_url %}
+    <div style="display:none;">
+        {%- for url in fedi_url %}
+            <a rel="syndication" class="u-syndication" href="{{ url }}"></a>
+        {%- endfor %}
+    </div>
+{% endif %}{% endraw %}
+```
+
+### Bridgy and Bluesky
+
+For Bluesky, enter your full Bluesky account handle in the “Bluesky handle” field at [brid.gy](https://brid.gy/). It will ask for your handle and password, with the option to set up a password just for Bridgy in your [Bluesky settings](https://bsky.app/settings/app-passwords) if you don't want to use your main password. After this, things work similarly to for Mastodon. Add the HTML below to each post (replacing the `href=""` contents with the URL on Bluesky where you shared that post), or use e.g., Eleventy to generate something similar.
+
+```html
+<a rel="syndication" class="u-syndication" href="https://bsky.app/profile/reillypascal.bsky.social/post/3lpunq4h42s2p"></a>
+```
+
+### Wrapping up Bridgy
+
+It's important for both Mastodon and Bluesky to update website posts with links containing the class `u-syndication`. I usually get at least some Bluesky backfeeding without this, but it seems to be more important for Mastodon.
 
 Thanks for reading! Hopefully this can be of assistance to someone.
 
