@@ -306,6 +306,7 @@ On my home server, however, `cron` was super easy to use. `cron` syntax has 5 fi
 I like to [POSSE](https://www.citationneeded.news/posse/) my posts (“Publish on Your Own Site, Syndicate Elsewhere”) on Mastodon and Bluesky. It's a nice balance between the ownership of my data that having my own site provides, and the broader reach of social media platforms. It turns out it's also possible to bring in Mastodon/Bluesky responses, likes, and reposts, and display them on my site using the [Bridgy](https://brid.gy/) service. The IndieWeb community calls this [backfeeding](https://indieweb.org/backfeed), and comments that
 
 > We POSSE to make it easier for our friends and others to read our posts.
+
 > The point of implementing backfeed is to similarly make it easy for those same people to interact with those POSSE copies in a way that makes it back to the original, thus make it easier for you, the author of those original posts on your indieweb site to read their comments, and view other interactions. 
 
 Here, I'll go through how to set up Bridgy to do this. From [brid.gy](https://brid.gy/), you can click on one of the buttons under “connect your accounts.” The process then looks a bit different for Mastodon and Bluesky. 
