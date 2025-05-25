@@ -1,6 +1,8 @@
 ---
 title: Photoblog — Highland Park
-fedi_url: 
+fedi_url:
+  - https://hachyderm.io/@reillypascal/114565381319126305
+  - https://bsky.app/profile/did:plc:7bvcd7usebxsagbrjbgpb75u/post/3lpxbx7teoc2o
 og_image: /media/blog/2025/05/highland-park/IMG_20250524_182657_735_cr.jpg
 og_image_width: 1200
 og_image_height: 630

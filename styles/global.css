@@ -365,6 +365,7 @@ blockquote {
         font-size: 40px;
         color: var(--accent-dark);
         margin: -13px 8px 0 0;
+        padding-bottom: 0;
     }
     & ul, ol {
         padding-left: 32px;
