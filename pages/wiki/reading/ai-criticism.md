@@ -33,6 +33,10 @@ tags:
 
 > As we speak, the tech industry is grappling with a mid-life crisis where it desperately searches for the next hyper-growth market, eagerly pushing customers and businesses to adopt technology that nobody asked for in the hopes that they can keep the Rot Economy alive.
 
+<!-- ## Effects on the Broader Internet
+
+- Molly White, “[‘Wait, not like that’: Free and open access in the age of generative AI](https://www.citationneeded.news/free-and-open-access-in-the-age-of-generative-ai/)” -->
+
 ## Responses to AI Promoters
 
 - Edward Ongweso Jr., “[The phony comforts of useful idiots](https://thetechbubble.substack.com/p/the-phony-comforts-of-useful-idiots)”
