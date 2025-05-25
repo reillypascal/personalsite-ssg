@@ -1,7 +1,6 @@
 ---
 title: Glitch Art Reading
 description: Discussion of my bibliography on glitch art
-canonical_url: https://reillyspitzfaden.com/digital-garden/reading/glitch-art-reading/
 date: 2025-04-15T00:00:00-0500
 updated: 
 octothorpes:
@@ -9,6 +8,7 @@ octothorpes:
   - music
 tags:
   - wiki
+  - reading
   - databending
   - glitch
 draft: true

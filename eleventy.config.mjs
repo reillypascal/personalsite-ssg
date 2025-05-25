@@ -214,6 +214,10 @@ export default async function (eleventyConfig) {
     return collectionApi.getFilteredByTags("notebook", "wiki");
   });
 
+  eleventyConfig.addCollection("wikiReading", function (collectionApi) {
+    return collectionApi.getFilteredByTags("reading", "wiki");
+  });
+
   eleventyConfig.addCollection("wikiTutorials", function (collectionApi) {
     return collectionApi.getFilteredByTags("tutorial", "wiki");
   });
