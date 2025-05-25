@@ -16,4 +16,8 @@ I do not use large language models (LLMs) or any other form of “generative AI�
 
 This is an ever-growing library of links to writing critical of generative AI. -->
 
+> I think we should shed the idea that AI is a technological artifact with political features and recognize it as a political artifact through and through. AI is an ideological project to shift authority and autonomy away from individuals, towards centralized structures of power.
+
+— Ali Alkhatib, “[Defining AI](https://ali-alkhatib.com/blog/defining-ai)”
+
 </main>
