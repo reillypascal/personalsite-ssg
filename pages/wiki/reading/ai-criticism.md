@@ -13,9 +13,12 @@ tags:
 
 ## Bullets
 - Low-quality outputs, e.g., “[downward pressure on code quality](#coding-on-copilot%3A-2023-data-suggests-downward-pressure-on-code-quality)”
-- Accountability sink; [tool to reinscribe existing social biases](#to-live-in-their-utopia%3A-why-algorithmic-systems-create-absurd-outcomes)
-- It's a [bubble driven by the demand for more tech hypergrowth markets](#economics); currently dragging down the rest of tech, too
-<!-- - Concentrates control over computation: models take a huge amount of computational power to train and run; inflates demand for cloud computing infrastructure
+- Accountability sink; [reinscribes existing social biases](#to-live-in-their-utopia%3A-why-algorithmic-systems-create-absurd-outcomes)
+- It's a [bubble driven by the demand for more tech hypergrowth markets](#economics)
+
+<!-- 
+; currently dragging down the rest of tech, too
+- Concentrates control over computation: models take a huge amount of computational power to train and run; inflates demand for cloud computing infrastructure
 - Invisible labor: classification, labeling, RLHF
 - At the top, driven by a desire to replace workers or have a bargaining chip to use against us
 - Environmental impact: missed and stretched climate goals, reopening coal plants
