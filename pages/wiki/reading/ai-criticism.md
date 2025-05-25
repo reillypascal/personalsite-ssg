@@ -1,6 +1,6 @@
 ---
-title: AI Criticism Reading
-description: Annotated reading list on AI criticism
+title: AI Criticism
+description: Annotated reading list of sources critical of AI
 date: 2025-05-25T13:14:00-0400
 octothorpes:
   - 
