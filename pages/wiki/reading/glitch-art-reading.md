@@ -8,6 +8,7 @@ octothorpes:
   - Audio
   - music
 tags:
+  - wiki
   - databending
   - glitch
 draft: true

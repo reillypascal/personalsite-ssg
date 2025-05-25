@@ -8,7 +8,7 @@ og_image_height:
 date: 2025-05-14T23:44:00-0400
 octothorpes: 
 tags:
-  - digital-garden
+  - wiki
   - notebook
   - radio
   - raspberry-pi

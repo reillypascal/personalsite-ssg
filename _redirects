@@ -9,6 +9,10 @@ http://reillyspitzfaden.netlify.app/* http://reillyspitzfaden.com/:splat 301!
 https://reillyspitzfaden.com/blogposts/* https://reillyspitzfaden.com/blog/:splat 301!
 http://reillyspitzfaden.com/blogposts/* http://reillyspitzfaden.com/blog/:splat 301!
 
+# Renamed Wiki
+https://reillyspitzfaden.com/digital-garden/* https://reillyspitzfaden.com/wiki/:splat 301!
+http://reillyspitzfaden.com/digital-garden/* http://reillyspitzfaden.com/wiki/:splat 301!
+
 # CV updates
 https://reillyspitzfaden.com/documents/spitzfaden-CV-2023.pdf https://reillyspitzfaden.com/documents/spitzfaden-CV-2024.pdf 301!
 http://reillyspitzfaden.com/documents/spitzfaden-CV-2023.pdf http://reillyspitzfaden.com/documents/spitzfaden-CV-2024.pdf 301!

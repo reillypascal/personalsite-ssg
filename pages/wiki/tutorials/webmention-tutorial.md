@@ -16,7 +16,7 @@ octothorpes:
   - indieweb
   - html
 tags:
-  - digital-garden
+  - wiki
   - 11ty
   - indieweb
   - tutorial

@@ -207,16 +207,15 @@ export default async function (eleventyConfig) {
     const posts = collectionApi.getFilteredByTag("post");
     const notes = collectionApi.getFilteredByTag("note");
     const interactions = collectionApi.getFilteredByTag("interaction");
-    // const digital_garden = collectionApi.getFilteredByTag("digital-garden");
     return posts.concat(notes).concat(interactions).sort(function (a, b) { return a.date - b.date; });
   });
 
-  eleventyConfig.addCollection("gardenNotebook", function (collectionApi) {
-    return collectionApi.getFilteredByTags("notebook", "digital-garden");
+  eleventyConfig.addCollection("wikiNotebook", function (collectionApi) {
+    return collectionApi.getFilteredByTags("notebook", "wiki");
   });
 
-  eleventyConfig.addCollection("gardenTutorials", function (collectionApi) {
-    return collectionApi.getFilteredByTags("tutorial", "digital-garden");
+  eleventyConfig.addCollection("wikiTutorials", function (collectionApi) {
+    return collectionApi.getFilteredByTags("tutorial", "wiki");
   });
 
   eleventyConfig.addGlobalData('generated', () => {

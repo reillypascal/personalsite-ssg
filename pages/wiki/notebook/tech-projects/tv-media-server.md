@@ -8,7 +8,7 @@ og_image_height:
 date: 2025-05-15T01:10:00-0400
 octothorpes: 
 tags:
-  - digital-garden
+  - wiki
   - notebook
   - tech-projects
   - media-center
