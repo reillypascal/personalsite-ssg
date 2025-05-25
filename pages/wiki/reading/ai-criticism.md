@@ -1,7 +1,7 @@
 ---
 title: AI Criticism Reading
 description: Annotated reading list on AI criticism
-date: 2025-05-25T12:20:00-0400
+date: 2025-05-25T13:14:00-0400
 octothorpes:
   - 
 tags:
@@ -9,7 +9,6 @@ tags:
   - reading
   - ai
   - politics
-draft: true
 ---
 
 ## Bullets
