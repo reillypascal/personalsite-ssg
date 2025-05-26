@@ -154,12 +154,20 @@ footer {
     margin-bottom: 8px;
     padding: 0;
     & .social-icons { margin-top: 16px; }
-    & .social-icons a:not(:last-child) { padding-right: 12px; }
+    & .social-icons a:not(:last-child) { 
+        padding-right: 12px;
+        display: inline-flex;
+        flex-flow: row wrap;
+    }
+    & .footer-link-list a:not(:last-child) { 
+        padding-right: 24px;
+        display: inline-flex;
+        flex-flow: row wrap;
+        @media screen and (min-width: 480px) { padding-right: 32px; }
+    }
 }
 
-@media screen and (min-width: 480px) {
-    footer table td:not(:last-child) { padding-right: 14px; }
-}
+
 
 /* ######## Header and Nav ########*/
 header { padding-bottom: 4px; }

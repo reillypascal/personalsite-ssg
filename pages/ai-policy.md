@@ -1,13 +1,13 @@
 ---
 title: AI Policy
-description: My policy on the use of AI on this site, and a library of materials expanding on my positions
+description: My policy on the use of AI on this site, and links to a library of materials expanding on my positions
 ---
 
 <link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
 
 <main id="content" role="main">
 
-# AI Policy{.sectionHeader}
+<h1 class="sectionHeader">AI Policy</h1>
 
 I do not use large language models (LLMs) or any other form of “generative AI” in any capacity in any of the writing, music, code, or images on this website.
 

@@ -1,14 +1,14 @@
 ---
-title: AI — Critical Writing and Reporting
+title: AI-Critical Writing and Reporting
 description: Reading list of sources critical of AI or reporting on harm caused by its use
-date: 2025-05-25T13:14:00-0400
+date: 2025-05-25T22:40:00-0400
 octothorpes:
   - ai
 tags:
   - wiki
-  - reading
   - ai
   - politics
+  - reading
 ---
 
 This page is a collection of reporting, research, and essays critical of large language models (LLMs) and other “generative AI.” Articles are organized based on topic. It is an ever-growing list.
