@@ -21,13 +21,13 @@ tags:
 
 - Noam Scheiber, “[At Amazon, Some Coders Say Their Jobs Have Begun to Resemble Warehouse Work](https://www.nytimes.com/2025/05/25/business/amazon-ai-coders.html)” ([archived link](https://archive.is/g127S))
 
-> Three Amazon engineers said that managers had increasingly pushed them to use A.I. in their work over the past year. The engineers said that the company had raised output goals and had become less forgiving about deadlines. It has even encouraged coders to gin up new A.I. productivity tools at an upcoming hackathon, an internal coding competition. One Amazon engineer said his team was roughly half the size it had been last year, but it was expected to produce roughly the same amount of code by using A.I.
+> Three Amazon engineers said that managers had increasingly pushed them to use A.I. in their work over the past year. The engineers said that the company had raised output goals and had become less forgiving about deadlines. \[…] One Amazon engineer said his team was roughly half the size it had been last year, but it was expected to produce roughly the same amount of code by using A.I.
 
 ## Political and Social Implications
 
 - Ali Alkhatib, “[To Live in Their Utopia: Why Algorithmic Systems Create Absurd Outcomes](https://ali-alkhatib.com/research#utopia)”
 
-> The promise AI’s proponents have made for decades is one in which our needs are predicted, anticipated, and met - often before we even realize it. Instead, algorithmic systems, particularly AIs trained on large datasets and deployed to massive scales, seem to keep making the wrong decisions, causing harm and rewarding absurd outcomes. Attempts to make sense of why AIs make wrong calls in the moment explain the instances of errors, but how the environment surrounding these systems precipitate those instances remains murky. This paper draws from anthropological work on bureaucracies, states, and power, translating these ideas into a theory describing the structural tendency for powerful algorithmic systems to cause tremendous harm. I show how administrative models and projections of the world create marginalization, just as algorithmic models cause representational and allocative harm. This paper concludes with a recommendation to avoid the absurdity algorithmic systems produce by denying them power.
+> This paper draws from anthropological work on bureaucracies, states, and power, translating these ideas into a theory describing the structural tendency for powerful algorithmic systems to cause tremendous harm. I show how administrative models and projections of the world create marginalization, just as algorithmic models cause representational and allocative harm.
 
 ## Economics
 
