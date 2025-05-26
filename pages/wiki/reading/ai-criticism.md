@@ -17,6 +17,12 @@ tags:
 
 > We find disconcerting trends for maintainability. Code churn -- the percentage of lines that are reverted or updated less than two weeks after being authored -- is projected to double in 2024 compared to its 2021, pre-AI baseline. We further find that the percentage of “added code” and “copy/pasted code” is increasing in proportion to “updated,” “deleted,” and “moved” code. In this regard, code generated during 2023 more resembles an itinerant contributor, prone to violate the [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)-ness of the repos visited.
 
+## Labor
+
+- Noam Scheiber, “[At Amazon, Some Coders Say Their Jobs Have Begun to Resemble Warehouse Work](https://www.nytimes.com/2025/05/25/business/amazon-ai-coders.html)” ([archived link](https://archive.is/g127S))
+
+> Three Amazon engineers said that managers had increasingly pushed them to use A.I. in their work over the past year. The engineers said that the company had raised output goals and had become less forgiving about deadlines. It has even encouraged coders to gin up new A.I. productivity tools at an upcoming hackathon, an internal coding competition. One Amazon engineer said his team was roughly half the size it had been last year, but it was expected to produce roughly the same amount of code by using A.I.
+
 ## Political and Social Implications
 
 - Ali Alkhatib, “[To Live in Their Utopia: Why Algorithmic Systems Create Absurd Outcomes](https://ali-alkhatib.com/research#utopia)”
@@ -32,10 +38,6 @@ tags:
 - Ed Zitron, “[The Rot-Com Bubble](https://www.wheresyoured.at/rotcombubble/)”
 
 > As we speak, the tech industry is grappling with a mid-life crisis where it desperately searches for the next hyper-growth market, eagerly pushing customers and businesses to adopt technology that nobody asked for in the hopes that they can keep the Rot Economy alive.
-
-<!-- ## Effects on the Broader Internet
-
-- Molly White, “[‘Wait, not like that’: Free and open access in the age of generative AI](https://www.citationneeded.news/free-and-open-access-in-the-age-of-generative-ai/)” -->
 
 ## Responses to AI Promoters
 
