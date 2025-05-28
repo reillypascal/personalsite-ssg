@@ -355,12 +355,16 @@ blockquote {
     /* color: var(--accent-med-light); */
     /* border-left: 1px solid var(--accent-med-light); */
     /* padding-left: 12px; */
-    color: var(--accent-light);
-    display: flex;
+    /* display: flex; */
     /* align & justify were recommended to me on fedi, but seem unnecessary */
     /* align-items: start; */
     /* justify-content: center; */
+    color: var(--accent-light);
     margin-left: 0;
+    /* grid stuff */
+    display: grid;
+	grid-template-columns: min-content 1fr;
+	gap: 0.75ch;
     &:before {
         /* float: left;
         margin: -14px 18px auto 0; */
@@ -370,10 +374,12 @@ blockquote {
         display: inline; */
         content: "“";
         font-weight: 900;
-        font-size: 40px;
         color: var(--accent-dark);
-        margin: -13px 8px 0 0;
-        padding-bottom: 0;
+        font-size: 2.75rem;
+        margin: -16px 0 0 0;
+    }
+    * {
+        grid-column: 2;
     }
     & ul, ol {
         padding-left: 32px;
@@ -386,14 +392,9 @@ blockquote {
 }
 @media screen and (min-width: 768px) {
     blockquote {
-        /* was 12px */
-        /* margin-left: 20px; */
         &:before {
-            /* top: -18px;
-            left: -20px; */
             margin-top: -18px;
-            margin-right: 10px;
-            font-size: 46px;
+            font-size: 3rem;
         }
     }
 }
