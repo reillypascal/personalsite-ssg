@@ -48,6 +48,16 @@ Finally, there's email! I have a `mailto` link at the bottom of every post, and 
 
 ### Website Ownership for the Non-Developer
 
+<aside>
+
+In [the link I shared above](https://tracydurnell.com/2024/05/17/indieweb-next-stage/), Tracy also wants to see
+
+> advocating for adoption of IndieWeb tech by platforms like Tumblr, WordPress, Ghost, and Buttondown, versus targeting individuals, so everyone who uses these tools can be brought in without having to do work on their own
+
+I think that makes a lot of sense, and is an important part of the process of welcoming people onto the IndieWeb (and the small-i independent web more broadly). While my discussion here is more narrowly focused on ways to help people get their own websites *without* these services, I just wanted to include this note beforehand to contextualize my own thoughts.
+
+</aside>
+
 OK so someone wants to have a personal website, but doesn't know much/anything about programming. What then? Böck [mentions](https://mxb.dev/blog/the-indieweb-for-everyone/#lowering-the-barrier) Mastodon, Ghost, Tumblr, and micro\.blog as contributing to lowering the barrier of owning one's own content, and those certainly are decent options.
 
 Even with the more blog-like Ghost and micro\.blog, as well as similar things like [Bear](https://bearblog.dev/), my biggest issues are 1\) the editor is coupled to the backend, and 2\) the data formats for your pages are less standardized than I would like. To expand on point 1, the tool for creating pages and posts is accessible via a web interface owned by the same people running the hosting servers. For point 2, I would prefer a generic format that has stood the test of time, such as Markdown.
