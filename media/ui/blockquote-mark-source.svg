@@ -2,16 +2,16 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="22"
-   height="22"
-   viewBox="0 0 0.30555556 0.30555556"
+   width="20"
+   height="20"
+   viewBox="0 0 0.27777778 0.27777778"
    version="1.1"
    id="svg1"
-   sodipodi:docname="blockquote-mark.svg"
+   sodipodi:docname="blockquote-mark-source.svg"
+   inkscape:version="1.4.2 (ebf0e940, 2025-05-08)"
    inkscape:export-filename="blockquote-mark.svg"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96"
-   inkscape:version="1.4.2 (ebf0e940, 2025-05-08)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -25,24 +25,28 @@
      inkscape:pageopacity="0.0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="18.157874"
-     inkscape:cx="16.053641"
-     inkscape:cy="9.8855185"
-     inkscape:window-width="1376"
-     inkscape:window-height="800"
+     inkscape:document-units="mm"
+     inkscape:zoom="12.566771"
+     inkscape:cx="7.9177061"
+     inkscape:cy="9.946867"
+     inkscape:window-width="1216"
+     inkscape:window-height="717"
      inkscape:window-x="60"
      inkscape:window-y="38"
      inkscape:window-maximized="0"
-     inkscape:current-layer="svg1" />
+     inkscape:current-layer="layer1"
+     showgrid="false" />
   <defs
      id="defs1" />
   <g
-     id="layer1"
-     transform="matrix(1.1421133,0,0,1.1421133,-0.00532495,-0.00325822)">
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
     <path
        style="font-weight:bold;font-size:0.637667px;font-family:'Libre Franklin';-inkscape-font-specification:'Libre Franklin Bold';fill:#883462;stroke-width:1.07669"
        d="m 0.16986961,0.23065432 c -0.005951,0 -0.008927,-0.002976 -0.008927,-0.008927 v -0.0695057 c 0,-0.002551 8.5033e-4,-0.004889 0.002551,-0.007014 l 0.05739,-0.09054871 c 0.002551,-0.0034009 0.005739,-0.0059515 0.009565,-0.007652 0.003826,-0.0017005 0.007439,-0.0025507 0.0108403,-0.0025507 h 0.0108403 c 0.002976,0 0.005102,0.0012753 0.006377,0.003826 0.001701,0.0021255 0.001913,0.0046762 6.3766e-4,0.007652 L 0.23172331,0.1190626 c -0.001701,0.004676 -0.002338,0.008289 -0.001913,0.0108403 8.5e-4,0.002551 0.003188,0.004251 0.007014,0.005101 l 0.0102027,6.3767e-4 c 0.005101,4.2511e-4 0.008502,0.001488 0.0102027,0.003188 0.001701,0.001701 0.002551,0.004676 0.002551,0.008927 v 0.072694 c 0,0.006802 -0.003188,0.0102027 -0.009565,0.0102027 h -0.0803461 z m -0.1428374,0 c -0.0059515,0 -0.0089273,-0.002976 -0.0089273,-0.008927 v -0.0695057 c 0,-0.002551 6.3767e-4,-0.004889 0.001913,-0.007014 l 0.0580277,-0.09054871 c 0.0021255,-0.0034009 0.0051013,-0.0059515 0.0089273,-0.007652 0.0042511,-0.0017005 0.0080771,-0.0025507 0.01147801,-0.0025507 h 0.01020267 c 0.003401,0 0.005739,0.0012753 0.007014,0.003826 0.001275,0.0021255 0.001488,0.0046762 6.3767e-4,0.007652 L 0.0888859,0.1190626 c -0.0021255,0.004676 -0.0029758,0.008289 -0.0025507,0.0108403 8.502e-4,0.002551 0.0031883,0.004251 0.0070143,0.005101 l 0.01084034,6.3767e-4 c 0.004676,4.2511e-4 0.007864,0.001488 0.009565,0.003188 0.001701,0.001701 0.002551,0.004676 0.002551,0.008927 v 0.072694 c 0,0.006802 -0.002976,0.0102027 -0.008927,0.0102027 H 0.02703221 Z"
        id="text1"
-       aria-label="“" />
+       aria-label="“"
+       sodipodi:nodetypes="cssccssscccccccssscccsscccsscccccccssscc" />
   </g>
 </svg>

@@ -364,7 +364,7 @@ blockquote {
     /* grid stuff */
     display: grid;
 	grid-template-columns: min-content 1fr;
-	gap: 0.75ch;
+	gap: 0.7ch;
     &:before {
         /* float: left;
         margin: -14px 18px auto 0; */
@@ -372,11 +372,13 @@ blockquote {
         top: -14px;
         left: -18px; 
         display: inline; */
-        content: "“";
-        font-weight: 900;
+        /* content: "“"; */
+        content: url(/media/ui/blockquote-mark.svg);
         color: var(--accent-dark);
+        padding-top: 2px;
+        /* font-weight: 900;
         font-size: 2.75rem;
-        margin: -16px 0 0 0;
+        margin: -16px 0 0 0; */
     }
     * {
         grid-column: 2;
@@ -390,14 +392,15 @@ blockquote {
         padding: 0;
     }
 }
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
     blockquote {
+        gap: 0.75ch;
         &:before {
             margin-top: -18px;
             font-size: 3rem;
         }
     }
-}
+} */
 /* @media screen and (min-width: 1325px) {
     blockquote {
         margin-left: 12px;
