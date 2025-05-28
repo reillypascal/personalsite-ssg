@@ -5,26 +5,20 @@ fedi_url:
 og_image: 
 og_image_width: 
 og_image_height: 
-date: 2025-05-29T12:00:00-0400
-octothorpes:
-  - 
+date: 2025-05-28T19:06:00-0400
 tags:
   - post
   - indieweb
   - webdev
   - tech-philosophy
-draft: true
 indienews: true
 ---
-
-<!-- <link rel="stylesheet" type="text/css" href="/styles/code/prism-dracula.css" />
-<link rel="stylesheet" type="text/css" href="/styles/code/code-tweaks.css" /> -->
 
 Chris chose this month's theme of “[small web communities](https://thoughts.uncountable.uk/may-2025-indieweb-carnival-small-web-communities/).” I'm writing about making it easier to become part of a small web community on the IndieWeb: some potential inroads, potential problems, and open questions I have.
 
 ## Barriers to Joining the IndieWeb
 
-Max Böck [succinctly captures](https://mxb.dev/blog/the-indieweb-for-everyone/) an issue that's been on my mind lately, writing that 
+Max Böck (writing back in 2022) [succinctly captures](https://mxb.dev/blog/the-indieweb-for-everyone/) an issue that's been on my mind lately, observing that 
 
 > Generally speaking: The more independence a technology gives you, the higher its barrier for adoption.
 
@@ -42,9 +36,13 @@ First, Tracy Durnell [suggests](https://tracydurnell.com/2024/05/17/indieweb-nex
 
 > The more people who use the independent web — whether creating new work, participating in conversations, curating links, or simply reading — the healthier it becomes.
 
-I like the idea of expanding participation in the IndieWeb beyond just the people who own a website, and including non-site-owning readers. Speaking as someone who maintains my own site on the IndieWeb, I love when I see people interact with my writing on social media sites where I [POSSE](https://www.citationneeded.news/posse/) my posts — no webmentions required. Comment sections on personal sites can be great as well, [^2] and can offer further ways to interact. 
+I like the idea of expanding participation in the IndieWeb beyond just the people who own a website, and including non-site-owning readers. Speaking as someone who maintains my own site on the IndieWeb, I love when I see people interact with my writing on social media sites where I [POSSE](https://www.citationneeded.news/posse/) my posts — no webmentions required. 
 
-Finally, there's email! I have a `mailto` link at the bottom of every post, and I've had nice experiences sending and receiving emails related to my and others' writing on the IndieWeb. Even outside the practicality of more (and more ubiquitous) ways to talk, I like the personal nature of (non-work) email, and the way it feels kind of like letter-writing. 
+Comment sections on personal sites can be great as well, [^2] and can offer further ways to interact. Alex (someone who does have webmentions on their site) [writes about](https://alexsirac.com/webmentions-make-me-sad/) preferring when blogs *also* have a comment section, noting that
+
+> I’m just sometimes tired of high quality stuff, you know? Sometimes, all I want is to comment on someone’s post to say « lol » or « nice thanks for sharing » or « saaame! » and that’s not something that warrants a whole blog post and entry in my RSS feed.
+
+Finally, there's email. I have a `mailto` link at the bottom of every post, and I've had nice experiences sending and receiving emails related to my and others' writing on the IndieWeb. Even outside the practicality of more (and more ubiquitous) ways to talk, I like the personal nature of (non-work) email, and the way it feels kind of like letter-writing. 
 
 ### Website Ownership for the Non-Developer
 
@@ -108,7 +106,7 @@ I plan to continue writing on this topic, and as I continue to think through all
 
 [^1]: I have a [collection of tutorials](https://reillyspitzfaden.com/wiki/tutorials/webmention-tutorial/) on webmentions and microformats in my personal wiki, including simple ways to get started that require minimal coding.
 
-[^2]: I [made a basic comment section](/posts/2024/01/do-read-the-comments/) on my site back when I started. I've disabled it from time to time — I've mostly gotten spam from it — but I currently have it enabled in the spirit of what I'm discussing here.
+[^2]: I [made a basic comment section](/posts/2024/01/do-read-the-comments/) on my site back when I started. I've disabled it from time to time — I've mostly gotten spam — but I recently re-enabled it in the spirit of what I'm discussing here.
 
 <!-- although I currently have it commented out in the site code since I had only gotten spam for about a year. If people expressed an interest, I would certainly be open to putting it up again, though — I like the idea of people being able to interact regardless of if they have a site or not. -->
 

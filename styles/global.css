@@ -489,16 +489,17 @@ figcaption { margin-top: 16px; }
 }
 
 /* external links - borrowed from Wikipedia; footer > * doesn't work, but footer * does: https://stackoverflow.com/a/68211003 */
-/* ,
-a[href*=mailto]  */
-a[href*="//"]:not([href*="https://reillyspitzfaden.com"]):not(footer *):not(.u-syndication):not(.rss-link):not(lite-youtube *) {
+/* mask: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Ctitle%3E external link %3C/title%3E%3Cpath fill='currentColor' d='M6 1h5v5L8.86 3.85 4.7 8 4 7.3l4.15-4.16zM2 3h2v1H2v6h6V8h1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1'/%3E%3C/svg%3E");
+    background: currentColor;
+    mask-size: cover; */
+/* a[href*="//"]:not([href*="https://reillyspitzfaden.com"]):not(footer *):not(.u-syndication):not(.rss-link):not(lite-youtube *) {
     background-image: url(/media/external-link-paleblue.svg);
     background-position-x: right;
     background-position-y: center;
     background-repeat: no-repeat;
     background-size: 0.857em;
-    padding-right: 1.15em;
-}
+    padding-right: 1.15em; 
+} */
 
 
 .octothorpes-badge { width: fit-content; }
