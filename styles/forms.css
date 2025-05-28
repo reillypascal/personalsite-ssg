@@ -116,3 +116,6 @@ textarea {
     resize: none;
     overflow: auto;
 }
+textarea[id="comment-story"] {
+    height: 6em;
+}

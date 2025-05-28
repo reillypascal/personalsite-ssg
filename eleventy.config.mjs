@@ -104,6 +104,14 @@ export default async function (eleventyConfig) {
     return pageWebmentions;
   });
 
+  eleventyConfig.addFilter("pageComments", (comments, url) => {
+    const pageComments = comments
+      .filter((comment) => comment.postURL == url)
+      .filter((comment) => comment.show)
+    
+    return pageComments;
+  });
+
   // eleventyConfig.addFilter("formatDateRfc822", (dateStr, formatStr = "EEE, dd MMM yyyy HH:mm:ss ZZZZ") => {
   //   // requires post.data.date, not post.date
   //   return DateTime.fromISO(dateStr).toFormat(formatStr);
