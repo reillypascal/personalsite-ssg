@@ -1,23 +1,24 @@
 ---
 title: May 2025 IWC — More Easily Joining Small Web Communities
-description: 
+description: For this month's IndieWeb carnival on “small web communities,” I'm thinking about lowering the barrier for web independence and freedom
 fedi_url: 
 og_image: 
 og_image_width: 
 og_image_height: 
-date: 2025-05-24T11:22:40-0400
+date: 2025-05-29T12:00:00-0400
 octothorpes:
   - 
 tags:
   - post
   - indieweb
   - webdev
+  - tech-philosophy
 draft: true
 indienews: true
 ---
 
-<link rel="stylesheet" type="text/css" href="/styles/code/prism-dracula.css" />
-<link rel="stylesheet" type="text/css" href="/styles/code/code-tweaks.css" />
+<!-- <link rel="stylesheet" type="text/css" href="/styles/code/prism-dracula.css" />
+<link rel="stylesheet" type="text/css" href="/styles/code/code-tweaks.css" /> -->
 
 Chris chose this month's theme of “[small web communities](https://thoughts.uncountable.uk/may-2025-indieweb-carnival-small-web-communities/).” I'm writing about making it easier to become part of a small web community on the IndieWeb: some potential inroads, potential problems, and open questions I have.
 
@@ -27,7 +28,7 @@ Max Böck [succinctly captures](https://mxb.dev/blog/the-indieweb-for-everyone/)
 
 > Generally speaking: The more independence a technology gives you, the higher its barrier for adoption.
 
-I love the experience I have on the IndieWeb, using technologies like webmentions and microformats [^1] to interact with others in a way that's open and modular. I like the principle of “[small pieces loosely joined](https://indieweb.org/principles),” and how that allows me to replace any one piece of my IndieWeb infrastructure should what I'm using “enshittify.” 
+I love the experience I have on the IndieWeb, using technologies like webmentions and microformats [^1] to interact with others in a way that's open and modular. I like the IndieWeb principle of “[small pieces loosely joined](https://indieweb.org/principles),” and how that allows me to replace any one piece of my IndieWeb infrastructure should what I'm using “enshittify.” 
 
 I want to make this independence more accessible — to ease some of the issue Max Böck mentions — but how? I'll use this post to think through some possibilities I've been mulling over (addressing a range of potential levels of tech experience), and I would be very interested to hear other people's thoughts and input on these possibilities!
 
@@ -41,13 +42,13 @@ First, Tracy Durnell [suggests](https://tracydurnell.com/2024/05/17/indieweb-nex
 
 > The more people who use the independent web — whether creating new work, participating in conversations, curating links, or simply reading — the healthier it becomes.
 
-I like the idea of expanding the idea of participating in the IndieWeb beyond just the people who own a website, and including non-site-owning readers. Speaking as someone who maintains my own site on the IndieWeb, I love when I see people interact with my writing on social media sites where I [POSSE](https://www.citationneeded.news/posse/) my posts — no webmentions required. Comment sections on personal sites can be great as well, [^2] and can offer further ways to interact. 
+I like the idea of expanding participation in the IndieWeb beyond just the people who own a website, and including non-site-owning readers. Speaking as someone who maintains my own site on the IndieWeb, I love when I see people interact with my writing on social media sites where I [POSSE](https://www.citationneeded.news/posse/) my posts — no webmentions required. Comment sections on personal sites can be great as well, [^2] and can offer further ways to interact. 
 
 Finally, there's email! I have a `mailto` link at the bottom of every post, and I've had nice experiences sending and receiving emails related to my and others' writing on the IndieWeb. Even outside the practicality of more (and more ubiquitous) ways to talk, I like the personal nature of (non-work) email, and the way it feels kind of like letter-writing. 
 
 ### Website Ownership for the Non-Developer
 
-OK so someone wants to have a personal website, but doesn't know much/anything about programming. What then? Böck [mentions](https://mxb.dev/blog/the-indieweb-for-everyone/#lowering-the-barrier) Mastodon, Ghost, Tumblr, and micro\.blog as contintributing to lowering the barrier of owning one's own content, and those certainly are decent options.
+OK so someone wants to have a personal website, but doesn't know much/anything about programming. What then? Böck [mentions](https://mxb.dev/blog/the-indieweb-for-everyone/#lowering-the-barrier) Mastodon, Ghost, Tumblr, and micro\.blog as contributing to lowering the barrier of owning one's own content, and those certainly are decent options.
 
 Even with the more blog-like Ghost and micro\.blog, as well as similar things like [Bear](https://bearblog.dev/), my biggest issues are 1\) the editor is coupled to the backend, and 2\) the data formats for your pages are less standardized than I would like. To expand on point 1, the tool for creating pages and posts is accessible via a web interface owned by the same people running the hosting servers. For point 2, I would prefer a generic format that has stood the test of time, such as Markdown.
 
@@ -62,6 +63,7 @@ In my ideal no- or low-code web publishing tool, authors could use a program on 
 One tool that I find to be a promising (but still imperfect) idea is [Publii](https://getpublii.com/). It's an open-source (GPL-3.0) CMS/SSG that runs as a GUI desktop app. You can use a WYSIWYG, block, or Markdown editor to write pages and posts; create menus, add page tags, add CSS, and many other things; and then generate your site, outputting a folder of static HTML/CSS/JS files that can then be put on a server.
 
 I like that this program is a standalone desktop app that can work with any server, and that it's easy to use. What I don't like:
+
 - It doesn't seem to store posts and pages as (e.g.) plain Markdown files that could easily be moved to another similar tool. 
   - It might be possible to get it to do this, but I wasn't able to figure it out; it doesn't seem to do it by default; and it certainly doesn't point the user toward this kind of workflow.
 - Design is not very flexible. You can choose from a limited selection of free themes, with paid options, but even the paid options are monolithic, and you can't combine, say, a block layout skeleton with a layout-independent color/font/icon theme.
@@ -96,7 +98,7 @@ I plan to continue writing on this topic, and as I continue to think through all
 
 [^1]: I have a [collection of tutorials](https://reillyspitzfaden.com/wiki/tutorials/webmention-tutorial/) on webmentions and microformats in my personal wiki, including simple ways to get started that require minimal coding.
 
-[^2]: I [made a basic comment section](/posts/2024/01/do-read-the-comments/) on my site back when I started, although I currently have it commented out in the site code since I had only gottem spam for about a year. If people expressed an interest, I would certainly be open to putting it up again, though — I like the idea of people being able to interact regardless of if they have a site or not.
+[^2]: I [made a basic comment section](/posts/2024/01/do-read-the-comments/) on my site back when I started, although I currently have it commented out in the site code since I had only gotten spam for about a year. If people expressed an interest, I would certainly be open to putting it up again, though — I like the idea of people being able to interact regardless of if they have a site or not.
 
 [^3]: My HTML looks kind of messy without the CSS on it, and I'm definitely interested in doing some cleanup so I can do things like participate in [CSS Naked Day](https://css-naked-day.org/) and model how things don't need to be complicated or fancy. I might also do something like [Sophie Koonin](https://localghost.dev/) has, with multiple stylesheet options for the user (try clicking on the one with the lowercase “a” in the upper right of the site).
 
