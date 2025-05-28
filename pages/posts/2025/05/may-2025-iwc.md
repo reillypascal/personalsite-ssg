@@ -98,7 +98,9 @@ I plan to continue writing on this topic, and as I continue to think through all
 
 [^1]: I have a [collection of tutorials](https://reillyspitzfaden.com/wiki/tutorials/webmention-tutorial/) on webmentions and microformats in my personal wiki, including simple ways to get started that require minimal coding.
 
-[^2]: I [made a basic comment section](/posts/2024/01/do-read-the-comments/) on my site back when I started, although I currently have it commented out in the site code since I had only gotten spam for about a year. If people expressed an interest, I would certainly be open to putting it up again, though — I like the idea of people being able to interact regardless of if they have a site or not.
+[^2]: I [made a basic comment section](/posts/2024/01/do-read-the-comments/) on my site back when I started. I've disabled it from time to time — I've mostly gotten spam from it — but I currently have it enabled in the spirit of what I'm discussing here.
+
+<!-- although I currently have it commented out in the site code since I had only gotten spam for about a year. If people expressed an interest, I would certainly be open to putting it up again, though — I like the idea of people being able to interact regardless of if they have a site or not. -->
 
 [^3]: My HTML looks kind of messy without the CSS on it, and I'm definitely interested in doing some cleanup so I can do things like participate in [CSS Naked Day](https://css-naked-day.org/) and model how things don't need to be complicated or fancy. I might also do something like [Sophie Koonin](https://localghost.dev/) has, with multiple stylesheet options for the user (try clicking on the one with the lowercase “a” in the upper right of the site).
 
