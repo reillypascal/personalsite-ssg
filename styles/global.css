@@ -379,6 +379,7 @@ blockquote {
         font-size: 2.75rem;
         margin: -16px 0 0 0; */
     }
+    /* everything but :before is in grid column 2 - lets you do multiple children to <blockquote> */
     * {
         grid-column: 2;
     }

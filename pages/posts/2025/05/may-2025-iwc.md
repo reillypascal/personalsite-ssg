@@ -1,10 +1,9 @@
 ---
 title: May 2025 IWC — More Easily Joining Small Web Communities
 description: For this month's IndieWeb carnival on “small web communities,” I'm thinking about lowering the barrier for web independence and freedom
-fedi_url: 
-og_image: 
-og_image_width: 
-og_image_height: 
+fedi_url:
+  - https://hachyderm.io/@reillypascal/114587984441132800
+  - https://bsky.app/profile/reillypascal.bsky.social/post/3lqbdbn66322l
 date: 2025-05-28T19:06:00-0400
 tags:
   - post
@@ -22,7 +21,7 @@ Max Böck (writing back in 2022) [succinctly captures](https://mxb.dev/blog/the-
 
 > Generally speaking: The more independence a technology gives you, the higher its barrier for adoption.
 
-I love the experience I have on the IndieWeb, using technologies like webmentions and microformats [^1] to interact with others in a way that's open and modular. I like the IndieWeb principle of “[small pieces loosely joined](https://indieweb.org/principles),” and how that allows me to replace any one piece of my IndieWeb infrastructure should what I'm using “enshittify.” 
+I love the experience I have on the IndieWeb, using technologies like webmentions and microformats [^1] to interact with others in a way that's open and modular. I like the IndieWeb principle of “[small pieces loosely joined](https://indieweb.org/principles),” and how that allows me to replace any one piece of my IndieWeb infrastructure should what I'm using “enshittify.”
 
 I want to make this independence more accessible — to ease some of the issue Max Böck mentions — but how? I'll use this post to think through some possibilities I've been mulling over (addressing a range of potential levels of tech experience), and I would be very interested to hear other people's thoughts and input on these possibilities!
 
@@ -107,8 +106,6 @@ I plan to continue writing on this topic, and as I continue to think through all
 [^1]: I have a [collection of tutorials](https://reillyspitzfaden.com/wiki/tutorials/webmention-tutorial/) on webmentions and microformats in my personal wiki, including simple ways to get started that require minimal coding.
 
 [^2]: I [made a basic comment section](/posts/2024/01/do-read-the-comments/) on my site back when I started. I've disabled it from time to time — I've mostly gotten spam — but I recently re-enabled it in the spirit of what I'm discussing here.
-
-<!-- although I currently have it commented out in the site code since I had only gotten spam for about a year. If people expressed an interest, I would certainly be open to putting it up again, though — I like the idea of people being able to interact regardless of if they have a site or not. -->
 
 [^3]: My HTML looks kind of messy without the CSS on it, and I'm definitely interested in doing some cleanup so I can do things like participate in [CSS Naked Day](https://css-naked-day.org/) and model how things don't need to be complicated or fancy. I might also do something like [Sophie Koonin](https://localghost.dev/) has, with multiple stylesheet options for the user (try clicking on the one with the lowercase “a” in the upper right of the site).
 
