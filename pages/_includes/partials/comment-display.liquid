@@ -2,7 +2,7 @@
 {% assign page_comments = comments.list | pageComments: pageUrl %}
 
 {% if page_comments.size > 0 %}
-    <div id="commentDisplay">
+    <article id="commentDisplay">
         <h2 class="sectionHeader">Comments</h2>
         {% for comment in page_comments %}
             <h3>{{ comment.name }}</h3>
@@ -14,5 +14,5 @@
                 <time datetime="{{ comment.created_at }}">{{ comment.created_at | date: "%A, %B %d, %Y" }}</time></a>
             </span>
         {% endfor %}
-    </div>
+    </article>
 {% endif %}

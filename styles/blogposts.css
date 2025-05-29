@@ -72,9 +72,10 @@ article h3 {
     margin-right: 6px;
 }
 
-.webmentionForm,
-.webmention-display,
-.featuredRecentCompact {
+/* .webmention-display,
+.featuredRecentCompact, */
+.webmentionForm {
+    /* to space from post bottom; don't need other sections to have as much spacing */
     margin-top: 96px;
 }
 
