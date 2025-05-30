@@ -1,7 +1,12 @@
 {%- for tag in tags -%}
+    {%- if tag == 'bookmark' -%}
+        <div class="interaction">
+            <p class="p-summary">Bookmarked: <a class="u-bookmark-of h-cite" href="{{ target_url }}">{{ target_title }}</a> </p>
+        </div>
+    {%- endif -%}
     {%- if tag == 'like' -%}
         <div class="interaction">
-            <p class="p-summary">Liked: <a class="u-like-of" href="{{ target_url }}">{{ target_title }}</a> </p>
+            <p class="p-summary">Liked: <a class="u-like-of h-cite" href="{{ target_url }}">{{ target_title }}</a> </p>
         </div>
     {%- endif -%}
     {%- if tag == 'rsvp' -%}
@@ -9,11 +14,11 @@
             <p class="p-summary">
                 RSVP 
                 {% if rsvp_value %}
-                    <data class="p-rsvp" value="{{ rsvp_value }}">{{ rsvp_value }}</data> 
+                    <data class="p-rsvp h-cite" value="{{ rsvp_value }}">{{ rsvp_value }}</data> 
                 {% else %}
-                    <data class="p-rsvp" value="yes">yes</data> 
+                    <data class="p-rsvp h-cite" value="yes">yes</data> 
                 {% endif %}
-                to <a href="{{ target_url }}" class="u-in-reply-to">{{ target_title }}</a>
+                to <a href="{{ target_url }}" class="u-in-reply-to h-cite">{{ target_title }}</a>
             </p>
         </div>
     {%- endif -%}

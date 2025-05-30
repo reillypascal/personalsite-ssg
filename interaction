@@ -1,7 +1,11 @@
 #!/bin/sh
 
-while getopts ":lr" option; do
+while getopts ":blr" option; do
     case "${option}" in
+        b)
+            interaction_title="Bookmarked"
+            interaction_tag="bookmark"
+            ;;
         l)
             interaction_title="Liked"
             interaction_tag=like
