@@ -86,7 +86,7 @@ This page is a collection of reporting, research, and essays critical of large l
 
 > The report finds that data centers consumed about 4.4% of total U.S. electricity in 2023 and are expected to consume approximately 6.7 to 12% of total U.S. electricity by 2028. The report indicates that total data center electricity usage climbed from 58 TWh in 2014 to 176 TWh in 2023 and estimates an increase between 325 to 580 TWh by 2028.
 
-One might argue that 6.7% of U.S. electricity usage is a relatively small portion of contributions to climate change. However, especially given all the other negatives of LLMs and related technologies, I do not see them as worth that level of energy consumption. See also Molly White, “[AI isn't useless. But is it worth it?](https://www.citationneeded.news/ai-isnt-useless/).”
+One might argue that 6.7% of U.S. electricity usage is a relatively small portion of contributions to climate change, as well as being from all data center usage, not just AI. However, especially given all the other negatives of LLMs and related technologies, I still do not see them as worth that level of energy consumption. See also Molly White, “[AI isn't useless. But is it worth it?](https://www.citationneeded.news/ai-isnt-useless/).”
 
 <!-- - Marc Levy, “[Big Tech’s soaring energy demands are making coal-fired power plant sites attractive](https://apnews.com/article/coal-electricity-artificial-intelligence-trump-power-energy-a3779aee7970dabded42d8d7b3ef3783)” -->
 
