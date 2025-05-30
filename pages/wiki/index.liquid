@@ -25,7 +25,7 @@ permalink: /wiki/
     <section>
         <h1 class="sectionHeader">Pages</h1>
 
-        {%- for post in collections.wiki-pages reversed -%}
+        {%- for post in collections.wiki-root reversed -%}
             <article class="h-entry">
                 <h2 class="p-name post-link"><a class="u-url" href="{{ post.url }}">{{ post.data.title }}</a></h2>
                 <p class="p-summary">{{ post.data.description }}</p>

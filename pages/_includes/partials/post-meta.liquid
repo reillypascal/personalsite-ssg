@@ -4,13 +4,13 @@
     </span>
     
     <span class="meta-text">
-        {%- assign is_garden = false -%}
+        {%- assign is_wiki = false -%}
         {%- for tag in tags -%}
-            {%- if tag == "digital-garden" -%}
-                {%- assign is_garden = true -%}
+            {%- if tag == "wiki" -%}
+                {%- assign is_wiki = true -%}
             {%- endif -%}
         {%- endfor -%}
-        {%- if is_garden -%}
+        {%- if is_wiki -%}
             <a class="u-url" href="{{ url }}"><time class="dt-published" datetime="{{ date | postDate }}">Last updated {{ date | date: "%B %d, %Y" }}</time></a>
         {%- else -%}
             <a class="u-url" href="{{ url }}"><time class="dt-published" datetime="{{ date | postDate }}">{{ date | date: "%A, %B %d, %Y" }}</time></a>
@@ -24,7 +24,7 @@
     </span>
     {% assign sorted_categories = tags | sort %}
     {%- for tag in sorted_categories %}
-        {% if tag != 'interaction' and tag != 'note' and tag != 'post' %}
+        {% if tag != 'interaction' and tag != 'note' and tag != 'post' and tag != 'wiki-root' %}
             <span class="p-category"><a class="post-tag" href="/tags/{{ tag }}">#{{ tag |  replace: "-", " "  }}</a></span>
         {% endif %}
     {%- endfor %}
