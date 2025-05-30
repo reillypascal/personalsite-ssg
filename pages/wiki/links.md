@@ -22,5 +22,8 @@ tags:
 ### Bytebeat
 - Tools
     - [Dollchan Bytebeat Generator](https://dollchan.net/bytebeat/)
+    - [bytetable](https://psubscirbe-bytebeat.neocities.org/bytetable)
 - Formulas
     - <http://viznut.fi/demos/unix/bytebeat_formulas.txt>
+- Resources
+  - [Bytebeat Discord](https://discord.gg/n5BXmsbevn)
