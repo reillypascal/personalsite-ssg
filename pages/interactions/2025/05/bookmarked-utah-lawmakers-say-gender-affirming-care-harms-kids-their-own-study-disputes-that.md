@@ -1,6 +1,8 @@
 ---
-title: "Bookmarked | Utah Lawmakers Say Gender-Affirming Care Harms Kids. Their Own Study Disputes That."
-fedi_url: 
+title: "Bookmarked: Utah Lawmakers Say Gender-Affirming Care Harms Kids. Their Own Study Disputes That."
+fedi_url:
+  - https://hachyderm.io/@reillypascal/114598502660323414
+  - https://bsky.app/profile/reillypascal.bsky.social/post/3lqfyrkhyks2c
 date: 2025-05-30T15:33:35-0400
 tags:
   - interaction
