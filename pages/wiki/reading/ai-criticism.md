@@ -1,6 +1,9 @@
 ---
 title: AI-Critical Writing and Reporting
 description: Reading list of sources critical of AI or reporting on harm caused by its use
+fedi_url:
+  - https://hachyderm.io/@reillypascal/114597601909960276
+  - https://bsky.app/profile/reillypascal.bsky.social/post/3lqflxhpllc2j
 date: 2025-05-25T22:40:00-0400
 octothorpes:
   - ai
@@ -72,6 +75,20 @@ This page is a collection of reporting, research, and essays critical of large l
 - Ed Zitron, “[OpenAI Is a Bad Business](https://www.wheresyoured.at/oai-business/)”
 
 > To be abundantly clear, as it stands, OpenAI currently spends $2.35 to make $1.
+
+## AI and Climate
+
+- Paige Lambermont, “[AI Boom Power Surge: Plants Revived, Fossil Fuels Reconsidered](https://www.independent.org/article/2025/05/08/ai-power-plants-gas-coal/)”
+
+- Dara Kerr, “[AI brings soaring emissions for Google and Microsoft, a major contributor to climate change](https://www.npr.org/2024/07/12/g-s1-9545/ai-brings-soaring-emissions-for-google-and-microsoft-a-major-contributor-to-climate-change)
+
+- [*DOE Releases New Report Evaluating Increase in Electricity Demand from Data Centers*](https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers)
+
+> The report finds that data centers consumed about 4.4% of total U.S. electricity in 2023 and are expected to consume approximately 6.7 to 12% of total U.S. electricity by 2028. The report indicates that total data center electricity usage climbed from 58 TWh in 2014 to 176 TWh in 2023 and estimates an increase between 325 to 580 TWh by 2028.
+
+One might argue that 6.7% of U.S. electricity usage is a relatively small portion of contributions to climate change. However, especially given all the other negatives of LLMs and related technologies, I do not see them as worth that level of energy consumption. See also Molly White, “[AI isn't useless. But is it worth it?](https://www.citationneeded.news/ai-isnt-useless/).”
+
+<!-- - Marc Levy, “[Big Tech’s soaring energy demands are making coal-fired power plant sites attractive](https://apnews.com/article/coal-electricity-artificial-intelligence-trump-power-energy-a3779aee7970dabded42d8d7b3ef3783)” -->
 
 ## Discussion Covering Multiple Facets
 

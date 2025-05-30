@@ -19,6 +19,7 @@ tags:
   - sound-design
   - rust
   - programming
+  - dsp
 post_series: databending
 ---
 

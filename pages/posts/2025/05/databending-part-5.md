@@ -20,6 +20,7 @@ tags:
   - rust
   - programming
   - telecommunications
+  - dsp
 post_series: databending
 ---
 
