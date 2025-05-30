@@ -25,11 +25,25 @@ This page is a collection of reporting, research, and essays critical of large l
 
 > Three Amazon engineers said that managers had increasingly pushed them to use A.I. in their work over the past year. The engineers said that the company had raised output goals and had become less forgiving about deadlines. \[…] One Amazon engineer said his team was roughly half the size it had been last year, but it was expected to produce roughly the same amount of code by using A.I.
 
+### “Human-in-the-loop” as a “reverse centaur”
+
+- Cory Doctorow, “[Pluralistic: “Humans in the loop” must detect the hardest-to-spot errors, at superhuman speed (23 Apr 2024)](https://pluralistic.net/2024/04/23/maximal-plausibility/)”
+
+> Automation can _augment_ a worker. We can call this a “centaur” – the worker offloads a repetitive task, or one that requires a high degree of vigilance, or (worst of all) both. They're a human head on a robot body (hence “centaur”). Think of the sensor/vision system in your car that beeps if you activate your turn-signal while a car is in your blind spot. You're in charge, but you're getting a second opinion from the robot.
+
+- Cory Doctorow, “[Pluralistic: Humans are not perfectly vigilant (01 Apr 2024)](https://pluralistic.net/2024/04/01/human-in-the-loop/)”
+
+> This turns AI-“assisted” coders into _reverse_ centaurs. The AI can churn out code at superhuman speed, and you, the human in the loop, must maintain perfect vigilance and attention as you review that code, spotting the cleverly disguised hooks for malicious code that the AI can't be prevented from inserting into its code.
+
 ## Harassment and Spam
 
 - Samantha Cole, “[Schools Are Failing to Protect Students From Non-Consensual Deepfakes, Report Shows](https://www.404media.co/schools-are-failing-to-protect-students-from-non-consensual-deepfakes-report-shows/)”
 
 > “Nudify” and “undress” apps are easy to use and find online and are contributing to the epidemic of explicit deepfakes among teenagers. [Last month Emanuel reported](https://www.404media.co/google-search-includes-paid-promotion-of-nudify-apps/) that Google was promoting these apps in search results: “Google Search didn’t only lead users to these harmful apps, but was also profiting from the apps which pay to place links against specific search terms,” he wrote.
+
+- Emanuel Maiberg, “[No One Knows How to Deal With ‘Student-on-Student’ AI CSAM](https://www.404media.co/no-one-knows-how-to-deal-with-student-on-student-ai-csam/)”
+
+> The report says that while children may recognize that AI-generating nonconsensual content is wrong they can assume “it’s legal, believing that if it were truly illegal, there wouldn’t be an app for it.” The report, which cites several 404 Media stories about this issue, notes that this normalization is in part a result of many “nudify” apps being available on the [Google and Apple app stores](https://www.404media.co/apple-removes-nonconsensual-ai-nude-apps-following-404-media-investigation/), and that their ability to AI-generate nonconsensual nudity is openly advertised to students on [Google](https://www.404media.co/google-search-includes-paid-promotion-of-nudify-apps/) and social media platforms like [Instagram](https://www.404media.co/instagram-ads-send-this-nudify-site-90-percent-of-its-traffic/) and TikTok
 
 - Jason Koebler, “[‘What Was She Supposed to Report?:’ Police Report Shows How a High School Deepfake Nightmare Unfolded](https://www.404media.co/what-was-she-supposed-to-report-police-report-shows-how-a-high-school-deepfake-nightmare-unfolded/)” ([archived link](https://archive.ph/DXLIQ))
 
