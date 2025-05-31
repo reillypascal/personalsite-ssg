@@ -34,6 +34,20 @@ This page is a collection of reporting, research, and essays critical of large l
 
 > These imperatives have always existed, of course; bosses have historically tried to maximize profits by using cost-cutting technologies. But generative AI has been uniquely powerful in equipping them with a narrative with which to do so—and to thus justify degrading, disempowering, or destroying vulnerable jobs. 
 
+- Brian Merchant, “[The “AI jobs apocalypse” is for the bosses](https://www.bloodinthemachine.com/p/the-ai-jobs-apocalypse-is-for-the)”
+
+In this article, Merchant points to a [blog post](https://www.axios.com/2025/05/20/ai-leadership) by Jim VandeHei, CEO of Axios, in which VandeHei says that he 
+
+> recently told the Axios staff that we're done sugar-coating it, and see an urgent need for _every_ employee to turn AI into a force multiplier for their specific work. We then gave them tools to test. My exact words to a small group of our finance, legal and talent colleagues last week: “You are committing career suicide if you're not aggressively experimenting with AI.”
+
+VandeHei adds that
+
+> We tell most staff they should be spending 10% or more of their day using AI to discover ways to double their performance by the end of the year. Some, like coders, should shoot for 10x-ing productivity as AI improves.
+
+In other words, as Merchant puts it
+
+> The message is this: There is an AI jobs apocalypse coming, everything is going to change, and if you hope to survive it, you’re going to have to learn to be a lot more productive, for me, your boss.
+
 ### “Human-in-the-loop” as a “reverse centaur”
 
 - Cory Doctorow, “[Pluralistic: “Humans in the loop” must detect the hardest-to-spot errors, at superhuman speed (23 Apr 2024)](https://pluralistic.net/2024/04/23/maximal-plausibility/)”
