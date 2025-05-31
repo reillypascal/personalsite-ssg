@@ -35,7 +35,7 @@
           {%- endfor -%}
 
         {%- endset -%}
-        {%- set contactInfo -%}<p><a href="mailto:reillypascal@gmail.com?subject=Re: '{{ post.data.title }}'">Reply via email</a> :: <a href="https://reillyspitzfaden.com/feeds/">Subscribe to my other feeds</a></p>{%- endset -%}
+        {%- set contactInfo -%}<p><a href="mailto:reillypascal@gmail.com?subject=Re: '{{ post.data.title }}'">Reply via email</a> :: <a href="https://reillyspitzfaden.com/feeds/">Subscribe to my other feeds</a> :: <a href="https://ko-fi.com/reillyspitzfaden">Buy me a coffee</a></p>{%- endset -%}
         {%- set finalHTMLContent = [headerHTML, post.templateContent, contactInfo] | join -%}
           <item>
             <title>{{ post.data.title }}</title>
