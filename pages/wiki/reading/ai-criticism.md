@@ -28,6 +28,12 @@ This page is a collection of reporting, research, and essays critical of large l
 
 > Three Amazon engineers said that managers had increasingly pushed them to use A.I. in their work over the past year. The engineers said that the company had raised output goals and had become less forgiving about deadlines. \[…] One Amazon engineer said his team was roughly half the size it had been last year, but it was expected to produce roughly the same amount of code by using A.I.
 
+- Brian Merchant, “[The AI jobs crisis is here, now](https://www.bloodinthemachine.com/p/the-ai-jobs-crisis-is-here-now)”
+
+> The AI jobs crisis does not, [as I’ve written before](https://gizmodo.com/robots-are-not-coming-for-your-job-management-is-1835127820#:~:text=Listen%3A%20'Robots'%20are%20not,on%20its%20comparatively%20superior%20merits.), look like sentient programs arising all around us, inexorably replacing human jobs en masse. It’s a series of management decisions being made by executives seeking to cut labor costs and consolidate control in their organizations. \[…]
+
+> These imperatives have always existed, of course; bosses have historically tried to maximize profits by using cost-cutting technologies. But generative AI has been uniquely powerful in equipping them with a narrative with which to do so—and to thus justify degrading, disempowering, or destroying vulnerable jobs. 
+
 ### “Human-in-the-loop” as a “reverse centaur”
 
 - Cory Doctorow, “[Pluralistic: “Humans in the loop” must detect the hardest-to-spot errors, at superhuman speed (23 Apr 2024)](https://pluralistic.net/2024/04/23/maximal-plausibility/)”

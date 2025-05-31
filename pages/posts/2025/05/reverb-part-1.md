@@ -1,5 +1,5 @@
 ---
-title: Understanding Reverb Part 1
+title: Reverb Part 1
 description: I discuss how several kinds of algorithmic reverb work, and I return to a VST/AU plugin I coded in C++/JUCE
 fedi_url: 
 og_image: 
