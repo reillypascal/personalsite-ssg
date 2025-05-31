@@ -50,7 +50,7 @@ In other words, as Merchant puts it
 
 - Mandy Brown, “[Toolmen](https://aworkinglibrary.com/writing/toolmen)”
 
-> What AI is is an ideology…\[the] ideology itself is nothing new—it is the age-old system of supremacy, granting care and comfort to some while relegating others to servitude and penury—but the wrappings have been updated for the late capital, late digital age… Engaging with AI as a technology is to play the fool—it’s to observe the reflective surface of the thing without taking note of the way it sends roots deep down into the ground, breaking up bedrock, poisoning the soil, reaching far and wide to capture, uproot, strangle, and steal everything within its reach.
+> What AI is is an ideology…\[the] ideology itself is nothing new—it is the age-old system of supremacy, granting care and comfort to some while relegating others to servitude and penury—but the wrappings have been updated for the late capital, late digital age… Engaging with AI as a *technology* is to play the fool—it’s to observe the reflective surface of the thing without taking note of the way it sends roots deep down into the ground, breaking up bedrock, poisoning the soil, reaching far and wide to capture, uproot, strangle, and steal everything within its reach.
 
 ### “Human-in-the-loop” as a “reverse centaur”
 
