@@ -60,6 +60,10 @@ This page is a collection of reporting, research, and essays critical of large l
 
 > This kind of problem stems from a high level of complexity in the algorithmic structure, which prevents even the designers of the AI system from fully understanding how or why a specific input leads to a specific output. Without such an explanation, it would not only be difficult to dispute the validity of any recommendation provided by the system, but it may also preclude us from holding any involved actor morally responsible as they would not have access to the necessary information required for questioning the output.
 
+## AI and Rhetoric
+
+- Mandy Brown, “[Toolmen](https://aworkinglibrary.com/writing/toolmen)”
+
 ## AI and Power
 
 - Ali Alkhatib, “[To Live in Their Utopia: Why Algorithmic Systems Create Absurd Outcomes](https://ali-alkhatib.com/research#utopia)”

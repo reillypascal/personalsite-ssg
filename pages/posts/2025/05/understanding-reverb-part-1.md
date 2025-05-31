@@ -35,6 +35,51 @@ Sean Costello of Valhalla DSP has a [series](https://valhalladsp.com/2021/09/22/
 
 ### Delays and Allpasses
 
+feedforward delay
+
+<figure>
+
+![block diagram of a feedforward delay/comb filter](/media/blog/2025/06/reverb/feedforward_comb.webp)
+
+<figcaption>Feedforward delay/comb filter (diagram from <a href="https://ccrma.stanford.edu/~jos/pasp04/Feedforward_Comb_Filters.html">Julius O. Smith</a>)</figcaption>
+</figure>
+
+feedback delay
+
+<figure>
+
+![block diagram of a feedback delay/comb filter](/media/blog/2025/06/reverb/feedback_comb.webp)
+
+<figcaption>Feedback delay/comb filter (diagram from <a href="https://ccrma.stanford.edu/~jos/pasp/Feedback_Comb_Filters.html">Julius O. Smith</a>)</figcaption>
+</figure>
+
+feedforward delay amplitude
+
+<figure>
+
+![feedforward comb filter amplitude plot](/media/blog/2025/06/reverb/feedforward_comb_amp.webp)
+
+<figcaption>Feedforward comb filter amplitude plot (diagram from <a href="https://ccrma.stanford.edu/~jos/pasp05/Feedforward_Comb_Filter_Amplitude.html">Julius O. Smith</a>)</figcaption>
+</figure>
+
+feedback delay amplitude
+
+<figure>
+
+![negative feedback comb filter amplitude plot](/media/blog/2025/06/reverb/feedback_comb_neg_amp.webp)
+
+<figcaption>Negative feedback comb filter amplitude plot (diagram from <a href="https://ccrma.stanford.edu/~jos/pasp05/Feedback_Comb_Filter_Amplitude.html">Julius O. Smith</a>)</figcaption>
+</figure>
+
+allpass filter
+
+<figure>
+
+![block diagram of an allpass filter](/media/blog/2025/06/reverb/allpass_from_2_combs.webp)
+
+<figcaption>Allpass filter (diagram from <a href="https://ccrma.stanford.edu/~jos/pasp/Allpass_Two_Combs.html">Julius O. Smith</a>)
+</figure>
+
 ## Reverb Algorithms
 
 ### The Classic Schroeder Reverb
