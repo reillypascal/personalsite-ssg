@@ -8,6 +8,7 @@ import markdownItAnchor from 'markdown-it-anchor';
 import markdownItAttrs from 'markdown-it-attrs';
 import markdownItFootnote from "markdown-it-footnote";
 import markdownItGitHubAlerts from 'markdown-it-github-alerts';
+import { katex } from "@mdit/plugin-katex";
 // import mdBiblatex from '@arothuis/markdown-it-biblatex';
 // import mdItObsidianCallouts from 'markdown-it-obsidian-callouts';
 // import cheerio from "cheerio";
@@ -161,7 +162,7 @@ export default async function (eleventyConfig) {
     linkify: true,
   };
 
-  let markdownLib = markdownIt(options).use(markdownItAnchor, { tabIndex: false }).use(markdownItAttrs).use(markdownItFootnote).use(markdownItGitHubAlerts, { markers: '*' });
+  let markdownLib = markdownIt(options).use(markdownItAnchor, { tabIndex: false }).use(markdownItAttrs).use(markdownItFootnote).use(markdownItGitHubAlerts, { markers: '*' }).use(katex);
   // .use(mdItObsidianCallouts);
   // .use(mdBiblatex, { bibPath: 'documents/bibliography/library.bib', linkToBibliography: true, });
   eleventyConfig.setLibrary("md", markdownLib);
