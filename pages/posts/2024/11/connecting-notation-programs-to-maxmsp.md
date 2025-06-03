@@ -1,6 +1,6 @@
 ---
 title: Connecting Notation Programs to Max/MSP
-description: Getting Dorico and Max/MSP to talk via MIDI — it really helps my composition!
+description: Getting Dorico and Max/MSP to talk via MIDI—it really helps my composition!
 date: 2024-11-24
 octothorpes: [ "Audio", "music", "projects" ]
 tags: [ "post", "maxmsp", "music", "composition", "electronic-music" ]

@@ -28,7 +28,7 @@ I have seen a number of people express similar sentiments in the free and open-s
 
 The problem of platforms that are not searchable on the “[clearnet](https://en.wikipedia.org/wiki/Clearnet_(networking))” (e.g., Discord) is better on platforms such as the [Fediverse](https://en.wikipedia.org/wiki/Fediverse), but even there, posts still appear in a linear format, and the platform design doesn't make it easy to create a complex, interlinked, lasting database of knowledge that is easy to return to or discover.
 
-It didn't previously occur to me that a linear “feed” of posts was something to worry about — it is, after all, how blogs, social media…essentially all of the Internet on which I socialize works. I recently read “[It's easier to imagine the end of the world than the end of Instagram](https://www.njms.ca/posts/2024-10-08.html).” The author had previously proposed “[ethical anti-design](https://www.njms.ca/posts/ethical-anti-design.html)” — design patterns that make it harder to be “sucked into” scrolling through Internet-published media. This new article comments that 
+It didn't previously occur to me that a linear “feed” of posts was something to worry about—it is, after all, how blogs, social media…essentially all of the Internet on which I socialize works. I recently read “[It's easier to imagine the end of the world than the end of Instagram](https://www.njms.ca/posts/2024-10-08.html).” The author had previously proposed “[ethical anti-design](https://www.njms.ca/posts/ethical-anti-design.html)”—design patterns that make it harder to be “sucked into” scrolling through Internet-published media. This new article comments that 
 
 >If you're trying to make a truly “post-Facebook” social media platform and you start with “it's like Instagram, but for the Fediverse,” then you've already lost.
 
@@ -42,7 +42,7 @@ An article by misinformation researcher Mike Caulfield, “[The Garden and the S
 
 > replaces topology with serialization. Rather than imagine a timeless world of connection and multiple paths, the Stream presents us with a single, time ordered path with our experience (and only our experience) at the center.
 
-The stream is Twitter and Facebook feeds — as I mentioned, even the Fediverse and blogs on the [IndieWeb](https://en.wikipedia.org/wiki/IndieWeb), both of which I much prefer to socia media silos, share posts in chronological streams. In the music notation discussion above, the discussions and ideas will drift away down the stream, without a straightforward means of building on them, linking between them and others, and preserving them for later return.
+The stream is Twitter and Facebook feeds—as I mentioned, even the Fediverse and blogs on the [IndieWeb](https://en.wikipedia.org/wiki/IndieWeb), both of which I much prefer to socia media silos, share posts in chronological streams. In the music notation discussion above, the discussions and ideas will drift away down the stream, without a straightforward means of building on them, linking between them and others, and preserving them for later return.
 
 In contrast, the garden is
 
@@ -50,7 +50,7 @@ In contrast, the garden is
 
 > Every walk through the garden creates new paths, new meanings, and when we add things to the garden we add them in a way that allows many future, unpredicted relationships.
 
-As Caulfield mentions, Vannevar Bush proposed the “[memex](https://en.wikipedia.org/wiki/Memex)” hypertext device in his 1945 essay “[As We May Think](https://en.wikipedia.org/wiki/As_We_May_Think).” The memex would allow a researcher to create links between research documents — a web-like means of accessing information which Bush contrasts with the tree-like library card catalog.
+As Caulfield mentions, Vannevar Bush proposed the “[memex](https://en.wikipedia.org/wiki/Memex)” hypertext device in his 1945 essay “[As We May Think](https://en.wikipedia.org/wiki/As_We_May_Think).” The memex would allow a researcher to create links between research documents—a web-like means of accessing information which Bush contrasts with the tree-like library card catalog.
 
 In contrast with the use of hypertext on the modern Web (perhaps excluding wikis), the memex uses links as a means of *association*, rather than a “[web of 'hey this is cool' one-hop links](https://hapgood.us/2015/10/17/the-garden-and-the-stream-a-technopastoral/).” The links  bring documents and excerpts together to “form a new book,” as Bush puts it, as well as allow a given document or excerpt to form part of multiple “new book\[s].” What's more, networks of associations can be *named*, and can be referred to as objects in their own right. [This video demonstration](https://www.youtube.com/watch?v=c539cK58ees&t=73s) includes excerpts from Bush's essay in the voice over, and at the linked timecode (1:13), mentions the possibility of extracting and sharing a trail of associations with another person, for example.
 
@@ -63,7 +63,7 @@ While both the Fediverse and IndieWeb tend to value hyperlinks much more than e.
 ## Why Garden at All?
 First of all, you might ask “why?” Vannevar Bush proposed the memex for use by academics. We don't tend to take minutes when in a casual gathering with friends. Why should interactions on the Internet look like editing Wikipedia?
 
-Even in the most radical re-imagining of interaction on the Internet, there is of course still room for status updates, greetings, jokes — for transient, linear posting. However I frequently engage in one form or another of discussion online. Sometimes that looks like the technical musical discussion I began this post with. Sometimes that looks like discussions of the best way to set up a home media center on a Raspberry Pi (a fun [project](https://some-natalie.dev/blog/kodi-setup/) if you're interested!). Sometimes it's discussion of switches for mechanical keyboards, fountain pen preferences, good restaurants in an area, and so on. 
+Even in the most radical re-imagining of interaction on the Internet, there is of course still room for status updates, greetings, jokes—for transient, linear posting. However I frequently engage in one form or another of discussion online. Sometimes that looks like the technical musical discussion I began this post with. Sometimes that looks like discussions of the best way to set up a home media center on a Raspberry Pi (a fun [project](https://some-natalie.dev/blog/kodi-setup/) if you're interested!). Sometimes it's discussion of switches for mechanical keyboards, fountain pen preferences, good restaurants in an area, and so on. 
 
 After these discussions, I frequently want to save the information to return later. Unless I want to take the time to make a personal copy of this in e.g., Obsidian, I'm left with the built-in bookmarking systems in social media. Facebook and Instagram do have this option, but at best, it's just private folders with no links between things, no ability to comment on connections, and no ability to make a collection public. These are my only current means to save things from drifting away down the stream.
 

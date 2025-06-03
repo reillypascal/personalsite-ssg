@@ -27,7 +27,7 @@ tags:
 
 I'm an extremely stubborn person, especially when it comes to how I interact with technology. For example, I vastly prefer to listen to audio (music, textbook audio examples, etc.) offline and in my music player, [^1] and I'm determined to ensure I can do that.
 
-My partner's brother just got married, and since his spouse is Swedish and the U.S. is…\*gestures vaguely at everything\*, he's moving to Sweden. My partner is learning Swedish, and I think it could be fun to learn some too (I do like languages/linquistics). I have the textbook *Complete Swedish: Beginner to Intermediate* by Anneli Haake, and it seems great — aimed at self-teaching and includes audio resources. Unfortunately, the [audio resources](https://library.teachyourself.com/id004325173) are either available through an online player or in the publisher's app. [^2]
+My partner's brother just got married, and since his spouse is Swedish and the U.S. is…\*gestures vaguely at everything\*, he's moving to Sweden. My partner is learning Swedish, and I think it could be fun to learn some too (I do like languages/linquistics). I have the textbook *Complete Swedish: Beginner to Intermediate* by Anneli Haake, and it seems great—aimed at self-teaching and includes audio resources. Unfortunately, the [audio resources](https://library.teachyourself.com/id004325173) are either available through an online player or in the publisher's app. [^2]
 
 Since the online audio player embeds MP3s, and the links to the files are visible in the HTML source, I decided to make a web scraper to download the MP3s and use them how *I* want. Let's have a look at what that entails!
 

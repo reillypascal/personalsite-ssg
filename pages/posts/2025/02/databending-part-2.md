@@ -1,5 +1,5 @@
 ---
-title: Databending Part 2 — Hacking MP3s
+title: Databending Part 2—Hacking MP3s
 description: I'm continuing my databending series with a look at MP3s. We'll talk about how to glitch and corrupt them into oblivion while still leaving them playable!
 fedi_url: 
   - https://hachyderm.io/@reillypascal/113935424662297591
@@ -40,7 +40,7 @@ The most important part of this for trying to glitch up an MP3 is that there is 
 
 Before we get into how to do this, we need some background. First, because we will be looking at the raw binary data of the MP3 file, it's best to use a [hex editor](https://en.wikipedia.org/wiki/Hex_editor). This is an editor that represents raw binary data in [hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal) or base-16. I use [Hex Fiend](https://hexfiend.com/) on Mac, and [ImHex](https://imhex.werwolv.net/) is a popular one that works on Mac, Windows, and Linux. If you're familiar with hexadecimal, you can skip the next paragraph. Otherwise, let's take a moment to explain the hexadecimal number system.
 
-For reference, the number “100” in [base-10](https://en.wikipedia.org/wiki/Decimal) (i.e., the usual number system we use) means one in the hundreds place (10^2), zero in the tens place (10^1), and zero in the ones place (10^0). In hexadecimal, “100” is equivalent to 256 in base-10 — one in the 256s place (16^2), zero in the 16s place (16^1), and zero in the ones place (16^0). To represent values greater than 9, hexadecimal adds the letters A-F to represent 10-15. For example, “FF” is equivalent to 255 in base-10 — “F” (or 15) in the 16s place, and “F” (or 15) in the ones place. Hexadecimal is a useful way to work with binary values since each hexadecimal digit always represents 4 binary digits — half a byte, sometimes called a “nibble” — making numbers much easier to read.
+For reference, the number “100” in [base-10](https://en.wikipedia.org/wiki/Decimal) (i.e., the usual number system we use) means one in the hundreds place (10^2), zero in the tens place (10^1), and zero in the ones place (10^0). In hexadecimal, “100” is equivalent to 256 in base-10—one in the 256s place (16^2), zero in the 16s place (16^1), and zero in the ones place (16^0). To represent values greater than 9, hexadecimal adds the letters A-F to represent 10-15. For example, “FF” is equivalent to 255 in base-10—“F” (or 15) in the 16s place, and “F” (or 15) in the ones place. Hexadecimal is a useful way to work with binary values since each hexadecimal digit always represents 4 binary digits—half a byte, sometimes called a “nibble”—making numbers much easier to read.
 
 Now that we know what these values mean, let's take a look at the hex values in a typical MP3 header. The following table is taken from the Nick Briz article, [^4] and it shows the meaning of the example header FF FB A0 40:
 
@@ -86,7 +86,7 @@ I like the weird bubbling quality, and especially the high chirps and clicks. As
 
 ## Improving the Process
 
-My results here are extremely short, and the process of doing this by hand makes me feel like [Ben Wyatt making claymation](https://www.youtube.com/watch?v=LCUze7kuNas&t=42s). For a 160kbps MP3, not counting the headers, there should be 40,000 hex digits per second (160,000 bits divided by 4 bits per hex digit), so editing these by hand is beyond tedious. In addition, it would be nice to be able to audition a few different glitched versions of a file and pick the best one — this process feels like poking around in the dark since I don't fully know what will happen until I work for a while and listen back to my results. It would be great if I were able to automate some of this. 
+My results here are extremely short, and the process of doing this by hand makes me feel like [Ben Wyatt making claymation](https://www.youtube.com/watch?v=LCUze7kuNas&t=42s). For a 160kbps MP3, not counting the headers, there should be 40,000 hex digits per second (160,000 bits divided by 4 bits per hex digit), so editing these by hand is beyond tedious. In addition, it would be nice to be able to audition a few different glitched versions of a file and pick the best one—this process feels like poking around in the dark since I don't fully know what will happen until I work for a while and listen back to my results. It would be great if I were able to automate some of this. 
 
 I had a look around, and it looks like it isn't too hard to work with binary data as hex in Python. [This Stack Overflow answer](https://stackoverflow.com/questions/34687516/how-to-read-binary-files-as-hex-in-python/34687617#34687617) mentions that the [built in ```bytes``` object contains a ```.hex()``` method](https://docs.python.org/3/library/stdtypes.html#bytes.hex) and suggests the following code. This example is for opening genome data, but I imagine something similar could work for an MP3:
 
@@ -95,10 +95,10 @@ with open('data.geno', 'rb') as f:
     hexdata = f.read().hex()
 ```
 
-I haven't done too much with Python — most of my coding is with JS, C++, or a bit of Rust — so if anyone has suggestions on working with MP3s I would love to hear them! My general plan is as follows:
+I haven't done too much with Python—most of my coding is with JS, C++, or a bit of Rust—so if anyone has suggestions on working with MP3s I would love to hear them! My general plan is as follows:
 - Import the MP3 as hexadecimal (as shown above).
 - Split up the hex data at the frame headers and put the frames into an array.
-- For each frame, start after the header and randomly replace values. It might be nice to change the probability of replacing a value based on how far through the frame I am — as noted before, this should make the glitches tend to be higher or lower in pitch.
+- For each frame, start after the header and randomly replace values. It might be nice to change the probability of replacing a value based on how far through the frame I am—as noted before, this should make the glitches tend to be higher or lower in pitch.
 - Reassemble the frames and export as an MP3 again.
 
 I will have a go at this soon, and if I get anywhere, I will do another writeup of my results. I hope to see you then, and I would love to hear if you try any of this!

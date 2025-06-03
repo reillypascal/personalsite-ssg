@@ -1,5 +1,5 @@
 ---
-title: Databending Part 4 — Data to Audio with a Rust Tool
+title: Databending Part 4—Data to Audio with a Rust Tool
 description: Manually importing data as audio in Audacity sounds super cool but takes a while and slows down my composition. Today I'm automating it in Rust!
 fedi_url: 
   - https://hachyderm.io/@reillypascal/114434723302418270
@@ -50,7 +50,7 @@ The VOX ADPCM file is 4x as long (since it only uses 4 bits per sample, instead 
 
 </aside>
 
-Anyway, my Rust tool is still a work in progress, but I thought I'd do a writeup of what I have so far. If you want to use it or just follow along, the code is available [here on GitHub](https://github.com/reillypascal/data2audio) — if you're comfortable using Rust's ```cargo``` package manager, it should be usable, and I'll look into providing compiled releases at some point! You can hear the result of this tool here:
+Anyway, my Rust tool is still a work in progress, but I thought I'd do a writeup of what I have so far. If you want to use it or just follow along, the code is available [here on GitHub](https://github.com/reillypascal/data2audio)—if you're comfortable using Rust's ```cargo``` package manager, it should be usable, and I'll look into providing compiled releases at some point! You can hear the result of this tool here:
 
 <audio controls src="https://media.hachyderm.io/media_attachments/files/114/410/358/926/835/338/original/5a33b44d29ec6fba.mp3" title="databent audio using my Rust tool"></audio>
 
@@ -170,7 +170,7 @@ Note that all the sample formats except 16-bit integer use the bit-shift operato
 
 ## Filtering
 
-I wrote [the filter](https://github.com/reillypascal/rs_rust_audio) I'm using here myself over summer 2024. Filter math gets *intense* really fast (and I can only barely muddle through it myself!) so I won't go into it here, but I'll put some reading materials/references in the footnotes if you're interested in reading further. [^1] [^2] In short, I have a filter module called ```biquad```; ```biquad::AudioFilter::new()``` creates a filter; ```filter.calculate_filter_coeffs()``` sets it up; and ```filter.process_sample()``` takes in the audio, one ```f64``` sample at a time, returning another ```f64``` on each pass. All this ends up cast as 16-bit integers in a ```Vec<i16>``` to be written to the WAV file. Note that I multiply each sample by 0.4 before filtering — this is necessary because filtering out sub-audible noise results in higher peaks in the sound, so I need more headroom to compensate.
+I wrote [the filter](https://github.com/reillypascal/rs_rust_audio) I'm using here myself over summer 2024. Filter math gets *intense* really fast (and I can only barely muddle through it myself!) so I won't go into it here, but I'll put some reading materials/references in the footnotes if you're interested in reading further. [^1] [^2] In short, I have a filter module called ```biquad```; ```biquad::AudioFilter::new()``` creates a filter; ```filter.calculate_filter_coeffs()``` sets it up; and ```filter.process_sample()``` takes in the audio, one ```f64``` sample at a time, returning another ```f64``` on each pass. All this ends up cast as 16-bit integers in a ```Vec<i16>``` to be written to the WAV file. Note that I multiply each sample by 0.4 before filtering—this is necessary because filtering out sub-audible noise results in higher peaks in the sound, so I need more headroom to compensate.
 
 ```rust
 // make filter
@@ -252,7 +252,7 @@ To review:
   4. We use a biquad [filter](https://github.com/reillypascal/rs_rust_audio) I wrote to cut out sub-audible frequencies, casting to/from 64-bit floats for the filtering.
   5. Finally, we use a ```WavWriter``` struct from the [hound](https://crates.io/crates/hound) crate to write each WAV file.
 
-I mentioned the [ADPCM](https://en.wikipedia.org/wiki/Differential_pulse-code_modulation) sample format at the start, and one of my next goals is to include that option when importing files. The [symphonia](https://lib.rs/crates/symphonia#readme-codecs-decoders) Rust crate has an ADPCM decoder (sadly not the VOX version — symphonia [has Microsoft and IMA flavors](https://lib.rs/crates/symphonia-codec-adpcm#readme-support)). I'll need to do some poking around to figure out how to use it, but I definitely plan to do so in the near future.
+I mentioned the [ADPCM](https://en.wikipedia.org/wiki/Differential_pulse-code_modulation) sample format at the start, and one of my next goals is to include that option when importing files. The [symphonia](https://lib.rs/crates/symphonia#readme-codecs-decoders) Rust crate has an ADPCM decoder (sadly not the VOX version—symphonia [has Microsoft and IMA flavors](https://lib.rs/crates/symphonia-codec-adpcm#readme-support)). I'll need to do some poking around to figure out how to use it, but I definitely plan to do so in the near future.
 
 I hope to see you again soon!
 

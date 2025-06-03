@@ -46,7 +46,7 @@ While this is quite short, learning a few things about shell scripting beyond th
 ./post "<post-title>" "<post-description>"
 ```
 
-First, I check if the title and description arguments exist and if so, assign them to the `name` and `description` variables. Since there is a default post title and description, the arguments are optional — I could just type `./post` and get a file. The square brackets are a shorthand for the `test` command. `$1` and `$2` are the two optional arguments, and writing `${1+x}` is a [parameter expansion](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_06_02) that evaluates to null if the argument is unset. 
+First, I check if the title and description arguments exist and if so, assign them to the `name` and `description` variables. Since there is a default post title and description, the arguments are optional—I could just type `./post` and get a file. The square brackets are a shorthand for the `test` command. `$1` and `$2` are the two optional arguments, and writing `${1+x}` is a [parameter expansion](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_06_02) that evaluates to null if the argument is unset. 
 
 ```sh
 if [ ${1+x} ]; then
@@ -104,6 +104,6 @@ It [turns out](https://www.etymonline.com/word/grimoire) that the word “grimoi
 
 [^1]: A [grimoire](https://en.wikipedia.org/wiki/Grimoire) is a book of spells or incantations.
 
-[^2]: I had originally come across Natalie's site when I was setting up a Raspberry Pi as a [Kodi](https://kodi.tv/) TV streamer — [her post](https://some-natalie.dev/blog/kodi-setup/) explains how to do this with the stock Raspberry Pi OS, rather than assuming a custom version based around Kodi as most tutorials seem to do.
+[^2]: I had originally come across Natalie's site when I was setting up a Raspberry Pi as a [Kodi](https://kodi.tv/) TV streamer—[her post](https://some-natalie.dev/blog/kodi-setup/) explains how to do this with the stock Raspberry Pi OS, rather than assuming a custom version based around Kodi as most tutorials seem to do.
 
-[^3]: It's my understanding that medieval scholars don't really like the phrase “Dark Ages” — my inclusion of the phrase here doesn't reflect my own views, just those of the source.
+[^3]: It's my understanding that medieval scholars don't really like the phrase “Dark Ages”—my inclusion of the phrase here doesn't reflect my own views, just those of the source.

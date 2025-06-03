@@ -1,5 +1,5 @@
 ---
-title: Databending Part 3 — Glitching MP3s with Python
+title: Databending Part 3—Glitching MP3s with Python
 description: I'm continuing my databending series. Today we'll discuss how to use Python to easily glitch up MP3s, adding warbles, clicks, and other cool noise!
 fedi_url: 
   - https://hachyderm.io/@reillypascal/114291930621155178
@@ -43,7 +43,7 @@ When glitching the file, the important thing is to leave the headers as well as 
 
 ## Code Walkthrough
 
-The full code is available online [here](https://github.com/reillypascal/mp3glitch) under the [MIT license](https://en.wikipedia.org/wiki/MIT_License) — please feel free to use and adapt it!
+The full code is available online [here](https://github.com/reillypascal/mp3glitch) under the [MIT license](https://en.wikipedia.org/wiki/MIT_License)—please feel free to use and adapt it!
 
 To use the code, you can run this line from the code folder: `python3 mp3glitch.py <input_file_name> <output_file_name>`. Using the included MP3, you might run `python3 mp3glitch.py beat_1_bip_2_F.mp3 output.mp3`. The first argument, `<input_file_name>` is assigned to `args.input` below, and the `'rb'` argument to `open()` means “read as binary data.” The [`.hex()` method](https://docs.python.org/3/library/functions.html#hex) then converts that binary data to a hexadecimal string.
 
@@ -124,7 +124,7 @@ with open(args.output, 'wb') as output_file:
 ```
 
 ## Wrapping Up
-I glossed over using the [`argparse`](https://docs.python.org/3/library/argparse.html) package to parse command-line arguments — that's more of a convenience-of-use feature, and I don't want to go on too long. If you want more info on it, there's an `argparse` tutorial at [this link](https://docs.python.org/3/howto/argparse.html).
+I glossed over using the [`argparse`](https://docs.python.org/3/library/argparse.html) package to parse command-line arguments—that's more of a convenience-of-use feature, and I don't want to go on too long. If you want more info on it, there's an `argparse` tutorial at [this link](https://docs.python.org/3/howto/argparse.html).
 
 If anyone tries this code out, I would love to hear about it! I would be especially interested to know if there are any specific MP3s it fails to glitch. I will be adding support for a few more niche variants of the format in which the header starts with ”ffe” instead of ”fff,” so that at least will be addressed soon.
 
