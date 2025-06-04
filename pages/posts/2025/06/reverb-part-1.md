@@ -1,6 +1,6 @@
 ---
 title: "Reverb Part 1: Introduction and a VST/AU Plugin"
-description: I discuss how several kinds of algorithmic reverb work, and I return to a VST/AU plugin I coded in C++/JUCE
+description: I discuss how algorithmic reverbs work, and I return to a VST/AU plugin I coded in C++/JUCE
 fedi_url: 
 og_image: 
 og_image_width: 
@@ -37,11 +37,9 @@ There are two main categories of digital reverb—[convolution](https://www.bhph
 
 Sean Costello of Valhalla DSP has a [series](https://valhalladsp.com/2021/09/22/getting-started-with-reverb-design-part-2-the-foundations/) of [posts](https://valhalladsp.com/2021/09/23/getting-started-with-reverb-design-part-3-online-resources/) giving [helpful resources](https://valhalladsp.com/2021/09/28/getting-started-with-reverb-design-part-4-books/) on reverb design, including influential papers, online resources, and books, and you can find many of the algorithms we'll discuss today in the papers he mentions.
 
-### Delays and Allpasses
+### Feedforward and Feedback Delays
 
 In the most basic form of delay, we take a copy of the incoming audio signal, delay it by a certain amount, and combine it with the original signal, usually with the option to adjust the proportions of original and delayed copies. To contrast with the other types of delay, this is often referred to as a “feedforward” delay—the delayed copy is simply recombined with the original without any “feedback,” which we will discuss in the next section. 
-
-<!-- This delay configuration is also referred to as a “comb filter”; as we will see shortly, it produces an amplitude curve that resembles a comb. -->
 
 In the diagram below, $x(n)$ represents the incoming signal; $z^{-M}$ is the delay; [^1] $b_0$ and $b_M$ represent the amount of gain applied to the original and delayed copies respectively; [^2] the $+$ symbol represents summing the two copies; and $y(n)$ is the output signal. 
 
@@ -61,7 +59,9 @@ Next, we have a “feedback” delay. Note how in the diagram below, the incomin
 <figcaption>Feedback delay/comb filter (diagram from <a href="https://ccrma.stanford.edu/~jos/pasp/Feedback_Comb_Filters.html">Julius O. Smith</a>)</figcaption>
 </figure>
 
-Below I have the amplitude curves from feedforward and feedback delays, caused by [constructive and destructive interference](https://www.phys.uconn.edu/~gibson/Notes/Section5_2/Sec5_2.htm). The curve of the feedforward delay is caused by destructive interference; adding the delay to the original signal causes certain frequencies to cancel out. In the feedback example, as the sound feeds back on itself, certain frequencies constructively interfere—they reinforce each other and create the “spikes” in the amplitude response.
+### Allpass Filters
+
+Below I have the amplitude curves from feedforward and feedback delays, caused by [constructive and destructive interference](https://www.phys.uconn.edu/~gibson/Notes/Section5_2/Sec5_2.htm). The curve of the feedforward delay is caused by destructive interference; adding the delay to the original signal causes certain frequencies to cancel out. In the feedback example, as the sound feeds back on itself, certain frequencies constructively interfere—they reinforce each other and create the “spikes” in the amplitude response. Both of these delay configurations are also referred to as “comb filters,” due to the shape of the spikes and notches.
 
 <figure>
 
@@ -92,19 +92,17 @@ In contrast to the frequency response, our time response is much more complex. A
 
 ## Implementing Delays & Allpasses in JUCE
 
-The [JUCE](https://juce.com/) C++ framework is a popular way to make audio plugins, and it's what I will use today. I won't go into too much background on it; if you want a good introduction, I would start with [the official tutorials](https://juce.com/learn/tutorials/) and then look at [The Audio Programmer's YouTube channel](https://www.youtube.com/theaudioprogrammer) and/or [the books from that group](https://www.theaudioprogrammer.com/books). If you want to learn C++, I used [Sams Teach Yourself C++ in One Hour a Day](https://www.oreilly.com/library/view/sams-teach-yourself/9780137334674/) by Siddhartha Rao.
+The [JUCE](https://juce.com/) C++ framework is a popular way to make audio plugins, and it's what I'll use today. I won't go into too much background on it; if you want a good introduction, I would start with [the official tutorials](https://juce.com/learn/tutorials/) and then look at [The Audio Programmer's YouTube channel](https://www.youtube.com/theaudioprogrammer) and/or [the books from that group](https://www.theaudioprogrammer.com/books). If you want to learn C++, I used [Sams Teach Yourself C++ in One Hour a Day](https://www.oreilly.com/library/view/sams-teach-yourself/9780137334674/) by Siddhartha Rao.
 
 First, to make a basic delay, I use the class [`juce::dsp::DelayLine<float>`](https://docs.juce.com/master/classdsp_1_1DelayLine.html). Note that this class is part of the `dsp` module, which is not included by default. When making a new JUCE project using the Projucer, you will need to check the `juce_dsp` box in the “Modules” menu, on the first window you get when you make a new project.
 
-The class `juce::dsp::DelayLine<float>` has methods [`pushSample()`](https://docs.juce.com/master/classdsp_1_1DelayLine.html#a5d07327abc2d6bcc69bb3d3eea488d8f) and [`popSample()`](https://docs.juce.com/master/classdsp_1_1DelayLine.html#afb9c3cadcd2a333a742aa86a97caf944). `pushSample()` takes two arguments—the channel and the input sample—and pushes the sample into the delay line. This is equivalent to the input of the delay (the $z^{-M}$ block) above. `popSample()` takes the channel and an optional delay argument. 
+The class `juce::dsp::DelayLine<float>` has methods [`pushSample()`](https://docs.juce.com/master/classdsp_1_1DelayLine.html#a5d07327abc2d6bcc69bb3d3eea488d8f) and [`popSample()`](https://docs.juce.com/master/classdsp_1_1DelayLine.html#afb9c3cadcd2a333a742aa86a97caf944). `pushSample()` takes two arguments—the channel and the input sample—and pushes the sample into the delay line for the appropriate channel. This is equivalent to the input of the delays (the $z^{-M}$ blocks) above. `popSample()` takes the channel and an optional delay argument, and it returns the next sample from the output of the delay.
 
-You can find my full code for the Freeverb algorithm in the [`Freeverb.cpp`](https://github.com/reillypascal/RSAlgorithmicVerb/blob/main/Source/Freeverb.cpp) and [`Freeverb.h`](https://github.com/reillypascal/RSAlgorithmicVerb/blob/main/Source/Freeverb.h) source files.
+You can find my full code for the Freeverb algorithm (explained a little later) in the [`Freeverb.cpp`](https://github.com/reillypascal/RSAlgorithmicVerb/blob/main/Source/Freeverb.cpp) and [`Freeverb.h`](https://github.com/reillypascal/RSAlgorithmicVerb/blob/main/Source/Freeverb.h) source files.
 
 ### JUCE Feedforward Delay
 
-First we create a delay line: `juce::dsp::DelayLine<float> delayLine { 22050 };`. Notice how we initialize it with 22050 samples (usually equivalent to 0.5s) of maximum delay time. In our reverb processor's `prepare()` function we call `delayLine.prepare(spec);`, with `spec` being a [`juce::dsp::ProcessSpec`](https://docs.juce.com/master/structdsp_1_1ProcessSpec.html). At some point—either here or in the `processBlock()` function—we need to set the delay time in samples: run e.g., `delayLine.setDelay(1617);`.
-
-Next, in the `processBlock()` function we run our delay. In JUCE, we can get a write pointer into a `juce::AudioBuffer<float>` (which contain's the audio input from our DAW) by writing e.g., `auto* channelData = buffer.getWritePointer (channel);`, with `channel` representing the current channel number. To make a feedforward delay, we:
+First we create a delay line: `juce::dsp::DelayLine<float> delayLine { 22050 };`. (For an explanation of some of the surrounding code, see footnote: [^3]) Notice how we initialize the delay with 22050 samples (usually equivalent to 0.5s) of maximum delay time. To make a feedforward delay with this, we:
 - Write the current sample to the delay line.
 - Get the next delayed sample from the delay line.
 - Mix the original and delayed signals, each multiplied by a gain value.
@@ -118,20 +116,20 @@ channelData[sample] = channelData[sample] * 0.5 + feedforward * 0.5;
 ### JUCE Feedback Delay
 
 For our feedback, we prepare the delay line in the same way. As we previously discussed, our steps for each sample are as follows:
-- Mix the incoming signal (multiplied by a gain value) with the feedback signal (multiplied by a negative gain)
+- Mix the incoming signal (multiplied by a gain value) with the fed-back delay output (multiplied by a negative gain)
+  - Note that if this delay is not forming part of an allpass filter, it's more common to have the feedback gain be positive.
 - Write that signal to the delay line, to be fed back later
-- Output that same signal we just wrote to the delay line
+- Output that same signal (the one we wrote to the delay line)
 
 ```cpp
 float feedback = delayLine.popSample(channel) * -0.5 + channelData[sample] * 0.5;
-
 delayLine.pushSample(channel, feedback);
 channelData[sample] = feedback;
 ```
 
 ### JUCE Allpass
 
-For the allpass, we:
+Finally, for the allpass, we:
 - Get the delay output.
 - Get the feedback signal by multiplying that output by a negative gain.
 - Get the input to the delay (labeled $v(n)$ in the block diagram) by adding the incoming signal and the feedback; push this into the delay.
@@ -146,9 +144,21 @@ delayLine.pushSample(channel, vn);
 channelData[sample] = delayOutput + (vn * 0.5);
 ```
 
-## Reverb Algorithms: The Classic Schroeder Reverberator
+Now let's put these all together to make a reverb!
 
+## The Classic Schroeder Reverberator
 
+Manfred Schroeder has two papers from 1961 that introduce the idea of allpasses and using them for reverberators.
+
+In *“Colorless” Artificial Reverberation*, [^4] Schroeder and co-author B.F. Logan note that when playing a single impulse into a room
+- Echo density increases to a “statistical clutter”
+- There is an “absence of ‘flutter’ echos, ie., periodic echos resulting from sound waves bouncing back and forth between parallel hard walls.” (210)
+
+Additionally, in the frequency ranges that are most relevant, there are enough “modes” (i.e., resonant emphases on specific frequencies) that for practical purposes, the frequency response of the room is flat or “colorless.” 
+
+In *Natural Sounding Artificial Reverberation* [^5] 
+
+https://valhalladsp.com/2021/09/22/getting-started-with-reverb-design-part-2-the-foundations/
 
 <figure>
 
@@ -164,3 +174,9 @@ That's all for today! My plan is to do a series of posts, each covering a class 
 [^1]: This notation comes from the idea of the [Z-transform](https://en.wikipedia.org/wiki/Z-transform).
 
 [^2]: Note that the triangle symbol is the standard DSP symbol for amplification/an amplifier.
+
+[^3]: In our reverb processor's `prepare()` function we call `delayLine.prepare(spec);`, with `spec` being a [`juce::dsp::ProcessSpec`](https://docs.juce.com/master/structdsp_1_1ProcessSpec.html). At some point—either here or in the `processBlock()` function—we need to set the delay time in samples: run e.g., `delayLine.setDelay(1617);`. Next, in the `processBlock()` function we run our delay. In JUCE, we can get a write pointer into a `juce::AudioBuffer<float>` (which contain's the audio input from our DAW) by writing e.g., `auto* channelData = buffer.getWritePointer (channel);`, with `channel` representing the current channel number.
+
+[^4]: M. R. Schroeder and B. F. Logan, “‘Colorless’ artificial reverberation,” *IRE Transactions on Audio*, vol. AU-9, no. 6, pp. 209–214, Nov. 1961, doi: [10.1109/TAU.1961.1166351](https://doi.org/10.1109/TAU.1961.1166351).
+
+[^5]: M. R. Schroeder, “Natural sounding artificial reverberation,” in *Audio Engineering Society Convention 13*, Audio Engineering Society, 1961. Accessed: Dec. 29, 2024. \[Online]. Available: [https://www.aes.org/e-lib/download.cfm?ID=343](https://www.aes.org/e-lib/download.cfm?ID=343)

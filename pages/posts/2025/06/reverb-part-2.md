@@ -1,6 +1,6 @@
 ---
 title: "Reverb Part 2: Classic Lexicon Units & Allpass Rings"
-description: 
+description: I discuss a lovely-sounding family of reverb algorithms that appears in the classic Lexicon 224/480 units, among many other places
 fedi_url: 
 og_image: 
 og_image_width: 
