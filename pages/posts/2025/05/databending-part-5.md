@@ -29,7 +29,7 @@ post_series: databending
 
 <link rel="stylesheet" type="text/css" href="/styles/notes-photos.css">
 
-Today we'll be talking about the VOX or [Dialogic ADPCM](https://en.wikipedia.org/wiki/Dialogic_ADPCM) format—a lossy algorithm from [Oki Electric](https://en.wikipedia.org/wiki/Dialogic_ADPCM) for digital voice telephony — and using it to translate raw data (e.g., program files) into audio. As I mentioned in my [first post](/posts/2025/01/databending-part-1/) on the topic, at a certain point, 
+Today we'll be talking about the VOX or [Dialogic ADPCM](https://en.wikipedia.org/wiki/Dialogic_ADPCM) format—a lossy algorithm from [Oki Electric](https://en.wikipedia.org/wiki/Dialogic_ADPCM) for digital voice telephony—and using it to translate raw data (e.g., program files) into audio. As I mentioned in my [first post](/posts/2025/01/databending-part-1/) on the topic, at a certain point, 
 
 > once you listen to the “sonified” data from enough files, commonalities start to become apparent. Many programs use some of the same \[library] files, and…\[even] differently-named library files sometimes contain similar elements—likely re-used code patterns, or further library code compiled in.
 
@@ -78,7 +78,7 @@ The next diagram shows the adaptive version of the decoder as shown in the origi
 
 ## VOX
 
-There are a number of ADPCM algorithms—many different ways to adapt our step size based on the amplitude of the difference and/or prediction—and after testing some out while importing data as audio in Audacity, I decided VOX was by far my favorite. Unfortunately I wasn't able to find anything pre-existing in Rust for VOX — the [symphonia crate](https://crates.io/crates/symphonia) that was recommended to me only has [Microsoft and IMA flavors](https://lib.rs/crates/symphonia-codec-adpcm#readme-support) of ADPCM. Looks like I need to code it myself! You can find the resulting code [here](https://github.com/reillypascal/data2audio).
+There are a number of ADPCM algorithms—many different ways to adapt our step size based on the amplitude of the difference and/or prediction—and after testing some out while importing data as audio in Audacity, I decided VOX was by far my favorite. Unfortunately I wasn't able to find anything pre-existing in Rust for VOX—the [symphonia crate](https://crates.io/crates/symphonia) that was recommended to me only has [Microsoft and IMA flavors](https://lib.rs/crates/symphonia-codec-adpcm#readme-support) of ADPCM. Looks like I need to code it myself! You can find the resulting code [here](https://github.com/reillypascal/data2audio).
 
 Here's a snippet of audio databent through my resulting VOX ADPCM implementation:
 
@@ -243,7 +243,7 @@ One thing that [@EveHasWords](https://toot.cat/@EveHasWords/114377893125307935) 
 
 <!-- At one point I even [figured out](https://hachyderm.io/@reillypascal/112747124169952464) how to run Rust on a BBC micro:bit (using [this book](https://docs.rust-embedded.org/discovery/microbit/)), so that could be another fun thing to use in the project. -->
 
-You can follow the [RSS feeds](/feeds) for this blog to see any future updates on such projects — hope to see you then!
+You can follow the [RSS feeds](/feeds) for this blog to see any future updates on such projects—hope to see you then!
 
 [^1]: L. Tan and J. Jiang, *Digital Signal Processing: Fundamentals and Applications*. Academic Press, 2018, pp. 486–496.
 

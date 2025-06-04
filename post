@@ -26,7 +26,7 @@ fullpath=pages/posts/$year/$month/$slug.md
 
 cat >> $fullpath << EOF && codium $fullpath
 ---
-title: $name
+title: "$name"
 description: $description
 fedi_url: 
 og_image: 
@@ -46,4 +46,6 @@ indienews: true
 
 <link rel="stylesheet" type="text/css" href="/styles/code/prism-dracula.css" />
 <link rel="stylesheet" type="text/css" href="/styles/code/code-tweaks.css" />
+
+<link rel="stylesheet" type="text/css" href="/styles/math/katex.min.css" />
 EOF
