@@ -127,8 +127,14 @@ One might argue that 6.7% of U.S. electricity usage is a relatively small portio
 
 <!-- - Marc Levy, “[Big Tech’s soaring energy demands are making coal-fired power plant sites attractive](https://apnews.com/article/coal-electricity-artificial-intelligence-trump-power-energy-a3779aee7970dabded42d8d7b3ef3783)” -->
 
+## Rhetoric of AI Boosters
+
+- Glyph, [*I Think I’m Done Thinking About genAI For Now*](https://blog.glyph.im/2025/06/i-think-im-done-thinking-about-genai-for-now.html)
+
+> …every discussion is a [motte-and-bailey](https://en.wikipedia.org/wiki/Motte-and-bailey_fallacy). If I use a free model and get a bad result I’m told it’s because I should have used the paid model. If I get a bad result with ChatGPT I should have used Claude. If I get a bad result with a chatbot I need to start using an agentic tool. If an agentic tool deletes my hard drive by putting `os.system(“rm -rf ~/”)` into `sitecustomize.py` then I guess I should have built my own MCP integration with a completely novel heretofore never even considered security sandbox or something?
+
+- Edward Ongweso Jr., “[The phony comforts of useful idiots](https://thetechbubble.substack.com/p/the-phony-comforts-of-useful-idiots)”
+
 ## Discussion Covering Multiple Facets
 
 - Molly White, “[AI isn't useless. But is it worth it?](https://www.citationneeded.news/ai-isnt-useless/)”
-
-- Edward Ongweso Jr., “[The phony comforts of useful idiots](https://thetechbubble.substack.com/p/the-phony-comforts-of-useful-idiots)”
