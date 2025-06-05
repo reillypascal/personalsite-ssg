@@ -2,7 +2,7 @@
 title: "Reverb Part 1: Introduction and a VST/AU Plugin"
 description: I discuss how algorithmic reverbs work, and I return to a VST/AU plugin I coded in C++/JUCE
 fedi_url: 
-og_image: /media/blog/2025/06/reverb/freeverb_og.jpg
+og_image: /media/blog/2025/06/reverb_1/freeverb_og.jpg
 og_image_width: 1200
 og_image_height: 630
 date: 2025-06-05T11:30:00-0400
@@ -46,7 +46,7 @@ In the diagram below, $x(n)$ represents the incoming signal; $z^{-M}$ is the del
 
 <figure>
 
-![block diagram of a feedforward delay/comb filter](/media/blog/2025/06/reverb/feedforward_comb.webp)
+![block diagram of a feedforward delay/comb filter](/media/blog/2025/06/reverb_1/feedforward_comb.webp)
 
 <figcaption>Feedforward delay/comb filter (diagram from <a href="https://ccrma.stanford.edu/~jos/pasp04/Feedforward_Comb_Filters.html">Julius O. Smith</a>)</figcaption>
 </figure>
@@ -55,7 +55,7 @@ Next, we have a “feedback” delay. Note how in the diagram below, the incomin
 
 <figure>
 
-![block diagram of a feedback delay/comb filter](/media/blog/2025/06/reverb/feedback_comb.webp)
+![block diagram of a feedback delay/comb filter](/media/blog/2025/06/reverb_1/feedback_comb.webp)
 
 <figcaption>Feedback delay/comb filter (diagram from <a href="https://ccrma.stanford.edu/~jos/pasp/Feedback_Comb_Filters.html">Julius O. Smith</a>)</figcaption>
 </figure>
@@ -66,14 +66,14 @@ Below I have the amplitude curves from feedforward and feedback delays, caused b
 
 <figure>
 
-![feedforward comb filter amplitude plot](/media/blog/2025/06/reverb/feedforward_comb_amp.webp)
+![feedforward comb filter amplitude plot](/media/blog/2025/06/reverb_1/feedforward_comb_amp.webp)
 
 <figcaption>Feedforward comb filter amplitude plot (diagram from <a href="https://ccrma.stanford.edu/~jos/pasp05/Feedforward_Comb_Filter_Amplitude.html">Julius O. Smith</a>)</figcaption>
 </figure>
 
 <figure>
 
-![negative feedback comb filter amplitude plot](/media/blog/2025/06/reverb/feedback_comb_neg_amp.webp)
+![negative feedback comb filter amplitude plot](/media/blog/2025/06/reverb_1/feedback_comb_neg_amp.webp)
 
 <figcaption>Negative feedback comb filter amplitude plot (diagram from <a href="https://ccrma.stanford.edu/~jos/pasp05/Feedback_Comb_Filter_Amplitude.html">Julius O. Smith</a>)</figcaption>
 </figure>
@@ -84,7 +84,7 @@ This alignment is important for our next type of filter: the “allpass” filte
 
 <figure>
 
-![block diagram of an allpass filter](/media/blog/2025/06/reverb/allpass_from_2_combs.webp)
+![block diagram of an allpass filter](/media/blog/2025/06/reverb_1/allpass_from_2_combs.webp)
 
 <figcaption>Allpass filter (diagram from <a href="https://ccrma.stanford.edu/~jos/pasp/Allpass_Two_Combs.html">Julius O. Smith</a>)</figcaption>
 </figure>
@@ -110,7 +110,7 @@ In *“Colorless” Artificial Reverberation*, [^4] Schroeder and co-author B.F.
 
 Below, I have an 808 drum machine clap played through a feedback comb filter. The delay is set at successively shorter lengths, from 50ms down to 5ms. Notice how at longer delay times, there is a “fluttering” tremolo effect. This is similar to the echoes with two walls directly facing each other, as in a long, narrow hall. At shorter lengths, there is an audible tone created by the repeated echoes. Both of these features are undesirable in a reverb effect. 
 
-<audio controls src="/media/blog/2025/06/reverb/clap_comb.mp3" title="feedback comb-filtered clap"></audio>
+<audio controls src="/media/blog/2025/06/reverb_1/clap_comb.mp3" title="feedback comb-filtered clap"></audio>
 
 In *“Colorless” Artificial Reverberation*, Schroeder and Logan propose a chain of allpass filters as an answer to this issue. The allpass filter is already better than the feedback comb at creating smooth-sounding results, and to improve on this further, the authors suggest “incommensurate” delay times. In other words, the delay times do not easily divide into each other, preventing the echoes from one allpass from lining up with another. The result of the incommensurate delay times is something more like the random tapping of rain, rather than any periodic rhythm.
 
@@ -132,7 +132,7 @@ The next problem after the comb's frequency response is the “flutter” effect
 
 <figure>
 
-![DSP block diagram of 8 filtered-feedback comb filters summed in parallel, and feeding into four allpass filters in series](/media/blog/2025/06/reverb/freeverb.webp)
+![DSP block diagram of 8 filtered-feedback comb filters summed in parallel, and feeding into four allpass filters in series](/media/blog/2025/06/reverb_1/freeverb.webp)
 
 <figcaption>The “Freeverb” Schroeder reverberator (diagram from <a href="https://ccrma.stanford.edu/~jos/pasp/Freeverb.html">Julius O. Smith)</a></figcaption>
 </figure>
