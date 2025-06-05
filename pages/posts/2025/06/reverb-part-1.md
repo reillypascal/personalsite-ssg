@@ -357,7 +357,7 @@ That's all for today! My plan is to do a series of posts, each covering a class 
 
 [^1]: This notation comes from the idea of the [Z-transform](https://en.wikipedia.org/wiki/Z-transform).
 
-[^2]: Note that the triangle symbol is the standard DSP symbol for amplification/an amplifier.
+[^2]: Note that the triangle symbol is the standard DSP symbol for amplification/an amplifier. Also note that $b$ and $a$ are often used for feedforward/feedback coefficients, although it seems to be somewhat inconsistent which is which.
 
 [^3]: M. R. Schroeder and B. F. Logan, “‘Colorless’ artificial reverberation,” *IRE Transactions on Audio*, vol. AU-9, no. 6, pp. 209–214, Nov. 1961, doi: [10.1109/TAU.1961.1166351](https://doi.org/10.1109/TAU.1961.1166351).
 
