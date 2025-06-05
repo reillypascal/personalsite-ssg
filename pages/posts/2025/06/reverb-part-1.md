@@ -42,7 +42,7 @@ Sean Costello of Valhalla DSP has a [series](https://valhalladsp.com/2021/09/20/
 
 In the most basic form of delay, we take a copy of the incoming audio signal, delay it by a certain amount, and combine it with the original signal, usually with the option to adjust the proportions of original and delayed copies. To contrast with the other types of delay, this is often referred to as a “feedforward” delay—the delayed copy is “fed forward” and recombined with the original without any “feedback,” which we will discuss in the next section. 
 
-In the diagram below, $x(n)$ represents the incoming signal; $z^{-M}$ is the delay; [^1] $b_0$ and $b_M$ represent the amount of gain applied to the original and delayed copies respectively; [^2] the $+$ symbol represents summing the two copies; and $y(n)$ is the output signal. 
+In the diagram below, $x(n)$ represents the incoming signal; $z^{-M}$ is the delay (with $M$ representing the delay in samples); [^1] $b_0$ and $b_M$ represent the amount of gain applied to the original and delayed copies respectively; [^2] the $+$ symbol represents summing the two copies; and $y(n)$ is the output signal. 
 
 <figure>
 
