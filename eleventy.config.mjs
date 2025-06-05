@@ -39,7 +39,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter("sanitizeHTML", (html) => {
     return sanitizeHTML(html, {
       // adds on to full available list
-      allowedTags: sanitizeHTML.defaults.allowedTags.concat([ 'audio', 'img', 'source' ]),
+      allowedTags: sanitizeHTML.defaults.allowedTags.concat([ 'audio', 'img', 'source', 'details', 'summary' ]),
       allowedAttributes: false, // this means allow all
       nonBooleanAttributes: [],
     });
