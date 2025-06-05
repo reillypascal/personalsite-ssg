@@ -573,3 +573,7 @@ aside {
     border-left: 1px solid var(--accent-med-light);
     padding-left: 12px;
 }
+
+.small-caps {
+    font-variant: small-caps;
+}

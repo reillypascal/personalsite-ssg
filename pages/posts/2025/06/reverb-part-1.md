@@ -28,7 +28,7 @@ post_series:
 
 <link rel="stylesheet" type="text/css" href="/styles/math/katex.min.css" />
 
-I started work on a [reverb plugin](https://github.com/reillypascal/RSAlgorithmicVerb/releases) in C++/JUCE back in 2023, and I've slowly added to it since. Today, I'm going to discuss how algorithmic (i.e., delay-based) reverbs work using the “Freeverb” algorithm that's available in that plugin. I've included a Max/MSP version of the reverb, and in a later post, I will discuss getting our hands dirty with the code in C++/JUCE, as well as a number of other cool algorithms. Let's get started!
+<span class="small-caps">I started work</span> on a [reverb plugin](https://github.com/reillypascal/RSAlgorithmicVerb/releases) in C++/JUCE back in 2023, and I've slowly added to it since. Today, I'm going to discuss how algorithmic (i.e., delay-based) reverbs work using the “Freeverb” algorithm that's available in that plugin. I've included a Max/MSP version of the reverb, and in a later post, I will discuss getting our hands dirty with the code in C++/JUCE, as well as a number of other cool algorithms. Let's get started!
 
 ## How Reverb Works
 
