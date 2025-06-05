@@ -2,10 +2,10 @@
 title: "Reverb Part 1: Introduction and a VST/AU Plugin"
 description: I discuss how algorithmic reverbs work, and I return to a VST/AU plugin I coded in C++/JUCE
 fedi_url: 
-og_image: 
-og_image_width: 
-og_image_height: 
-date: 2025-06-09T12:30:00-0400
+og_image: /media/blog/2025/06/reverb/freeverb_og.jpg
+og_image_width: 1200
+og_image_height: 630
+date: 2025-06-05T11:30:00-0400
 octothorpes:
   - Art
   - Audio
@@ -18,8 +18,9 @@ tags:
   - plugin
   - dsp
   - reverb
+  - schroeder
+  - freeverb
 post_series: 
-draft: true
 ---
 
 <link rel="stylesheet" type="text/css" href="/styles/notes-photos.css">
@@ -33,13 +34,13 @@ I started work on a [reverb plugin](https://github.com/reillypascal/RSAlgorithmi
 
 ## How Reverb Works
 
-There are two main categories of digital reverb—[convolution](https://www.bhphotovideo.com/find/newsLetter/Convolution-Reverb.jsp/) and algorithmic—and today we will be discussing algorithmic reverb. An algorithmic reverb is based on a network of delays, with individual delays roughly corresponding to the sound reflections from individual walls or objects, and the network of connections between them simulating the way a reflection from one surface may bounce off many others.
+There are two main categories of digital reverb—[convolution](https://www.bhphotovideo.com/find/newsLetter/Convolution-Reverb.jsp/) and algorithmic—and today we will be discussing algorithmic reverb. An algorithmic reverb is based on a network of delays or “echoes,” with individual delays roughly corresponding to the sound reflections from individual walls or objects, and the network of connections between them simulating the way a reflection from one surface may bounce off many others.
 
-Sean Costello of Valhalla DSP has a [series](https://valhalladsp.com/2021/09/22/getting-started-with-reverb-design-part-2-the-foundations/) of [posts](https://valhalladsp.com/2021/09/23/getting-started-with-reverb-design-part-3-online-resources/) giving [helpful resources](https://valhalladsp.com/2021/09/28/getting-started-with-reverb-design-part-4-books/) on reverb design, including influential papers, online resources, and books, and you can find many of the algorithms we'll discuss today in the papers he mentions.
+Sean Costello of Valhalla DSP has a [series](https://valhalladsp.com/2021/09/22/getting-started-with-reverb-design-part-2-the-foundations/) of [posts](https://valhalladsp.com/2021/09/23/getting-started-with-reverb-design-part-3-online-resources/) giving [helpful resources](https://valhalladsp.com/2021/09/28/getting-started-with-reverb-design-part-4-books/) on reverb design, including influential papers, online resources, and books, and you can find the algorithms we'll discuss today among the papers he mentions.
 
 ### Feedforward and Feedback Delays
 
-In the most basic form of delay, we take a copy of the incoming audio signal, delay it by a certain amount, and combine it with the original signal, usually with the option to adjust the proportions of original and delayed copies. To contrast with the other types of delay, this is often referred to as a “feedforward” delay—the delayed copy is simply recombined with the original without any “feedback,” which we will discuss in the next section. 
+In the most basic form of delay, we take a copy of the incoming audio signal, delay it by a certain amount, and combine it with the original signal, usually with the option to adjust the proportions of original and delayed copies. To contrast with the other types of delay, this is often referred to as a “feedforward” delay—the delayed copy is “fed forward” and recombined with the original without any “feedback,” which we will discuss in the next section. 
 
 In the diagram below, $x(n)$ represents the incoming signal; $z^{-M}$ is the delay; [^1] $b_0$ and $b_M$ represent the amount of gain applied to the original and delayed copies respectively; [^2] the $+$ symbol represents summing the two copies; and $y(n)$ is the output signal. 
 
@@ -61,7 +62,7 @@ Next, we have a “feedback” delay. Note how in the diagram below, the incomin
 
 ### Allpass Filters
 
-Below I have the amplitude curves from feedforward and feedback delays, caused by [constructive and destructive interference](https://www.phys.uconn.edu/~gibson/Notes/Section5_2/Sec5_2.htm). The curve of the feedforward delay is caused by destructive interference; adding the delay to the original signal causes certain frequencies to cancel out. In the feedback example, as the sound feeds back on itself, certain frequencies constructively interfere—they reinforce each other and create the “spikes” in the amplitude response. Both of these delay configurations are also referred to as “comb filters,” due to the shape of the spikes and notches.
+Below I have the amplitude curves from feedforward and feedback delays, caused by [constructive and destructive interference](https://www.phys.uconn.edu/~gibson/Notes/Section5_2/Sec5_2.htm). The repeated notches in the feedforward delay frequency plot are caused by destructive interference; adding the delay to the original signal causes certain frequencies to cancel out. In the feedback example, as the sound feeds back on itself, certain frequencies constructively interfere—they reinforce each other and create the “spikes” in the amplitude response. Both of these delay configurations are also referred to as “comb filters,” due to the shape of the spikes and notches.
 
 <figure>
 
@@ -89,6 +90,58 @@ This alignment is important for our next type of filter: the “allpass” filte
 </figure>
 
 In contrast to the frequency response, our time response is much more complex. An allpass filter delays the different frequencies in the signal by different amounts. As a result, a single impulse or “click” going through it would become multiplied and “smeared” in time, giving the effect of multiple clicks piling on top of each other, a very useful effect for creating a smooth- and dense-sounding reverb.
+
+Now let's put these all together to make a reverb!
+
+## The Classic Schroeder Reverberator
+
+### Series Allpasses
+
+Manfred Schroeder has two papers from 1961 that introduce the idea of allpasses and using them for reverberators.
+
+In *“Colorless” Artificial Reverberation*, [^4] Schroeder and co-author B.F. Logan note six features that they seek from a delay-based reverberator:
+
+1. There should be a flat frequency response
+2. Normal modes (i.e., resonant emphases on specific frequencies) “must overlap and cover the entire audio frequency range”
+3. Different frequencies should decay at the same or similar rate
+4. There should be high echo density within a short period after an impulse
+5. Echoes must be non-periodic (i.e., no “flutter echoes”)
+6. “Periodic or comb-like” frequency responses must be avoided
+
+Below, I have an 808 drum machine clap played through a feedback comb filter. The delay is set at successively shorter lengths, from 50ms down to 5ms. Notice how at longer delay times, there is a “fluttering” tremolo effect. This is similar to the echoes with two walls directly facing each other, as in a long, narrow hall. At shorter lengths, there is an audible tone created by the repeated echoes. Both of these features are undesirable in a reverb effect. 
+
+<audio controls src="/media/blog/2025/06/reverb/clap_comb.mp3" title="feedback comb-filtered clap"></audio>
+
+In *“Colorless” Artificial Reverberation*, Schroeder and Logan propose a chain of allpass filters as an answer to this issue. The allpass filter is already better than the feedback comb at creating smooth-sounding results, and to improve on this further, the authors suggest “incommensurate” delay times. In other words, the delay times do not easily divide into each other, preventing the echoes from one allpass from lining up with another. The result of the incommensurate delay times is something more like the random tapping of rain, rather than any periodic rhythm.
+
+On this algorithm, [Sean Costello comments that](https://valhalladsp.com/2021/09/22/getting-started-with-reverb-design-part-2-the-foundations/)
+
+> The resulting reverberator structure is a bit hard to tune, as both the reverb attack and decay are controlled by the feedforward/feedback allpass coefficient, and is less “general purpose” than the structure discussed in Schoeder’s next paper.
+
+As Costello then mentions, some reverbs such as the [Eventide Blackhole](https://store.eventideaudio.com/products/blackhole) make artistic use of the weirdness of this structure. However, it would be helpful to have a more general-purpose algorithm. 
+
+### Parallel Combs into Series Allpasses
+
+In *Natural Sounding Artificial Reverberation*, [^5] Schroeder proposes the class of algorithm shown below. Comb filters create a nice exponential amplitude decay (unlike the allpass chain in which, as mentioned above, both attack and decay depend on the same parameter). In response to the problem of “coloration” in the frequency spectrum, Schroeder notes that
+
+> extreme response irregularities are imperceptible when the density of peaks and valleys on the frequency scale is high enough
+
+In other words, if we combine several comb filters in parallel, the “comb teeth” in their frequency spectra will tightly “interlock,” creating what *sounds like* a flat frequency response. 
+
+The next problem after the comb's frequency response is the “flutter” effect. Schroeder gives the goal of around 1000 echoes per second to make a “natural”-sounding reverb. Assuming 4 parallel comb filters with delays that are incommensurate, but in the neighborhood of 40ms (25 echoes per second), we get only about 100 echoes per second. Assuming (as Schroeder does) that a single allpass multiplies the number of echoes by about 3, two series allpasses after 4 parallel combs is enough to meet the minimum requirement.
+
+<figure>
+
+![DSP block diagram of 8 filtered-feedback comb filters summed in parallel, and feeding into four allpass filters in series](/media/blog/2025/06/reverb/freeverb.webp)
+
+<figcaption>The “Freeverb” Schroeder reverberator (diagram from <a href="https://ccrma.stanford.edu/~jos/pasp/Freeverb.html">Julius O. Smith)</a></figcaption>
+</figure>
+
+The combination of parallel combs into series allpasses (or sometimes vice versa) is often referred to as a “Schroeder reverb.” The “Freeverb” algorithm shown above is one popular Schroeder reverb. The delays are given in samples, with the floating point values representing the delay feedback coefficients. In the combs, there are two values, and as far as I can tell, the first is the feedback coefficient, and the second is the lowpass filtering (see next paragraph).
+
+One additional feature of this particular version is that there is a first-order (i.e., 6dB/octave) low-pass filter in the feedback loop of the combs. This causes higher frequencies to decay faster. While Schroeder and Logan seek to make all frequencies decay at an equal rate, the most important aspect seems to be to prevent individual frequency bands from ringing and standing out. Reverberations in the physical world decay more quickly at higher frequencies, due (at least in my understanding) to the sound absorbency of building materials, as well as the fact that [the atmosphere can be approximated with a low-pass filter](https://computingandrecording.wordpress.com/2017/07/05/approximating-atmospheric-absorption-with-a-simple-filter/). In JUCE, I used the [`juce::dsp::FirstOrderTPTFilter< SampleType >`](https://docs.juce.com/master/classdsp_1_1FirstOrderTPTFilter.html) class for this purpose.
+
+Some final design notes: First, we have the stereo spread. The right channel has a slightly longer delay time than the left, with a default value of 23 samples added to each delay value, according to [Julius O. Smith](https://ccrma.stanford.edu/~jos/pasp/Freeverb.html). This simulates the effect of different physical environments to the right and left of the listener. Second, in my implementation I have a [low-frequency oscillator (LFO)](https://en.wikipedia.org/wiki/Low-frequency_oscillation) slowly modulating the first and third allpass filter delay times longer and shorter, giving a [chorusing effect](https://en.wikipedia.org/wiki/Chorus_(audio_effect)) and making the sound richer.
 
 ## Implementing Delays & Allpasses in JUCE
 
@@ -143,29 +196,6 @@ float vn = channelData[sample] + feedback;
 delayLine.pushSample(channel, vn);
 channelData[sample] = delayOutput + (vn * 0.5);
 ```
-
-Now let's put these all together to make a reverb!
-
-## The Classic Schroeder Reverberator
-
-Manfred Schroeder has two papers from 1961 that introduce the idea of allpasses and using them for reverberators.
-
-In *“Colorless” Artificial Reverberation*, [^4] Schroeder and co-author B.F. Logan note that when playing a single impulse into a room
-- Echo density increases to a “statistical clutter”
-- There is an “absence of ‘flutter’ echos, ie., periodic echos resulting from sound waves bouncing back and forth between parallel hard walls.” (210)
-
-Additionally, in the frequency ranges that are most relevant, there are enough “modes” (i.e., resonant emphases on specific frequencies) that for practical purposes, the frequency response of the room is flat or “colorless.” 
-
-In *Natural Sounding Artificial Reverberation* [^5] 
-
-https://valhalladsp.com/2021/09/22/getting-started-with-reverb-design-part-2-the-foundations/
-
-<figure>
-
-![DSP block diagram of 8 filtered-feedback comb filters summed in parallel, and feeding into four allpass filters in series](/media/blog/2025/06/reverb/freeverb.webp)
-
-<figcaption>The “Freeverb” Schroeder reverberator (diagram from <a href="https://ccrma.stanford.edu/~jos/pasp/Freeverb.html">Julius O. Smith)</a></figcaption>
-</figure>
 
 ## Final Notes
 
