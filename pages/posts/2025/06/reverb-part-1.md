@@ -1,6 +1,6 @@
 ---
 title: "Reverb Part 1: “Freeverb”"
-description: I discuss how algorithmic reverbs work using the popular “Freeverb.” I give details on feedforward/feedback delays and allpass filter, and I include a Max/MSP patch of this algorithm
+description: I discuss how algorithmic reverbs work using the popular “Freeverb.” I give details on feedforward/feedback delays and allpass filters, and I include a Max/MSP patch to play with.
 fedi_url: 
 og_image: /media/blog/2025/06/reverb_1/freeverb_og.jpg
 og_image_width: 1200
