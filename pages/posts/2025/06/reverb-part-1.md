@@ -1,6 +1,6 @@
 ---
-title: "Reverb Part 1: Introduction and a VST/AU Plugin"
-description: I discuss how algorithmic reverbs work, and I return to a VST/AU plugin I coded in C++/JUCE
+title: "Reverb Part 1: “Freeverb”"
+description: I discuss how algorithmic reverbs work using the popular “Freeverb.” I give details on feedforward/feedback delays and allpass filter, and I include a Max/MSP patch of this algorithm
 fedi_url: 
 og_image: /media/blog/2025/06/reverb_1/freeverb_og.jpg
 og_image_width: 1200
@@ -13,13 +13,11 @@ octothorpes:
   - music
 tags:
   - post
-  - juce
-  - c++
   - plugin
   - dsp
   - reverb
   - schroeder
-  - freeverb
+  - maxmsp
 post_series:
 ---
 
@@ -30,13 +28,13 @@ post_series:
 
 <link rel="stylesheet" type="text/css" href="/styles/math/katex.min.css" />
 
-I started work on a [reverb plugin](https://github.com/reillypascal/RSAlgorithmicVerb) in C++/JUCE back in 2023, and I've slowly added to it since. Today, I'm going to discuss how algorithmic (i.e., delay-based) reverbs work and some different designs, as well as an overview of my plugin and some JUCE resources. Let's get started!
+I started work on a [reverb plugin](https://github.com/reillypascal/RSAlgorithmicVerb/releases) in C++/JUCE back in 2023, and I've slowly added to it since. Today, I'm going to discuss how algorithmic (i.e., delay-based) reverbs work using the “Freeverb” algorithm that's available in that plugin. I've included a Max/MSP version of the reverb, and in a later post, I will discuss getting our hands dirty with the code in C++/JUCE, as well as a number of other cool algorithms. Let's get started!
 
 ## How Reverb Works
 
 There are two main categories of digital reverb—[convolution](https://www.bhphotovideo.com/find/newsLetter/Convolution-Reverb.jsp/) and algorithmic—and today we will be discussing algorithmic reverb. An algorithmic reverb is based on a network of delays or “echoes,” with individual delays roughly corresponding to the sound reflections from individual walls or objects, and the network of connections between them simulating the way a reflection from one surface may bounce off many others.
 
-Sean Costello of Valhalla DSP has a [series](https://valhalladsp.com/2021/09/22/getting-started-with-reverb-design-part-2-the-foundations/) of [posts](https://valhalladsp.com/2021/09/23/getting-started-with-reverb-design-part-3-online-resources/) giving [helpful resources](https://valhalladsp.com/2021/09/28/getting-started-with-reverb-design-part-4-books/) on reverb design, including influential papers, online resources, and books, and you can find the algorithms we'll discuss today among the papers he mentions.
+Sean Costello of Valhalla DSP has a [series](https://valhalladsp.com/2021/09/20/getting-started-with-reverb-design-part-1-dev-environments/) of [posts](https://valhalladsp.com/2021/09/22/getting-started-with-reverb-design-part-2-the-foundations/) giving [helpful resources](https://valhalladsp.com/2021/09/23/getting-started-with-reverb-design-part-3-online-resources/) on [reverb design](https://valhalladsp.com/2021/09/28/getting-started-with-reverb-design-part-4-books/), including influential papers, online resources, and books, and you can find the type of algorithm we'll discuss today among the papers he mentions.
 
 ### Feedforward and Feedback Delays
 
@@ -51,7 +49,7 @@ In the diagram below, $x(n)$ represents the incoming signal; $z^{-M}$ is the del
 <figcaption>Feedforward delay/comb filter (diagram from <a href="https://ccrma.stanford.edu/~jos/pasp04/Feedforward_Comb_Filters.html">Julius O. Smith</a>)</figcaption>
 </figure>
 
-Next, we have a “feedback” delay. Note how in the diagram below, the incoming signal is summed with the output of the delay *before* entering the delay; the gain $-a_M$ applied to the fed-back output of the delay is *negative*; and the output of the whole delay $y(n)$ is taken from that sum of the input and feedback *before* it enters the delay.
+Next, we have a “feedback” delay. Note how in the diagram below, the incoming signal is summed with the fed-back output of the delay *before* entering the delay; the gain $-a_M$ applied to the fed-back output of the delay is *negative*; and the output of the whole delay $y(n)$ is taken from that sum of the input and feedback *before* it enters the delay.
 
 <figure>
 
@@ -99,7 +97,7 @@ Now let's put these all together to make a reverb!
 
 Manfred Schroeder has two papers from 1961 that introduce the idea of allpasses and using them for reverberators.
 
-In *“Colorless” Artificial Reverberation*, [^4] Schroeder and co-author B.F. Logan note six features that they seek from a delay-based reverberator:
+In *“Colorless” Artificial Reverberation*, [^3] Schroeder and co-author B.F. Logan note six features that they seek from a delay-based reverberator:
 
 1. There should be a flat frequency response
 2. Normal modes (i.e., resonant emphases on specific frequencies) “must overlap and cover the entire audio frequency range”
@@ -118,17 +116,25 @@ On this algorithm, [Sean Costello comments that](https://valhalladsp.com/2021/09
 
 > The resulting reverberator structure is a bit hard to tune, as both the reverb attack and decay are controlled by the feedforward/feedback allpass coefficient, and is less “general purpose” than the structure discussed in Schoeder’s next paper.
 
-As Costello then mentions, some reverbs such as the [Eventide Blackhole](https://store.eventideaudio.com/products/blackhole) make artistic use of the weirdness of this structure. However, it would be helpful to have a more general-purpose algorithm. 
+As Costello then mentions, some reverbs such as the [Eventide Blackhole](https://store.eventideaudio.com/products/blackhole) make artistic use of the weirdness of this structure. However, it would be helpful to have a more general-purpose algorithm.
+
+Below I have a synth riff: first the dry signal, then a mix of the dry signal with a “wet” signal through 8 series allpasses. For the allpass example, I increase the feedforward/feedback parameter from about 0.1 up to 1, then back to 0.1 again. 
+
+<audio controls src="/media/blog/2025/06/reverb_1/pck_supersaw_dry.mp3" title="synth riff: dry"></audio>
+
+<audio controls src="/media/blog/2025/06/reverb_1/pck_supersaw_allpass_med.mp3" title="synth riff through series allpasses"></audio>
+
+As mentioned, this doesn't sound as natural as we'd like, as well as not being super flexible. It's a start though, and our next version will sound much nicer.
 
 ### Parallel Combs into Series Allpasses
 
-In *Natural Sounding Artificial Reverberation*, [^5] Schroeder proposes the class of algorithm shown below. Comb filters create a nice exponential amplitude decay (unlike the allpass chain in which, as mentioned above, both attack and decay depend on the same parameter). In response to the problem of “coloration” in the frequency spectrum, Schroeder notes that
+In *Natural Sounding Artificial Reverberation*, [^4] Schroeder proposes the class of algorithm shown below. Comb filters create a nice exponential amplitude decay (unlike the allpass chain in which, as mentioned above, both attack and decay depend on the same parameter). In response to the problem of “coloration” in the frequency spectrum, Schroeder notes that
 
 > extreme response irregularities are imperceptible when the density of peaks and valleys on the frequency scale is high enough
 
 In other words, if we combine several comb filters in parallel, the “comb teeth” in their frequency spectra will tightly “interlock,” creating what *sounds like* a flat frequency response. 
 
-The next problem after the comb's frequency response is the “flutter” effect. Schroeder gives the goal of around 1000 echoes per second to make a “natural”-sounding reverb. Assuming 4 parallel comb filters with delays that are incommensurate, but in the neighborhood of 40ms (25 echoes per second), we get only about 100 echoes per second. Assuming (as Schroeder does) that a single allpass multiplies the number of echoes by about 3, two series allpasses after 4 parallel combs is enough to meet the minimum requirement.
+The next problem after the comb's frequency response is the “flutter” effect. Schroeder gives the goal of around 1000 echoes per second to make a “natural”-sounding reverb. Assuming 4 parallel comb filters with delays that don't easily divide into each other, but are in the neighborhood of 40ms (25 echoes per second), we get only about 100 echoes per second. Assuming (as Schroeder does) that a single allpass multiplies the number of echoes by about 3, two series allpasses after 4 parallel combs is enough to meet the minimum requirement.
 
 <figure>
 
@@ -137,13 +143,19 @@ The next problem after the comb's frequency response is the “flutter” effect
 <figcaption>The “Freeverb” Schroeder reverberator (diagram from <a href="https://ccrma.stanford.edu/~jos/pasp/Freeverb.html">Julius O. Smith)</a></figcaption>
 </figure>
 
-The combination of parallel combs into series allpasses (or sometimes vice versa) is often referred to as a “Schroeder reverb.” The “Freeverb” algorithm shown above is one popular Schroeder reverb. The delays are given in samples, with the floating point values representing the delay feedback coefficients. In the combs, there are two values, and as far as I can tell, the first is the feedback coefficient, and the second is the lowpass filtering (see next paragraph).
+The combination of parallel combs into series allpasses (or sometimes vice versa) is often referred to as a “Schroeder reverb.” The “Freeverb” algorithm shown above is one popular Schroeder reverb. The delays are given in samples, with the floating point values representing the delay feedback coefficients. In the combs, there are two values, and as far as I can tell, the first is the feedback coefficient, and the second is the lowpass filtering (more details in a moment).
 
-One additional feature of this particular version is that there is a first-order (i.e., 6dB/octave) low-pass filter in the feedback loop of the combs. This causes higher frequencies to decay faster. While Schroeder and Logan seek to make all frequencies decay at an equal rate, the most important aspect seems to be to prevent individual frequency bands from ringing and standing out. Reverberations in the physical world decay more quickly at higher frequencies, due (at least in my understanding) to the sound absorbency of building materials, as well as the fact that [the atmosphere can be approximated with a low-pass filter](https://computingandrecording.wordpress.com/2017/07/05/approximating-atmospheric-absorption-with-a-simple-filter/). In JUCE, I used the [`juce::dsp::FirstOrderTPTFilter< SampleType >`](https://docs.juce.com/master/classdsp_1_1FirstOrderTPTFilter.html) class for this purpose.
+Below I have first the dry synth riff, followed by the riff through the “Freeverb” algorithm on [my algorithmic reverb plugin](https://github.com/reillypascal/RSAlgorithmicVerb/releases). This time it sounds much more natural, and if you play around with the Max patch (see below) or my plugin, there's much more flexibility.
 
-Some final design notes: First, we have the stereo spread. The right channel has a slightly longer delay time than the left, with a default value of 23 samples added to each delay value, according to [Julius O. Smith](https://ccrma.stanford.edu/~jos/pasp/Freeverb.html). This simulates the effect of different physical environments to the right and left of the listener. Second, in my implementation I have a [low-frequency oscillator (LFO)](https://en.wikipedia.org/wiki/Low-frequency_oscillation) slowly modulating the first and third allpass filter delay times longer and shorter, giving a [chorusing effect](https://en.wikipedia.org/wiki/Chorus_(audio_effect)) and making the sound richer.
+<audio controls src="/media/blog/2025/06/reverb_1/pck_supersaw_dry.mp3" title="synth riff: dry"></audio>
 
-Next we will discuss implementing this in JUCE, but if you want to do it in Max/MSP, you can use the patch below:
+<audio controls src="/media/blog/2025/06/reverb_1/pck_supersaw_freeverb.mp3" title="synth riff through 'Freeverb' algorithm"></audio>
+
+One additional feature of this particular version is that there is a first-order (i.e., 6dB/octave) low-pass filter in the feedback loop of the combs. This causes higher frequencies to decay faster. While Schroeder and Logan seek to make all frequencies decay at an equal rate, the most important aspect seems to be to prevent individual frequency bands from ringing and standing out. Reverberations in the physical world decay more quickly at higher frequencies, due (at least in my understanding) to the sound absorbency of building materials, as well as the fact that [the atmosphere can be approximated with a low-pass filter](https://computingandrecording.wordpress.com/2017/07/05/approximating-atmospheric-absorption-with-a-simple-filter/).
+
+Some final design notes: First, we have the stereo spread. The right channel has a slightly longer delay time than the left, with a default value of 23 samples added to each delay value, according to [Julius O. Smith](https://ccrma.stanford.edu/~jos/pasp/Freeverb.html). This simulates the effect of different physical environments to the right and left of the listener. Second, in my JUCE implementation I have a [low-frequency oscillator (LFO)](https://en.wikipedia.org/wiki/Low-frequency_oscillation) slowly modulating the first and third allpass filter delay times longer and shorter, giving a [chorusing effect](https://en.wikipedia.org/wiki/Chorus_(audio_effect)) and making the sound richer.
+
+If you want to play with this reverb algorithm in Max/MSP, you can use the patch below. Note that this is just the “wet” sound; you'll need to mix the output with the “dry” (unprocessed) signal. The \[M4L.cross2~] object is useful for this.
 
 <div class="maxmsp-clipboard">
 <details>
@@ -308,60 +320,6 @@ wG+e.nn5Y2B
 </details>
 </div>
 
-## Implementing Delays & Allpasses in JUCE
-
-The [JUCE](https://juce.com/) C++ framework is a popular way to make audio plugins, and it's what I'll use today. I won't go into too much background on it; if you want a good introduction, I would start with [the official tutorials](https://juce.com/learn/tutorials/) and then look at [The Audio Programmer's YouTube channel](https://www.youtube.com/theaudioprogrammer) and/or [the books from that group](https://www.theaudioprogrammer.com/books). If you want to learn C++, I used [Sams Teach Yourself C++ in One Hour a Day](https://www.oreilly.com/library/view/sams-teach-yourself/9780137334674/) by Siddhartha Rao.
-
-First, to make a basic delay, I use the class [`juce::dsp::DelayLine<float>`](https://docs.juce.com/master/classdsp_1_1DelayLine.html). Note that this class is part of the `dsp` module, which is not included by default. When making a new JUCE project using the Projucer, you will need to check the `juce_dsp` box in the “Modules” menu, on the first window you get when you make a new project.
-
-The class `juce::dsp::DelayLine<float>` has methods [`pushSample()`](https://docs.juce.com/master/classdsp_1_1DelayLine.html#a5d07327abc2d6bcc69bb3d3eea488d8f) and [`popSample()`](https://docs.juce.com/master/classdsp_1_1DelayLine.html#afb9c3cadcd2a333a742aa86a97caf944). `pushSample()` takes two arguments—the channel and the input sample—and pushes the sample into the delay line for the appropriate channel. This is equivalent to the input of the delays (the $z^{-M}$ blocks) above. `popSample()` takes the channel and an optional delay argument, and it returns the next sample from the output of the delay.
-
-You can find my full code for the Freeverb algorithm (explained a little later) in the [`Freeverb.cpp`](https://github.com/reillypascal/RSAlgorithmicVerb/blob/main/Source/Freeverb.cpp) and [`Freeverb.h`](https://github.com/reillypascal/RSAlgorithmicVerb/blob/main/Source/Freeverb.h) source files.
-
-### JUCE Feedforward Delay
-
-First we create a delay line: `juce::dsp::DelayLine<float> delayLine { 22050 };`. (For an explanation of some of the surrounding code, see footnote: [^3]) Notice how we initialize the delay with 22050 samples (usually equivalent to 0.5s) of maximum delay time. To make a feedforward delay with this, we:
-- Write the current sample to the delay line.
-- Get the next delayed sample from the delay line.
-- Mix the original and delayed signals, each multiplied by a gain value.
-
-```cpp
-delayLine.pushSample(channel, channelData[sample]);
-float feedforward = delayLine.popSample(channel);
-channelData[sample] = channelData[sample] * 0.5 + feedforward * 0.5;
-```
-
-### JUCE Feedback Delay
-
-For our feedback, we prepare the delay line in the same way. As we previously discussed, our steps for each sample are as follows:
-- Mix the incoming signal (multiplied by a gain value) with the fed-back delay output (multiplied by a negative gain)
-  - Note that if this delay is not forming part of an allpass filter, it's more common to have the feedback gain be positive.
-- Write that signal to the delay line, to be fed back later
-- Output that same signal (the one we wrote to the delay line)
-
-```cpp
-float feedback = delayLine.popSample(channel) * -0.5 + channelData[sample] * 0.5;
-delayLine.pushSample(channel, feedback);
-channelData[sample] = feedback;
-```
-
-### JUCE Allpass
-
-Finally, for the allpass, we:
-- Get the delay output.
-- Get the feedback signal by multiplying that output by a negative gain.
-- Get the input to the delay (labeled $v(n)$ in the block diagram) by adding the incoming signal and the feedback; push this into the delay.
-- Get the output of the allpass, $y(n)$, by combining the delay output with the delay input, $v(n)$, multiplied by a positive gain value.
-
-```cpp
-float delayOutput = delayLine.popSample(channel);
-float feedback = delayOutput * -0.5;
-float vn = channelData[sample] + feedback;
-
-delayLine.pushSample(channel, vn);
-channelData[sample] = delayOutput + (vn * 0.5);
-```
-
 ## Final Notes
 
 That's all for today! My plan is to do a series of posts, each covering a class of reverb algorithms. For the next one, I'll be writing about rings of allpass filters—this is relevant to, for example, [Jon Dattorro's popular 1997 algorithm](https://ccrma.stanford.edu/~dattorro/EffectDesignPart1.pdf) that appears to be based on a plate reverb from [Lexicon's 224 and 480 reverb units](https://en.wikipedia.org/wiki/Lexicon_(company)#Reverb_and_effects). Until next time!
@@ -370,8 +328,6 @@ That's all for today! My plan is to do a series of posts, each covering a class 
 
 [^2]: Note that the triangle symbol is the standard DSP symbol for amplification/an amplifier.
 
-[^3]: In our reverb processor's `prepare()` function we call `delayLine.prepare(spec);`, with `spec` being a [`juce::dsp::ProcessSpec`](https://docs.juce.com/master/structdsp_1_1ProcessSpec.html). At some point—either here or in the `processBlock()` function—we need to set the delay time in samples: run e.g., `delayLine.setDelay(1617);`. Next, in the `processBlock()` function we run our delay. In JUCE, we can get a write pointer into a `juce::AudioBuffer<float>` (which contain's the audio input from our DAW) by writing e.g., `auto* channelData = buffer.getWritePointer (channel);`, with `channel` representing the current channel number.
+[^3]: M. R. Schroeder and B. F. Logan, “‘Colorless’ artificial reverberation,” *IRE Transactions on Audio*, vol. AU-9, no. 6, pp. 209–214, Nov. 1961, doi: [10.1109/TAU.1961.1166351](https://doi.org/10.1109/TAU.1961.1166351).
 
-[^4]: M. R. Schroeder and B. F. Logan, “‘Colorless’ artificial reverberation,” *IRE Transactions on Audio*, vol. AU-9, no. 6, pp. 209–214, Nov. 1961, doi: [10.1109/TAU.1961.1166351](https://doi.org/10.1109/TAU.1961.1166351).
-
-[^5]: M. R. Schroeder, “Natural sounding artificial reverberation,” in *Audio Engineering Society Convention 13*, Audio Engineering Society, 1961. Accessed: Dec. 29, 2024. \[Online]. Available: [https://www.aes.org/e-lib/download.cfm?ID=343](https://www.aes.org/e-lib/download.cfm?ID=343)
+[^4]: M. R. Schroeder, “Natural sounding artificial reverberation,” in *Audio Engineering Society Convention 13*, Audio Engineering Society, 1961. Accessed: Dec. 29, 2024. \[Online]. Available: [https://www.aes.org/e-lib/download.cfm?ID=343](https://www.aes.org/e-lib/download.cfm?ID=343)
