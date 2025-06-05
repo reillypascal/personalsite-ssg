@@ -128,13 +128,13 @@ As mentioned, this doesn't sound as natural as we'd like, as well as not being s
 
 ### Parallel Combs into Series Allpasses
 
-In *Natural Sounding Artificial Reverberation*, [^4] Schroeder proposes the class of algorithm shown below. Comb filters create a nice exponential amplitude decay (unlike the allpass chain in which, as mentioned above, both attack and decay depend on the same parameter). In response to the problem of “coloration” in the frequency spectrum, Schroeder notes that
+In *Natural Sounding Artificial Reverberation*, [^4] Schroeder proposes the class of algorithm shown below. Feedback comb filters create a nice exponential amplitude decay (unlike the allpass chain in which, as mentioned above, both attack and decay depend on the same parameter). In response to the problem of “coloration” in the frequency spectrum, Schroeder notes that
 
 > extreme response irregularities are imperceptible when the density of peaks and valleys on the frequency scale is high enough
 
-In other words, if we combine several comb filters in parallel, the “comb teeth” in their frequency spectra will tightly “interlock,” creating what *sounds like* a flat frequency response. 
+In other words, if we combine several feedback comb filters in parallel, the “comb teeth” in their frequency spectra will tightly “interlock,” creating what *sounds like* a flat frequency response. 
 
-The next problem after the comb's frequency response is the “flutter” effect. Schroeder gives the goal of around 1000 echoes per second to make a “natural”-sounding reverb. Assuming 4 parallel comb filters with delays that don't easily divide into each other, but are in the neighborhood of 40ms (25 echoes per second), we get only about 100 echoes per second. Assuming (as Schroeder does) that a single allpass multiplies the number of echoes by about 3, two series allpasses after 4 parallel combs is enough to meet the minimum requirement.
+The next problem after the feedback comb's frequency response is the “flutter” effect. Schroeder gives the goal of around 1000 echoes per second to make a “natural”-sounding reverb. Assuming 4 parallel comb filters with delays that don't easily divide into each other, but are in the neighborhood of 40ms (25 echoes per second), we get only about 100 echoes per second. Assuming (as Schroeder does) that a single allpass multiplies the number of echoes by about 3, two series allpasses after 4 parallel combs is enough to meet the minimum requirement.
 
 <figure>
 
@@ -143,7 +143,7 @@ The next problem after the comb's frequency response is the “flutter” effect
 <figcaption>The “Freeverb” Schroeder reverberator (diagram from <a href="https://ccrma.stanford.edu/~jos/pasp/Freeverb.html">Julius O. Smith)</a></figcaption>
 </figure>
 
-The combination of parallel combs into series allpasses (or sometimes vice versa) is often referred to as a “Schroeder reverb.” The “Freeverb” algorithm shown above is one popular Schroeder reverb. The delays are given in samples, with the floating point values representing the delay feedback coefficients. In the combs, there are two values, and as far as I can tell, the first is the feedback coefficient, and the second is the lowpass filtering (more details in a moment).
+The combination of parallel feedback combs into series allpasses (or sometimes vice versa) is often referred to as a “Schroeder reverb.” The “Freeverb” algorithm shown above is one popular Schroeder reverb. The delays are given in samples, with the floating point values representing the delay feedback coefficients. In the combs, there are two values, and as far as I can tell, the first is the feedback coefficient, and the second is the lowpass filtering (more details in a moment).
 
 Below I have first the dry synth riff, followed by the riff through the “Freeverb” algorithm on [my algorithmic reverb plugin](https://github.com/reillypascal/RSAlgorithmicVerb/releases). This time it sounds much more natural, and if you play around with the Max patch (see below) or my plugin, there's much more flexibility.
 
