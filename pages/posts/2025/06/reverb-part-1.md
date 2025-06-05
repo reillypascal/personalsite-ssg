@@ -159,7 +159,7 @@ If you want to play with this reverb algorithm in Max/MSP, you can use the patch
 
 <div class="maxmsp-clipboard">
 <details>
-  <summary>“Freeverb” using gen~ objects. Copy code and select <i>New From Clipboard</i> in Max.</summary>
+  <summary>“Freeverb” Max patch. Copy code and select <i>New From Clipboard</i> in Max.</summary>
 <pre class="language-max"><code class="language-max">----------begin_max5_patcher----------
 8187.3oc6c10baiikF95jeEZzbW2IYv2jb2axdeuaU6bamtbQaQ6vokk7JQm
 NYlZ5e6KIAkDoD+.fBVBR5cposCIkLOmC93.f2GR7ud+6ld+xumrd5j+iI+5
