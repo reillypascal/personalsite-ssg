@@ -4,7 +4,7 @@ description: Reading list of sources critical of AI or reporting on harm caused 
 fedi_url:
   - https://hachyderm.io/@reillypascal/114597601909960276
   - https://bsky.app/profile/reillypascal.bsky.social/post/3lqflxhpllc2j
-date: 2025-05-25T22:40:00-0400
+date: 2025-06-10T18:52:00-0400
 octothorpes:
   - ai
 tags:
@@ -75,6 +75,16 @@ In other words, as Merchant puts it
 > The news is yet another example of how the tools people have used to navigate the internet for decades are overwhelmed by the flood of AI-generated content even when they are not asking for it and which almost exclusively use people’s work or likeness without consent. At times, the deluge of AI content makes it difficult for users to differentiate between what is real and what is AI-generated.
 
 ## AI as an Accountability Sink
+
+- Jonah Owen Lamb, “[San Francisco cops are using AI to write police reports](https://sfstandard.com/2025/06/10/sfpd-using-ai-police-reports/)”
+
+> Guariglia added that defense lawyers across the country have told EFF that AI raises a major problem when it comes to the veracity of police testimony. Police reports can’t be presented as evidence alone in court, so officers must testify about what they wrote. But if AI wrote a report, and a cop’s testimony is different from that report, police will be able to blame the technology.
+
+> “If a cop is caught in a lie on the stand, it’s much easier for them to say the AI made that up as opposed to them saying you caught me lying in the report,” Guariglia said.
+
+> Another problem, he said, is that there is no way to track which part of a report was written by AI versus an officer, making it difficult to parse the document if questions are raised about its veracity.
+
+> Some U.S. police departments have begun using AI but are not disclosing its use, Guariglia said.
 
 - Atay Kozlovski, “[When Algorithms Decide Who is a Target: IDF's use of AI in Gaza](https://www.techpolicy.press/when-algorithms-decide-who-is-a-target-idfs-use-of-ai-in-gaza/)”
 
