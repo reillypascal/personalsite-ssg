@@ -45,8 +45,8 @@
             <pubDate>{{ post.date | dateToRfc822 }}</pubDate>
             <description>{{ post.data.description }}</description>
             <content:encoded>
-            {# {{ finalHTMLContent | sanitizeHTML(finalHTMLContent) | htmlToAbsoluteUrls(absolutePostUrl) }} #}
-            {{ finalHTMLContent | htmlToAbsoluteUrls(absolutePostUrl) }}
+            {{ finalHTMLContent | sanitizeHTML(finalHTMLContent) | htmlToAbsoluteUrls(absolutePostUrl) }}
+            {# {{ finalHTMLContent | htmlToAbsoluteUrls(absolutePostUrl) }} #}
             </content:encoded>
           </item>
       {%- endif %}

@@ -11,7 +11,7 @@ description: My policy on the use of AI on this site, and links to a library of 
 
 I do not use large language models (LLMs) or any other form of “generative AI” in any capacity in any of the writing, music, code, or images on this website.
 
-While [the reasons I oppose “generative AI” are numerous](/wiki/reading/ai-criticism), the most important is labor solidarity. I see “generative AI” as [an ideology](https://aworkinglibrary.com/writing/toolmen) and a [rhetorical device](https://www.bloodinthemachine.com/p/the-ai-jobs-crisis-is-here-now) used to justify worsening labor conditions and disempowering workers. As [Tracy Durnell comments](https://tracydurnell.com/2025/06/02/generative-ai-and-the-business-borg-aesthetic/),
+While [the reasons I oppose “generative AI” are numerous](/wiki/reading/ai-criticism), the most important to me is labor solidarity. I see “generative AI” as [an ideology](https://aworkinglibrary.com/writing/toolmen) and a [rhetorical device](https://www.bloodinthemachine.com/p/the-ai-jobs-crisis-is-here-now) used to justify worsening labor conditions and disempowering workers. As [Tracy Durnell comments](https://tracydurnell.com/2025/06/02/generative-ai-and-the-business-borg-aesthetic/),
 
 > Generative AI — both imagery and text — is inextricable from the corporate vision for its use: a world in which [workers are powerless and worthless](https://www.axios.com/2025/05/28/ai-jobs-white-collar-unemployment-anthropic), replaced by “free” generated material.
 
