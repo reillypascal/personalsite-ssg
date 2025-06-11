@@ -8,7 +8,8 @@ import markdownItAnchor from 'markdown-it-anchor';
 import markdownItAttrs from 'markdown-it-attrs';
 import markdownItFootnote from "markdown-it-footnote";
 import markdownItGitHubAlerts from 'markdown-it-github-alerts';
-import { katex } from "@mdit/plugin-katex";
+import { createMathjaxInstance, mathjax } from "@mdit/plugin-mathjax";
+// import { katex } from "@mdit/plugin-katex";
 // import mdBiblatex from '@arothuis/markdown-it-biblatex';
 // import mdItObsidianCallouts from 'markdown-it-obsidian-callouts';
 // import cheerio from "cheerio";
@@ -39,12 +40,12 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter("sanitizeHTML", (html) => {
     return sanitizeHTML(html, {
       // adds on to full available list
-      allowedTags: sanitizeHTML.defaults.allowedTags.concat([ 'audio', 'img', 'source', 'details', 'summary' ]),
+      allowedTags: sanitizeHTML.defaults.allowedTags.concat([ 'audio', 'img', 'source', 'details', 'summary', 'math', 'mrow', 'msup','msub', 'mi', 'mo', 'mjx-container', 'mjx-math', 'mjx-assistive-mml' ]),
       allowedAttributes: false, // this means allow all
       nonBooleanAttributes: [],
       // these two allow for discarding tag contents; must manually include default values
-      nonTextTags: [ 'style', 'script', 'textarea', 'option', 'noscript', 'math', 'semantics', 'mrow', 'mi', 'mo', 'annotation' ],
-      disallowedTagsMode: 'completelyDiscard',
+      // nonTextTags: [ 'style', 'script', 'textarea', 'option', 'noscript', 'math', 'semantics', 'mrow', 'mi', 'mo', 'annotation' ],
+      // disallowedTagsMode: 'completelyDiscard',
     });
   });
   
@@ -165,7 +166,9 @@ export default async function (eleventyConfig) {
     linkify: true,
   };
 
-  let markdownLib = markdownIt(options).use(markdownItAnchor, { tabIndex: false }).use(markdownItAttrs).use(markdownItFootnote).use(markdownItGitHubAlerts, { markers: '*' }).use(katex);
+  const mathjaxInstance = createMathjaxInstance({ output: "chtml" });
+
+  let markdownLib = markdownIt(options).use(markdownItAnchor, { tabIndex: false }).use(markdownItAttrs).use(markdownItFootnote).use(markdownItGitHubAlerts, { markers: '*' }).use(mathjax, mathjaxInstance);//.use(katex);
   // .use(mdItObsidianCallouts);
   // .use(mdBiblatex, { bibPath: 'documents/bibliography/library.bib', linkToBibliography: true, });
   eleventyConfig.setLibrary("md", markdownLib);
