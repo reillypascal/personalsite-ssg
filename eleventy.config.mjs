@@ -40,7 +40,7 @@ export default async function (eleventyConfig) {
   eleventyConfig.addFilter("sanitizeHTML", (html) => {
     return sanitizeHTML(html, {
       // adds on to full available list
-      allowedTags: sanitizeHTML.defaults.allowedTags.concat([ 'audio', 'img', 'source', 'details', 'summary', 'math', 'mrow', 'msup','msub', 'mi', 'mo', 'mjx-container', 'mjx-math', 'mjx-assistive-mml' ]),
+      allowedTags: sanitizeHTML.defaults.allowedTags.concat([ 'audio', 'img', 'source', 'details', 'summary', 'math', 'semantics', 'annotation', 'mrow', 'mtable', 'mtr','mtd', 'mfrac', 'msqrt','msup', 'msub', 'mi', 'mn', 'mo', 'mjx-container', 'mjx-math', 'mjx-assistive-mml' ]),
       allowedAttributes: false, // this means allow all
       nonBooleanAttributes: [],
       // these two allow for discarding tag contents; must manually include default values
