@@ -34,7 +34,7 @@ This page is a collection of reporting, research, and essays critical of large l
 
 > These imperatives have always existed, of course; bosses have historically tried to maximize profits by using cost-cutting technologies. But generative AI has been uniquely powerful in equipping them with a narrative with which to do so—and to thus justify degrading, disempowering, or destroying vulnerable jobs. 
 
-- Brian Merchant, “[The “AI jobs apocalypse” is for the bosses](https://www.bloodinthemachine.com/p/the-ai-jobs-apocalypse-is-for-the)”
+- Brian Merchant, “[The ‘AI jobs apocalypse’ is for the bosses](https://www.bloodinthemachine.com/p/the-ai-jobs-apocalypse-is-for-the)”
 
 In this article, Merchant points to a [blog post](https://www.axios.com/2025/05/20/ai-leadership) by Jim VandeHei, CEO of Axios, in which VandeHei says that he 
 
