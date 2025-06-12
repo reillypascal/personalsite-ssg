@@ -1,5 +1,5 @@
 ---
-title: Photoblog — Stars with Carl
+title: Photoblog—Stars with Carl
 fedi_url: 
   - https://hachyderm.io/@reillypascal/114297925178833375
   - https://bsky.app/profile/reillypascal.bsky.social/post/3lmagwvbcxs2l

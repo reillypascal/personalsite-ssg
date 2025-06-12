@@ -1,5 +1,5 @@
 ---
-title: Photoblog — Grimes Glen & Canandaigua Lake
+title: Photoblog—Grimes Glen & Canandaigua Lake
 description: Today we went hiking in Grimes Glen in Naples, NY and stopped by Canandaigua Lake
 canonical_url: https://reillyspitzfaden.com/notes/2025/03/grimes-glen-canandaigua-lake/
 fedi_url:

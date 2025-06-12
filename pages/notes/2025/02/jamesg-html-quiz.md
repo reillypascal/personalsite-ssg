@@ -1,6 +1,6 @@
 ---
-title: Jamesg — Which HTML element are you [Quiz]?
-description: I took James' quiz — I like doing these kinds of web games!
+title: Jamesg—Which HTML element are you [Quiz]?
+description: I took James' quiz—I like doing these kinds of web games!
 canonical_url: https://reillyspitzfaden.com/notes/2025/02/jamesg-html-quiz/
 fedi_url:
 date: 2025-02-14T12:40:00-0500

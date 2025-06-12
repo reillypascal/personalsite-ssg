@@ -1,5 +1,5 @@
 ---
-title: Photoblog — Highland Park
+title: Photoblog—Highland Park
 fedi_url:
   - https://hachyderm.io/@reillypascal/114565381319126305
   - https://bsky.app/profile/did:plc:7bvcd7usebxsagbrjbgpb75u/post/3lpxbx7teoc2o

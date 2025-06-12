@@ -1,5 +1,5 @@
 ---
-title: Photoblog — Mendon Ponds Park
+title: Photoblog—Mendon Ponds Park
 description: I went to the ”Devil's Bathtub” with my partner this weekend
 canonical_url: https://reillyspitzfaden.com/notes/2025/03/mendon-ponds-park/
 fedi_url:
