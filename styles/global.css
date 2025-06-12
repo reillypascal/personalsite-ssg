@@ -2,6 +2,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
 
+/* @font-face {
+  font-family: 'Libre Franklin';
+  font-weight: 100 900;
+  font-display: swap;
+  src: 
+    url('/fonts/librefranklin/LibreFranklin-VariableFont_wght.woff2') format('woff2'),
+    url('/fonts/librefranklin/LibreFranklin-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: 
+    url('/fonts/librefranklin/LibreFranklin-Italic-VariableFont_wght.woff2') format('woff2'),
+    url('/fonts/librefranklin/LibreFranklin-Italic-VariableFont_wght.ttf') format('truetype');
+} */
+
 :root {
     /* color variables */
     --bg-dark: hsl(227, 26%, 11%);
