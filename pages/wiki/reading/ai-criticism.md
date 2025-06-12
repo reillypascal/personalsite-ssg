@@ -20,9 +20,7 @@ This page is a collection of reporting, research, and essays critical of large l
 
 - Aaron Benanav, “[Is the AI Bubble About to Burst?](https://www.versobooks.com/blogs/news/is-the-ai-bubble-about-to-burst)”
 
-> Rather than inducing mass unemployment, the more immediate effects of generative AI are likely to mirror broader trends of job transformation already unfolding today, namely de-skilling and surveillance. \[…]
-
-> Without robust social and legal frameworks to redirect their development, the likely outcome of the generative AI boom will not be mass joblessness, but a worsening of work conditions, an acceleration of economic inequality, and a further erosion of workers’ autonomy.
+> The real threat posed by generative AI is not that it will eliminate work on a mass scale, rendering human labour obsolete. It is that, left unchecked, it will continue to transform work in ways that deepen precarity, intensify surveillance, and widen existing inequalities. Technological change is not an external force to which societies must simply adapt; it is a socially and politically mediated process. Legal frameworks, collective bargaining, public investment, and democratic regulation all play decisive roles in shaping how technologies are developed and deployed, and to what ends.
 
 - Noam Scheiber, “[At Amazon, Some Coders Say Their Jobs Have Begun to Resemble Warehouse Work](https://www.nytimes.com/2025/05/25/business/amazon-ai-coders.html)” ([archived link](https://archive.is/g127S))
 
