@@ -30,7 +30,7 @@
                             {%- endif -%}
                         </a> this post
                         {%- if mention.content.text %}
-                            <blockquote>{{ mention.content.text | truncate: 175 }}</blockquote>
+                            <blockquote>{{ mention.content.text | excerpt }}</blockquote>
                         {%- endif %}
                     </div>
                 {% endfor %}

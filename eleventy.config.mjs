@@ -37,10 +37,20 @@ export default async function (eleventyConfig) {
 	});
   
   // filters
+  // https://11ty.rocks/eleventyjs/content/#excerpt-filter
+  eleventyConfig.addFilter("excerpt", (post) => {
+      const content = post.replace(/(<([^>]+)>)/gi, "");
+      return content.substr(0, content.lastIndexOf(" ", 200)) + "…";
+  });
+
   eleventyConfig.addFilter("sanitizeHTML", (html) => {
     return sanitizeHTML(html, {
       // adds on to full available list
-      allowedTags: sanitizeHTML.defaults.allowedTags.concat([ 'audio', 'img', 'source', 'details', 'summary', 'math', 'semantics', 'annotation', 'mrow', 'mtable', 'mtr','mtd', 'mfrac', 'msqrt','msup', 'msub', 'mi', 'mn', 'mo', 'mjx-container', 'mjx-math', 'mjx-assistive-mml' ]),
+      allowedTags: sanitizeHTML.defaults.allowedTags.concat([ 'audio', 'img', 'source', 'details', 'summary', 
+        // MathML
+        'math', 'semantics', 'annotation', 'mrow', 'mtable', 'mtr', 'mtd', 'mfrac', 'msqrt','msup', 'msub', 'mi', 'mn', 'mo', 
+        // MathJax
+        'mjx-container', 'mjx-assistive-mml', 'mjx-math', 'mjx-eqn', 'mjx-mi', 'mjx-mo', 'mjx-c', 'mjx-msub', 'mjx-msup', 'mjx-script', 'mjx-texatom' ]),
       allowedAttributes: false, // this means allow all
       nonBooleanAttributes: [],
       // these two allow for discarding tag contents; must manually include default values
