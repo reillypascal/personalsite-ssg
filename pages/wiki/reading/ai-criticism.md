@@ -16,13 +16,13 @@ tags:
 
 This page is a collection of reporting, research, and essays critical of large language models (LLMs) and other “generative AI.” Articles are organized based on topic. It is an ever-growing list.
 
-## Output Quality
-
-- William Harding, Matthew Kloster, “[Coding on Copilot: 2023 Data Suggests Downward Pressure on Code Quality](https://www.gitclear.com/coding_on_copilot_data_shows_ais_downward_pressure_on_code_quality)”
-
-> We find disconcerting trends for maintainability. Code churn -- the percentage of lines that are reverted or updated less than two weeks after being authored -- is projected to double in 2024 compared to its 2021, pre-AI baseline. We further find that the percentage of “added code” and “copy/pasted code” is increasing in proportion to “updated,” “deleted,” and “moved” code. In this regard, code generated during 2023 more resembles an itinerant contributor, prone to violate the [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)-ness of the repos visited.
-
 ## AI as a Labor Issue
+
+- Aaron Benanav, “[Is the AI Bubble About to Burst?](https://www.versobooks.com/blogs/news/is-the-ai-bubble-about-to-burst)”
+
+> Rather than inducing mass unemployment, the more immediate effects of generative AI are likely to mirror broader trends of job transformation already unfolding today, namely de-skilling and surveillance. \[…]
+
+> Without robust social and legal frameworks to redirect their development, the likely outcome of the generative AI boom will not be mass joblessness, but a worsening of work conditions, an acceleration of economic inequality, and a further erosion of workers’ autonomy.
 
 - Noam Scheiber, “[At Amazon, Some Coders Say Their Jobs Have Begun to Resemble Warehouse Work](https://www.nytimes.com/2025/05/25/business/amazon-ai-coders.html)” ([archived link](https://archive.is/g127S))
 
@@ -57,6 +57,12 @@ In other words, as Merchant puts it
 - Cory Doctorow, “[Pluralistic: Humans are not perfectly vigilant (01 Apr 2024)](https://pluralistic.net/2024/04/01/human-in-the-loop/)”
 
 > This turns AI-“assisted” coders into _reverse_ centaurs. The AI can churn out code at superhuman speed, and you, the human in the loop, must maintain perfect vigilance and attention as you review that code, spotting the cleverly disguised hooks for malicious code that the AI can't be prevented from inserting into its code.
+
+## Output Quality
+
+- William Harding, Matthew Kloster, “[Coding on Copilot: 2023 Data Suggests Downward Pressure on Code Quality](https://www.gitclear.com/coding_on_copilot_data_shows_ais_downward_pressure_on_code_quality)”
+
+> We find disconcerting trends for maintainability. Code churn -- the percentage of lines that are reverted or updated less than two weeks after being authored -- is projected to double in 2024 compared to its 2021, pre-AI baseline. We further find that the percentage of “added code” and “copy/pasted code” is increasing in proportion to “updated,” “deleted,” and “moved” code. In this regard, code generated during 2023 more resembles an itinerant contributor, prone to violate the [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)-ness of the repos visited.
 
 ## Harassment and Spam
 
