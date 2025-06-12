@@ -1,11 +1,11 @@
 /* ibm-plex-mono-regular - latin */
-@font-face {
+/* @font-face {
   font-display: swap;
   font-family: 'IBM Plex Mono';
   font-style: normal;
   font-weight: 400;
   src: url('/fonts/ibm-plex-mono/ibm-plex-mono-v19-latin-regular.woff2') format('woff2');
-}
+} */
 
 /* ibm-plex-mono-italic - latin */
 /* @font-face {
@@ -16,9 +16,8 @@
   src: url('/fonts/ibm-plex-mono/ibm-plex-mono-v19-latin-italic.woff2') format('woff2'); 
 } */
 
-
 code {
-    font-family: 'IBM Plex Mono', monospace !important;
+    /* font-family: 'IBM Plex Mono', monospace !important; */
     font-size: 0.85rem;
 }
 

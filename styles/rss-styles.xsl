@@ -17,7 +17,23 @@
           :root {
             --block-top-bottom-margin: 48px;
           }
-          @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900");
+          @font-face {
+            font-family: 'Libre Franklin';
+            font-weight: 100 900;
+            font-display: swap;
+            src: 
+              url('/styles/fonts/librefranklin/LibreFranklin-VariableFont_wght.woff2') format('woff2'),
+              url('/styles/fonts/librefranklin/LibreFranklin-VariableFont_wght.ttf') format('truetype');
+          }
+          @font-face {
+            font-family: 'Libre Franklin';
+            font-style: italic;
+            font-weight: 100 900;
+            font-display: swap;
+            src: 
+              url('/styles/fonts/librefranklin/LibreFranklin-Italic-VariableFont_wght.woff2') format('woff2'),
+              url('/styles/fonts/librefranklin/LibreFranklin-Italic-VariableFont_wght.ttf') format('truetype');
+          }
           body {
             background-color: hsl(227, 26%, 11%);
             color: hsl(227, 87%, 95%);
