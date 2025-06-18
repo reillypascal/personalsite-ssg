@@ -119,6 +119,10 @@ In other words, as Merchant puts it
 
 ## Economics of AI
 
+- From Jason, [*The Computational Web*](https://www.fromjason.xyz/p/notebook/the-computational-web/)
+
+> Compute is expensive and increasingly difficult to scale. These hurdles make compute accessible only to the largest tech firms in the world. Shoehorning AI features into our apps isn't just tech bros following their tail. It's a strategy to set the expectation that all consumer technology requires resource-hungry AI. If all technology requires AI, and only a handful of companies are equipped to handle the computational power that Al requires, then computation becomes a moat too deep for competition to cross.
+
 - Ed Zitron, “[The Rot-Com Bubble](https://www.wheresyoured.at/rotcombubble/)”
 
 > As we speak, the tech industry is grappling with a mid-life crisis where it desperately searches for the next hyper-growth market, eagerly pushing customers and businesses to adopt technology that nobody asked for in the hopes that they can keep the Rot Economy alive.
