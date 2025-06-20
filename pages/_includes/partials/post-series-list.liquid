@@ -1,11 +1,23 @@
-{% assign series_length = post_series_list[post_series] | size %}
+{%- if post_series != "" %}
+    {% assign this_series = collections.post | categoryValue: "post_series", post_series %}
+    <p class="post-series">All posts in this series:
+        {%- for series_post in this_series %}
+        <a href="{{ series_post.url }}">Part {{ forloop.index }}</a>
+        {%- if not forloop.last -%}
+        ,
+        {%- endif -%}
+        {%- endfor %}
+    </p>
+{%- endif %}
+
+{% comment %} {% assign series_length = post_series_list[post_series] | size %} {% endcomment %}
 {% comment %} <section> {% endcomment %}
-<p class="post-series">All posts in this series:
+{% comment %} <p class="post-series">All posts in this series:
     {%- for url in post_series_list[post_series] %}
     <a href="{{ url }}">Part {{ forloop.index }}</a>
     {%- if not forloop.last -%}
     ,
     {%- endif -%}
     {% endfor %}
-</p>
+</p> {% endcomment %}
 {% comment %} </section> {% endcomment %}

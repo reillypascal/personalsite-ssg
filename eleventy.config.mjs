@@ -37,6 +37,13 @@ export default async function (eleventyConfig) {
 	});
   
   // filters
+  // https://github.com/11ty/eleventy/issues/637
+  eleventyConfig.addFilter("categoryValue", (collection, category, value) => {
+    if (!category) return collection;
+    const filtered = collection.filter(item => item.data[category] == value);
+    return filtered;
+  });
+
   // https://11ty.rocks/eleventyjs/content/#excerpt-filter
   eleventyConfig.addFilter("excerpt", (post) => {
       const content = post.replace(/(<([^>]+)>)/gi, "");
@@ -226,7 +233,6 @@ export default async function (eleventyConfig) {
     return [...tagSet].sort();
   });
 
-  // collections
   // all posts — so I don't need to exclude other pages from collections.all
   eleventyConfig.addCollection("feedGlobal", function (collectionApi) {
     const posts = collectionApi.getFilteredByTag("post");
