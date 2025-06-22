@@ -17,7 +17,7 @@ octothorpes:
   - webmentions
 tags:
   - post
-  - blog
+  - blogging
   - indieweb
   - webdev
 ---
