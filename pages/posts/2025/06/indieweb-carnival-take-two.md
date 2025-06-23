@@ -4,7 +4,7 @@ description: I've been mostly making music tools rather than writing music. Toda
 fedi_url:
   - https://hachyderm.io/@reillypascal/114732920215834609
   - https://bsky.app/profile/reillypascal.bsky.social/post/3lscevjshfs2d
-date: 2025-06-23T11:30:00-0400
+date: 2025-06-23T08:16:00-0400
 octothorpes:
   - Art
   - Audio
