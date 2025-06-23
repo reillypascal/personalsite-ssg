@@ -41,7 +41,7 @@ Two things I like that are challenging to do to my satisfaction are 1\) I like t
 
 While I'm happy with *If this reaches you*, I've struggled for a while to write something else that satisfies me in the same way, and I've particularly struggled with creating the right rhythmic “backbone.” As further examples of what I like, Autechre's [*Tapr*](https://autechre.bandcamp.com/track/tapr) and [*qplay*](https://autechre.bandcamp.com/track/qplay) (among others) have drum machines, but there is enough irregularity in the rhythm that I can relax and let go of pulse, while still enjoying the energy and character of the beat. Despite how much I like Autechre, I have different goals that make things more complicated.
 
-I'm writing something in between the experimentalism that comes out of dance or “popular” music and the experimentalism that comes out of “classical music” circles. [^2] As I've heard composer peers flippantly joke, in some ways the distinction comes down to “does it have a (drum) beat?” Since drum sets/drum machines are both very bold musical elements, and require careful recording and sound design to sound right, my desire to work *between* these genres leads to very exacting requirements for how the rhythmic backbone should sound. At the same time, because I want to make something that sounds “fresh” to my ears I don't even fully know what I'd like to hear. [^3]
+I'm writing something in between the experimentalism that comes out of dance or “popular” music and the experimentalism that comes out of “classical music” circles. [^2] As I've heard composer peers flippantly joke, in some ways the distinction comes down to “does it have a (drum) beat?” Drum sets/drum machines are very bold musical elements and require careful recording and sound design to sound right, and between that and my desire to work *between* “popular”/“classical” experimentalism, I have very exacting requirements for how the rhythmic backbone should sound. At the same time, because I want to make something that sounds “fresh” to my ears I don't even fully know what I'd like to hear. [^3]
 
 ## Take Two
 
@@ -49,7 +49,7 @@ Because I've tried so many different things, the Max patch and the surrounding f
 
 I'm still in the process of selecting samples for my Max patch, but instead of spending so much time designing sequencers and percussion patterns, I've been looking at the simple materials I used for *If this reaches you* and seeing what I can accomplish if I hold myself to that kind of simplicity this time around too. [^4]
 
-I've reminded myself that this doesn't mean I've wasted my time. On the contrary, the time I've spent on this project has given me a lot of practice on drum sequencing, audio programming, and sound design. The things I played with in this time haven't gone away either; I can return to the backup folder at any time to borrow bits of what I worked on.
+I've reminded myself that this doesn't mean I've wasted my time. On the contrary, the time I've spent on this project has given me a lot of practice on audio programming, sound design, and Max/MSP drum sequencing. The things I played with in this time haven't gone away either; I can return to the backup folder at any time to borrow bits of what I worked on.
 
 ## Wrapping Up
 
