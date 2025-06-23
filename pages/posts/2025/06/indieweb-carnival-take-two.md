@@ -1,7 +1,9 @@
 ---
 title: "IndieWeb Carnival: Take Two"
 description: I've been mostly making music tools rather than writing music. Today I'm talking about getting out of this rut with a “take two” on my current composition.
-fedi_url: 
+fedi_url:
+  - https://hachyderm.io/@reillypascal/114732920215834609
+  - https://bsky.app/profile/reillypascal.bsky.social/post/3lscevjshfs2d
 date: 2025-06-23T11:30:00-0400
 octothorpes:
   - Art
