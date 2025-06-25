@@ -20,7 +20,7 @@ tags:
   - reverb
   - schroeder
   - maxmsp
-post_series:
+post_series: reverb
 ---
 
 <link rel="stylesheet" type="text/css" href="/styles/notes-photos.css">
