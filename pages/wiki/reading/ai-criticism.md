@@ -4,7 +4,7 @@ description: Reading list of sources critical of AI or reporting on harm caused 
 fedi_url:
   - https://hachyderm.io/@reillypascal/114597601909960276
   - https://bsky.app/profile/reillypascal.bsky.social/post/3lqflxhpllc2j
-date: 2025-06-17T21:26:00-0400
+date: 2025-06-27T16:08:00-0400
 octothorpes:
   - ai
 tags:
@@ -78,6 +78,12 @@ In other words, as Merchant puts it
 
 > The news is yet another example of how the tools people have used to navigate the internet for decades are overwhelmed by the flood of AI-generated content even when they are not asking for it and which almost exclusively use people’s work or likeness without consent. At times, the deluge of AI content makes it difficult for users to differentiate between what is real and what is AI-generated.
 
+- Nicole Froio, [*AI is ruining houseplant communities online*](https://www.theverge.com/ai-artificial-intelligence/691355/ai-is-ruining-houseplant-communities-online)
+
+> …AI-generated content — both photos of fake plants and care misinformation — disrupt community engagement, which is what many collectors are seeking when joining these forums. \[…]
+
+> This kind of content is “discouraging any meaningful engagement” because it’s not grounded in reality, Caring_Cactus continues. “They’re trying to farm attention with low quality content, and it creates less opportunities for real connection by wasting people’s precious time when they want to socialize online.”
+
 ## AI as an Accountability Sink
 
 - Jonah Owen Lamb, “[San Francisco cops are using AI to write police reports](https://sfstandard.com/2025/06/10/sfpd-using-ai-police-reports/)”
@@ -119,10 +125,6 @@ In other words, as Merchant puts it
 
 ## Economics of AI
 
-- From Jason, [*The Computational Web*](https://www.fromjason.xyz/p/notebook/the-computational-web/)
-
-> Compute is expensive and increasingly difficult to scale. These hurdles make compute accessible only to the largest tech firms in the world. Shoehorning AI features into our apps isn't just tech bros following their tail. It's a strategy to set the expectation that all consumer technology requires resource-hungry AI. If all technology requires AI, and only a handful of companies are equipped to handle the computational power that Al requires, then computation becomes a moat too deep for competition to cross.
-
 - Ed Zitron, “[The Rot-Com Bubble](https://www.wheresyoured.at/rotcombubble/)”
 
 > As we speak, the tech industry is grappling with a mid-life crisis where it desperately searches for the next hyper-growth market, eagerly pushing customers and businesses to adopt technology that nobody asked for in the hopes that they can keep the Rot Economy alive.
@@ -130,6 +132,10 @@ In other words, as Merchant puts it
 - Ed Zitron, “[OpenAI Is a Bad Business](https://www.wheresyoured.at/oai-business/)”
 
 > To be abundantly clear, as it stands, OpenAI currently spends $2.35 to make $1.
+
+- From Jason, [*The Computational Web*](https://www.fromjason.xyz/p/notebook/the-computational-web/)
+
+> Compute is expensive and increasingly difficult to scale. These hurdles make compute accessible only to the largest tech firms in the world. Shoehorning AI features into our apps isn't just tech bros following their tail. It's a strategy to set the expectation that all consumer technology requires resource-hungry AI. If all technology requires AI, and only a handful of companies are equipped to handle the computational power that Al requires, then computation becomes a moat too deep for competition to cross.
 
 ## AI and Climate
 
