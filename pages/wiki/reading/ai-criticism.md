@@ -4,7 +4,7 @@ description: Reading list of sources critical of AI or reporting on harm caused 
 fedi_url:
   - https://hachyderm.io/@reillypascal/114597601909960276
   - https://bsky.app/profile/reillypascal.bsky.social/post/3lqflxhpllc2j
-date: 2025-06-27T16:08:00-0400
+date: 2025-06-27T19:03:00-0400
 octothorpes:
   - ai
 tags:
@@ -133,11 +133,18 @@ In other words, as Merchant puts it
 
 > To be abundantly clear, as it stands, OpenAI currently spends $2.35 to make $1.
 
-- From Jason, [*The Computational Web*](https://www.fromjason.xyz/p/notebook/the-computational-web/)
+- Jason Velazquez, [*The Computational Web*](https://www.fromjason.xyz/p/notebook/the-computational-web/)
 
 > Compute is expensive and increasingly difficult to scale. These hurdles make compute accessible only to the largest tech firms in the world. Shoehorning AI features into our apps isn't just tech bros following their tail. It's a strategy to set the expectation that all consumer technology requires resource-hungry AI. If all technology requires AI, and only a handful of companies are equipped to handle the computational power that Al requires, then computation becomes a moat too deep for competition to cross.
 
 ## AI and Climate
+
+- L. Rhodes, [*What AI money says about the environmental cost*](https://destructured.net/ai-money-environmental-cost)
+
+> AI companies clearly expect their technology to consume much, much more energy than existing cloud computing infrastructure, and they expect that consumption to continue for decades into the future. If they tell you otherwise, they’re lying, and you can tell they’re lying by the billions of dollars they’re pouring into constructing city-sized datacenters with their own multi-gigawatt power stations. Any discussion of the sustainability of AI that ignores that expenditure is made either in ignorance or bad faith.
+
+- Isabel O'Brien, [*Data center emissions probably 662% higher than big tech claims. Can it keep up the ruse?*](www.theguardian.com/technology/2024/sep/15/data-center-gas-emissions-tech)
+
 
 - Paige Lambermont, “[AI Boom Power Surge: Plants Revived, Fossil Fuels Reconsidered](https://www.independent.org/article/2025/05/08/ai-power-plants-gas-coal/)”
 
