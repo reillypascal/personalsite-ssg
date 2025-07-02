@@ -19,7 +19,7 @@ mkdir -p pages/notes/$year/$month
 
 fullpath=pages/notes/$year/$month/$slug.md
 
-cat >> $fullpath << EOF && codium $fullpath
+cat >> $fullpath << EOF && nvim $fullpath
 ---
 title: $name
 fedi_url: 
