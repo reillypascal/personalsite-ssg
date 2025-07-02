@@ -44,4 +44,4 @@ From what they told me, this park was originally gifted to a family as thanks fo
 ![My partner standing on a flat, rocky surface under a brown and tan striped rock overhang](/media/blog/2025/07/eli-bday/IMG_20250701_142237_732.webp){.img-vertical}
 
 <figcaption>This area was down in a gorge between two banks. Everything around us was rocks.</figcaption>
-</figcaption>
+</figure>
