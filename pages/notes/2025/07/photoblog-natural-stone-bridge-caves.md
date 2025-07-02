@@ -1,6 +1,8 @@
 ---
 title: "Photoblog: Natural Stone Bridge & Caves"
-fedi_url: 
+fedi_url:
+  - https://hachyderm.io/@reillypascal/114785339728696540
+  - https://bsky.app/profile/reillypascal.bsky.social/post/3lsyodhfrqc2p
 og_image: /media/blog/2025/07/eli-bday/IMG_20250701_142237_732_og.webp
 og_image_width: 1200 
 og_image_height: 600 
