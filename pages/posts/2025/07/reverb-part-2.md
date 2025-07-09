@@ -29,6 +29,6 @@ Continuing from [my last post](/posts/2025/06/reverb-part-1), today we'll be loo
 
 ### Nested Allpass Filters
 
-https://ccrma.stanford.edu/~jos/pasp/Nested_Allpass_Filters.html
+<https://ccrma.stanford.edu/~jos/pasp/Nested_Allpass_Filters.html>
 
 ## Dattorro, Griesinger, and the Lexicon LX244/LX480

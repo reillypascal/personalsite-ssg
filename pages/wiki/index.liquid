@@ -23,9 +23,9 @@ permalink: /wiki/
     {% comment %} <p>This will allow me to revisit past writing and do my thinking in public. Pages here will be continual works in progress.</p> {% endcomment %}
     
     <section>
-        <h1 class="sectionHeader">Pages</h1>
-
-        {%- for post in collections.wiki-root reversed -%}
+        <h1 class="sectionHeader">Reading</h1>
+        
+        {%- for post in collections.wikiReading reversed -%}
             <article class="h-entry">
                 <h2 class="p-name post-link"><a class="u-url" href="{{ post.url }}">{{ post.data.title }}</a></h2>
                 <p class="p-summary">{{ post.data.description }}</p>
@@ -63,9 +63,9 @@ permalink: /wiki/
     </section>
 
     <section>
-        <h1 class="sectionHeader">Reading</h1>
-        
-        {%- for post in collections.wikiReading reversed -%}
+        <h1 class="sectionHeader">Pages</h1>
+
+        {%- for post in collections.wiki-root reversed -%}
             <article class="h-entry">
                 <h2 class="p-name post-link"><a class="u-url" href="{{ post.url }}">{{ post.data.title }}</a></h2>
                 <p class="p-summary">{{ post.data.description }}</p>
