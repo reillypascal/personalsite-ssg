@@ -42,7 +42,7 @@ mkdir -p pages/interactions/$year/$month
 
 fullpath=pages/interactions/$year/$month/$slug.md
 
-cat >> $fullpath << EOF && nvim $fullpath
+cat >> $fullpath << EOF && codium $fullpath
 ---
 title: "${interaction_title}: ${target_title}"
 fedi_url: 

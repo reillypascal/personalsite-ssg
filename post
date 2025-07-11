@@ -24,7 +24,7 @@ mkdir -p pages/posts/$year/$month
 
 fullpath=pages/posts/$year/$month/$slug.md
 
-cat >> $fullpath << EOF && nvim $fullpath
+cat >> $fullpath << EOF && codium $fullpath
 ---
 title: "$name"
 description: $description

@@ -4,7 +4,7 @@ description: Reading list of sources critical of AI or reporting on harm caused 
 fedi_url:
   - https://hachyderm.io/@reillypascal/114597601909960276
   - https://bsky.app/profile/reillypascal.bsky.social/post/3lqflxhpllc2j
-date: 2025-06-27T19:03:00-0400
+date: 2025-07-10T20:13:00-0400
 octothorpes:
   - ai
 tags:
@@ -48,7 +48,7 @@ In other words, as Merchant puts it
 
 ### “Human-in-the-loop” as a “reverse centaur”
 
-- Cory Doctorow, “[Pluralistic: “Humans in the loop” must detect the hardest-to-spot errors, at superhuman speed (23 Apr 2024)](https://pluralistic.net/2024/04/23/maximal-plausibility/)”
+- Cory Doctorow, “[Pluralistic: ‘Humans in the loop’ must detect the hardest-to-spot errors, at superhuman speed (23 Apr 2024)](https://pluralistic.net/2024/04/23/maximal-plausibility/)”
 
 > Automation can _augment_ a worker. We can call this a “centaur” – the worker offloads a repetitive task, or one that requires a high degree of vigilance, or (worst of all) both. They're a human head on a robot body (hence “centaur”). Think of the sensor/vision system in your car that beeps if you activate your turn-signal while a car is in your blind spot. You're in charge, but you're getting a second opinion from the robot.
 
@@ -56,11 +56,17 @@ In other words, as Merchant puts it
 
 > This turns AI-“assisted” coders into _reverse_ centaurs. The AI can churn out code at superhuman speed, and you, the human in the loop, must maintain perfect vigilance and attention as you review that code, spotting the cleverly disguised hooks for malicious code that the AI can't be prevented from inserting into its code.
 
-## Output Quality
+## Effectiveness for Coding
 
 - William Harding, Matthew Kloster, “[Coding on Copilot: 2023 Data Suggests Downward Pressure on Code Quality](https://www.gitclear.com/coding_on_copilot_data_shows_ais_downward_pressure_on_code_quality)”
 
 > We find disconcerting trends for maintainability. Code churn -- the percentage of lines that are reverted or updated less than two weeks after being authored -- is projected to double in 2024 compared to its 2021, pre-AI baseline. We further find that the percentage of “added code” and “copy/pasted code” is increasing in proportion to “updated,” “deleted,” and “moved” code. In this regard, code generated during 2023 more resembles an itinerant contributor, prone to violate the [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)-ness of the repos visited.
+
+- METR, “[Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/)”
+
+> We conduct a randomized controlled trial (RCT) to understand how early-2025 AI tools affect the productivity of experienced open-source developers working on their own repositories. \[…]
+
+> When developers are allowed to use AI tools, they take 19% longer to complete issues—a significant slowdown that goes against developer beliefs and expert forecasts. This gap between perception and reality is striking: developers expected AI to speed them up by 24%, and even after experiencing the slowdown, they still believed AI had sped them up by 20%.
 
 ## Harassment and Spam
 
