@@ -20,7 +20,7 @@
 
 :root {
     /* color variables */
-    --bg-dark: hsl(227, 26%, 11%);
+    --bg-dark: hsl(227, 30%, 11%);
     /* maybe switch around med-dark/accent names? 
     I use med-dark for code highlights, and accent for <aside>, so far */
     --bg-med-dark: hsl(227, 12%, 17%);
@@ -30,7 +30,7 @@
     --fg-med-light: hsl(227, 45%, 75%);
     --link-color: hsl(227, 100%, 75%);
 
-    --accent-light: hsl(327, 95%, 88%);
+    --accent-light: hsl(327, 95%, 91%);
     --accent-med-light: hsl(327, 55%, 75%);
     /* --accent-med: hsl(327, 25%, 53%); */
     --accent-dark: hsl(327, 45%, 37%);
