@@ -30,8 +30,8 @@
     --fg-med-light: hsl(227, 45%, 75%);
     --link-color: hsl(227, 100%, 75%);
 
-    --accent-light: hsl(327, 95%, 91%);
-    --accent-med-light: hsl(327, 55%, 75%);
+    --accent-light: hsl(327, 100%, 92%);
+    --accent-med-light: hsl(327, 65%, 80%);
     /* --accent-med: hsl(327, 25%, 53%); */
     --accent-dark: hsl(327, 45%, 37%);
 
