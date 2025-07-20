@@ -19,9 +19,9 @@ mkdir -p pages/notes/$year/$month
 
 fullpath=pages/notes/$year/$month/$slug.md
 
-cat >> $fullpath << EOF && codium $fullpath
+cat >> $fullpath << EOF
 ---
-title: $name
+title: "$name"
 fedi_url: 
 og_image: 
 og_image_width: 

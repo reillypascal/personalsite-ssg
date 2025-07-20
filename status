@@ -8,7 +8,7 @@ slug="${date}-status"
 
 fullpath=pages/now/$slug.md
 
-cat >> $fullpath << EOF && codium $fullpath
+cat >> $fullpath << EOF
 ---
 date: $date
 location: $location
