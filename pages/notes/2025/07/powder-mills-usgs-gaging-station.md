@@ -1,6 +1,8 @@
 ---
 title: "Powder Mills USGS Gaging Station"
-fedi_url: 
+fedi_url:
+  - https://hachyderm.io/@reillypascal/114887348454587876
+  - https://bsky.app/profile/reillypascal.bsky.social/post/3lugbiujf422w
 og_image: /media/notes/2025/usgs-powder-mill-graph-og.jpg
 og_image_width: 1200
 og_image_height: 630
