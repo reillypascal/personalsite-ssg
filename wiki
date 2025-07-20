@@ -5,7 +5,6 @@ while getopts ":hnrt" option; do
         h)
             folder="."
             ;;
-
         n)
             folder="notebook"
             ;;
@@ -37,7 +36,7 @@ mkdir -p pages/wiki/$folder
 
 fullpath=pages/wiki/$folder/$slug.md
 
-cat >> $fullpath << EOF #&& codium $fullpath
+cat >> $fullpath << EOF
 ---
 title: "$name"
 description: $description
