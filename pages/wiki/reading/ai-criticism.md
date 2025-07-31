@@ -143,9 +143,9 @@ In other words, as Merchant puts it
 
 > To be abundantly clear, as it stands, OpenAI currently spends $2.35 to make $1.
 
-- Jason Velazquez, [*The Computational Web*](https://www.fromjason.xyz/p/notebook/the-computational-web/)
+<!-- - Jason Velazquez, [*The Computational Web*](https://www.fromjason.xyz/p/notebook/the-computational-web/)
 
-> Compute is expensive and increasingly difficult to scale. These hurdles make compute accessible only to the largest tech firms in the world. Shoehorning AI features into our apps isn't just tech bros following their tail. It's a strategy to set the expectation that all consumer technology requires resource-hungry AI. If all technology requires AI, and only a handful of companies are equipped to handle the computational power that Al requires, then computation becomes a moat too deep for competition to cross.
+> Compute is expensive and increasingly difficult to scale. These hurdles make compute accessible only to the largest tech firms in the world. Shoehorning AI features into our apps isn't just tech bros following their tail. It's a strategy to set the expectation that all consumer technology requires resource-hungry AI. If all technology requires AI, and only a handful of companies are equipped to handle the computational power that Al requires, then computation becomes a moat too deep for competition to cross. -->
 
 ## AI and Climate
 
