@@ -4,7 +4,7 @@ description: Reading list of sources critical of AI or reporting on harm caused 
 fedi_url:
   - https://hachyderm.io/@reillypascal/114597601909960276
   - https://bsky.app/profile/reillypascal.bsky.social/post/3lqflxhpllc2j
-date: 2025-07-10T20:13:00-0400
+date: 2025-07-31T13:05:00-0400
 octothorpes:
   - ai
 tags:
@@ -130,6 +130,10 @@ In other words, as Merchant puts it
 > This paper draws from anthropological work on bureaucracies, states, and power, translating these ideas into a theory describing the structural tendency for powerful algorithmic systems to cause tremendous harm. I show how administrative models and projections of the world create marginalization, just as algorithmic models cause representational and allocative harm.
 
 ## Economics of AI
+
+- Luc Olinga, “[Wall Street’s AI Bubble Is Worse Than the 1999 Dot-com Bubble, Warns a Top Economist](https://gizmodo.com/wall-streets-ai-bubble-is-worse-than-the-1999-dot-com-bubble-warns-a-top-economist-2000630487)”
+
+> “The difference between the IT bubble in the 1990s and the AI bubble today is that the top 10 companies in the S&P 500 today are more overvalued than they were in the 1990s,” Slok wrote in a recent research note that was widely shared across social media and financial circles.
 
 - Ed Zitron, “[The Rot-Com Bubble](https://www.wheresyoured.at/rotcombubble/)”
 

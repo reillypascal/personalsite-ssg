@@ -39,7 +39,7 @@ fullpath=pages/wiki/$folder/$slug.md
 cat >> $fullpath << EOF
 ---
 title: "$name"
-description: $description
+description: 
 fedi_url: 
 og_image: 
 og_image_width: 
@@ -48,8 +48,7 @@ date: $isodate
 octothorpes:
   - 
 tags:
-  - post
-post_series: 
+  - wiki
 draft: true
 indienews: true
 ---
