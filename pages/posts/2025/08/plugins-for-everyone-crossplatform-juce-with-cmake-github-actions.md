@@ -202,14 +202,14 @@ jobs:
 
 ## Linux Build Issues
 
-Frustratingly, this all works perfectly for Mac and Windows, but gives me a perplexing issue on Linux. The GitHub action works without issue on all OSes. However, when I use [pluginval](https://github.com/Tracktion/pluginval) to validate the Linux build, I get the following error for both the “open plugin (cold)” and “open plugin (warm)” tests:
+Frustratingly, this all works perfectly for Mac and Windows, but gives me a perplexing issue on Linux. The GitHub action works without issue on all OSes. However, when I use [pluginval](https://github.com/Tracktion/pluginval) to validate the Linux build on Debian 12.11, I get the following error for both the “open plugin (cold)” and “open plugin (warm)” tests:
 
 ```sh
 !!! Test 1 failed: Expected value: , Actual value: Unable to load VST-3 plug-in file
 !!! Test 2 failed: Unable to create juce::AudioPluginInstance
 ```
 
-When I try to load the plugin in REAPER, the DAW detects that the plugin exists but won't load it. However, if I manually compile on my Debian laptop using CMake, everything works fine! The only other clue I've been able to find is that the VST3 `RSAlgorithmicVerb.so` file is significantly bigger when I use the GitHub action than when I manually compile it—31.9 MB, instead of 5.1 MB. At this point, I've decided to manually compile the Linux version, although I would very much like to figure this issue out, if anyone has any idea!
+When I try to load the plugin in REAPER (same distro/version), the DAW detects that the plugin exists but won't load it. However, if I manually compile on my Debian laptop using CMake, everything works fine! The only other clue I've been able to find is that the VST3 `RSAlgorithmicVerb.so` file is significantly bigger when I use the GitHub action than when I manually compile it—31.9 MB, instead of 5.1 MB. At this point, I've decided to manually compile the Linux version, although I would very much like to figure this issue out, if anyone has any idea!
 
 ## Wrapping Up
 
