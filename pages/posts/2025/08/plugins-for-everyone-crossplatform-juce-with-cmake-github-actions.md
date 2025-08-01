@@ -1,11 +1,11 @@
 ---
 title: "Plugins for Everyone! Cross-Platform JUCE with CMake & GitHub Actions"
-description: "My reverb plugin is finally available for macOS, Windows, and Linux! Here's how I'm using JUCE's CMake API and GitHub actions to make that possible." 
+description: "My C++ reverb plugin is finally available for macOS, Windows, and Linux! Here's how I'm using JUCE's CMake API and GitHub actions to make that possible." 
 fedi_url: 
 og_image: 
 og_image_width: 
 og_image_height: 
-date: 2025-07-31T16:15:35-0400
+date: 2025-08-02T12:30:00-0400
 octothorpes:
   - Audio
   - audio
@@ -14,12 +14,13 @@ tags:
   - post
   - juce
   - cpp
+  - cmake
   - programming
+  - audio
 post_series:
-draft: true
 ---
 
-<link rel="stylesheet" type="text/css" href="/styles/notes-photos.css">
+<!-- <link rel="stylesheet" type="text/css" href="/styles/notes-photos.css"> -->
 
 <link rel="stylesheet" type="text/css" href="/styles/code/prism-dracula.css" />
 <link rel="stylesheet" type="text/css" href="/styles/code/code-tweaks.css" />
@@ -130,7 +131,7 @@ target_link_libraries(${PROJECT_NAME}
 
 ```
 
-With this `CMakeLists.txt`, you can run `cmake -S . -B build` in the root directory to set up the build files. This means the source is the root directory, and `build` is the build directory. You can add the flags `-D CMAKE_BUILD_TYPE=Debug` or `-D CMAKE_BUILD_TYPE=Release` to specify debug/release builds. After that, run `cmake --build build` to compile. Note that if you have the `COPY_PLUGIN_AFTER_BUILD TRUE` option in `juce_add_plugin`, you will likely need to add `sudo` to both of the build commands since my installation directories above are system ones.
+With this `CMakeLists.txt`, you can run `cmake -S . -B build` in the root directory to create the build environment. This means the source is the root directory, and `build` is the build directory. You can add the flags `-D CMAKE_BUILD_TYPE=Debug` or `-D CMAKE_BUILD_TYPE=Release` to specify debug/release builds. After that, run `cmake --build build` to compile. Note that if you have the `COPY_PLUGIN_AFTER_BUILD TRUE` option in `juce_add_plugin`, you will likely need to add `sudo` to both of the build commands since my installation directories above are system ones.
 
 ## Compiling with GitHub Actions
 
@@ -162,7 +163,6 @@ jobs:
         if: runner.os == 'Linux'
         uses: egor-tensin/setup-clang@v1
 
-      # This also starts up our "fake" display (Xvfb), needed for pluginval
       - name: Install JUCE's Linux Deps
         if: runner.os == 'Linux'
         # Official list of Linux deps: https://github.com/juce-framework/JUCE/blob/develop/docs/Linux%20Dependencies.md
@@ -199,6 +199,17 @@ jobs:
           path: ${{runner.workspace}}/RSAlgorithmicVerb/build/RSAlgorithmicVerb_artefacts/
 
 ```
+
+## Linux Build Issues
+
+Frustratingly, this all works perfectly for Mac and Windows, but gives me a perplexing issue on Linux. The GitHub action works without issue on all OSes. However, when I use [pluginval](https://github.com/Tracktion/pluginval) to validate the Linux build, I get the following error for both the “open plugin (cold)” and “open plugin (warm)” tests:
+
+```sh
+!!! Test 1 failed: Expected value: , Actual value: Unable to load VST-3 plug-in file
+!!! Test 2 failed: Unable to create juce::AudioPluginInstance
+```
+
+When I try to load the plugin in REAPER, the DAW detects that the plugin exists but won't load it. However, if I manually compile on my Debian laptop using CMake, everything works fine! The only other clue I've been able to find is that the VST3 `RSAlgorithmicVerb.so` file is significantly bigger when I use the GitHub action than when I manually compile it—31.9 MB, instead of 5.1 MB. At this point, I've decided to manually compile the Linux version, although I would very much like to figure this issue out, if anyone has any idea!
 
 ## Wrapping Up
 
