@@ -1,7 +1,9 @@
 ---
 title: "Plugins for Everyone! Cross-Platform JUCE with CMake & GitHub Actions"
 description: "My C++ reverb plugin is finally available for macOS, Windows, and Linux! Here's how I'm using JUCE's CMake API and GitHub actions to make that possible." 
-fedi_url: 
+fedi_url:
+  - https://hachyderm.io/@reillypascal/114954962043649522
+  - https://bsky.app/profile/reillypascal.bsky.social/post/3lvecfshtuk2y
 og_image: 
 og_image_width: 
 og_image_height: 
