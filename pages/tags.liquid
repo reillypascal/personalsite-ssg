@@ -18,7 +18,7 @@ eleventyExcludeFromCollections: true
     <h1 class="sectionHeader">All tags</h1>
     <div id="allTagsList">
         {% for tag in collections.allTags %}
-            {% if tag != 'interaction' and tag != 'note' and tag != 'post' %}
+            {% if tag != 'interaction' and tag != 'note' and tag != 'post' and tag != 'bookmark' and tag != 'like' and tag != 'rsvp' and tag != 'reply' and tag != 'wiki' and tag != 'wiki-root' %}
                 <figure>
                     <p class="tag" id="{{ tag }}"><a href="/tags/{{ tag }}">#{{ tag | replace: "-", " "  }}</a> ({{ collections[tag].length }}) </p>
                 </figure>
