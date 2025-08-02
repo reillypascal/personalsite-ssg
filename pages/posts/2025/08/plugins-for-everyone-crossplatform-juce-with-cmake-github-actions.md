@@ -145,10 +145,10 @@ The first two steps, which only run on Linux, are taken directly from Pamplejuce
 
 After this, we check out the project repo, clone the JUCE repo, and run (almost) the same CMake commands as above. Note that we specify the `Release` build when we actually build, rather than when we set up the build, and that the syntax is a bit different: `--config Release`. `-D CMAKE_BUILD_TYPE` only seems to work on \*nix OSes, not on Windows.
 
-Finally, we archive the build artifacts (i.e., the compiled files). Note that I append `${{ runner.os }}` to the end of the artifact name. This is important—without it, the artifacts for each OS will all be named the same thing, and the process will fail due to path conflicts.
+Finally, we archive the build artifacts (i.e., the compiled files). Note that I append {% raw %}`${{ runner.os }}`{% endraw %} to the end of the artifact name. This is important—without it, the artifacts for each OS will all be named the same thing, and the process will fail due to path conflicts.
 
 ```yaml
-name: rsav-compile
+{% raw %}name: rsav-compile
 
 on: [workflow_dispatch]
 
@@ -198,8 +198,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: "RSAlgorithmicVerb_${{ runner.os }}"
-          path: ${{runner.workspace}}/RSAlgorithmicVerb/build/RSAlgorithmicVerb_artefacts/
-
+          path: ${{runner.workspace}}/RSAlgorithmicVerb/build/RSAlgorithmicVerb_artefacts/{% endraw %}
 ```
 
 ## Linux Build Issues
