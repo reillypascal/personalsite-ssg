@@ -207,29 +207,35 @@ Welcome to the source code - here, have some frogs!
             
             <!-- footer -->
             <footer>
-                <div class="social-icons">
+                <div id="social-icons">
                     <a href="https://bsky.app/profile/reillypascal.bsky.social" title="Bluesky"><img src="/media/bluesky-logo-light.svg" alt="Reilly's Bluesky account" width="36" height="32" /></a>
                     <a href="https://github.com/reillypascal" title="GitHub"><img src="/media/github-logo-light.svg" alt="Reilly's GitHub account" width="32" height="32" /></a>
-                    <a href="https://ko-fi.com/reillyspitzfaden" title="Ko-Fi"><img src="/media/ko-fi-logo-light.svg" alt="Reilly's Ko-Fi account" width="43" height="32" /></a>
+                    {% comment %} <a href="https://ko-fi.com/reillyspitzfaden" title="Ko-Fi"><img src="/media/ko-fi-logo-light.svg" alt="Reilly's Ko-Fi account" width="43" height="32" /></a> {% endcomment %}
                     <a href="https://hachyderm.io/@reillypascal" title="Mastodon"><img src="/media/mastodon-logo-light.svg" alt="Reilly's Mastodon account" width="32" height="34" /></a>
                     <a href="https://makertube.net/c/reilly_spitzfaden_composer/videos" title="PeerTube"><img src="/media/peertube-logo-light.svg" alt="Reilly's PeerTube channel" width="24" height="32" ></a>
-                    {%- comment %} <a href="https://soundcloud.com/reilly-spitzfaden" title="SoundCloud"><img src="/media/soundcloud-logo-light.svg" alt="SoundCloud" width="40" height="32" /></a> {%- endcomment %}
+                    <a href="https://soundcloud.com/reilly-spitzfaden" title="SoundCloud"><img src="/media/soundcloud-logo-light.svg" alt="SoundCloud" width="40" height="32" /></a>
                     <a href="https://www.youtube.com/@reillyspitzfaden" title="YouTube"><img src="/media/youtube-logo-light.svg" alt="Reilly's YouTube channel" width="32" height="32" /></a>
                     <a href="/feeds" title="RSS"><img src="/media/rss-icon-light.svg" alt="RSS" width="32" height="32" /></a>
                 </div>
                 
                 {%- comment %} <p class="octothorpes-badge"><a href="https://octothorp.es" class="img-badge"><img src="/media/octothorpes-badge.png" alt="Badge for the Octothorpes main ring" height="31" width="88" /></a></p> {%- endcomment %}
 
-                <p>
-                    <a href="https://xn--sr8hvo.ws/previous" class="webring-prev-arrow">←</a>
-                    <a href="https://xn--sr8hvo.ws" class="webring-name">IndieWeb Webring</a>
-                    <a href="https://xn--sr8hvo.ws/next" class="webring-next-arrow">→</a>
-                </p>
+                <div id="webring-links">
+                    <a href="https://xn--sr8hvo.ws/previous" id="webring-prev-arrow">←</a>
+                    <a href="https://xn--sr8hvo.ws" id="webring-name">IndieWeb Webring</a>
+                    <a href="https://xn--sr8hvo.ws/next" id="webring-next-arrow">→</a>
+                </div>
 
                 {%- comment %} <p><a href="https://github.com/reillypascal/personalsite-ssg">View Source Code</a></p> {%- endcomment -%}
                 {%- comment -%} <p>&copy; 2022–2025 by Reilly Spitzfaden. This site supports <a href="https://webmention.net/">webmentions</a>.</p> {%- endcomment %}
 
-                <div class="footer-link-list"><a href="/contact">Contact</a><a href="/search">Search</a><a href="/ai-policy">AI Policy</a><a href="/blogroll">Blogroll</a></div>
+                <div id="footer-link-list">
+                    <a href="/contact">Contact</a>
+                    <a href="/search">Search</a>
+                    <a href="/ai-policy">AI Policy</a>
+                    <a href="/blogroll">Blogroll</a>
+                    <a href="https://ko-fi.com/reillyspitzfaden" title="Ko-Fi">Buy me a coffee</a>
+                </div>
                 
                 <p>Text and images licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> :: <a href="https://github.com/reillypascal/personalsite-ssg">Source code</a> licensed under the <a href="https://github.com/reillypascal/personalsite-ssg/blob/main/LICENSE">MIT License</a> :: Music &copy; & &copysr; Reilly Spitzfaden</p>
             </footer>

@@ -20,6 +20,12 @@ I've been enjoying taking pictures of my nature trips with my partner and sharin
 
 When I read some of his letters, I appreciated the descriptions of nature, and it inspired me to try my hand at that kind of description. As I've [previously written](/posts/2024/06/making-journaling-more-enjoyable/) I like fountain pens and use them to journal, and I've done some writing in this style in my journal already and confirmed I like it.
 
+In addition, 
+
+https://seanvoisen.com/blog/the-imp-of-optimization/
+
+pitfalls of the quantified self; joy of letting go of tracking things
+
 ## Bergen Water Gardens & Nursery
 
 

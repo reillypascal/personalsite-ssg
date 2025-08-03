@@ -180,17 +180,28 @@ footer {
     margin-right: var(--global-margin);
     margin-bottom: 8px;
     padding: 0;
-    & .social-icons { margin-top: 16px; }
-    & .social-icons a:not(:last-child) { 
+    & #social-icons { margin-top: 16px; }
+    & #social-icons, 
+    #webring-links, 
+    #footer-link-list {
+        margin-bottom: 24px;
+    }
+    & #social-icons a:not(:last-child) { 
         padding-right: 12px;
         display: inline-flex;
         flex-flow: row wrap;
     }
-    & .footer-link-list a:not(:last-child) { 
-        padding-right: 24px;
+    & #webring-links:not(:last-child) * {
+        padding-right: 6px;
+    }
+    & #footer-link-list a {
+        &:not(:last-child) { 
+            padding-right: 16px;
+            @media screen and (min-width: 480px) { padding-right: 24px; }
+        }
         display: inline-flex;
         flex-flow: row wrap;
-        @media screen and (min-width: 480px) { padding-right: 32px; }
+        line-height: 36px;
     }
 }
 
