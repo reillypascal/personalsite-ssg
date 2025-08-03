@@ -197,7 +197,7 @@ footer {
     & #footer-link-list a {
         &:not(:last-child) { 
             padding-right: 16px;
-            @media screen and (min-width: 480px) { padding-right: 24px; }
+            @media screen and (min-width: 480px) { padding-right: 18px; }
         }
         display: inline-flex;
         flex-flow: row wrap;
