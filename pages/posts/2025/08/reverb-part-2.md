@@ -5,7 +5,7 @@ fedi_url:
 og_image: 
 og_image_width: 
 og_image_height: 
-date: 2025-08-01T12:30:00-0400
+date: 2025-08-15T12:30:00-0400
 octothorpes:
   - 
 tags:
@@ -19,7 +19,7 @@ draft: true
 <link rel="stylesheet" type="text/css" href="/styles/code/prism-perf-custom.css" />
 <link rel="stylesheet" type="text/css" href="/styles/code/code-tweaks.css" />
 
-<link rel="stylesheet" type="text/css" href="/styles/math/katex.min.css" />
+<!-- <link rel="stylesheet" type="text/css" href="/styles/math/katex.min.css" /> -->
 
 Continuing from [my last post](/posts/2025/06/reverb-part-1), today we'll be looking at another collection of reverb algorithms that I've implemented in my [reverb plugin](https://github.com/reillypascal/RSAlgorithmicVerb/releases).
 
