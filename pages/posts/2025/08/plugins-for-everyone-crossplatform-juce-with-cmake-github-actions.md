@@ -22,7 +22,7 @@ tags:
 post_series:
 ---
 
-<link rel="stylesheet" type="text/css" href="/styles/code/prism-vsc-dark-plus.css" />
+<link rel="stylesheet" type="text/css" href="/styles/code/prism-theme-github-dark.css" />
 <link rel="stylesheet" type="text/css" href="/styles/code/code-tweaks.css" />
 
 I have [a few](https://github.com/reillypascal/RSBrokenMedia) [C++/JUCE](https://github.com/reillypascal/RSAlgorithmicVerb) [audio plugins](https://github.com/reillypascal/RSTelecom) I've worked on off and on over the last couple of years. I've wanted them to be available to anyone who's interested, but I previously wasn't able to get them compiled for Windows (and Linux was very inconvenient).
