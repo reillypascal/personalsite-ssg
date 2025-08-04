@@ -7,9 +7,17 @@ og_image_width:
 og_image_height: 
 date: 2025-08-15T12:30:00-0400
 octothorpes:
-  - 
+  - Audio
+  - audio
+  - music
 tags:
   - post
+  - reverb
+  - audio
+  - cpp
+  - juce
+  - programming
+  - maxmsp
 post_series: reverb
 draft: true
 ---
