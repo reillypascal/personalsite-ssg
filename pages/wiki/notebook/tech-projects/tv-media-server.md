@@ -14,7 +14,7 @@ tags:
   - media-center
 ---
 
-<link rel="stylesheet" type="text/css" href="/styles/code/prism-dracula.css" />
+<link rel="stylesheet" type="text/css" href="/styles/code/prism-perf-custom.css" />
 <link rel="stylesheet" type="text/css" href="/styles/code/code-tweaks.css" />
 
 Here are my notes on setting up an old laptop as a home server. This discussion pairs nicely with the Raspberry Pi/Kodi TV streaming box I discuss [[kodi-streaming-box-raspberry-pi|here]], and I also use this server to update my website with new webmentions as I discuss [[webmention-tutorial|here]].

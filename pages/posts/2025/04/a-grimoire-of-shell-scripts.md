@@ -15,7 +15,7 @@ tags:
   - webdev
 ---
 
-<link rel="stylesheet" type="text/css" href="/styles/code/prism-dracula.css" />
+<link rel="stylesheet" type="text/css" href="/styles/code/prism-perf-custom.css" />
 <link rel="stylesheet" type="text/css" href="/styles/code/code-tweaks.css" />
 
 I added a “[grimoire](https://reillyspitzfaden.com/code/#grimoire)” [^1] section to my site to hold shell scripts and other short pieces of code I find useful. I was inspired by the blog [Some Natalie's corner of the internet](https://some-natalie.dev/), [^2] as well as a few others whose names escape me at the moment. A few things spurred me to do this (beyond the coolness of the name “grimoire”).

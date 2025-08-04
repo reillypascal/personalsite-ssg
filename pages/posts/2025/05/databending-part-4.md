@@ -23,7 +23,7 @@ tags:
 post_series: databending
 ---
 
-<link rel="stylesheet" type="text/css" href="/styles/code/prism-dracula.css" />
+<link rel="stylesheet" type="text/css" href="/styles/code/prism-perf-custom.css" />
 <link rel="stylesheet" type="text/css" href="/styles/code/code-tweaks.css" />
 
 Earlier this year I [wrote](/posts/2025/01/databending-part-1/) about how to import any file into Audacity and convert it to audio. Today I want to make the process less tedious, as well as get some practice with the [Rust](https://en.wikipedia.org/wiki/Rust_(programming_language)) programming language. 

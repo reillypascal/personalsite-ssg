@@ -24,7 +24,7 @@ tags:
 post_series: databending
 ---
 
-<link rel="stylesheet" type="text/css" href="/styles/code/prism-dracula.css" />
+<link rel="stylesheet" type="text/css" href="/styles/code/prism-perf-custom.css" />
 <link rel="stylesheet" type="text/css" href="/styles/code/code-tweaks.css" />
 
 <link rel="stylesheet" type="text/css" href="/styles/notes-photos.css">

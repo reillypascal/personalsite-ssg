@@ -21,11 +21,11 @@ code {
     font-size: 0.85rem;
 }
 
-code[class*="language-"],
+/* code[class*="language-"],
 pre[class*="language-"] {
     white-space: pre-wrap;
     font-size: 0.9rem;
-}
+} */
 
 .maxmsp-clipboard {
     margin: 16px 0;
