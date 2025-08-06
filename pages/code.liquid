@@ -45,6 +45,30 @@ description: My code, including sound design tools, VST/AU plugin programming, a
     <p class="sectionDescription">A <a href="https://en.wikipedia.org/wiki/Grimoire">grimoire</a> is a book of spells or incantations. This one is my place to keep shell scripts and other short snippets of code I find useful.</p>
 
     <article>
+      <h2>Tea/Coffee Timer</h2>
+
+      <p>I love tea (my favorite is Bigelow's Vanilla Chai) and I prefer it steeped for a precise length of time. However, I find alarms extremely irritating, with the worst part being that many of them keep going until you turn them off. This script lets me type e.g., <code>./timer.sh 4m</code> to get a timer that chimes once and then stops.</p>
+
+      <p>This is adapted from <a href="https://gist.github.com/bashbunni/f6b04fc4703903a71ce9f70c58345106">bashbunni's CLI pomodoro timer</a>. Note that it requires <a href="https://github.com/caarlos0/timer"><code>timer</code></a> and <a href="https://github.com/julienXX/terminal-notifier"><code>terminal-notifier</code></a>, and is specific to macOS. You could try adapting <a href="https://gist.github.com/bashbunni/3880e4194e3f800c4c494de286ebc1d7">this Linux version</a>, although I was having some trouble getting it working.</p>
+
+      <div class="code-file">timer.sh</div>
+
+      {% highlight shell %}
+#!/usr/bin/env zsh
+
+if [ ${1+x} ]; then
+    time=$1
+else
+    time="4m"
+fi
+
+timer $time && terminal-notifier -message 'Timer finished'\
+        -title 'Your timer is done!'\
+        -sound Glass
+      {% endhighlight %}
+
+    </article>
+    <article>
         <h2>Format Images for Website</h2>
 
         <p>This line is what I use to apply EXIF rotation data to photos from my phone, resize them, and convert to .webp for use on my website. It uses <a href="https://www.sentex.ca/~mwandel/jhead/">jhead</a>, <a href="https://imagemagick.org/index.php">imagemagick</a>, and <code>zsh</code>.</p>
