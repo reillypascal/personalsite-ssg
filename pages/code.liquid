@@ -49,7 +49,7 @@ description: My code, including sound design tools, VST/AU plugin programming, a
 
       <p>I love tea (my favorite is Bigelow's Vanilla Chai) and I prefer it steeped for a precise length of time. However, I find alarms extremely irritating, with the worst part being that many of them keep going until you turn them off. This script lets me type e.g., <code>./timer.sh 4m</code> to get a timer that chimes once and then stops.</p>
 
-      <p>This is adapted from <a href="https://gist.github.com/bashbunni/f6b04fc4703903a71ce9f70c58345106">bashbunni's CLI pomodoro timer</a>. Note that it requires <a href="https://github.com/caarlos0/timer"><code>timer</code></a> and <a href="https://github.com/julienXX/terminal-notifier"><code>terminal-notifier</code></a>, and is specific to macOS. You could try adapting <a href="https://gist.github.com/bashbunni/3880e4194e3f800c4c494de286ebc1d7">this Linux version</a>, although I was having some trouble getting it working.</p>
+      <p>This is inspired by <a href="https://gist.github.com/bashbunni/f6b04fc4703903a71ce9f70c58345106">bashbunni's CLI pomodoro timer</a>. Note that it requires <a href="https://github.com/caarlos0/timer"><code>timer</code></a>, and is specific to macOS. You could try adapting <a href="https://gist.github.com/bashbunni/3880e4194e3f800c4c494de286ebc1d7">this Linux version</a>, although I was having some trouble getting it working.</p>
 
       <div class="code-file">timer.sh</div>
 
@@ -62,9 +62,7 @@ else
     time="4m"
 fi
 
-timer $time && terminal-notifier -message 'Timer finished'\
-        -title 'Your timer is done!'\
-        -sound Glass
+timer $time && afplay /System/Library/Sounds/Glass.aiff
       {% endhighlight %}
 
     </article>
