@@ -253,15 +253,15 @@ export default async function (eleventyConfig) {
     return collectionApi.getFilteredByTags("tutorial", "wiki");
   });
 
-  eleventyConfig.addGlobalData('generated', () => {
-    let now = new Date();
-    return new Intl.DateTimeFormat(
-      'en-US', { 
-        dateStyle: 'long', 
-        timeStyle: 'short',
-        timeZone: "America/New_York",
-      }).format(now);
-  });
+  // eleventyConfig.addGlobalData('generated', () => {
+  //   let now = new Date();
+  //   return new Intl.DateTimeFormat(
+  //     'en-US', { 
+  //       dateStyle: 'long', 
+  //       timeStyle: 'short',
+  //       timeZone: "America/New_York",
+  //     }).format(now);
+  // });
 
   // input directory
   return {

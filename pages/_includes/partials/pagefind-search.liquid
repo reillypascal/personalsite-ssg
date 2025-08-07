@@ -46,4 +46,5 @@
         new PagefindUI({ element: "#search", showSubResults: true });
     });
 </script>
-<div class="searchIndexDate"><p>Last indexed {{ generated }}</p></div>
+{% comment %} <div class="searchIndexDate"><p>Last indexed {{ generated }}</p></div> {% endcomment %}
+<div class="searchIndexDate"><p>Last indexed {{ "now" | date: "%B %e, %Y at %l:%M %p" }}</p></div>
