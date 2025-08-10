@@ -61,7 +61,7 @@ Autechre [*qplay*](https://autechre.bandcamp.com/track/qplay) -->
 
 Marisabel is hosting [this month's Indieweb carnival on the topic of colors](https://marisabel.nl/public/blog/IndieWeb_Carnival_August_2025_:_Colors), and this is my contribution. I had been looking forward to writing on this topic since I saw it on [the list of upcoming events](https://indieweb.org/IndieWeb_Carnival). I've been enjoying other people's entries, and thanks to Marisabel for hosting!
 
-
+I've particularly enjoyed this exercise of looking at my past work because it has given me some ideas for a current composition project. Since I'm out of school, I tend to write for fewer performers than when I wrote my *Nonet*. For my current project (MIDI keyboard, oboe, clarinet), I've wanted to have some feedback sounds as I did in e.g., [*Outlive everything you know*](https://www.youtube.com/watch?v=2dz0iKwHrkI), using a microphone and small amplifier. The sections of [my *Nonet*, Mvt. III](https://soundcloud.com/reilly-spitzfaden/nonet-iii?in=reilly-spitzfaden/sets/nonet-premiere) like e.g., 0:52, with each instrument playing a single note that swells and interlocks with similar notes in other instruments gave me an idea. I realized that I could attach [a clip-on contact mic](https://www.korg.com/us/products/tuners/cm_300/) to the instrument bells and 
 
 [^1]: Schoenberg, Arnold. *Theory of Harmony*. Translated by Roy E. Carter. University of California Press, 1978.
 
