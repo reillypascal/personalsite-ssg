@@ -47,15 +47,15 @@ Someone I admire who manages to pull together ”cheesy“ synth sounds with exp
 
 ## Wrapping Up and Looking Forward
 
-Marisabel is hosting [this month's Indieweb carnival on the topic of colors](https://marisabel.nl/public/blog/IndieWeb_Carnival_August_2025_:_Colors), and this is my contribution. I had been looking forward to writing on this topic since I saw it on [the list of upcoming events](https://indieweb.org/IndieWeb_Carnival). I've been enjoying other people's entries, and thanks to Marisabel for hosting!
+Marisabel is hosting [this month's Indieweb carnival on the topic of colors](https://marisabel.nl/public/blog/IndieWeb_Carnival_August_2025_:_Colors), and this is my contribution. I had been looking forward to writing on this topic since I saw it on [the list of upcoming events](https://indieweb.org/IndieWeb_Carnival). I've been enjoying other people's entries, and thanks to Marisabel for hosting! I've particularly enjoyed this exercise of looking at my past work because it has given me some ideas for a current composition project — more info on that as I compose.
 
-I've particularly enjoyed this exercise of looking at my past work because it has given me some ideas for a current composition project. Since I'm out of school, I tend to write for fewer performers than when I wrote my *Nonet*. For my current project (MIDI keyboard, oboe, clarinet), I've wanted to have some feedback sounds as I did in e.g., [*Afterimage from*](https://www.youtube.com/watch?v=Y_inKSy9K0k&t=41s), using a microphone and small amplifier, while also having the clarinet and oboe players free to play their instruments at the same time.
+Until next time!
+
+<!-- I've particularly enjoyed this exercise of looking at my past work because it has given me some ideas for a current composition project. Since I'm out of school, I tend to write for fewer performers than when I wrote my *Nonet*. For my current project (MIDI keyboard, oboe, clarinet), I've wanted to have some feedback sounds as I did in e.g., [*Afterimage from*](https://www.youtube.com/watch?v=Y_inKSy9K0k&t=41s), using a microphone and small amplifier, while also having the clarinet and oboe players free to play their instruments at the same time.
 
 My [*Nonet*, mvt. III](https://soundcloud.com/reilly-spitzfaden/nonet-iii?in=reilly-spitzfaden/sets/nonet-premiere) has some sections such as e.g., 0:52 with each instrument playing a single note that swells and interlocks with similarly-played notes in other instruments. While I was listening back to this movement, my mind jumped around a bit and I realized that I could attach [a clip-on contact mic](https://www.korg.com/us/products/tuners/cm_300/) to the instrument bells, allowing each player to cover two sounds at once and/or staggered with each other — one traditional sound or [multiphonic](https://en.wikipedia.org/wiki/Multiphonic), and one feedback tone by moving toward/away from the amp. 
 
-This would allow me to get the interleaved crescendos/decrescendos sort of like what I did in the *Nonet*, and also get some nice ASMR-like sounds from the key clicks, sort of like in [Marcos Balter's *Wicker Park*](https://www.youtube.com/watch?v=j_EbQ2CQhog&pp=ygUZd2lja2VyIHBhcmsgbWFyY29zIGJhbHRlcg%3D%3D), but amplified. I'll be talking to some performers I know and trying this out when I resume teaching in the fall, and it should be interesting. It'll definitely expand the range of tone colors I can get out of the small ensemble.
-
-Until next time!
+This would allow me to get the interleaved crescendos/decrescendos sort of like what I did in the *Nonet*, and also get some nice ASMR-like sounds from the key clicks, sort of like in [Marcos Balter's *Wicker Park*](https://www.youtube.com/watch?v=j_EbQ2CQhog&pp=ygUZd2lja2VyIHBhcmsgbWFyY29zIGJhbHRlcg%3D%3D), but amplified. I'll be talking to some performers I know and trying this out when I resume teaching in the fall, and it should be interesting. It'll definitely expand the range of tone colors I can get out of the small ensemble. -->
 
 [^1]: Schoenberg, Arnold. *Theory of Harmony*. Translated by Roy E. Carter. University of California Press, 1978.
 
