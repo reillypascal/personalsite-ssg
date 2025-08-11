@@ -2,6 +2,8 @@
 title: "IndieWeb Carnival: Tone Colors"
 description: For this month's IndieWeb Carnival, I'm writing about music that emphasizes timbre or “tone-color,” and how I use this kind of approach in my own composition.
 fedi_url: 
+  - https://hachyderm.io/@reillypascal/115012421541262664
+  - https://bsky.app/profile/reillypascal.bsky.social/post/3lw5sxuqsoc25
 og_image: /media/blog/2025/08/schoenberg-farben-og.jpg
 og_image_width: 1200
 og_image_height: 630
