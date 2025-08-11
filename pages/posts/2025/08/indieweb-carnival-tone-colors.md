@@ -55,7 +55,7 @@ My [*Nonet*, mvt. III](https://soundcloud.com/reilly-spitzfaden/nonet-iii?in=rei
 
 This would allow me to get the interleaved crescendos/decrescendos sort of like what I did in the *Nonet*, and also get some nice ASMR-like sounds from the key clicks, sort of like in [Marcos Balter's *Wicker Park*](https://www.youtube.com/watch?v=j_EbQ2CQhog&pp=ygUZd2lja2VyIHBhcmsgbWFyY29zIGJhbHRlcg%3D%3D), but amplified. I'll be talking to some performers I know and trying this out when I resume teaching in the fall, and it should be interesting. It'll definitely expand the range of tone colors I can get out of the small ensemble.
 
-Until next time!.
+Until next time!
 
 [^1]: Schoenberg, Arnold. *Theory of Harmony*. Translated by Roy E. Carter. University of California Press, 1978.
 
