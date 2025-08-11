@@ -5,7 +5,7 @@ fedi_url:
 og_image: 
 og_image_width: 
 og_image_height: 
-date: 2025-08-11T12:30:00-0400
+date: 2025-08-12T12:30:00-0400
 octothorpes:
   - Audio
   - audio
@@ -23,17 +23,19 @@ indienews: true
 
 Throughout the movement, there is almost no melody in the traditional sense. Rather, by keeping the pitch material nearly static while alternating different instruments (or combinations of instruments), Schoenberg foregrounds the [timbre](https://en.wikipedia.org/wiki/Timbre) or “tone-colors” of the orchestra — the aspects of sound by which we can tell, for example, a trumpet from a violin.
 
-He describes what he is doing as [*klangfarbenmelodie*](https://en.wikipedia.org/wiki/Klangfarbenmelodie) or “tone-color melody.” By composing this way, he seeks to have the listener perceive this changing of “tone-colors” with “a kind of logic entirely equivalent to that logic which satisfies us in the melody of pitches.” [^1] Just as a more traditional melody might have a distinctive sequence of pitches (often associated with a similarly distinctive rhythm), we can apply the same type of listening to a sequence of *timbres*, as well as writing music that encourages this type of listening.
+He describes what he is doing as [*klangfarbenmelodie*](https://en.wikipedia.org/wiki/Klangfarbenmelodie) or “tone-color melody.” By composing this way, he seeks to have the listener perceive this changing of “tone-colors” with “a kind of logic entirely equivalent to that logic which satisfies us in the melody of pitches.” [^1] In other words, just as a more traditional melody might have a distinctive sequence of pitches (often associated with a similarly distinctive rhythm), we can apply the same type of listening to a sequence of *timbres*, as well as writing music that encourages this type of listening.
 
 ## Color in My Earlier Music
 
 In my first year of college, I stumbled across a score page for Anton Webern's [*Concerto for Nine Instruments, Op. 24*](https://www.youtube.com/watch?v=pVQambrIKNo) discarded in a practice room — likely homework from some classmate's [20th-century music theory](https://en.wikipedia.org/wiki/20th-century_classical_music) class. Webern was one of Schoenberg's students and someone who also made use of *klangfarbenmelodie*, and this piece was my entry point to that idea, among many other musical concepts — see my *Nonet* 2014, and [movement III in particular](https://soundcloud.com/reilly-spitzfaden/nonet-iii?in=reilly-spitzfaden/sets/nonet-premiere), for example. 
 
-Where Schoenberg's prototype of *klangfarbenmelodie* in his “Farben” movement uses slowly morphing chords, the opening of Webern's *Concerto* is highly pointillistic. In the first three measures, the oboe, flute, trumpet, and clarinet each play a 3-note pattern one after another, with each instrument just barely overlapping with the end of the previous one. This rapid passing of short ideas between instruments sets the tone for the rest of the composition. 
+Where Schoenberg's prototype of *klangfarbenmelodie* in his “Farben” movement uses slowly morphing chords, the opening of movement III of my *Nonet* is highly pointillistic. In the first two measures, the horn, bass clarinet, and cello each play a short [motive](https://en.wikipedia.org/wiki/Motif_(music)), transposing and manipulating it each time, with each instrument just barely overlapping with the end of the previous one. This rapid passing of short ideas between instruments sets the tone for the rest of the composition. 
 
-We can listen to this pointillistic call-and-response in a similar way to how we did in the Schoenberg example. Note that all the (usually) 3 note-long fragments have a similar “vibe” to them — 3 notes, all the same length, leaping a great distance in once direction, and then (often) leaping back the other way. [^2] While the stasis in the Schoenberg example is more obvious, this constant self-similarity in Webern's piece gives a kind of stasis as well. If we allow our hearing to “blur” and focus on the overall quality, rather than trying to follow the dissonant, angular melodies, the rapid *klangfarbenmelodie* shifts in tone color become clear. 
+We can listen to this pointillistic call-and-response in a similar way to how we did in the Schoenberg example. While the musical material is much more active in my piece, the shifts in tone color also occur in quicker succession, and are often accompanied by large [register](https://en.wikipedia.org/wiki/Register_(music)) jumps. In addition, almost all of the material derives from that 5-note motive from the first measure. While the melody is quite dissonant, angular, and chromatic, deriving most things from this one short motive gives a consistent overall character or “vibe” to the piece.
 
-This pointillistic way of rapidly passing ideas between instruments appeared regularly in my earlier compositions, such as in the opening of [my *Nonet*, mvt. III](https://soundcloud.com/reilly-spitzfaden/nonet-iii?in=reilly-spitzfaden/sets/nonet-premiere), and as I wrote this way, I took particular interest in the shifting timbres that resulted.
+The combination of a consistent character to the melody with large contrasts in timbre and register encourages the listener to focus on the overall quality and color of the sound, rather than trying to follow the specifics of the melody. When I listen like this, the rapid *klangfarbenmelodie* shifts in tone color become particularly clear.
+
+This pointillistic approach of rapidly passing ideas between instruments appeared regularly in many other compositions of mine around this time, and as I wrote this way, I took particular interest in the shifting timbres that resulted.
 
 ## Color in My Recent Composition
 
@@ -58,6 +60,4 @@ This would allow me to get the interleaved crescendos/decrescendos sort of like 
 Until next time!
 
 [^1]: Schoenberg, Arnold. *Theory of Harmony*. Translated by Roy E. Carter. University of California Press, 1978.
-
-[^2]: For the interested, the [12-tone row](https://openmusictheory.github.io/twelveToneBasics.html) in this piece is also highly [invariant](https://openmusictheory.github.io/twelveToneMusicInvariance.html). The [row](https://en.wikipedia.org/wiki/Concerto_for_Nine_Instruments_(Webern)#Composition) consists of 4 repetitions of the same group of 3 notes/2 intervals, and as such, some ways of transposing it and/or playing it in reverse (“[retrograde](https://openmusictheory.github.io/twelveToneOperations.html)”) will leave some of the notes the same. This further contributes to the consistent “vibe” in the harmony, and means the 3-note groups should all be the same [pitch-class set](https://viva.pressbooks.pub/openmusictheory/chapter/pc-sets-normal-order-and-transformations/).
 
