@@ -5,7 +5,7 @@ fedi_url:
 og_image: /media/blog/2025/08/schoenberg-farben-og.jpg
 og_image_width: 1200
 og_image_height: 630
-date: 2025-08-12T12:30:00-0400
+date: 2025-08-11T18:05:00-0400
 octothorpes:
   - Audio
   - audio
@@ -15,7 +15,6 @@ tags:
   - music
   - composition
   - indieweb
-draft: true
 indienews: true
 ---
 
