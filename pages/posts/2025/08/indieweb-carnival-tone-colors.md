@@ -1,10 +1,10 @@
 ---
 title: "IndieWeb Carnival: Tone Colors"
-description: For this month's IndieWeb Carnival, I'm writing about music that emphasizes timbre or “tone-color,” and how this kind of approach appears in my own composition.
+description: For this month's IndieWeb Carnival, I'm writing about music that emphasizes timbre or “tone-color,” and how I use this kind of approach in my own composition.
 fedi_url: 
-og_image: 
-og_image_width: 
-og_image_height: 
+og_image: /media/blog/2025/08/schoenberg-farben-og.jpg
+og_image_width: 1200
+og_image_height: 630
 date: 2025-08-12T12:30:00-0400
 octothorpes:
   - Audio
@@ -45,19 +45,10 @@ Where the things that made the *Nonet* sound unusual were the choice of pitches 
 
 When I do use clearly pitched material, my more recent compositions tend to be a bit more “tonal” than the *Nonet* — less chromatic, and leaning more toward “cheesy” 80s pop, lounge music, or electronic dance music sounds. For example, the piano chords — both notes and instrument sound — in [*If this reaches you*](https://applytriangle.bandcamp.com/track/if-this-reaches-you) starting at around 0:58 sound like lounge/elevator music mixed in amid the noisy samples and flute/clarinet sounds. The synth chords and scooping accents in the sax melody in [the opening of *Outlive everything you know*](https://www.youtube.com/watch?v=2dz0iKwHrkI) sound reminiscent of house music, again mixed in with a kaleidoscope of strange glitches and multiphonics.
 
-Someone I admire who manages to pull together ”cheesy“ synth sounds with experimental electronics (as well as metal and many other things!) is Fire-Toolz. Listen how the opening of [*Soaked: Another Name for Everything*](https://fire-toolz.bandcamp.com/track/soaked-another-name-for-everything) moves from acoustic guitar to 80s power ballad to glitchy sound collage, to some sort of prog-rock/elevator music hybrid at the end. Extremely colorful, and while her music is very different from Schoenberg, the quick movement between different tone colors is an integral part of her work too.
+Someone I admire who manages to pull together “cheesy” synth sounds with experimental electronics (as well as metal and many other things!) is Fire-Toolz. Listen how the opening of [*Soaked: Another Name for Everything*](https://fire-toolz.bandcamp.com/track/soaked-another-name-for-everything) moves from acoustic guitar to 80s power ballad to glitchy sound collage, to some sort of prog-rock/elevator music hybrid at the end. Extremely colorful, and while her music is very different from Schoenberg, the quick movement between different tone colors is an integral part of her work too.
 
-## Wrapping Up and Looking Forward
+## Wrapping Up
 
-Marisabel is hosting [this month's Indieweb carnival on the topic of colors](https://marisabel.nl/public/blog/IndieWeb_Carnival_August_2025_:_Colors), and this is my contribution. I had been looking forward to writing on this topic since I saw it on [the list of upcoming events](https://indieweb.org/IndieWeb_Carnival). I've been enjoying other people's entries, and thanks to Marisabel for hosting!
-
-I've particularly enjoyed this exercise of looking at my past work because it has given me some ideas for a current composition project. Since I'm out of school, I tend to write for fewer performers than when I wrote my *Nonet*. For my current project (MIDI keyboard, oboe, clarinet), I've wanted to have some feedback sounds as I did in e.g., [*Afterimage from*](https://www.youtube.com/watch?v=Y_inKSy9K0k&t=41s), using a microphone and small amplifier, while also having the clarinet and oboe players free to play their instruments at the same time.
-
-My [*Nonet*, mvt. III](https://soundcloud.com/reilly-spitzfaden/nonet-iii?in=reilly-spitzfaden/sets/nonet-premiere) has some sections such as e.g., 0:52 with each instrument playing a single note that swells and interlocks with similarly-played notes in other instruments. While I was listening back to this movement, my mind jumped around a bit and I realized that I could attach [a clip-on contact mic](https://www.korg.com/us/products/tuners/cm_300/) to the instrument bells, allowing each player to cover two sounds at once and/or staggered with each other — one traditional sound or [multiphonic](https://en.wikipedia.org/wiki/Multiphonic), and one feedback tone by moving toward/away from the amp. 
-
-This would allow me to get the interleaved crescendos/decrescendos sort of like what I did in the *Nonet*, and also get some nice ASMR-like sounds from the key clicks, sort of like in [Marcos Balter's *Wicker Park*](https://www.youtube.com/watch?v=j_EbQ2CQhog&pp=ygUZd2lja2VyIHBhcmsgbWFyY29zIGJhbHRlcg%3D%3D), but amplified. I'll be talking to some performers I know and trying this out when I resume teaching in the fall, and it should be interesting. It'll definitely expand the range of tone colors I can get out of the small ensemble.
-
-Until next time!
+Marisabel is hosting [this month's Indieweb carnival on the topic of colors](https://marisabel.nl/public/blog/IndieWeb_Carnival_August_2025_:_Colors), and this is my contribution. I had been looking forward to writing on this topic since I saw it on [the list of upcoming events](https://indieweb.org/IndieWeb_Carnival). I've been enjoying other people's entries, and thanks to Marisabel for hosting! I've particularly enjoyed this exercise of looking at my past work because it has given me some ideas for a current composition project — more info on that as I compose. Until next time!
 
 [^1]: Schoenberg, Arnold. *Theory of Harmony*. Translated by Roy E. Carter. University of California Press, 1978.
-
