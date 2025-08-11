@@ -24,7 +24,7 @@ indienews: true
 <link rel="stylesheet" type="text/css" href="/styles/code/prism-perf-custom.css" />
 <link rel="stylesheet" type="text/css" href="/styles/code/code-tweaks.css" /> -->
 
-[Movement III, “Farben” (“Colors”)](https://www.youtube.com/watch?v=8AQx0V2lZs8&t=496s) from Arnold Schoenberg's *Five Pieces for Orchestra, Op. 16* begins very subtly. Two different groups in the orchestra alternate on the same hushed, eerie chord. As this slow, regular pulsation continues, some notes in the chord move up or down very slightly while others remain the same, gradually transforming the harmony. 
+[Movement III, “Farben” (“Colors”)](https://www.youtube.com/watch?v=8AQx0V2lZs8&t=496s) from Arnold Schoenberg's *Five Pieces for Orchestra, Op. 16* begins very subtly. Two different groups in the orchestra alternate on the same hushed, eerie chord. As this slow, regular pulsation continues, some notes in the chord move up or down very slightly while others remain the same, gradually transforming the harmony.
 
 Throughout the movement, there is almost no melody in the traditional sense. Rather, by keeping the pitch material nearly static while alternating different instruments (or combinations of instruments), Schoenberg foregrounds the [timbre](https://en.wikipedia.org/wiki/Timbre) or “tone-colors” of the orchestra — the aspects of sound by which we can tell, for example, a trumpet from a violin.
 
@@ -42,16 +42,21 @@ Just as the more obvious stasis in the opening chords of Schoenberg's “Farben�
 
 ## Color in My Recent Composition
 
-I composed [*If this reaches you*](https://applytriangle.bandcamp.com/track/if-this-reaches-you) in 2021, and [it was recorded in 2024](/posts/2024/04/new-album-announcement/). 
+I composed [*If this reaches you*](https://applytriangle.bandcamp.com/track/if-this-reaches-you) in 2021, and [it was recorded in 2024](/posts/2024/04/new-album-announcement/). The details of my approach are very different from the previous example, but the emphasis on sound and timbre, and the pointillistic, thin textures are still there. 
 
-[I wrote about using radio transmissions in my compositions](/posts/2024/12/radio-listening-musically/)
+This piece is for MIDI keyboard (controlling a custom software setup in [Max/MSP](https://en.wikipedia.org/wiki/Max_(software))), flute, and clarinet. The flutist briefly uses a bass bow on a cardboard box in the middle, as well. The MIDI keyboard plays a combination of electric piano and sampled amateur radio sounds — [I wrote about using radio transmissions in my compositions in another post](/posts/2024/12/radio-listening-musically/), if people want to read more about that.
+
+Where the things that made the *Nonet* sound unusual were the choice of pitches and rhythms, in *If this reaches you*, the focus is a bit more on *sound* than pitch. In addition to the ”non-musical“ radio samples, I also use a number of so-called ”extended techniques,“ particularly in the clarinet. [Clarinetist Heather Roche's blog](http://www.heatherroche.net/) is a great source of information on how these work, and I use [various](https://heatherroche.net/2018/09/13/27-easy-bb-clarinet-multiphonics/) different [multiphonics](https://heatherroche.net/2019/11/05/underblown-bb-clarinet-multiphonics/), [double trills](https://heatherroche.net/2014/05/11/on-double-trills-for-bb-clarinet/), and other unusual sounds.
+
+On the other hand, when I do use clearly pitched material, my more recent compositions tend to be a bit more ”tonal“ than the *Nonet* — less chromatic, and leaning more toward ”cheesy“ 80s pop, lounge music, or electronic dance music sounds. For example, the piano chords — both notes and instrument sound — in [*If this reaches you*](https://applytriangle.bandcamp.com/track/if-this-reaches-you) starting at around 0:58 sound like lounge/elevator music mixed in amid the noisy samples and flute/clarinet sounds. The synth chords and scooping accents in the sax melody in [the opening of *Outlive everything you know*](https://www.youtube.com/watch?v=2dz0iKwHrkI) sound reminiscent of house music, again mixed in with strange glitches and multiphonics.
+
+Someone I admire who manages to pull together ”cheesy“ synth sounds with experimental electronics (as well as metal and many other things!) is Fire-Toolz. Listen how the opening of [*Soaked: Another Name for Everything*](https://fire-toolz.bandcamp.com/track/soaked-another-name-for-everything) moves from acoustic guitar to 80s power ballad to glitchy sound collage, to some sort of prog-rock/elevator music hybrid at the end. Extremely colorful, and while her music is very different from Schoenberg, the quick movement between different tone colors is still an integral part of her work.
+
+<!-- Note also how amid all the glitchy noise and experimental brass sounds, [the electric piano around 4:58 and following in *Everything lost along the way*](https://www.youtube.com/watch?v=t_gxCOcNJr8&t=298s) is the same preset as the opening of [Whitney Houston's ”Greatest Love of All“](https://www.youtube.com/watch?v=IYzlVDlE72w). -->
 
 <!-- ## Color in Electronic Music
 
-Fire-Toolz [*Soaked: Another Name for Everything*](https://fire-toolz.bandcamp.com/track/soaked-another-name-for-everything)
-
 Autechre [*qplay*](https://autechre.bandcamp.com/track/qplay) -->
-
 
 <!-- Webern also tended to write [12-tone rows](https://openmusictheory.github.io/twelveToneBasics.html) such that [when the row is transformed, certain pitches remain the same](https://openmusictheory.github.io/twelveToneMusicInvariance.html). [^2] [Movement II of his *Variations for Piano, Op. 27*](https://www.youtube.com/watch?v=by1OlFqIQxI&t=96s) makes this “invariance” particularly clear — notice how some notes stay “frozen,” not only recurring, but recurring in the same register. As professors of mine have noted to me, this gives an opportunity -->
 
@@ -61,7 +66,13 @@ Autechre [*qplay*](https://autechre.bandcamp.com/track/qplay) -->
 
 Marisabel is hosting [this month's Indieweb carnival on the topic of colors](https://marisabel.nl/public/blog/IndieWeb_Carnival_August_2025_:_Colors), and this is my contribution. I had been looking forward to writing on this topic since I saw it on [the list of upcoming events](https://indieweb.org/IndieWeb_Carnival). I've been enjoying other people's entries, and thanks to Marisabel for hosting!
 
-I've particularly enjoyed this exercise of looking at my past work because it has given me some ideas for a current composition project. Since I'm out of school, I tend to write for fewer performers than when I wrote my *Nonet*. For my current project (MIDI keyboard, oboe, clarinet), I've wanted to have some feedback sounds as I did in e.g., [*Outlive everything you know*](https://www.youtube.com/watch?v=2dz0iKwHrkI), using a microphone and small amplifier. The sections of [my *Nonet*, Mvt. III](https://soundcloud.com/reilly-spitzfaden/nonet-iii?in=reilly-spitzfaden/sets/nonet-premiere) like e.g., 0:52, with each instrument playing a single note that swells and interlocks with similar notes in other instruments gave me an idea. I realized that I could attach [a clip-on contact mic](https://www.korg.com/us/products/tuners/cm_300/) to the instrument bells and 
+I've particularly enjoyed this exercise of looking at my past work because it has given me some ideas for a current composition project. Since I'm out of school, I tend to write for fewer performers than when I wrote my *Nonet*. For my current project (MIDI keyboard, oboe, clarinet), I've wanted to have some feedback sounds as I did in e.g., [*Outlive everything you know*](https://www.youtube.com/watch?v=2dz0iKwHrkI), using a microphone and small amplifier, while also having the clarinet and oboe player free to play their instruments at the same time.
+
+My [*Nonet*, mvt. III](https://soundcloud.com/reilly-spitzfaden/nonet-iii?in=reilly-spitzfaden/sets/nonet-premiere) has some sections such as e.g., 0:52 with each instrument playing a single note that swells and interlocks with similarly-played notes in other instruments. While I was listening back to this movement, I realized that I could attach [a clip-on contact mic](https://www.korg.com/us/products/tuners/cm_300/) to the instrument bells, allowing each player to cover two sounds at once and/or staggered with each other — one traditional sound or [multiphonic](https://en.wikipedia.org/wiki/Multiphonic), and one feedback tone by moving toward/away from the amp. 
+
+This would allow me to get the interleaved crescendos/decrescendos sort of like what I did in the *Nonet*, and also get some nice ASMR-like sounds from the key clicks, sort of like in [Marcos Balter's *Wicker Park*](https://www.youtube.com/watch?v=j_EbQ2CQhog&pp=ygUZd2lja2VyIHBhcmsgbWFyY29zIGJhbHRlcg%3D%3D), but amplified. I'll be talking to some performers I know and trying this out when I resume teaching in the fall, and it should be interesting. It'll definitely expand the range of tone colors I can get out of the small ensemble.
+
+Until next time!.
 
 [^1]: Schoenberg, Arnold. *Theory of Harmony*. Translated by Roy E. Carter. University of California Press, 1978.
 
