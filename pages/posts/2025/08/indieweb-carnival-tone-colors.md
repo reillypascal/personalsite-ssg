@@ -64,7 +64,7 @@ Autechre [*qplay*](https://autechre.bandcamp.com/track/qplay) -->
 
 <!-- and Edgard Varèse (see e.g., [*Octandre*](https://www.youtube.com/watch?v=cLIOdiAzddY)) were -->
 
-## Wrapping Up
+## Wrapping Up and Looking Forward
 
 Marisabel is hosting [this month's Indieweb carnival on the topic of colors](https://marisabel.nl/public/blog/IndieWeb_Carnival_August_2025_:_Colors), and this is my contribution. I had been looking forward to writing on this topic since I saw it on [the list of upcoming events](https://indieweb.org/IndieWeb_Carnival). I've been enjoying other people's entries, and thanks to Marisabel for hosting!
 
