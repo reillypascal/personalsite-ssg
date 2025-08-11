@@ -1,11 +1,11 @@
 ---
 title: "IndieWeb Carnival: Tone Colors"
-description: For this month's IndieWeb Carnival, I'm writing about music that emphasizes timbre or “tone-color,” and how this kind of approach appears in my own composition.
+description: For this month's IndieWeb Carnival, I'm writing about music that emphasizes timbre or “tone-color,” and how I use this kind of approach in my own composition.
 fedi_url: 
-og_image: 
-og_image_width: 
-og_image_height: 
-date: 2025-08-11T12:30:00-0400
+og_image: /media/blog/2025/08/schoenberg-farben-og.jpg
+og_image_width: 1200
+og_image_height: 630
+date: 2025-08-12T12:30:00-0400
 octothorpes:
   - Audio
   - audio
@@ -45,11 +45,9 @@ When I do use clearly pitched material, my more recent compositions tend to be a
 
 Someone I admire who manages to pull together ”cheesy“ synth sounds with experimental electronics (as well as metal and many other things!) is Fire-Toolz. Listen how the opening of [*Soaked: Another Name for Everything*](https://fire-toolz.bandcamp.com/track/soaked-another-name-for-everything) moves from acoustic guitar to 80s power ballad to glitchy sound collage, to some sort of prog-rock/elevator music hybrid at the end. Extremely colorful, and while her music is very different from Schoenberg, the quick movement between different tone colors is an integral part of her work too.
 
-## Wrapping Up and Looking Forward
+## Wrapping Up
 
-Marisabel is hosting [this month's Indieweb carnival on the topic of colors](https://marisabel.nl/public/blog/IndieWeb_Carnival_August_2025_:_Colors), and this is my contribution. I had been looking forward to writing on this topic since I saw it on [the list of upcoming events](https://indieweb.org/IndieWeb_Carnival). I've been enjoying other people's entries, and thanks to Marisabel for hosting! I've particularly enjoyed this exercise of looking at my past work because it has given me some ideas for a current composition project — more info on that as I compose.
-
-Until next time!
+Marisabel is hosting [this month's Indieweb carnival on the topic of colors](https://marisabel.nl/public/blog/IndieWeb_Carnival_August_2025_:_Colors), and this is my contribution. I had been looking forward to writing on this topic since I saw it on [the list of upcoming events](https://indieweb.org/IndieWeb_Carnival). I've been enjoying other people's entries, and thanks to Marisabel for hosting! I've particularly enjoyed this exercise of looking at my past work because it has given me some ideas for a current composition project — more info on that as I compose. Until next time!
 
 <!-- I've particularly enjoyed this exercise of looking at my past work because it has given me some ideas for a current composition project. Since I'm out of school, I tend to write for fewer performers than when I wrote my *Nonet*. For my current project (MIDI keyboard, oboe, clarinet), I've wanted to have some feedback sounds as I did in e.g., [*Afterimage from*](https://www.youtube.com/watch?v=Y_inKSy9K0k&t=41s), using a microphone and small amplifier, while also having the clarinet and oboe players free to play their instruments at the same time.
 
