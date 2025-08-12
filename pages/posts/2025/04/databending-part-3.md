@@ -18,6 +18,7 @@ tags:
   - music 
   - sound-design
 post_series: databending
+featured: true
 ---
 
 <link rel="stylesheet" type="text/css" href="/styles/code/prism-perf-custom.css" />

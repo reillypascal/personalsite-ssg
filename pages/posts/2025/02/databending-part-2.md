@@ -25,6 +25,8 @@ post_series: databending
 <link rel="stylesheet" type="text/css" href="/styles/code/prism-perf-custom.css" />
 <link rel="stylesheet" type="text/css" href="/styles/code/code-tweaks.css" />
 
+Update: see [part 3](/posts/2025/04/databending-part-3/) for Python code to speed this process up!
+
 I [recently posted](https://reillyspitzfaden.com/posts/2025/01/databending-part-1/) about “databending,” which includes importing raw data into Audacity to make glitchy noises, changing the data in an image using a text/hex editor, and many other ways of creatively reinterpreting/damaging data. Since writing that post, I've learned some more fun ways of creating glitchy sounds with data, and I'll be discussing that today.
 
 ## Hacking MP3s

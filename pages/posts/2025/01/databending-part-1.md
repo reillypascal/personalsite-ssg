@@ -17,7 +17,6 @@ tags:
   - music
   - sound-design
 post_series: databending
-featured: true
 ---
 Let's start today off with some sounds right out of the gate:
 
