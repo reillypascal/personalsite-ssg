@@ -8,6 +8,7 @@ date: 2025-05-28T19:06:00-0400
 tags:
   - post
   - indieweb
+  - indieweb-carnival
   - webdev
   - tech-philosophy
 indienews: true

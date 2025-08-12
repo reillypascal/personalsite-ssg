@@ -15,6 +15,7 @@ tags:
   - post
   - composition
   - indieweb
+  - indieweb-carnival
   - music
 indienews: true
 ---

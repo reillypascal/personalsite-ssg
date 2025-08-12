@@ -13,11 +13,13 @@ octothorpes:
 tags:
   - post
   - indieweb
+  - indieweb-carnival
   - composition
   - music
   - maxmsp
 indienews: true
 ---
+
 This month's IndieWeb blog carnival topic is “renewal”—here is Jamie Thingelstad's [introductory post](https://www.thingelstad.com/2025/03/27/renewal-indieweb-carnival.html) on the topic. 
 
 Initially I wasn't sure if this topic would apply to anything on which I currently had the inspiration to write, but I read [Juha-Matti Santala's post](https://hamatti.org/posts/resisting-the-urge-to-rewrite-the-website/) for the carnival and something clicked for me. He writes about 
