@@ -123,13 +123,13 @@ In other words, as Merchant puts it
 > Teri Kanefield [breaks down](https://terikanefield.com/your-brain-on-ideology/) Leor Zmigrod’s [book on ideology](https://us.macmillan.com/books/9781250344595/theideologicalbrain/), explaining that “All ideologies seek a utopia.” The Business Borg utopia puts billionaires and their ilk high atop society, in control via the technology they own.
 
 > Core values I see uniting the Business Borg aesthetic are:
-> 1. **only the output matters**
-> 2. **efficiency is king**
-> 3. **quantity over quality**
-> 4. **appearance trumps reality**
-> 5. **“progress” cannot be stopped** \[…\]
+> 1. only the output matters
+> 2. efficiency is king
+> 3. quantity over quality
+> 4. appearance trumps reality
+> 5. “progress” cannot be stopped \[…\]
 
-> **Generative AI — both imagery and text — is inextricable from the corporate vision for its use: a world in which [workers are powerless and worthless](https://www.axios.com/2025/05/28/ai-jobs-white-collar-unemployment-anthropic), replaced by “free” generated material.** Corporate GenAI cannot be separated from the purpose for its use or the billionaires and billionaire-wannabes who shill for it.
+> Generative AI — both imagery and text — is inextricable from the corporate vision for its use: a world in which [workers are powerless and worthless](https://www.axios.com/2025/05/28/ai-jobs-white-collar-unemployment-anthropic), replaced by “free” generated material. Corporate GenAI cannot be separated from the purpose for its use or the billionaires and billionaire-wannabes who shill for it.
 
 - Ali Alkhatib, “[To Live in Their Utopia: Why Algorithmic Systems Create Absurd Outcomes](https://ali-alkhatib.com/research#utopia)”
 
