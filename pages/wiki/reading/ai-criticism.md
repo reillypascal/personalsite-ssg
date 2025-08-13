@@ -4,7 +4,7 @@ description: Reading list of sources critical of AI or reporting on harm caused 
 fedi_url:
   - https://hachyderm.io/@reillypascal/114597601909960276
   - https://bsky.app/profile/reillypascal.bsky.social/post/3lqflxhpllc2j
-date: 2025-07-31T13:05:00-0400
+date: 2025-08-12T20:56:00-0400
 octothorpes:
   - ai
 tags:
@@ -24,11 +24,11 @@ This page is a collection of reporting, research, and essays critical of large l
 
 - Noam Scheiber, “[At Amazon, Some Coders Say Their Jobs Have Begun to Resemble Warehouse Work](https://www.nytimes.com/2025/05/25/business/amazon-ai-coders.html)” ([archived link](https://archive.is/g127S))
 
-> Three Amazon engineers said that managers had increasingly pushed them to use A.I. in their work over the past year. The engineers said that the company had raised output goals and had become less forgiving about deadlines. \[…] One Amazon engineer said his team was roughly half the size it had been last year, but it was expected to produce roughly the same amount of code by using A.I.
+> Three Amazon engineers said that managers had increasingly pushed them to use A.I. in their work over the past year. The engineers said that the company had raised output goals and had become less forgiving about deadlines. \[…\] One Amazon engineer said his team was roughly half the size it had been last year, but it was expected to produce roughly the same amount of code by using A.I.
 
 - Brian Merchant, “[The AI jobs crisis is here, now](https://www.bloodinthemachine.com/p/the-ai-jobs-crisis-is-here-now)”
 
-> The AI jobs crisis does not, [as I’ve written before](https://gizmodo.com/robots-are-not-coming-for-your-job-management-is-1835127820#:~:text=Listen%3A%20'Robots'%20are%20not,on%20its%20comparatively%20superior%20merits.), look like sentient programs arising all around us, inexorably replacing human jobs en masse. It’s a series of management decisions being made by executives seeking to cut labor costs and consolidate control in their organizations. \[…]
+> The AI jobs crisis does not, [as I’ve written before](https://gizmodo.com/robots-are-not-coming-for-your-job-management-is-1835127820#:~:text=Listen%3A%20'Robots'%20are%20not,on%20its%20comparatively%20superior%20merits.), look like sentient programs arising all around us, inexorably replacing human jobs en masse. It’s a series of management decisions being made by executives seeking to cut labor costs and consolidate control in their organizations. \[…\]
 
 > These imperatives have always existed, of course; bosses have historically tried to maximize profits by using cost-cutting technologies. But generative AI has been uniquely powerful in equipping them with a narrative with which to do so—and to thus justify degrading, disempowering, or destroying vulnerable jobs. 
 
@@ -56,7 +56,13 @@ In other words, as Merchant puts it
 
 > This turns AI-“assisted” coders into _reverse_ centaurs. The AI can churn out code at superhuman speed, and you, the human in the loop, must maintain perfect vigilance and attention as you review that code, spotting the cleverly disguised hooks for malicious code that the AI can't be prevented from inserting into its code.
 
-## Effectiveness for Coding
+## Weaknesses of AI as a Tool
+
+- Kosmyna et al., “[Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task](https://arxiv.org/abs/2506.08872)”
+
+> EEG revealed significant differences in brain connectivity: Brain-only participants exhibited the strongest, most distributed networks; Search Engine users showed moderate engagement; and LLM users displayed the weakest connectivity. Cognitive activity scaled down in relation to external tool use. \[…\]
+
+> Over four months, LLM users consistently underperformed at neural, linguistic, and behavioral levels.
 
 - William Harding, Matthew Kloster, “[Coding on Copilot: 2023 Data Suggests Downward Pressure on Code Quality](https://www.gitclear.com/coding_on_copilot_data_shows_ais_downward_pressure_on_code_quality)”
 
@@ -64,7 +70,7 @@ In other words, as Merchant puts it
 
 - METR, “[Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/)”
 
-> We conduct a randomized controlled trial (RCT) to understand how early-2025 AI tools affect the productivity of experienced open-source developers working on their own repositories. \[…]
+> We conduct a randomized controlled trial (RCT) to understand how early-2025 AI tools affect the productivity of experienced open-source developers working on their own repositories. \[…\]
 
 > When developers are allowed to use AI tools, they take 19% longer to complete issues—a significant slowdown that goes against developer beliefs and expert forecasts. This gap between perception and reality is striking: developers expected AI to speed them up by 24%, and even after experiencing the slowdown, they still believed AI had sped them up by 20%.
 
@@ -86,7 +92,7 @@ In other words, as Merchant puts it
 
 - Nicole Froio, [*AI is ruining houseplant communities online*](https://www.theverge.com/ai-artificial-intelligence/691355/ai-is-ruining-houseplant-communities-online)
 
-> …AI-generated content — both photos of fake plants and care misinformation — disrupt community engagement, which is what many collectors are seeking when joining these forums. \[…]
+> …AI-generated content — both photos of fake plants and care misinformation — disrupt community engagement, which is what many collectors are seeking when joining these forums. \[…\]
 
 > This kind of content is “discouraging any meaningful engagement” because it’s not grounded in reality, Caring_Cactus continues. “They’re trying to farm attention with low quality content, and it creates less opportunities for real connection by wasting people’s precious time when they want to socialize online.”
 
@@ -121,7 +127,7 @@ In other words, as Merchant puts it
 > 2. **efficiency is king**
 > 3. **quantity over quality**
 > 4. **appearance trumps reality**
-> 5. **“progress” cannot be stopped** \[…]
+> 5. **“progress” cannot be stopped** \[…\]
 
 > **Generative AI — both imagery and text — is inextricable from the corporate vision for its use: a world in which [workers are powerless and worthless](https://www.axios.com/2025/05/28/ai-jobs-white-collar-unemployment-anthropic), replaced by “free” generated material.** Corporate GenAI cannot be separated from the purpose for its use or the billionaires and billionaire-wannabes who shill for it.
 
