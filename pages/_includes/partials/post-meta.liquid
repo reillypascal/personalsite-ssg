@@ -11,7 +11,8 @@
             {%- endif -%}
         {%- endfor -%}
         {%- if is_wiki -%}
-            <a class="u-url" href="{{ url }}"><time class="dt-published" datetime="{{ date | postDate }}">Last updated {{ date | date: "%B %d, %Y" }}</time></a>
+          {% comment %} page.date gets the Last Updated variable properly {% endcomment %}
+            <a class="u-url" href="{{ url }}"><time class="dt-published" datetime="{{ page.date | postDate }}">Last updated {{ page.date | date: "%B %d, %Y" }}</time></a>
         {%- else -%}
             <a class="u-url" href="{{ url }}"><time class="dt-published" datetime="{{ date | postDate }}">{{ date | date: "%A, %B %d, %Y" }}</time></a>
         {%- endif -%}
