@@ -5,7 +5,7 @@ fedi_url:
 og_image: 
 og_image_width: 
 og_image_height: 
-date: 2025-05-14T22:56:00-0400
+date: git Last Modified
 octothorpes: 
 tags:
   - wiki
@@ -19,7 +19,7 @@ tags:
 
 This is a guide to setting up a Raspberry Pi as a TV streaming box using the [Kodi](https://kodi.tv/) media center. I've compiled instructions from a few different sources, and I'm putting it in one place to help keep track of everything; guard against the linked sites going down; and share what I know with others in one convenient place.
 
-This discussion pairs nicely with Jellyfin running on a home server, as I discuss [[tv-media-server|here]].
+This discussion pairs nicely with Jellyfin running on a home server, [as I discuss here](/wiki/notebook/tech-projects/tv-media-server/).
 
 ## Guide (Some Natalie's Blog)
 - [Kodi setup on a Raspberry Pi 4](https://some-natalie.dev/blog/kodi-setup/)

@@ -1,13 +1,13 @@
 // needed for e.g., dateToRfc822 filter
 import feedPlugin from "@11ty/eleventy-plugin-rss";
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
-import interlinker from "@photogabble/eleventy-plugin-interlinker";
+// import interlinker from "@photogabble/eleventy-plugin-interlinker";
 import pluginTOC from '@uncenter/eleventy-plugin-toc';
 import markdownIt from "markdown-it";
 import markdownItAnchor from 'markdown-it-anchor';
 import markdownItAttrs from 'markdown-it-attrs';
 import markdownItFootnote from "markdown-it-footnote";
-import markdownItGitHubAlerts from 'markdown-it-github-alerts';
+// import markdownItGitHubAlerts from 'markdown-it-github-alerts';
 import { createMathjaxInstance, mathjax } from "@mdit/plugin-mathjax";
 // import { katex } from "@mdit/plugin-katex";
 // import mdBiblatex from '@arothuis/markdown-it-biblatex';
@@ -185,7 +185,9 @@ export default async function (eleventyConfig) {
 
   const mathjaxInstance = createMathjaxInstance({ output: "chtml" });
 
-  let markdownLib = markdownIt(options).use(markdownItAnchor, { tabIndex: false }).use(markdownItAttrs).use(markdownItFootnote).use(markdownItGitHubAlerts, { markers: '*' }).use(mathjax, mathjaxInstance);//.use(katex);
+  let markdownLib = markdownIt(options).use(markdownItAnchor, { tabIndex: false }).use(markdownItAttrs).use(markdownItFootnote).use(mathjax, mathjaxInstance);
+  // .use(markdownItGitHubAlerts, { markers: '*' })
+  // .use(katex);
   // .use(mdItObsidianCallouts);
   // .use(mdBiblatex, { bibPath: 'documents/bibliography/library.bib', linkToBibliography: true, });
   eleventyConfig.setLibrary("md", markdownLib);
@@ -199,7 +201,7 @@ export default async function (eleventyConfig) {
   //   selector: "h2,h3,h4,h5,h6",
   // });
 
-  eleventyConfig.addPlugin(interlinker);
+  // eleventyConfig.addPlugin(interlinker);
 
   eleventyConfig.addPlugin(pluginTOC,{
     tags: ["h2", "h3", "h4", "h5", "h6"], // tags (heading levels) to include

@@ -5,7 +5,7 @@ fedi_url:
 og_image: 
 og_image_width: 
 og_image_height: 
-date: 2025-05-15T01:10:00-0400
+date: git Last Modified
 octothorpes: 
 tags:
   - wiki
@@ -17,7 +17,7 @@ tags:
 <link rel="stylesheet" type="text/css" href="/styles/code/prism-perf-custom.css" />
 <link rel="stylesheet" type="text/css" href="/styles/code/code-tweaks.css" />
 
-Here are my notes on setting up an old laptop as a home server. This discussion pairs nicely with the Raspberry Pi/Kodi TV streaming box I discuss [[kodi-streaming-box-raspberry-pi|here]], and I also use this server to update my website with new webmentions as I discuss [[webmention-tutorial|here]].
+Here are my notes on setting up an old laptop as a home server. This discussion pairs nicely with the [Raspberry Pi/Kodi TV streaming box I discuss here](/wiki/notebook/tech-projects/kodi-streaming-box-raspberry-pi/), and I also use this server to update my website with new webmentions [as I discuss here](/wiki/tutorials/webmention-tutorial/).
 
 ## Guide (Ubuntu Server):
 - [The Zero Dollar Home Server](https://chriskalos.notion.site/The-0-Home-Server-Written-Guide-5d5ff30f9bdd4dfbb9ce68f0d914f1f6)
@@ -71,7 +71,7 @@ sudo umount /mnt/share
 
 
 ## YouTube
-- http://191.168.1.66:50152/youtube/api
+- Use this link to access the YouTube setup interface: http://\<your-server-ip-address\>:50152/youtube/api
 - https://github.com/anxdpanic/plugin.video.youtube/issues/1016
 
 

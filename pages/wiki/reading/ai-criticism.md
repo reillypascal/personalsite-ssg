@@ -116,24 +116,15 @@ In other words, as Merchant puts it
 
 - Mandy Brown, “[Toolmen](https://aworkinglibrary.com/writing/toolmen)”
 
-> What AI is is an ideology…\[the] ideology itself is nothing new—it is the age-old system of supremacy, granting care and comfort to some while relegating others to servitude and penury—but the wrappings have been updated for the late capital, late digital age… Engaging with AI as a *technology* is to play the fool—it’s to observe the reflective surface of the thing without taking note of the way it sends roots deep down into the ground, breaking up bedrock, poisoning the soil, reaching far and wide to capture, uproot, strangle, and steal everything within its reach.
-
-- Tracy Durnell, “[Generative AI and the Business Borg aesthetic](https://tracydurnell.com/2025/06/02/generative-ai-and-the-business-borg-aesthetic/)”
-
-> Teri Kanefield [breaks down](https://terikanefield.com/your-brain-on-ideology/) Leor Zmigrod’s [book on ideology](https://us.macmillan.com/books/9781250344595/theideologicalbrain/), explaining that “All ideologies seek a utopia.” The Business Borg utopia puts billionaires and their ilk high atop society, in control via the technology they own.
-
-> Core values I see uniting the Business Borg aesthetic are:
-> 1. only the output matters
-> 2. efficiency is king
-> 3. quantity over quality
-> 4. appearance trumps reality
-> 5. “progress” cannot be stopped \[…\]
-
-> Generative AI — both imagery and text — is inextricable from the corporate vision for its use: a world in which [workers are powerless and worthless](https://www.axios.com/2025/05/28/ai-jobs-white-collar-unemployment-anthropic), replaced by “free” generated material. Corporate GenAI cannot be separated from the purpose for its use or the billionaires and billionaire-wannabes who shill for it.
+> What AI is is an ideology… \[the\] ideology itself is nothing new—it is the age-old system of supremacy, granting care and comfort to some while relegating others to servitude and penury—but the wrappings have been updated for the late capital, late digital age… Engaging with AI as a *technology* is to play the fool—it’s to observe the reflective surface of the thing without taking note of the way it sends roots deep down into the ground, breaking up bedrock, poisoning the soil, reaching far and wide to capture, uproot, strangle, and steal everything within its reach.
 
 - Ali Alkhatib, “[To Live in Their Utopia: Why Algorithmic Systems Create Absurd Outcomes](https://ali-alkhatib.com/research#utopia)”
 
 > This paper draws from anthropological work on bureaucracies, states, and power, translating these ideas into a theory describing the structural tendency for powerful algorithmic systems to cause tremendous harm. I show how administrative models and projections of the world create marginalization, just as algorithmic models cause representational and allocative harm.
+
+- Tracy Durnell, “[Generative AI and the Business Borg aesthetic](https://tracydurnell.com/2025/06/02/generative-ai-and-the-business-borg-aesthetic/)”
+
+> Generative AI — both imagery and text — is inextricable from the corporate vision for its use: a world in which [workers are powerless and worthless](https://www.axios.com/2025/05/28/ai-jobs-white-collar-unemployment-anthropic), replaced by “free” generated material. Corporate GenAI cannot be separated from the purpose for its use or the billionaires and billionaire-wannabes who shill for it.
 
 ## Economics of AI
 

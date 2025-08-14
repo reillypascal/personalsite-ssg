@@ -5,7 +5,7 @@ fedi_url:
 og_image: 
 og_image_width: 
 og_image_height: 
-date: 2025-05-14T23:44:00-0400
+date: git Last Modified
 octothorpes: 
 tags:
   - wiki
@@ -19,7 +19,7 @@ The [RTL-SDR](https://en.wikipedia.org/wiki/Software-defined_radio#RTL-SDR) is a
 
 The [RTL-SDR.COM](https://www.rtl-sdr.com/) blog regularly posts interesting material on using this and similar software-defined radios, and they sell a popular [version](https://www.rtl-sdr.com/buy-rtl-sdr-dvb-t-dongles/) of the tuner dongle. 
 
-By default, the dongle can tune between about 28.8 MHz and 1.7 GHz — roughly the VHF and UHF ranges. However, it is popular to make a “[direct sampling](https://www.rtl-sdr.com/rtl-sdr-direct-sampling-mode/)” modification (or include it with many dongles, including the RTL-SDR blog units) that allows tuning between about 500 kHz and 28.8 MHz. The [instructions](https://www.rtl-sdr.com/rtl-sdr-blog-v-3-dongles-user-guide/) for the blog v3 dongle (the one I use) describe how to enable this in most programs (e.g., the cross-platform [SDR++](https://www.sdrpp.org/) or the Windows-only [SDR#](https://airspy.com/download/)). Enable the feature via a switch and select the “Q” branch. Note that I vs. Q branch depends on the hardware — the description [here](https://www.rtl-sdr.com/rtl-sdr-direct-sampling-mode/) says that 
+By default, the dongle can tune between about 28.8 MHz and 1.7 GHz — roughly the VHF and UHF ranges. However, it is popular to make a “[direct sampling](https://www.rtl-sdr.com/rtl-sdr-direct-sampling-mode/)” modification (or include it with many dongles, including the RTL-SDR blog units) that allows tuning between about 500 kHz and 28.8 MHz. The [instructions](https://www.rtl-sdr.com/rtl-sdr-blog-v-3-dongles-user-guide/) for the blog v3 dongle (the one I use) describe how to enable this in most programs (e.g., the cross-platform [SDR++](https://www.sdrpp.org/) or the Windows-only [SDR#](https://airspy.com/download/)). Enable the feature via a switch and select the “Q” branch. Note that I vs. Q branch depends on the hardware — [the description here](https://www.rtl-sdr.com/rtl-sdr-direct-sampling-mode/) says that 
 
 > The I branch corresponds to pin one/pin two, and the Q branch corresponds to pin four/pin five
 
@@ -38,25 +38,25 @@ implying that the blog dongles use pin four/pin five.
 		- This includes the receiver as well as a [dipole antenna](https://www.rtl-sdr.com/using-our-new-dipole-antenna-kit/) and mount. The antenna link above includes instructions on the length of antenna to use for different frequencies.
 
 ## Raspberry Pi
-- [These instructions](https://gist.github.com/floehopper/99a0c8931f9d779b0998) worked for me — `dump1090` (see [[ads-b|ADS-B]]) compiles and runs.
+- [These instructions](https://gist.github.com/floehopper/99a0c8931f9d779b0998) worked for me — `dump1090` (see [ADS-B](/wiki/notebook/radio/ads-b/)]) compiles and runs.
 	- `git-core` [appears](https://forums.raspberrypi.com/viewtopic.php?t=88655) to be obsolete — just use `git`
 	- Previously had issues with requirement for `libusb-1.0-0-dev` on macOS (dev version hardcoded in), but seemed to work fine on RPi as of May 14, 2025.
 	- Lines after `rtl_test` not necessary unless using AIS decoder (see [AIS](https://en.wikipedia.org/wiki/Automatic_identification_system), or see [posts](https://www.rtl-sdr.com/tag/ais/) from the blog on AIS).
 
 ## Software
 - 433 MHz [ISM band](https://en.wikipedia.org/wiki/ISM_radio_band) devices, such as home weather stations, tire pressure gauges, etc.
-	- rtl_433 
+	- rtl\_433 
 		- Install on macOS: `brew install rtl_433`
 		- Source: <https://github.com/merbanan/rtl_433>
 		- Google Groups discussion: <https://groups.google.com/g/rtl_433/>
 - ADS-B
-	- dump1090 — see [[ads-b#Software|ADS-B]]
+	- dump1090 — see [ADS-B](/wiki/notebook/radio/ads-b/#software)]
 - RTL-SDR: 
 	- rtl-sdr/librtlsdr 
 		- Install on macOS: `brew install librtlsdr`
-		- Install on Raspberry Pi: [[#Raspberry Pi]]
+		- Install on Raspberry Pi: [Raspberry Pi](#raspberry-pi)
 		- Source: <https://github.com/osmocom/rtl-sdr>
 	- SDR++
 		- Install: download nightly release at <https://github.com/AlexandreRouma/SDRPlusPlus/releases>
-			- See [[macos-terminal-commands#Gatekeeper|Gatekeeper]] notes for Gatekeeper issues
+			- See [Gatekeeper](/wiki/notebook/coding/terminal/macos-terminal-commands/#gatekeeper) notes for Gatekeeper issues
 		- Source: <https://github.com/AlexandreRouma/SDRPlusPlus>

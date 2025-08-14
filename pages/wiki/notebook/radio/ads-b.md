@@ -5,7 +5,7 @@ fedi_url:
 og_image: 
 og_image_width: 
 og_image_height: 
-date: 2025-05-14T19:56:00-0400
+date: git Last Modified
 octothorpes: 
 tags:
   - wiki
@@ -20,14 +20,14 @@ ADS-B, or [Automatic Dependent Surveillance–Broadcast](https://en.wikipedia.or
 
 I also see this type of signal referred as Mode S, such as in the [dump1090](https://github.com/antirez/dump1090) documentation.
 
-I use an [[rtl-sdr|RTL-SDR]] dongle to receive these signals.
+I use an [RTL-SDR](/wiki/notebook/radio/rtl-sdr) dongle to receive these signals.
 
 ## Sites
 - ADS-B Exchange — live map: <https://globe.adsbexchange.com/>
 
 ## Software
 - dump1090
-	- Install: `git clone https://github.com/antirez/dump1090.git`, run `make` (successful on macOS 14.7.5 and on Raspberry Pi after following [[rtl-sdr#Raspberry Pi|these instructions]]).
+	- Install: `git clone https://github.com/antirez/dump1090.git`, run `make` (successful on macOS 14.7.5 and on Raspberry Pi after following [these instructions](/wiki/notebook/radio/rtl-sdr#raspberry-pi)).
 	- Run:
 		- `./dump1090` — basic run command
 		- `./dump1090 --raw` — hexadecimal output

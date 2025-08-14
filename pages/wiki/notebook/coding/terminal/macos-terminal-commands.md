@@ -5,7 +5,7 @@ fedi_url:
 og_image: 
 og_image_width: 
 og_image_height: 
-date: 2025-05-14T02:48:00-0400
+date: git Last Modified
 octothorpes:
   - 
 tags:
@@ -42,9 +42,9 @@ xattr -r -d com.apple.quarantine .
 ```
 
 ## Get Rid of Update Notifications
-- https://macperformanceguide.com/blog/2024/20240215_1700-macOSSonoma-blockForcedUpdates.html
-	- Referenced: https://eclecticlight.co/2024/02/12/can-you-avoid-a-forced-upgrade-to-sonoma/
-		- https://lapcatsoftware.com/articles/2024/2/2.html
+- <https://macperformanceguide.com/blog/2024/20240215_1700-macOSSonoma-blockForcedUpdates.html>
+	- Referenced: <https://eclecticlight.co/2024/02/12/can-you-avoid-a-forced-upgrade-to-sonoma/>
+		- <https://lapcatsoftware.com/articles/2024/2/2.html>
 - I also ended up setting `UserNotificationDate` to the same value — can read/confirm with `defaults read com.apple.SoftwareUpdate` 
 ```sh
 defaults read com.apple.SoftwareUpdate MajorOSUserNotificationDate

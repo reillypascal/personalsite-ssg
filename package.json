@@ -19,7 +19,6 @@
     "@11ty/eleventy-fetch": "^5.1.0",
     "@11ty/eleventy-plugin-rss": "^2.0.4",
     "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.2",
-    "@photogabble/eleventy-plugin-interlinker": "^1.1.0",
     "@supabase/supabase-js": "^2.53.0",
     "@uncenter/eleventy-plugin-toc": "^1.0.3",
     "cheerio": "^1.1.2",
@@ -28,7 +27,6 @@
     "markdown-it-anchor": "^9.2.0",
     "markdown-it-attrs": "^4.3.1",
     "markdown-it-footnote": "^4.0.0",
-    "markdown-it-github-alerts": "^1.0.0",
     "sanitize-html": "^2.17.0"
   }
 }
