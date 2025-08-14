@@ -4,7 +4,7 @@ description: Reading list of sources critical of AI or reporting on harm caused 
 fedi_url:
   - https://hachyderm.io/@reillypascal/114597601909960276
   - https://bsky.app/profile/reillypascal.bsky.social/post/3lqflxhpllc2j
-date: Last Modified
+date: git Last Modified
 octothorpes:
   - ai
 tags:
