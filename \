@@ -27,16 +27,7 @@ tags:
 
 ### Blogs
 
-- [absorptions](https://www.windytan.com/)
-    - windytan (Oona Räisänen) does writeups of projects using computers, sound, and signals.
-- [Melatonin](https://melatonin.dev/blog/)
-    - Sudara writes about C++/JUCE development, including linking to open-source code.
-- [Nathan Ho](https://nathan.ho.name/)
-    - Nathan Ho composes experimental electronic music, and discusses synthesis in SuperCollider.
-- [Iain Explains](https://www.iaincollings.com/)
-    - Iain Collings is an IEEE Fellow and makes videos about math for signals and digital communications.
-- [WolfSound](https://thewolfsound.com/posts/)
-    - Jan Wilczek writes abound DSP, synthesis, and plugin development in various languages and frameworks.
+- Prof Iain Collings (IEEE Fellow), [Iain Explains](https://www.iaincollings.com/)
 
 ### Code
 
@@ -50,9 +41,9 @@ tags:
     - [*Introduction to Digital Filters*](https://ccrma.stanford.edu/~jos/filters/)
     - [*Physical Audio Signal Processing*](https://ccrma.stanford.edu/~jos/pasp/) 
     - [*Spectral Audio Signal Processing*](https://ccrma.stanford.edu/~jos/sasp/)
-- [List by WolfSound blog](https://thewolfsound.com/resources/)
 - Steven W. Smith, [*The Scientist and Engineer's Guide to Digital Signal Processing*](https://www.dspguide.com/)
     - An accessible introduction to those without a heavy math background, and available for free online. Book written 1997–1998, and uses BASIC and FORTRAN for examples.
+
 
 ## Music
 
