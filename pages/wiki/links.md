@@ -21,7 +21,7 @@ tags:
 
 > Ten years ago every web site had a section of external links because people felt it was their personal responsibility to configure the environment and build the infrastructure. The many-to-many principle showed itself in linking strategies as well. A site was not complete without links to other sites.
 
-— [*Olia Lialina*](https://art.teleportacia.org/observation/vernacular/links.html)
+— *Olia Lialina*, [A Vernacular Web](https://art.teleportacia.org/observation/vernacular/links.html) (2005)
 
 ## DSP
 
@@ -81,6 +81,13 @@ tags:
 
 - [ribo.zone's links](https://ribo.zone/links)
 
+### Hypertext
+
+- Olia Lialina
+    - [*A Vernacular Web*](https://art.teleportacia.org/observation/vernacular/) (2005)
+    - [*Vernacular Web 2*](https://contemporary-home-computing.org/vernacular-web-2/) (2007)
+    - [*Prof. Dr. Style: Top 10 Web Design Styles of 1993 (Vernacular Web 3)*](https://contemporary-home-computing.org/prof-dr-style/) (2010)
+
 ### Net Art
 
 - [ICTI.ME](https://icti.me/) (FLASH WARNING)
@@ -95,3 +102,4 @@ tags:
   - [List of versions and remixes](http://myboyfriendcamebackfromth.ewar.ru/)
 - [Superbad](https://superbad.com/)
   <!-- - <https://superbad.com/1/follow/index.html> -->
+
