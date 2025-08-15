@@ -1,6 +1,6 @@
 ---
 title: Links
-description: Links to things I find interesting, grouped by categories.
+description: "Links to reading, tools, and other resources for DSP, computer music, and the Web.\n\n As Olia Lialina notes, at one point “every web site had a section of external links because people felt it was their personal responsibility to… build the infrastructure” of the Web. As search engines crumble, I find curation by humans ever more valuable."
 fedi_url:
 og_image: 
 og_image_width: 
