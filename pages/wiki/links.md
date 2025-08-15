@@ -35,8 +35,15 @@ tags:
     - Nathan Ho composes experimental electronic music, and discusses synthesis in SuperCollider.
 - [Iain Explains](https://www.iaincollings.com/)
     - Iain Collings is an IEEE Fellow and makes videos about math for signals and digital communications.
+- Valhalla DSP
+    - Audio plugin company run by Sean Costello, focusing on reverbs and delays. Blog includes article series “Getting Started With Reverb Design”:
+        - [Getting Started With Reverb Design, Part 1: Dev Environments](https://valhalladsp.com/2021/09/20/getting-started-with-reverb-design-part-1-dev-environments/)
+        - [Getting Started With Reverb Design, Part 2: The Best Papers](https://valhalladsp.com/2021/09/22/getting-started-with-reverb-design-part-2-the-foundations/)
+        - [Getting Started With Reverb Design, Part 3: Online Resources](https://valhalladsp.com/2021/09/23/getting-started-with-reverb-design-part-3-online-resources/)
+        - [Getting Started With Reverb Design, Part 4: The Best Books](https://valhalladsp.com/2021/09/28/getting-started-with-reverb-design-part-4-books/)
 - [WolfSound](https://thewolfsound.com/posts/)
     - Jan Wilczek writes abound DSP, synthesis, and plugin development in various languages and frameworks.
+
 
 ### Code
 
@@ -45,6 +52,8 @@ tags:
 
 ### Textbooks and Reading
 
+- Robert Bristow-Johnson, [*Cookbook formulae for audio EQ biquad filter coefficients*](https://webaudio.github.io/Audio-EQ-Cookbook/Audio-EQ-Cookbook.txt)
+    - Text document: light on explanation, but with useful practical implementation details.
 - Julius O. Smith (all freely available online)
     - [*Mathematics of the Discrete Fourier Transform (DFT)*](https://ccrma.stanford.edu/~jos/mdft/)
     - [*Introduction to Digital Filters*](https://ccrma.stanford.edu/~jos/filters/)
