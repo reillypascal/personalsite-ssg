@@ -10,38 +10,37 @@ pagination:
 <link rel="stylesheet" type="text/css" href="/styles/blog.css" />
 <link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
 
-<main role="main" id="content">
-        <h1 class="sectionHeader">Interactions</h1>
-        
-        <section class="postFeedDescription">
-            <p>IndieWeb interactions — replies, likes, RSVPs, etc. Formatted using <a href="https://indieweb.org/microformats">Microformats</a>, and sent with <a href="https://indieweb.org/Webmention">Webmentions</a> when available. </p>
-            
-            {% include "partials/post-list-links.liquid" %}
-        </section>
+<h1 class="sectionHeader">Interactions</h1>
 
-        {% for interaction in interactions %}
-        <article class="h-entry">
-            <h2 class="p-name post-link"><a class="u-url" href="{{interaction.url}}">{{ interaction.data.title }}</a></h2>
+<section class="postFeedDescription">
+    <p>IndieWeb interactions — replies, likes, RSVPs, etc. Formatted using <a href="https://indieweb.org/microformats">Microformats</a>, and sent with <a href="https://indieweb.org/Webmention">Webmentions</a> when available. </p>
+    
+    {% include "partials/post-list-links.liquid" %}
+</section>
 
-            <a rel="author" class="p-author h-card" href="https://reillyspitzfaden.com"></a>
+{% for interaction in interactions %}
+<article class="h-entry">
+    <h2 class="p-name post-link"><a class="u-url" href="{{interaction.url}}">{{ interaction.data.title }}</a></h2>
 
-            <span class="meta-icon">
-            <img src="/media/icon-calendar-ltr.svg" alt="calendar icon" />
-            </span>
-            <span class="meta-text">
-            <time class="dt-published" datetime="{{ interaction.date }}">{{ interaction.date | date: "%A, %B %d, %Y" }}</time>
-            </span>
-        </article>
-        {% endfor %}
+    <a rel="author" class="p-author h-card" href="https://reillyspitzfaden.com"></a>
 
-        <a class="RSSValidationLink" href="https://validator.w3.org/feed/check.cgi?url=https%3A//reillyspitzfaden.com/interactions/feed.xml"><img src="/media/valid-rss-rogers.png" alt="[Valid RSS]" title="Validate my RSS feed" class="RSSValidationImg"/></a>
-        
-        <div class="page-nav-wrapper">
-            {% if pagination.href.previous %}
-                <a href="{{pagination.href.previous}}">Previous Page</a>
-            {% endif %}
-            {% if pagination.href.next %}
-                <a href="{{pagination.href.next}}">Next Page</a>
-            {% endif %}
-        </div>
-</main>
+    <span class="meta-icon">
+    <img src="/media/icon-calendar-ltr.svg" alt="calendar icon" />
+    </span>
+    <span class="meta-text">
+    <time class="dt-published" datetime="{{ interaction.date }}">{{ interaction.date | date: "%A, %B %d, %Y" }}</time>
+    </span>
+</article>
+{% endfor %}
+
+<a class="RSSValidationLink" href="https://validator.w3.org/feed/check.cgi?url=https%3A//reillyspitzfaden.com/interactions/feed.xml"><img src="/media/valid-rss-rogers.png" alt="[Valid RSS]" title="Validate my RSS feed" class="RSSValidationImg"/></a>
+
+<div class="page-nav-wrapper">
+    {% if pagination.href.previous %}
+        <a href="{{pagination.href.previous}}">Previous Page</a>
+    {% endif %}
+    {% if pagination.href.next %}
+        <a href="{{pagination.href.next}}">Next Page</a>
+    {% endif %}
+</div>
+

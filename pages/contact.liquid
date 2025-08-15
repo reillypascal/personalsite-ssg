@@ -6,29 +6,28 @@ description: Contact form for Reilly Spitzafden
 <link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
 <link rel="stylesheet" type="text/css" href="/styles/forms.css" />
 
-<main role="main" id="content">
-    <h1 class="sectionHeader">Contact Information</h1>
-    <p>Email: <a href="mailto:reillypascal@gmail.com">reillypascal@gmail.com</a></p>
-    <p>Signal: <a href="https://signal.me/#eu/7uMwpp_PyZnVmpmfO-Jm7Xgx_IZHTcATumXUo1WZU-_SwJfIWTNGap0m4PJEAiVy">@reillypascal.42</a></p>
-    <p>Matrix: <a href="https://matrix.to/#/@reillypascal:matrix.org">@reillypascal:matrix.org</a></p>
-    <p>Webmentions: <a href="https://webmention.io/reillyspitzfaden.com/xmlrpc">webmention.io</a></p>
-    
-    <form 
-        name="contact" 
-        action="./pages/success.html" 
-        method="POST" 
-        data-netlify="true"
-    >
-    <h1 class="sectionHeader">Contact Form</h1>
-        <fieldset>
-            <legend>Contact</legend>
-            <ul>
-                <li><input type="text" name="name" id="form-name" placeholder="Name (required)" class="textinput" required="true" aria-required="true"></li>
-                <li><input type="email" name="email" id="form-email" placeholder="Email (required)" class="textinput" required="true" aria-required="true"></li>
-                <li><input type="text" name="subject" id="form-subject" placeholder="Subject (optional)" class="textinput"></li>
-                <li><textarea name="message" id="form-story" placeholder="Message (required)" required="true" aria-required="true"></textarea></li>
-                <li><input type="submit" value="Send" id="send-email"></li>
-            </ul>
-        </fieldset>
-    </form>
-</main>
+<h1 class="sectionHeader">Contact Information</h1>
+<p>Email: <a href="mailto:reillypascal@gmail.com">reillypascal@gmail.com</a></p>
+<p>Signal: <a href="https://signal.me/#eu/7uMwpp_PyZnVmpmfO-Jm7Xgx_IZHTcATumXUo1WZU-_SwJfIWTNGap0m4PJEAiVy">@reillypascal.42</a></p>
+<p>Matrix: <a href="https://matrix.to/#/@reillypascal:matrix.org">@reillypascal:matrix.org</a></p>
+<p>Webmentions: <a href="https://webmention.io/reillyspitzfaden.com/xmlrpc">webmention.io</a></p>
+
+<form 
+    name="contact" 
+    action="./pages/success.html" 
+    method="POST" 
+    data-netlify="true"
+>
+<h1 class="sectionHeader">Contact Form</h1>
+    <fieldset>
+        <legend>Contact</legend>
+        <ul>
+            <li><input type="text" name="name" id="form-name" placeholder="Name (required)" class="textinput" required="true" aria-required="true"></li>
+            <li><input type="email" name="email" id="form-email" placeholder="Email (required)" class="textinput" required="true" aria-required="true"></li>
+            <li><input type="text" name="subject" id="form-subject" placeholder="Subject (optional)" class="textinput"></li>
+            <li><textarea name="message" id="form-story" placeholder="Message (required)" required="true" aria-required="true"></textarea></li>
+            <li><input type="submit" value="Send" id="send-email"></li>
+        </ul>
+    </fieldset>
+</form>
+
