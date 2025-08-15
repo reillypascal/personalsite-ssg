@@ -79,7 +79,7 @@ tags:
 
 ### Curation
 
-- [My blogroll](/blogroll) — a list of many interesting blogs I follow, including IndieWeb people, fellow musicians, and artists
+- [My blogroll](/blogroll) — a list of many interesting blogs I follow, including IndieWeb people, fellow musicians and music academics, and experimental music publications
 - [ribo.zone's links](https://ribo.zone/links)
 
 ### Hypertext
