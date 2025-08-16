@@ -1,7 +1,9 @@
 ---
 title: "We're Getting Married!"
 description: Eli and I are engaged, and we're getting married later this year!
-fedi_url: 
+fedi_url:
+  - https://hachyderm.io/@reillypascal/115041018119377223
+  - https://bsky.app/profile/reillypascal.bsky.social/post/3lwkj5n7a322t
 og_image: /media/blog/2025/08/IMG_3804_og.jpg
 og_image_width: 1200
 og_image_height: 630
