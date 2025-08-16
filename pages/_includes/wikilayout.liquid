@@ -11,34 +11,30 @@ title: Reilly Spitzfaden, Composer
 <!-- base needs to be after colors - uses colors from it -->
 <link rel="stylesheet" type="text/css" href="/styles/callouts/github-base.css" />
 
-<!-- page content minus header/footer -->
-<main role="main" id="content">
-    <!-- post contents -->
-    <article class="h-entry">
-        <h1 class="p-name sectionHeader">{{ title }}</h1>
+<!-- post contents -->
+<article class="h-entry">
+    <h1 class="p-name sectionHeader">{{ title }}</h1>
 
-        {% include "partials/author-and-syndication.liquid" %}
-                
-        {%- include "partials/post-meta.liquid" -%}
+    {% include "partials/author-and-syndication.liquid" %}
+            
+    {%- include "partials/post-meta.liquid" -%}
 
-        {{ content | toc }}
-        
-        <div class="e-content">
-            {{ content }}
-            {% if indienews %}
-                {% include "partials/indienews.liquid" %}
-            {% endif %}
-        </div>
-        
-        {% include "partials/post-interactions.liquid" %}
-
-    </article>
+    {{ content | toc }}
     
-    {% include "partials/webmention-form.liquid" %}
+    <div class="e-content">
+        {{ content }}
+        {% if indienews %}
+            {% include "partials/indienews.liquid" %}
+        {% endif %}
+    </div>
     
-    {% include "partials/webmention-display.liquid" %}
+    {% include "partials/post-interactions.liquid" %}
 
-</main>
+</article>
+
+{% include "partials/webmention-form.liquid" %}
+
+{% include "partials/webmention-display.liquid" %}
 
 <script>
     let blogPostURL = "https://reillyspitzfaden.com{{ page.url }}";

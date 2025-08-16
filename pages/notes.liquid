@@ -12,42 +12,41 @@ pagination:
 <link rel="stylesheet" type="text/css" href="/styles/blogposts.css" />
 <link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
 
-<main role="main" id="content">
-    <h1 class="sectionHeader">Notes</h1>
+<h1 class="sectionHeader">Notes</h1>
 
-    <section class="postFeedDescription">
-        <p>Short posts, photoblogging, and interesting things from around the web—it's like Twitter meets Instagram, but I own all my posts!</p>
+<section class="postFeedDescription">
+    <p>Short posts, photoblogging, and interesting things from around the web—it's like Twitter meets Instagram, but I own all my posts!</p>
 
-        {% include "partials/post-list-links.liquid" %}
-    </section>
+    {% include "partials/post-list-links.liquid" %}
+</section>
 
-    {% for note in notes %}
-    <article class="h-entry">
-        <h2 class="p-name"><a class="u-url" href="{{note.url}}">{{ note.data.title }}</a></h2>
+{% for note in notes %}
+<article class="h-entry">
+    <h2 class="p-name"><a class="u-url" href="{{note.url}}">{{ note.data.title }}</a></h2>
 
-        <a rel="author" class="p-author h-card" href="https://reillyspitzfaden.com"></a>
+    <a rel="author" class="p-author h-card" href="https://reillyspitzfaden.com"></a>
 
-        <div class="e-content">
-            {{ note.content }}
-        </div>
-
-        <span class="meta-icon">
-            <img src="/media/icon-calendar-ltr.svg" alt="calendar icon" />
-            </span>
-            <span class="meta-text">
-            <time class="dt-published" datetime="{{ note.date }}">{{ note.date | date: "%A, %B %d, %Y" }}</time>
-        </span>
-    </article>
-    {% endfor %}
-
-    <a class="RSSValidationLink" href="https://validator.w3.org/feed/check.cgi?url=https%3A//reillyspitzfaden.com/notes/feed.xml"><img src="/media/valid-rss-rogers.png" alt="[Valid RSS]" title="Validate my RSS feed" class="RSSValidationImg"/></a>
-    
-    <div class="page-nav-wrapper">
-        {% if pagination.href.previous %}
-            <a href="{{pagination.href.previous}}">Previous Page</a>
-        {% endif %}
-        {% if pagination.href.next %}
-            <a href="{{pagination.href.next}}">Next Page</a>
-        {% endif %}
+    <div class="e-content">
+        {{ note.content }}
     </div>
-</main>
+
+    <span class="meta-icon">
+        <img src="/media/icon-calendar-ltr.svg" alt="calendar icon" />
+        </span>
+        <span class="meta-text">
+        <time class="dt-published" datetime="{{ note.date }}">{{ note.date | date: "%A, %B %d, %Y" }}</time>
+    </span>
+</article>
+{% endfor %}
+
+<a class="RSSValidationLink" href="https://validator.w3.org/feed/check.cgi?url=https%3A//reillyspitzfaden.com/notes/feed.xml"><img src="/media/valid-rss-rogers.png" alt="[Valid RSS]" title="Validate my RSS feed" class="RSSValidationImg"/></a>
+
+<div class="page-nav-wrapper">
+    {% if pagination.href.previous %}
+        <a href="{{pagination.href.previous}}">Previous Page</a>
+    {% endif %}
+    {% if pagination.href.next %}
+        <a href="{{pagination.href.next}}">Next Page</a>
+    {% endif %}
+</div>
+

@@ -16,41 +16,39 @@ description: An ever-growing list of interesting blogs I follow. I love the idea
     }
 </style>
 
-<main role="main" id="content">
-    <h1 class="sectionHeader">Blogroll</h1>
-    <p>An ever-growing list of interesting blogs I follow. I love the idea of prioritizing curation and human recommendation over the search engines and recommendation algorithms that are failing us, so here are some of my favorites.</p>
-    {% comment %} <p>Blockquote descriptions are taken from the site (sometimes abbreviated, and/or with slightly different formatting). Descriptions without blockquotes are written by me (in cases where the site does not have a description or I want to add additional info).</p> {% endcomment %}
-    <p>For info on how to use RSS (the <a href="https://meljoann.com/pages/blogroll/#rss-the-choice-of-champions">choice of champions</a>) to follow these blogs, see <a href="https://reillyspitzfaden.com/feeds/#what-is-rss">here</a>.</p>
+<h1 class="sectionHeader">Blogroll</h1>
+<p>An ever-growing list of interesting blogs I follow. I love the idea of prioritizing curation and human recommendation over the search engines and recommendation algorithms that are failing us, so here are some of my favorites.</p>
+{% comment %} <p>Blockquote descriptions are taken from the site (sometimes abbreviated, and/or with slightly different formatting). Descriptions without blockquotes are written by me (in cases where the site does not have a description or I want to add additional info).</p> {% endcomment %}
+<p>For info on how to use RSS (the <a href="https://meljoann.com/pages/blogroll/#rss-the-choice-of-champions">choice of champions</a>) to follow these blogs, see <a href="https://reillyspitzfaden.com/feeds/#what-is-rss">here</a>.</p>
 
-    <p>Download the blogroll as an <a href="https://en.wikipedia.org/wiki/OPML">OPML</a> file for importing into an RSS reader: <a href="/blogroll.opml">blogroll.opml</a></p>
-    
-    <p>I also have <a href="/wiki/links/">a links page on my personal wiki</a>, with links to various interesting resources on digital signal processing (DSP), computer music, and the Web, among other cool things!</p>
+<p>Download the blogroll as an <a href="https://en.wikipedia.org/wiki/OPML">OPML</a> file for importing into an RSS reader: <a href="/blogroll.opml">blogroll.opml</a></p>
 
-    <section>
-        <h1 class="sectionHeader">Categories</h1>
-        <ul id="categories">
-            {% for category in blogroll %}
-            <li><a href="#{{ category.id }}">{{ category.name }}</a></li>
-            {% endfor %}
-        </ul>
-    </section>
-    
-    {% for category in blogroll %}
-    <article id="{{ category.id }}">
-        <h1 class="sectionHeader">{{ category.name }}</h1>
-        {% for blog in category.blogs %}
-            <h2><a href="{{ blog.htmlUrl }}">{{ blog.title }}</a> (<a class="rss-link" href="{{ blog.xmlUrl }}">RSS Link</a>)</h2>
-            {% if blog.description %}
-                <blockquote>
-                    <p>{{ blog.description }}</p>
-                </blockquote>
-            {% endif %}
-            {% if blog.myDescription %}
-                <p>{{ blog.myDescription }}</p>
-            {% endif %}
+<p>I also have <a href="/wiki/links/">a links page on my personal wiki</a>, with links to various interesting resources on digital signal processing (DSP), computer music, and the Web, among other cool things!</p>
+
+<section>
+    <h1 class="sectionHeader">Categories</h1>
+    <ul id="categories">
+        {% for category in blogroll %}
+        <li><a href="#{{ category.id }}">{{ category.name }}</a></li>
         {% endfor %}
-    </article>
-    <p><a href="#top">Top ⭡</a></p>
-    {% endfor %}
+    </ul>
+</section>
 
-</main>
+{% for category in blogroll %}
+<article id="{{ category.id }}">
+    <h1 class="sectionHeader">{{ category.name }}</h1>
+    {% for blog in category.blogs %}
+        <h2><a href="{{ blog.htmlUrl }}">{{ blog.title }}</a> (<a class="rss-link" href="{{ blog.xmlUrl }}">RSS Link</a>)</h2>
+        {% if blog.description %}
+            <blockquote>
+                <p>{{ blog.description }}</p>
+            </blockquote>
+        {% endif %}
+        {% if blog.myDescription %}
+            <p>{{ blog.myDescription }}</p>
+        {% endif %}
+    {% endfor %}
+</article>
+<p><a href="#top">Top ⭡</a></p>
+{% endfor %}
+

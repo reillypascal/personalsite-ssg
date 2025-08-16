@@ -7,31 +7,29 @@ title: Reilly Spitzfaden, Composer
 <link rel="stylesheet" type="text/css" href="/styles/forms.css" />
 <link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
 
-<main role="main" id="content">
-    <!-- post contents -->
-    <article class="h-entry">
+<!-- post contents -->
+<article class="h-entry">
 
-        {% include "partials/author-and-syndication.liquid" %}
-        
-        {% include "partials/post-meta.liquid" %}
+    {% include "partials/author-and-syndication.liquid" %}
+    
+    {% include "partials/post-meta.liquid" %}
 
-        <div class="e-content">
-            {% include "partials/interactions-display.liquid" %}
-            {{ content }}
-        </div>
+    <div class="e-content">
+        {% include "partials/interactions-display.liquid" %}
+        {{ content }}
+    </div>
 
-        {% include "partials/post-interactions.liquid" %}
+    {% include "partials/post-interactions.liquid" %}
 
-    </article>
-    
-    {% include "partials/webmention-form.liquid" %}
-    
-    {% include "partials/comment-form.liquid" %}
-    
-    {% include "partials/webmention-display.liquid" %}
-    
-    {% include "partials/comment-display.liquid" %}
-</main>
+</article>
+
+{% include "partials/webmention-form.liquid" %}
+
+{% include "partials/comment-form.liquid" %}
+
+{% include "partials/webmention-display.liquid" %}
+
+{% include "partials/comment-display.liquid" %}
 
 <script>
     const blogPostURL = "https://reillyspitzfaden.com{{ page.url }}";

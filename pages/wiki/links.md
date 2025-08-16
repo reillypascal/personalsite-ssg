@@ -84,10 +84,16 @@ tags:
 
 ### Hypertext
 
+- Mike Caulfield, [*The Garden and the Stream: A Technopastoral*](https://hapgood.us/2015/10/17/the-garden-and-the-stream-a-technopastoral/)
+
+> The Garden is an old metaphor associated with hypertext. Those familiar with the history will recognize this. The Garden of Forking Paths from the mid-20th century. The concept of the Wiki Gardener from the 1990s. Mark Bernstein’s 1998 essay Hypertext Gardens.
+
+> The Garden is the web as topology. The web as space. It’s the integrative web, the iterative web, the web as an arrangement and rearrangement of things to one another.
+
 - Olia Lialina
     - [*A Vernacular Web*](https://art.teleportacia.org/observation/vernacular/) (2005)
     - [*Vernacular Web 2*](https://contemporary-home-computing.org/vernacular-web-2/) (2007)
-    - [*Prof. Dr. Style: Top 10 Web Design Styles of 1993 (Vernacular Web 3)*](https://contemporary-home-computing.org/prof-dr-style/) (2010)
+    - [*Prof. Dr. Style: Top 10 Web Design Styles of 1993 (Vernacular Web 3)*](https://contemporary-homenew_ret_no_self-computing.org/prof-dr-style/) (2010)
 
 ### Net Art
 

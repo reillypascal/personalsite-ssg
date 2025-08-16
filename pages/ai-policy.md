@@ -5,8 +5,6 @@ description: My policy on the use of AI on this site, and links to a library of 
 
 <link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
 
-<main id="content" role="main">
-
 <h1 class="sectionHeader">AI Policy</h1>
 
 I do not use large language models (LLMs) or any other form of “generative AI” in any capacity in any of the writing, music, code, or images on this website.
@@ -21,4 +19,3 @@ While [the reasons I oppose “generative AI” are numerous](/wiki/reading/ai-c
 
 My refusal is not out of a rejection of new technology, but because of the anti-worker nature of a specific set of technologies, and the ideologies that are inextricably connected to those technologies. -->
 
-</main>
