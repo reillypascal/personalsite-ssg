@@ -16,7 +16,7 @@
                             Someone
                         {%- endif %}
 
-                        <a href="{{ mention.url }}">
+                        <a href="{{ mention["wm-source"] }}">
                             {%- if mention["wm-property"] == "like-of" -%}
                                 liked
                             {%- elsif mention["wm-property"] == "bookmark-of" -%}
