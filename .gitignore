@@ -1,4 +1,5 @@
 .DS_Store
+.webmentions.py
 webmentions.json
 webmentions-sent.json
 _site/
