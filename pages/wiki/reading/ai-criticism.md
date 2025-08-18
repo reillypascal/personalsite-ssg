@@ -16,6 +16,16 @@ tags:
 
 This page is a collection of reporting, research, and essays critical of large language models (LLMs) and other “generative AI.” Articles are organized based on topic. It is an ever-growing list.
 
+## AI in Education
+
+- [AGAINST AI](https://against-a-i.com/)
+
+> Materials here are intended as solidarity solace for educators who might find themselves inventing wheels alone while their administrators, trustees, and bosses unrelentingly hype AI and nakedly enthuse the negative consequences for educator labor.
+
+> AGAINST AI benefits from expert colleagues across the humanistic and qualitative disciplines, as well as in various media industries.
+
+> Please [contact us](mailto:againstai2025@gmail.com) to contribute.
+
 ## AI as a Labor Issue
 
 - Aaron Benanav, “[Is the AI Bubble About to Burst?](https://www.versobooks.com/blogs/news/is-the-ai-bubble-about-to-burst)”
