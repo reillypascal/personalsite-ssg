@@ -2,9 +2,8 @@
 title: "ルビとHTML"
 description: I took a few years of Japanese classes in undergrad, and today I'm returning to that and discussing some HTML markup for Japanese and other East Asian languages.
 fedi_url: 
-og_image: 
-og_image_width: 
-og_image_height: 
+  - https://hachyderm.io/@reillypascal/115057508341765435
+  - https://bsky.app/profile/reillypascal.bsky.social/post/3lwrtoi5sus2f
 date: 2025-08-19T17:14:00-0400
 location:
 tags:
