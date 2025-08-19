@@ -11,7 +11,6 @@ tags:
   - post
   - webdev
   - language
-draft: true
 ---
 
 <link rel="stylesheet" type="text/css" href="/styles/code/prism-perf-custom.css" />
