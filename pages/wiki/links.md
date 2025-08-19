@@ -75,6 +75,15 @@ tags:
 - Resources
   - [Bytebeat Discord](https://discord.gg/n5BXmsbevn)
 
+### Classical
+
+- [Samuel Coleridge-Taylor Project](https://www.mikerepper.com/coleridge-taylor-project.html) from conductor Michael Pepper
+
+> In celebration of Samuel Coleridge-Taylor's 150th Birthday Anniversary, the creative team has created modern performance editions (scores and parts) of 
+*Toussaint L'Ouverture, Ballade Op. 4*, and the Suite from “24 Negro Melodies,” each of which is offered for free to any ensemble wishing to study or perform this music.
+
+As described [here](https://www.npr.org/2025/08/14/nx-s1-5496512/samuel-coleridge-taylor-150-avril-black-british-classical), the motivation for this project is that the parts for *Toussaint* were “riddled with errors and essentially unusable in their delivered conditions,” and Coleridge-Taylor's legacy deserves good quality scores and parts.
+
 ## Web
 
 ### Curation
