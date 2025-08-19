@@ -7,6 +7,7 @@ og_image: /media/blog/2025/07/eli-bday/IMG_20250701_142237_732_og.webp
 og_image_width: 1200 
 og_image_height: 600 
 date: 2025-07-01T22:41:29-0400
+location: Pottersville, New York
 tags:
   - note
   - hiking

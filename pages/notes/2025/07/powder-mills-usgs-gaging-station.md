@@ -7,6 +7,7 @@ og_image: /media/notes/2025/usgs-powder-mill-graph-og.jpg
 og_image_width: 1200
 og_image_height: 630
 date: 2025-07-20T15:07:10-0400
+location: Pittsford, New York
 tags:
   - note
   - hiking
