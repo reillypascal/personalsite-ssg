@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
 import json, os, urllib.request  # , subprocess
-from dotenvx import load_dotenvx
+from dotenv import load_dotenv
 
-load_dotenvx()
+load_dotenv()
 
 wm_token = os.getenv("WEBMENTION_IO_TOKEN")
 

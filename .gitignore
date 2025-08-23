@@ -1,5 +1,4 @@
 .DS_Store
-.webmentions.py
 webmentions.json
 webmentions-sent.json
 _site/
@@ -10,6 +9,7 @@ Post\ Drafts/
 wip/
 .cache/
 .env
+.venv/
 # Local Netlify folder
 .netlify/
 .obsidian/
