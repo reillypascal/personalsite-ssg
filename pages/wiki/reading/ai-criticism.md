@@ -16,6 +16,8 @@ tags:
 
 This page is a collection of reporting, research, and essays critical of large language models (LLMs) and other “generative AI.” Articles are organized based on topic. It is an ever-growing list.
 
+<section>
+
 ## AI in Education
 
 - [AGAINST AI](https://against-a-i.com/)
@@ -25,6 +27,10 @@ This page is a collection of reporting, research, and essays critical of large l
 > AGAINST AI benefits from expert colleagues across the humanistic and qualitative disciplines, as well as in various media industries.
 
 > Please [contact us](mailto:againstai2025@gmail.com) to contribute.
+
+</section>
+
+<section>
 
 ## AI as a Labor Issue
 
@@ -56,6 +62,10 @@ In other words, as Merchant puts it
 
 > The message is this: There is an AI jobs apocalypse coming, everything is going to change, and if you hope to survive it, you’re going to have to learn to be a lot more productive, for me, your boss.
 
+</section>
+
+<section>
+
 ### “Human-in-the-loop” as a “reverse centaur”
 
 - Cory Doctorow, “[Pluralistic: ‘Humans in the loop’ must detect the hardest-to-spot errors, at superhuman speed (23 Apr 2024)](https://pluralistic.net/2024/04/23/maximal-plausibility/)”
@@ -65,6 +75,10 @@ In other words, as Merchant puts it
 - Cory Doctorow, “[Pluralistic: Humans are not perfectly vigilant (01 Apr 2024)](https://pluralistic.net/2024/04/01/human-in-the-loop/)”
 
 > This turns AI-“assisted” coders into _reverse_ centaurs. The AI can churn out code at superhuman speed, and you, the human in the loop, must maintain perfect vigilance and attention as you review that code, spotting the cleverly disguised hooks for malicious code that the AI can't be prevented from inserting into its code.
+
+</section>
+
+<section>
 
 ## Weaknesses of AI as a Tool
 
@@ -83,6 +97,10 @@ In other words, as Merchant puts it
 > We conduct a randomized controlled trial (RCT) to understand how early-2025 AI tools affect the productivity of experienced open-source developers working on their own repositories. \[…\]
 
 > When developers are allowed to use AI tools, they take 19% longer to complete issues—a significant slowdown that goes against developer beliefs and expert forecasts. This gap between perception and reality is striking: developers expected AI to speed them up by 24%, and even after experiencing the slowdown, they still believed AI had sped them up by 20%.
+
+</section>
+
+<section>
 
 ## Harassment and Spam
 
@@ -106,6 +124,10 @@ In other words, as Merchant puts it
 
 > This kind of content is “discouraging any meaningful engagement” because it’s not grounded in reality, Caring_Cactus continues. “They’re trying to farm attention with low quality content, and it creates less opportunities for real connection by wasting people’s precious time when they want to socialize online.”
 
+</section>
+
+<section>
+
 ## AI as an Accountability Sink
 
 - Jonah Owen Lamb, “[San Francisco cops are using AI to write police reports](https://sfstandard.com/2025/06/10/sfpd-using-ai-police-reports/)”
@@ -122,6 +144,10 @@ In other words, as Merchant puts it
 
 > This kind of problem stems from a high level of complexity in the algorithmic structure, which prevents even the designers of the AI system from fully understanding how or why a specific input leads to a specific output. Without such an explanation, it would not only be difficult to dispute the validity of any recommendation provided by the system, but it may also preclude us from holding any involved actor morally responsible as they would not have access to the necessary information required for questioning the output.
 
+</section>
+
+<section>
+
 ## AI, Ideology, and Power
 
 - Mandy Brown, “[Toolmen](https://aworkinglibrary.com/writing/toolmen)”
@@ -135,6 +161,10 @@ In other words, as Merchant puts it
 - Tracy Durnell, “[Generative AI and the Business Borg aesthetic](https://tracydurnell.com/2025/06/02/generative-ai-and-the-business-borg-aesthetic/)”
 
 > Generative AI — both imagery and text — is inextricable from the corporate vision for its use: a world in which [workers are powerless and worthless](https://www.axios.com/2025/05/28/ai-jobs-white-collar-unemployment-anthropic), replaced by “free” generated material. Corporate GenAI cannot be separated from the purpose for its use or the billionaires and billionaire-wannabes who shill for it.
+
+</section>
+
+<section>
 
 ## Economics of AI
 
@@ -154,9 +184,9 @@ In other words, as Merchant puts it
 
 > To be abundantly clear, as it stands, OpenAI currently spends $2.35 to make $1.
 
-<!-- - Jason Velazquez, [*The Computational Web*](https://www.fromjason.xyz/p/notebook/the-computational-web/)
+</section>
 
-> Compute is expensive and increasingly difficult to scale. These hurdles make compute accessible only to the largest tech firms in the world. Shoehorning AI features into our apps isn't just tech bros following their tail. It's a strategy to set the expectation that all consumer technology requires resource-hungry AI. If all technology requires AI, and only a handful of companies are equipped to handle the computational power that Al requires, then computation becomes a moat too deep for competition to cross. -->
+<section>
 
 ## AI and Climate
 
@@ -177,7 +207,9 @@ In other words, as Merchant puts it
 
 One might argue that 6.7% of U.S. electricity usage is a relatively small portion of contributions to climate change, as well as being from all data center usage, not just AI. However, especially given all the other negatives of LLMs and related technologies, I still do not see them as worth that level of energy consumption. See also Molly White, “[AI isn't useless. But is it worth it?](https://www.citationneeded.news/ai-isnt-useless/).”
 
-<!-- - Marc Levy, “[Big Tech’s soaring energy demands are making coal-fired power plant sites attractive](https://apnews.com/article/coal-electricity-artificial-intelligence-trump-power-energy-a3779aee7970dabded42d8d7b3ef3783)” -->
+</section>
+
+<section>
 
 ## Rhetoric of AI Boosters
 
@@ -190,3 +222,5 @@ One might argue that 6.7% of U.S. electricity usage is a relatively small portio
 ## Discussion Covering Multiple Facets
 
 - Molly White, “[AI isn't useless. But is it worth it?](https://www.citationneeded.news/ai-isnt-useless/)”
+
+</section>

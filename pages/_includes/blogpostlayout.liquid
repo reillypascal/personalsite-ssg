@@ -2,6 +2,7 @@
 layout: mainlayout.liquid
 title: Reilly Spitzfaden, Composer
 ---
+
 <link rel="stylesheet" type="text/css" href="/styles/blog.css" />
 <link rel="stylesheet" type="text/css" href="/styles/blogposts.css" />
 <link rel="stylesheet" type="text/css" href="/styles/forms.css" />
@@ -11,8 +12,6 @@ title: Reilly Spitzfaden, Composer
 <article class="h-entry">
     <h1 class="p-name sectionHeader">{{ title }}</h1>
 
-    {% comment %} <a rel="author" class="p-author h-card" href="https://reillyspitzfaden.com"></a> {% endcomment %}
-    
     {% include "partials/author-and-syndication.liquid" %}
     
     {%- include "partials/post-meta.liquid" -%}
@@ -36,8 +35,6 @@ title: Reilly Spitzfaden, Composer
     {% include "partials/post-interactions.liquid" %}
 
 </article>
-
-{% comment %} {% include "partials/featured-recent-compact.liquid" %} {% endcomment %}
 
 {% include "partials/webmention-form.liquid" %}
 
