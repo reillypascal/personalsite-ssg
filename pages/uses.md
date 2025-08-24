@@ -1,0 +1,91 @@
+---
+title: /uses
+description: Software, stationery, and other tools I use — for the curious, and for those looking for recommendations.
+fedi_url:
+date: git Last Modified
+octothorpes:
+tags:
+---
+
+<link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
+
+<h1 class="sectionHeader">/uses</h1>
+
+This page is a list of software, stationery, and other tools I use — for the curious, and for those looking for recommendations.
+
+A “/uses” or “/using” [slash page](https://slashpages.net/) is [a popular way among IndieWeb people of sharing this information](https://indieweb.org/using).
+
+<section>
+
+## Software
+
+### Music Tools
+- Audacity
+- Dorico
+- Logic Pro
+- Max/MSP
+- SuperCollider
+
+### Developer
+- Neovim ([dotfiles](https://github.com/reillypascal/kickstart.nvim))
+- WezTerm
+- Xcode
+
+### Web
+- Firefox (web browser)
+- Mailspring (desktop email client)
+- Signal (encrypted messenger)
+- Thunderbird (Android email client)
+
+### Documents
+- Capy Reader (Android RSS reader)
+- NetNewsWire (macOS RSS reader, also available for iOS)
+- Obsidian (notebook; pairs nicely with Syncthing)
+- Zotero (reference manager)
+
+### Files
+- FreeFileSync (easily manage backups)
+- LocalSend (cross-platform file transfer)
+- OpenMTP (transfer Android files to macOS)
+- Syncthing (sync files over local network without needing cloud services)
+
+### Utilities
+- Aegis (2fa)
+- Bitwarden (password manager)
+- Droid-ify (F-Droid FOSS app store client)
+- ItsyCal (macOS taskbar calendar)
+- LinearMouse (remap mouse input without requiring official Logitech software)
+- uBlock Origin (adblocker)
+
+### Operating Systems
+- macOS
+- Arch Linux
+- Ubuntu Server (for [my home server](/wiki/notebook/tech-projects/tv-media-server/))
+- [GrapheneOS](https://grapheneos.org/) (mobile)
+    - I particularly like GrapheneOS, which is an alternative, privacy/security-focused version of Android. The [web-based installation option](https://grapheneos.org/install/web) is extremely easy, and it's also easy to revert to stock Android. The sandboxed Google Play services make it easy to run pretty much any app you can use on stock (except NFC payment, unfortunately), or you can leave them off and have a completely Google-free experience.
+
+</section>
+
+<section>
+
+## Stationery
+
+### Fountain Pens
+- Nahvalur Original Plus
+- TWSBI Diamond 580AL R and Eco
+- Hongdian Peacock
+
+### Inks
+- Wearingeul, “The Black Cat”
+- Robert Oster, “Sydney Lavender” and “Aqua”
+- Diamine, “Registrar's” and “Oxblood”
+- Platinum, “Lavender Black”
+- Troublemaker, “Petrichor”
+
+### Notebooks
+- GLP Creations, “The Author” (Tomoe River paper, 68gsm, dot grid)
+- GoodInkPressions Tomoe River Notebook (68gsm, dot grid)
+
+
+</section>
+
