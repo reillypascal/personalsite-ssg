@@ -138,6 +138,10 @@ In other words, as Merchant puts it
 
 ## Economics of AI
 
+- Pradyumna Chari, Project NANDA, “[State of AI in Business 2025](https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf)”
+
+> Despite $30–40 billion in enterprise investment into GenAI, this report uncovers a surprising result in that 95% of organizations are getting zero return.
+
 - Luc Olinga, “[Wall Street’s AI Bubble Is Worse Than the 1999 Dot-com Bubble, Warns a Top Economist](https://gizmodo.com/wall-streets-ai-bubble-is-worse-than-the-1999-dot-com-bubble-warns-a-top-economist-2000630487)”
 
 > “The difference between the IT bubble in the 1990s and the AI bubble today is that the top 10 companies in the S&P 500 today are more overvalued than they were in the 1990s,” Slok wrote in a recent research note that was widely shared across social media and financial circles.
