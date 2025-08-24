@@ -2,21 +2,18 @@
 layout: mainlayout.liquid
 title: Reilly Spitzfaden, Composer
 ---
+
 <link rel="stylesheet" type="text/css" href="/styles/blog.css" />
 <link rel="stylesheet" type="text/css" href="/styles/blogposts.css" />
 <link rel="stylesheet" type="text/css" href="/styles/forms.css" />
 <link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
-{% comment %} <link rel="stylesheet" type="text/css" href="/styles/callouts/callout-simplified.css" /> {% endcomment %}
-<link rel="stylesheet" type="text/css" href="/styles/callouts/github-colors-dark-media.css" />
-<!-- base needs to be after colors - uses colors from it -->
-<link rel="stylesheet" type="text/css" href="/styles/callouts/github-base.css" />
 
 <!-- post contents -->
 <article class="h-entry">
     <h1 class="p-name sectionHeader">{{ title }}</h1>
 
     {% include "partials/author-and-syndication.liquid" %}
-            
+    
     {%- include "partials/post-meta.liquid" -%}
 
     {{ content | toc }}
