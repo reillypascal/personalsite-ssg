@@ -22,6 +22,7 @@ A “/uses” or “/using” [slash page](https://slashpages.net/) is [a popula
 - Dorico
 - Logic Pro
 - Max/MSP
+- REAPER
 - SuperCollider
 
 ### Developer
