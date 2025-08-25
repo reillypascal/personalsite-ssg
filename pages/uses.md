@@ -47,8 +47,8 @@ A “/uses” or “/using” [slash page](https://slashpages.net/) is [a popula
 - Lollypop (Linux music player aimed at GNOME desktop)
 - Platforms to buy downloads
     - Bandcamp
-    - Faircamp (tool for artists to make their own download sales page)
-        - Directories: [Faircamp webring](https://faircamp.webr.ing/), [mxv's list](https://maxvolu.me/faircamp-sites), [official site](https://simonrepp.com/faircamp/) [prototype aggregator](https://ten-thousand-sounds.com/)
+    - Faircamp (tool for artists to make their own download sales pages)
+        - Directories: [Faircamp webring](https://faircamp.webr.ing/), [mxv's list](https://maxvolu.me/faircamp-sites), [official site](https://simonrepp.com/faircamp/), [prototype aggregator](https://ten-thousand-sounds.com/)
     - Mirlo
     - Qobuz
 
