@@ -49,12 +49,22 @@ A “/uses” or “/using” [slash page](https://slashpages.net/) is [a popula
 - OpenMTP (transfer Android files to macOS)
 - Syncthing (sync files over local network without needing cloud services)
 
+### Media
+- AntennaPod (Android podcast player)
+- Auxio (Android local music player)
+- Lollypop (Linux music player aimed at GNOME desktop)
+
 ### Utilities
 - Aegis (2fa)
 - Bitwarden (password manager)
+- DAVx<sup>5</sup> (CalDAV/CardDAV/WebDAV manager for Android)
 - Droid-ify (F-Droid FOSS app store client)
+- Forkyz (FOSS Android crossword app)
+- Fossify Calendar (Android calendar)
+- FUTO Keyboard (Android keyboard)
 - ItsyCal (macOS taskbar calendar)
 - LinearMouse (remap mouse input without requiring official Logitech software)
+- Obtainium (install Android apps from GitHub; keep track of/manage updates)
 - uBlock Origin (adblocker)
 
 ### Operating Systems
