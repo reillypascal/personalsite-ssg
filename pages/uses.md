@@ -24,6 +24,7 @@ A “/uses” or “/using” [slash page](https://slashpages.net/) is [a popula
 - Max/MSP
 - REAPER
 - SuperCollider
+- Tidal Cycles
 
 ### Developer
 - Neovim ([dotfiles](https://github.com/reillypascal/kickstart.nvim))
