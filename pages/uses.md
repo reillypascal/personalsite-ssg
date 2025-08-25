@@ -43,6 +43,7 @@ A “/uses” or “/using” [slash page](https://slashpages.net/) is [a popula
 - Lollypop (Linux music player aimed at GNOME desktop)
 
 ### Documents
+- Calibre (e-book library manager/reader)
 - Capy Reader (Android RSS reader)
 - NetNewsWire (macOS RSS reader, also available for iOS)
 - Obsidian (notebook; pairs nicely with Syncthing)
