@@ -36,6 +36,7 @@ A “/uses” or “/using” [slash page](https://slashpages.net/) is [a popula
 <!-- - VSCodium (VS Code fork with alternative extension repository and no proprietary Microsoft components) -->
 
 ### Web
+- Fennec (fork of Firefox for Android, available in F-Droid store)
 - Firefox (web browser)
 - Mailspring (desktop email client)
 - Signal (encrypted messenger)
