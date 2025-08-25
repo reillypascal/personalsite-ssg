@@ -39,6 +39,11 @@ A “/uses” or “/using” [slash page](https://slashpages.net/) is [a popula
 - Signal (encrypted messenger)
 - Thunderbird (Android email client)
 
+### Media
+- AntennaPod (Android podcast player)
+- Auxio (Android local music player)
+- Lollypop (Linux music player aimed at GNOME desktop)
+
 ### Documents
 - Capy Reader (Android RSS reader)
 - NetNewsWire (macOS RSS reader, also available for iOS)
@@ -50,11 +55,6 @@ A “/uses” or “/using” [slash page](https://slashpages.net/) is [a popula
 - LocalSend (cross-platform file transfer)
 - OpenMTP (transfer Android files to macOS)
 - Syncthing (sync files over local network without needing cloud services)
-
-### Media
-- AntennaPod (Android podcast player)
-- Auxio (Android local music player)
-- Lollypop (Linux music player aimed at GNOME desktop)
 
 ### Utilities
 - Aegis (2fa)
