@@ -29,9 +29,9 @@ A “/uses” or “/using” [slash page](https://slashpages.net/) is [a popula
 ### Developer
 - Neovim ([dotfiles](https://github.com/reillypascal/kickstart.nvim))
 - pluginval (validate and debug audio plugins)
-<!-- - VSCodium (VS Code fork with alternative extension repository and no proprietary Microsoft components) -->
 - WezTerm
 - Xcode
+<!-- - VSCodium (VS Code fork with alternative extension repository and no proprietary Microsoft components) -->
 
 ### Web
 - Firefox (web browser)
