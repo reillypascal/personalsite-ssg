@@ -28,6 +28,8 @@ A “/uses” or “/using” [slash page](https://slashpages.net/) is [a popula
 
 ### Developer
 - Neovim ([dotfiles](https://github.com/reillypascal/kickstart.nvim))
+- pluginval (validate and debug audio plugins)
+- VSCodium (VS Code fork with alternative extension repository and no proprietary Microsoft components)
 - WezTerm
 - Xcode
 
@@ -64,6 +66,7 @@ A “/uses” or “/using” [slash page](https://slashpages.net/) is [a popula
 - FUTO Keyboard (Android keyboard)
 - ItsyCal (macOS taskbar calendar)
 - LinearMouse (remap mouse input without requiring official Logitech software)
+- Lucy 
 - Obtainium (install Android apps from GitHub; keep track of/manage updates)
 - uBlock Origin (adblocker)
 
@@ -95,7 +98,6 @@ A “/uses” or “/using” [slash page](https://slashpages.net/) is [a popula
 ### Notebooks
 - GLP Creations, “The Author” (Tomoe River paper, 68gsm, dot grid)
 - GoodInkPressions Tomoe River Notebook (68gsm, dot grid)
-
 
 </section>
 
