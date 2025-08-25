@@ -22,7 +22,9 @@ A “/uses” or “/using” [slash page](https://slashpages.net/) is [a popula
 - Dorico
 - Logic Pro
 - Max/MSP
+- Pure Data
 - REAPER
+- Sonic Pi
 - SuperCollider
 - Tidal Cycles
 
