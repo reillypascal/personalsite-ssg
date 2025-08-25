@@ -66,7 +66,6 @@ A “/uses” or “/using” [slash page](https://slashpages.net/) is [a popula
 - FUTO Keyboard (Android keyboard)
 - ItsyCal (macOS taskbar calendar)
 - LinearMouse (remap mouse input without requiring official Logitech software)
-- Lucy 
 - Obtainium (install Android apps from GitHub; keep track of/manage updates)
 - uBlock Origin (adblocker)
 
