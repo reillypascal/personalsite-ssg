@@ -20,6 +20,8 @@ This page is a collection of reporting, research, and essays critical of large l
 
 ## AI in Education
 
+- Patrick Lin, “[Why We’re Not Using AI in This Course, Despite Its Obvious Benefits](https://emergingethics.substack.com/p/why-were-not-using-ai-in-this-course)”
+
 - [AGAINST AI](https://against-a-i.com/)
 
 > Materials here are intended as solidarity solace for educators who might find themselves inventing wheels alone while their administrators, trustees, and bosses unrelentingly hype AI and nakedly enthuse the negative consequences for educator labor.
@@ -168,7 +170,7 @@ In other words, as Merchant puts it
 
 ## Economics of AI
 
-- Pradyumna Chari, Project NANDA, “[State of AI in Business 2025](https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf)”
+- Pradyumna Chari, Project NANDA, “[State of AI in Business 2025](https://mlq.ai/media/quarterly_decks/v0.1_State_of_AI_in_Business_2025_Report.pdf)” ([archived link](https://web.archive.org/web/20250818145714mp_/https://nanda.media.mit.edu/ai_report_2025.pdf))
 
 > Despite $30–40 billion in enterprise investment into GenAI, this report uncovers a surprising result in that 95% of organizations are getting zero return.
 
