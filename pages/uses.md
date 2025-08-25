@@ -15,8 +15,6 @@ This page is a list of software, stationery, and other tools I use — for the c
 
 A “/uses” or “/using” [slash page](https://slashpages.net/) is [a popular way among IndieWeb people of sharing this information](https://indieweb.org/using).
 
-<section>
-
 ## Software
 
 ### Music Tools
@@ -76,10 +74,6 @@ A “/uses” or “/using” [slash page](https://slashpages.net/) is [a popula
 - [GrapheneOS](https://grapheneos.org/) (mobile)
     - I particularly like GrapheneOS, which is an alternative, privacy/security-focused version of Android. The [web-based installation option](https://grapheneos.org/install/web) is extremely easy, and it's also easy to revert to stock Android. The sandboxed Google Play services make it easy to run pretty much any app you can use on stock (except NFC payment, unfortunately), or you can leave them off and have a completely Google-free experience.
 
-</section>
-
-<section>
-
 ## Stationery
 
 ### Fountain Pens
@@ -96,6 +90,4 @@ A “/uses” or “/using” [slash page](https://slashpages.net/) is [a popula
 ### Notebooks
 - GLP Creations, “The Author” (Tomoe River paper, 68gsm, dot grid)
 - GoodInkPressions Tomoe River Notebook (68gsm, dot grid)
-
-</section>
 
