@@ -45,6 +45,12 @@ A “/uses” or “/using” [slash page](https://slashpages.net/) is [a popula
 - AntennaPod (Android podcast player)
 - Auxio (Android local music player)
 - Lollypop (Linux music player aimed at GNOME desktop)
+- Platforms to buy downloads
+    - Bandcamp
+    - Faircamp (tool for artists to make their own download sales page)
+        - Directories: [Faircamp webring](https://faircamp.webr.ing/), [mxv's list](https://maxvolu.me/faircamp-sites), [official site](https://simonrepp.com/faircamp/) [prototype aggregator](https://ten-thousand-sounds.com/)
+    - Mirlo
+    - Qobuz
 
 ### Documents
 - Calibre (e-book library manager/reader)
@@ -82,15 +88,17 @@ A “/uses” or “/using” [slash page](https://slashpages.net/) is [a popula
 ## Stationery
 
 ### Fountain Pens
-- TWSBI Diamond 580AL R and Eco
+- TWSBI Diamond 580ALR and Eco
 - Hongdian Peacock
 
 ### Inks
-- Wearingeul, “The Black Cat”
-- Robert Oster, “Sydney Lavender” and “Aqua”
-- Diamine, “Registrar's” and “Oxblood”
+- Aurora, ”Black”
+- Diamine, “Oxblood” and “Registrar's”
 - Platinum, “Lavender Black”
+- Robert Oster, “Sydney Lavender” and “Aqua”
+- Sailor, “Studio 024”
 - Troublemaker, “Petrichor”
+- Wearingeul, “The Black Cat”
 
 ### Notebooks
 - GLP Creations, “The Author” (Tomoe River paper, 68gsm, dot grid)
