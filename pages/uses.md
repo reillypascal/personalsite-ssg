@@ -77,7 +77,7 @@ A “/uses” or “/using” [slash page](https://slashpages.net/) is [a popula
 - Arch Linux
 - Ubuntu Server (for [my home server](/wiki/notebook/tech-projects/tv-media-server/))
 - [GrapheneOS](https://grapheneos.org/) (mobile)
-    - I particularly like GrapheneOS, which is an alternative, privacy/security-focused version of Android. The [web-based installation option](https://grapheneos.org/install/web) is extremely easy, and it's also easy to revert to stock Android. The sandboxed Google Play services make it easy to run pretty much any app you can use on stock (except NFC payment, unfortunately), or you can leave them off and have a completely Google-free experience.
+    <!-- - GrapheneOS is an alternative, privacy/security-focused version of Android. The [web-based installation option](https://grapheneos.org/install/web) is extremely easy, and it's also easy to revert to stock Android. The sandboxed Google Play services make it easy to run pretty much any app you can use on stock (except NFC payment, unfortunately), or you can leave them off and have a completely Google-free experience. -->
 
 ## Stationery
 
