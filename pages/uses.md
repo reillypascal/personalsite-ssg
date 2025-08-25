@@ -83,7 +83,6 @@ A “/uses” or “/using” [slash page](https://slashpages.net/) is [a popula
 ## Stationery
 
 ### Fountain Pens
-- Nahvalur Original Plus
 - TWSBI Diamond 580AL R and Eco
 - Hongdian Peacock
 
