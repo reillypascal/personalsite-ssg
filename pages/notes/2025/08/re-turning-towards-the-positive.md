@@ -1,6 +1,8 @@
 ---
 title: "Re: Turning towards the positive"
 fedi_url:
+  - https://hachyderm.io/@reillypascal/115102069067809173
+  - https://bsky.app/profile/reillypascal.bsky.social/post/3lxfmta4plc2t
 og_image:
 og_image_width:
 og_image_height:
