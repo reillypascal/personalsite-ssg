@@ -6,7 +6,7 @@ fedi_url:
 og_image:
 og_image_width:
 og_image_height:
-date: 2025-08-27T13:23:08-0400
+date: 2025-08-27T14:00:00-0400
 location: Rochester, New York
 tags:
   - note
