@@ -18,6 +18,7 @@ A “/uses” or “/using” [slash page](https://slashpages.net/) is [a popula
 ## Software
 
 ### Music Tools
+
 - Audacity
 - Dorico
 - Logic Pro
@@ -29,7 +30,9 @@ A “/uses” or “/using” [slash page](https://slashpages.net/) is [a popula
 - Tidal Cycles
 
 ### Developer
-- Neovim ([dotfiles](https://github.com/reillypascal/kickstart.nvim))
+
+- fzf (terminal fuzzy finder)
+- Neovim (my [dotfiles](https://github.com/reillypascal/kickstart.nvim))
 - pluginval (validate and debug audio plugins)
 - Starship (command prompt)
 - WezTerm
@@ -37,6 +40,7 @@ A “/uses” or “/using” [slash page](https://slashpages.net/) is [a popula
 <!-- - VSCodium (VS Code fork with alternative extension repository and no proprietary Microsoft components) -->
 
 ### Web
+
 - Fennec (fork of Firefox for Android, available in F-Droid store)
 - Firefox (web browser)
 - Mailspring (desktop email client)
@@ -44,17 +48,19 @@ A “/uses” or “/using” [slash page](https://slashpages.net/) is [a popula
 - Thunderbird (Android email client)
 
 ### Media
+
 - AntennaPod (Android podcast player)
 - Auxio (Android local music player)
 - Lollypop (Linux music player aimed at GNOME desktop)
 - Platforms to buy downloads
-    - Bandcamp
-    - Faircamp (tool for artists to make their own download sales pages)
-        - Directories: [Faircamp webring](https://faircamp.webr.ing/), [mxv's list](https://maxvolu.me/faircamp-sites), [official site](https://simonrepp.com/faircamp/), [prototype aggregator](https://ten-thousand-sounds.com/)
-    - Mirlo
-    - Qobuz
+  - Bandcamp
+  - Faircamp (tool for artists to make their own download sales pages)
+    - Directories: [Faircamp webring](https://faircamp.webr.ing/), [mxv's list](https://maxvolu.me/faircamp-sites), [official site](https://simonrepp.com/faircamp/), [prototype aggregator](https://ten-thousand-sounds.com/)
+  - Mirlo
+  - Qobuz
 
 ### Documents
+
 - Calibre (e-book library manager/reader)
 - Capy Reader (Android RSS reader)
 - NetNewsWire (macOS RSS reader, also available for iOS)
@@ -62,12 +68,14 @@ A “/uses” or “/using” [slash page](https://slashpages.net/) is [a popula
 - Zotero (reference manager)
 
 ### Files
+
 - FreeFileSync (easily manage backups)
 - LocalSend (cross-platform file transfer)
 - OpenMTP (transfer Android files to macOS)
 - Syncthing (sync files over local network without needing cloud services)
 
 ### Utilities
+
 - Aegis (2fa)
 - Bitwarden (password manager)
 - DAVx<sup>5</sup> (CalDAV/CardDAV/WebDAV manager for Android)
@@ -81,6 +89,7 @@ A “/uses” or “/using” [slash page](https://slashpages.net/) is [a popula
 - uBlock Origin (adblocker)
 
 ### Operating Systems
+
 - macOS
 - Arch Linux
 - Ubuntu Server (for [my home server](/wiki/notebook/tech-projects/tv-media-server/))
@@ -90,10 +99,12 @@ A “/uses” or “/using” [slash page](https://slashpages.net/) is [a popula
 ## Stationery
 
 ### Fountain Pens
+
 - TWSBI Diamond 580ALR and Eco
 - Hongdian Peacock
 
 ### Inks
+
 - Aurora, ”Black”
 - Diamine, “Oxblood” and “Registrar's”
 - Platinum, “Lavender Black”
@@ -103,6 +114,6 @@ A “/uses” or “/using” [slash page](https://slashpages.net/) is [a popula
 - Wearingeul, “The Black Cat”
 
 ### Notebooks
+
 - GLP Creations, “The Author” (Tomoe River paper, 68gsm, dot grid)
 - GoodInkPressions Tomoe River Notebook (68gsm, dot grid)
-
