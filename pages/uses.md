@@ -32,9 +32,9 @@ tags:
 - REAPER
 - VCV Rack/Cardinal
 
-#### Microtonal
-
-- [Scala](https://www.huygens-fokker.org/scala/) by Huygens-Fokker (unrelated to the programming language; this is a tool for generating .scl tuning files)
+<!-- #### Microtonal -->
+<!---->
+<!-- - [Scala](https://www.huygens-fokker.org/scala/) by Huygens-Fokker (unrelated to the programming language; this is a tool for generating .scl tuning files) -->
 
 #### Plugins
 
