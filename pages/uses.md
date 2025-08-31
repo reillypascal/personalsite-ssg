@@ -43,8 +43,8 @@ tags:
 - plugdata (Pure Data in plugin form; also includes a standalone version with a nice update to the Pure Data GUI)
 - sfizz (FOSS .sfz sampler host; micro-tunable with .scl files)
 - sforzando (the official .sfz sampler host)
-- Surge XT (micro-tunable with .scl files)
-- Vital
+- Surge XT (FOSS hybrid synthesizer with rich sound design options; micro-tunable with .scl files)
+- Vital (wavetable synthesizer)
 
 ### Developer
 
