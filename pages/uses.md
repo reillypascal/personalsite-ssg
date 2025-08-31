@@ -1,6 +1,8 @@
 ---
 title: /uses
 description: Software, stationery, and other tools I use — for the curious, and for those looking for recommendations.
+pre_toc: '<p>This page is a list of software, stationery, and other tools I use — for the curious, and for those looking for recommendations.</p> <p>A “/uses” or “/using” <a href="https://slashpages.net/">slash page</a> is <a href="https://indieweb.org/using">a popular way among IndieWeb people of sharing this information</a>.</p>'
+layout: toclayout.liquid
 fedi_url:
 date: git Last Modified
 octothorpes:
@@ -9,15 +11,18 @@ tags:
 
 <link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
 
-<h1 class="sectionHeader">/uses</h1>
-
-This page is a list of software, stationery, and other tools I use — for the curious, and for those looking for recommendations.
-
-A “/uses” or “/using” [slash page](https://slashpages.net/) is [a popular way among IndieWeb people of sharing this information](https://indieweb.org/using).
-
 ## Software
 
-### Music Tools
+### Music
+
+#### Coding
+
+- JUCE
+- Sonic Pi
+- SuperCollider
+- Tidal Cycles
+
+#### Composing and Editing
 
 - Audacity
 - Dorico
@@ -25,19 +30,32 @@ A “/uses” or “/using” [slash page](https://slashpages.net/) is [a popula
 - Max/MSP
 - Pure Data
 - REAPER
-- Sonic Pi
-- SuperCollider
-- Tidal Cycles
+- VCV Rack/Cardinal
+
+#### Microtonal
+
+- [Scala](https://www.huygens-fokker.org/scala/) by Huygens-Fokker (unrelated to the programming language; this is a tool for generating .scl tuning files)
+
+#### Plugins
+
+- Dexed (Yamaha DX7 emulator; micro-tunable with .scl files)
+- Element by Kushview (modular audio plugin host)
+- plugdata (Pure Data in plugin form; also includes a standalone version with a nice update to the Pure Data GUI)
+- sfizz (FOSS .sfz sampler host; micro-tunable with .scl files)
+- sforzando (the official .sfz sampler host)
+- Surge XT (micro-tunable with .scl files)
+- Vital
 
 ### Developer
 
 - fzf (terminal fuzzy finder)
+- Octave (FOSS equivalent to MATLAB)
 - Neovim (my [dotfiles](https://github.com/reillypascal/kickstart.nvim))
 - pluginval (validate and debug audio plugins)
 - Starship (command prompt)
 - WezTerm
-- Xcode
-<!-- - VSCodium (VS Code fork with alternative extension repository and no proprietary Microsoft components) -->
+  <!-- - Xcode -->
+  <!-- - VSCodium (VS Code fork with alternative extension repository and no proprietary Microsoft components) -->
 
 ### Web
 
