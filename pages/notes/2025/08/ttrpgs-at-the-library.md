@@ -2,9 +2,8 @@
 title: "TTRPGs at the Library"
 description: "I'm finally getting into TTRPGs!"
 fedi_url:
-og_image:
-og_image_width:
-og_image_height:
+  - https://hachyderm.io/@reillypascal/115120461372268690
+  - https://bsky.app/profile/reillypascal.bsky.social/post/3lxns7aaqak2t
 date: 2025-08-30T20:00:00-0400
 location: Rochester, New York
 tags:
