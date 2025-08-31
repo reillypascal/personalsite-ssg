@@ -10,7 +10,6 @@ location: Rochester, New York
 tags:
   - note
   - hobbies
-draft: true
 ---
 
 My local library has a TTRPG group (currently playing Pathfinder 2e). I sat in on a campaign today, the group was very welcoming, and I'm excited about it.
