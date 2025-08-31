@@ -32,10 +32,6 @@ tags:
 - REAPER
 - VCV Rack/Cardinal
 
-<!-- #### Microtonal -->
-<!---->
-<!-- - [Scala](https://www.huygens-fokker.org/scala/) by Huygens-Fokker (unrelated to the programming language; this is a tool for generating .scl tuning files) -->
-
 #### Plugins
 
 - Dexed (Yamaha DX7 emulator; micro-tunable with .scl files)
@@ -51,11 +47,14 @@ tags:
 - fzf (terminal fuzzy finder)
 - Octave (FOSS equivalent to MATLAB)
 - Neovim (my [dotfiles](https://github.com/reillypascal/kickstart.nvim))
+  - scnvim (Neovim frontend for SuperCollider)
+  - vim-tidal (Vim plugin for Tidal Cycles)
 - pluginval (validate and debug audio plugins)
 - Starship (command prompt)
-- WezTerm
-  <!-- - Xcode -->
-  <!-- - VSCodium (VS Code fork with alternative extension repository and no proprietary Microsoft components) -->
+- WezTerm (terminal)
+
+<!-- - VSCodium (VS Code fork with alternative extension repository and no proprietary Microsoft components) -->
+<!-- - Xcode -->
 
 ### Web
 
