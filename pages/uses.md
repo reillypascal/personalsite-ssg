@@ -50,7 +50,7 @@ tags:
   - scnvim (Neovim frontend for SuperCollider)
   - vim-tidal (Vim plugin for Tidal Cycles)
 - pluginval (validate and debug audio plugins)
-- spf (terminal file manager)
+- superfile (terminal file manager)
 - Starship (command prompt)
 - WezTerm (terminal)
 
