@@ -46,7 +46,6 @@ tags:
 
 - apparix (terminal bookmarks)
 - fzf (terminal fuzzy finder)
-- Octave (FOSS equivalent to MATLAB)
 - Neovim (my [dotfiles](https://github.com/reillypascal/kickstart.nvim))
   - scnvim (Neovim frontend for SuperCollider)
   - vim-tidal (Vim plugin for Tidal Cycles)
@@ -56,6 +55,7 @@ tags:
 - WezTerm (terminal)
 
 <!-- - chezmoi (dotfile manager) -->
+<!-- - Octave (FOSS equivalent to MATLAB) -->
 
 ### Web
 
