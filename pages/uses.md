@@ -44,6 +44,7 @@ tags:
 
 ### Developer
 
+- apparix (terminal bookmarks)
 - chezmoi (dotfile manager)
 - fzf (terminal fuzzy finder)
 - Octave (FOSS equivalent to MATLAB)
