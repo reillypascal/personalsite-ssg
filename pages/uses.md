@@ -44,6 +44,7 @@ tags:
 
 ### Developer
 
+- chezmoi (dotfile manager)
 - fzf (terminal fuzzy finder)
 - Octave (FOSS equivalent to MATLAB)
 - Neovim (my [dotfiles](https://github.com/reillypascal/kickstart.nvim))
