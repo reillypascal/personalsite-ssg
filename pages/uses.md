@@ -45,7 +45,6 @@ tags:
 ### Developer
 
 - apparix (terminal bookmarks)
-- chezmoi (dotfile manager)
 - fzf (terminal fuzzy finder)
 - Octave (FOSS equivalent to MATLAB)
 - Neovim (my [dotfiles](https://github.com/reillypascal/kickstart.nvim))
@@ -55,6 +54,8 @@ tags:
 - superfile (terminal file manager)
 - Starship (command prompt)
 - WezTerm (terminal)
+
+<!-- - chezmoi (dotfile manager) -->
 
 ### Web
 
