@@ -11,7 +11,7 @@ description: My code, including sound design tools, VST/AU plugin programming, a
 
 <article>
     <h2><a href="https://github.com/reillypascal/data2audio">data2audio</a></h2>
-    <p>Rust tool to import a folder of files, convert to audio, and normalize/filter out sub-audible frequencies. Parallelized with <code>rayon</code>, making processing extremely fast.</p>
+    <p>Rust tool to import a folder of files, convert to audio, and normalize/filter out sub-audible frequencies. Processes files in parallel (using <code>rayon</code>), so it's extremely fast even with large batches of files.</p>
 
     <p>This is the same process described in <a href="/posts/2025/01/databending-part-1/">this post</a>, but automated to be much less time-consuming.</p>
 </article>
@@ -19,24 +19,24 @@ description: My code, including sound design tools, VST/AU plugin programming, a
 <article>
     <h2><a href="https://github.com/reillypascal/mp3glitch">mp3glitch</a></h2>
     <p>Python tool for glitching MP3s while leaving them playable. Includes many options to shape glitching amount, character, and timbre, and a shell script to automate converting batches of WAV files to MP3 with FFmpeg before glitching.</p>
-    
+
     <p>The mechanics behind this are described in <a href="/posts/2025/02/databending-part-2/">this post</a>, and I discuss using Python to do the glitching in <a href="/posts/2025/04/databending-part-3/">this post</a>.</p>
 </article>
 
 <h1 id="plugins" class="sectionHeader">Plugins</h1>
-    
+
 <article>
     <h2><a href="https://github.com/reillypascal/RSAlgorithmicVerb">RS Algorithmic Verb</a></h2>
     <p>Retro algorithmic reverb plugin in <a href="https://juce.com/">JUCE</a> with multiple algorithms (including emulations of classic hardware) and more to come. </p>
     <p>Includes plate and hall reverbs from Dattorro; Gardner's 1992 room reverbs; 4 feedback delay network reverbs using the "<a href="https://www.researchgate.net/publication/344467473_FDNTB_The_Feedback_Delay_Network_Toolbox">FDN Toolbox</a>"; and two experimental/special-effect reverbs. Recently updated for code clarity and maintainability.</p>
 </article>
-    
+
 <article>
     <h2><a href="https://github.com/reillypascal/RSBrokenMedia">RS Broken Media</a></h2>
     <p>Stereo glitch plugin that records a buffer of recent audio and mangles it, giving tape-warping effects, CD skips, bitcrushing, cell phone codecs, and more.</p>
     {% comment %}<img src="media/rsbrokenmedia.jpg" alt="The UI of a plugin, showing an 'analog FX,' 'digital FX,' 'distortion FX,' 'clock speed,' 'buffer length,' 'repeats,' and 'dry/wet mix' knob">{% endcomment %}
 </article>
-    
+
 <article>
     <h2><a href="https://github.com/reillypascal/RSTelecom">RS Telecom</a></h2>
     <p>Lo-fi plugin with options of various telecommunications codecs including Mu-Law and A-Law 8-bit, and GSM 06.10. Work in progress&mdash;more codecs and glitching effects coming soon.</p>
