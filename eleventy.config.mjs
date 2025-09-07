@@ -80,7 +80,17 @@ export default async function (eleventyConfig) {
     };
     
     const pageWebmentions = webmentions
-      .filter((mention) => mention["wm-target"] == url)
+      // .filter((mention) => mention["wm-target"] == url)
+      .filter((mention) => {
+        if (mention["wm-target"]) {
+          let cleanedUrl = new URL(mention["wm-target"])
+          cleanedUrl.search = ''
+          cleanedUrl.hash = ''
+          return cleanedUrl.href == url
+        } else {
+          return false
+        }
+      })
       .filter((mention) => mention["wm-source"].includes("https://brid.gy/") || mention["wm-source"].includes("https://bsky.brid.gy/"))
       .sort((a, b) => new Date(b.published) - new Date(a.published))
 
@@ -105,7 +115,7 @@ export default async function (eleventyConfig) {
     return data;
   });
 
-  eleventyConfig.addFilter("webWebmentions", function(webmentions, url) {  
+  eleventyConfig.addFilter("webWebmentions", function(webmentions, url) {
     const sanitize = (entry) => {
       if (entry.content && entry.content.html) {
         entry.content.html = sanitizeHTML(entry.content.html, {
@@ -117,7 +127,17 @@ export default async function (eleventyConfig) {
     };
     
     const pageWebmentions = webmentions
-      .filter((mention) => mention["wm-target"] == url)
+      // .filter((mention) => mention["wm-target"] == url)
+      .filter((mention) => {
+        if (mention["wm-target"]) {
+          let cleanedUrl = new URL(mention["wm-target"])
+          cleanedUrl.search = ''
+          cleanedUrl.hash = ''
+          return cleanedUrl.href == url
+        } else {
+          return false
+        }
+      })
       .filter((mention) => !mention["wm-source"].includes("https://brid.gy/"))
       .filter((mention) => !mention["wm-source"].includes("https://bsky.brid.gy/"))
       .sort((a, b) => new Date(b.published) - new Date(a.published))
