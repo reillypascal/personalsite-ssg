@@ -48,11 +48,11 @@ This page is a collection of reporting, research, and essays critical of large l
 
 > The AI jobs crisis does not, [as I’ve written before](https://gizmodo.com/robots-are-not-coming-for-your-job-management-is-1835127820#:~:text=Listen%3A%20'Robots'%20are%20not,on%20its%20comparatively%20superior%20merits.), look like sentient programs arising all around us, inexorably replacing human jobs en masse. It’s a series of management decisions being made by executives seeking to cut labor costs and consolidate control in their organizations. \[…\]
 
-> These imperatives have always existed, of course; bosses have historically tried to maximize profits by using cost-cutting technologies. But generative AI has been uniquely powerful in equipping them with a narrative with which to do so—and to thus justify degrading, disempowering, or destroying vulnerable jobs. 
+> These imperatives have always existed, of course; bosses have historically tried to maximize profits by using cost-cutting technologies. But generative AI has been uniquely powerful in equipping them with a narrative with which to do so—and to thus justify degrading, disempowering, or destroying vulnerable jobs.
 
 - Brian Merchant, “[The ‘AI jobs apocalypse’ is for the bosses](https://www.bloodinthemachine.com/p/the-ai-jobs-apocalypse-is-for-the)”
 
-In this article, Merchant points to a [blog post](https://www.axios.com/2025/05/20/ai-leadership) by Jim VandeHei, CEO of Axios, in which VandeHei says that he 
+In this article, Merchant points to a [blog post](https://www.axios.com/2025/05/20/ai-leadership) by Jim VandeHei, CEO of Axios, in which VandeHei says that he
 
 > recently told the Axios staff that we're done sugar-coating it, and see an urgent need for _every_ employee to turn AI into a force multiplier for their specific work. We then gave them tools to test. My exact words to a small group of our finance, legal and talent colleagues last week: “You are committing career suicide if you're not aggressively experimenting with AI.”
 
@@ -84,21 +84,32 @@ In other words, as Merchant puts it
 
 ## Weaknesses of AI as a Tool
 
+- Chengshuai Zhao et al., “[Is Chain-of-Thought Reasoning of LLMs a
+  Mirage? A Data Distribution Lens](https://arxiv.org/pdf/2508.01191)”
+
+> Our results reveal that \[Chain-of-Thought (CoT)\] reasoning is a brittle mirage that vanishes when it is pushed beyond training distributions. This work offers a deeper understanding of why and when CoT reasoning fails, emphasizing the ongoing challenge of achieving genuine and generalizable reasoning.
+
+Cognitive scientist and AI researcher Gary Marcus [notes the following about these results](https://garymarcus.substack.com/p/gpt-5-overdue-overhyped-and-underwhelming):
+
+> In 1998 I wrote that “universals are pervasive in language and reasoning” but showed experimentally that neural networks of that era could not reliably “extend universals outside \[a\] training space of examples”. \[…\]
+
+> Throw in every gadget invented since 1998, and the Achilles’ Heel I identified then still remains. That’s startling. Even I didn’t expect that.
+
 - Kosmyna et al., “[Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task](https://arxiv.org/abs/2506.08872)”
 
 > EEG revealed significant differences in brain connectivity: Brain-only participants exhibited the strongest, most distributed networks; Search Engine users showed moderate engagement; and LLM users displayed the weakest connectivity. Cognitive activity scaled down in relation to external tool use. \[…\]
 
 > Over four months, LLM users consistently underperformed at neural, linguistic, and behavioral levels.
 
-- William Harding, Matthew Kloster, “[Coding on Copilot: 2023 Data Suggests Downward Pressure on Code Quality](https://www.gitclear.com/coding_on_copilot_data_shows_ais_downward_pressure_on_code_quality)”
-
-> We find disconcerting trends for maintainability. Code churn -- the percentage of lines that are reverted or updated less than two weeks after being authored -- is projected to double in 2024 compared to its 2021, pre-AI baseline. We further find that the percentage of “added code” and “copy/pasted code” is increasing in proportion to “updated,” “deleted,” and “moved” code. In this regard, code generated during 2023 more resembles an itinerant contributor, prone to violate the [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)-ness of the repos visited.
-
 - METR, “[Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/)”
 
 > We conduct a randomized controlled trial (RCT) to understand how early-2025 AI tools affect the productivity of experienced open-source developers working on their own repositories. \[…\]
 
 > When developers are allowed to use AI tools, they take 19% longer to complete issues—a significant slowdown that goes against developer beliefs and expert forecasts. This gap between perception and reality is striking: developers expected AI to speed them up by 24%, and even after experiencing the slowdown, they still believed AI had sped them up by 20%.
+
+- William Harding, Matthew Kloster, “[Coding on Copilot: 2023 Data Suggests Downward Pressure on Code Quality](https://www.gitclear.com/coding_on_copilot_data_shows_ais_downward_pressure_on_code_quality)”
+
+> We find disconcerting trends for maintainability. Code churn -- the percentage of lines that are reverted or updated less than two weeks after being authored -- is projected to double in 2024 compared to its 2021, pre-AI baseline. We further find that the percentage of “added code” and “copy/pasted code” is increasing in proportion to “updated,” “deleted,” and “moved” code. In this regard, code generated during 2023 more resembles an itinerant contributor, prone to violate the [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)-ness of the repos visited.
 
 </section>
 
@@ -120,7 +131,7 @@ In other words, as Merchant puts it
 
 > The news is yet another example of how the tools people have used to navigate the internet for decades are overwhelmed by the flood of AI-generated content even when they are not asking for it and which almost exclusively use people’s work or likeness without consent. At times, the deluge of AI content makes it difficult for users to differentiate between what is real and what is AI-generated.
 
-- Nicole Froio, [*AI is ruining houseplant communities online*](https://www.theverge.com/ai-artificial-intelligence/691355/ai-is-ruining-houseplant-communities-online)
+- Nicole Froio, [_AI is ruining houseplant communities online_](https://www.theverge.com/ai-artificial-intelligence/691355/ai-is-ruining-houseplant-communities-online)
 
 > …AI-generated content — both photos of fake plants and care misinformation — disrupt community engagement, which is what many collectors are seeking when joining these forums. \[…\]
 
@@ -154,7 +165,7 @@ In other words, as Merchant puts it
 
 - Mandy Brown, “[Toolmen](https://aworkinglibrary.com/writing/toolmen)”
 
-> What AI is is an ideology… \[the\] ideology itself is nothing new—it is the age-old system of supremacy, granting care and comfort to some while relegating others to servitude and penury—but the wrappings have been updated for the late capital, late digital age… Engaging with AI as a *technology* is to play the fool—it’s to observe the reflective surface of the thing without taking note of the way it sends roots deep down into the ground, breaking up bedrock, poisoning the soil, reaching far and wide to capture, uproot, strangle, and steal everything within its reach.
+> What AI is is an ideology… \[the\] ideology itself is nothing new—it is the age-old system of supremacy, granting care and comfort to some while relegating others to servitude and penury—but the wrappings have been updated for the late capital, late digital age… Engaging with AI as a _technology_ is to play the fool—it’s to observe the reflective surface of the thing without taking note of the way it sends roots deep down into the ground, breaking up bedrock, poisoning the soil, reaching far and wide to capture, uproot, strangle, and steal everything within its reach.
 
 - Ali Alkhatib, “[To Live in Their Utopia: Why Algorithmic Systems Create Absurd Outcomes](https://ali-alkhatib.com/research#utopia)”
 
@@ -192,18 +203,17 @@ In other words, as Merchant puts it
 
 ## AI and Climate
 
-- L. Rhodes, [*What AI money says about the environmental cost*](https://destructured.net/ai-money-environmental-cost)
+- L. Rhodes, [_What AI money says about the environmental cost_](https://destructured.net/ai-money-environmental-cost)
 
 > AI companies clearly expect their technology to consume much, much more energy than existing cloud computing infrastructure, and they expect that consumption to continue for decades into the future. If they tell you otherwise, they’re lying, and you can tell they’re lying by the billions of dollars they’re pouring into constructing city-sized datacenters with their own multi-gigawatt power stations. Any discussion of the sustainability of AI that ignores that expenditure is made either in ignorance or bad faith.
 
-- Isabel O'Brien, [*Data center emissions probably 662% higher than big tech claims. Can it keep up the ruse?*](www.theguardian.com/technology/2024/sep/15/data-center-gas-emissions-tech)
-
+- Isabel O'Brien, [_Data center emissions probably 662% higher than big tech claims. Can it keep up the ruse?_](www.theguardian.com/technology/2024/sep/15/data-center-gas-emissions-tech)
 
 - Paige Lambermont, “[AI Boom Power Surge: Plants Revived, Fossil Fuels Reconsidered](https://www.independent.org/article/2025/05/08/ai-power-plants-gas-coal/)”
 
 - Dara Kerr, “[AI brings soaring emissions for Google and Microsoft, a major contributor to climate change](https://www.npr.org/2024/07/12/g-s1-9545/ai-brings-soaring-emissions-for-google-and-microsoft-a-major-contributor-to-climate-change)
 
-- [*DOE Releases New Report Evaluating Increase in Electricity Demand from Data Centers*](https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers)
+- [_DOE Releases New Report Evaluating Increase in Electricity Demand from Data Centers_](https://www.energy.gov/articles/doe-releases-new-report-evaluating-increase-electricity-demand-data-centers)
 
 > The report finds that data centers consumed about 4.4% of total U.S. electricity in 2023 and are expected to consume approximately 6.7 to 12% of total U.S. electricity by 2028. The report indicates that total data center electricity usage climbed from 58 TWh in 2014 to 176 TWh in 2023 and estimates an increase between 325 to 580 TWh by 2028.
 
@@ -215,7 +225,7 @@ One might argue that 6.7% of U.S. electricity usage is a relatively small portio
 
 ## Rhetoric of AI Boosters
 
-- Glyph, [*I Think I’m Done Thinking About genAI For Now*](https://blog.glyph.im/2025/06/i-think-im-done-thinking-about-genai-for-now.html)
+- Glyph, [_I Think I’m Done Thinking About genAI For Now_](https://blog.glyph.im/2025/06/i-think-im-done-thinking-about-genai-for-now.html)
 
 > …every discussion is a [motte-and-bailey](https://en.wikipedia.org/wiki/Motte-and-bailey_fallacy). If I use a free model and get a bad result I’m told it’s because I should have used the paid model. If I get a bad result with ChatGPT I should have used Claude. If I get a bad result with a chatbot I need to start using an agentic tool. If an agentic tool deletes my hard drive by putting `os.system(“rm -rf ~/”)` into `sitecustomize.py` then I guess I should have built my own MCP integration with a completely novel heretofore never even considered security sandbox or something?
 
