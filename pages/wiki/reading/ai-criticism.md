@@ -86,8 +86,7 @@ In other words, as Merchant puts it
 
 ## Weaknesses of AI as a Tool
 
-- Chengshuai Zhao et al., “[Is Chain-of-Thought Reasoning of LLMs a
-  Mirage? A Data Distribution Lens](https://arxiv.org/pdf/2508.01191)”
+- Chengshuai Zhao et al., “[Is Chain-of-Thought Reasoning of LLMs a Mirage? A Data Distribution Lens](https://arxiv.org/pdf/2508.01191)”
 
 > Our results reveal that \[Chain-of-Thought (CoT)\] reasoning is a brittle mirage that vanishes when it is pushed beyond training distributions. This work offers a deeper understanding of why and when CoT reasoning fails, emphasizing the ongoing challenge of achieving genuine and generalizable reasoning.
 
