@@ -14,6 +14,12 @@ tags:
   - reading
 ---
 
+<style>
+    section {
+        margin-bottom: 84px;
+    }
+</style>
+
 This page is a collection of reporting, research, and essays critical of large language models (LLMs) and other “generative AI.” Articles are organized based on topic. It is an ever-growing list.
 
 <section>
@@ -63,10 +69,6 @@ VandeHei adds that
 In other words, as Merchant puts it
 
 > The message is this: There is an AI jobs apocalypse coming, everything is going to change, and if you hope to survive it, you’re going to have to learn to be a lot more productive, for me, your boss.
-
-</section>
-
-<section>
 
 ### “Human-in-the-loop” as a “reverse centaur”
 
