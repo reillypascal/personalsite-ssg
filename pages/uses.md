@@ -60,11 +60,13 @@ tags:
 
 ### Web
 
-- Fennec (fork of Firefox for Android, available in F-Droid store)
+- FFUpdater (app to keep vanilla Firefox for Android updated without Play Store)
 - Firefox (web browser)
 - Mailspring (desktop email client)
 - Signal (encrypted messenger)
 - Thunderbird (Android email client)
+
+<!-- - Fennec (fork of Firefox for Android, available in F-Droid store) -->
 
 ### Media
 
