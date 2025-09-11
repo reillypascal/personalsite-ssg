@@ -46,15 +46,15 @@ tags:
 
 - apparix (terminal bookmarks)
 - fzf (terminal fuzzy finder)
-- Ghostty (terminal)
 - Neovim (my [dotfiles](https://github.com/reillypascal/kickstart.nvim))
   - scnvim (Neovim frontend for SuperCollider)
   - vim-tidal (Vim plugin for Tidal Cycles)
 - pluginval (validate and debug audio plugins)
 - superfile (terminal file manager)
 - Starship (command prompt)
+- WezTerm (terminal)
 
-<!-- - WezTerm (terminal) -->
+<!-- - Ghostty (terminal) -->
 <!-- - chezmoi (dotfile manager) -->
 <!-- - Octave (FOSS equivalent to MATLAB) -->
 
