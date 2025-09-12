@@ -52,6 +52,7 @@ tags:
 - pluginval (validate and debug audio plugins)
 - superfile (terminal file manager)
 - Starship (command prompt)
+- tldr (man pages with practical examples)
 - WezTerm (terminal)
 
 <!-- - Ghostty (terminal) -->
