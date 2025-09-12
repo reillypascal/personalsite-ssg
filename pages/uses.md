@@ -130,8 +130,8 @@ tags:
 - Aurora, ”Black”
 - Diamine, “Oxblood” and “Registrar's”
 - Platinum, “Lavender Black”
-- Robert Oster, “Sydney Lavender” and “Aqua”
-- Sailor, “Studio 024”
+- Robert Oster, “Aqua” and “Sydney Lavender”
+- Sailor, “Hana Gokoro,” “Studio 024,” and “Yoi”
 - Troublemaker, “Petrichor”
 - Wearingeul, “The Black Cat”
 
