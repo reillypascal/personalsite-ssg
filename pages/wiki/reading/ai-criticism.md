@@ -46,6 +46,8 @@ This page is a collection of reporting, research, and essays critical of large l
 
 > The real threat posed by generative AI is not that it will eliminate work on a mass scale, rendering human labour obsolete. It is that, left unchecked, it will continue to transform work in ways that deepen precarity, intensify surveillance, and widen existing inequalities. Technological change is not an external force to which societies must simply adapt; it is a socially and politically mediated process. Legal frameworks, collective bargaining, public investment, and democratic regulation all play decisive roles in shaping how technologies are developed and deployed, and to what ends.
 
+- Brian Merchant, “[Artists are losing work, wages, and hope as bosses and clients embrace AI](https://www.bloodinthemachine.com/p/artists-are-losing-work-wages-and)”
+
 - Noam Scheiber, “[At Amazon, Some Coders Say Their Jobs Have Begun to Resemble Warehouse Work](https://www.nytimes.com/2025/05/25/business/amazon-ai-coders.html)” ([archived link](https://archive.is/g127S))
 
 > Three Amazon engineers said that managers had increasingly pushed them to use A.I. in their work over the past year. The engineers said that the company had raised output goals and had become less forgiving about deadlines. \[…\] One Amazon engineer said his team was roughly half the size it had been last year, but it was expected to produce roughly the same amount of code by using A.I.
