@@ -135,7 +135,8 @@ tags:
 - Troublemaker, “Petrichor”
 - Wearingeul, “The Black Cat”
 
-### Notebooks
+### Notebooks, Misc.
 
 - GLP Creations, “The Author” (Tomoe River paper, 68gsm, dot grid)
 - GoodInkPressions Tomoe River Notebook (68gsm, dot grid)
+- Galen Leather Zippered Pen Case
