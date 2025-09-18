@@ -42,6 +42,10 @@ This page is a collection of reporting, research, and essays critical of large l
 
 ## AI as a Labor Issue
 
+- Ethan Marcotte, “[Against the protection of stocking frames.](https://ethanmarcotte.com/wrote/against-stocking-frames/)”
+
+> This is where I think approaching “AI” as a failure becomes useful, even vital. it underscores that the technology’s real value isn’t improving productivity, or even in improving products. Rather, it’s a social mechanism employed to ensure compliance in the workplace, and to weaken worker power. Stories like the one at Zapier are becoming more common, where executive fiat is being used to force employees to use a technology that could [deskill](https://ethanmarcotte.com/wrote/tooled/) them, and make them more replaceable.
+
 - Aaron Benanav, “[Is the AI Bubble About to Burst?](https://www.versobooks.com/blogs/news/is-the-ai-bubble-about-to-burst)”
 
 > The real threat posed by generative AI is not that it will eliminate work on a mass scale, rendering human labour obsolete. It is that, left unchecked, it will continue to transform work in ways that deepen precarity, intensify surveillance, and widen existing inequalities. Technological change is not an external force to which societies must simply adapt; it is a socially and politically mediated process. Legal frameworks, collective bargaining, public investment, and democratic regulation all play decisive roles in shaping how technologies are developed and deployed, and to what ends.
