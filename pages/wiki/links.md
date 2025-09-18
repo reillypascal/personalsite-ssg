@@ -73,6 +73,8 @@ tags:
   - <http://viznut.fi/demos/unix/bytebeat_formulas.txt>
 - Resources
   - [Bytebeat Discord](https://discord.gg/n5BXmsbevn)
+- Tutorials
+  - [hello audio in c](https://garten.salat.dev/audio-in-c/hello.html)
 
 ### Classical
 
