@@ -49,18 +49,18 @@ tags:
 - [dspGuru](https://dspguru.com/)
 - [Musicdsp.org](https://www.musicdsp.org/en/latest/)
 
-### Textbooks and Reading
+### Web Textbooks and Reading
 
 - Robert Bristow-Johnson, [_Cookbook formulae for audio EQ biquad filter coefficients_](https://webaudio.github.io/Audio-EQ-Cookbook/Audio-EQ-Cookbook.txt)
   - Text document: light on explanation, but with useful practical implementation details.
-- Julius O. Smith (all freely available online)
+- Julius O. Smith
   - [_Mathematics of the Discrete Fourier Transform (DFT)_](https://ccrma.stanford.edu/~jos/mdft/)
   - [_Introduction to Digital Filters_](https://ccrma.stanford.edu/~jos/filters/)
   - [_Physical Audio Signal Processing_](https://ccrma.stanford.edu/~jos/pasp/)
   - [_Spectral Audio Signal Processing_](https://ccrma.stanford.edu/~jos/sasp/)
-- [List by WolfSound blog](https://thewolfsound.com/resources/)
 - Steven W. Smith, [_The Scientist and Engineer's Guide to Digital Signal Processing_](https://www.dspguide.com/)
-  - An accessible introduction to those without a heavy math background, and available for free online. Book written 1997–1998, and uses BASIC and FORTRAN for examples.
+  - An accessible introduction to those without a heavy math background, and available in both HTML and PDF forms. Book written 1997–1998, and uses BASIC and FORTRAN for examples.
+- [Recommendation list by WolfSound blog](https://thewolfsound.com/resources/)
 
 ## Music
 
@@ -100,6 +100,10 @@ As described [here](https://www.npr.org/2025/08/14/nx-s1-5496512/samuel-coleridg
 
 - [My blogroll](/blogroll) — a list of many interesting blogs I follow, including IndieWeb people, fellow musicians and music academics, and experimental music publications
 - [ribo.zone's links](https://ribo.zone/links)
+
+### Fun Sites
+
+- Rapper [Kreayshawn](https://en.wikipedia.org/wiki/Kreayshawn) has a [personal site](https://kreayshawn.com/) that's a riot of late-90s web design, and on both this and her [smile\.rip](https://www.smile.rip/) site, she expresses nostalgia for people going to and building websites. Smile\.rip even includes a basic guide to making a website under “About,” and try looking at the site on a phone for a fun message!
 
 ### Hypertext
 
