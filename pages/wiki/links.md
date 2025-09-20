@@ -103,6 +103,8 @@ As described [here](https://www.npr.org/2025/08/14/nx-s1-5496512/samuel-coleridg
 
 ### Fun Sites
 
+- Indie rock band [Enon](<https://en.wikipedia.org/wiki/Enon_(band)>) include this link on the inside of the CD tray artwork for their album Hocus Pocus: www.enon.tv/hocus/vt.none/pocus.html. Try clicking around to see what you can find, and make sure you allow audio!
+
 - Rapper [Kreayshawn](https://en.wikipedia.org/wiki/Kreayshawn) has a [personal site](https://kreayshawn.com/) that's a riot of late-90s web design, and on both this and her [smile\.rip](https://www.smile.rip/) site, she expresses nostalgia for people going to and building websites. Smile\.rip even includes a basic guide to making a website under “About,” and try looking at the site on a phone for a fun message!
 
 ### Hypertext
