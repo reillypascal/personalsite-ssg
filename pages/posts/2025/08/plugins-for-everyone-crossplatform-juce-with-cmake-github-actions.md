@@ -1,12 +1,12 @@
 ---
 title: "Plugins for Everyone! Cross-Platform JUCE with CMake & GitHub Actions"
-description: "My C++ reverb plugin is finally available for macOS, Windows, and Linux! Here's how I'm using JUCE's CMake API and GitHub actions to make that possible." 
+description: "My C++ reverb plugin is finally available for macOS, Windows, and Linux! Here's how I'm using JUCE's CMake API and GitHub actions to make that possible."
 fedi_url:
   - https://hachyderm.io/@reillypascal/114954962043649522
   - https://bsky.app/profile/reillypascal.bsky.social/post/3lvecfshtuk2y
-og_image: 
-og_image_width: 
-og_image_height: 
+og_image:
+og_image_width:
+og_image_height:
 date: 2025-08-01T14:31:00-0400
 octothorpes:
   - Audio
@@ -35,21 +35,21 @@ The JUCE C++ framework is a popular way to build audio plugins. When you first l
 
 ## CMake and JUCE
 
-When I started on the [JUCE CMake API](https://github.com/juce-framework/JUCE/blob/d6181bde38d858c283c3b7bf699ce6340c050b5d/docs/CMake%20API.md#L4), I had next to no experience with CMake. The official website has this nice web book [*Mastering CMake*](https://cmake.org/cmake/help/book/mastering-cmake/index.html). Among other things, it has [a step-by-step tutorial](https://cmake.org/cmake/help/book/mastering-cmake/cmake/Help/guide/tutorial/index.html) and [documentation for the `cmake` CLI command](https://cmake.org/cmake/help/latest/manual/cmake.1.html#manual:cmake(1)), which were particularly helpful. You can also look at the examples in the JUCE [examples/CMake folder](https://github.com/juce-framework/JUCE/tree/master/examples/CMake) for reference on the JUCE end of things.
+When I started on the [JUCE CMake API](https://github.com/juce-framework/JUCE/blob/d6181bde38d858c283c3b7bf699ce6340c050b5d/docs/CMake%20API.md#L4), I had next to no experience with CMake. The official website has this nice web book [_Mastering CMake_](https://cmake.org/cmake/help/book/mastering-cmake/index.html). Among other things, it has [a step-by-step tutorial](https://cmake.org/cmake/help/book/mastering-cmake/cmake/Help/guide/tutorial/index.html) and [documentation for the `cmake` CLI command](<https://cmake.org/cmake/help/latest/manual/cmake.1.html#manual:cmake(1)>), which were particularly helpful. You can also look at the examples in the JUCE [examples/CMake folder](https://github.com/juce-framework/JUCE/tree/master/examples/CMake) for reference on the JUCE end of things.
 
 Below is the CMakeLists.txt file for my [algorithmic reverb plugin](https://github.com/reillypascal/RSAlgorithmicVerb)—this goes in the root directory. Let's go through line by line:
+
 - The [`cmake_minimum_required`](https://cmake.org/cmake/help/latest/command/cmake_minimum_required.html) statement should be the first line in any CMakeLists.txt file.
 - Without [`set(CMAKE_EXPORT_COMPILE_COMMANDS ON)`](https://cmake.org/cmake/help/latest/command/set.html), my text editor (currently using Zed and Neovim) can't find the JUCE imports it needs.
 - The [`project`](https://cmake.org/cmake/help/latest/command/project.html) statement gives the name/version.
-- [`add_subdirectory(JUCE)`](https://cmake.org/cmake/help/latest/command/add_subdirectory.html): if you clone the [JUCE framework](https://github.com/juce-framework/JUCE) into the working directory (`git clone https://github.com/juce-framework/JUCE.git`), this statement will make the resulting folder available. 
-    - I've seen the [CPM](https://github.com/cpm-cmake/CPM.cmake) package manager used (e.g., in [this video from WolfSound](https://www.youtube.com/watch?v=Uq7Hwt18s3s)) to bring in these dependencies, but I was having some kind of issue with dependencies being included twice and decided to figure that out later.
-- The [`juce_add_plugin`](https://github.com/juce-framework/JUCE/blob/d6181bde38d858c283c3b7bf699ce6340c050b5d/docs/CMake%20API.md#juce_add_target) line is from the JUCE API. This contains a list of options and metadata for the plugin. 
-    - Note in particular `COPY_PLUGIN_AFTER_BUILD TRUE`, and the following two lines `VST3_COPY_DIR "/Library/Audio/Plug-Ins/VST3"` and `AU_COPY_DIR "/Library/Audio/Plug-Ins/Components"`. If you uncomment these, CMake will copy the plugin files to the given directories after building. You *don't* want this for the GitHub actions, 
+- [`add_subdirectory(JUCE)`](https://cmake.org/cmake/help/latest/command/add_subdirectory.html): if you clone the [JUCE framework](https://github.com/juce-framework/JUCE) into the working directory (`git clone https://github.com/juce-framework/JUCE.git`), this statement will make the resulting folder available.
+  - I've seen the [CPM](https://github.com/cpm-cmake/CPM.cmake) package manager used (e.g., in [this video from WolfSound](https://www.youtube.com/watch?v=Uq7Hwt18s3s)) to bring in these dependencies, but I was having some kind of issue with dependencies being included twice and decided to figure that out later.
+- The [`juce_add_plugin`](https://github.com/juce-framework/JUCE/blob/d6181bde38d858c283c3b7bf699ce6340c050b5d/docs/CMake%20API.md#juce_add_target) line is from the JUCE API. This contains a list of options and metadata for the plugin.
+  - Note in particular `COPY_PLUGIN_AFTER_BUILD TRUE`, and the following two lines `VST3_COPY_DIR "/Library/Audio/Plug-Ins/VST3"` and `AU_COPY_DIR "/Library/Audio/Plug-Ins/Components"`. If you uncomment these, CMake will copy the plugin files to the given directories after building. You _don't_ want this for the GitHub actions,
 - [`juce_generate_juce_header`](https://github.com/juce-framework/JUCE/blob/d6181bde38d858c283c3b7bf699ce6340c050b5d/docs/CMake%20API.md#juce_generate_juce_header) generates the `JuceHeader.h` file. As the link above describes and [Sudara demonstrates](https://melatonin.dev/manuals/pamplejuce/juce/juceheader-h/), if you're not using the Projucer you can include the JUCE module(s) you need directly.
 - [`target_sources`](https://cmake.org/cmake/help/latest/command/target_sources.html) lists the .cpp that need to be included in the project.
 - [`target_compile_definitions`](https://cmake.org/cmake/help/latest/command/target_compile_definitions.html) adds preprocessor definitions to the target—see the options used below.
 - [`target_link_libraries`](https://cmake.org/cmake/help/latest/command/target_link_libraries.html): in the `PRIVATE` field, we include the JUCE modules we're using in this project. In the `PUBLIC` field, we include some recommended flags.
-
 
 ```cmake
 cmake_minimum_required(VERSION 3.22)

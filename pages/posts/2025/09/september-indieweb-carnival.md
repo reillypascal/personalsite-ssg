@@ -2,6 +2,8 @@
 title: "September IndieWeb Carnival: Second-Person Birds"
 description: A short piece for this month's IndieWeb blog carnival on Sophia's prompt “second-person birds”
 fedi_url:
+  - https://hachyderm.io/@reillypascal/115265838445428175
+  - https://bsky.app/profile/reillypascal.bsky.social/post/3lzoe6d3se225
 og_image:
 og_image_width:
 og_image_height:
