@@ -25,7 +25,7 @@ You feel the acceleration of the earth below you, its wide surface supporting yo
 
 Late that evening, as you take out the recycling, you hear birds. Their calls trace out the space around you — the city filtering and reverberating the calls more or less, and in different ways, depending on distance and location. You hear them (for once) without the filter of your thoughts overlaid. Their calls do not mean anything in particular, at least to you, and for that, you are grateful.
 
-As your eyes pass over a fence you see every day on returning home, you feel less real for a moment, but the fence is realer than it's ever been before. It doesn't enclose you — it's only one layer of many, and you can sense the others faintly beyond it.
+As your eyes pass over a patch of ground you see every day on returning home, you feel less real for a moment, but the patch is realer than it's been before. There are many others almost (but not quite) like it, and although your view is obstructed, you can sense them faintly beyond it.
 
 On hearing the crickets in the distance, you decide to linger a moment longer. One sound is a continuous wave of trilling, many voices blending into one. In front of that (you can feel the depth of sound now), individual scratches are much clearer, less blurred by the air between you.
 
