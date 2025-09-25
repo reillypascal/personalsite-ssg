@@ -5,7 +5,7 @@ fedi_url:
 og_image:
 og_image_width:
 og_image_height:
-date: 2025-09-25T12:30:00-0400
+date: 2025-09-25T08:38:00-0400
 octothorpes:
   -
 tags:
