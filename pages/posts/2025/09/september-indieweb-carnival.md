@@ -37,4 +37,4 @@ You continue back indoors.
 
 ## Postscript
 
-This was written for the September 2025 [IndieWeb blog carnival](). [Sophia is hosting this month](https://toground.link/second-person-birds/), and the theme is “second-person birds.” On her blog [to ground](https://toground.link/), she writes about nature in the second person.
+This was written for the September 2025 [IndieWeb blog carnival](https://indieweb.org/IndieWeb_Carnival). [Sophia is hosting this month](https://toground.link/second-person-birds/), and the theme is “second-person birds.” On her blog [to ground](https://toground.link/), she writes about nature in the second person.
