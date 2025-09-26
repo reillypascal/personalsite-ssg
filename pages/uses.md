@@ -127,13 +127,14 @@ tags:
 
 ### Inks
 
-- Aurora, ”Black”
-- Diamine, “Oxblood” and “Registrar's”
+- Diamine, “Onyx Black,” “Oxblood,” and “Registrar's”
 - Platinum, “Lavender Black”
 - Robert Oster, “Aqua” and “Sydney Lavender”
 - Sailor, “Hana Gokoro,” “Studio 024,” and “Yoi”
 - Troublemaker, “Petrichor”
 - Wearingeul, “The Black Cat”
+
+<!-- - Aurora, ”Black” -->
 
 ### Notebooks, Misc.
 
