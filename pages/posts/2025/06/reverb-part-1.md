@@ -1,7 +1,7 @@
 ---
 title: "Reverb Part 1—“Freeverb”"
 description: I discuss how algorithmic reverbs work using the popular “Freeverb.” I give details on feedforward/feedback delays and allpass filters, and I include a Max/MSP patch to play with.
-fedi_url: 
+fedi_url:
   - https://hachyderm.io/@reillypascal/114631684215191307
   - https://bsky.app/profile/reillypascal.bsky.social/post/3lquq5dpkis2c
 og_image: /media/blog/2025/06/reverb_1/freeverb_og.jpg
@@ -16,6 +16,7 @@ octothorpes:
 tags:
   - post
   - plugin
+  - audio
   - dsp
   - reverb
   - schroeder
@@ -39,9 +40,9 @@ Sean Costello of Valhalla DSP has a [series](https://valhalladsp.com/2021/09/20/
 
 ### Feedforward and Feedback Delays
 
-In the most basic form of delay, we take a copy of the incoming audio signal, delay it by a certain amount, and combine it with the original signal, usually with the option to adjust the proportions of original and delayed copies. To contrast with the other types of delay, this is often referred to as a “feedforward” delay—the delayed copy is “fed forward” and recombined with the original without any “feedback,” which we will discuss in the next section. 
+In the most basic form of delay, we take a copy of the incoming audio signal, delay it by a certain amount, and combine it with the original signal, usually with the option to adjust the proportions of original and delayed copies. To contrast with the other types of delay, this is often referred to as a “feedforward” delay—the delayed copy is “fed forward” and recombined with the original without any “feedback,” which we will discuss in the next section.
 
-In the diagram below, $x(n)$ represents the incoming signal; $z^{-M}$ is the delay block (with $M$ representing the amount of delay in samples); [^1] $b_0$ and $b_M$ represent the amount of gain applied to the original and delayed copies respectively; [^2] the $+$ symbol represents summing the two copies; and $y(n)$ is the output signal. 
+In the diagram below, $x(n)$ represents the incoming signal; $z^{-M}$ is the delay block (with $M$ representing the amount of delay in samples); [^1] $b_0$ and $b_M$ represent the amount of gain applied to the original and delayed copies respectively; [^2] the $+$ symbol represents summing the two copies; and $y(n)$ is the output signal.
 
 <figure>
 
@@ -50,7 +51,7 @@ In the diagram below, $x(n)$ represents the incoming signal; $z^{-M}$ is the del
 <figcaption>Feedforward delay/comb filter (diagram from <a href="https://ccrma.stanford.edu/~jos/pasp04/Feedforward_Comb_Filters.html">Julius O. Smith</a>)</figcaption>
 </figure>
 
-Next, we have a “feedback” delay. Note how in the diagram below, the incoming signal is summed with the fed-back output of the delay *before* entering the delay; the gain $-a_M$ applied to the fed-back output of the delay is *negative*; and the output of the whole delay $y(n)$ is taken from that sum of the input and feedback *before* it enters the delay.
+Next, we have a “feedback” delay. Note how in the diagram below, the incoming signal is summed with the fed-back output of the delay _before_ entering the delay; the gain $-a_M$ applied to the fed-back output of the delay is _negative_; and the output of the whole delay $y(n)$ is taken from that sum of the input and feedback _before_ it enters the delay.
 
 <figure>
 
@@ -77,9 +78,9 @@ Below I have the amplitude curves from feedforward and feedback delays, caused b
 <figcaption>Negative feedback comb filter amplitude plot (diagram from <a href="https://ccrma.stanford.edu/~jos/pasp05/Feedback_Comb_Filter_Amplitude.html">Julius O. Smith</a>)</figcaption>
 </figure>
 
-Notice how the feedforward and feedback amplitude responses are the inverse of each other. Having a negative gain in the feedback loop of a feedback delay is necessary for the peaks to align with where the troughs would be in a feedforward delay that has the same delay time. As [shown here](https://ccrma.stanford.edu/~jos/pasp05/Feedback_Comb_Filter_Amplitude.html), if the feedback delay's gain were positive, the peaks would be at 0.2, 0.4, etc., instead of 0.1, 0.3, etc. 
+Notice how the feedforward and feedback amplitude responses are the inverse of each other. Having a negative gain in the feedback loop of a feedback delay is necessary for the peaks to align with where the troughs would be in a feedforward delay that has the same delay time. As [shown here](https://ccrma.stanford.edu/~jos/pasp05/Feedback_Comb_Filter_Amplitude.html), if the feedback delay's gain were positive, the peaks would be at 0.2, 0.4, etc., instead of 0.1, 0.3, etc.
 
-This alignment is important for our next type of filter: the “allpass” filter. As shown below, we combine a feedforward delay with a feedback delay that has a negative gain on the feedback. As a result, our peaks and troughs in the frequency response cancel out. This kind of delay configuration has a “flat” frequency response; all frequencies pass through at the same loudness. 
+This alignment is important for our next type of filter: the “allpass” filter. As shown below, we combine a feedforward delay with a feedback delay that has a negative gain on the feedback. As a result, our peaks and troughs in the frequency response cancel out. This kind of delay configuration has a “flat” frequency response; all frequencies pass through at the same loudness.
 
 <figure>
 
@@ -98,7 +99,7 @@ Now let's put these all together to make a reverb!
 
 Manfred Schroeder has two papers from 1961 that introduce the idea of allpasses and using them for reverberators.
 
-In *“Colorless” Artificial Reverberation*, [^3] Schroeder and co-author B.F. Logan note six features that they seek from a delay-based reverberator:
+In _“Colorless” Artificial Reverberation_, [^3] Schroeder and co-author B.F. Logan note six features that they seek from a delay-based reverberator:
 
 1. There should be a flat frequency response
 2. Normal modes (i.e., resonant emphases on specific frequencies) “must overlap and cover the entire audio frequency range”
@@ -107,11 +108,11 @@ In *“Colorless” Artificial Reverberation*, [^3] Schroeder and co-author B.F.
 5. Echoes must be non-periodic (i.e., no “flutter echoes”)
 6. “Periodic or comb-like” frequency responses must be avoided
 
-Below, I have an 808 drum machine clap played through a feedback comb filter. The delay is set at successively shorter lengths, from 50ms down to 5ms. Notice how at longer delay times, there is a “fluttering” tremolo effect. This is similar to the echoes with two walls directly facing each other, as in a long, narrow hall. At shorter lengths, there is an audible tone created by the repeated echoes. Both of these features are undesirable in a reverb effect. 
+Below, I have an 808 drum machine clap played through a feedback comb filter. The delay is set at successively shorter lengths, from 50ms down to 5ms. Notice how at longer delay times, there is a “fluttering” tremolo effect. This is similar to the echoes with two walls directly facing each other, as in a long, narrow hall. At shorter lengths, there is an audible tone created by the repeated echoes. Both of these features are undesirable in a reverb effect.
 
 <audio controls src="/media/blog/2025/06/reverb_1/clap_comb.mp3" title="feedback comb-filtered clap"></audio>
 
-In *“Colorless” Artificial Reverberation*, Schroeder and Logan propose a chain of allpass filters as an answer to this issue. The allpass filter is already better than the feedback comb at creating smooth-sounding results, and to improve on this further, the authors suggest “incommensurate” delay times. In other words, the delay times do not easily divide into each other, preventing the echoes from one allpass from lining up with another. The result of the incommensurate delay times is something more like the random tapping of rain, rather than any periodic rhythm.
+In _“Colorless” Artificial Reverberation_, Schroeder and Logan propose a chain of allpass filters as an answer to this issue. The allpass filter is already better than the feedback comb at creating smooth-sounding results, and to improve on this further, the authors suggest “incommensurate” delay times. In other words, the delay times do not easily divide into each other, preventing the echoes from one allpass from lining up with another. The result of the incommensurate delay times is something more like the random tapping of rain, rather than any periodic rhythm.
 
 On this algorithm, [Sean Costello comments that](https://valhalladsp.com/2021/09/22/getting-started-with-reverb-design-part-2-the-foundations/)
 
@@ -119,7 +120,7 @@ On this algorithm, [Sean Costello comments that](https://valhalladsp.com/2021/09
 
 As Costello then mentions, some reverbs such as the [Eventide Blackhole](https://store.eventideaudio.com/products/blackhole) make artistic use of the weirdness of this structure. However, it would be helpful to have a more general-purpose algorithm.
 
-Below I have a synth riff: first the dry signal, then a mix of the dry signal with a “wet” signal through 8 series allpasses. For the allpass example, I increase the feedforward/feedback parameter from about 0.1 up to 1, then back to 0.1 again. 
+Below I have a synth riff: first the dry signal, then a mix of the dry signal with a “wet” signal through 8 series allpasses. For the allpass example, I increase the feedforward/feedback parameter from about 0.1 up to 1, then back to 0.1 again.
 
 <audio controls src="/media/blog/2025/06/reverb_1/pck_supersaw_dry.mp3" title="synth riff: dry"></audio>
 
@@ -129,11 +130,11 @@ As mentioned, this doesn't sound as natural as we'd like, as well as not being s
 
 ### Parallel Combs into Series Allpasses
 
-In *Natural Sounding Artificial Reverberation*, [^4] Schroeder proposes the class of algorithm shown below. Feedback comb filters create a nice exponential amplitude decay (unlike the allpass chain in which, as mentioned above, both attack and decay depend on the same parameter). In response to the problem of “coloration” in the frequency spectrum, Schroeder notes that
+In _Natural Sounding Artificial Reverberation_, [^4] Schroeder proposes the class of algorithm shown below. Feedback comb filters create a nice exponential amplitude decay (unlike the allpass chain in which, as mentioned above, both attack and decay depend on the same parameter). In response to the problem of “coloration” in the frequency spectrum, Schroeder notes that
 
 > extreme response irregularities are imperceptible when the density of peaks and valleys on the frequency scale is high enough
 
-In other words, if we combine several feedback comb filters in parallel, the “comb teeth” in their frequency spectra will tightly “interlock,” creating what *sounds like* a flat frequency response. 
+In other words, if we combine several feedback comb filters in parallel, the “comb teeth” in their frequency spectra will tightly “interlock,” creating what _sounds like_ a flat frequency response.
 
 The next problem after the feedback comb's frequency response is the “flutter” effect. Schroeder gives the goal of around 1000 echoes per second to make a “natural”-sounding reverb. Assuming 4 parallel comb filters with delays that don't easily divide into each other, but are in the neighborhood of 40ms (25 echoes per second), we get only about 100 echoes per second. Assuming (as Schroeder does) that a single allpass multiplies the number of echoes by about 3, two series allpasses after 4 parallel combs is enough to meet the minimum requirement.
 
@@ -154,9 +155,9 @@ Below I have first the dry synth riff, followed by the riff through the “Freev
 
 One additional feature of this particular version is that there is a first-order (i.e., 6dB/octave) low-pass filter in the feedback loop of the combs. This causes higher frequencies to decay faster. While Schroeder and Logan seek to make all frequencies decay at an equal rate, the most important aspect seems to be to prevent individual frequency bands from ringing and standing out. Reverberations in the physical world decay more quickly at higher frequencies, due (at least in my understanding) to the sound absorbency of building materials, as well as the fact that [the atmosphere can be approximated with a low-pass filter](https://computingandrecording.wordpress.com/2017/07/05/approximating-atmospheric-absorption-with-a-simple-filter/).
 
-Some final design notes: First, we have the stereo spread. The right channel has a slightly longer delay time than the left, with a default value of 23 samples added to each delay value, according to [Julius O. Smith](https://ccrma.stanford.edu/~jos/pasp/Freeverb.html). This simulates the effect of different physical environments to the right and left of the listener. Second, in my JUCE implementation I have a [low-frequency oscillator (LFO)](https://en.wikipedia.org/wiki/Low-frequency_oscillation) slowly modulating the first and third allpass filter delay times longer and shorter, giving a [chorusing effect](https://en.wikipedia.org/wiki/Chorus_(audio_effect)) and making the sound richer.
+Some final design notes: First, we have the stereo spread. The right channel has a slightly longer delay time than the left, with a default value of 23 samples added to each delay value, according to [Julius O. Smith](https://ccrma.stanford.edu/~jos/pasp/Freeverb.html). This simulates the effect of different physical environments to the right and left of the listener. Second, in my JUCE implementation I have a [low-frequency oscillator (LFO)](https://en.wikipedia.org/wiki/Low-frequency_oscillation) slowly modulating the first and third allpass filter delay times longer and shorter, giving a [chorusing effect](<https://en.wikipedia.org/wiki/Chorus_(audio_effect)>) and making the sound richer.
 
-If you want to play with this reverb algorithm in Max/MSP, you can use the patch below: 
+If you want to play with this reverb algorithm in Max/MSP, you can use the patch below:
 
 <div class="maxmsp-clipboard">
 <details>
@@ -352,12 +353,12 @@ L
 
 ## Final Notes
 
-That's all for today! My plan is to do a series of posts, each covering a class of reverb algorithms. For the next one, I'll be writing about rings of allpass filters—this is relevant to, for example, [Jon Dattorro's popular 1997 algorithm](https://ccrma.stanford.edu/~dattorro/EffectDesignPart1.pdf) that appears to be based on a plate reverb from [Lexicon's 224 and 480 reverb units](https://en.wikipedia.org/wiki/Lexicon_(company)#Reverb_and_effects). Until next time!
+That's all for today! My plan is to do a series of posts, each covering a class of reverb algorithms. For the next one, I'll be writing about rings of allpass filters—this is relevant to, for example, [Jon Dattorro's popular 1997 algorithm](https://ccrma.stanford.edu/~dattorro/EffectDesignPart1.pdf) that appears to be based on a plate reverb from [Lexicon's 224 and 480 reverb units](<https://en.wikipedia.org/wiki/Lexicon_(company)#Reverb_and_effects>). Until next time!
 
 [^1]: This notation comes from the idea of the [Z-transform](https://en.wikipedia.org/wiki/Z-transform).
 
 [^2]: Note that the triangle symbol is the standard DSP symbol for amplification/an amplifier. Also note that $b$ and $a$ are often used for feedforward/feedback coefficients, although it seems to be somewhat inconsistent which is which.
 
-[^3]: M. R. Schroeder and B. F. Logan, “‘Colorless’ artificial reverberation,” *IRE Transactions on Audio*, vol. AU-9, no. 6, pp. 209–214, Nov. 1961, doi: [10.1109/TAU.1961.1166351](https://doi.org/10.1109/TAU.1961.1166351).
+[^3]: M. R. Schroeder and B. F. Logan, “‘Colorless’ artificial reverberation,” _IRE Transactions on Audio_, vol. AU-9, no. 6, pp. 209–214, Nov. 1961, doi: [10.1109/TAU.1961.1166351](https://doi.org/10.1109/TAU.1961.1166351).
 
-[^4]: M. R. Schroeder, “Natural sounding artificial reverberation,” in *Audio Engineering Society Convention 13*, Audio Engineering Society, 1961. Accessed: Dec. 29, 2024. \[Online]. Available: [https://www.aes.org/e-lib/download.cfm?ID=343](https://www.aes.org/e-lib/download.cfm?ID=343)
+[^4]: M. R. Schroeder, “Natural sounding artificial reverberation,” in _Audio Engineering Society Convention 13_, Audio Engineering Society, 1961. Accessed: Dec. 29, 2024. \[Online]. Available: [https://www.aes.org/e-lib/download.cfm?ID=343](https://www.aes.org/e-lib/download.cfm?ID=343)
