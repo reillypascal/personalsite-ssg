@@ -159,9 +159,6 @@ As I mentioned, in my next post I'll cover the famous 1997 Dattorro plate algori
 
 [^7]: A. Rungta, N. Rewkowski, R. Klatzky, and D. Manocha, “P-Reverb: Perceptual Characterization of Early and Late Reflections for Auditory Displays,” in 2019 IEEE Conference on Virtual Reality and 3D User Interfaces (VR), Mar. 2019, pp. 455–463. doi: 10.1109/VR.2019.8797914. Available: https://arxiv.org/pdf/1902.06880
 
-<!-- Classic Lexicon Units & -->
-<!-- appears in the classic Lexicon 224/480 units, among many other places -->
-<!-- ## Dattorro, Griesinger, and the Lexicon LX244/LX480 -->
 <!-- Gardner takes this idea a step further.  -->
 <!-- looking to combine the allpasses “in a way that will lead to an exponential buildup of echoes as occurs in real rooms.” To do this, Gardner  -->
 
@@ -186,7 +183,6 @@ As I mentioned, in my next post I'll cover the famous 1997 Dattorro plate algori
 
 <!-- With regards to early vs. late reflections, [this post from Aural Exchange](https://www.auralexchange.com/knowledgebase/understanding-sound-reflections/) -->
 
-<!-- In my next post, I'll describe Dattorro's 1997 “plate”-style reverb -->
 <!-- ### Implementing Nested Allpasses
 
 Take all allpass filters from different “taps” in a single delay line
