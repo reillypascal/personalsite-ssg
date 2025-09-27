@@ -5,7 +5,7 @@ fedi_url:
 og_image:
 og_image_width:
 og_image_height:
-date: 2025-09-30T12:30:00-0400
+date: 2025-09-29T12:30:00-0400
 octothorpes:
   - Audio
   - audio
@@ -63,15 +63,6 @@ A block diagram of a double nested allpass filter [^3]
 </figcaption>
 </figure>
 
-<!-- <figure>
-
-![A DSP block diagram. Input is fed forward around a delay G(z) with negative gain, and fed back into G(z) with positive gain. G(z) must be allpass.](/media/blog/2025/09/reverb_2/nested-allpass.webp)
-
-<figcaption>Nested allpass block diagram (Gardner, p. 10)</figcaption>
-</figure> -->
-
-<!-- https://ccrma.stanford.edu/~jos/pasp/Nested_Allpass_Filters.html -->
-
 ## Allpass Rings
 
 To multiply the echoes even further, Gardner chains a mix of standard and nested allpass filters in series, and then feeds the end of that chain into the chain's input. [^4] Last time, we placed a low-pass filter in the feedback path of individual comb filters. This time, Gardner suggests placing a single low-pass filter in the feedback path for the entire chain. In both contexts, the purpose is to cause higher frequencies to decay faster, similar to the effect of the atmosphere in a real room.
@@ -80,12 +71,9 @@ Gardner also suggests taking the output sound from multiple points along the all
 
 Both the multiple outputs and the ring structure prevent this reverberator from being allpass. The ring structure in particular is a comb filter, which ([as we discussed previously](/posts/2025/06/reverb-part-1/#feedforward-and-feedback-delays)) introduces comb tooth-like peaks and valleys in the frequency spectrum. While Gardner does not go into depth about why the comb filtering is acceptable, my best understanding is that it's because the series allpasses add together to create a long delay time.
 
-As I demonstrated [here](/posts/2025/06/reverb-part-1/#series-allpasses) and in the audio example below, feedback combs with longer delay times create an audible “flutter,” and shorter times create a metallic sound. The long time in the allpass ring means no metallic sounds, and because the chain of nested allpasses multiplies the echo density so much, the flutter isn't particularly noticeable.
+As I discussed [here](/posts/2025/06/reverb-part-1/#series-allpasses), and as the audio example below demonstrates, feedback combs with longer delay times create an audible “flutter,” and shorter times create a metallic sound. The long time in the allpass ring means no metallic sounds, and because the chain of nested allpasses multiplies the echo density so much, the flutter isn't meaningfully audible.
 
-<!-- long = trem and the allpasses multiply that
-short = metallic, and it's long so we avoid that -->
-
-<audio controls src="/media/blog/2025/06/reverb_1/clap_comb.mp3" title="feedback comb-filtered clap"></audio>
+<audio controls src="/media/blog/2025/09/reverb_2/clap_comb_demo.mp3" title="feedback comb-filtered clap"></audio>
 
 ### Gardner's Reverb Designs
 
@@ -124,18 +112,40 @@ Large room reverberator [^6]
 </figcaption>
 </figure>
 
-<!-- ### Implementing Nested Allpasses
+Note that these designs have a mix of delays, allpasses, nested allpasses, and double nested allpasses. The medium reverberator also has two inputs, and applies the gain both in the feedback loop and in the middle of the allpass chain, directly before the second input.
 
-Take all allpass filters from different “taps” in a single delay line
+## Reverb Characteristics
+
+Gardner describes these as “room” reverbs. The LedgerNote blog [describes of the features of reverbs labeled as “rooms” as follows](https://ledgernote.com/columns/studio-recording/types-of-reverb/)
+
+- Often imitate bedroom–living room-sized rooms
+- Short decay (0.75s)
+- Heavy on early reflections
+- Dense body
+- Low to mid frequencies tend to build up, but can be EQ-ed out if necessary
+
+Early reflections refer to sounds within the first 80 ms or so, followed by late reflections. Summarizing psychoacoustic research on the matter, Rungta et al. note that early reflections positively correlate with “the perception of auditory spaciousness,” are “very important in concert halls,” and can “improve speech clarity in rooms.” [^7]
+
+Likely because these reflections have traveled a short distance to the listener, maybe only reflecting a single time, these help the listener hear the shape of the room. This implies for “room”-type reverbs that we get a particularly strong sense of the room's dimensions. In my next post, I'll describe Dattorro's 1997 “plate”-style reverb, and we'll hear how that reverb sounds more amorphous, with less sense of space.
 
 <figure>
 
-![](/media/blog/2025/09/reverb_2/tapped-delay-allpass-reverb.webp)
+![](/media/blog/2025/09/reverb_2/early-late-reflections.webp)
 
-<figcaption>Reverberator with nested and series allpasses, all tapped from a single delay line (Gardner, p. 12)</figcaption>
-</figure> -->
+<figcaption>
 
-[^1]: Unfortunately this paper is unpublished, and I was only able to find William Gardner's description of it, but the full citation is listed here: Vercoe, B. and M. Puckette. 1985. Synthetic Spaces — Artificial Acoustic Ambiance from Active Boundary Computation. unpublished NSF proposal . Boston, MA. Music and Cognition Office at MIT Media Lab.
+Direct sound, early reflections, and late reflections/reverberation [^7]
+
+</figcaption>
+</figure>
+
+## Postscript
+
+These algorithms are all available in [my algorithmic reverb plugin](https://github.com/reillypascal/RSAlgorithmicVerb/releases) via the dropdown menu at the bottom. I also have Max/MSP abstractions of them [available on my Codeberg](). I would love to hear if you try them out!
+
+As I mentioned, in my next post I'll cover the famous 1997 Dattorro plate algorithm that also uses an allpass ring structure. This is in Max/MSP as the \[yafr2\] abstraction, and in the [Valley Audio “Plateau” module](https://library.vcvrack.com/Valley/Plateau) for VCV Rack, among numerous other places, and is likely based on an algorithm from the Lexicon 224/480 reverb units. I hope to see you then!
+
+[^1]: Unfortunately this paper is unpublished, and I was only able to find William Gardner's description of it, but here is the full citation: Vercoe, B. and M. Puckette. 1985. Synthetic Spaces — Artificial Acoustic Ambiance from Active Boundary Computation. unpublished NSF proposal . Boston, MA. Music and Cognition Office at MIT Media Lab.
 
 [^2]: W. G. Gardner, “A realtime multichannel room simulator,” _J. Acoust. Soc. Am_, vol. 92, no. 4, p. 2395, 1992. Available: https://pubs.aip.org/asa/jasa/article/92/4_Supplement/2395/646024/A-real-time-multichannel-room-simulator
 
@@ -146,6 +156,8 @@ Take all allpass filters from different “taps” in a single delay line
 [^5]: Gardner 1992, p. 14
 
 [^6]: Gardner 1992, p. 16
+
+[^7]: A. Rungta, N. Rewkowski, R. Klatzky, and D. Manocha, “P-Reverb: Perceptual Characterization of Early and Late Reflections for Auditory Displays,” in 2019 IEEE Conference on Virtual Reality and 3D User Interfaces (VR), Mar. 2019, pp. 455–463. doi: 10.1109/VR.2019.8797914. Available: https://arxiv.org/pdf/1902.06880
 
 <!-- Classic Lexicon Units & -->
 <!-- appears in the classic Lexicon 224/480 units, among many other places -->
@@ -162,3 +174,28 @@ Take all allpass filters from different “taps” in a single delay line
 <!-- Rather than a single straight chain of single and nested allpasses, Gardner finds that taking the end of that chain and feeding it back into the input of the entire chain produces better-sounding results. He comments that -->
 
 <!-- > The harshness, buzziness, and metallic sound of the allpass system is smoothed out, possibly as a result of the increase in echo density caused by the outermost feedback path. [^3] -->
+
+<!-- <figure>
+
+![A DSP block diagram. Input is fed forward around a delay G(z) with negative gain, and fed back into G(z) with positive gain. G(z) must be allpass.](/media/blog/2025/09/reverb_2/nested-allpass.webp)
+
+<figcaption>Nested allpass block diagram (Gardner, p. 10)</figcaption>
+</figure> -->
+
+<!-- https://ccrma.stanford.edu/~jos/pasp/Nested_Allpass_Filters.html -->
+
+<!-- With regards to early vs. late reflections, [this post from Aural Exchange](https://www.auralexchange.com/knowledgebase/understanding-sound-reflections/) -->
+
+<!-- In my next post, I'll describe Dattorro's 1997 “plate”-style reverb -->
+<!-- ### Implementing Nested Allpasses
+
+Take all allpass filters from different “taps” in a single delay line
+
+<figure>
+
+![](/media/blog/2025/09/reverb_2/tapped-delay-allpass-reverb.webp)
+
+<figcaption>Reverberator with nested and series allpasses, all tapped from a single delay line (Gardner, p. 12)</figcaption>
+</figure> -->
+
+<!-- In contrast, Rungta et al. note that late reflections decrease localization ability and speech clarity, but provide cues for the distance of a sound from the listener.  -->
