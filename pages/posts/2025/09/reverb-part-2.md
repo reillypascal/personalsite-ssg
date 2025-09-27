@@ -36,11 +36,11 @@ As we [previously discussed](/posts/2025/06/reverb-part-1/#allpass-filters), an 
 
 Schroeder found that the “smearing” from allpass filters multiplies the number of echoes about threefold. [^1] However, the number of echoes is roughly constant over the duration of the reverberation. In a real room, echoes continually build up over the course of a reverb tail. To achieve this buildup, Barry Vercoe and Miller Puckette propose replacing the delay in an allpass filter with another allpass filter creating a “nested” structure. [^2] Since an allpass filter will multiply the echoes that pass through it, taking the output of the inner allpass and feeding it back to the input will cause that multiplication to compound, increasing the number of echoes over time.
 
-Below are diagrams of this design. Note that in addition to using a single allpass filter as the delay, we can use series allpasses in this role as well. Gardner uses both designs in the reverb algorithms we'll discuss today. [^3]
+Below are diagrams of this design. Note that in addition to using a single allpass filter as the delay, we can use multiple allpasses in series, as well as combining them with simple delays. Gardner uses both options depicted below in the reverb algorithms we'll discuss today. [^3] In the diagrams, $ain$ and $aout$ are the input and output; the $⊕$ symbol means the sum of two signals; and $g1$, $g2$, and $g3$ are separate gain values, with these values made negative for feedforward signals.
 
 <figure>
 
-![](/media/blog/2025/09/reverb_2/single-nested-allpass.webp)
+![A DSP block diagram. Delay 1 and delay 2 are in series. There are feedforward and feedback values around delay 2, as well as around the entire chain of delays.](/media/blog/2025/09/reverb_2/single-nested-allpass.webp)
 
 <figcaption>
 
@@ -51,7 +51,7 @@ A block diagram of a nested allpass filter [^4]
 
 <figure>
 
-![](/media/blog/2025/09/reverb_2/double-nested-allpass.webp)
+![A DSP block diagram. Delay 1, delay 2, and delay 3 are in series. There are feedforward and feedback values around delay 2 and another set around delay 3, as well as around the entire chain of delays.](/media/blog/2025/09/reverb_2/double-nested-allpass.webp)
 
 <figcaption>
 
@@ -74,11 +74,11 @@ As I discussed [here](/posts/2025/06/reverb-part-1/#series-allpasses), and as th
 
 ### Gardner's Reverb Designs
 
-Below are the three designs Gardner gives. The small one is good for decay times between 0.38–0.57 seconds; the medium for 0.58–1.29 seconds; and the large for 1.30 seconds and above. Gardner does not find any particular rule for choosing decay times, noting that the process for designing the three topologies he describes next was “purely empirical.” [^3] As with designing Schroeder reverbs, a good starting point seems to be to avoid delay times that easily divide into each other; this ensures the delays do not rhythmically align.
+Below are the three designs Gardner gives. The small one is good for decay times between 0.38–0.57 seconds; the medium for 0.58–1.29 seconds; and the large for 1.30 seconds and above. Gardner does not find any particular rule for choosing decay times, noting that the process for designing the three topologies he describes next was “purely empirical.” [^3] As with designing Schroeder reverbs, a good starting point seems to be to avoid delay times that easily divide into each other; this ensures the delays do not rhythmically align. The first number next to a delay is the time in milliseconds, and the float value in parentheses is the gain.
 
 <figure>
 
-![](/media/blog/2025/09/reverb_2/small-room.webp)
+![A DSP block diagram. There is a chain of delays and nested allpasses with two outputs taken between the delays, and a 4.2 kHz low pass filter in the feedback loop for the whole chain. Delay list: delay (24 ms); double nested allpass (outer: 35 ms & 0.3, inner: 22 ms & 0.4, 8.3 ms & 0.6); output (0.5 gain); nested allpass (outer: 66 ms & 0.1, inner: 30 ms & 0.4); output (0.5 gain)](/media/blog/2025/09/reverb_2/small-room.webp)
 
 <figcaption>
 
@@ -89,7 +89,7 @@ Small room reverberator [^3]
 
 <figure>
 
-![](/media/blog/2025/09/reverb_2/medium-room.webp)
+![A DSP block diagram. There is a chain of delays and nested allpasses with three outputs taken between the delays, and a 2.5 kHz low pass filter in the feedback loop for the whole chain. Delay list: double nested allpass (outer: 35 ms & 0.3, inner: 8.3 ms & 0.7, 22 ms & 0.5); output (0.5 gain); delay (5 ms); allpass (30 ms & 0.5); delay (67 ms); output (0.5 gain); delay (15 ms); gain; input; nested allpass (outer: 39 ms & 0.3, inner: 9.8 ms & 0.6); output (0.5 gain); delay (108 ms)](/media/blog/2025/09/reverb_2/medium-room.webp)
 
 <figcaption>
 
@@ -100,7 +100,7 @@ Medium room reverberator [^3]
 
 <figure>
 
-![](/media/blog/2025/09/reverb_2/large-room.webp)
+![A DSP block diagram. There is a chain of delays and nested allpasses with two outputs taken between the delays, and a 2.6 kHz low pass filter in the feedback loop for the whole chain. Delay list: allpass (8 ms & 0.3); allpass (12 ms & 0.3); delay (4 ms); output (0.34 gain); delay (17 ms); nested allpass (outer: 87 ms & 0.5, inner: 62 ms & 0.25); delay (31 ms); output (0.14 gain); delay (3 ms) double nested allpass (outer: 120 ms & 0.5, inner: 76 ms & 0.25, 30 ms & 0.25); output (0.14 gain)](/media/blog/2025/09/reverb_2/large-room.webp)
 
 <figcaption>
 
@@ -121,7 +121,7 @@ Likely because these reflections have traveled a short distance to the listener,
 
 <figure>
 
-![](/media/blog/2025/09/reverb_2/early-late-reflections.webp)
+![A list of vertical lines representing echoes that decays as we move toward the right. There is a gap between direct sound and early reflections, early reflections are sparse, and reverberation at the end is dense.](/media/blog/2025/09/reverb_2/early-late-reflections.webp)
 
 <figcaption>
 
@@ -134,7 +134,7 @@ In addition to these early reflections, Costello describes a dense sound and a s
 
 ## Postscript
 
-These algorithms are all available in [my algorithmic reverb plugin](https://github.com/reillypascal/RSAlgorithmicVerb/releases) via the dropdown menu at the bottom. I also have Max/MSP abstractions of them [available on my Codeberg](). I would love to hear if you try them out!
+These algorithms are all available in [my algorithmic reverb plugin](https://github.com/reillypascal/RSAlgorithmicVerb/releases) via the dropdown menu at the bottom. I also have Max/MSP abstractions of them [available on my Codeberg](https://codeberg.org/reillypascal/rs.reverb). I would love to hear if you try them out!
 
 As I mentioned, in my next post I'll cover the famous 1997 Dattorro plate algorithm that also uses an allpass ring structure. This is in Max/MSP as the \[yafr2\] abstraction, and in the [Valley Audio “Plateau” module](https://library.vcvrack.com/Valley/Plateau) for VCV Rack, among numerous other places, and is likely based on an algorithm from the Lexicon 224/480 reverb units. I hope to see you then!
 
