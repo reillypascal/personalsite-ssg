@@ -1,6 +1,6 @@
 ---
 title: "Reverb Part 2—Natural Rooms with Allpass Rings"
-description: I discuss a lovely-sounding family of reverb algorithms that improve on the Schroeder designs from last time. They're available in my VST/AU plugin, and I link to Max/MSP versions as well.
+description: I discuss some lovely-sounding reverbs that make echo densities build up over time, as in a real room. They're available in my VST/AU plugin, and I link to Max/MSP versions as well.
 fedi_url:
   - https://hachyderm.io/@reillypascal/115282840227644998
   - https://bsky.app/profile/reillypascal.bsky.social/post/3lzvvvnvv2227
