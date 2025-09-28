@@ -140,9 +140,9 @@ As I mentioned, in my next post I'll cover the famous 1997 Dattorro plate algori
 [^1]: M. R. Schroeder, “Natural sounding artificial reverberation,” in Audio Engineering Society Convention 13, Audio Engineering Society, 1961. Accessed: Dec. 29, 2024. [Online]. Available: https://www.aes.org/e-lib/download.cfm?ID=343
 
 [^2]:
-    Unfortunately this paper is unpublished, and I was only able to find William Gardner's description of it, but here is the full citation:
+    Unfortunately this paper is unpublished, and I was only able to find William Gardner's description of it, [^1] but here is the citation:
 
-    Vercoe, B. and M. Puckette. 1985. Synthetic Spaces — Artificial Acoustic Ambiance from Active Boundary Computation. unpublished NSF proposal . Boston, MA. Music and Cognition Office at MIT Media Lab.
+    B. Vercoe and M. Puckette, “Synthetic Spaces — Artificial Acoustic Ambiance from Active Boundary Computation,” 1985, _Music and Cognition Office at MIT Media Lab, Boston, MA_.
 
 [^3]: W. G. Gardner, “A realtime multichannel room simulator,” _J. Acoust. Soc. Am_, vol. 92, no. 4, p. 2395, 1992. Available: https://pubs.aip.org/asa/jasa/article/92/4_Supplement/2395/646024/A-real-time-multichannel-room-simulator
 
