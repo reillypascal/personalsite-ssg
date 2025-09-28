@@ -116,7 +116,7 @@ Gardner describes these as “room” reverbs. While they are synthesized, not r
 
 Early reflections refer to sounds within the first 80 ms or so, followed by late reflections. Summarizing psychoacoustic research on the matter, Rungta et al. note that early reflections positively correlate with “the perception of auditory spaciousness,” are “very important in concert halls,” and can “improve speech clarity in rooms.” [^5]
 
-Likely because these reflections have traveled a short distance to the listener, maybe only reflecting a single time, these help the listener hear the shape of the room. This implies for “room”-type reverbs that we get a particularly strong sense of the room's dimensions. In my next post, I'll describe Dattorro's 1997 “plate”-style allpass ring, and we'll hear how that reverb sounds more amorphous, with less sense of space.
+Rungta et al. also note that these early reflections help the listener hear the shape of the room. My best guess for why is because these reflections have traveled a short distance to the listener, maybe only reflecting a single time. This implies for “room”-type reverbs that we get a particularly strong sense of the room's dimensions. In my next post, I'll describe Dattorro's 1997 “plate”-style allpass ring, and we'll hear how that reverb sounds more amorphous, with less sense of space.
 
 <figure>
 
