@@ -18,7 +18,6 @@ tags:
   - maxmsp
   - plugin
 post_series: reverb
-draft: true
 ---
 
 <link rel="stylesheet" type="text/css" href="/styles/notes-photos.css">
