@@ -2,6 +2,8 @@
 title: "Reverb Part 2—Natural Rooms with Allpass Rings"
 description: I discuss a lovely-sounding family of reverb algorithms that improve on the Schroeder designs from last time. They're available in my VST/AU plugin, and I link to Max/MSP versions as well.
 fedi_url:
+  - https://hachyderm.io/@reillypascal/115282840227644998
+  - https://bsky.app/profile/reillypascal.bsky.social/post/3lzvvvnvv2227
 og_image: /media/blog/2025/09/reverb_2/small-room-og.jpg
 og_image_width: 1200
 og_image_height: 630
