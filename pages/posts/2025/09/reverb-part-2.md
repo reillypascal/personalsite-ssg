@@ -1,11 +1,11 @@
 ---
 title: "Reverb Part 2—Natural Rooms with Allpass Rings"
-description: I discuss a lovely-sounding family of reverb algorithms that improve on the Schroeder designs from last time. They're available in my plugin, and I link to Max/MSP versions as well.
+description: I discuss a lovely-sounding family of reverb algorithms that improve on the Schroeder designs from last time. They're available in my VST/AU plugin, and I link to Max/MSP versions as well.
 fedi_url:
 og_image: /media/blog/2025/09/reverb_2/small-room-og.jpg
 og_image_width: 1200
 og_image_height: 630
-date: 2025-09-29T12:30:00-0400
+date: 2025-09-28T12:30:00-0400
 octothorpes:
   - Audio
   - audio
