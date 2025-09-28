@@ -9,8 +9,11 @@ description: List of RSS feeds
 <h1 class="sectionHeader">RSS Feed Links</h1>
 
 Feed of [all posts on this site](/feed.xml)
+
 Feed of [just my blog posts](/blog/feed.xml) — mostly projects, hobbies, and technical writing
+
 Feed of [just my notes](/notes/feed.xml) — photoblogging, daily life, and miscellaneous short posts
+
 Feed of [just my interactions](/interactions/feed.xml) — [IndieWeb](https://indieweb.org/) likes, RSVPs, replies, etc.
 
 </article>
