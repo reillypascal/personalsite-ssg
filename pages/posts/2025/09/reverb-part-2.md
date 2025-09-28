@@ -5,7 +5,7 @@ fedi_url:
 og_image: /media/blog/2025/09/reverb_2/small-room-og.jpg
 og_image_width: 1200
 og_image_height: 630
-date: 2025-09-28T12:30:00-0400
+date: 2025-09-28T12:16:34-0400
 octothorpes:
   - Audio
   - audio
