@@ -4,18 +4,6 @@ title: Reilly Spitzfaden, Composer
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <!-- 
-Welcome to the source code - here, have some frogs!
-              _         _
-  __   ___.--'_`.     .'_`--.___   __
- ( _`.'. -   'o` )   ( 'o`   - .`.'_ )
- _\.'_'      _.-'     `-._      `_`./_
-( \`. )    //\`         '/\\    ( .'/ )
- \_`-'`---'\\__,       ,__//`---'`-'_/
-  \`        `-\         /-'        '/
-   `                               '   VK
-    -->
-
         <!-- General metadata -->
         <title>{{ title }}</title>
         <meta charset="utf-8"/>
@@ -72,35 +60,33 @@ Welcome to the source code - here, have some frogs!
         <!-- rel="me" verification -->
         <link rel="me" href="https://hachyderm.io/@reillypascal" />
         <link rel="me" href="https://github.com/reillypascal" />
-
-        <!-- IndieAuth -->
-        <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+        {%- comment %} <!-- IndieAuth -->
+        <link rel="authorization_endpoint" href="https://indieauth.com/auth"> {%- endcomment %}
 
         <!-- Webmentions -->
         <link rel="webmention" href="https://webmention.io/reillyspitzfaden.com/webmention" />
         <link rel="pingback" href="https://webmention.io/reillyspitzfaden.com/xmlrpc" />
-        
-        {%- if octothorpes %}
+
+        {%- comment %}{%- if octothorpes %}
         <!-- Octothorpes -->
         <!-- Indexing -->
         <link 
         rel="preload" 
         as="fetch" 
         href="https://octothorp.es/?uri=https://reillyspitzfaden.com{{ page.url }}" />
-        
+
         <!-- Tags -->
         {%- for tag in octothorpes %}
         <link 
         rel="octo:octothorpes"
         href="{{ tag }}" />
         {%- endfor %}
-        
+
         <!-- Endorse backlinks -->
         <link 
         rev="octo:octothorpes" 
         href="*" />
-        {%- endif %}
-        
+        {%- endif %} {%- endcomment %}
     </head>
     <body>
         <a class="skip-link" href="#content">Skip to content</a>
