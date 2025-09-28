@@ -73,7 +73,7 @@ As I discussed [here](/posts/2025/06/reverb-part-1/#series-allpasses), and as th
 
 ### Gardner's Reverb Designs
 
-Below are the three designs Gardner gives. The small one is good for decay times between 0.38–0.57 seconds; the medium for 0.58–1.29 seconds; and the large for 1.30 seconds and above. Gardner does not find any particular rule for choosing decay times, noting that the process for designing the three topologies he describes next was “purely empirical.” [^3] As with designing Schroeder reverbs, a good starting point seems to be to avoid delay times that easily divide into each other; this ensures the delays do not rhythmically align. The first number next to a delay is the time in milliseconds, and the float value in parentheses is the gain.
+Below are the three designs Gardner gives. The small one is good for decay times between 0.38–0.57 seconds; the medium for 0.58–1.29 seconds; and the large for 1.30 seconds and above. Gardner does not find any particular rule for choosing decay times, noting that the process for designing the three topologies he describes was “purely empirical.” [^3] As with designing Schroeder reverbs, a good starting point seems to be to avoid delay times that easily divide into each other; this ensures the delays do not rhythmically align. The first number next to a delay is the time in milliseconds, and the float value in parentheses is the gain.
 
 <figure>
 
