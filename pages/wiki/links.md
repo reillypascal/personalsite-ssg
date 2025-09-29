@@ -62,6 +62,23 @@ tags:
   - An accessible introduction to those without a heavy math background, and available in both HTML and PDF forms. Book written 1997–1998, and uses BASIC and FORTRAN for examples.
 - [Recommendation list by WolfSound blog](https://thewolfsound.com/resources/)
 
+## Media & Media Arts
+
+### Old Media
+
+- [TWC Classics](https://twcclassics.com/)
+
+> TWC Classics is the oldest and largest website devoted to The Weather Channel. Created during the summer of 1997, TWC Classics has amassed a large collection of audio, video, images, and information. Over 8,000 files and counting! Join me in taking a nostalgic look back at The Weather Channel's first 28 years.
+
+- [Trammell Starks / Information / TWC Classics](https://twcclassics.com/information/trammell-starks.html)
+  - Trammell Starks composed some of the most well-known music for The Weather Channel. I first learned about him when Angel Marcloid (of Fire-Toolz, Nonlocal Forecast, and more) [shared his music](https://fire-toolz.tumblr.com/post/183966509639/this-nonlocal-forecast-mix-offers-smooth-jazz-fit) as something that inspires her. [She even did a cover of his song “Life”](https://fire-toolz.bandcamp.com/track/life). Listening to Fire-Toolz, as well as composers like [Alex Temple](https://www.alextemplemusic.com/), I've come to appreciate “cheesy” music like this.
+
+### Transmission Arts
+
+- [wavefarm.org](https://wavefarm.org/)
+
+> Wave Farm is an international transmission arts organization driven by experimentation with the electromagnetic spectrum. We cultivate creative practices in radio and support artists and nonprofit organizations in their cultural endeavors.
+
 ## Music
 
 ### Bytebeat
@@ -76,23 +93,14 @@ tags:
 - Tutorials
   - [hello audio in c](https://garten.salat.dev/audio-in-c/hello.html)
 
-### Classical
+<!-- ### Classical
 
 - [Samuel Coleridge-Taylor Project](https://www.mikerepper.com/coleridge-taylor-project.html) from conductor Michael Pepper
 
 > In celebration of Samuel Coleridge-Taylor's 150th Birthday Anniversary, the creative team has created modern performance editions (scores and parts) of
 > _Toussaint L'Ouverture, Ballade Op. 4_, and the Suite from “24 Negro Melodies,” each of which is offered for free to any ensemble wishing to study or perform this music.
 
-As described [here](https://www.npr.org/2025/08/14/nx-s1-5496512/samuel-coleridge-taylor-150-avril-black-british-classical), the motivation for this project is that the parts for _Toussaint_ were “riddled with errors and essentially unusable in their delivered conditions,” and Coleridge-Taylor's legacy deserves good quality scores and parts.
-
-## Old Media
-
-- [TWC Classics](https://twcclassics.com/)
-
-> TWC Classics is the oldest and largest website devoted to The Weather Channel. Created during the summer of 1997, TWC Classics has amassed a large collection of audio, video, images, and information. Over 8,000 files and counting! Join me in taking a nostalgic look back at The Weather Channel's first 28 years.
-
-- [Trammell Starks / Information / TWC Classics](https://twcclassics.com/information/trammell-starks.html)
-  - Trammell Starks composed some of the most well-known music for The Weather Channel. I first learned about him when Angel Marcloid (of Fire-Toolz, Nonlocal Forecast, and more) [shared his music](https://fire-toolz.tumblr.com/post/183966509639/this-nonlocal-forecast-mix-offers-smooth-jazz-fit) as something that inspires her. [She even did a cover of his song “Life”](https://fire-toolz.bandcamp.com/track/life). Listening to Fire-Toolz, as well as composers like [Alex Temple](https://www.alextemplemusic.com/), I've come to appreciate “cheesy” music like this.
+As described [here](https://www.npr.org/2025/08/14/nx-s1-5496512/samuel-coleridge-taylor-150-avril-black-british-classical), the motivation for this project is that the parts for _Toussaint_ were “riddled with errors and essentially unusable in their delivered conditions,” and Coleridge-Taylor's legacy deserves good quality scores and parts. -->
 
 ## Web
 
