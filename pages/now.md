@@ -26,7 +26,7 @@ I'm also getting married! My partner and I are engaged, and having a nice small 
 <article>
 <h2 class="sectionHeader">Currently Listening</h2>
 
-Fire-Toolz, [_Private Angel message_](https://fire-toolz.bandcamp.com/album/private-angel-message)
+Fire-Toolz, [_Private Angel Message_](https://fire-toolz.bandcamp.com/album/private-angel-message)
 
 - I love how this one includes a metal cover of a Trammell Starks song that originally ran on The Weather Channel!
 
