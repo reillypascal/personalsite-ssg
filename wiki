@@ -1,9 +1,12 @@
 #!/bin/sh
 
-while getopts ":hnrt" option; do
+while getopts ":hfnrt" option; do
     case "${option}" in
         h)
             folder="."
+            ;;
+        f)
+            folder="favorites"
             ;;
         n)
             folder="notebook"
@@ -44,7 +47,7 @@ fedi_url:
 og_image: 
 og_image_width: 
 og_image_height: 
-date: $isodate
+date: git Last Modified
 octothorpes:
   - 
 tags:
