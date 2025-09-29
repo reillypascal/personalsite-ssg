@@ -50,8 +50,8 @@ _The Extinction of Irena Rey_ by Jennifer Croft: A novel about a group of transl
 
 </article> -->
 
-<article>
+<section>
 
 Inspired by [Derek Sivers](https://sive.rs/)' [nownownow](https://nownownow.com/about) project.
 
-</article>
+</section>
