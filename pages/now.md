@@ -19,7 +19,9 @@ It was last updated {{ page.date | date: "%B %d, %Y" }}
 <article>
 <h2 class="sectionHeader">Current Activities</h2>
 
-I've been continuing to work on my [data2audio](https://github.com/reillypascal/data2audio) Rust tool for converting batches of files into audio. I figured out how to use `rayon` to process multiple files in parallel, and now it's super fast — I got all ~12.5 GB (\> 35,000 files!) of data from the Xcode macOS app converted in ~17 seconds!
+I've been continuing to work on my [data2audio](https://github.com/reillypascal/data2audio) Rust tool for converting batches of files into audio. I figured out how to use `rayon` to process multiple files in parallel, and now it's super fast — I got all ~12.5 GB (\> 35,000 files!) of data from the Xcode macOS app converted in ~17 seconds! This has made a big difference for composing. Now I can make and audition a huge number of databending samples without it being nearly as much of a slog.
+
+Recently I've also wanted to make more new friends in the area and do more things in person, so I've started playing Pathfinder 2e with a TTRPG group at my library. The group has been welcoming and the game is turning out to be a lot of fun.
 
 I'm also getting married! My partner and I are engaged, and having a nice small ceremony in October. I'm so excited to spend the rest of my life with them.
 
