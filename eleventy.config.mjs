@@ -263,6 +263,10 @@ export default async function (eleventyConfig) {
     return posts.concat(notes).concat(interactions).sort(function (a, b) { return a.date - b.date; });
   });
 
+  eleventyConfig.addCollection("wikiFavorites", function (collectionApi) {
+    return collectionApi.getFilteredByTags("favorite", "wiki");
+  });
+
   eleventyConfig.addCollection("wikiNotebook", function (collectionApi) {
     return collectionApi.getFilteredByTags("notebook", "wiki");
   });

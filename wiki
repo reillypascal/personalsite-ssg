@@ -52,6 +52,7 @@ octothorpes:
   - 
 tags:
   - wiki
+  - $folder
 draft: true
 indienews: true
 ---
