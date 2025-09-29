@@ -236,7 +236,7 @@ tags:
   - “My Own Skin”
   - “Go for This”
 
-## Edgard Varese
+## Edgard Varèse
 
 - “Déserts”
 - “Hyperprism”
