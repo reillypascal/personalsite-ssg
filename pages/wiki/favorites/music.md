@@ -7,7 +7,7 @@ og_image_height:
 date: git Last Modified
 tags:
   - wiki
-  - favorite
+  - favorites
   - music
 ---
 

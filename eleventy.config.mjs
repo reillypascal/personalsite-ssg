@@ -264,7 +264,7 @@ export default async function (eleventyConfig) {
   });
 
   eleventyConfig.addCollection("wikiFavorites", function (collectionApi) {
-    return collectionApi.getFilteredByTags("favorite", "wiki");
+    return collectionApi.getFilteredByTags("favorites", "wiki");
   });
 
   eleventyConfig.addCollection("wikiNotebook", function (collectionApi) {

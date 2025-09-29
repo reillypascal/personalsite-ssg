@@ -1,6 +1,6 @@
 ---
 title: "Favorite Books"
-description: Books that I've enjoyed over the years
+description: Books that I've enjoyed over the years, including fiction and nonfiction
 fedi_url:
 og_image:
 og_image_width:
