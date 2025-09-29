@@ -10,7 +10,9 @@ date: git Last Modified
 
 <article>
 
-This page is for periodic updates about my current activities, projects, interests, and thoughts.
+This page is for periodic updates about my current activities, projects, interests, and thoughts
+
+It was last updated {{ page.date | date: "%B %d, %Y" }}
 
 </article>
 
@@ -51,7 +53,5 @@ _The Extinction of Irena Rey_ by Jennifer Croft: A novel about a group of transl
 <article>
 
 Inspired by [Derek Sivers](https://sive.rs/)' [nownownow](https://nownownow.com/about) project.
-
-Last updated {{ page.date | date: "%B %d, %Y" }}
 
 </article>
