@@ -98,6 +98,10 @@ tags:
   - “Paperweights”
   - “Ashish”
 
+## William Fields
+
+- _Fictions_, “Doquado”
+
 ## Fire-Toolz
 
 - _Interbeing_, “Yellow Rose-fire”
@@ -130,6 +134,12 @@ tags:
 ## Erin Gee
 
 - “Mouthpiece 28”
+
+## Ryoji Ikeda
+
+- _Dataplex_
+- _Test Pattern_
+- _Supercodex_
 
 ## Clara Iannotta
 
@@ -180,12 +190,6 @@ tags:
 
 - “noise + mobile”
 
-## Ryoji Ikeda
-
-- _Dataplex_
-- _Test Pattern_
-- _Supercodex_
-
 ## Kelley Sheehan
 
 - “new ears”
@@ -214,10 +218,6 @@ tags:
   - “Suffocate”
   - “January”
 - _Hospitality_, “Frictional Nevada”
-
-## William Fields
-
-- _Fictions_, “Doquado”
 
 ## パスピエ
 
