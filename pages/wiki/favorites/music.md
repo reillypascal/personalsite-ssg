@@ -160,7 +160,7 @@ tags:
 - “Ghost”
 - _Night/Pop - EP_, “Neon”
 - _A Little Rhythm and a Wicked Feeling_, “Good Intentions”
-- _mini mix, vol. 2_,
+- _mini mix, vol. 2_
   - “Body”
   - “Woww”
 - _Mercurial World_, “Follow the Leader”
@@ -196,6 +196,10 @@ tags:
 - “new ears”
 - “Talk Circus”
 
+## Sir Babygirl
+
+- _Crush on Me_, “Cheerleader”
+
 ## Kate Soper
 
 - “Only the Words Themselves Mean What They Say”
@@ -213,6 +217,39 @@ tags:
 
 - “On And Off And To And Fro”
 
+## Subtle
+
+- _Earthsick_, “Skullz”
+- _For Hero: For Fool_
+  - “Midas Gutz”
+  - “Nomanisisland”
+  - “Return of the Vein”
+- _Wishingbone_
+  - “Swanmeat”
+  - Beck, “Farewell Ride (Subtle Remix)”
+
+## Valiant Vermin
+
+- _I Could Be_
+  - “I Could Be”
+  - “Horny Sad”
+  - “My Own Skin”
+  - “Go for This”
+
+## Edgard Varese
+
+- “Déserts”
+- “Hyperprism”
+- “Intégrales”
+- “Octandre”
+
+## Vektroid
+
+- _Seed & Synthetic Earth_
+  - “Blood from a Stone”
+  - “Endless Jump”
+  - “Moebius Blue”
+
 ## Venetian Snares
 
 - _Winter in the Belly of a Snake_
@@ -222,8 +259,8 @@ tags:
 
 ## パスピエ
 
-- _幕の内ISM_, 「トーキョーシティ・アンダーグラウンド」
-- _真昼の夜_, 「真昼の夜」
+- 幕の内ISM, 「トーキョーシティ・アンダーグラウンド」
+- 真昼の夜, 「真昼の夜」
 
 ## 13 & God
 
