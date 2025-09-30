@@ -39,6 +39,8 @@ tsone, [_A ghost and a guest_](https://evel.bandcamp.com/album/a-ghost-and-a-gue
 <article>
 <h2 class="sectionHeader">Currently Reading</h2>
 
+_The Stars Too Fondly_ by Emily Hamilton: a group of twentysomethings are sneaking into an abandoned spaceship when it starts on its own and takes them on a trip to Proxima Centauri. Romance, dark matter, and found family.
+
 _Ficciones_ by Jorge Luis Borges: I've heard people mention the story “The Garden of Forking Paths” in connection with hypertext, and I'm very intrigued to see more.
 
 _The Extinction of Irena Rey_ by Jennifer Croft: A novel about a group of translators working in a mysterious forest to translate a novel. Filled with footnotes, deeply meta, and the forest is full of strange fungi.
