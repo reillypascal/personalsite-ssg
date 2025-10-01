@@ -14,6 +14,8 @@ tags:
 
 ## Fiction
 
+- Agustina Bazterrica, _Nineteen Claws and a Black Bird_
+- Jorge Luis Borges, _Ficciones_
 - Mark Z. Danielewski, _House of Leaves_
 - William Gibson
   - _Burning Chrome_
