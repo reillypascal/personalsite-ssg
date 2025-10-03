@@ -40,7 +40,7 @@ tags:
 - sfizz (FOSS .sfz sampler host; micro-tunable with .scl files)
 - sforzando (the official .sfz sampler host)
 - Surge XT (FOSS hybrid synthesizer with rich sound design options; micro-tunable with .scl files)
-- Vital (wavetable synthesizer)
+- Vital (wavetable synthesizer; micro-tunable with .scl files)
 
 ### Developer
 
@@ -50,14 +50,14 @@ tags:
   - scnvim (Neovim frontend for SuperCollider)
   - vim-tidal (Vim plugin for Tidal Cycles)
 - pluginval (validate and debug audio plugins)
-- superfile (terminal file manager)
 - Starship (command prompt)
-- tldr (man pages with practical examples)
 - WezTerm (terminal)
 
 <!-- - Ghostty (terminal) -->
 <!-- - chezmoi (dotfile manager) -->
 <!-- - Octave (FOSS equivalent to MATLAB) -->
+<!-- - superfile (terminal file manager) -->
+<!-- - tldr (man pages with practical examples) -->
 
 ### Web
 
@@ -83,11 +83,13 @@ tags:
 
 ### Documents
 
-- Calibre (e-book library manager/reader)
 - Capy Reader (Android RSS reader)
 - NetNewsWire (macOS RSS reader, also available for iOS)
 - Obsidian (notebook; pairs nicely with Syncthing)
+- Readest (cross-platform e-book reader)
 - Zotero (reference manager)
+
+<!-- - Calibre (e-book library manager/reader) -->
 
 ### Files
 
@@ -105,10 +107,11 @@ tags:
 - Forkyz (FOSS Android crossword app)
 - Fossify Calendar (Android calendar)
 - FUTO Keyboard (Android keyboard)
-- ItsyCal (macOS taskbar calendar)
 - LinearMouse (remap mouse input without requiring official Logitech software)
 - Obtainium (install Android apps from GitHub; keep track of/manage updates)
 - uBlock Origin (adblocker)
+
+<!-- - ItsyCal (macOS taskbar calendar) -->
 
 ### Operating Systems
 
@@ -123,6 +126,7 @@ tags:
 ### Fountain Pens
 
 - TWSBI Diamond 580ALR and Eco
+- Nahvalur, Original Plus
 - Hongdian Peacock
 
 ### Inks
@@ -130,11 +134,9 @@ tags:
 - Diamine, “Onyx Black,” “Oxblood,” and “Registrar's”
 - Platinum, “Lavender Black”
 - Robert Oster, “Aqua” and “Sydney Lavender”
-- Sailor, “Hana Gokoro,” “Studio 024,” and “Yoi”
+- Sailor, “Seki,” “Studio 024,” “Yoi,” and “Zare Gokoro”
 - Troublemaker, “Petrichor”
 - Wearingeul, “The Black Cat”
-
-<!-- - Aurora, ”Black” -->
 
 ### Notebooks, Misc.
 
