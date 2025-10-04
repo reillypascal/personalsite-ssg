@@ -92,16 +92,6 @@ In other words, as Merchant puts it
 
 ## Weaknesses of AI as a Tool
 
-- Chengshuai Zhao et al., “[Is Chain-of-Thought Reasoning of LLMs a Mirage? A Data Distribution Lens](https://arxiv.org/pdf/2508.01191)”
-
-> Our results reveal that \[Chain-of-Thought (CoT)\] reasoning is a brittle mirage that vanishes when it is pushed beyond training distributions. This work offers a deeper understanding of why and when CoT reasoning fails, emphasizing the ongoing challenge of achieving genuine and generalizable reasoning.
-
-Cognitive scientist and AI researcher Gary Marcus [notes the following about these results](https://garymarcus.substack.com/p/gpt-5-overdue-overhyped-and-underwhelming):
-
-> In 1998 I wrote that “universals are pervasive in language and reasoning” but showed experimentally that neural networks of that era could not reliably “extend universals outside \[a\] training space of examples”. \[…\]
-
-> Throw in every gadget invented since 1998, and the Achilles’ Heel I identified then still remains. That’s startling. Even I didn’t expect that.
-
 - Kosmyna et al., “[Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task](https://arxiv.org/abs/2506.08872)”
 
 > EEG revealed significant differences in brain connectivity: Brain-only participants exhibited the strongest, most distributed networks; Search Engine users showed moderate engagement; and LLM users displayed the weakest connectivity. Cognitive activity scaled down in relation to external tool use. \[…\]
@@ -114,9 +104,25 @@ Cognitive scientist and AI researcher Gary Marcus [notes the following about the
 
 > When developers are allowed to use AI tools, they take 19% longer to complete issues—a significant slowdown that goes against developer beliefs and expert forecasts. This gap between perception and reality is striking: developers expected AI to speed them up by 24%, and even after experiencing the slowdown, they still believed AI had sped them up by 20%.
 
+- Mike Judge, “[Where's the Shovelware? Why AI Coding Claims Don't Add Up](https://mikelovesrobots.substack.com/p/wheres-the-shovelware-why-ai-coding)“
+
+> Consider this: with all you know about AI-assisted coding and its wide adoption, if I showed you charts and graphs of new software releases across the world, what shape of that graph would you expect? Surely you’d be seeing an exponential growth up-and-to-the-right as adoption took hold and people started producing more?
+
+> Now, I’ve spent a lot of money and weeks putting the data for this article together, processing tens of terabytes of data in some cases. So I hope you appreciate how utterly uninspiring and flat these charts are across every major sector of software development.
+
 - William Harding, Matthew Kloster, “[Coding on Copilot: 2023 Data Suggests Downward Pressure on Code Quality](https://www.gitclear.com/coding_on_copilot_data_shows_ais_downward_pressure_on_code_quality)”
 
 > We find disconcerting trends for maintainability. Code churn -- the percentage of lines that are reverted or updated less than two weeks after being authored -- is projected to double in 2024 compared to its 2021, pre-AI baseline. We further find that the percentage of “added code” and “copy/pasted code” is increasing in proportion to “updated,” “deleted,” and “moved” code. In this regard, code generated during 2023 more resembles an itinerant contributor, prone to violate the [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)-ness of the repos visited.
+
+- Chengshuai Zhao et al., “[Is Chain-of-Thought Reasoning of LLMs a Mirage? A Data Distribution Lens](https://arxiv.org/pdf/2508.01191)”
+
+> Our results reveal that \[Chain-of-Thought (CoT)\] reasoning is a brittle mirage that vanishes when it is pushed beyond training distributions. This work offers a deeper understanding of why and when CoT reasoning fails, emphasizing the ongoing challenge of achieving genuine and generalizable reasoning.
+
+Cognitive scientist and AI researcher Gary Marcus [notes the following about these results](https://garymarcus.substack.com/p/gpt-5-overdue-overhyped-and-underwhelming):
+
+> In 1998 I wrote that “universals are pervasive in language and reasoning” but showed experimentally that neural networks of that era could not reliably “extend universals outside \[a\] training space of examples”. \[…\]
+
+> Throw in every gadget invented since 1998, and the Achilles’ Heel I identified then still remains. That’s startling. Even I didn’t expect that.
 
 </section>
 
