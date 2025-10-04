@@ -15,7 +15,7 @@ draft: true
 
 I was recently compelled to re-watch David Cronenberg's 1983 film [_Videodrome_](https://en.wikipedia.org/wiki/Videodrome). For some time, I've been feeling deeply unpleasant sensations, both emotional and physical, in connection with the medium of video. I've had a growing sense of connection between those sensations and the world of _Videodrome_.
 
-In _Videodrome_, Max Renn is the CEO of a small TV station, which broadcasts “everything from soft-core pornography to hard-core violence.” He stumbles across (what appears to be) a pirate broadcast of a program called _Videodrome_, which depicts a single red room in which people are tortured and killed. He becomes fascinated with this, believing it would be a hit if his station were to broadcast it, and as he digs deeper, he experiences (often violent) hallucinations centering on televisions and video tapes.
+In the film, Max Renn is the CEO of a small TV station, which broadcasts “everything from soft-core pornography to hard-core violence.” He stumbles across (what appears to be) a pirate broadcast of a program called _Videodrome_, which depicts a single red room in which people are tortured and killed. He becomes fascinated with this, believing it would be a hit if his station were to broadcast it, and as he digs deeper, he experiences (often violent) hallucinations centering on televisions and video tapes.
 
 Max eventually learns that there is a signal hidden in _Videodrome_ that stimulates hallucinations via a brain tumor. He learns that the show was never actually a broadcast, but a recording he was shown in order to brainwash and recruit him to the cause of destroying his station colleagues and others who are too obsessed with sex and violence.
 
@@ -23,17 +23,13 @@ There are two things in this film that particularly resonated with me. The first
 
 > The television screen is the retina of the mind's eye. Therefore, the television screen is part of the physical structure of the brain. Therefore, whatever appears on the television screen emerges as raw experience for those who watch it. Therefore, television is reality, and reality is less than television.
 
-_Videodrome_ started me thinking about video as something that (in a sense) physically exists in my body.
-
-The idea of video as deeply connected to the body
-
-because we experience video through the same senses with which we experience reality, video is in a sense “real”
+While in the film, O'Blivion's words have a more literal truth as Max's reality is replaced with video-induced hallucinations, even outside of the film, these words started me thinking about video as something that (in a sense) physically exists in my body, or is at least has a deep, physical connection.
 
 The second is the way the special effects transform televisions, screens, videotapes, and other technology into living, breathing things, often in violent, disturbing ways. Their surfaces pulsate and ripple. The mouth of radio host Nikki Brand (who is sexually involved with Max) bulges out of the television screen, and Max sinks his face into the flexible membrane, trying to kiss Nikki. After Nikki has initiated sadomasochistic play with Max, he later finds himself in the _Videodrome_ room with a rippling, breathing television set, showing Nikki's face and shoulders, and he flogs the television, to the enjoyment of the Nikki it displays.
 
 Videotapes' surfaces balloon and ripple like flesh as the tapes let out loud, scratchy inhalations. Barry Convex — one of the people seeking to brainwash Max — violently shoves one such breathing tape into a slit that has opened in Max's stomach as a means of “programming” him to kill.
 
-The imprint of a hand holding a gun presses through a screen, distorting and stretching it, and the static snow becomes pink, veined, and fleshy, and strangely wet and diseased. After the gun fires through the membrane, the imprint recedes, leaving the shape of a man's chest riddled with bullet holes on the screen.
+The imprint of a hand holding a gun presses through a screen, distorting and stretching it, and the static snow is replaced with a pink, veined, and fleshy texture, becoming strangely wet and diseased. After the gun fires through the membrane, the imprint recedes, leaving the shape of a man's chest riddled with bullet holes on the screen.
 
 ## Auto-Sensory Ethnography of Video
 
