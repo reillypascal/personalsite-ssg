@@ -31,9 +31,9 @@ Videotapes' surfaces balloon and ripple like flesh as the tapes let out loud, sc
 
 The imprint of a hand holding a gun presses through a screen, distorting and stretching it, and the static snow is replaced with a pink, veined, and fleshy texture, becoming strangely wet and diseased. After the gun fires through the membrane, the imprint recedes, leaving the shape of a man's chest riddled with bullet holes on the screen.
 
-When I looked at the pulsating, inhuman television-made-flesh and thought that it felt familiar, that it felt the same as when I look at short-form video online, I did a double take. Why did I feel that way? What am I supposed to take away from that?
+When I looked at the pulsating, inhuman television-made-flesh and thought that it felt familiar, that it felt the same as when I look at short-form video online, I did a double take. Why did I feel that way? That's a rather extreme response, isn't it? What am I supposed to take away from that?
 
-<aside>
+<!-- <aside>
 
 _Peeping Tom_ (1960)
 
@@ -41,25 +41,41 @@ camera as a phallic symbol
 
 instrument of violation
 
-</aside>
+</aside> -->
 
 ## Auto-Sensory Ethnography of Video
 
-In ethnographer Tomie Hahn's book [_Sensational Knowledge: Embodying Culture through Japanese Dance_](https://www.weslpress.org/9780819568359/sensational-knowledge/), she looks at her own sensory and bodily experiences in learning [_nihon buyo_](https://en.wikipedia.org/wiki/Nihon-buy%C5%8D) — classical Japanese dance.
+In ethnographer Tomie Hahn's book [_Sensational Knowledge: Embodying Culture through Japanese Dance_](https://www.weslpress.org/9780819568359/sensational-knowledge/), she looks at her own sensory and bodily experiences in learning [_nihon buyo_](https://en.wikipedia.org/wiki/Nihon-buy%C5%8D) — classical Japanese dance. Hahn's ideas have been highly influential on the “sensory turn” in ethnography, and on treating the body as a site of knowledge. [^1] My ideas on video here originated from sensory responses in my body, so I'll take her approach and analyze my own sensory experience.
 
-<!-- All of this has come together with the vague sensations I have been feeling around video, and seems to point me to a kind of unpleasant connection between video and my body. -->
+First is TikTok. While I haven't had the app on my smartphone since January, and I haven't opened the web app in months, I'll return to it to analyze the sensations that were among the many reasons I stopped going there.
 
-Video writes itself deeply onto my body
+_Bang_
 
-Short form content emotional whiplash
+In a flash of light and sound, the first video starts playing.
 
-auto sensory ethnography
+Every time a longer video comes up, I feel time slow down and a headache start to build. Even if the video would be interesting, it feels like an imposition
 
-body as a site for knowledge
+I have no preparation before anything plays
+
+When videos are playing, I feel dissociated
+
+When I pause, I feel a lead weight descend on me
+
+I don't know if I want to watch a given video in full, but often the “hook” is intriguing enough that to move on would leave an itch in my brain as I wonder what the ending was
+
+I feel pummeled with sensation
+
+pounds me into hypnotic state
+
+rapid change of emotional state
+
+short and not particularly interesting; not enough to satisfy, so I want more, but because I'm motivated to keep scrolling for more, anything longer than 20–30 seconds is frustrating.
+
+hypnotic, numbing, and I struggle to express how I even feel beyond that
+
+---
 
 what I hear from my body is that there are many types of video I receive as malignant
-
-I feel my forehead start to throb and a subtle nausea in my gut
 
 ## Kinds of Video
 
@@ -79,9 +95,9 @@ I also find some uses of video for illustrative purposes to be inoffensive or po
 
 Given the vast number of technology critiques, particularly in my online circles, why write more? What does this add to the discussion? I have two goals for my contribution.
 
-First, _Videodrome_ came out in 1983, when television was much younger than today, and home video was less than a decade old. [^1] As I watched, I felt the film “defamiliarize” video for me. The film leaves behind the sense of video itself as new and threatening, not just modern uses of it (AI slop, algorithmically-delivered short-form Content™, etc.)
+First, _Videodrome_ came out in 1983, when television was much younger than today, and home video was less than a decade old. [^2] As I watched, I felt the film “defamiliarize” video for me. The film leaves behind the sense of video itself as new and threatening, not just modern uses of it (AI slop, algorithmically-delivered short-form Content™, etc.)
 
-Defamiliarizing technologies has been a productive way for me to shift my relationship to them. Cell phones (and the expectation to be always available) became popular within the last few decades, for example. These expectations don't have to be a given, and are wide open for critique. Keeping this in mind helps me (for example) to let go as I work to have my smartphone on me for less of the day. I was reminded recently that even the answering machine produced a marked shift in expectations around communication, that the effects of something that has existed for my entire life, and has been obsolete for over a decade can still be questioned. [^2]
+Defamiliarizing technologies has been a productive way for me to shift my relationship to them. Cell phones (and the expectation to be always available) became popular within the last few decades, for example. These expectations don't have to be a given, and are wide open for critique. Keeping this in mind helps me (for example) to let go as I work to have my smartphone on me for less of the day. I was reminded recently that even the answering machine produced a marked shift in expectations around communication, that the effects of something that has existed for my entire life, and has been obsolete for over a decade can still be questioned. [^3]
 
 Second, the film is visceral and disgusting. There's something about watching a pulsating, breathing videocassette shoved into a screaming man's stomach that deeply captures my sense of technological malaise and alienation. If I say that scrolling social media is unhealthy and we should do it less, it's so obvious as to appear trite. But what if I say it in a different way?
 
@@ -93,16 +109,19 @@ My experiences with this film and how it's shifted my feelings about video have 
 
 I want to be very clear that I do not intend this to be prescriptive. It's based on my highly subjective personal experiences, which, as in Tomie Hahn's writing, I think are interesting to analyze. If you genuinely like your short-form video content, I don't want to take that from you or malign your character. However I do want to ask you to indulge me for a moment. Why not try thinking this way about video? If it doesn't resonate with you, no harm done. If it does though, maybe it can offer some clarity.
 
-<!-- When it stems from just and honest critiques of the world, I wonder if it might allow us to _know_ much more fully that something is wrong.  -->
+[^1]: Hahn's influence on “sensory turn”
 
-[^1]: [VHS was released in 1976](https://en.wikipedia.org/wiki/VHS), and [Betamax, in the previous year](https://en.wikipedia.org/wiki/Betamax).
+[^2]: [VHS was released in 1976](https://en.wikipedia.org/wiki/VHS), and [Betamax, in the previous year](https://en.wikipedia.org/wiki/Betamax).
 
-[^2]: https://blogs.loc.gov/kluge/2022/08/how-the-lowly-answering-machine-contributed-to-our-anxiety-ridden-culture-of-continuous-communication/
+[^3]: https://blogs.loc.gov/kluge/2022/08/how-the-lowly-answering-machine-contributed-to-our-anxiety-ridden-culture-of-continuous-communication/
 
-<!-- Criticism of television's effect on the brain feels old-hat at this point, and sometimes I forget how recent video is as a medium.
+<!-- It's an emotionally-charged depiction of police harassment. I didn't know I was going to see that, so there was no time to prepare. My heart rate accelerates, but I have already entered a hypnotic state that dulls my awareness of what I'm feeling.
 
-There are many critiques of short-form video, social media, and other similar aspects of online life. The reason I'm writing this is that _Videodrome_ left me feeling that those don't always look quite far enough. -->
+After a few more police misconduct videos, we get an extremely energetic and enthusiastic presenter talking about the structure of the Milky Way. I like the topic, but again, I had no idea this was coming before scrolling. This is interesting, but I also don't want to stay — it feels like an imposition
+ -->
 
-<!--
-Find clip of inserting tape into stomach for og?
--->
+<!-- I feel my forehead start to throb and a subtle nausea in my gut
+
+Short form content emotional whiplash
+
+Video writes itself deeply onto my body -->
