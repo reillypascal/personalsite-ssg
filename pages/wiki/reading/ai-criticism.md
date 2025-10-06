@@ -176,6 +176,10 @@ Cognitive scientist and AI researcher Gary Marcus [notes the following about the
 
 ## AI, Ideology, and Power
 
+- Timnit Gebru and Émile P. Torres, “[The TESCREAL bundle: Eugenics and the promise of utopia through artificial general intelligence](https://firstmonday.org/ojs/index.php/fm/article/view/13636)”
+
+> We argue that, unlike systems with specific applications which can be evaluated following standard engineering principles, undefined systems like “AGI” cannot be appropriately tested for safety. Why, then, is building AGI often framed as an unquestioned goal in the field of AI? In this paper, we argue that the normative framework that motivates much of this goal is rooted in the Anglo-American eugenics tradition of the twentieth century. As a result, many of the very same discriminatory attitudes that animated eugenicists in the past (e.g., racism, xenophobia, classism, ableism, and sexism) remain widespread within the movement to build AGI, resulting in systems that harm marginalized groups and centralize power, while using the language of “safety” and “benefiting humanity” to evade accountability.
+
 - Robin James, “[We’re Through Being Cool: techbros, manosphere influencers, Ancient Greek masculinity, and AI](https://www.its-her-factory.com/2025/08/were-through-being-cool-techbros-manosphere-influencers-ancient-greek-masculinity-and-ai/)”
 
 > But instead of appropriating performances of stereotypical white femininity and non-whitneness, today Artificial Intelligence grants people access to creativity in a legibly masculine way centered not so much in self-mastery, but the mastery of others.
@@ -190,9 +194,9 @@ Cognitive scientist and AI researcher Gary Marcus [notes the following about the
 
 > This paper draws from anthropological work on bureaucracies, states, and power, translating these ideas into a theory describing the structural tendency for powerful algorithmic systems to cause tremendous harm. I show how administrative models and projections of the world create marginalization, just as algorithmic models cause representational and allocative harm.
 
-- Tracy Durnell, “[Generative AI and the Business Borg aesthetic](https://tracydurnell.com/2025/06/02/generative-ai-and-the-business-borg-aesthetic/)”
+<!-- - Tracy Durnell, “[Generative AI and the Business Borg aesthetic](https://tracydurnell.com/2025/06/02/generative-ai-and-the-business-borg-aesthetic/)”
 
-> Generative AI — both imagery and text — is inextricable from the corporate vision for its use: a world in which [workers are powerless and worthless](https://www.axios.com/2025/05/28/ai-jobs-white-collar-unemployment-anthropic), replaced by “free” generated material. Corporate GenAI cannot be separated from the purpose for its use or the billionaires and billionaire-wannabes who shill for it.
+> Generative AI — both imagery and text — is inextricable from the corporate vision for its use: a world in which [workers are powerless and worthless](https://www.axios.com/2025/05/28/ai-jobs-white-collar-unemployment-anthropic), replaced by “free” generated material. Corporate GenAI cannot be separated from the purpose for its use or the billionaires and billionaire-wannabes who shill for it. -->
 
 </section>
 
