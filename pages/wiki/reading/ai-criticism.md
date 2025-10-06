@@ -24,11 +24,15 @@ This page is a collection of reporting, research, and essays critical of large l
 
 <section>
 
-## AI in Education
+## AI in Academia
 
 - Patrick Lin, “[Why We’re Not Using AI in This Course, Despite Its Obvious Benefits](https://emergingethics.substack.com/p/why-were-not-using-ai-in-this-course)”
 
-- [AGAINST AI](https://against-a-i.com/)
+- [_Resisting “AI” // LLMs in Library Labour_](https://ahemnason.notion.site/resisting-ai)
+
+> This list has been assembled by Mike Nason, UNB Libraries, and will be supplemented whenever something is compelling enough to add.
+
+- [_AGAINST AI_](https://against-a-i.com/)
 
 > Materials here are intended as solidarity solace for educators who might find themselves inventing wheels alone while their administrators, trustees, and bosses unrelentingly hype AI and nakedly enthuse the negative consequences for educator labor.
 
