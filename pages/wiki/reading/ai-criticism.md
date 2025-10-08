@@ -26,6 +26,12 @@ This page is a collection of reporting, research, and essays critical of large l
 
 ## AI in Academia
 
+- Ethan Hein, “[AI slop and musical creativity](https://www.ethanhein.com/wp/2025/ai-slop-and-musical-creativity/)”
+
+> The question is not, how do we help people be creative? They are already, from birth. The question is, why do we grind creativity out of kids so thoroughly, and how do we stop doing that? Teaching songwriting and other creative music-making requires only that you disinhibit the strong creative impulse that is already there. \[…\]
+
+> The hardest part of making up a song is just having the nerve to do it. You have to take an emotional risk. Everything intellectual and technical is downstream from that. If you remove the emotional risk, you remove the entire foundation of the structure. It doesn’t matter what you pile on top after that.
+
 - Patrick Lin, “[Why We’re Not Using AI in This Course, Despite Its Obvious Benefits](https://emergingethics.substack.com/p/why-were-not-using-ai-in-this-course)”
 
 - [_Resisting “AI” // LLMs in Library Labour_](https://ahemnason.notion.site/resisting-ai)
