@@ -19,9 +19,29 @@ permalink: /wiki/
 <p>A place for interlinked writing I will continually return to and develop. Research and reading notes, tutorials, and other writing on composition, DSP, digital arts, programming, maker projects, and more.</p>
 
 <section>
-    <h1 class="sectionHeader">Pages</h1>
+    <h1 class="sectionHeader">Reading</h1>
+    
+    {%- for post in collections.wikiReading reversed -%}
+        <article class="h-entry">
+            <h2 class="p-name post-link"><a class="u-url" href="{{ post.url }}">{{ post.data.title }}</a></h2>
+            <p class="p-summary">{{ post.data.description | newline_to_br }}</p>
 
-    {%- for post in collections.wiki-root reversed -%}
+            <a rel="author" class="p-author h-card" href="https://reillyspitzfaden.com"></a>
+
+            <span class="meta-icon">
+                <img src="/media/icon-calendar-ltr.svg" alt="calendar icon" width="18" height="18" />
+            </span>
+            <span class="meta-text">
+                <time class="dt-published" datetime="{{ post.date }}">Last updated {{ post.date | date: "%B %d, %Y" }}</time>
+            </span>
+        </article>
+    {%- endfor -%}
+</section>
+
+<section>
+    <h1 class="sectionHeader">Tutorials</h1>
+    
+    {%- for post in collections.wikiTutorials reversed -%}
         <article class="h-entry">
             <h2 class="p-name post-link"><a class="u-url" href="{{ post.url }}">{{ post.data.title }}</a></h2>
             <p class="p-summary">{{ post.data.description | newline_to_br }}</p>
@@ -59,29 +79,9 @@ permalink: /wiki/
 </section>
 
 <section>
-    <h1 class="sectionHeader">Reading</h1>
-    
-    {%- for post in collections.wikiReading reversed -%}
-        <article class="h-entry">
-            <h2 class="p-name post-link"><a class="u-url" href="{{ post.url }}">{{ post.data.title }}</a></h2>
-            <p class="p-summary">{{ post.data.description | newline_to_br }}</p>
+    <h1 class="sectionHeader">Pages</h1>
 
-            <a rel="author" class="p-author h-card" href="https://reillyspitzfaden.com"></a>
-
-            <span class="meta-icon">
-                <img src="/media/icon-calendar-ltr.svg" alt="calendar icon" width="18" height="18" />
-            </span>
-            <span class="meta-text">
-                <time class="dt-published" datetime="{{ post.date }}">Last updated {{ post.date | date: "%B %d, %Y" }}</time>
-            </span>
-        </article>
-    {%- endfor -%}
-</section>
-
-<section>
-    <h1 class="sectionHeader">Tutorials</h1>
-    
-    {%- for post in collections.wikiTutorials reversed -%}
+    {%- for post in collections.wiki-root reversed -%}
         <article class="h-entry">
             <h2 class="p-name post-link"><a class="u-url" href="{{ post.url }}">{{ post.data.title }}</a></h2>
             <p class="p-summary">{{ post.data.description | newline_to_br }}</p>
