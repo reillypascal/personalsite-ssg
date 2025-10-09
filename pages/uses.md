@@ -125,8 +125,9 @@ tags:
 
 ### Fountain Pens
 
-- TWSBI Diamond 580ALR and Eco
+- Pilot Custom 823
 - Nahvalur, Original Plus
+- TWSBI Diamond 580ALR and Eco
 - Hongdian Peacock
 
 ### Inks
