@@ -45,6 +45,7 @@ tags:
 ### Developer
 
 - apparix (terminal bookmarks)
+- brew-explorer (TUI for Homebrew)
 - fzf (terminal fuzzy finder)
 - Neovim (my [dotfiles](https://github.com/reillypascal/kickstart.nvim))
   - scnvim (Neovim frontend for SuperCollider)
