@@ -23,7 +23,7 @@ I've been continuing to work on my [data2audio](https://github.com/reillypascal/
 
 Recently I've also wanted to make more new friends in the area and do more things in person, so I've started playing Pathfinder 2e with a TTRPG group at my library. The group has been welcoming, and the game is turning out to be a lot of fun.
 
-I'm also getting married! My partner and I are engaged, and having a nice small ceremony in October. I'm so excited to spend the rest of my life with them.
+I also just got married! My partner and I had a nice small ceremony in October with family and friends. I'm so excited to spend the rest of my life with them.
 
 </article>
 
@@ -38,6 +38,8 @@ tsone, [_A ghost and a guest_](https://evel.bandcamp.com/album/a-ghost-and-a-gue
 
 <article>
 <h2 class="sectionHeader">Currently Reading</h2>
+
+_S._ by Doug Dorst: presented as a library copy of _Ship of Theseus_ by fictional author V.M. Straka, with handwritten notes in the margins between two college students. V.M. Straka is reclusive and mysterious, and conspiracy theories surround him, and the students' relationship grows as they dig deeper into this.
 
 _Ficciones_ by Jorge Luis Borges: I've heard people mention the story “The Garden of Forking Paths” in connection with hypertext, and I'm very intrigued to see more.
 
