@@ -193,8 +193,9 @@ tags:
 
 ## Kelley Sheehan
 
-- “new ears”
 - “Talk Circus”
+- “no dogs in space”
+- “new ears”
 
 ## Sir Babygirl
 
