@@ -14,7 +14,6 @@ tags:
 ## Autechre
 
 - _EP7_, “Dropp”
-- _Gantz Graf_, “Gantz Graf”
 - _Confield_
   - “VI Scose Poise”
   - “Cfern”
@@ -27,6 +26,7 @@ tags:
   - “VL Al 5”
   - “P.:NTIL”
   - “V-Proc”
+- _Gantz Graf_, “Gantz Graf”
 - _Quaristice_
   - “Altibzz”
   - “plyPhon”
