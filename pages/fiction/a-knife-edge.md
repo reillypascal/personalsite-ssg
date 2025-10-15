@@ -24,6 +24,8 @@ _Eyes on the road_
 
 The violence of collision drifts into your thoughts. It seems to you now as if even its spectre transforms your flesh into something new and strange.
 
+Your flesh remembers the _slam_ of impact, mere inches from your left arm, only a layer of metal and plastic separating you. It's as if those materials have punched an impression into your skin and bone. The acrid smell lingers in your nostrils, a mix of spent propellant and that strange harshness that sprang from within.
+
 You've heard it said that if a machine never leaves your side, how different is it from an implant? You wonder where your body ends. You wonder what you would have to remove to become yourself again.
 
 _Eyes on the road_
