@@ -11,7 +11,7 @@ draft: true
 
 The clouds cascade above you in incredible detail. In places, their bases form an impenetrable ceiling, but that ceiling is temporary. Wisps of shadow float against glowing shards of the sun, illuminating another layer behind. The effect continues below the clouds. As you move forward, you can see the boundaries between light and dark projected on the ground. The changing brightness pulsates as it sweeps over you.
 
-As you learn the contours above you, the scale of things shifts. The sky is closer now: close enough to visit, it seems, and its vault looks comfortable, as if you could live inside. You feel your heart rate slow, coming to rest after the day. You are much larger than before. Your body warps — for the moment, more spirit than matter — and your extremities flow up to nestle between the darkened floors, in the space of light between.
+As you learn the contours above you, the scale of things shifts. The sky is closer now: close enough to visit, it seems, and its vault looks comfortable, as if you could live inside. You are much larger than before. Your body warps — for the moment, more spirit than matter — and your extremities flow up to nestle between the darkened floors, in the space of light between. You feel your heart rate slow, coming to rest after the day.
 
 Remember when you would stir a giant basin of treacle in your mind's eye? Remember how the thoughts would catch on the circling waves, tearing and smearing, disappearing into the uniform surface? This feels kind of like then.
 
