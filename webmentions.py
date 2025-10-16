@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 
-import json, os, urllib.request  # , subprocess
 from dotenv import load_dotenv
+import json
+import os
+import urllib.request  # , subprocess
 
 load_dotenv()
 
