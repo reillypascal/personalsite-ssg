@@ -123,14 +123,17 @@ article h3 {
 .webmention-display {
     margin: 16px 0;
 } */
+.post-end-line {
+    border-top: 1px solid var(--ui-line-dark);
+}
 
 .post-interactions {
     display: flex;
     flex-flow: row wrap;
     row-gap: 16px;
     justify-content: space-between;
-    border-top: 1px solid var(--ui-line-dark);
-    padding: 12px 12px 0 12px;
+    /* padding: 12px 12px 0 12px; */
+    padding: 12px 0;
     vertical-align: middle;
 }
 

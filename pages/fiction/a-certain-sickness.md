@@ -3,9 +3,8 @@ title: "A Certain Sickness"
 description: <i>You feel that a certain sickness has been pervading your life. It's a dull ache that suffuses subtly through many unrelated things, a background radiation to your everyday…</i>
 date: 2025-10-15T15:50:00-0400
 tags:
-  - fiction
-  - creative-writing
 end_note: ""
+draft: true
 ---
 
 You feel that a certain sickness has been pervading your life. It's a dull ache that suffuses subtly through many unrelated things, a background radiation to your everyday. You have tried removing possible sources, one by one, but in the wake of each, there is less to distract you, and the sickness only changes its form.

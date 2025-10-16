@@ -1,6 +1,6 @@
 ---
-title: "September IndieWeb Carnival: Second-Person Birds"
-description: A short piece for this month's IndieWeb blog carnival on Sophia's prompt “second-person birds”
+title: "A Certain Sickness"
+description: <i>You feel that a certain sickness has been pervading your life. It's a dull ache that suffuses subtly through many unrelated things, a background radiation to your everyday…</i>
 fedi_url:
   - https://hachyderm.io/@reillypascal/115265838445428175
   - https://bsky.app/profile/reillypascal.bsky.social/post/3lzoe6d3se225
@@ -12,6 +12,7 @@ octothorpes:
   -
 tags:
   - post
+  - fiction
   - indieweb
   - creative-writing
 indienews: true

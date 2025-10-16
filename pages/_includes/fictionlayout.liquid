@@ -25,16 +25,15 @@ title: Reilly Spitzfaden, Composer
     </div>
 
     <div class="e-content">
-
         {{ content }}
-
-        <div class="email-reply">
+        <div class="centered asterism">⁂</div>
+        {% include "partials/post-interactions.liquid" %}
+        {%- comment %}<div class="email-reply">
             <span class="mail-icon">
                 <img width="18" height="18" src="/media/ui/mail-icon-light-18px.svg" alt="mail icon" />
             </span>
             <a href='mailto:reillypascal@gmail.com?subject=Re: {{ title }}'>Reply via email</a>
-        </div>
-
+        </div>{%- endcomment -%}
     </div>
     
 </article>
