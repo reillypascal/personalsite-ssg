@@ -1,5 +1,5 @@
 ---
-title: "A Knife-Edge"
+title: "On a Knife-Edge"
 description: <i>The clouds cascade above you in incredible detail. In places, their bases form an impenetrable ceiling, but that ceiling is temporary. Wisps of shadow float against glowing shards of the sun, illuminating another layer behind…</i>
 date: 2025-10-17T17:48:45-0400
 tags:
