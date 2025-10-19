@@ -122,7 +122,7 @@ Rungta et al. also note that these early reflections help the listener hear the 
 
 <figure>
 
-![A list of vertical lines representing echoes that decays as we move toward the right. There is a gap between direct sound and early reflections, early reflections are sparse, and reverberation at the end is dense.](/media/blog/2025/09/reverb_2/early-late-reflections.webp)
+![A list of vertical lines representing echoes that decay as we move toward the right. There is a gap between direct sound and early reflections, early reflections are sparse, and reverberation at the end is dense.](/media/blog/2025/09/reverb_2/early-late-reflections.webp)
 
 <figcaption>
 
