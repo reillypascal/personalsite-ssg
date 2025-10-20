@@ -1,5 +1,21 @@
 #!/bin/sh
 
+isodate=$(date +"%Y-%m-%dT%H:%M:%S%z")
+year=$(date +"%Y")
+month=$(date +"%m")
+
+while getopts ":d" option; do
+    case "${option}" in
+        d)
+            isodate="$2T00:00:00-0400"
+            year=$(echo "${isodate}" | cut -c1-4)
+            month=$(echo "${isodate}" | cut -c6-7)
+            ;;
+    esac
+    # remove '-1' because two indices (flag, arg)
+    shift $((OPTIND))
+done
+
 if [ ${1+x} ]; then
     name=$1
 else
@@ -14,10 +30,6 @@ fi
 
 # tr replace first w/ second; -c means "complement", -d "delete", -s "squeeze repeats"
 slug=$(echo $name | tr '[:upper:]' '[:lower:]' | tr -cd '[:alnum:] ' | tr -s " " "-")
-
-isodate=$(date +"%Y-%m-%dT%H:%M:%S%z")
-year=$(date +"%Y")
-month=$(date +"%m")
 
 # -p: make intermediate directories and don't complain if the full path already exists
 mkdir -p pages/posts/$year/$month
