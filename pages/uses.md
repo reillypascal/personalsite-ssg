@@ -133,9 +133,9 @@ tags:
 
 ### Inks
 
-- Diamine, “Onyx Black,” “Oxblood,” and “Registrar's”
+- Diamine, “Onyx Black” and “Oxblood”
 - Platinum, “Lavender Black”
-- Robert Oster, “Aqua” and “Sydney Lavender”
+- Robert Oster, “Aqua,” “Smokescreen,” and “Sydney Lavender”
 - Sailor, “Seki,” “Studio 024,” “Yoi,” and “Zare Gokoro”
 - Troublemaker, “Petrichor”
 - Wearingeul, “The Black Cat”
