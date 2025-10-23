@@ -136,7 +136,9 @@ tags:
 - Diamine, “Onyx Black” and “Oxblood”
 - Platinum, “Lavender Black”
 - Robert Oster, “Aqua,” “Smokescreen,” and “Sydney Lavender”
+- Rohrer & Klingner, “Ebony”
 - Sailor, “Seki,” “Studio 024,” “Yoi,” and “Zare Gokoro”
+- Teranishi, “Antique Black”
 - Troublemaker, “Petrichor”
 - Wearingeul, “The Black Cat”
 
