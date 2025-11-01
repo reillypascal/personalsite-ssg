@@ -32,7 +32,7 @@ Here are my notes on setting up an old laptop as a home server. This discussion 
 
 ### Media
 
-- Guide [link](https://forum.jellyfin.org/t-from-disc-to-drive-a-beginner-s-guide-to-preparing-your-media-for-jellyfin)
+- [Guide](https://forum.jellyfin.org/t-from-disc-to-drive-a-beginner-s-guide-to-preparing-your-media-for-jellyfin)
 - Software:
   - [MakeMKV](https://www.makemkv.com/download/) for ripping
     - [Forum post on LibreDrive firmware compatibility](https://forum.makemkv.com/forum/viewtopic.php?p=79712#p79712)
@@ -64,7 +64,7 @@ cp -r /home/username/A/. /usr/lib/B/
 
 ### Force-Unmount USB Drive
 
-- “find every process that is accessing the /mnt/share mount point and kill it,” then run `umount` as usual
+- “find every process that is accessing the /media/usb mount point and kill it,” then run `umount` as usual
 
 ```bash
 sudo fuser -km /media/usb
