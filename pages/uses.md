@@ -127,7 +127,7 @@ tags:
 ### Fountain Pens
 
 - Pilot Custom 823
-- Nahvalur, Original Plus
+- Nahvalur Original Plus
 - TWSBI Diamond 580ALR and Eco
 - Hongdian Peacock
 
@@ -138,7 +138,6 @@ tags:
 - Robert Oster, “Aqua,” “Smokescreen,” and “Sydney Lavender”
 - Rohrer & Klingner, “Ebony”
 - Sailor, “Seki,” “Studio 024,” “Yoi,” and “Zare Gokoro”
-- Teranishi, “Antique Black”
 - Troublemaker, “Petrichor”
 - Wearingeul, “The Black Cat”
 

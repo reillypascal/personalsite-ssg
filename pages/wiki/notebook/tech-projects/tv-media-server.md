@@ -1,12 +1,12 @@
 ---
 title: TV & Media Server
 description: Setting up a home server using an old laptop, and running Jellyfin on it
-fedi_url: 
-og_image: 
-og_image_width: 
-og_image_height: 
+fedi_url:
+og_image:
+og_image_width:
+og_image_height:
 date: git Last Modified
-octothorpes: 
+octothorpes:
 tags:
   - wiki
   - notebook
@@ -20,26 +20,31 @@ tags:
 Here are my notes on setting up an old laptop as a home server. This discussion pairs nicely with the [Raspberry Pi/Kodi TV streaming box I discuss here](/wiki/notebook/tech-projects/kodi-streaming-box-raspberry-pi/), and I also use this server to update my website with new webmentions [as I discuss here](/wiki/tutorials/webmention-tutorial/).
 
 ## Guide (Ubuntu Server):
+
 - [The Zero Dollar Home Server](https://chriskalos.notion.site/The-0-Home-Server-Written-Guide-5d5ff30f9bdd4dfbb9ce68f0d914f1f6)
   - Includes how to run with lid closed
 
-
 ## Jellyfin
+
 ### Kodi
+
 - https://jellyfin.org/docs/general/clients/kodi/
+
 ### Media
+
 - Guide [link](https://forum.jellyfin.org/t-from-disc-to-drive-a-beginner-s-guide-to-preparing-your-media-for-jellyfin)
   - Software:
     - [MakeMKV](https://www.makemkv.com/download/) for ripping
-    - [MKVToolNix](https://mkvtoolnix.download/downloads.html) for transcoding
-
+      - [Forum post on LibreDrive firmware compatibility](https://forum.makemkv.com/forum/viewtopic.php?p=79712#p79712)
+    - [HandBrake](https://handbrake.fr/) for transcoding - [vkc.sh blog post on transcoding with Handbrake](https://vkc.sh/handbrake-2025/)
+    <!-- - [MKVToolNix](https://mkvtoolnix.download/downloads.html) for transcoding -->
 
 ## Copying Files
 
 ```bash
 # find disk:
 sudo fdisk -l
-# or 
+# or
 df
 # or find device path with either `lsblk` or `sudo blkid` and then mount:
 udisksctl mount -b /dev/sdb
@@ -56,7 +61,9 @@ cp -r /home/username/A/. /usr/lib/B/
 ```
 
 ### Force-Unmount USB Drive
+
 - “find every process that is accessing the /mnt/share mount point and kill it,” then run `umount` as usual
+
 ```bash
 sudo fuser -km /media/usb
 sudo umount /media/usb
@@ -67,13 +74,14 @@ sudo umount /mnt/share
 ```
 
 ## Finding DVDs
+
 - [DVDCompare](https://www.dvdcompare.net/)
 
-
 ## YouTube
+
 - Use this link to access the YouTube setup interface: http://\<your-server-ip-address\>:50152/youtube/api
 - https://github.com/anxdpanic/plugin.video.youtube/issues/1016
 
-
 ## Misc
+
 - <https://turner.enemyterritory.org/shared/repo/user/carrvo/website/homeserver-bom-calculator.html>
