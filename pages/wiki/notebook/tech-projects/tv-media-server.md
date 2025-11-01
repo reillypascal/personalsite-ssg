@@ -36,8 +36,10 @@ Here are my notes on setting up an old laptop as a home server. This discussion 
   - Software:
     - [MakeMKV](https://www.makemkv.com/download/) for ripping
       - [Forum post on LibreDrive firmware compatibility](https://forum.makemkv.com/forum/viewtopic.php?p=79712#p79712)
-    - [HandBrake](https://handbrake.fr/) for transcoding - [vkc.sh blog post on transcoding with Handbrake](https://vkc.sh/handbrake-2025/)
-    <!-- - [MKVToolNix](https://mkvtoolnix.download/downloads.html) for transcoding -->
+    - [HandBrake](https://handbrake.fr/) for transcoding
+      - [vkc.sh blog post on transcoding with Handbrake](https://vkc.sh/handbrake-2025/)
+
+<!-- - [MKVToolNix](https://mkvtoolnix.download/downloads.html) for transcoding -->
 
 ## Copying Files
 
