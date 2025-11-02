@@ -85,7 +85,7 @@ tags:
 ### Documents
 
 - Capy Reader (Android RSS reader)
-- NetNewsWire (macOS RSS reader, also available for iOS)
+- NetNewsWire (macOS RSS reader; also available for iOS)
 - Obsidian (notebook; pairs nicely with Syncthing)
 - Readest (cross-platform e-book reader)
 - Zotero (reference manager)
@@ -133,10 +133,10 @@ tags:
 
 ### Inks
 
-- Diamine, “Onyx Black” and “Oxblood”
+- Diamine, “Onyx Black” and “Oxblood” (“Oxblood” is one of my favorites for everyday use)
 - Platinum, “Lavender Black”
 - Robert Oster, “Aqua,” “Smokescreen,” and “Sydney Lavender”
-- Rohrer & Klingner, “Ebony”
+- Rohrer & Klingner, “Ebony” (one of my favorites)
 - Sailor, “Seki,” “Studio 024,” “Yoi,” and “Zare Gokoro”
 - Troublemaker, “Petrichor”
 - Wearingeul, “The Black Cat”
