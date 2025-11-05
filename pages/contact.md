@@ -7,10 +7,14 @@ description: Contact form for Reilly Spitzafden
 <link rel="stylesheet" type="text/css" href="/styles/forms.css" />
 
 <h1 class="sectionHeader">Contact Information</h1>
-<p>Email: <a href="mailto:reillypascal@gmail.com">reillypascal@gmail.com</a></p>
-<p>Signal: <a href="https://signal.me/#eu/7uMwpp_PyZnVmpmfO-Jm7Xgx_IZHTcATumXUo1WZU-_SwJfIWTNGap0m4PJEAiVy">@reillypascal.42</a></p>
-<p>Matrix: <a href="https://matrix.to/#/@reillypascal:matrix.org">@reillypascal:matrix.org</a></p>
-<p>Webmentions: <a href="https://webmention.io/reillyspitzfaden.com/xmlrpc">webmention.io</a></p>
+
+Email: [reillypascal@gmail.com](mailto:reillypascal@gmail.com)
+
+Signal: [@reillypascal.42](https://signal.me/#eu/7uMwpp_PyZnVmpmfO-Jm7Xgx_IZHTcATumXUo1WZU-_SwJfIWTNGap0m4PJEAiVy)
+
+Webmentions: [webmention.io](https://webmention.io/reillyspitzfaden.com/xmlrpc)
+
+<!-- Matrix: [@reillypascal:matrix.org](https://matrix.to/#/@reillypascal:matrix.org) -->
 
 <form 
     name="contact" 
@@ -30,4 +34,3 @@ description: Contact form for Reilly Spitzafden
         </ul>
     </fieldset>
 </form>
-
