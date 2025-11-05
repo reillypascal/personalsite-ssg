@@ -133,11 +133,13 @@ tags:
 
 ### Inks
 
+- Colorverse, “NGC 1850”
 - Diamine, “Onyx Black” and “Oxblood” (“Oxblood” is one of my favorites for everyday use)
 - Platinum, “Lavender Black”
 - Robert Oster, “Aqua,” “Smokescreen,” and “Sydney Lavender”
-- Rohrer & Klingner, “Ebony” (one of my favorites)
+- Rohrer & Klingner, “Ebony” (one of my favorites for everyday use)
 - Sailor, “Seki,” “Studio 024,” “Yoi,” and “Zare Gokoro”
+- Teranishi Guitar, “Antique Black”
 - Troublemaker, “Petrichor”
 - Wearingeul, “The Black Cat”
 
