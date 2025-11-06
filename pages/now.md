@@ -23,9 +23,9 @@ It was last updated {{ page.date | date: "%B %d, %Y" }}
 
 While I originally planned to use this blog for technical writing, [my entry for the September 2025 IndieWeb Carnival](/posts/2025/09/september-indieweb-carnival/) got me excited about creative writing and fiction. I've added a [fiction page](/fiction) to my site, and I have a second creative writing piece that's going there/on my blog soon.
 
-I've been getting into photography lately. I tracked down an analog SLR camera (a Minolta X-370) that I had in high school but never used, and I'm learning how to use it. There are also local classes on developing black & white film, and I think it would be fun to learn to do that.
+Recently I've found some new hobbies. First is photography. I tracked down an analog SLR camera (a Minolta X-370) that I had in high school but never used, and I'm learning analog photography with it. I also found some local classes on developing black & white film, and that should be a fun skill to learn.
 
-Recently I've also wanted to make more new friends in the area and do more things in person, so I've started playing Pathfinder 2e with a TTRPG group at my library. The group has been welcoming, and the game is turning out to be a lot of fun.
+Next is TTRPGS (i.e., games like D&D). I had been wanting to find more in-person friends and activities, so I joined a group playing Pathfinder 2e at my local library. The group has been welcoming, and the game is turning out to be a lot of fun.
 
 I also just got married! My partner and I had a nice small ceremony in October with family and friends. I'm so excited to spend the rest of my life with them.
 
