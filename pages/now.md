@@ -43,11 +43,13 @@ tsone, [_A ghost and a guest_](https://evel.bandcamp.com/album/a-ghost-and-a-gue
 <article>
 <h2 class="sectionHeader">Currently Reading</h2>
 
-_The Extinction of Irena Rey_ by Jennifer Croft: A novel about a group of translators working in a mysterious forest to translate a novel. Filled with footnotes, deeply meta, and the forest is full of strange fungi.
+_A Game in Yellow_ by Hailey Piper: a thrill-seeking couple finds a strange play, _The King in Yellow_. If someone reads it for just a moment, they will have a rush of survivor's euphoria, but if read for too long, it will drive the reader mad. One of the couple becomes obsessed with spending more and more time in the play's world.
 
 _S._ by Doug Dorst: presented as a library copy of _Ship of Theseus_ by fictional author V.M. Straka, with handwritten notes in the margins between two college students. V.M. Straka is reclusive and mysterious, and conspiracy theories surround him, and the students' relationship grows as they dig deeper into this.
 
-_Ficciones_ by Jorge Luis Borges: I've heard people mention the story “The Garden of Forking Paths” in connection with hypertext, and I'm very intrigued to see more.
+<!-- _The Extinction of Irena Rey_ by Jennifer Croft: A novel about a group of translators working in a mysterious forest to translate a novel. Filled with footnotes, deeply meta, and the forest is full of strange fungi. -->
+
+<!-- _Ficciones_ by Jorge Luis Borges: I've heard people mention the story “The Garden of Forking Paths” in connection with hypertext, and I'm very intrigued to see more. -->
 
 </article>
 
