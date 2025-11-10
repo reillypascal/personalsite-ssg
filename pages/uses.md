@@ -85,6 +85,7 @@ tags:
 ### Documents
 
 - Capy Reader (Android RSS reader)
+- LibreOffice (FOSS office suite)
 - NetNewsWire (macOS RSS reader; also available for iOS)
 - Obsidian (notebook; pairs nicely with Syncthing)
 - Readest (cross-platform e-book reader)
