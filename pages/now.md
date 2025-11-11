@@ -34,6 +34,8 @@ I also just got married! My partner and I had a nice small ceremony in October w
 <article>
 <h2 class="sectionHeader">Currently Listening</h2>
 
+William Fields, [_Opening for Autechre in Philadelphia_](https://williamfields.bandcamp.com/album/opening-for-autechre-in-philadelphia): I went to Autechre's concert in Philadelphia, so I got to see this set live! I was hoping it would be released, and I'm glad it was.
+
 Fire-Toolz, [_Private Angel Message_](https://fire-toolz.bandcamp.com/album/private-angel-message): I love how this one includes a metal cover of a Trammell Starks song that originally ran on The Weather Channel!
 
 tsone, [_A ghost and a guest_](https://evel.bandcamp.com/album/a-ghost-and-a-guest): This one is for fans of Autechre and Richard Devine. tsone uses Max/MSP to make a mix of ambient synths and dense, rhythmically complex glitchy percussion.
