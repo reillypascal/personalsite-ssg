@@ -45,7 +45,7 @@ tsone, [_A ghost and a guest_](https://evel.bandcamp.com/album/a-ghost-and-a-gue
 <article>
 <h2 class="sectionHeader">Currently Reading</h2>
 
-_A Game in Yellow_ by Hailey Piper: a thrill-seeking couple finds a strange play, _The King in Yellow_. If someone reads it for just a moment, they will have a rush of survivor's euphoria, but if read for too long, it will drive the reader mad. One of the couple becomes obsessed with spending more and more time in the play's world.
+_A Game in Yellow_ by Hailey Piper: a thrill-seeking couple — Carmen and Blanca — finds a strange play, _The King in Yellow_. If someone reads it for just a moment, they will have a rush of survivor's euphoria, but if read for too long, it will drive the reader mad. Carmen becomes more and more obsessed with spending time in the play's world, and the play's world begins to filter into the real one.
 
 _S._ by Doug Dorst: presented as a library copy of _Ship of Theseus_ by fictional author V.M. Straka, with handwritten notes in the margins between two college students. V.M. Straka is reclusive and mysterious, and conspiracy theories surround him, and the students' relationship grows as they dig deeper into this.
 
