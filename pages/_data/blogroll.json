@@ -4,6 +4,12 @@
     "id": "music",
     "blogs": [
       {
+        "title": "C.E. Aaron Music Lessons",
+        "htmlUrl": "https://ceaaron.music/blog",
+        "xmlUrl": "https://ceaaron.music/blog?format=rss",
+        "description": "Here you’ll find musings on various topics that are important to me, including music teaching, disability justice, technology usage, and whatever else I’m reading or thinking about."
+      },
+      {
         "title": "The Ethan Hein Blog",
         "htmlUrl": "https://www.ethanhein.com/wp/",
         "xmlUrl": "https://www.ethanhein.com/wp/feed/",
