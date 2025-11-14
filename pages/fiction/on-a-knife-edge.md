@@ -9,6 +9,15 @@ tags:
 draft: true
 ---
 
+<figure>
+
+<figcaption>
+
+Art by [Sophia](https://www.fractalkitty.com/)
+
+</figcaption>
+</figure>
+
 The clouds cascade above you in incredible detail. In places, their bases form an impenetrable ceiling, but that ceiling is temporary. Wisps of shadow float against glowing shards of the sun, illuminating another layer behind. The effect continues below the clouds. As you move forward, you can see the boundaries between light and dark projected on the ground. The changing brightness pulsates as it sweeps over you.
 
 As you learn the contours above you, the scale of things shifts. The sky is closer now: close enough to visit, it seems, and its vault looks comfortable, as if you could live inside. You are much larger than before. Your body warps — for the moment, more spirit than matter — and your extremities flow up to nestle between the darkened floors, in the space of light between. You feel your heart rate slow, coming to rest after the day.
@@ -30,3 +39,9 @@ You glide along a knife-edge. All around is peaceful. It would be so easy to flo
 <div class="dinkus">***</div>
 
 You return your eyes to the clouds. They have blended together into a murky gray while you weren't looking.
+
+<div class="centered asterism">⁂</div>
+
+<!-- ## Postscript
+
+[Sophia](https://www.fractalkitty.com/) made the artwork accompanying this piece. Thank-you! -->
