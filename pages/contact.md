@@ -12,6 +12,8 @@ Email: [reillypascal@gmail.com](mailto:reillypascal@gmail.com)
 
 Signal: [@reillypascal.42](https://signal.me/#eu/7uMwpp_PyZnVmpmfO-Jm7Xgx_IZHTcATumXUo1WZU-_SwJfIWTNGap0m4PJEAiVy)
 
+Matrix: [@reillypascal:cyberia.club](https://matrix.to/#/@reillypascal:cyberia.club)
+
 Webmentions: [webmention.io](https://webmention.io/reillyspitzfaden.com/xmlrpc)
 
 <!-- Matrix: [@reillypascal:matrix.org](https://matrix.to/#/@reillypascal:matrix.org) -->
