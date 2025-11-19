@@ -73,6 +73,14 @@ A [grimoire](https://en.wikipedia.org/wiki/Grimoire) is a book of spells or inca
 
 <article>
 
+## Neovim
+
+I do most of my coding/text editing in the Neovim text editor. Here are my [dotfiles/configuration files](https://github.com/reillypascal/nvim) for it.
+
+</article>
+
+<article>
+
 ## Tea/Coffee Timer
 
 I love tea (my favorite is Bigelow's Vanilla Chai) and I prefer it steeped for a precise length of time. However, I find alarms extremely irritating, with the worst part being that many of them keep going until you turn them off. This script lets me type e.g., `./timer.sh 4m` to get a timer that chimes once and then stops.
