@@ -7,42 +7,50 @@ pagination:
     alias: posts
     reverse: true
 ---
-
-<link rel="stylesheet" type="text/css" href="/styles/blog.css" />
-<link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
+<link rel="stylesheet" type="text/css" href="/styles/blog.css">
+<link rel="stylesheet" type="text/css" href="/styles/onecolumn.css">
 
 <!-- blog contents -->
-<h1 class="sectionHeader">Blog</h2>
+<h1 class="sectionHeader">Blog</h1>
 
 <section class="postFeedDescription">
-    <p>A blog about my personal interests, including composition and sound design; audio programming using Max/MSP, C++/JUCE, C, Rust, and SuperCollider; and web development and philosophy on the IndieWeb</p>
+  <p>
+    A blog about my personal interests, including composition and sound design; audio programming using Max/MSP,
+    C++/JUCE, C, Rust, and SuperCollider; and web development and philosophy on the IndieWeb
+  </p>
 
-    {% include "partials/post-list-links.liquid" %}
+  {% include 'partials/post-list-links.liquid' %}
 </section>
 
 {%- for post in posts -%}
-    <article class="h-entry">
-        <h2 class="p-name post-link"><a class="u-url" href="{{ post.url }}">{{ post.data.title }}</a></h2>
-        <p class="p-summary">{{ post.data.description }}</p>
+  <article class="h-entry">
+    <h2 class="p-name post-link">
+      <a class="u-url" href="{{ post.url }}">{{ post.data.title }}</a>
+    </h2>
+    <p class="p-summary">{{ post.data.description }}</p>
 
-        <a rel="author" class="p-author h-card" href="https://reillyspitzfaden.com"></a>
+    <a rel="author" class="p-author h-card" href="https://reillyspitzfaden.com"></a>
 
-        <span class="meta-icon">
-            <img src="/media/icon-calendar-ltr.svg" alt="calendar icon" width="18" height="18" />
-        </span>
-        <span class="meta-text">
-            <time class="dt-published" datetime="{{ post.date }}">{{ post.date | date: "%A, %B %d, %Y" }}</time>
-        </span>
-    </article>
+    <span class="meta-icon">
+      <img src="/media/icon-calendar-ltr.svg" alt="calendar icon" width="18" height="18">
+    </span>
+    <span class="meta-text">
+      <time class="dt-published" datetime="{{ post.date }}">{{ post.date | date: '%A, %B %d, %Y' }}</time>
+    </span>
+  </article>
 {%- endfor -%}
 
-<a class="RSSValidationLink" href="https://validator.w3.org/feed/check.cgi?url=https%3A//reillyspitzfaden.com/blog/feed.xml"><img src="/media/valid-rss-rogers.png" alt="[Valid RSS]" title="Validate my RSS feed" class="RSSValidationImg"/></a>
+<a
+  class="RSSValidationLink"
+  href="https://validator.w3.org/feed/check.cgi?url=https%3A//reillyspitzfaden.com/blog/feed.xml"
+  ><img src="/media/valid-rss-rogers.png" alt="[Valid RSS]" title="Validate my RSS feed" class="RSSValidationImg"
+></a>
 
 <div class="page-nav-wrapper">
-    {%- if pagination.href.previous -%}
-        <a href="{{pagination.href.previous}}">Previous Page</a>
-    {%- endif -%}
-    {%- if pagination.href.next -%}
-        <a href="{{pagination.href.next}}">Next Page</a>
-    {%- endif -%}
+  {%- if pagination.href.previous -%}
+    <a href="{{pagination.href.previous}}">Previous Page</a>
+  {%- endif -%}
+  {%- if pagination.href.next -%}
+    <a href="{{pagination.href.next}}">Next Page</a>
+  {%- endif -%}
 </div>
