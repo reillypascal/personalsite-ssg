@@ -48,7 +48,7 @@ My goal with this tutorial is that people with a wide range of experience with c
 />
 ```
 
-This even works with tools like Squarespace or Wordpress! Beyond that, each section builds on the last, so depending on how much you're comfortable with and/or interested in, you can choose your own adventure. For people with coding experience, I have some fun discussion of parsing and displaying webmentions as comments on your site; automating the process of bringing them into your site without client-side JavaScript; and using tools like [Bridgy](https://brid.gy/) to get Fediverse interactions as mentions.
+This even works with tools like Squarespace or WordPress! Beyond that, each section builds on the last, so depending on how much you're comfortable with and/or interested in, you can choose your own adventure. For people with coding experience, I have some fun discussion of parsing and displaying webmentions as comments on your site; automating the process of bringing them into your site without client-side JavaScript; and using tools like [Bridgy](https://brid.gy/) to get Fediverse interactions as mentions.
 
 Here are the tools we'll be using:
 
@@ -87,7 +87,7 @@ The simplest way to find someone's endpoint if it's not clearly listed:
 - If you get a result, it should look something like `<link rel="webmention" href="https://webmention.io/reillyspitzfaden.com/webmention" />` from above.
 - If you go to the URL in the `href=""` field, that should be the person's endpoint. You should be able to put your URL in the first field and the target post in the second and mention them!
 
-A quick way to check if the page supports webmentions before bothering with this is Brent Lineberry's [Supports Webmentions?](https://orangegnome.com/posts/2929/supports-webmentions-bookmarklet) bookmarklet. If you bookmark this in your browser, you can click the bookmark while on a page and it will let you know if the page supports webmentions. Juha-Matti Santala also has a [bookmarklet](https://hamatti.org/posts/webmention-bookmarklet/) that does something similar. If you right-click in your browser's bookmark bar, start a new bookmark, and paste the code snippet from the bottom of the post into the new bookmark's URL field, it should work. The benefit to this is that clicking on it copies the endpoint URL to your clipboard, so you can ctrl + V/cmd + V it easily.
+A quick way to check if the page supports webmentions before bothering with this is Brent Lineberry's [Supports Webmentions?](https://orangegnome.com/posts/2929/supports-webmentions-bookmarklet) bookmarklet. If you bookmark this in your browser, you can click the bookmark while on a page, and it will let you know if the page supports webmentions. Juha-Matti Santala also has a [bookmarklet](https://hamatti.org/posts/webmention-bookmarklet/) that does something similar. If you right-click in your browser's bookmark bar, start a new bookmark, and paste the code snippet from the bottom of the post into the new bookmark's URL field, it should work. The benefit to this is that clicking on it copies the endpoint URL to your clipboard, so you can ctrl + V/cmd + V it easily.
 
 ## Making a Webmentions Form
 
@@ -122,7 +122,7 @@ If you want to make things easier for your visitors, here's how to add a form to
 </form>
 ```
 
-One thing to note is that without some further JavaScript, the page will reload and you'll get a white page showing something like this:
+One thing to note is that without some further JavaScript, the page will reload, and you'll get a white page showing something like this:
 
 ```json
 {
@@ -179,7 +179,7 @@ Below is the [`h-card`](https://microformats.org/wiki/h-card) markup I use above
 ```
 and `u-syndication` gives link(s) to where I [POSSE](https://www.citationneeded.news/posse/) my posts. -->
 
-The `style="display:none;"` markup in the outer `<div>` ensures the card is not diplayed to users. The `class="p-author h-card"` in this `<div>` creates a microformats object with the `h-card` class; the `p-author` property adds that this card is for an author. The `u-url` and `u-uid` classes indicate that “https://reillyspitzfaden.com” is my site URL, with the `u-*` prefix indicating a link; similarly, `u-photo` gives a link to a photo to act as an avatar. The `p-name`, `p-given-name`, and `p-family-name` classes give plain-text information about me (plain-text indicated by the `p-*` prefix).
+The `style="display:none;"` markup in the outer `<div>` ensures the card is not displayed to users. The `class="p-author h-card"` in this `<div>` creates a microformats object with the `h-card` class; the `p-author` property adds that this card is for an author. The `u-url` and `u-uid` classes indicate that “https://reillyspitzfaden.com” is my site URL, with the `u-*` prefix indicating a link; similarly, `u-photo` gives a link to a photo to act as an avatar. The `p-name`, `p-given-name`, and `p-family-name` classes give plain-text information about me (plain-text indicated by the `p-*` prefix).
 
 In addition to this card, the entire article (including the card) is surrounded in an `<article>` tag with the class `h-entry`, creating a microformat object for the entire entry. The `<h1>` for the post title within that `<article` has the class `p-name`, and the content of the post is in a `<div>` with the class `e-content`. As described in the MDN link above, the `e-*` prefix is for “element tree properties where the entire contained element hierarchy is the value” — i.e., because `e-content` refers to the entire post contents, rather than any one single HTML element, we use `e-*`.
 
@@ -195,7 +195,7 @@ Searching the page for a mention endpoint and typing into that is not too hard t
 curl -i -d source="https://reillyspitzfaden.com/interactions/2025/04/rsvp-homebrew-website-club-americas-april-16/" -d target="https://events.indieweb.org/2025/04/homebrew-website-club-americas-xCttvgRnN4Pl" "https://events.indieweb.org/webmention"
 ```
 
-This again requires knowing the endpoint (either with a bookmarklet or viewing the source). Webmention\.app has a command line tool that makes sending mentions particularly easy. Once you've [installed NodeJS](https://nodejs.org/en/download), run `npm install @remy/webmention` in your terminal in the folder where you want to install this tool. From that folder, you can run
+This again requires knowing the endpoint (either with a bookmarklet or viewing the source). Webmention\.app has a command line tool that makes sending mentions particularly easy. Once you've [installed Node.js](https://nodejs.org/en/download), run `npm install @remy/webmention` in your terminal in the folder where you want to install this tool. From that folder, you can run
 
 ```sh
 npx webmention https://reillyspitzfaden.com/feed.xml
@@ -209,7 +209,7 @@ npx webmention https://reillyspitzfaden.com/feed.xml --limit 1 --send
 
 (again, replacing my feed URL with your own).
 
-One potential issue is that this package seems to be a little outdated these days. When I tried to install it on my site, NodeJS showed some critical vulnerabilities. When I installed it in its own separate folder, this wasn't as much of an issue for some reason, so you might try that — make a folder, open it in the terminal, and then run `npm install @remy/webmention`. The [Webmention.app](https://webmention.app/) site also offers some other tools, so you might play with those, although I haven't used them myself.
+One potential issue is that this package seems to be a little outdated these days. When I tried to install it on my site, Node.js showed some critical vulnerabilities. When I installed it in its own separate folder, this wasn't as much of an issue for some reason, so you might try that — make a folder, open it in the terminal, and then run `npm install @remy/webmention`. The [Webmention.app](https://webmention.app/) site also offers some other tools, so you might play with those, although I haven't used them myself.
 
 ## Accessing Mentions in Eleventy
 
@@ -319,9 +319,9 @@ I then use the Liquid keyword `assign` to assign the results of the `webWebmenti
 
 Because the `_data/webmentions.mjs` script brings in new mentions when the site builds, rebuilding the site is a good way to bring in mentions without client-side JavaScript. My site is hosted on [Netlify](https://www.netlify.com/), and a simple way to make the site automatically rebuild is to use [build hooks](https://docs.netlify.com/configure-builds/build-hooks/). This is a URL and when you send an HTTP POST request to it, the site will build. You can do this with cURL: `curl -X POST -d {} "https://api.netlify.com/build_hooks/<your-hook-here>"`.
 
-I send out these POST requests from my home server. The server is a 2015 ASUS laptop running Ubuntu Server, which I set up as I describe [here](/wiki/notebook/tech-projects/tv-media-server/). [^2] GitHub actions are also another good way of scheduling this — Benji links to how he does that [here](https://www.benji.dog/notes/1738091887/). I actually tried doing it with GitHub actions first, but for some reason, I couldn't get scheduled actions with [`cron`](https://en.wikipedia.org/wiki/Cron). to work for me.
+I send out these POST requests from my home server. The server is a 2015 ASUS laptop running Ubuntu Server, which I set up as I describe [here](/wiki/notebook/tech-projects/tv-media-server/). [^2] GitHub actions are also another good way of scheduling this — Benji links to how he does that [here](https://www.benji.dog/notes/1738091887/). I actually tried doing it with GitHub actions first, but for some reason, I couldn't get scheduled actions with [`cron`](https://en.wikipedia.org/wiki/Cron) to work for me.
 
-On my home server, however, `cron` was super easy to use. `cron` syntax has 5 fields: minute, hour, day (month), month, day (week). You can give them a value, or use an asterisk (“_”) to allow all values. `0 2 _ \* \*`in the example below means “run every day at 2:00 GMT, regardless of month or day.” This [crontab.guru](https://crontab.guru/) tool may be helpful in figuring out the syntax. Note that the times are in GMT, rather than the local time zone, so you would need to convert to local time. To set up a`cron`job, type`crontab -e` (i.e., “edit the crontab file”) into your server's terminal, and add a line like the following to the file that opens:
+On my home server, however, `cron` was super easy to use. `cron` syntax has 5 fields: minute, hour, day (month), month, day (week). You can give them a value, or use an asterisk (“\*”) to allow all values. `0 2 * * *` in the example below means “run every day at 2:00 GMT, regardless of month or day.” This [crontab.guru](https://crontab.guru/) tool may be helpful in figuring out the syntax. Note that the times are in GMT, rather than the local time zone, so you would need to convert to local time. To set up a `cron` job, type`crontab -e` (i.e., “edit the crontab file”) into your server's terminal, and add a line like the following to the file that opens:
 
 ```sh
 0 2 * * * curl -X POST -d {} "https://api.netlify.com/build_hooks/<your-hook-here>"

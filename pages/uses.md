@@ -45,17 +45,18 @@ tags:
 ### Developer
 
 - apparix (terminal bookmarks)
-- brew-explorer (TUI for Homebrew)
 - fzf (terminal fuzzy finder)
-- Neovim (my [dotfiles](https://github.com/reillypascal/kickstart.nvim))
+- Neovim (my [dotfiles](https://github.com/reillypascal/nvim))
   - scnvim (Neovim frontend for SuperCollider)
   - vim-tidal (Vim plugin for Tidal Cycles)
 - pluginval (validate and debug audio plugins)
 - Starship (command prompt)
+- tmux (terminal multiplexer)
 - WezTerm (terminal)
 
 <!-- - Ghostty (terminal) -->
 <!-- - chezmoi (dotfile manager) -->
+<!-- - brew-explorer (TUI for Homebrew) -->
 <!-- - Octave (FOSS equivalent to MATLAB) -->
 <!-- - superfile (terminal file manager) -->
 <!-- - tldr (man pages with practical examples) -->
