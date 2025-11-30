@@ -7,25 +7,17 @@ description: My code, including sound design tools, VST/AU plugin programming, a
 <link rel="stylesheet" type="text/css" href="/styles/code/prism-perf-custom.css" />
 <link rel="stylesheet" type="text/css" href="/styles/code/code-tweaks.css" />
 
-<h1 id="cli-tools" class="sectionHeader">Command-Line Tools</h1>
+<h1 id="maxmsp" class="sectionHeader">Max/MSP Tools and Externals</h1>
 
 <article>
 
-## [data2audio](https://github.com/reillypascal/data2audio)
+## [rs.max](https://github.com/reillypascal/rs.max/)
 
-Rust tool to import a folder of files, convert to audio, and normalize/filter out sub-audible frequencies. Processes files in parallel (using `rayon`), so it's extremely fast even with large batches of files.</p>
+\[rs.psk~\]: import any file as raw binary data and play this data back as a control signal for synthesizing [PSK](https://en.wikipedia.org/wiki/Phase-shift_keying) (phase-shift keying) telecommunications signals. See [Nathan Ho's post](https://nathan.ho.name/posts/dm-synthesis/) on using digital modulation modes for synthesis to hear the kinds of sounds this produces.
 
-This is the same process described in [this post](/posts/2025/01/databending-part-1/), but automated to be much less time-consuming.
+## [rs.reverb](https://codeberg.org/reillypascal/rs.reverb)
 
-</article>
-
-<article>
-
-## [mp3glitch](https://github.com/reillypascal/mp3glitch)
-
-Python tool for glitching MP3s while leaving them playable. Includes many options to shape glitching amount, character, and timbre, and a shell script to automate converting batches of WAV files to MP3 with FFmpeg before glitching.
-
-The mechanics behind this are described in [this post](/posts/2025/02/databending-part-2/), and I discuss using Python to do the glitching in [this post](/posts/2025/04/databending-part-3/).
+A collection of Max/MSP algorithmic reverb abstractions, based on classic DSP papers and software.
 
 </article>
 
@@ -57,13 +49,25 @@ Lo-fi plugin with options of various telecommunications codecs including Mu-Law 
 
 </article>
 
-<h1 id="maxmsp" class="sectionHeader">Max/MSP Tools</h1>
+<h1 id="cli-tools" class="sectionHeader">Command-Line Tools</h1>
 
 <article>
 
-## [rs.reverb](https://codeberg.org/reillypascal/rs.reverb)
+## [data2audio](https://github.com/reillypascal/data2audio)
 
-A collection of Max/MSP algorithmic reverb abstractions, based on classic DSP papers and software.
+Rust tool to import a folder of files, convert to audio, and normalize/filter out sub-audible frequencies. Processes files in parallel (using `rayon`), so it's extremely fast even with large batches of files.</p>
+
+This is the same process described in [this post](/posts/2025/01/databending-part-1/), but automated to be much less time-consuming.
+
+</article>
+
+<article>
+
+## [mp3glitch](https://github.com/reillypascal/mp3glitch)
+
+Python tool for glitching MP3s while leaving them playable. Includes many options to shape glitching amount, character, and timbre, and a shell script to automate converting batches of WAV files to MP3 with FFmpeg before glitching.
+
+The mechanics behind this are described in [this post](/posts/2025/02/databending-part-2/), and I discuss using Python to do the glitching in [this post](/posts/2025/04/databending-part-3/).
 
 </article>
 
