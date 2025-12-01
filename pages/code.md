@@ -13,7 +13,7 @@ description: My code, including sound design tools, VST/AU plugin programming, a
 
 ## [rs.max](https://github.com/reillypascal/rs.max/)
 
-\[rs.psk~\]: import any file as raw binary data and play this data back as a control signal for synthesizing [PSK](https://en.wikipedia.org/wiki/Phase-shift_keying) (phase-shift keying) telecommunications signals. See [Nathan Ho's post](https://nathan.ho.name/posts/dm-synthesis/) on using digital modulation modes for synthesis to hear the kinds of sounds this produces.
+\[rs.file2sig~\]: import any file as raw binary data and play this data back as a control signal for synthesizing [PSK](https://en.wikipedia.org/wiki/Phase-shift_keying) (phase-shift keying) telecommunications signals. See [Nathan Ho's post](https://nathan.ho.name/posts/dm-synthesis/) on using digital modulation modes for synthesis to hear the kinds of sounds this produces.
 
 ## [rs.reverb](https://codeberg.org/reillypascal/rs.reverb)
 

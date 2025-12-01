@@ -236,6 +236,8 @@ Cognitive scientist and AI researcher Gary Marcus [notes the following about the
 
 ## AI and Climate
 
+- Sean Patrick Cooper, [_‘The Precedent Is Flint’: How Oregon’s Data Center Boom Is Supercharging a Water Crisis_](https://www.rollingstone.com/culture/culture-features/data-center-water-pollution-amazon-oregon-1235466613/)
+
 - L. Rhodes, [_What AI money says about the environmental cost_](https://destructured.net/ai-money-environmental-cost)
 
 > AI companies clearly expect their technology to consume much, much more energy than existing cloud computing infrastructure, and they expect that consumption to continue for decades into the future. If they tell you otherwise, they’re lying, and you can tell they’re lying by the billions of dollars they’re pouring into constructing city-sized datacenters with their own multi-gigawatt power stations. Any discussion of the sustainability of AI that ignores that expenditure is made either in ignorance or bad faith.
