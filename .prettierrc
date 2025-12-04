@@ -1,5 +1,6 @@
 {
 	"plugins": [
-		"@shopify/prettier-plugin-liquid"
+		"@shopify/prettier-plugin-liquid",
+		"prettier-plugin-jinja-template"
 	]
 }
