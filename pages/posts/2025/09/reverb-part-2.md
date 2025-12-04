@@ -29,7 +29,7 @@ post_series: reverb
 
 Continuing from [a previous post](/posts/2025/06/reverb-part-1), today we'll be looking at another collection of reverb algorithms that I've implemented in my [reverb plugin](https://github.com/reillypascal/RSAlgorithmicVerb/releases). With only a small increase in complexity over last time, we can get a reverb that grows in density over its duration, much as a real room would, and that sounds smoother and less metallic.
 
-There are two key differences between the designs here and [the Schroeder reverb I discussed previously](/posts/2025/06/reverb-part-1/#the-classic-schroeder-reverberator): 1) in this design we will “nest” an allpass filter within another allpass filter, causing the echo density to grow over time, and 2) we will connects the ends of a chain of allpasses into one large “ring,” smoothing out the sound. Let's discuss how this all works!
+There are two key differences between the designs here and [the Schroeder reverb I discussed previously](/posts/2025/06/reverb-part-1/#the-classic-schroeder-reverberator): 1\) in this design we will “nest” an allpass filter within another allpass filter, causing the echo density to grow over time, and 2\) we will connect the ends of a chain of allpasses into one large “ring,” smoothing out the sound. Let's discuss how this all works!
 
 ## Nested Allpass Filters
 
