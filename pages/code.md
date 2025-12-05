@@ -94,12 +94,12 @@ This is inspired by [bashbunni's CLI pomodoro timer](https://gist.github.com/bas
 <div class="code-file">timer.sh</div>
 
 ```sh
-#!/usr/bin/env zsh
+#!/usr/bin/env bash
 
 if [ ${1+x} ]; then
-time=$1
+    time=$1
 else
-time="4m"
+    time="4m"
 fi
 
 timer $time && afplay /System/Library/Sounds/Glass.aiff
