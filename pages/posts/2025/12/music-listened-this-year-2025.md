@@ -5,7 +5,7 @@ fedi_url:
 og_image:
 og_image_width:
 og_image_height:
-date: 2025-12-03T23:34:20-0500
+date:
 tags:
   - post
   - music
@@ -15,9 +15,6 @@ draft: true
 ---
 
 <link rel="stylesheet" type="text/css" href="/styles/notes-photos.css">
-
-<!-- <link rel="stylesheet" type="text/css" href="/styles/code/prism-perf-custom.css" /> -->
-<!-- <link rel="stylesheet" type="text/css" href="/styles/code/code-tweaks.css" /> -->
 
 Revisited
 
@@ -41,3 +38,5 @@ New
   - _Quaristice (Versions)_
   - _L-event_
   - _PLUS_
+
+  https://www.fightforthefuture.org/actions/spotify-whacked/
