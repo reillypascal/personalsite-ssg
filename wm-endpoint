@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 target_url=$1
 endpoint_url=$(curl -s $target_url | grep -o '<link rel="webmention" href="[^"]*' | tail -c+30)

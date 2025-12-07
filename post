@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 isodate=$(date +"%Y-%m-%dT%H:%M:%S%z")
 year=$(date +"%Y")
