@@ -53,6 +53,7 @@ tags:
 - Starship (command prompt)
 - tmux (terminal multiplexer)
 - WezTerm (terminal)
+- yazi (terminal file browser/manager)
 - zoxide (navigate terminal like cd, but with fuzzy matching/finding)
 
 <!-- - Ghostty (terminal) -->
