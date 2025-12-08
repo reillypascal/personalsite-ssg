@@ -51,9 +51,9 @@ tags:
   - vim-tidal (Vim plugin for Tidal Cycles)
 - pluginval (validate and debug audio plugins)
 - Starship (command prompt)
+- superfile (terminal file browser/manager)
 - tmux (terminal multiplexer)
 - WezTerm (terminal)
-- yazi (terminal file browser/manager)
 - zoxide (navigate terminal like cd, but with fuzzy matching/finding)
 
 <!-- - Ghostty (terminal) -->
