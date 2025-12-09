@@ -2,5 +2,7 @@
 	"plugins": [
 		"@shopify/prettier-plugin-liquid",
 		"prettier-plugin-jinja-template"
-	]
+	],
+	"useTabs": false,
+    "tabWidth": 2
 }

@@ -1,12 +1,11 @@
 ---
 title: "On a Knife-Edge"
 description: <i>The clouds cascade above you in incredible detail. In places, their bases form an impenetrable ceiling, but that ceiling is temporary. Wisps of shadow float against glowing shards of the sun, illuminating another layer behind…</i>
-date:
+date: 2025-12-09T15:13:14-0500
 tags:
   - fiction
   - post
   - creative-writing
-draft: true
 ---
 
 The clouds cascade above you in incredible detail. In places, their bases form an impenetrable ceiling, but that ceiling is temporary. Wisps of shadow float against glowing shards of the sun, illuminating another layer behind. The effect continues below the clouds. As you move forward, you can see the boundaries between light and dark projected on the ground. The changing brightness pulsates as it sweeps over you.
