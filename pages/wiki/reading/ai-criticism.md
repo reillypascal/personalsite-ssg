@@ -24,32 +24,6 @@ This page is a collection of reporting, research, and essays critical of large l
 
 <section>
 
-## AI in Academia
-
-- Ethan Hein, “[AI slop and musical creativity](https://www.ethanhein.com/wp/2025/ai-slop-and-musical-creativity/)”
-
-> The question is not, how do we help people be creative? They are already, from birth. The question is, why do we grind creativity out of kids so thoroughly, and how do we stop doing that? Teaching songwriting and other creative music-making requires only that you disinhibit the strong creative impulse that is already there. \[…\]
-
-> The hardest part of making up a song is just having the nerve to do it. You have to take an emotional risk. Everything intellectual and technical is downstream from that. If you remove the emotional risk, you remove the entire foundation of the structure. It doesn’t matter what you pile on top after that.
-
-- Patrick Lin, “[Why We’re Not Using AI in This Course, Despite Its Obvious Benefits](https://emergingethics.substack.com/p/why-were-not-using-ai-in-this-course)”
-
-- [_Resisting “AI” // LLMs in Library Labour_](https://ahemnason.notion.site/resisting-ai)
-
-> This list has been assembled by Mike Nason, UNB Libraries, and will be supplemented whenever something is compelling enough to add.
-
-- [_AGAINST AI_](https://against-a-i.com/)
-
-> Materials here are intended as solidarity solace for educators who might find themselves inventing wheels alone while their administrators, trustees, and bosses unrelentingly hype AI and nakedly enthuse the negative consequences for educator labor.
-
-> AGAINST AI benefits from expert colleagues across the humanistic and qualitative disciplines, as well as in various media industries.
-
-> Please [contact us](mailto:againstai2025@gmail.com) to contribute.
-
-</section>
-
-<section>
-
 ## AI as a Labor Issue
 
 - Ethan Marcotte, “[Against the protection of stocking frames.](https://ethanmarcotte.com/wrote/against-stocking-frames/)”
@@ -207,6 +181,32 @@ Cognitive scientist and AI researcher Gary Marcus [notes the following about the
 <!-- - Tracy Durnell, “[Generative AI and the Business Borg aesthetic](https://tracydurnell.com/2025/06/02/generative-ai-and-the-business-borg-aesthetic/)”
 
 > Generative AI — both imagery and text — is inextricable from the corporate vision for its use: a world in which [workers are powerless and worthless](https://www.axios.com/2025/05/28/ai-jobs-white-collar-unemployment-anthropic), replaced by “free” generated material. Corporate GenAI cannot be separated from the purpose for its use or the billionaires and billionaire-wannabes who shill for it. -->
+
+</section>
+
+<section>
+
+## AI in Academia
+
+- Ethan Hein, “[AI slop and musical creativity](https://www.ethanhein.com/wp/2025/ai-slop-and-musical-creativity/)”
+
+> The question is not, how do we help people be creative? They are already, from birth. The question is, why do we grind creativity out of kids so thoroughly, and how do we stop doing that? Teaching songwriting and other creative music-making requires only that you disinhibit the strong creative impulse that is already there. \[…\]
+
+> The hardest part of making up a song is just having the nerve to do it. You have to take an emotional risk. Everything intellectual and technical is downstream from that. If you remove the emotional risk, you remove the entire foundation of the structure. It doesn’t matter what you pile on top after that.
+
+- Patrick Lin, “[Why We’re Not Using AI in This Course, Despite Its Obvious Benefits](https://emergingethics.substack.com/p/why-were-not-using-ai-in-this-course)”
+
+- [_Resisting “AI” // LLMs in Library Labour_](https://ahemnason.notion.site/resisting-ai)
+
+> This list has been assembled by Mike Nason, UNB Libraries, and will be supplemented whenever something is compelling enough to add.
+
+- [_AGAINST AI_](https://against-a-i.com/)
+
+> Materials here are intended as solidarity solace for educators who might find themselves inventing wheels alone while their administrators, trustees, and bosses unrelentingly hype AI and nakedly enthuse the negative consequences for educator labor.
+
+> AGAINST AI benefits from expert colleagues across the humanistic and qualitative disciplines, as well as in various media industries.
+
+> Please [contact us](mailto:againstai2025@gmail.com) to contribute.
 
 </section>
 
