@@ -19,15 +19,15 @@ It was last updated {{ page.date | date: "%B %d, %Y" }}
 <article>
 <h2 class="sectionHeader">Current Activities</h2>
 
-<!-- I've been continuing to work on my [data2audio](https://github.com/reillypascal/data2audio) Rust tool for converting batches of files into audio. I figured out how to use `rayon` to process multiple files in parallel, and now it's super fast — I got all ~12.5 GB (\> 35,000 files!) of data from the Xcode macOS app converted in ~17 seconds! This has made a big difference for composing. Now I can make and audition a huge number of databending samples without it being nearly as much of a slog. -->
+I've been wanting to learn how to write externals for Max/MSP in C for a while now, and I finally got around to learning how. I have [a work-in-progress one](https://github.com/reillypascal/rs.max) going, and it's turning out to be a lot of fun.
 
-While I originally planned to use this blog for technical writing, [my entry for the September 2025 IndieWeb Carnival](/posts/2025/09/september-indieweb-carnival/) got me excited about creative writing and fiction. I've added a [fiction page](/fiction) to my site, and I have a second creative writing piece that's going there/on my blog soon.
+[Writing for the September 2025 IndieWeb Carnival](/posts/2025/09/september-indieweb-carnival/) got me excited about creative writing and fiction. I've added a [fiction page](/fiction) to my site. I've been reading some Borges and thinking about metafiction, and that's giving me some fun ideas I think I'd like to try.
 
-Recently I've found some new hobbies. First is photography. I tracked down an analog SLR camera (a Minolta X-370) that I had in high school but never used, and I'm learning analog photography with it. I also found some local classes on developing black & white film, and that should be a fun skill to learn.
-
-Next is TTRPGS (i.e., games like D&D). I had been wanting to find more in-person friends and activities, so I joined a group playing Pathfinder 2e at my local library. The group has been welcoming, and the game is turning out to be a lot of fun.
+Recently I've been getting into TTRPGS (i.e., games like D&D). I had been wanting to find more in-person friends and activities, so I joined a group playing Pathfinder 2e at my local library. The group has been welcoming, and the game is turning out to be a lot of fun.
 
 I also just got married! My partner and I had a nice small ceremony in October with family and friends. I'm so excited to spend the rest of my life with them.
+
+<!-- Recently I've found some new hobbies. First is photography. I tracked down an analog SLR camera (a Minolta X-370) that I had in high school but never used, and I'm learning analog photography with it. I also found some local classes on developing black & white film, and that should be a fun skill to learn. -->
 
 </article>
 
