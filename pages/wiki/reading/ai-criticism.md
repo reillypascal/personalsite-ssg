@@ -76,7 +76,7 @@ In other words, as Merchant puts it
 
 ## Weaknesses of AI as a Tool
 
-- David H. Cropley, [_ “The Cat Sat on the …?” Why Generative AI Has Limited Creativity _](https://onlinelibrary.wiley.com/doi/10.1002/jocb.70077)
+- David H. Cropley, “[‘The Cat Sat on the …?’ Why Generative AI Has Limited Creativity](https://onlinelibrary.wiley.com/doi/10.1002/jocb.70077)”
 
 > This paper applies the standard definition of creativity to the output of Large Language Models (LLMs) and shows not only that this can be calculated ex ante, but that LLM output creativity has a fundamental upper limit. …LLM creativity is mathematically constrained to a level equivalent to the boundary between amateur and professional human creativity. This has significant implications for claims about AI autonomy in creative tasks.
 
