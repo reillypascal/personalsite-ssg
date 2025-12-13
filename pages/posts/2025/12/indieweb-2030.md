@@ -27,9 +27,15 @@ Anil Dash's article is no longer available on his site. At time of writing, it g
 V.H. Belvadi is [hosting this month's IndieWeb Carnival](https://vhbelvadi.com/indieweb-carnival-future) about where we see the IndieWeb in 2030. The longer I pay attention to technology, the less I feel equipped to picture the future. Instead of trying to guess what will come, today I'm talking about what makes me despair in the present, and thinking through those feelings, and to a more productive path forward.
 
 IFTAS
+VPN bans
+age verification
 
 ## Postscript
 
 These things we build are so frail. So many answers to the question of how to move forward, to be healthier, to be safer from being manipulated and used. So easy for answers to fall apart. So easy for them to survive, zombie-like, in some form, but fail to touch many people.
 
 At the very least, we can try. We must try.
+
+---
+
+https://bobbyhiltz.com/posts/2025/12/indieweb-2030/
