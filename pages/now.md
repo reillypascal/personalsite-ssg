@@ -19,11 +19,11 @@ It was last updated {{ page.date | date: "%B %d, %Y" }}
 <article>
 <h2 class="sectionHeader">Current Activities</h2>
 
-I've been wanting to learn how to write externals for Max/MSP in C for a while now, and I finally got around to learning how. I have [a work-in-progress one](https://github.com/reillypascal/rs.max) going, and it's turning out to be a lot of fun.
+I've been wanting to learn how to write externals for Max/MSP in C for a while now, and I finally got around to learning how. I have [one started](https://github.com/reillypascal/rs.max), and it's turning out to be a lot of fun.
 
 [Writing for the September 2025 IndieWeb Carnival](/posts/2025/09/september-indieweb-carnival/) got me excited about creative writing and fiction. I've added a [fiction page](/fiction) to my site. I've been reading some Borges and thinking about metafiction, and that's giving me some fun ideas I think I'd like to try.
 
-Recently I've been getting into TTRPGS (i.e., games like D&D). I had been wanting to find more in-person friends and activities, so I joined a group playing Pathfinder 2e at my local library. The group has been welcoming, and the game is turning out to be a lot of fun.
+Recently I've been getting into TTRPGs (i.e., games like D&D). I had been wanting to find more in-person friends and activities, so I joined a group playing Pathfinder 2e at my local library. The group has been welcoming, and the game is turning out to be a lot of fun.
 
 I also just got married! My partner and I had a nice small ceremony in October with family and friends. I'm so excited to spend the rest of my life with them.
 
