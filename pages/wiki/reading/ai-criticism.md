@@ -112,6 +112,10 @@ Cognitive scientist and AI researcher Gary Marcus [notes the following about the
 
 > Throw in every gadget invented since 1998, and the Achilles’ Heel I identified then still remains. That’s startling. Even I didn’t expect that.
 
+- Kung-Hsiang Huang et al., “[CRMArena-Pro: Holistic Assessment of LLM Agents Across Diverse Business Scenarios and Interactions](https://arxiv.org/pdf/2505.18878)”
+
+> Experiments show leading LLM agents achieve approximately solely 58% single-turn success rate on CRMArena-Pro, with significant performance drops in multi-turn settings to 35%… Additionally, agents exhibit near-zero inherent confidentiality awareness (improvable with prompting but often at a cost to task performance).
+
 </section>
 
 <section>
