@@ -89,6 +89,7 @@ tags:
 
 - Capy Reader (Android RSS reader)
 - LibreOffice (FOSS office suite)
+- Markdown-Oxide (Obsidian-compatible language server; works with e.g., Neovim)
 - NetNewsWire (macOS RSS reader; also available for iOS)
 - Obsidian (notebook; pairs nicely with Syncthing)
 - Readest (cross-platform e-book reader)
