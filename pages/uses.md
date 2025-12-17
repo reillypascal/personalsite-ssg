@@ -46,6 +46,7 @@ tags:
 
 - apparix (terminal bookmarks)
 - fzf (terminal fuzzy finder)
+- Ghostty (terminal)
 - Neovim (my [dotfiles](https://github.com/reillypascal/nvim))
   - scnvim (Neovim frontend for SuperCollider)
   - vim-tidal (Vim plugin for Tidal Cycles)
@@ -60,7 +61,6 @@ tags:
 <!-- - chezmoi (dotfile manager) -->
 <!-- - brew-explorer (TUI for Homebrew) -->
 <!-- - Octave (FOSS equivalent to MATLAB) -->
-<!-- - superfile (terminal file manager) -->
 <!-- - tldr (man pages with practical examples) -->
 
 ### Web
@@ -116,8 +116,6 @@ tags:
 - LinearMouse (remap mouse input without requiring official Logitech software)
 - Obtainium (install Android apps from GitHub; keep track of/manage updates)
 - uBlock Origin (adblocker)
-
-<!-- - ItsyCal (macOS taskbar calendar) -->
 
 ### Operating Systems
 
