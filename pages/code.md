@@ -7,20 +7,6 @@ description: My code, including sound design tools, VST/AU plugin programming, a
 <link rel="stylesheet" type="text/css" href="/styles/code/prism-perf-custom.css" />
 <link rel="stylesheet" type="text/css" href="/styles/code/code-tweaks.css" />
 
-<h1 id="maxmsp" class="sectionHeader">Max/MSP Tools and Externals</h1>
-
-<article>
-
-## [rs.max](https://github.com/reillypascal/rs.max/)
-
-\[rs.file2sig~\]: import any file as raw binary data and play this data back as a control signal for synthesizing [PSK](https://en.wikipedia.org/wiki/Phase-shift_keying) (phase-shift keying)/ASK/FSK/etc. telecommunications signals. See [Nathan Ho's post](https://nathan.ho.name/posts/dm-synthesis/) on using digital modulation modes for synthesis to hear the kinds of sounds this produces.
-
-## [rs.reverb](https://codeberg.org/reillypascal/rs.reverb)
-
-A collection of Max/MSP algorithmic reverb abstractions, based on classic DSP papers and software.
-
-</article>
-
 <h1 id="plugins" class="sectionHeader">Plugins</h1>
 
 <article>
@@ -45,7 +31,21 @@ Stereo glitch plugin that records a buffer of recent audio and mangles it, givin
 
 ## [RS Telecom](https://github.com/reillypascal/RSTelecom)
 
-Lo-fi plugin with options of various telecommunications codecs including Mu-Law and A-Law 8-bit, and GSM 06.10. Work in progress&mdash;more codecs and glitching effects coming soon.
+Lo-fi plugin with options of various telecommunications codecs including Mu-Law and A-Law 8-bit, and GSM 06.10. Work in progress — more codecs and glitching effects coming soon.
+
+</article>
+
+<h1 id="maxmsp" class="sectionHeader">Max/MSP Tools and Externals</h1>
+
+<article>
+
+## [rs.max](https://github.com/reillypascal/rs.max/)
+
+\[rs.file2sig~\]: import any file as raw binary data and play this data back as a control signal for synthesizing [PSK](https://en.wikipedia.org/wiki/Phase-shift_keying) (phase-shift keying)/ASK/FSK/etc. telecommunications signals. See [Nathan Ho's post](https://nathan.ho.name/posts/dm-synthesis/) on using digital modulation modes for synthesis to hear the kinds of sounds this produces.
+
+## [rs.reverb](https://codeberg.org/reillypascal/rs.reverb)
+
+A collection of Max/MSP algorithmic reverb abstractions, based on classic DSP papers and software.
 
 </article>
 
