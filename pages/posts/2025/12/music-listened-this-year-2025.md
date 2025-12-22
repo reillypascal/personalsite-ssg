@@ -25,6 +25,10 @@ Here's some of the music I've listened to this year — things in regular rotati
 
 I've listened to Charli XCX since before _Vroom Vroom_ came out, but as is often the case with artists I like, I've been moving quite slowly through her discography. I hadn't given _Number 1 Angel_ a proper listen, but I currently have “Lipgloss” on repeat. I love the over-the-top, scratchy synth design, and I actually tried my hand at recreating the lead part, to some success. Looks like the key is something that has a bright, buzzy formant — I tried using a kick drum-based wavetable, and some oscillator sync.
 
+### Fire-Toolz
+
+Interbeing: “Yellow Rose-Fire”
+
 ### William Fields
 
 I got to see William Fields live with Autechre in Philadelphia, and this next one is actually a live recording of that concert! It was very cool to see live, and I'm glad he decided to release the set. It's available [here](https://williamfields.bandcamp.com/album/opening-for-autechre-in-philadelphia) on Bandcamp.

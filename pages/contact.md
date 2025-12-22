@@ -8,7 +8,7 @@ description: Contact form for Reilly Spitzafden
 
 <h1 class="sectionHeader">Contact Information</h1>
 
-Email: [reillypascal@gmail.com](mailto:reillypascal@gmail.com)
+Email: <reillypascal@gmail.com>
 
 Signal: [@reillypascal.42](https://signal.me/#eu/7uMwpp_PyZnVmpmfO-Jm7Xgx_IZHTcATumXUo1WZU-_SwJfIWTNGap0m4PJEAiVy)
 

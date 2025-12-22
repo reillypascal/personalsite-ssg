@@ -46,14 +46,12 @@ tags:
 
 - apparix (terminal bookmarks)
 - fzf (terminal fuzzy finder)
-- Ghostty (terminal)
 - Neovim (my [dotfiles](https://github.com/reillypascal/nvim))
   - scnvim (Neovim frontend for SuperCollider)
-  - vim-tidal (Vim plugin for Tidal Cycles)
+  - tidal.nvim (Neovim plugin for Tidal Cycles)
 - pluginval (validate and debug audio plugins)
 - Starship (command prompt)
 - superfile (terminal file browser/manager)
-- tmux (terminal multiplexer)
 - WezTerm (terminal)
 - zoxide (navigate terminal like cd, but with fuzzy matching/finding)
 
@@ -62,6 +60,7 @@ tags:
 <!-- - brew-explorer (TUI for Homebrew) -->
 <!-- - Octave (FOSS equivalent to MATLAB) -->
 <!-- - tldr (man pages with practical examples) -->
+<!-- - tmux (terminal multiplexer) -->
 
 ### Web
 

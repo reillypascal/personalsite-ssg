@@ -1,235 +1,337 @@
 ---
 title: Reilly Spitzfaden, Composer
 ---
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <!-- General metadata -->
-        <title>{{ title }}</title>
-        <meta charset="utf-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <meta name="description" content="{{ description }}" />
-        <link rel="canonical" href="https://reillyspitzfaden.com{{ page.url }}" />
-        <link type="text/plain" rel="author" href="https://reillyspitzfaden.com/humans.txt" />
+  <head>
+    <!-- General metadata -->
+    <title>{{ title }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="{{ description }}">
+    <link rel="canonical" href="https://reillyspitzfaden.com{{ page.url }}">
+    <link type="text/plain" rel="author" href="https://reillyspitzfaden.com/humans.txt">
 
-        <!-- Favicon -->
-        <link rel="icon" type="image/png" href="/media/favicon/favicon-96x96.png" sizes="96x96" />
-        <link rel="icon" type="image/svg+xml" href="/media/favicon/favicon.svg" />
-        <link rel="shortcut icon" href="/media/favicon/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/media/favicon/apple-touch-icon.png" />
-        <meta name="apple-mobile-web-app-title" content="Reilly Spitzfaden" />
-        <link rel="manifest" href="/media/favicon/site.webmanifest" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/media/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="/media/favicon/favicon.svg">
+    <link rel="shortcut icon" href="/media/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/media/favicon/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-title" content="Reilly Spitzfaden">
+    <link rel="manifest" href="/media/favicon/site.webmanifest">
 
-        <!-- OG, social meta properties -->
-        <meta property="og:url" content="https://reillyspitzfaden.com{{ page.url }}" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="{{ title }}"/>
-        <meta property="og:description" content="{{ description }}" />
-        {%- if og_image %}
-        <meta property="og:image" content="https://reillyspitzfaden.com{{ og_image }}" />
-        {% if og_image_width and og_image_height %}
-        <meta property="og:image:width" content="{{ og_image_width }}" />
-        <meta property="og:image:height" content="{{ og_image_height }}" />
-        {% endif %}
-        {%- else %}
-        <meta property="og:image" content="https://reillyspitzfaden.com/media/og_image.jpg" />
-        <meta property="og:image:type" content="image/jpeg" />
-        <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:alt" content="Pixel art of a radio tower and floppy disk, with sans-serif text reading 'Reilly Spitzfaden'" />
-        {%- endif %}
-        <meta name="fediverse:creator" content="@reillypascal@hachyderm.io">
+    <!-- OG, social meta properties -->
+    <meta property="og:url" content="https://reillyspitzfaden.com{{ page.url }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ description }}">
+    {%- if og_image %}
+      <meta property="og:image" content="https://reillyspitzfaden.com{{ og_image }}">
+      {% if og_image_width and og_image_height %}
+        <meta property="og:image:width" content="{{ og_image_width }}">
+        <meta property="og:image:height" content="{{ og_image_height }}">
+      {% endif %}
+    {%- else %}
+      <meta property="og:image" content="https://reillyspitzfaden.com/media/og_image.jpg">
+      <meta property="og:image:type" content="image/jpeg">
+      <meta property="og:image:width" content="1200">
+      <meta property="og:image:height" content="630">
+      <meta
+        property="og:image:alt"
+        content="Pixel art of a radio tower and floppy disk, with sans-serif text reading 'Reilly Spitzfaden'"
+      >
+    {%- endif %}
+    <meta name="fediverse:creator" content="@reillypascal@hachyderm.io">
 
-        <!-- My styles -->
-        <link rel="stylesheet" type="text/css" href="/styles/global.css" />
-        {%- comment %} <script defer src="/styles/menus.js"></script> {%- endcomment %}
+    <!-- My styles -->
+    <link rel="stylesheet" type="text/css" href="/styles/global.css">
+    {%- comment %} <script defer src="/styles/menus.js"></script> {%- endcomment %}
 
-        <!-- Fonts -->
-        <link rel="preload" href="/styles/fonts/librefranklin/LibreFranklin-VariableFont_wght.woff2" as="font" type="font/woff2" crossorigin>
-        <link rel="preload" href="/styles/fonts/librefranklin/LibreFranklin-Italic-VariableFont_wght.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- Fonts -->
+    <link
+      rel="preload"
+      href="/styles/fonts/librefranklin/LibreFranklin-VariableFont_wght.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    >
+    <link
+      rel="preload"
+      href="/styles/fonts/librefranklin/LibreFranklin-Italic-VariableFont_wght.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    >
 
-        <!-- RSS Autodiscovery -->
-        <link rel="alternate" type="application/rss+xml" title="Reilly Spitzfaden | All" href="https://reillyspitzfaden.com/feed.xml" />
-        <link rel="alternate" type="application/rss+xml" title="Reilly Spitzfaden | Blog" href="https://reillyspitzfaden.com/blog/feed.xml" />
-        <link rel="alternate" type="application/rss+xml" title="Reilly Spitzfaden | Notes" href="https://reillyspitzfaden.com/notes/feed.xml" />
-        <link rel="alternate" type="application/rss+xml" title="Reilly Spitzfaden | Interactions" href="https://reillyspitzfaden.com/interactions/feed.xml" />
+    <!-- RSS Autodiscovery -->
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Reilly Spitzfaden | All"
+      href="https://reillyspitzfaden.com/feed.xml"
+    >
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Reilly Spitzfaden | Blog"
+      href="https://reillyspitzfaden.com/blog/feed.xml"
+    >
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Reilly Spitzfaden | Notes"
+      href="https://reillyspitzfaden.com/notes/feed.xml"
+    >
+    <link
+      rel="alternate"
+      type="application/rss+xml"
+      title="Reilly Spitzfaden | Interactions"
+      href="https://reillyspitzfaden.com/interactions/feed.xml"
+    >
 
-        <!-- Blogroll autodiscovery -->
-        <link rel="blogroll" type="text/xml" href="https://reillyspitzfaden.com/blogroll.opml">
+    <!-- Blogroll autodiscovery -->
+    <link rel="blogroll" type="text/xml" href="https://reillyspitzfaden.com/blogroll.opml">
 
-        <!-- rel="me" verification -->
-        <link rel="me" href="https://hachyderm.io/@reillypascal" />
-        <link rel="me" href="https://github.com/reillypascal" />
-        {%- comment %} <!-- IndieAuth -->
-        <link rel="authorization_endpoint" href="https://indieauth.com/auth"> {%- endcomment %}
+    <!-- rel="me" verification -->
+    <link rel="me" href="https://hachyderm.io/@reillypascal">
+    <link rel="me" href="https://github.com/reillypascal">
+    {%- comment %}
+      <!-- IndieAuth -->
+      <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+    {%- endcomment %}
 
-        <!-- Webmentions -->
-        <link rel="webmention" href="https://webmention.io/reillyspitzfaden.com/webmention" />
-        <link rel="pingback" href="https://webmention.io/reillyspitzfaden.com/xmlrpc" />
+    <!-- Webmentions -->
+    <link rel="webmention" href="https://webmention.io/reillyspitzfaden.com/webmention">
+    <link rel="pingback" href="https://webmention.io/reillyspitzfaden.com/xmlrpc">
 
-        {%- comment %}{%- if octothorpes %}
-        <!-- Octothorpes -->
-        <!-- Indexing -->
-        <link 
-        rel="preload" 
-        as="fetch" 
-        href="https://octothorp.es/?uri=https://reillyspitzfaden.com{{ page.url }}" />
+    {%- comment %}
+      {%- if octothorpes %}
+      <!-- Octothorpes -->
+      <!-- Indexing -->
+      <link
+      rel="preload"
+      as="fetch"
+      href="https://octothorp.es/?uri=https://reillyspitzfaden.com{{ page.url }}" />
 
-        <!-- Tags -->
-        {%- for tag in octothorpes %}
-        <link 
-        rel="octo:octothorpes"
-        href="{{ tag }}" />
-        {%- endfor %}
+      <!-- Tags -->
+      {%- for tag in octothorpes %}
+      <link
+      rel="octo:octothorpes"
+      href="{{ tag }}" />
+      {%- endfor %}
 
-        <!-- Endorse backlinks -->
-        <link 
-        rev="octo:octothorpes" 
-        href="*" />
-        {%- endif %} {%- endcomment %}
-    </head>
-    <body>
-        <a class="skip-link" href="#content">Skip to content</a>
-        <!-- includes footer - makes it fill the page -->
-        <div class="wrapper">
-            <!-- navigation menu -->
-            <header>
-                <div id="cardImg">
-                    <a href="/">
-                        <img src="/media/radio-tower-aliceblue-64px.svg" alt="Pixel art icon of a radio tower; return to homepage" id="radio-tower" height="64" width="64"/><img src="/media/save-aliceblue-64px.svg" alt="Pixel art icon of a floppy disk; return to homepage" id="floppy-disk" height="64" width="64" />
-                    </a>
+      <!-- Endorse backlinks -->
+      <link
+      rev="octo:octothorpes"
+      href="*" />
+      {%- endif %}
+    {%- endcomment %}
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <!-- includes footer - makes it fill the page -->
+    <div class="wrapper">
+      <!-- navigation menu -->
+      <header>
+        <div id="cardImg">
+          <a href="/">
+            <img
+              src="/media/radio-tower-aliceblue-64px.svg"
+              alt="Pixel art icon of a radio tower; return to homepage"
+              id="radio-tower"
+              height="64"
+              width="64"
+
+            ><img
+              src="/media/save-aliceblue-64px.svg"
+              alt="Pixel art icon of a floppy disk; return to homepage"
+              id="floppy-disk"
+              height="64"
+              width="64"
+            >
+          </a>
+        </div>
+        <nav>
+          <span class="name-heading"><a href="/" class="navElementHome">Reilly Spitzfaden</a></span>
+          <div class="hamburger-contents">
+            <button
+              class="dropbtn navIcon"
+              id="hamburger-button"
+              aria-label="Open the menu"
+            >
+              <img
+                src="/media/menu-aliceblue-32px.svg"
+                alt="menu button"
+                class="icon-svg hamburger-svg"
+                height="28"
+                width="28"
+              >
+            </button>
+            <div id="menuLinks">
+              <div class="navElement">
+                <div id="about-dropdown" class="dropdown">
+                  <button
+                    type="button"
+                    id="about-button"
+                    class="dropbtn"
+                    aria-controls="about-dropdown-content"
+                  >
+                    About<img
+                      src="/media/ui/chevron-down-svgrepo-com.svg"
+                      alt="dropdown menu arrow for 'about' section"
+                      height="10"
+                      width="15"
+                    >
+                  </button>
+                  <div id="about-dropdown-content" class="dropdown-content">
+                    <a href="/bio">Bio</a>
+                    <a href="/now">Now</a>
+                    <a href="/uses">Uses</a>
+                  </div>
                 </div>
-                <nav>
-                    <span class="name-heading"><a href="/" class="navElementHome">Reilly Spitzfaden</a></span>
-                    <div class="hamburger-contents">
-                        <button 
-                            class="dropbtn navIcon" 
-                            id="hamburger-button"
-                            aria-label="Open the menu"
-                        >    
-                            <img src="/media/menu-aliceblue-32px.svg" alt="menu button" class="icon-svg hamburger-svg" height="28" width="28" />
-                        </button>
-                        <div id="menuLinks">
-                            <div class="navElement">
-                                <div id="about-dropdown" class="dropdown">
-                                    <button 
-                                        type="button"
-                                        id="about-button"
-                                        class="dropbtn"
-                                        aria-controls="about-dropdown-content"
-                                    >
-                                        About<img src="/media/ui/chevron-down-svgrepo-com.svg" alt="dropdown menu arrow for 'about' section" height="10" width="15" />
-                                    </button>
-                                    <div id="about-dropdown-content" class="dropdown-content">
-                                        <a href="/bio">Bio</a>
-                                        <a href="/now">Now</a>
-                                        <a href="/uses">Uses</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="navElement">
-                                <div id="music-dropdown" class="dropdown">
-                                    <button 
-                                        type="button"
-                                        id="music-button"
-                                        class="dropbtn"
-                                        aria-controls="music-dropdown-content"
-                                    >
-                                        Music<img src="/media/ui/chevron-down-svgrepo-com.svg" alt="dropdown menu arrow for 'music' section" height="10" width="15" />
-                                    </button>
-                                    <div id="music-dropdown-content" class="dropdown-content">
-                                        <a href="/works">Works</a>
-                                        <a href="/media">Media</a>
-                                        <a href="/shop">Shop</a>
-                                        <a href="/supplemental">Supplemental</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="navElement">
-                                <div id="writing-dropdown" class="dropdown">
-                                    <button 
-                                        type="button"
-                                        id="writing-button"
-                                        class="dropbtn"
-                                        aria-controls="writing-dropdown-content"
-                                    >
-                                        Writing<img src="/media/ui/chevron-down-svgrepo-com.svg" alt="dropdown menu arrow for 'writing' section" height="10" width="15" />
-                                    </button>
-                                    <div id="writing-dropdown-content" class="dropdown-content">
-                                        <a href="/blog">Blog</a>
-                                        <a href="/notes">Notes</a>
-                                        <a href="/fiction">Fiction</a>
-                                        <a href="/wiki">Wiki</a>
-                                        <a href="/interactions">Interactions</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="navElement"><a href="/code">Code</a></div>
-                            <div class="navElement">
-                                <div id="site-info-dropdown" class="dropdown">
-                                    
-                                    <button 
-                                        type="button"
-                                        id="site-info-button"
-                                        class="dropbtn"
-                                        aria-controls="site-info-dropdown-content"
-                                    >
-                                        Site Info<img src="/media/ui/chevron-down-svgrepo-com.svg" alt="dropdown menu arrow for 'site info' section" height="10" width="15" />
-                                    </button>
-                                    
-                                    <div id="site-info-dropdown-content" class="dropdown-content">
-                                        <a href="/contact">Contact</a>
-                                        <a href="/search">Search</a>
-                                        <a href="/ai-policy">AI Policy</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="navElement"><a href="/feeds">Feeds</a></div>
-                        </div>
-                    <!-- end hamburger-contents -->
-                    </div>
-                </nav>
-            </header>
-
-            <main role="main" id="content">
-            {{ content }}
-            </main>
-
-            <!-- footer -->
-            <footer>
-                <div id="social-icons">
-                    <a href="https://bsky.app/profile/reillypascal.bsky.social" title="Bluesky"><img src="/media/bluesky-logo-light.svg" alt="Reilly's Bluesky account" width="36" height="32" /></a>
-                    <a href="https://github.com/reillypascal" title="GitHub"><img src="/media/github-logo-light.svg" alt="Reilly's GitHub account" width="32" height="32" /></a>
-                    {% comment %} <a href="https://ko-fi.com/reillyspitzfaden" title="Ko-Fi"><img src="/media/ko-fi-logo-light.svg" alt="Reilly's Ko-Fi account" width="43" height="32" /></a> {% endcomment %}
-                    <a href="https://hachyderm.io/@reillypascal" title="Mastodon"><img src="/media/mastodon-logo-light.svg" alt="Reilly's Mastodon account" width="32" height="34" /></a>
-                    <a href="https://makertube.net/c/reilly_spitzfaden_composer/videos" title="PeerTube"><img src="/media/peertube-logo-light.svg" alt="Reilly's PeerTube channel" width="24" height="32" ></a>
-                    <a href="https://soundcloud.com/reilly-spitzfaden" title="SoundCloud"><img src="/media/soundcloud-logo-light.svg" alt="SoundCloud" width="40" height="32" /></a>
-                    <a href="https://www.youtube.com/@reillyspitzfaden" title="YouTube"><img src="/media/youtube-logo-light.svg" alt="Reilly's YouTube channel" width="32" height="32" /></a>
-                    <a href="/feeds" title="RSS"><img src="/media/rss-icon-light.svg" alt="RSS" width="32" height="32" /></a>
+              </div>
+              <div class="navElement">
+                <div id="music-dropdown" class="dropdown">
+                  <button
+                    type="button"
+                    id="music-button"
+                    class="dropbtn"
+                    aria-controls="music-dropdown-content"
+                  >
+                    Music<img
+                      src="/media/ui/chevron-down-svgrepo-com.svg"
+                      alt="dropdown menu arrow for 'music' section"
+                      height="10"
+                      width="15"
+                    >
+                  </button>
+                  <div id="music-dropdown-content" class="dropdown-content">
+                    <a href="/works">Works</a>
+                    <a href="/media">Media</a>
+                    <a href="/shop">Shop</a>
+                    <a href="/supplemental">Supplemental</a>
+                  </div>
                 </div>
-                
-                {%- comment %} <p class="octothorpes-badge"><a href="https://octothorp.es" class="img-badge"><img src="/media/octothorpes-badge.png" alt="Badge for the Octothorpes main ring" height="31" width="88" /></a></p> {%- endcomment %}
-
-                <div id="webring-links">
-                    <a href="https://xn--sr8hvo.ws/previous" id="webring-prev-arrow">←</a>
-                    <a href="https://xn--sr8hvo.ws" id="webring-name">IndieWeb Webring</a>
-                    <a href="https://xn--sr8hvo.ws/next" id="webring-next-arrow">→</a>
+              </div>
+              <div class="navElement">
+                <div id="writing-dropdown" class="dropdown">
+                  <button
+                    type="button"
+                    id="writing-button"
+                    class="dropbtn"
+                    aria-controls="writing-dropdown-content"
+                  >
+                    Writing<img
+                      src="/media/ui/chevron-down-svgrepo-com.svg"
+                      alt="dropdown menu arrow for 'writing' section"
+                      height="10"
+                      width="15"
+                    >
+                  </button>
+                  <div id="writing-dropdown-content" class="dropdown-content">
+                    <a href="/blog">Blog</a>
+                    <a href="/notes">Notes</a>
+                    <a href="/fiction">Fiction</a>
+                    <a href="/wiki">Wiki</a>
+                    <a href="/interactions">Interactions</a>
+                  </div>
                 </div>
+              </div>
+              <div class="navElement"><a href="/code">Code</a></div>
+              <div class="navElement">
+                <div id="site-info-dropdown" class="dropdown">
+                  <button
+                    type="button"
+                    id="site-info-button"
+                    class="dropbtn"
+                    aria-controls="site-info-dropdown-content"
+                  >
+                    Site Info<img
+                      src="/media/ui/chevron-down-svgrepo-com.svg"
+                      alt="dropdown menu arrow for 'site info' section"
+                      height="10"
+                      width="15"
+                    >
+                  </button>
 
-                {%- comment %} <p><a href="https://github.com/reillypascal/personalsite-ssg">View Source Code</a></p> {%- endcomment -%}
-                {%- comment -%} <p>&copy; 2022–2025 by Reilly Spitzfaden. This site supports <a href="https://webmention.net/">webmentions</a>.</p> {%- endcomment %}
-
-                <div id="footer-link-list">
+                  <div id="site-info-dropdown-content" class="dropdown-content">
                     <a href="/contact">Contact</a>
                     <a href="/search">Search</a>
                     <a href="/ai-policy">AI Policy</a>
-                    <a href="/blogroll">Blogroll</a>
-                    <a href="https://ko-fi.com/reillyspitzfaden" title="Ko-Fi">Buy me a coffee</a>
+                  </div>
                 </div>
-                
-                <p>Text and images licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> :: <a href="https://github.com/reillypascal/personalsite-ssg">Source code</a> licensed under the <a href="https://github.com/reillypascal/personalsite-ssg/blob/main/LICENSE">MIT License</a> :: Music &copy; & &copysr; 2014–{{ "now" | date: "%Y" }}, Reilly Spitzfaden</p>
-            </footer>
-        <!-- close "wrapper"-->
+              </div>
+              <div class="navElement"><a href="/feeds">Feeds</a></div>
+            </div>
+            <!-- end hamburger-contents -->
+          </div>
+        </nav>
+      </header>
+
+      <main role="main" id="content">
+        {{ content }}
+      </main>
+
+      <!-- footer -->
+      <footer>
+        <div id="social-icons">
+          <a href="https://bsky.app/profile/reillypascal.bsky.social" title="Bluesky"
+            ><img src="/media/bluesky-logo-light.svg" alt="Reilly's Bluesky account" width="36" height="32"
+          ></a>
+          <a href="https://github.com/reillypascal" title="GitHub"
+            ><img src="/media/github-logo-light.svg" alt="Reilly's GitHub account" width="32" height="32"
+          ></a>
+          {% comment %} <a href="https://ko-fi.com/reillyspitzfaden" title="Ko-Fi"><img src="/media/ko-fi-logo-light.svg" alt="Reilly's Ko-Fi account" width="43" height="32" /></a> {% endcomment %}
+          <a href="https://hachyderm.io/@reillypascal" title="Mastodon"
+            ><img src="/media/mastodon-logo-light.svg" alt="Reilly's Mastodon account" width="32" height="34"
+          ></a>
+          <a href="https://makertube.net/c/reilly_spitzfaden_composer/videos" title="PeerTube"
+            ><img src="/media/peertube-logo-light.svg" alt="Reilly's PeerTube channel" width="24" height="32"
+          ></a>
+          <a href="https://soundcloud.com/reilly-spitzfaden" title="SoundCloud"
+            ><img src="/media/soundcloud-logo-light.svg" alt="SoundCloud" width="40" height="32"
+          ></a>
+          <a href="https://www.youtube.com/@reillyspitzfaden" title="YouTube"
+            ><img src="/media/youtube-logo-light.svg" alt="Reilly's YouTube channel" width="32" height="32"
+          ></a>
+          <a href="/feeds" title="RSS"><img src="/media/rss-icon-light.svg" alt="RSS" width="32" height="32"></a>
         </div>
-    </body>
+
+        {%- comment %} <p class="octothorpes-badge"><a href="https://octothorp.es" class="img-badge"><img src="/media/octothorpes-badge.png" alt="Badge for the Octothorpes main ring" height="31" width="88" /></a></p> {%- endcomment %}
+
+        <!--
+          <div id="webring-links">
+            <a href="https://cyberia.click/prev.cgi?source=reillypascal" id="webring-prev-arrow">←</a>
+            <a href="https://cyberia.click/" id="webring-name">Cyberia Webring</a>
+            <a href="https://cyberia.click/next.cgi?source=reillypascal" id="webring-next-arrow">→</a>
+          </div>
+        -->
+
+        <div id="webring-links">
+          <a href="https://xn--sr8hvo.ws/previous" id="webring-prev-arrow">←</a>
+          <a href="https://xn--sr8hvo.ws" id="webring-name">IndieWeb Webring</a>
+          <a href="https://xn--sr8hvo.ws/next" id="webring-next-arrow">→</a>
+        </div>
+
+        {%- comment %} <p><a href="https://github.com/reillypascal/personalsite-ssg">View Source Code</a></p> {%- endcomment %}
+        {%- comment -%} <p>&copy; 2022–2025 by Reilly Spitzfaden. This site supports <a href="https://webmention.net/">webmentions</a>.</p> {%- endcomment -%}
+
+        <div id="footer-link-list">
+          <a href="/contact">Contact</a>
+          <a href="/search">Search</a>
+          <a href="/ai-policy">AI Policy</a>
+          <a href="/blogroll">Blogroll</a>
+          <a href="https://ko-fi.com/reillyspitzfaden" title="Ko-Fi">Buy me a coffee</a>
+        </div>
+
+        <p>
+          Text and images licensed under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> ::
+          <a href="https://github.com/reillypascal/personalsite-ssg">Source code</a> licensed under the
+          <a href="https://github.com/reillypascal/personalsite-ssg/blob/main/LICENSE">MIT License</a> :: Music &copy; &
+          &copysr; 2014–{{ 'now' | date: '%Y' }}, Reilly Spitzfaden
+        </p>
+      </footer>
+      <!-- close "wrapper" -->
+    </div>
+  </body>
 </html>
