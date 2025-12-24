@@ -19,25 +19,25 @@ tags:
 
 Here are my notes on setting up an old laptop as a home server. This discussion pairs nicely with the [Raspberry Pi/Kodi TV streaming box I discuss here](/wiki/notebook/tech-projects/kodi-streaming-box-raspberry-pi/), and I also use this server to update my website with new webmentions [as I discuss here](/wiki/tutorials/webmention-tutorial/).
 
-## Guide (Ubuntu Server):
+## Guide (Ubuntu Server)
 
 - [The Zero Dollar Home Server](https://chriskalos.notion.site/The-0-Home-Server-Written-Guide-5d5ff30f9bdd4dfbb9ce68f0d914f1f6)
-  - Includes how to run with lid closed
+    - Includes how to run with lid closed
 
 ## Jellyfin
 
 ### Kodi
 
-- https://jellyfin.org/docs/general/clients/kodi/
+- <https://jellyfin.org/docs/general/clients/kodi/>
 
 ### Media
 
 - [Guide](https://forum.jellyfin.org/t-from-disc-to-drive-a-beginner-s-guide-to-preparing-your-media-for-jellyfin)
 - Software:
-  - [MakeMKV](https://www.makemkv.com/download/) for ripping
-    - [Forum post on LibreDrive firmware compatibility](https://forum.makemkv.com/forum/viewtopic.php?p=79712#p79712)
-  - [HandBrake](https://handbrake.fr/) for transcoding
-    - [vkc.sh blog post on transcoding with Handbrake](https://vkc.sh/handbrake-2025/)
+    - [MakeMKV](https://www.makemkv.com/download/) for ripping
+        - [Forum post on LibreDrive firmware compatibility](https://forum.makemkv.com/forum/viewtopic.php?p=79712#p79712)
+    - [HandBrake](https://handbrake.fr/) for transcoding
+        - [vkc.sh blog post on transcoding with Handbrake](https://vkc.sh/handbrake-2025/)
 
 <!-- - [MKVToolNix](https://mkvtoolnix.download/downloads.html) for transcoding -->
 
@@ -78,7 +78,7 @@ sudo umount /media/usb
 ## YouTube
 
 - Use this link to access the YouTube setup interface: http://\<your-server-ip-address\>:50152/youtube/api
-- https://github.com/anxdpanic/plugin.video.youtube/issues/1016
+- <https://github.com/anxdpanic/plugin.video.youtube/issues/1016>
 
 ## Misc
 

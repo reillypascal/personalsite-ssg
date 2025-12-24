@@ -34,18 +34,18 @@ Interbeing: “Yellow Rose-Fire”
 I got to see William Fields live with Autechre in Philadelphia, and this next one is actually a live recording of that concert! It was very cool to see live, and I'm glad he decided to release the set. It's available [here](https://williamfields.bandcamp.com/album/opening-for-autechre-in-philadelphia) on Bandcamp.
 
 - tsone
-  - _A ghost and a guest_
-  - _Airmass_ EP
+    - _A ghost and a guest_
+    - _Airmass_ EP
 - Meljoann, _Status_
 - Hoodwink Duo and Kelley Sheehan, _new ears_
 - William Fields
-  - _Fluidity_
-  - _Opening for Autechre in Philadelphia_
+    - _Fluidity_
+    - _Opening for Autechre in Philadelphia_
 - Autechre
-  - _Move of Ten_
-  - _Quaristice (Versions)_
-  - _L-event_
-  - _PLUS_
+    - _Move of Ten_
+    - _Quaristice (Versions)_
+    - _L-event_
+    - _PLUS_
 
 ## Revisited
 

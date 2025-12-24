@@ -1,0 +1,9 @@
+# https://github.com/rvben/rumdl?tab=readme-ov-file#configuration
+# https://github.com/markdownlint/markdownlint/blob/main/docs/RULES.md
+[global]
+# 013, line length; 025, multiple H1
+# 033, embedded HTML; 041, first line should be H1
+disable = ["MD013", "MD025", "MD033", "MD041"]
+
+[MD007]
+indent = 4

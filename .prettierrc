@@ -4,5 +4,5 @@
 		"prettier-plugin-jinja-template"
 	],
 	"useTabs": false,
-    "tabWidth": 2
+    "tabWidth": 4
 }

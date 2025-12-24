@@ -47,8 +47,8 @@ tags:
 - apparix (terminal bookmarks)
 - fzf (terminal fuzzy finder)
 - Neovim (my [dotfiles](https://github.com/reillypascal/nvim))
-  - scnvim (Neovim frontend for SuperCollider)
-  - tidal.nvim (Neovim plugin for Tidal Cycles)
+    - scnvim (Neovim frontend for SuperCollider)
+    - tidal.nvim (Neovim plugin for Tidal Cycles)
 - pluginval (validate and debug audio plugins)
 - Starship (command prompt)
 - superfile (terminal file browser/manager)
@@ -78,11 +78,11 @@ tags:
 - Auxio (Android local music player)
 - Lollypop (Linux music player aimed at GNOME desktop)
 - Platforms to buy downloads
-  - Bandcamp
-  - Faircamp (tool for artists to make their own download sales pages)
-    - Directories: [Faircamp webring](https://faircamp.webr.ing/), [mxv's list](https://maxvolu.me/faircamp-sites), [official site](https://simonrepp.com/faircamp/), [prototype aggregator](https://ten-thousand-sounds.com/)
-  - Mirlo
-  - Qobuz
+    - Bandcamp
+    - Faircamp (tool for artists to make their own download sales pages)
+        - Directories: [Faircamp webring](https://faircamp.webr.ing/), [mxv's list](https://maxvolu.me/faircamp-sites), [official site](https://simonrepp.com/faircamp/), [prototype aggregator](https://ten-thousand-sounds.com/)
+    - Mirlo
+    - Qobuz
 
 ### Documents
 
@@ -145,7 +145,7 @@ tags:
 - Troublemaker, “Petrichor”
 - Wearingeul, “The Black Cat”
 
-### Notebooks, Misc.
+### Notebooks, Misc
 
 - GLP Creations, “The Author” (Tomoe River paper, 68gsm, dot grid)
 - GoodInkPressions Tomoe River Notebook (68gsm, dot grid)
