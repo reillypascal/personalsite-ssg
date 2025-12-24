@@ -5,7 +5,7 @@
 # Global configuration options
 [global]
 # List of rules to disable (uncomment and modify as needed)
-disable = ["MD013", "MD025", "MD033", "MD040", "MD041"]
+disable = ["MD013", "MD025", "MD033", "MD041"]
 # List of rules to enable exclusively (if provided, only these rules will run)
 # enable = ["MD001", "MD003", "MD004"]
 # List of file/directory patterns to include for linting (if provided, only these will be linted)
