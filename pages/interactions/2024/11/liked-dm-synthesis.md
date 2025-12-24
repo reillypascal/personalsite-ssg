@@ -2,7 +2,7 @@
 title: Liked | DM Synthesis
 canonical_url: https://reillyspitzfaden.com/interactions/2024/11/liked-dm-synthesis/
 date: 2024-11-28
-tags: 
+tags:
     - like
     - interaction
     - music

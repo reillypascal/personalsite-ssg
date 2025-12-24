@@ -1,7 +1,7 @@
 ---
 title: Databending Part 5—Listening to Telephone Codecs
 description: One way to get more variety when transforming data into audio is to change the encoding. Today I'm implementing the VOX ADPCM telephone codec—which I especially like—in Rust to accomplish this!
-fedi_url: 
+fedi_url:
   - https://hachyderm.io/@reillypascal/114467479727280788
   - https://bsky.app/profile/reillypascal.bsky.social/post/3lolssltkxc24
 og_image: /media/blog/2025/05/databending-part-5/dpcm-block-og-image.jpg
@@ -29,7 +29,7 @@ post_series: databending
 
 <link rel="stylesheet" type="text/css" href="/styles/notes-photos.css">
 
-Today we'll be talking about the VOX or [Dialogic ADPCM](https://en.wikipedia.org/wiki/Dialogic_ADPCM) format—a lossy algorithm from [Oki Electric](https://en.wikipedia.org/wiki/Dialogic_ADPCM) for digital voice telephony—and using it to translate raw data (e.g., program files) into audio. As I mentioned in my [first post](/posts/2025/01/databending-part-1/) on the topic, at a certain point, 
+Today we'll be talking about the VOX or [Dialogic ADPCM](https://en.wikipedia.org/wiki/Dialogic_ADPCM) format—a lossy algorithm from [Oki Electric](https://en.wikipedia.org/wiki/Dialogic_ADPCM) for digital voice telephony—and using it to translate raw data (e.g., program files) into audio. As I mentioned in my [first post](/posts/2025/01/databending-part-1/) on the topic, at a certain point,
 
 > once you listen to the “sonified” data from enough files, commonalities start to become apparent. Many programs use some of the same \[library] files, and…\[even] differently-named library files sometimes contain similar elements—likely re-used code patterns, or further library code compiled in.
 
@@ -92,7 +92,7 @@ Sounds just as expected—a bit crunchy and lo-fi like a telephone, but clear an
 
 ## Reading the VOX Spec
 
-First, we need to calculate the step size ```ss(n)``` and use that and the 4-bit input sample ```L(n)``` to calculate the difference ```d(n)```. That difference plus the previous output ```X(n-1)``` will give our 12-bit output value. Below is the pseudocode from the Dialogic paper for calculating ```d(n)``` given a value of ```ss(n)``` and an incoming sample. Note the values B3–B0—these refer to the 4 bits in the incoming sample, with B3 as the sign and the rest as the magnitude. 
+First, we need to calculate the step size ```ss(n)``` and use that and the 4-bit input sample ```L(n)``` to calculate the difference ```d(n)```. That difference plus the previous output ```X(n-1)``` will give our 12-bit output value. Below is the pseudocode from the Dialogic paper for calculating ```d(n)``` given a value of ```ss(n)``` and an incoming sample. Note the values B3–B0—these refer to the 4 bits in the incoming sample, with B3 as the sign and the rest as the magnitude.
 
 ```c
 d(n) = (ss(n)*B2)+(ss(n)/2*B1)+(ss(n)/4*BO)+(ss(n)/8) 
@@ -142,7 +142,7 @@ pub struct VoxState {
 }
 ```
 
-I implement a ```vox_decode()``` function for the ```VoxState``` struct, as shown below. We get the step size from last time around, then update the step size for next time. The sign is the 4th bit of the incoming nibble, and the magnitude is the lower 3 bits. We get the difference between the current value and the prediction from last time with the line ```let mut delta = ((2 * (magnitude as i16) + 1) * step_size) >> 3;```—we will come back to how this relates to the pseudocode in a bit. 
+I implement a ```vox_decode()``` function for the ```VoxState``` struct, as shown below. We get the step size from last time around, then update the step size for next time. The sign is the 4th bit of the incoming nibble, and the magnitude is the lower 3 bits. We get the difference between the current value and the prediction from last time with the line ```let mut delta = ((2 * (magnitude as i16) + 1) * step_size) >> 3;```—we will come back to how this relates to the pseudocode in a bit.
 
 We either add or subtract the predictor and ```delta```, depending on the sign bit, and clamp the predictor to the range of a 12-bit signed integer. When we return this value from the function, we multiply it by 16, scaling it into the range of the 16 bit integer format of the .WAV file we'll write later. Before returning, we'll also update the struct's step index for next time around.
 
@@ -158,7 +158,7 @@ impl VoxState {
         let mut step_index = self.step_index + ADPCM_INDEX_TABLE[*in_nibble as usize];
         // clamp index to size of step table—for next time
         step_index = i16::clamp(step_index, 0, 48);
-        
+
         // sign is 4th bit; magnitude is 3 LSBs
         let sign = in_nibble & 0b1000;
         let magnitude = in_nibble & 0b0111;
@@ -170,7 +170,7 @@ impl VoxState {
         // if sign bit (4th one) is set, value is negative
         if sign != 0 { delta *= -1; }
         predictor += delta;
-        
+
         // clamp output between 12-bit signed min/max value
         self.predictor = i16::clamp(predictor, -i16::pow(2, 11), i16::pow(2, 11) - 1);
         // update for next time through; ss(n+1) into z-1 from block diagram
@@ -182,7 +182,7 @@ impl VoxState {
 }
 ```
 
-Returning to the main code file and picking up from [last time](/posts/2025/05/databending-part-4/), here is how we use our new code. We've opened a file as a ```Vec<u8>```, and we're storing the results of a ```match``` expression in a ```Vec<f64>``` (since the filtering will work better with floats). In the “arm” of the ```match``` expression for the VOX format, we iterate over the imported ```Vec<u8>```, and for each byte, we split the byte into two 4-bit “nibbles,” iterating over ```[chunk >> 4, chunk & 0b1111].iter()``` and running ```vox_state.vox_decode()``` for each nibble. 
+Returning to the main code file and picking up from [last time](/posts/2025/05/databending-part-4/), here is how we use our new code. We've opened a file as a ```Vec<u8>```, and we're storing the results of a ```match``` expression in a ```Vec<f64>``` (since the filtering will work better with floats). In the “arm” of the ```match``` expression for the VOX format, we iterate over the imported ```Vec<u8>```, and for each byte, we split the byte into two 4-bit “nibbles,” iterating over ```[chunk >> 4, chunk & 0b1111].iter()``` and running ```vox_state.vox_decode()``` for each nibble.
 
 In the diagram below from the spec, note that the highest 4 bits in a byte come first, so our first nibble is ```chunk >> 4```, which brings those bits down into the lowest 4 positions. ```chunk & 0b1111``` keeps only the 4 lowest bits, giving us the second nibble in the byte.
 
@@ -239,7 +239,7 @@ With ```(ss(n)*B2)+(ss(n)/2*B1)+(ss(n)/4*BO)+(ss(n)/8)```, if we leave out the m
 
 Lately I've been enjoying windytan (Oona Räisänen)'s [blog](https://www.windytan.com/2013/11/broadcast-messages-on-darc-side.html)—a “blog about sound & signals” where she discusses a variety of telecommunications encoding formats, both in terms of their sound and decoding them. I got an [RTL-SDR](https://www.rtl-sdr.com/about-rtl-sdr/) [software-defined radio](https://en.wikipedia.org/wiki/Software-defined_radio) dongle back in 2020, and greatly enjoyed tracking down and decoding interesting signals. Now that I have more programming skills, I think I'll do more discussion of and coding with different telecommunications formats—both for radio, and for telephony, as I did today.
 
-One thing that [@EveHasWords](https://toot.cat/@EveHasWords/114377893125307935) mentioned recently and that I also saw [on windytan's blog](https://www.windytan.com/2012/08/vintage-bits-on-cassettes.html) is using cassette tapes to store digital data such as software or games. The general idea is that you modulate a tone to encode digital data, and then record that as audio on a regular cassette tape—[this person](https://zeninstruments.blogspot.com/2021/10/manchester-decoder-and-cassette.html) did it with an Arduino and Python, so that could be a good starting point for a fun project. 
+One thing that [@EveHasWords](https://toot.cat/@EveHasWords/114377893125307935) mentioned recently and that I also saw [on windytan's blog](https://www.windytan.com/2012/08/vintage-bits-on-cassettes.html) is using cassette tapes to store digital data such as software or games. The general idea is that you modulate a tone to encode digital data, and then record that as audio on a regular cassette tape—[this person](https://zeninstruments.blogspot.com/2021/10/manchester-decoder-and-cassette.html) did it with an Arduino and Python, so that could be a good starting point for a fun project.
 
 <!-- At one point I even [figured out](https://hachyderm.io/@reillypascal/112747124169952464) how to run Rust on a BBC micro:bit (using [this book](https://docs.rust-embedded.org/discovery/microbit/)), so that could be another fun thing to use in the project. -->
 
@@ -247,10 +247,10 @@ You can follow the [RSS feeds](/feeds) for this blog to see any future updates o
 
 [^1]: L. Tan and J. Jiang, *Digital Signal Processing: Fundamentals and Applications*. Academic Press, 2018, pp. 486–496.
 
-[^2]: Dialogic Corporation, *Dialogic ADPCM Algorithm*, 1988. \[Online]. Available: https://people.cs.ksu.edu/~tim/vox/dialogic_adpcm.pdf.
+[^2]: Dialogic Corporation, *Dialogic ADPCM Algorithm*, 1988. \[Online]. Available: <https://people.cs.ksu.edu/~tim/vox/dialogic_adpcm.pdf>.
 
 [^3]: Here's a [link](https://forum.audacityteam.org/t/dialogic-vox-format/40080/2) to the Audacity forum explaining where to find the settings to do this.
 
 [^4]: This notation comes from the idea of the [Z-transform](https://en.wikipedia.org/wiki/Z-transform).
 
-[^5]: FFmpeg, *libavcodec/adpcm.c*. \[Online]. Available: https://ffmpeg.org/doxygen/7.0/adpcm_8c_source.html#l00553.
+[^5]: FFmpeg, *libavcodec/adpcm.c*. \[Online]. Available: <https://ffmpeg.org/doxygen/7.0/adpcm_8c_source.html#l00553>.

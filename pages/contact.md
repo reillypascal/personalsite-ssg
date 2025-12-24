@@ -18,10 +18,10 @@ Webmentions: [webmention.io](https://webmention.io/reillyspitzfaden.com/xmlrpc)
 
 <!-- Matrix: [@reillypascal:matrix.org](https://matrix.to/#/@reillypascal:matrix.org) -->
 
-<form 
-    name="contact" 
-    action="./pages/success.html" 
-    method="POST" 
+<form
+    name="contact"
+    action="./pages/success.html"
+    method="POST"
     data-netlify="true"
 >
 <h1 class="sectionHeader">Contact Form</h1>

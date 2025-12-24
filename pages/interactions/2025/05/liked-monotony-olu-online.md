@@ -1,6 +1,6 @@
 ---
 title: "Liked | monotony | Olu Online"
-fedi_url: 
+fedi_url:
 date: 2025-05-21T15:12:50-0400
 tags:
   - interaction

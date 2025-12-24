@@ -15,22 +15,22 @@ tags:
 
 - _EP7_, “Dropp”
 - _Confield_
-  - “VI Scose Poise”
-  - “Cfern”
-  - “Parhelic Triangle”
-  - “Bine”
-  - “Uviol”
-  - “Lentic Catachresis”
+    - “VI Scose Poise”
+    - “Cfern”
+    - “Parhelic Triangle”
+    - “Bine”
+    - “Uviol”
+    - “Lentic Catachresis”
 - _Draft 7.30_
-  - “Tapr”
-  - “VL Al 5”
-  - “P.:NTIL”
-  - “V-Proc”
+    - “Tapr”
+    - “VL Al 5”
+    - “P.:NTIL”
+    - “V-Proc”
 - _Gantz Graf_, “Gantz Graf”
 - _Quaristice_
-  - “Altibzz”
-  - “plyPhon”
-  - “Fol3”
+    - “Altibzz”
+    - “plyPhon”
+    - “Fol3”
 - _Oversteps_, “qplay”
 - _elseq 1-5_, “spaces how V”
 
@@ -45,28 +45,28 @@ tags:
 - _Pop 2_, “Track 10”
 - _Focus / No Angel_, “No Angel”
 - _Charli_
-  - “Next Level Charli”
-  - “Click”
-  - “Silver Cross”
+    - “Next Level Charli”
+    - “Click”
+    - “Silver Cross”
 - _how i'm feeling now_
-  - “pink diamond”
-  - “claws”
-  - “7 years”
-  - “c2.0”
-  - “party 4 u”
-  - “anthems”
+    - “pink diamond”
+    - “claws”
+    - “7 years”
+    - “c2.0”
+    - “party 4 u”
+    - “anthems”
 - _brat_
-  - “360”
-  - “365”
+    - “360”
+    - “365”
 
 ## Daft Punk
 
 - _Da Funk_, “Musique”
 - _Homework_
-  - “Revolution 909”
-  - “Fresh”
-  - “Around the World”
-  - “High Fidelity”
+    - “Revolution 909”
+    - “Fresh”
+    - “Around the World”
+    - “High Fidelity”
 
 ## Dysphoria
 
@@ -75,29 +75,29 @@ tags:
 ## Enon
 
 - _Believo!_
-  - “Rubber Car”
-  - “Cruel”
-  - “Biofeedback”
+    - “Rubber Car”
+    - “Cruel”
+    - “Biofeedback”
 - _Listen (While You Talk)_, “Listen (While You Talk)”
 - _High Society_
-  - “Count Sheep”
-  - “In This City”
-  - “Native Numb”
-  - “Shoulder”
-  - “Natural Disasters”
-  - “Carbonation”
-  - “Salty”
+    - “Count Sheep”
+    - “In This City”
+    - “Native Numb”
+    - “Shoulder”
+    - “Natural Disasters”
+    - “Carbonation”
+    - “Salty”
 - _Lost Marbles and Exploded Evidence_
-  - “Knock That Door”
-  - “The Nightmare of Atomic Men”
-  - “Drowning Appointments”
-  - “Kanon”
-  - “Marbles Explode”
-  - “Raisin Heart”
+    - “Knock That Door”
+    - “The Nightmare of Atomic Men”
+    - “Drowning Appointments”
+    - “Kanon”
+    - “Marbles Explode”
+    - “Raisin Heart”
 - _Grass Geysers…Carbon Clouds_
-  - “Colette”
-  - “Paperweights”
-  - “Ashish”
+    - “Colette”
+    - “Paperweights”
+    - “Ashish”
 
 ## William Fields
 
@@ -107,30 +107,30 @@ tags:
 
 - _Interbeing_, “Yellow Rose-fire”
 - _Skinless X-1_
-  - ”✔️ iNTERBEiNG”
-  - “Experience ☆ Slips ☆ Away”
-  - “Screamography”
-  - “Second Life”
-  - “Response To Subdivisions ☾”
-  - “μακάρων νῆσοι「Fortunate Isles」”
+    - ”✔️ iNTERBEiNG”
+    - “Experience ☆ Slips ☆ Away”
+    - “Screamography”
+    - “Second Life”
+    - “Response To Subdivisions ☾”
+    - “μακάρων νῆσοι「Fortunate Isles」”
 - _Field Whispers (Into the Crystal Palace)_
-  - “mailto:spasm\@swamp\.god?subject=Mind-Body Parallels”
-  - “Clear Light”
-  - “✓ BEiNG”
+    - “mailto:spasm\@swamp\.god?subject=Mind-Body Parallels”
+    - “Clear Light”
+    - “✓ BEiNG”
 - _Rainbow Bridge_
-  - “It's Now Safe To Turn Off Your Computer”
-  - “Rainbow ∞ Bridge”
-  - “Dreamy \#ex Code”
-  - “觀音 Prayer For The Abuser (abridged)”
-  - “{Screamographic Memory}”
+    - “It's Now Safe To Turn Off Your Computer”
+    - “Rainbow ∞ Bridge”
+    - “Dreamy \#ex Code”
+    - “觀音 Prayer For The Abuser (abridged)”
+    - “{Screamographic Memory}”
 - _Eternal Home_, “(e)y(e)s w/o a %brain%”
 - _I am upset because I see something that is not there._
-  - “It Is Happening Again (Thank You, Council Of Saturn!)”
-  - “Mantra-ing & Golgotha: Double-Bind (Prequel)”
-  - “Soaked: Another Name For Everything”
+    - “It Is Happening Again (Thank You, Council Of Saturn!)”
+    - “Mantra-ing & Golgotha: Double-Bind (Prequel)”
+    - “Soaked: Another Name For Everything”
 - _Breeze_
-  - “To Every Squirrel Who Has Ever Been Hit By A Car, I’m Sorry & I Love You. feat. Nylist, Lipsticism”
-  - “Asparagus Pee, SETI, & The Gift Of Tears”
+    - “To Every Squirrel Who Has Ever Been Hit By A Car, I’m Sorry & I Love You. feat. Nylist, Lipsticism”
+    - “Asparagus Pee, SETI, & The Gift Of Tears”
 
 ## Erin Gee
 
@@ -161,16 +161,16 @@ tags:
 - _Night/Pop - EP_, “Neon”
 - _A Little Rhythm and a Wicked Feeling_, “Good Intentions”
 - _mini mix, vol. 2_
-  - “Body”
-  - “Woww”
+    - “Body”
+    - “Woww”
 - _Mercurial World_, “Follow the Leader”
 - _Imaginal Disk_, “True Blue Interlude”
 
 ## Douglas McCausland
 
 - _ENTANGLEMENT_
-  - “why do you distort your face?”
-  - “ENTANGLEMENT”
+    - “why do you distort your face?”
+    - “ENTANGLEMENT”
 
 ## Nuria Núñez-Hierro
 
@@ -179,13 +179,13 @@ tags:
 ## Oneohtrix Point Never
 
 - _Replica_
-  - “Sleep Dealer”
-  - “Replica”
+    - “Sleep Dealer”
+    - “Replica”
 - _R Plus Seven_, “Problem Areas”
 - _Garden of Delete_
-  - “Ezra”
-  - “I Bite Through It”
-  - “Lift”
+    - “Ezra”
+    - “I Bite Through It”
+    - “Lift”
 
 ## Sam Pluta
 
@@ -210,9 +210,9 @@ tags:
 
 - _Product_, “Hard”
 - _OIL OF EVERY PEARL'S UN-INSIDES_
-  - “Faceshopping”
-  - “Ponyboy”
-  - “Immaterial”
+    - “Faceshopping”
+    - “Ponyboy”
+    - “Immaterial”
 
 ## Simon Steen-Andersen
 
@@ -222,20 +222,20 @@ tags:
 
 - _Earthsick_, “Skullz”
 - _For Hero: For Fool_
-  - “Midas Gutz”
-  - “Nomanisisland”
-  - “Return of the Vein”
+    - “Midas Gutz”
+    - “Nomanisisland”
+    - “Return of the Vein”
 - _Wishingbone_
-  - “Swanmeat”
-  - Beck, “Farewell Ride (Subtle Remix)”
+    - “Swanmeat”
+    - Beck, “Farewell Ride (Subtle Remix)”
 
 ## Valiant Vermin
 
 - _I Could Be_
-  - “I Could Be”
-  - “Horny Sad”
-  - “My Own Skin”
-  - “Go for This”
+    - “I Could Be”
+    - “Horny Sad”
+    - “My Own Skin”
+    - “Go for This”
 
 ## Edgard Varèse
 
@@ -247,15 +247,15 @@ tags:
 ## Vektroid
 
 - _Seed & Synthetic Earth_
-  - “Blood from a Stone”
-  - “Endless Jump”
-  - “Moebius Blue”
+    - “Blood from a Stone”
+    - “Endless Jump”
+    - “Moebius Blue”
 
 ## Venetian Snares
 
 - _Winter in the Belly of a Snake_
-  - “Suffocate”
-  - “January”
+    - “Suffocate”
+    - “January”
 - _Hospitality_, “Frictional Nevada”
 
 ## パスピエ
@@ -266,10 +266,10 @@ tags:
 ## 13 & God
 
 - _13 & God_
-  - “Low Heaven”
-  - “Ghostwork”
-  - “Afterclap”
-  - “Soft Atlas”
+    - “Low Heaven”
+    - “Ghostwork”
+    - “Afterclap”
+    - “Soft Atlas”
 - _Own Your Ghost_
-  - “Janu Are”
-  - “Unyoung”
+    - “Janu Are”
+    - “Unyoung”

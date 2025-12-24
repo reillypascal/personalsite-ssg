@@ -139,15 +139,15 @@ These algorithms are all available in [my algorithmic reverb plugin](https://git
 
 As I mentioned, in my next post I'll cover the famous 1997 Dattorro plate algorithm that also uses an allpass ring structure. This is in Max/MSP as the \[yafr2\] abstraction, and in the [Valley Audio “Plateau” module](https://library.vcvrack.com/Valley/Plateau) for VCV Rack, among numerous other places, and is likely based on an algorithm from the Lexicon 224/480 reverb units. I hope to see you then!
 
-[^1]: M. R. Schroeder, “Natural sounding artificial reverberation,” in Audio Engineering Society Convention 13, Audio Engineering Society, 1961. Accessed: Dec. 29, 2024. [Online]. Available: https://www.aes.org/e-lib/download.cfm?ID=343
+[^1]: M. R. Schroeder, “Natural sounding artificial reverberation,” in Audio Engineering Society Convention 13, Audio Engineering Society, 1961. Accessed: Dec. 29, 2024. [Online]. Available: <https://www.aes.org/e-lib/download.cfm?ID=343>
 
 [^2]:
     Unfortunately this paper is unpublished, and I was only able to find William Gardner's description of it, [^1] but here is the citation:
 
     B. Vercoe and M. Puckette, “Synthetic Spaces — Artificial Acoustic Ambiance from Active Boundary Computation,” 1985, _Music and Cognition Office at MIT Media Lab, Boston, MA_.
 
-[^3]: W. G. Gardner, “A realtime multichannel room simulator,” _J. Acoust. Soc. Am_, vol. 92, no. 4, p. 2395, 1992. Available: https://pubs.aip.org/asa/jasa/article/92/4_Supplement/2395/646024/A-real-time-multichannel-room-simulator
+[^3]: W. G. Gardner, “A realtime multichannel room simulator,” _J. Acoust. Soc. Am_, vol. 92, no. 4, p. 2395, 1992. Available: <https://pubs.aip.org/asa/jasa/article/92/4_Supplement/2395/646024/A-real-time-multichannel-room-simulator>
 
-[^4]: H. Mikelson, “A Csound Multi-Effects Processor.” Accessed: Sept. 26, 2025. \[Online\]. Available: https://www.eumus.edu.uy/eme/ensenanza/electivas/csound/materiales/book_chapters/24mikelson/24mikelson.html
+[^4]: H. Mikelson, “A Csound Multi-Effects Processor.” Accessed: Sept. 26, 2025. \[Online\]. Available: <https://www.eumus.edu.uy/eme/ensenanza/electivas/csound/materiales/book_chapters/24mikelson/24mikelson.html>
 
-[^5]: A. Rungta, N. Rewkowski, R. Klatzky, and D. Manocha, “P-Reverb: Perceptual Characterization of Early and Late Reflections for Auditory Displays,” in 2019 IEEE Conference on Virtual Reality and 3D User Interfaces (VR), Mar. 2019, pp. 455–463. doi: 10.1109/VR.2019.8797914. Available: https://arxiv.org/pdf/1902.06880
+[^5]: A. Rungta, N. Rewkowski, R. Klatzky, and D. Manocha, “P-Reverb: Perceptual Characterization of Early and Late Reflections for Auditory Displays,” in 2019 IEEE Conference on Virtual Reality and 3D User Interfaces (VR), Mar. 2019, pp. 455–463. doi: 10.1109/VR.2019.8797914. Available: <https://arxiv.org/pdf/1902.06880>

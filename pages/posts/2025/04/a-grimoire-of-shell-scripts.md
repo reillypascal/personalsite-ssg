@@ -2,7 +2,7 @@
 title: A Grimoire of Shell Scripts
 description: Today I'm discussing my thoughts on “home-cooked” and “situated” software, and how that's inspired me to start a collection of useful script tools for myself.
 canonical_url: https://reillyspitzfaden.com/posts/2025/04/a-grimoire-of-shell-scripts/
-fedi_url: 
+fedi_url:
   - https://hachyderm.io/@reillypascal/114316315194731170
   - https://bsky.app/profile/reillypascal.bsky.social/post/3lmiomk7bns2h
 date: 2025-04-10T18:35:00-0400
@@ -25,7 +25,7 @@ First, when I wrote about my trip with my partner to [Watkins Glen and Seneca La
 A second reason connects to some writing I've seen recently about “[situated](https://web.archive.org/web/20050120085129/http://www.shirky.com/writings/situated_software.html)” or “[home-cooked](https://www.robinsloan.com/notes/home-cooked-app/)” [software](https://maggieappleton.com/home-cooked-software). Robin Sloan [writes](https://www.robinsloan.com/notes/home-cooked-app/) about this idea that
 
 > People don’t only learn to cook so they can become chefs. Some do! But many more people learn to cook so they can eat better, or more affordably. Because they want to carry on a tradition. Sometimes they learn because they’re bored! Or even because they enjoy spending time with the person who’s teaching them.
-
+>
 > The list of reasons to “learn to cook” overflows, and only a handful have anything to do with the marketplace.
 
 I think the idea of not worrying about “scalability” or something needing to be used by a wider audience sounds very nice, both in terms of my values for society, and in terms of my personal enjoyment when coding. Especially because I'm self-taught and haven't been coding very long, it's nice to have low-stress projects that (bonus) also fit my political values.
@@ -46,7 +46,7 @@ While this is quite short, learning a few things about shell scripting beyond th
 ./post "<post-title>" "<post-description>"
 ```
 
-First, I check if the title and description arguments exist and if so, assign them to the `name` and `description` variables. Since there is a default post title and description, the arguments are optional—I could just type `./post` and get a file. The square brackets are a shorthand for the `test` command. `$1` and `$2` are the two optional arguments, and writing `${1+x}` is a [parameter expansion](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_06_02) that evaluates to null if the argument is unset. 
+First, I check if the title and description arguments exist and if so, assign them to the `name` and `description` variables. Since there is a default post title and description, the arguments are optional—I could just type `./post` and get a file. The square brackets are a shorthand for the `test` command. `$1` and `$2` are the two optional arguments, and writing `${1+x}` is a [parameter expansion](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_06_02) that evaluates to null if the argument is unset.
 
 ```sh
 if [ ${1+x} ]; then

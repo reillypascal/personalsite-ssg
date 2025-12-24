@@ -81,7 +81,7 @@ item_list.each((index, element) => {
 })
 ```
 
-Cheerio uses a subset of jQuery's syntax. In line 6, I assign a cheerio object to the constant `$` with the `cheerio.loadBuffer()` method. As I mentioned, I'm doing this with an HTML file I manually downloaded since I need to have clicked the play button. 
+Cheerio uses a subset of jQuery's syntax. In line 6, I assign a cheerio object to the constant `$` with the `cheerio.loadBuffer()` method. As I mentioned, I'm doing this with an HTML file I manually downloaded since I need to have clicked the play button.
 
 In line 10, the syntax `$('item')` retrieves all `<item>` elements, and I can iterate over them with `.each()`. I get the relative URL with `$(element).attr('url')`, and I get only the string after the last "/" with `media_url.split('/').pop()`. `fs.createWriteStream()` opens the file to be written; `https.get()` requests the file from the URL I've parsed; `response.pipe()` writes the response to a file; and on finishing the file, `file.close()` closes the write stream.
 
@@ -90,10 +90,10 @@ In line 10, the syntax `$('item')` retrieves all `<item>` elements, and I can it
 In [this post](/posts/2025/04/a-grimoire-of-shell-scripts/) I quoted Robin Sloan [writing](https://www.robinsloan.com/notes/home-cooked-app/) about “situated” or “home-cooked” software:
 
 > People don’t only learn to cook so they can become chefs. Some do! But many more people learn to cook so they can eat better, or more affordably. Because they want to carry on a tradition. Sometimes they learn because they’re bored! Or even because they enjoy spending time with the person who’s teaching them.
-
+>
 > The list of reasons to “learn to cook” overflows, and only a handful have anything to do with the marketplace.
 
-I'm completely self-taught at coding, and in addition to it being fun for me, I'm finding that having coding skills is helpful in working around “[enshittification](https://en.wikipedia.org/wiki/Enshittification)”. It's nice to be able to make small software that gives me agency. 
+I'm completely self-taught at coding, and in addition to it being fun for me, I'm finding that having coding skills is helpful in working around “[enshittification](https://en.wikipedia.org/wiki/Enshittification)”. It's nice to be able to make small software that gives me agency.
 
 Since I don't have much experience with cheerio/web-scraping, it took a little longer than it absolutely needed to, and I may have been able to manually download the MP3s in a similar amount of time, but I would much rather spend that time on something I value (coding) and come out of it with some additional coding practice, so I consider this a success. Until next time!
 

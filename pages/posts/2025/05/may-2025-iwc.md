@@ -20,7 +20,7 @@ UPDATE: if you're interested in making your own site, [Coyote has a helpful guid
 
 ## Barriers to Joining the IndieWeb
 
-Max Böck (writing back in 2022) [succinctly captures](https://mxb.dev/blog/the-indieweb-for-everyone/) an issue that's been on my mind lately, observing that 
+Max Böck (writing back in 2022) [succinctly captures](https://mxb.dev/blog/the-indieweb-for-everyone/) an issue that's been on my mind lately, observing that
 
 > Generally speaking: The more independence a technology gives you, the higher its barrier for adoption.
 
@@ -32,19 +32,19 @@ I want to make this independence more accessible—to ease some of the issue Max
 
 ### On the IndieWeb Without Your Own Website?
 
-First, Tracy Durnell [suggests](https://tracydurnell.com/2024/05/17/indieweb-next-stage/) that 
+First, Tracy Durnell [suggests](https://tracydurnell.com/2024/05/17/indieweb-next-stage/) that
 
 > we can help people escape the corporate silos even if they don’t want their own website. \[…]
-
+>
 > The more people who use the independent web—whether creating new work, participating in conversations, curating links, or simply reading—the healthier it becomes.
 
-I like the idea of expanding participation in the IndieWeb beyond just the people who own a website, and including non-site-owning readers. Speaking as someone who maintains my own site on the IndieWeb, I love when I see people interact with my writing on social media sites where I [POSSE](https://www.citationneeded.news/posse/) my posts—no webmentions required. 
+I like the idea of expanding participation in the IndieWeb beyond just the people who own a website, and including non-site-owning readers. Speaking as someone who maintains my own site on the IndieWeb, I love when I see people interact with my writing on social media sites where I [POSSE](https://www.citationneeded.news/posse/) my posts—no webmentions required.
 
 Comment sections on personal sites can be great as well, [^2] and can offer further ways to interact. Alex (someone who does have webmentions on their site) [writes about](https://alexsirac.com/webmentions-make-me-sad/) preferring when blogs *also* have a comment section, noting that
 
 > I’m just sometimes tired of high quality stuff, you know? Sometimes, all I want is to comment on someone’s post to say « lol » or « nice thanks for sharing » or « saaame! » and that’s not something that warrants a whole blog post and entry in my RSS feed.
 
-Finally, there's email. I have a `mailto` link at the bottom of every post, and I've had nice experiences sending and receiving emails related to my and others' writing on the IndieWeb. Even outside the practicality of more (and more ubiquitous) ways to talk, I like the personal nature of (non-work) email, and the way it feels kind of like letter-writing. 
+Finally, there's email. I have a `mailto` link at the bottom of every post, and I've had nice experiences sending and receiving emails related to my and others' writing on the IndieWeb. Even outside the practicality of more (and more ubiquitous) ways to talk, I like the personal nature of (non-work) email, and the way it feels kind of like letter-writing.
 
 ### Website Ownership for the Non-Developer
 
@@ -74,11 +74,11 @@ One tool that I find to be a promising (but still imperfect) idea is [Publii](ht
 
 I like that this program is a standalone desktop app that can work with any server, and that it's easy to use. What I don't like:
 
-- It doesn't seem to store posts and pages as (e.g.) plain Markdown files that could easily be moved to another similar tool. 
-  - It might be possible to get it to do this, but I wasn't able to figure it out; it doesn't seem to do it by default; and it certainly doesn't point the user toward this kind of workflow.
+- It doesn't seem to store posts and pages as (e.g.) plain Markdown files that could easily be moved to another similar tool.
+    - It might be possible to get it to do this, but I wasn't able to figure it out; it doesn't seem to do it by default; and it certainly doesn't point the user toward this kind of workflow.
 - Design is not very flexible. You can choose from a limited selection of free themes, with paid options, but even the paid options are monolithic, and you can't combine, say, a block layout skeleton with a layout-independent color/font/icon theme.
 
-One idea this gives me, though, is a GUI SSG with Markdown files as input (and maybe with modular layout features), and with community extensibility. I use [Eleventy](https://www.11ty.dev/) and enjoy it very much. However, requiring the use of the terminal seems to be a big barrier (whether real or psychological) to use by non-developers. 
+One idea this gives me, though, is a GUI SSG with Markdown files as input (and maybe with modular layout features), and with community extensibility. I use [Eleventy](https://www.11ty.dev/) and enjoy it very much. However, requiring the use of the terminal seems to be a big barrier (whether real or psychological) to use by non-developers.
 
 Since writing/note-taking tools that use Markdown (such as Obsidian or [iA Writer](https://ia.net/writer)) seem to be decently usable and liked by non-developers, I could imagine a GUI wrapper around something like Eleventy/Hugo/Jekyll being helpful. Authors could take a folder of Markdown files (perhaps written using one of the aforementioned writing/note-taking tools) and turn them into a website, with the generator handling all code beyond the Markdown itself.
 
@@ -90,19 +90,19 @@ I haven't attempted any of this, so let me know if there's a roadblock I'm not c
 
 ### What Makes Coding Intimidating
 
-I have some changes I would like to see in the perception of what a website entails to make things less intimidating if someone *does* want to get their hands dirty with coding. I think a lot of people's perception of what programming entails makes putting together a basic webpage seem more intimidating than it actually is, especially with the “[frameworkism](https://infrequently.org/2024/11/if-not-react-then-what/)” and emphasis on JavaScript in many frontend spaces. In addition to the obvious hurdle of coding at all, I imagine the complexity of the websites most people see on a daily basis unnecessarily skews the perception of what *needs* to be done to make a website. 
+I have some changes I would like to see in the perception of what a website entails to make things less intimidating if someone *does* want to get their hands dirty with coding. I think a lot of people's perception of what programming entails makes putting together a basic webpage seem more intimidating than it actually is, especially with the “[frameworkism](https://infrequently.org/2024/11/if-not-react-then-what/)” and emphasis on JavaScript in many frontend spaces. In addition to the obvious hurdle of coding at all, I imagine the complexity of the websites most people see on a daily basis unnecessarily skews the perception of what *needs* to be done to make a website.
 
 Even if someone knows they *can* make a simple site, the lack of such sites creates an unfair comparison for people's first projects. [^3] When I first started coding I was unsure of myself and didn't want to put something online that looked “less than” in comparison to other people's sites. Now that I've had the time and experience to form more thought-out opinions on programming and the web, I look at sites like [motherfuckingwebsite.com](https://motherfuckingwebsite.com) and [bettermotherfuckingwebsite.com](http://bettermotherfuckingwebsite.com/) with appreciation for their minimalism and focus on content.
 
 I want to see more widespread emphasis that what these sites do is plenty, and that there's nothing shameful or “less than” about putting that online. [^4] As I [wrote about here](/posts/2024/12/hypertext-memex-collaboration-socialization/), the magical thing about the web is hypertext itself: the way hyperlinks connect ideas and create something far bigger than any one person's ideas or writing.
 
-Additionally, I want to emphasize to those potentially interested in the IndieWeb that webmentions/microformats/etc. are nice but by no means essential. As I mentioned [above](#on-the-indieweb-without-your-own-website%3F), a simple `mailto` link on each post—especially combined with POSSE-ing posts—is a fairly decentralized and open way to socialize on the IndieWeb without much technical overhead. 
+Additionally, I want to emphasize to those potentially interested in the IndieWeb that webmentions/microformats/etc. are nice but by no means essential. As I mentioned [above](#on-the-indieweb-without-your-own-website%3F), a simple `mailto` link on each post—especially combined with POSSE-ing posts—is a fairly decentralized and open way to socialize on the IndieWeb without much technical overhead.
 
 Of course, I should acknowledge that even this requires at least *some* degree of both technical know-how and comfort with searching/willingness to search for technical answers online. [^5] Additionally, if only some IndieWeb community members have access to webmentions/etc., while others “only” have email links, I worry that less-technical community members won't be able to feel like full participants. I don't have an answer to this—again, it's that inverse relationship between independence and barrier to entry—but I'm continuing to think about it.
 
 ## Wrapping Up
 
-This was the first post on this blog for which I made an outline, and I even re-wrote the outline multiple times! This was because I apparently have a huge list of thoughts on this inverse relationship between independence/barrier to adoption, and many of them didn't make it into today's post (in the interest of brevity and clarity). 
+This was the first post on this blog for which I made an outline, and I even re-wrote the outline multiple times! This was because I apparently have a huge list of thoughts on this inverse relationship between independence/barrier to adoption, and many of them didn't make it into today's post (in the interest of brevity and clarity).
 
 I plan to continue writing on this topic, and as I continue to think through all this, I welcome input from others with whom any of it resonates. Until next time!
 

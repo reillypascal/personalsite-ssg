@@ -43,7 +43,7 @@ This page is a collection of reporting, research, and essays critical of large l
 - Brian Merchant, “[The AI jobs crisis is here, now](https://www.bloodinthemachine.com/p/the-ai-jobs-crisis-is-here-now)”
 
 > The AI jobs crisis does not, [as I’ve written before](https://gizmodo.com/robots-are-not-coming-for-your-job-management-is-1835127820#:~:text=Listen%3A%20'Robots'%20are%20not,on%20its%20comparatively%20superior%20merits.), look like sentient programs arising all around us, inexorably replacing human jobs en masse. It’s a series of management decisions being made by executives seeking to cut labor costs and consolidate control in their organizations. \[…\]
-
+>
 > These imperatives have always existed, of course; bosses have historically tried to maximize profits by using cost-cutting technologies. But generative AI has been uniquely powerful in equipping them with a narrative with which to do so—and to thus justify degrading, disempowering, or destroying vulnerable jobs.
 
 - Brian Merchant, “[The ‘AI jobs apocalypse’ is for the bosses](https://www.bloodinthemachine.com/p/the-ai-jobs-apocalypse-is-for-the)”
@@ -83,19 +83,19 @@ In other words, as Merchant puts it
 - Kosmyna et al., “[Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task](https://arxiv.org/abs/2506.08872)”
 
 > EEG revealed significant differences in brain connectivity: Brain-only participants exhibited the strongest, most distributed networks; Search Engine users showed moderate engagement; and LLM users displayed the weakest connectivity. Cognitive activity scaled down in relation to external tool use. \[…\]
-
+>
 > Over four months, LLM users consistently underperformed at neural, linguistic, and behavioral levels.
 
 - METR, “[Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/)”
 
 > We conduct a randomized controlled trial (RCT) to understand how early-2025 AI tools affect the productivity of experienced open-source developers working on their own repositories. \[…\]
-
+>
 > When developers are allowed to use AI tools, they take 19% longer to complete issues—a significant slowdown that goes against developer beliefs and expert forecasts. This gap between perception and reality is striking: developers expected AI to speed them up by 24%, and even after experiencing the slowdown, they still believed AI had sped them up by 20%.
 
 - Mike Judge, “[Where's the Shovelware? Why AI Coding Claims Don't Add Up](https://mikelovesrobots.substack.com/p/wheres-the-shovelware-why-ai-coding)“
 
 > Consider this: with all you know about AI-assisted coding and its wide adoption, if I showed you charts and graphs of new software releases across the world, what shape of that graph would you expect? Surely you’d be seeing an exponential growth up-and-to-the-right as adoption took hold and people started producing more?
-
+>
 > Now, I’ve spent a lot of money and weeks putting the data for this article together, processing tens of terabytes of data in some cases. So I hope you appreciate how utterly uninspiring and flat these charts are across every major sector of software development.
 
 - William Harding, Matthew Kloster, “[Coding on Copilot: 2023 Data Suggests Downward Pressure on Code Quality](https://www.gitclear.com/coding_on_copilot_data_shows_ais_downward_pressure_on_code_quality)”
@@ -109,7 +109,7 @@ In other words, as Merchant puts it
 Cognitive scientist and AI researcher Gary Marcus [notes the following about these results](https://garymarcus.substack.com/p/gpt-5-overdue-overhyped-and-underwhelming):
 
 > In 1998 I wrote that “universals are pervasive in language and reasoning” but showed experimentally that neural networks of that era could not reliably “extend universals outside \[a\] training space of examples”. \[…\]
-
+>
 > Throw in every gadget invented since 1998, and the Achilles’ Heel I identified then still remains. That’s startling. Even I didn’t expect that.
 
 - Kung-Hsiang Huang et al., “[CRMArena-Pro: Holistic Assessment of LLM Agents Across Diverse Business Scenarios and Interactions](https://arxiv.org/pdf/2505.18878)”
@@ -139,7 +139,7 @@ Cognitive scientist and AI researcher Gary Marcus [notes the following about the
 - Nicole Froio, [_AI is ruining houseplant communities online_](https://www.theverge.com/ai-artificial-intelligence/691355/ai-is-ruining-houseplant-communities-online)
 
 > …AI-generated content — both photos of fake plants and care misinformation — disrupt community engagement, which is what many collectors are seeking when joining these forums. \[…\]
-
+>
 > This kind of content is “discouraging any meaningful engagement” because it’s not grounded in reality, Caring_Cactus continues. “They’re trying to farm attention with low quality content, and it creates less opportunities for real connection by wasting people’s precious time when they want to socialize online.”
 
 </section>
@@ -151,11 +151,11 @@ Cognitive scientist and AI researcher Gary Marcus [notes the following about the
 - Jonah Owen Lamb, “[San Francisco cops are using AI to write police reports](https://sfstandard.com/2025/06/10/sfpd-using-ai-police-reports/)”
 
 > Guariglia added that defense lawyers across the country have told EFF that AI raises a major problem when it comes to the veracity of police testimony. Police reports can’t be presented as evidence alone in court, so officers must testify about what they wrote. But if AI wrote a report, and a cop’s testimony is different from that report, police will be able to blame the technology.
-
+>
 > “If a cop is caught in a lie on the stand, it’s much easier for them to say the AI made that up as opposed to them saying you caught me lying in the report,” Guariglia said.
-
+>
 > Another problem, he said, is that there is no way to track which part of a report was written by AI versus an officer, making it difficult to parse the document if questions are raised about its veracity.
-
+>
 > Some U.S. police departments have begun using AI but are not disclosing its use, Guariglia said.
 
 - Atay Kozlovski, “[When Algorithms Decide Who is a Target: IDF's use of AI in Gaza](https://www.techpolicy.press/when-algorithms-decide-who-is-a-target-idfs-use-of-ai-in-gaza/)”
@@ -175,7 +175,7 @@ Cognitive scientist and AI researcher Gary Marcus [notes the following about the
 - Robin James, “[We’re Through Being Cool: techbros, manosphere influencers, Ancient Greek masculinity, and AI](https://www.its-her-factory.com/2025/08/were-through-being-cool-techbros-manosphere-influencers-ancient-greek-masculinity-and-ai/)”
 
 > But instead of appropriating performances of stereotypical white femininity and non-whitneness, today Artificial Intelligence grants people access to creativity in a legibly masculine way centered not so much in self-mastery, but the mastery of others.
-
+>
 > Today, humanistic labor like writing, drawing, and communication has been throughly feminized, both by its association with women and by its demonetization. Prompting AI to write, draw, or communicate allows people (men) to do those things in ways that position them not as doing women’s work, but as masters of a subordinate.
 
 - Mandy Brown, “[Toolmen](https://aworkinglibrary.com/writing/toolmen)”
@@ -199,7 +199,7 @@ Cognitive scientist and AI researcher Gary Marcus [notes the following about the
 - Ethan Hein, “[AI slop and musical creativity](https://www.ethanhein.com/wp/2025/ai-slop-and-musical-creativity/)”
 
 > The question is not, how do we help people be creative? They are already, from birth. The question is, why do we grind creativity out of kids so thoroughly, and how do we stop doing that? Teaching songwriting and other creative music-making requires only that you disinhibit the strong creative impulse that is already there. \[…\]
-
+>
 > The hardest part of making up a song is just having the nerve to do it. You have to take an emotional risk. Everything intellectual and technical is downstream from that. If you remove the emotional risk, you remove the entire foundation of the structure. It doesn’t matter what you pile on top after that.
 
 - Patrick Lin, “[Why We’re Not Using AI in This Course, Despite Its Obvious Benefits](https://emergingethics.substack.com/p/why-were-not-using-ai-in-this-course)”
@@ -211,9 +211,9 @@ Cognitive scientist and AI researcher Gary Marcus [notes the following about the
 - [_AGAINST AI_](https://against-a-i.com/)
 
 > Materials here are intended as solidarity solace for educators who might find themselves inventing wheels alone while their administrators, trustees, and bosses unrelentingly hype AI and nakedly enthuse the negative consequences for educator labor.
-
+>
 > AGAINST AI benefits from expert colleagues across the humanistic and qualitative disciplines, as well as in various media industries.
-
+>
 > Please [contact us](mailto:againstai2025@gmail.com) to contribute.
 
 </section>

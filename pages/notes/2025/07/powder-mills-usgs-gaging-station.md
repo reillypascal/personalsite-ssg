@@ -17,11 +17,11 @@ tags:
 
 <link rel="stylesheet" type="text/css" href="/styles/notes-photos.css">
 
-My partner and I took a walk at Powder Mill Park in upstate NY to look at the mushrooms and fish hatchery. While we were there, I came across the transmitter for a [United States Geological Survey (USGS) stream gaging station](https://waterdata.usgs.gov/monitoring-location/USGS-430252077283402/)—you can go to the link and see the data from this station. 
+My partner and I took a walk at Powder Mill Park in upstate NY to look at the mushrooms and fish hatchery. While we were there, I came across the transmitter for a [United States Geological Survey (USGS) stream gaging station](https://waterdata.usgs.gov/monitoring-location/USGS-430252077283402/)—you can go to the link and see the data from this station.
 
 ![A graph of water levels from Jul. 13-20 showing feet below ground level. There is a peak of around 9.25 ft. on the 15th, a smaller one on the 18th, and the level drops to around 9.75 ft. below the ground by the end](/media/notes/2025/usgs-powder-mill-graph.webp){.img-horizontal}
 
-I've been interested in cataloging the stations I see since I saw Sarah from Signals Everywhere's [video on the transmitters for these stations](https://www.youtube.com/watch?v=TT8AIp-DlrM). I previously [found one](https://hachyderm.io/@reillypascal/111915520145252626) at Ellison Park and got some pictures of both the transmitter and what I believe is the sensor. According to Sarah, the stations uplink the data in the UHF band (~401 MHz) to the [GOES weather satellites](https://www.star.nesdis.noaa.gov/goes/index.php), which relay the data back down for processing by the [National Environmental Satellite, Data, and Information Service (NESDIS)](https://www.nesdis.noaa.gov/). My photos from today are below: 
+I've been interested in cataloging the stations I see since I saw Sarah from Signals Everywhere's [video on the transmitters for these stations](https://www.youtube.com/watch?v=TT8AIp-DlrM). I previously [found one](https://hachyderm.io/@reillypascal/111915520145252626) at Ellison Park and got some pictures of both the transmitter and what I believe is the sensor. According to Sarah, the stations uplink the data in the UHF band (~401 MHz) to the [GOES weather satellites](https://www.star.nesdis.noaa.gov/goes/index.php), which relay the data back down for processing by the [National Environmental Satellite, Data, and Information Service (NESDIS)](https://www.nesdis.noaa.gov/). My photos from today are below:
 
 ![A circularly-polarized Yagi antenna on top of a pole with a box in the middle from the US Geological Survey](/media/notes/2025/usgs-gaging-station-powder-mill.webp){.img-vertical}
 

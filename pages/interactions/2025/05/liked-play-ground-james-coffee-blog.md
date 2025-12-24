@@ -1,6 +1,6 @@
 ---
 title: "Liked | play; ground | James' Coffee Blog"
-fedi_url: 
+fedi_url:
 date: 2025-05-21T15:10:50-0400
 tags:
   - interaction

@@ -43,6 +43,6 @@ My partner and I went to [Mendon Ponds Park](https://en.wikipedia.org/wiki/Mendo
   <figcaption>We heard a chorus of short, quick, high rising calls at Deep Pond. We thought they were birds in the moment, but now I'm remembering that spring peepers sound like this.</figcaption>
 </figure>
 
-[^1]: The name immediately made me think of Beck's “[Devil's Haircut](https://www.youtube.com/watch?v=aa3rBVb3v4g),” and I had ”got a devil's bathtub in my mind” playing in my head the whole walk. 
+[^1]: The name immediately made me think of Beck's “[Devil's Haircut](https://www.youtube.com/watch?v=aa3rBVb3v4g),” and I had ”got a devil's bathtub in my mind” playing in my head the whole walk.
 
 [^2]: ”Very few organisms can live in such an oxygen-poor environment. One exception is purple sulfur bacteria. These bacteria, commonly found at the top of the monimolimnion in such lakes, use sulfur compounds such as sulfides in photosynthesis. These compounds are produced by decomposition of organic sediments in oxygen-poor environments. The monimolimnion is often rich in phosphorus and nitrogen. These factors combine to create an ideal environment for bacterial growth.” ([Wikipedia](https://en.wikipedia.org/wiki/Meromictic_lake#Characteristics))

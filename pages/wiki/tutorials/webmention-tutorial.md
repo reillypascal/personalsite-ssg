@@ -53,7 +53,7 @@ This even works with tools like Squarespace or WordPress! Beyond that, each sect
 Here are the tools we'll be using:
 
 - [Webmention.io](https://webmention.io/) — this is the only strictly necessary one. It's a service by [Aaron Parecki](https://aaronparecki.com/) to receive and transmit webmentions so you don't have to run your own server.
-  - The easiest way to log in to Webmention\.io does require a trusted third party account such as [GitHub](https://github.com/). You don't actually have to _do_ anything with your GitHub account though — as long as it exists and you can log in, you're good.
+    - The easiest way to log in to Webmention\.io does require a trusted third party account such as [GitHub](https://github.com/). You don't actually have to _do_ anything with your GitHub account though — as long as it exists and you can log in, you're good.
 - [Eleventy](https://www.11ty.dev/) — the static site generator I use to build my site, although you can do the basics of this on any site setup.
 - [Netlify](https://www.netlify.com/) — the hosting service I use. I use their [build hooks](https://docs.netlify.com/configure-builds/build-hooks/) to instruct my site to rebuild nightly and pull in new mentions.
 - [Bridgy](https://brid.gy/) — if you share a post from your site on Mastodon/Bluesky/etc., this service can turn interactions with that post into webmentions that go to your site. You can then display these as comments on your blog.
@@ -172,14 +172,18 @@ Below is the [`h-card`](https://microformats.org/wiki/h-card) markup I use above
 </div>
 ```
 
-<!-- <div style="display:none;">
+<!--
+
+```html
+<div style="display:none;">
     <a rel="syndication" class="u-syndication" href="https://hachyderm.io/@reillypascal/113776964186364648"></a>
     <a rel="syndication" class="u-syndication" href="https://bsky.app/profile/reillypascal.bsky.social/post/3lez5zyuwcs2h"></a>
 </div>
 ```
+
 and `u-syndication` gives link(s) to where I [POSSE](https://www.citationneeded.news/posse/) my posts. -->
 
-The `style="display:none;"` markup in the outer `<div>` ensures the card is not displayed to users. The `class="p-author h-card"` in this `<div>` creates a microformats object with the `h-card` class; the `p-author` property adds that this card is for an author. The `u-url` and `u-uid` classes indicate that “https://reillyspitzfaden.com” is my site URL, with the `u-*` prefix indicating a link; similarly, `u-photo` gives a link to a photo to act as an avatar. The `p-name`, `p-given-name`, and `p-family-name` classes give plain-text information about me (plain-text indicated by the `p-*` prefix).
+The `style="display:none;"` markup in the outer `<div>` ensures the card is not displayed to users. The `class="p-author h-card"` in this `<div>` creates a microformats object with the `h-card` class; the `p-author` property adds that this card is for an author. The `u-url` and `u-uid` classes indicate that “https\://reillyspitzfaden.com” is my site URL, with the `u-*` prefix indicating a link; similarly, `u-photo` gives a link to a photo to act as an avatar. The `p-name`, `p-given-name`, and `p-family-name` classes give plain-text information about me (plain-text indicated by the `p-*` prefix).
 
 In addition to this card, the entire article (including the card) is surrounded in an `<article>` tag with the class `h-entry`, creating a microformat object for the entire entry. The `<h1>` for the post title within that `<article` has the class `p-name`, and the content of the post is in a `<div>` with the class `e-content`. As described in the MDN link above, the `e-*` prefix is for “element tree properties where the entire contained element hierarchy is the value” — i.e., because `e-content` refers to the entire post contents, rather than any one single HTML element, we use `e-*`.
 
@@ -308,7 +312,7 @@ I filter the mentions by the following rules:
 
 - The `wm-target` property is the URL for the page — i.e., the mention refers to this post
 - The `wm-source` property does not include “<https://brid.gy/>” or “<https://bsky.brid.gy/>” — i.e., the mention is from someone's blog, rather than being a Mastodon/Bluesky interaction bridged over with Ryan Barrett's [Bridgy](https://brid.gy/) service.
-  - The counterpart to this filter, `fediWebmentions` does the opposite, only allowing mentions that _are_ from those two URLs. This lets me show a separate counter of Fediverse/Bluesky interactions on the [POSSE](https://www.citationneeded.news/posse/)-ed copies.
+    - The counterpart to this filter, `fediWebmentions` does the opposite, only allowing mentions that _are_ from those two URLs. This lets me show a separate counter of Fediverse/Bluesky interactions on the [POSSE](https://www.citationneeded.news/posse/)-ed copies.
 - I sort the mentions in reverse chronological order, using the “published” field which you can view in the raw JSON data at `https://webmention.io/api/mentions.jf2?token=<your-webmention-token>`.
 
 I then use the Liquid keyword `assign` to assign the results of the `webWebmentions` filter to the `web_mentions` variable, allowing me to access and further parse them in the Liquid template.
@@ -332,7 +336,7 @@ On my home server, however, `cron` was super easy to use. `cron` syntax has 5 fi
 I like to [POSSE](https://www.citationneeded.news/posse/) my posts (“Publish on Your Own Site, Syndicate Elsewhere”) on Mastodon and Bluesky. It's a nice balance between the ownership of my data that having my own site provides, and the broader reach of social media platforms. It turns out it's also possible to bring in Mastodon/Bluesky responses, likes, and reposts, and display them on my site using the [Bridgy](https://brid.gy/) service. The IndieWeb community calls this [backfeeding](https://indieweb.org/backfeed), and comments that
 
 > We POSSE to make it easier for our friends and others to read our posts.
-
+>
 > The point of implementing backfeed is to similarly make it easy for those same people to interact with those POSSE copies in a way that makes it back to the original, thus make it easier for you, the author of those original posts on your indieweb site to read their comments, and view other interactions.
 
 Here, I'll go through how to set up Bridgy to do this. From [brid.gy](https://brid.gy/), you can click on one of the buttons under “connect your accounts.” The process then looks a bit different for Mastodon and Bluesky.

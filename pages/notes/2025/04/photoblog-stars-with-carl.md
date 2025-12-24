@@ -1,6 +1,6 @@
 ---
 title: Photoblog—Stars with Carl
-fedi_url: 
+fedi_url:
   - https://hachyderm.io/@reillypascal/114297925178833375
   - https://bsky.app/profile/reillypascal.bsky.social/post/3lmagwvbcxs2l
 og_image: /media/blog/2025/04/stars-with-carl/IMG_20250405_194437_613.webp
@@ -15,7 +15,7 @@ tags:
 
 <link rel="stylesheet" type="text/css" href="/styles/notes-photos.css">
 
-My partner and I went to the Rochester Museum and Science Center's planetarium for the “[Stars with Carl](https://rmsc.org/events/stars-with-carl/)” event this past weekend. The “Carl” in question is a 1968 [Carl Zeiss Mark VI star projector](https://en.wikipedia.org/wiki/Zeiss_projector) — a fully analog unit that if I remember right, weighs over 2 tons. 
+My partner and I went to the Rochester Museum and Science Center's planetarium for the “[Stars with Carl](https://rmsc.org/events/stars-with-carl/)” event this past weekend. The “Carl” in question is a 1968 [Carl Zeiss Mark VI star projector](https://en.wikipedia.org/wiki/Zeiss_projector) — a fully analog unit that if I remember right, weighs over 2 tons.
 
 The presenter showed us how the skies change with season and latitude, and demonstrated “[star hopping](https://milwaukeeastro.org/beginners/starhopping.asp)” between different stars and constellations. I took some pictures of Carl at the end — a very cool machine:
 

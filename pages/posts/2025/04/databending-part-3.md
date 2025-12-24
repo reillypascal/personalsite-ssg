@@ -1,7 +1,7 @@
 ---
 title: Databending Part 3—Glitching MP3s with Python
 description: I'm continuing my databending series. Today we'll discuss how to use Python to easily glitch up MP3s, adding warbles, clicks, and other cool noise!
-fedi_url: 
+fedi_url:
   - https://hachyderm.io/@reillypascal/114291930621155178
   - https://bsky.app/profile/reillypascal.bsky.social/post/3lm5u4dyu2s2f
 date: 2025-04-06T00:00:00-0500
@@ -13,9 +13,9 @@ octothorpes:
   - sound
 tags:
   - post
-  - databending 
-  - mp3 
-  - music 
+  - databending
+  - mp3
+  - music
   - sound-design
 post_series: databending
 featured: true
@@ -38,7 +38,7 @@ I like it a lot! Now let's talk about the code.
 
 ## Recap
 
-I previously described how an MP3 chops an audio file into short “frames” and analyzes the frequencies present in those frames. The file is structured with a “header” consiting of 8 [hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal) digits, some further information about the file, and then the list of frames, each prefixed by its own header. 
+I previously described how an MP3 chops an audio file into short “frames” and analyzes the frequencies present in those frames. The file is structured with a “header” consiting of 8 [hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal) digits, some further information about the file, and then the list of frames, each prefixed by its own header.
 
 When glitching the file, the important thing is to leave the headers as well as the data before the list of frames alone, and to only change the data in the frames. My Python code loads the file as binary data, converts it to a hexadecimal string, finds the headers, and then makes random changes to data within the frames, using the headers as a reference for where the frames are located. Let's walk through how the code does this.
 
@@ -53,7 +53,7 @@ with open(args.input, 'rb') as input_file:
     hexdata = input_file.read().hex()
 ```
 
-This next block takes the hexadecimal data (currently formatted as a string) and looks for the substring “fff,” which is the beginning of the header in almost all MP3s. I use the `.find()` string method to get the index for the first occurrence of that substring; store that index in the array `header_start_indices`; and start the search again 8 indices later in the hex data (because the headers are 8 hex digits long). Using the resulting array of indices, I create an array of the opening metadata followed by each frame. 
+This next block takes the hexadecimal data (currently formatted as a string) and looks for the substring “fff,” which is the beginning of the header in almost all MP3s. I use the `.find()` string method to get the index for the first occurrence of that substring; store that index in the array `header_start_indices`; and start the search again 8 indices later in the hex data (because the headers are 8 hex digits long). Using the resulting array of indices, I create an array of the opening metadata followed by each frame.
 
 ```python
 header_start_indices = []
@@ -115,7 +115,6 @@ for idx_frame, frame in enumerate(frames):
 
 Finally, `''.join(output_hex)` takes the resulting hex data, which is in a new array called `output_hex`, and joins it into a single string, which is what the `.write()` method expects. As with the use of `open()` above, the argument `'wb'` indicates to write as binary, and the `.unhexlify()` method (from the `binascii` package) converts from ASCII hex back to raw binary data.
 
-
 ```python
 rejoined_frames = ''.join(output_hex)
 # 'wb' = 'write' + 'binary'; binascii.unhexlify converts ascii hex -> binary
@@ -125,11 +124,13 @@ with open(args.output, 'wb') as output_file:
 ```
 
 ## Wrapping Up
+
 I glossed over using the [`argparse`](https://docs.python.org/3/library/argparse.html) package to parse command-line arguments—that's more of a convenience-of-use feature, and I don't want to go on too long. If you want more info on it, there's an `argparse` tutorial at [this link](https://docs.python.org/3/howto/argparse.html).
 
 If anyone tries this code out, I would love to hear about it! I would be especially interested to know if there are any specific MP3s it fails to glitch. I will be adding support for a few more niche variants of the format in which the header starts with ”ffe” instead of ”fff,” so that at least will be addressed soon.
 
 ## Website Updates
+
 I added styling to all my [RSS Feeds](/feeds) using [XSLT](https://en.wikipedia.org/wiki/XSLT) or “Extensible Stylesheet Language Transformations,” which makes it so they're human-readable and nice-looking! XSLT is a very old format that translates the XML feed into (in this case) HTML with CSS styling as the browser reads it. It's fun to come across something from *way* back when and get to use it. I had been wanting to figure out how to do this since seeing it on [Rach Smith](https://rachsmith.com/) and [Shellsharks'](https://shellsharks.com/) sites—I figure if someone new to RSS stumbles across the link, this way they won't just see the raw XML and think something's “broken,” and this will make it easier to get into RSS [^1].
 
 Speaking of feeds, my [RSS page](/feeds) now includes multiple different feed options. In addition to this blog feed, you can follow [all posts on this site](/feed.xml), which includes posts from my [notes](/notes) and [interactions](/interactions) pages—photoblogging/short personal posts, and IndieWeb likes/replies/etc., respectively.

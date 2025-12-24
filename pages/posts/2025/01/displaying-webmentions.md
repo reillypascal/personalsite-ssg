@@ -1,7 +1,7 @@
 ---
 title: Displaying Webmentions
 description: I finally figured out displaying webmentions on my site without any client-side JavaScript!
-fedi_url: 
+fedi_url:
   - https://hachyderm.io/@reillypascal/113907004496812260
   - https://bsky.app/profile/reillypascal.bsky.social/post/3lgsvxvnopk2o
 date: 2025-01-28T00:55:00-0500
@@ -50,7 +50,7 @@ module.exports = async function () {
 };
 ```
 
-I ended up using the “[eleventy-plugin-webmentions](https://github.com/CodeFoodPixels/eleventy-plugin-webmentions)” plugin, and that seems to work well. I was a bit hesitant to use the plugin since it hasn't been updated in about 2 years and I want something that will last, but it works well for now, and I can always make another go at DIY-ing it. 
+I ended up using the “[eleventy-plugin-webmentions](https://github.com/CodeFoodPixels/eleventy-plugin-webmentions)” plugin, and that seems to work well. I was a bit hesitant to use the plugin since it hasn't been updated in about 2 years and I want something that will last, but it works well for now, and I can always make another go at DIY-ing it.
 
 My next step is to get it to automatically build every so often so I can get new webmentions. [Thadee](https://www.voorhoede.nl/en/blog/scheduling-netlify-deploys-with-github-actions/) and [Sophie Koonin](https://localghost.dev/blog/how-to-schedule-posts-in-eleventy/) have some discussions I'll look at. Something else I'm considering is just using [cURL](https://en.wikipedia.org/wiki/CURL) to get the webmentions in a .json file. When I manually ran this line, I was able to use the resulting file in Eleventy just fine, so I may try automatically running that line in a GitHub action.
 
@@ -59,9 +59,11 @@ curl 'https://webmention.io/api/mentions.jf2?token=-PsKFuieg-7U9kQK5X8cqg&per-pa
 ```
 
 ## Design
+
 While I'm not finished with how I handle displaying the webmentions behind the scenes, I am happy with the design elements for them. I added SVG icons to the tags at the top of the posts (to match the calender icons), to the email reply at the bottom, and to the webmention line—both the webmention icon and the symbols for the categories. I've been thinking about how to keep the site text-focused and minimal but add a bit of visual clarity to the layout, and I think this kind of icon works well for me.
 
 ## Looking Forward
+
 I think I'll start doing more writeups of/notes about in-progress projects. While I'm still not fully satisfied with my results here, and I have a number of other things I want to get done, it feels nice to write out what I *have* accomplished. Also allowing things to be unfinished helps me write about them—if I wait until I feel truly done (which often doesn't come!) I may not write about it at all.
 
 [^1]: In addition to including this post as a reference for displaying webmentions, I want to respond to these principles in a future post and use them as a jumping-off point to write about how I want to use my own site.

@@ -14,5 +14,5 @@ target_title: Utah Lawmakers Say Gender-Affirming Care Harms Kids. Their Own Stu
 ---
 
 > Policies that prevent access to hormone therapy for minors cannot be justified based on scientific findings or concerns about potential regret in the future, the report states.
-
+>
 > The agency is not taking a position on whether lawmakers should lift the statewide ban on hormone therapy and surgeries for minors. But it reminded lawmakers that they had intended for the prohibition to be temporary until the state could conduct its own research.

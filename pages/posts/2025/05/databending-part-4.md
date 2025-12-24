@@ -1,7 +1,7 @@
 ---
 title: Databending Part 4—Data to Audio with a Rust Tool
 description: Manually importing data as audio in Audacity sounds super cool but takes a while and slows down my composition. Today I'm automating it in Rust!
-fedi_url: 
+fedi_url:
   - https://hachyderm.io/@reillypascal/114434723302418270
   - https://bsky.app/profile/reillypascal.bsky.social/post/3lo5b7trn722x
 og_image: /media/blog/2025/05/databending-part-4/libicudata.73.1.jpg
@@ -26,7 +26,7 @@ post_series: databending
 <link rel="stylesheet" type="text/css" href="/styles/code/prism-perf-custom.css" />
 <link rel="stylesheet" type="text/css" href="/styles/code/code-tweaks.css" />
 
-Earlier this year I [wrote](/posts/2025/01/databending-part-1/) about how to import any file into Audacity and convert it to audio. Today I want to make the process less tedious, as well as get some practice with the [Rust](https://en.wikipedia.org/wiki/Rust_(programming_language)) programming language. 
+Earlier this year I [wrote](/posts/2025/01/databending-part-1/) about how to import any file into Audacity and convert it to audio. Today I want to make the process less tedious, as well as get some practice with the [Rust](https://en.wikipedia.org/wiki/Rust_(programming_language)) programming language.
 
 When I first wrote about this process, I mentioned that
 
@@ -36,7 +36,7 @@ In addition to simply speeding up the search for interesting files, automation a
 
 <aside id="adpcm" class="post-body-aside">
 
-The ADPCM input format is still in the works, but just because I like to include audio at the start of things, I want to take a brief sidebar about why ADPCM could be cool. Audacity has the VOX or [Dialogic ADPCM](https://en.wikipedia.org/wiki/Dialogic_ADPCM) flavor as one of its import formats, and I've had some interesting results importing data using it and similar formats. 
+The ADPCM input format is still in the works, but just because I like to include audio at the start of things, I want to take a brief sidebar about why ADPCM could be cool. Audacity has the VOX or [Dialogic ADPCM](https://en.wikipedia.org/wiki/Dialogic_ADPCM) flavor as one of its import formats, and I've had some interesting results importing data using it and similar formats.
 
 If my math is correct, the audio examples here should be from the same portion of the source data (the `libicudata.73.1` library file from the macOS release of the [calibre](https://calibre-ebook.com/) e-book manager). The first one is imported in Audacity as signed 16-bit integer at 44.1 kHz sampling rate:
 
@@ -59,7 +59,7 @@ Anyway, my Rust tool is still a work in progress, but I thought I'd do a writeup
 As a refresher on the databending process, I wrote in the first post that in digital audio files
 
 > we take repeated readings or “samples” of this rising and falling \[air] pressure at very rapid intervals in time (the “sample rate”), and represent the height of the rising and falling line at each reading using an integer value.
-
+>
 > Since any computer file is just a list of \[binary] numbers…we can take the list of numbers from any file and treat them as a list of amplitudes in an audio file.
 
 First, we want to import files as a list of bytes, and we want to be able to traverse through a large folder of files, with possible sub-folders. The [walkdir](https://crates.io/crates/walkdir) Rust crate is useful for traversing directories, and [these examples](https://rust-lang-nursery.github.io/rust-cookbook/file/dir.html#recursively-find-all-files-with-given-predicate) from the Rust Cookbook are a good model. `WalkDir::new()` returns a recursive iterator into the directory, and we can check if the metadata is good; check if the metadata says an entry is a file and is bigger than the minimum size we've chosen (0 is the default); and if so, use `fs::read()` to read in the file. `fs::read()` returns a `Result<Vec<u8>>`, so we can use `.expect()` to get the vector out of the `Result<T,E>`.
@@ -106,7 +106,7 @@ enum SampleFormat {
 
 ```
 
-Picking up where we left off when importing the file, I can take that `Vec<u8>` holding our file data and, depending on the sample format, convert it to appropriately-sized values. If the contents of the “arms” of a Rust `match` statement are an [expression](https://doc.rust-lang.org/book/ch03-03-how-functions-work.html#statements-and-expressions), you can have something like `let converted_data: Vec<f64> = match args.format {}`, and the variable `converted_data` will hold the appropriate value, based on the arm chosen. In this case, simply not putting a semicolon after (e.g.) `data.chunks_exact(2).map().collect()` causes that piece of code to be an expression. 
+Picking up where we left off when importing the file, I can take that `Vec<u8>` holding our file data and, depending on the sample format, convert it to appropriately-sized values. If the contents of the “arms” of a Rust `match` statement are an [expression](https://doc.rust-lang.org/book/ch03-03-how-functions-work.html#statements-and-expressions), you can have something like `let converted_data: Vec<f64> = match args.format {}`, and the variable `converted_data` will hold the appropriate value, based on the arm chosen. In this case, simply not putting a semicolon after (e.g.) `data.chunks_exact(2).map().collect()` causes that piece of code to be an expression.
 
 ```rust
 // ...
@@ -147,7 +147,7 @@ if metadata.is_file() && metadata.len() >= 1000000 {
           let mut joined: [u8; 4] = [0; 4];
           joined[3..].copy_from_slice(&high_part);
           joined[..3].copy_from_slice(&low_part);
-          
+
           (i32::from_le_bytes(joined) >> 8) as f64
         }).collect()
     }
@@ -166,7 +166,6 @@ if metadata.is_file() && metadata.len() >= 1000000 {
 For the 16-, 24-, and 32-bit versions, I need the `core::slice::chunks_exact()` function, which returns an iterator over a slice of the specified length. The function `from_le_bytes()` takes in an array of bytes and converts them into a single little-endian number. The type (e.g., in `i32::from_le_bytes()`) specifies which version of the function to use. For the 24-bit version, there is no 24-bit integer type, so I use a 32-bit integer and fill the upper byte with zeroes. For the 8-bit version, I simply get an iterator over the `data` `Vec<u8>`. All of the `match` “arms” use `.map()` to process each value in the `Vec<u8>`, and `.collect()` collects those processed values into a new `Vec<f64>` for processing by the audio filter.
 
 Note that all the sample formats except 16-bit integer use the bit-shift operators (`<<` or `>>`) to scale the values to the range needed to output a 16-bit WAV file. 16 bits is plenty to get good-quality sound, and the input formats are primarily for the different sound results, so I'm fine with converting everything to 16-bit at the end. I temporarily convert everything to floating point numbers for filtering because the filter math is nicer to work with that way.
-
 
 ## Filtering
 
@@ -233,7 +232,7 @@ fn write_file_as_wav(data: Vec<i16>, name: path::PathBuf) {
     bits_per_sample: 16,
     sample_format: hound::SampleFormat::Int,
   };
-  
+
   // writer
   let mut writer = hound::WavWriter::create(name, spec).expect("Could not create writer");
   for t in 0..data.len() {
@@ -246,16 +245,17 @@ fn write_file_as_wav(data: Vec<i16>, name: path::PathBuf) {
 ## Summary and Future Goals
 
 To review:
-  1. We use the [walkdir](https://crates.io/crates/walkdir) crate and `fs::read()` to recursively traverse the files in the folder and open each as a `Vec<u8>`
-  2. The [clap](https://crates.io/crates/clap) crate handles CLI arguments, including selecting the input sample format.
-  3. We use `core::slice::chunks_exact()` and (e.g.) `i16::from_le_bytes()` to convert groupings of bytes into 16-, 24-, or 32-bit samples.
-  4. We use a biquad [filter](https://github.com/reillypascal/rs_rust_audio) I wrote to cut out sub-audible frequencies, casting to/from 64-bit floats for the filtering.
-  5. Finally, we use a `WavWriter` struct from the [hound](https://crates.io/crates/hound) crate to write each WAV file.
+
+1. We use the [walkdir](https://crates.io/crates/walkdir) crate and `fs::read()` to recursively traverse the files in the folder and open each as a `Vec<u8>`
+2. The [clap](https://crates.io/crates/clap) crate handles CLI arguments, including selecting the input sample format.
+3. We use `core::slice::chunks_exact()` and (e.g.) `i16::from_le_bytes()` to convert groupings of bytes into 16-, 24-, or 32-bit samples.
+4. We use a biquad [filter](https://github.com/reillypascal/rs_rust_audio) I wrote to cut out sub-audible frequencies, casting to/from 64-bit floats for the filtering.
+5. Finally, we use a `WavWriter` struct from the [hound](https://crates.io/crates/hound) crate to write each WAV file.
 
 I mentioned the [ADPCM](https://en.wikipedia.org/wiki/Differential_pulse-code_modulation) sample format at the start, and one of my next goals is to include that option when importing files. The [symphonia](https://lib.rs/crates/symphonia#readme-codecs-decoders) Rust crate has an ADPCM decoder (sadly not the VOX version—symphonia [has Microsoft and IMA flavors](https://lib.rs/crates/symphonia-codec-adpcm#readme-support)). I'll need to do some poking around to figure out how to use it, but I definitely plan to do so in the near future.
 
 I hope to see you again soon!
 
-[^1]: Steven W. Smith, “The Scientist and Engineer’s Guide to Digital Signal Processing,” accessed April 30, 2025, https://www.dspguide.com/. This one is a bit older (and includes some BASIC and FORTRAN examples), but it's freely available online, the math parts are very helpful, and I overall greatly appreciate that it targets those with less math experience, while still being thorough.
+[^1]: Steven W. Smith, “The Scientist and Engineer’s Guide to Digital Signal Processing,” accessed April 30, 2025, <https://www.dspguide.com/>. This one is a bit older (and includes some BASIC and FORTRAN examples), but it's freely available online, the math parts are very helpful, and I overall greatly appreciate that it targets those with less math experience, while still being thorough.
 
-[^2]: Will Pirkle, Designing Audio Effect Plugins in C++: For AAX, AU, and VST3 with DSP Theory (Routledge, 2019), https://www.taylorfrancis.com/books/mono/10.4324/9780429490248/designing-audio-effect-plugins-pirkle. Chapters 10–12 in this one have a good discussion of filter math, and I (very loosely) based my filter on some of the examples here.
+[^2]: Will Pirkle, Designing Audio Effect Plugins in C++: For AAX, AU, and VST3 with DSP Theory (Routledge, 2019), <https://www.taylorfrancis.com/books/mono/10.4324/9780429490248/designing-audio-effect-plugins-pirkle>. Chapters 10–12 in this one have a good discussion of filter math, and I (very loosely) based my filter on some of the examples here.

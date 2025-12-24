@@ -20,7 +20,7 @@ draft: true
 ## Gatekeeper
 
 - [Remove Gatekeeper](https://www.igorski.nl/on-plugins-and-macos) from individual plugin
-  - Security policy control: add rule
+    - Security policy control: add rule
 
 ```sh
 spctl --add <path>
@@ -34,7 +34,7 @@ sudo spctl --master-enable
 ```
 
 - Remove Gatekeeper recursively on folder
-  - Extended attributes: recursively clear all
+    - Extended attributes: recursively clear all
 
 ```sh
 xattr -rc <foldername>
@@ -55,8 +55,8 @@ xattr -r -d com.apple.quarantine .
 ## Get Rid of Update Notifications
 
 - <https://macperformanceguide.com/blog/2024/20240215_1700-macOSSonoma-blockForcedUpdates.html>
-  - Referenced: <https://eclecticlight.co/2024/02/12/can-you-avoid-a-forced-upgrade-to-sonoma/>
-    - <https://lapcatsoftware.com/articles/2024/2/2.html>
+    - Referenced: <https://eclecticlight.co/2024/02/12/can-you-avoid-a-forced-upgrade-to-sonoma/>
+        - <https://lapcatsoftware.com/articles/2024/2/2.html>
 - I also ended up setting `UserNotificationDate` to the same value — can read/confirm with `defaults read com.apple.SoftwareUpdate`
 
 ```sh

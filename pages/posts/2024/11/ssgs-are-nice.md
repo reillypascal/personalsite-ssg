@@ -12,6 +12,7 @@ I first published this site in 2022 as a simple portfolio of my work. At that po
 Now, I'm able to put a properly formatted post in the appropriate directory, and that's it! Eleventy adds the post link and description to the blog page and generates a full-text RSS feed. I've avoided frameworks (e.g., React) because I'd like to minimize client-side JS, and with SSGs, I hadn't realized how much control I could still have over the HTML, so this setup is a nice surprise.
 
 ## IndieWeb and the Social Web
+
 I started the year hopeful for using IndieWeb architecture and my personal site to replace some of my social media interactions. However, I tend to make things part of my daily routine only if there's low friction. Having to hand-write HTML, add post links, add posts to my RSS feed, etc. made it much more appealing to just use existing social media. I'm hopeful that this new site setup can change that.
 
 Thanks for reading! I'm planning to be much more active on here now.

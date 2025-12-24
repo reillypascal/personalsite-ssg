@@ -9,7 +9,7 @@ og_image_width: 1200
 og_image_height: 630
 date: 2025-08-16T19:18:00-0400
 octothorpes:
-  - 
+  -
 tags:
   - post
   - personal

@@ -2,7 +2,7 @@
 title: Liked | Fedimanifesto
 canonical_url: https://reillyspitzfaden.com/interactions/2024/11/liked-fedimanifesto/
 date: 2024-11-26
-tags: 
+tags:
     - like
     - interaction
     - music

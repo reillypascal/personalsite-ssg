@@ -26,7 +26,7 @@ description: Reilly Spitzfaden is a composer and programmer who likes noise, obs
 <article class="textBlock">
 <h1 class="sectionHeader">Bio</h1>
 <!-- head shot - maybe glitch up? -->
-<!-- <img class="headshot" src="../media/profile-200px.png" alt="Reilly’s face in profile" 
+<!-- <img class="headshot" src="../media/profile-200px.png" alt="Reilly’s face in profile"
     srcset="../media/profile/profile-100px.png 100w,
     ../media/profile-200px.png 200w,
     ../media/profile-400px.png 400w"
@@ -43,4 +43,4 @@ Reilly is currently a lecturer in music technology, film and game scoring, and m
 
 </article>
 
-<h1><a href="../documents/spitzfaden-CV-2024.pdf">CV</a></h1>
+<h1><a href="/documents/spitzfaden-CV-2024.pdf">CV</a></h1>

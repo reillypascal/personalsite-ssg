@@ -1,7 +1,7 @@
 ---
 title: "IndieWeb Carnival: Tone Colors"
 description: For this month's IndieWeb Carnival, I'm writing about music that emphasizes timbre or “tone-color,” and how I use this kind of approach in my own composition.
-fedi_url: 
+fedi_url:
   - https://hachyderm.io/@reillypascal/115012421541262664
   - https://bsky.app/profile/reillypascal.bsky.social/post/3lw5sxuqsoc25
 og_image: /media/blog/2025/08/schoenberg-farben-og.jpg
@@ -31,7 +31,7 @@ He describes what he is doing as [*klangfarbenmelodie*](https://en.wikipedia.org
 
 In my first year of college, I stumbled across a score page for Anton Webern's [*Concerto for Nine Instruments, Op. 24*](https://www.youtube.com/watch?v=pVQambrIKNo) discarded in a practice room — likely homework from some classmate's [20th-century music theory](https://en.wikipedia.org/wiki/20th-century_classical_music) class. Webern was one of Schoenberg's students and someone who also made use of *klangfarbenmelodie*, and this piece was my entry point to that idea, among many other musical concepts. My *Nonet* from 2014, and [movement III in particular](https://soundcloud.com/reilly-spitzfaden/nonet-iii?in=reilly-spitzfaden/sets/nonet-premiere) is a good example of my use of this technique.
 
-Where Schoenberg's prototype of *klangfarbenmelodie* in his “Farben” movement uses slowly morphing chords, the opening of movement III of my *Nonet* is highly pointillistic — more like how Webern tended to write. In the first two measures, the horn, bass clarinet, and cello each play a short [motive](https://en.wikipedia.org/wiki/Motif_(music)), transposing and manipulating it each time, with each instrument just barely overlapping with the end of the previous one. This rapid passing of short ideas between instruments sets the tone for the rest of the composition. 
+Where Schoenberg's prototype of *klangfarbenmelodie* in his “Farben” movement uses slowly morphing chords, the opening of movement III of my *Nonet* is highly pointillistic — more like how Webern tended to write. In the first two measures, the horn, bass clarinet, and cello each play a short [motive](https://en.wikipedia.org/wiki/Motif_(music)), transposing and manipulating it each time, with each instrument just barely overlapping with the end of the previous one. This rapid passing of short ideas between instruments sets the tone for the rest of the composition.
 
 We can listen to this pointillistic call-and-response in a similar way to how we did in the Schoenberg example. While the musical material is much more active in my piece, the shifts in tone color also occur in quicker succession, and are often accompanied by large [register](https://en.wikipedia.org/wiki/Register_(music)) jumps. In addition, almost all of the material derives from that 5-note motive from the first measure. While the melody is quite dissonant, angular, and chromatic, deriving most things from this one short motive gives a consistent overall character or “vibe” to the piece.
 

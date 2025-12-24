@@ -1,7 +1,7 @@
 ---
 title: Databending Part 1—Raw Data in Audacity
 description: Did you know you can listen to pretty much any file as an audio file? Let's look at how it works and what it sounds like!
-fedi_url: 
+fedi_url:
   - https://hachyderm.io/@reillypascal/113776964186364648
   - https://bsky.app/profile/reillypascal.bsky.social/post/3lez5zyuwcs2h
 date: 2025-01-05
@@ -40,7 +40,7 @@ In Audacity, go to File > Import > Raw Data, choose any file and import it. The 
 
 ## What Kinds of Files?
 
-Since I primarily use macOS and some Linux, this discussion will be most specific to those OSes, but similar things work well on Windows. The files I find work best are [binary](https://en.wikipedia.org/wiki/Binary_file) files. While all computer files use binary code in some form, “binary file” usually refers to a file that does not encode text. 
+Since I primarily use macOS and some Linux, this discussion will be most specific to those OSes, but similar things work well on Windows. The files I find work best are [binary](https://en.wikipedia.org/wiki/Binary_file) files. While all computer files use binary code in some form, “binary file” usually refers to a file that does not encode text.
 
 The two categories of binary files I usually end up using most are program files (e.g., Unix [executable files](https://en.wikipedia.org/wiki/Executable)/Windows .exe files) and [libraries](https://en.wikipedia.org/wiki/Library_(computing)) (.dylib, .dll, .a, .so files, etc.). You can think of libraries as “subunits” in a program—a library might handle encoding mp3 files, connecting to the internet, or another small task that many different programs need. The program files I describe above might combine a number of libraries along with unique code for that program, and you can often run a full program by double-clicking on them. I've found both categories to produce interesting sounds, and we will return to some differences between databending program files and libraries.
 
@@ -58,14 +58,14 @@ This next recording is an excerpt of the file [libicudata.73.dylib](https://docs
   <source src="/media/blog/2025/01/libicudata.73.dylib-01.mp3" type="audio/mp3">
 </audio>
 
-I want to draw your ears to the rhythmic character of this sound. The PDF had two elements—a low motor-like buzz, and a burst of white noise—and rapidly “toggles” between them. In contrast, this library file has high “wheedling” tones; medium-register “beeps” that poke out through the texture; chugging, clicking noises that remind me of a receipt printer; low tones that rapidly bend up and down; sustained, buzzing bass notes; and many other small nuances. 
+I want to draw your ears to the rhythmic character of this sound. The PDF had two elements—a low motor-like buzz, and a burst of white noise—and rapidly “toggles” between them. In contrast, this library file has high “wheedling” tones; medium-register “beeps” that poke out through the texture; chugging, clicking noises that remind me of a receipt printer; low tones that rapidly bend up and down; sustained, buzzing bass notes; and many other small nuances.
 
 I particularly like the character of the [transients](https://en.wikipedia.org/wiki/Transient_(acoustics)) and [spectral flux](https://en.wikipedia.org/wiki/Spectral_flux) in these sounds. Transients are rapid, momentary changes in a sound, such as percussive “[attacks](https://en.wikipedia.org/wiki/Envelope_(music)#ADSR)” at the start of notes. “Spectral flux” refers to how rapidly the [spectral density](https://en.wikipedia.org/wiki/Spectral_density) of the sound changes—how rapidly areas of greater or lesser energy change and move up and down the spectrum.
 
 Have a listen for these two features in this sound from the [libavcodec](https://en.wikipedia.org/wiki/Libavcodec) audio codec library:
 
 <audio controls>
-	<source src="/media/blog/2025/01/libavcodec.58_random_glitch_1.mp3" type="audio/mp3">
+    <source src="/media/blog/2025/01/libavcodec.58_random_glitch_1.mp3" type="audio/mp3">
 </audio>
 
 <figure>
@@ -96,6 +96,7 @@ Even with these approaches, if I want to avoid repeating myself between composit
 Something interesting to check out is James Bradbury's [FluCoMa](https://www.flucoma.org/) plenary talk titled “[Finding Things in Stuff](https://www.youtube.com/watch?v=IpD_XzW1Az4),” in which he uses Python and the FluCoMa (“Fluid Corpus Manipulation”) toolkit for Max/MSP, SuperCollider, and Pure Data to find the “interesting” sections of databending sessions. I haven't tried his methods yet, but they look promising for at least speeding up the search.
 
 ## Looking Back, Looking Forward
+
 This past Friday (Jan. 3) marks one year since I was inspired by a [Sophie Koonin talk](https://www.youtube.com/watch?v=H2Ux0hGQcs4) to [start writing on this blog](https://reillyspitzfaden.com/posts/2024/01/hello-world/)! Since then I [coded my own comment system](https://reillyspitzfaden.com/posts/2024/01/do-read-the-comments/), with a similar system to add post likes; [added webmentions](https://reillyspitzfaden.com/posts/2024/05/receiving-webmentions-part-1/); and [set my site up with Eleventy](https://reillyspitzfaden.com/posts/2024/11/ssgs-are-nice/) so that it's extremely easy to post. It makes me happy that I've been able to (mostly) keep up the habit of writing on here, and I'm enjoying writing on here quite a bit.
 
 I'm planning to write a part 2 to today's post that goes into more depth analyzing and discussing works that use databending. There are a number of composers I like who do this, and I think it'll be interesting to collect my responses to their music in one place. I hope to see you then!

@@ -29,38 +29,38 @@ implying that the blog dongles use pin four/pin five.
 ## Hardware
 
 - Nooelec
-  - [Balun One Nine (Barebones)](https://www.nooelec.com/store/balun-one-nine-v2-barebones.html)
-    - This is a [balun](https://en.wikipedia.org/wiki/Balun) (balanced-unbalanced converter) for impedance-matching large antennas with the SDR (e.g., for HF reception via direct sampling).
-  - [Flamingo+ FM](https://www.nooelec.com/store/flamingo-plus-fm.html)
-    - This is a bandstop filter targeting the FM broadcast band. This is useful because many signals of interest are much quieter than FM broadcast, and amplifying the full spectrum would “overdrive” the receiver and cause spurious “images” of the FM broadcast signals.
-  - [LaNa](https://www.nooelec.com/store/lana.html)
-    - This is an LNA ([low-noise amplifier](https://en.wikipedia.org/wiki/Low-noise_amplifier)) for boosting the incoming signal to receive faint sources. Put the FM bandstop filter in front of this to avoid amplifying FM broadcast stations.
+    - [Balun One Nine (Barebones)](https://www.nooelec.com/store/balun-one-nine-v2-barebones.html)
+        - This is a [balun](https://en.wikipedia.org/wiki/Balun) (balanced-unbalanced converter) for impedance-matching large antennas with the SDR (e.g., for HF reception via direct sampling).
+    - [Flamingo+ FM](https://www.nooelec.com/store/flamingo-plus-fm.html)
+        - This is a bandstop filter targeting the FM broadcast band. This is useful because many signals of interest are much quieter than FM broadcast, and amplifying the full spectrum would “overdrive” the receiver and cause spurious “images” of the FM broadcast signals.
+    - [LaNa](https://www.nooelec.com/store/lana.html)
+        - This is an LNA ([low-noise amplifier](https://en.wikipedia.org/wiki/Low-noise_amplifier)) for boosting the incoming signal to receive faint sources. Put the FM bandstop filter in front of this to avoid amplifying FM broadcast stations.
 - RTL-SDR Blog
-  - [RTL-SDR V3 kit with dipole antenna](https://www.rtl-sdr.com/buy-rtl-sdr-dvb-t-dongles/)
-    - This includes the receiver as well as a [dipole antenna](https://www.rtl-sdr.com/using-our-new-dipole-antenna-kit/) and mount. The antenna link above includes instructions on the length of antenna to use for different frequencies.
+    - [RTL-SDR V3 kit with dipole antenna](https://www.rtl-sdr.com/buy-rtl-sdr-dvb-t-dongles/)
+        - This includes the receiver as well as a [dipole antenna](https://www.rtl-sdr.com/using-our-new-dipole-antenna-kit/) and mount. The antenna link above includes instructions on the length of antenna to use for different frequencies.
 
 ## Raspberry Pi
 
 - [These instructions](https://gist.github.com/floehopper/99a0c8931f9d779b0998) worked for me — `dump1090` (see [ADS-B](/wiki/notebook/radio/ads-b/)]) compiles and runs.
-  - `git-core` [appears](https://forums.raspberrypi.com/viewtopic.php?t=88655) to be obsolete — just use `git`
-  - Previously had issues with requirement for `libusb-1.0-0-dev` on macOS (dev version hardcoded in), but seemed to work fine on RPi as of May 14, 2025.
-  - Lines after `rtl_test` not necessary unless using AIS decoder (see [AIS](https://en.wikipedia.org/wiki/Automatic_identification_system), or see [posts](https://www.rtl-sdr.com/tag/ais/) from the blog on AIS).
+    - `git-core` [appears](https://forums.raspberrypi.com/viewtopic.php?t=88655) to be obsolete — just use `git`
+    - Previously had issues with requirement for `libusb-1.0-0-dev` on macOS (dev version hardcoded in), but seemed to work fine on RPi as of May 14, 2025.
+    - Lines after `rtl_test` not necessary unless using AIS decoder (see [AIS](https://en.wikipedia.org/wiki/Automatic_identification_system), or see [posts](https://www.rtl-sdr.com/tag/ais/) from the blog on AIS).
 
 ## Software
 
 - 433 MHz [ISM band](https://en.wikipedia.org/wiki/ISM_radio_band) devices, such as home weather stations, tire pressure gauges, etc.
-  - rtl_433
-    - Install on macOS: `brew install rtl_433`
-    - Source: <https://github.com/merbanan/rtl_433>
-    - Google Groups discussion: <https://groups.google.com/g/rtl_433/>
+    - rtl_433
+        - Install on macOS: `brew install rtl_433`
+        - Source: <https://github.com/merbanan/rtl_433>
+        - Google Groups discussion: <https://groups.google.com/g/rtl_433/>
 - ADS-B
-  - dump1090 — see [ADS-B](/wiki/notebook/radio/ads-b/#software)]
+    - dump1090 — see [ADS-B](/wiki/notebook/radio/ads-b/#software)]
 - RTL-SDR:
-  - rtl-sdr/librtlsdr
-    - Install on macOS: `brew install librtlsdr`
-    - Install on Raspberry Pi: [Raspberry Pi](#raspberry-pi)
-    - Source: <https://github.com/osmocom/rtl-sdr>
-  - SDR++
-    - Install: download nightly release at <https://github.com/AlexandreRouma/SDRPlusPlus/releases>
-      - See [Gatekeeper](/wiki/notebook/coding/terminal/macos-terminal-commands/#gatekeeper) notes for Gatekeeper issues
-    - Source: <https://github.com/AlexandreRouma/SDRPlusPlus>
+    - rtl-sdr/librtlsdr
+        - Install on macOS: `brew install librtlsdr`
+        - Install on Raspberry Pi: [Raspberry Pi](#raspberry-pi)
+        - Source: <https://github.com/osmocom/rtl-sdr>
+    - SDR++
+        - Install: download nightly release at <https://github.com/AlexandreRouma/SDRPlusPlus/releases>
+            - See [Gatekeeper](/wiki/notebook/coding/terminal/macos-terminal-commands/#gatekeeper) notes for Gatekeeper issues
+        - Source: <https://github.com/AlexandreRouma/SDRPlusPlus>

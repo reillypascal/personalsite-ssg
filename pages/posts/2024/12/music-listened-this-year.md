@@ -35,7 +35,7 @@ I pre-ordered her 2024 album <cite>[Breeze](https://fire-toolz.bandcamp.com/albu
 
 I came across Patrick Carey when someone shared <cite>[Collapse Etiquette](https://patrickcarey.bandcamp.com/album/collapse-etiquette)</cite> on the Fediverse. I haven't been able to find out a ton about this artist, but it's a very unique sound world. I like the fractal-like quality of each track—always the same, but always different. The composer describes it as “\[e]xtra dry concatenative synthesis processes,” and it's inspired me to use the [MuBu](https://forum.ircam.fr/projects/detail/mubu/) and [CataRT](https://github.com/ircam-ismm/catart-mubu) tools in Max/MSP with snippets of radio tuning sounds. My favorite track is “[Way Life Be (Endless Kindness)](https://patrickcarey.bandcamp.com/track/way-life-be-endless-kindness)”—it's a weird mix between dreamy/ambient and aggressive, like tuning a radio through new-age stations.
 
-## Boy Jr.
+## Boy Jr
 
 I first heard Boy Jr. on TikTok, when they did a hyperpop cover of “Mr. Brightside” by the Killers. Turns out they're actually a local artist from Rochester! I got to go to the album release party for <cite>[I Love Getting Dumped!](https://boyjr.bandcamp.com/album/i-love-getting-dumped)</cite> at the [Psychic Garden](https://psyg.org/), which was a lot of fun. The venue was decorated like a birthday party, with cake, streamers, a smoke machine, and silver tinsel hanging from the ceiling. “[Lost And](https://boyjr.bandcamp.com/track/lost-and)” was particularly fun to hear live—Boy Jr. danced through the audience and returned after a costume change during the extended instrumental break.
 

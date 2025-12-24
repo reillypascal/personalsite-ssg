@@ -19,8 +19,8 @@ tags:
 - Mark Z. Danielewski, _House of Leaves_
 - Kate Folk, _Out There_
 - William Gibson
-  - _Burning Chrome_
-  - _Neuromancer_
+    - _Burning Chrome_
+    - _Neuromancer_
 - Ruth Ozeki, _A Tale for the Time Being_
 - Aaron A. Reed, _Subcutanean_
 - Vanessa Veselka, _Zazen_

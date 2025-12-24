@@ -28,7 +28,7 @@ I immediately thought of my current experience of composing when I read this. I 
 
 In addition to patching in Max, this process requires composing samples (usually in Logic Pro) to “glitch up” or otherwise manipulate in Max; digging through large collections of “databending” files; sessions of scanning the airwaves on my SDR equipment and recording what I hear; and more recently, coding projects such as my [script to glitch up MP3s](/posts/2025/04/databending-part-3/), my [tool to automate the databending process](/posts/2025/05/databending-part-4/), or my [implementation of the VOX ADPCM codec](/posts/2025/05/databending-part-5/) to get more variety in databending.
 
-Nathan Ho [describes what he calls “system-building syndrome”](https://nathan.ho.name/posts/system-building-syndrome/). For context, 
+Nathan Ho [describes what he calls “system-building syndrome”](https://nathan.ho.name/posts/system-building-syndrome/). For context,
 
 > Synthesizer forums have a long-running joke about “Gear Acquisition Syndrome” that pictures the stereotypical hobbyist with all their Hainbach-endorsed gear, seemingly oblivious to the fact that they’re intended for making music.
 

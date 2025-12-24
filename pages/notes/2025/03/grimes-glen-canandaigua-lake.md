@@ -9,7 +9,7 @@ og_image: /media/blog/2025/03/grimes-canandaigua/IMG_20250330_164410_930_cr.webp
 og_image_width: 1774
 og_image_height: 1468
 date: 2025-03-30
-octothorpes: 
+octothorpes:
 tags:
   - note
   - hiking
@@ -27,7 +27,7 @@ Today we went hiking in Grimes Glen in Naples, NY and stopped by Carolabarb Park
 
 <figure>
 
-  ![A misty lakeshore taken through a pair of binoculars. The image is inset as a small circle in the middle of a black background](/media/blog/2025/03/grimes-canandaigua/IMG_20250330_164410_930_cr.webp) 
+  ![A misty lakeshore taken through a pair of binoculars. The image is inset as a small circle in the middle of a black background](/media/blog/2025/03/grimes-canandaigua/IMG_20250330_164410_930_cr.webp)
   <figcaption>At the overlook on Canandaigua Lake, I took this through a pair of binoculars that were permanently mounted there.</figcaption>
 </figure>
 

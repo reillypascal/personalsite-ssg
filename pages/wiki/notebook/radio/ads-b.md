@@ -30,11 +30,11 @@ I use an [RTL-SDR](/wiki/notebook/radio/rtl-sdr) dongle to receive these signals
 ## Software
 
 - dump1090
-  - Install: `git clone https://github.com/antirez/dump1090.git`, run `make` (successful on macOS 14.7.5 and on Raspberry Pi after following [these instructions](/wiki/notebook/radio/rtl-sdr#raspberry-pi)).
-  - Run:
-    - `./dump1090` — basic run command
-    - `./dump1090 --raw` — hexadecimal output
-    - `./dump1090 --interactive` — shows table view in terminal
-    - `./dump1090 --interactive --net` — shows on <http://localhost:8080/>
-  - Source: <https://github.com/antirez/dump1090> — last updated Jan 21, 2024; most updates 9–13 years ago
+    - Install: `git clone https://github.com/antirez/dump1090.git`, run `make` (successful on macOS 14.7.5 and on Raspberry Pi after following [these instructions](/wiki/notebook/radio/rtl-sdr#raspberry-pi)).
+    - Run:
+        - `./dump1090` — basic run command
+        - `./dump1090 --raw` — hexadecimal output
+        - `./dump1090 --interactive` — shows table view in terminal
+        - `./dump1090 --interactive --net` — shows on <http://localhost:8080/>
+    - Source: <https://github.com/antirez/dump1090> — last updated Jan 21, 2024; most updates 9–13 years ago
 - tar1090 + graph1090 — look into this combination for web interface

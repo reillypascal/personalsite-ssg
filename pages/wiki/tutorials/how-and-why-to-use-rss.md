@@ -1,16 +1,16 @@
 ---
 title: "How and Why to Use RSS"
-description: 
-fedi_url: 
-og_image: 
-og_image_width: 
-og_image_height: 
+description:
+fedi_url:
+og_image:
+og_image_width:
+og_image_height:
 date: 2025-06-08T19:21:49-0400
 octothorpes:
-  - 
+  -
 tags:
   - wiki
-post_series: 
+post_series:
 draft: true
 indienews: true
 ---
