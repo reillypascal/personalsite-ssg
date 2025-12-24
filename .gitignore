@@ -10,8 +10,9 @@ Post\ Drafts/
 wip/
 .cache/
 .env
-.venv/
 # Local Netlify folder
 .netlify/
 .obsidian/
+.rumdl_cache/
+.venv/
 .zed/
