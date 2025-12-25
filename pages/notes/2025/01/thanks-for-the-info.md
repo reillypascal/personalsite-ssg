@@ -8,6 +8,6 @@ tags:
   - reply
 ---
 
-> Reply to <a class="bare-link-wrap u-in-reply-to" href="https://www.benji.dog/notes/1738091887/"><https://www.benji.dog/notes/1738091887/></a>
+> Reply to <a class="bare-link-wrap u-in-reply-to" href="https://www.benji.dog/notes/1738091887/">https\://www.benji.dog/notes/1738091887/</a>
 
 Thanks for the info! This looks like exactly what I was interested in doing next, and I'll have a look at it.
