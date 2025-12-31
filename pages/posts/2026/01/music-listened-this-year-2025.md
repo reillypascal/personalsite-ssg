@@ -5,7 +5,7 @@ fedi_url:
 og_image:
 og_image_width:
 og_image_height:
-date: 2025-12-22T12:41:52-0500
+date: 2026-01-04T12:30:00-0500
 tags:
   - post
   - listening
