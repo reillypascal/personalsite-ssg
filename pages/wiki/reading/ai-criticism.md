@@ -92,6 +92,8 @@ In other words, as Merchant puts it
 >
 > When developers are allowed to use AI tools, they take 19% longer to complete issues—a significant slowdown that goes against developer beliefs and expert forecasts. This gap between perception and reality is striking: developers expected AI to speed them up by 24%, and even after experiencing the slowdown, they still believed AI had sped them up by 20%.
 
+- Hao-Ping (Hank) Lee et al., “[The Impact of Generative AI on Critical Thinking: Self-Reported Reductions in Cognitive Effort and Confidence Effects From a Survey of Knowledge Workers](https://www.microsoft.com/en-us/research/wp-content/uploads/2025/01/lee_2025_ai_critical_thinking_survey.pdf)”
+
 - Mike Judge, “[Where's the Shovelware? Why AI Coding Claims Don't Add Up](https://mikelovesrobots.substack.com/p/wheres-the-shovelware-why-ai-coding)“
 
 > Consider this: with all you know about AI-assisted coding and its wide adoption, if I showed you charts and graphs of new software releases across the world, what shape of that graph would you expect? Surely you’d be seeing an exponential growth up-and-to-the-right as adoption took hold and people started producing more?

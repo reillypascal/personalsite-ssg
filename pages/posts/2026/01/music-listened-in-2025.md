@@ -29,11 +29,17 @@ Fire-Toolz' first album, _Interbeing_ came out in 2017. I first heard of her wit
 
 ### William Fields
 
-I got to see William Fields live with Autechre in Philadelphia, and this next one is actually a live recording of that concert! It was very cool to see live, and I'm glad he decided to release the set. It's available [here](https://williamfields.bandcamp.com/album/opening-for-autechre-in-philadelphia) on Bandcamp.
+I got to see William Fields live with Autechre in Philadelphia this October, and this next one is actually a live recording of that concert! It was very cool to see live, and I'm glad he decided to release the set. It's available [here on Bandcamp](https://williamfields.bandcamp.com/album/opening-for-autechre-in-philadelphia).
+
+### Autechre
+
+At the very end of 2025, I got Autechre's most recent live album, _AE\_2022–_. It's taken me the longest to get into their live albums. The sets tend to be a long, monolithic performance that slowly morphs from one idea to the next over the course of an hour or more. Both in my composition and listening, I tend to prefer short and succinct, but after experiencing such a set live, I have a greater appreciation for the duo's live work — it feels more familiar now, and takes me back to a good experience I had.
+
+Another reason I hadn't gotten this particular album is that (at 19 tracks of around an hour each) it's usually fairly expensive. It turns out that as of time of writing, the [Bleep listing of the album](https://bleep.com/release/483225-autechre-ae2022) is going for half price, and I ended up buying and enjoying it. It has me hopeful that they will release some of their 2025 sets, and that I might get to re-listen to the Philadelphia one I attended.
 
 ### Kelley Sheehan
 
-Hoodwink Duo and Kelley Sheehan, _new ears_
+Hoodwink Duo and Kelley Sheehan's album _new ears_
 
 ## Regular Rotation
 
