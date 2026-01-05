@@ -2,20 +2,16 @@
 title: "Music Listened in 2025"
 description: Artists, albums, and songs I discovered, revisited, and otherwise enjoyed in 2025
 fedi_url:
-og_image:
-og_image_width:
-og_image_height:
-date: 2026-01-04T12:30:00-0500
+date: 2026-01-05T10:41:00-0500
 tags:
   - post
   - listening
   - music
   - media
 post_series: music-listening
-draft: true
 ---
 
-Here's some of the music I've listened to in 2025 — things in regular rotation, things from a while ago that I've revisited, and new (or new-to-me) music I've discovered.
+Here's some of the music I've listened to in 2025 — things in regular rotation, things from a while ago that I've revisited, and new (or new-to-me) music I've added to my library of digital downloads/CDs.
 
 ## New Listens
 
@@ -29,61 +25,66 @@ Fire-Toolz' first album, _Interbeing_ came out in 2017. I first heard of her wit
 
 ### William Fields
 
-I got to see William Fields live with Autechre in Philadelphia this October, and this next one is actually a live recording of that concert! It was very cool to see live, and I'm glad he decided to release the set. It's available [here on Bandcamp](https://williamfields.bandcamp.com/album/opening-for-autechre-in-philadelphia).
+I got to see William Fields live with Autechre in Philadelphia this October, and this next one is actually a live recording of that concert! It was very cool to see live, and I'm glad he decided to release the set. It's available [here on Bandcamp](https://williamfields.bandcamp.com/album/opening-for-autechre-in-philadelphia). William Fields [uses REAPER's JSFX scripting tools](https://arstechnica.com/gaming/2020/09/turning-code-into-music-anagrams-open-source-marxism-and-vr-raves/) to create custom interfaces for glitchy, rhythmically uneasy algorithmic music. [^1]
 
 ### Autechre
 
 At the very end of 2025, I got Autechre's most recent live album, _AE\_2022–_. It's taken me the longest to get into their live albums. The sets tend to be a long, monolithic performance that slowly morphs from one idea to the next over the course of an hour or more. Both in my composition and listening, I tend to prefer short and succinct, but after experiencing such a set live, I have a greater appreciation for the duo's live work — it feels more familiar now, and takes me back to a good experience I had.
 
-Another reason I hadn't gotten this particular album is that (at 19 tracks of around an hour each) it's usually fairly expensive. It turns out that as of time of writing, the [Bleep listing of the album](https://bleep.com/release/483225-autechre-ae2022) is going for half price, and I ended up buying and enjoying it. It has me hopeful that they will release some of their 2025 sets, and that I might get to re-listen to the Philadelphia one I attended.
+Another reason I hadn't gotten this particular album is that (at 19 tracks of around an hour each) it's usually fairly expensive. It turned out that at the end of December/beginning of January, the [Bleep listing of the album](https://bleep.com/release/483225-autechre-ae2022) was on sale for half price, and I ended up buying and enjoying it. It has me interested in re-listening to the Philadelphia set I attended, or hearing some other sets from their 2025 North America tour — would be cool if they release those.
 
 ### Kelley Sheehan
 
-Hoodwink Duo and Kelley Sheehan's album _new ears_
+Kelley Sheehan is a composer whose work I've admired for a while. She pulls from a mix of underground noise music and contemporary classical performance practices, and her music has a wild riot of colors and strange sounds. I actually wrote about her composition “[Talk Circus](https://www.youtube.com/watch?v=gH3kxga4_JY)” for no-input mixer and percussion in my composition dissertation, along with a few other pieces that use audio equipment as instruments. I'd been wanting to have a release of hers I could buy from e.g., Bandcamp, so I was excited to see her release _new ears_ with the Hoodwink Duo.
+
+### Meljoann
+
+Meljoann describes their music as “hyperjack” — i.e., a hyperpop-like cousin of new jack swing. They released [_Status_](https://meljoann.com/posts/status/) early this year, and I've been enjoying it a lot. “Translate Me” has a thick, detuned bass against floating synths and vocals, and a reggaeton-like beat. “Data Ghost” has trap hi-hats, a funky synth bassline, and an 80s power pop-like guitar solo in the middle. It's all very fun and danceable, with a healthy dose of chaos and genre-bending. Note that in addition to more well-known platforms, including Bandcamp, you can buy this album directly from the artist, via their [Faircamp page](https://faircamp.meljoann.com/status/)! [^2]
 
 ## Regular Rotation
 
-While I did listen to some new music this year, most of my listening has been familiar, comfortable things. Some of those songs:
+While I did listen to some new music this year, most of my listening has been familiar, comfortable things. Some of those tracks:
 
-- Autechre
-    - “Dropp”
-    - “VL AL 5”
-    - “Tapr”
-    - “Gantz Graf”
-    - “qplay”
-    - “Altibzz”
-    - “V-Proc”
-    - “plyPhon”
-    - “Fol3”
-- Fire-Toolz
-    - “Soaked: Another Name for Everything”
-    - “✓ iNTERBEiNG”
-    - “Experience ☆ Slips ☆ Away”
-    - “Screamography”
-    - “Second Life”
-    - “Response To Subdivisions ☾”
-    - “✓ BEiNG”
-    - “Clear Light”
-    - “觀音 Prayer For The Abuser (abridged)”
+### Autechre
+
+- “Dropp”
+- “VL AL 5”
+- “Tapr”
+- “Gantz Graf”
+- “qplay”
+- “Altibzz”
+- “V-Proc”
+- “plyPhon”
+- “Fol3”
+
+### Fire-Toolz
+
+- “Soaked: Another Name for Everything”
+- “✓ iNTERBEiNG”
+- “Experience ☆ Slips ☆ Away”
+- “Screamography”
+- “Second Life”
+- “Response To Subdivisions ☾”
+- “✓ BEiNG”
+- “Clear Light”
+- “觀音 Prayer For The Abuser (abridged)”
+
+### William Fields
+
+- “Doquado”
 
 A fun note on this list is that my spouse and I used ”Altibzz” as background music in a video we showed at our wedding! My spouse told me they just wanted something that wasn't too cheesy, and I find this track to be hauntingly beautiful, and was happy with how it turned out.
 
 ## Revisited
 
-Subtle and 13 & God are both groups I loved in high school, and I've been listening to them again this year. Both groups are related: 13 & God is a collaboration between members Doseone and Jel of Subtle (among other groups), and The Notwist. Both groups perform a mix of early 2000s alternative hip hop, trip hop, and indie rock, with rapper Doseone performing in a strange, dense style with dreamlike, abstract lyrics.
+### Subtle/13 & God
+
+Subtle and 13 & God are both groups I loved in high school, and I've been listening to them again this year. Both groups are related: 13 & God is a collaboration between Doseone and Jel of Themselves and Subtle (and of other groups from the Anticon experimental hip-hop collective), and members of The Notwist. Both Subtle and 13 & God perform a mix of early 2000s alternative hip hop, trip hop, and indie rock, with rapper Doseone performing in a strange, dense style with dreamlike, abstract lyrics. I've been mostly listening to 13 & God's self-titled debut, and Subtle's _For Hero: For Fool_.
 
 ## Postscript
 
-<!-- As I [mentioned last year](/posts/2024/12/music-listened-this-year), I _despise_ Spotify, and with everyone talking about their
+Thanks for reading! If you also listen to any of the artists on this list (or similar ones you think I might like) I would love to hear about it — I have comments, email, and a webmention field below. Until next time!
 
-[Fight for the Future](https://www.fightforthefuture.org/actions/spotify-whacked/) has some information on problems with Spotify and some action steps to take, including more ethical alternatives. -->
+[^1]: Here, by “algorithmic,” I'm not referring to LLMs or related technology. Rather, as far as I understand, Fields uses probability and more ”classic” algorithms such as Markov chains — algorithms he has set up, rather than tools trained on others' work.
 
-<!-- - Autechre
-    - _Move of Ten_
-    - _Quaristice (Versions)_
-    - _L-event_
-    - _PLUS_
-- tsone
-    - _A ghost and a guest_
-    - _Airmass_ EP
-- Meljoann, _Status_ -->
+[^2]: [Faircamp](https://simonrepp.com/faircamp/) is a tool for creating a music streaming/download sales page directly on the artist's website, allowing listeners to pay the artist directly.
