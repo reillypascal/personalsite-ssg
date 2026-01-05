@@ -25,6 +25,8 @@ I've listened to Charli XCX since before _Vroom Vroom_ came out, but as is often
 
 Fire-Toolz' first album, _Interbeing_ came out in 2017. I first heard of her with 2018's _Skinless X-1_, and while I bought _Interbeing_ shortly after, I never really got into it until this year. This is common with me — Autechre, for example is pretty much my favorite group, but it took me a long time to get into albums other than _Confield_ and _Draft 7.30_. This year I found that I actually really like the first track on _Interbeing_, “Yellow Rose-Fire.”
 
+She also released a new mini-EP [_Private Angel Message_](https://fire-toolz.bandcamp.com/album/private-angel-message) “to hold us over until the next album.” Track 1 mixes a pounding disco beat, sparkly synths, chugging guitars, and metal screams. Track 2 is a metal-infused cover of a Trammell Starks song originally written for the Weather Channel — I remember reading an article where Angel Marcloid listed some of his work among her favorite music. Track 3 is an ambient electronic collage including acoustic guitar/voice recordings with lyrics no longer remembered by the artist.
+
 ### William Fields
 
 I got to see William Fields live with Autechre in Philadelphia this October, and this next one is actually a live recording of that concert! It was very cool to see live, and I'm glad he decided to release the set. It's available [here on Bandcamp](https://williamfields.bandcamp.com/album/opening-for-autechre-in-philadelphia). William Fields [uses REAPER's JSFX scripting tools](https://arstechnica.com/gaming/2020/09/turning-code-into-music-anagrams-open-source-marxism-and-vr-raves/) to create custom interfaces for glitchy, rhythmically uneasy algorithmic music. [^1]
