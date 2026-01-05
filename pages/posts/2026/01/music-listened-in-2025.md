@@ -2,6 +2,8 @@
 title: "Music Listened in 2025"
 description: Artists, albums, and songs I discovered, revisited, and otherwise enjoyed in 2025
 fedi_url:
+  - https://hachyderm.io/@reillypascal/115843579687100640
+  - https://bsky.app/profile/reillypascal.bsky.social/post/3mbowf3vbdk2y
 date: 2026-01-05T10:41:00-0500
 tags:
   - post
@@ -72,6 +74,7 @@ While I did listen to some new music this year, most of my listening has been fa
 ### William Fields
 
 - “Doquado”
+- “Athal”
 
 A fun note on this list is that my spouse and I used ”Altibzz” as background music in a video we showed at our wedding! My spouse told me they just wanted something that wasn't too cheesy, and I find this track to be hauntingly beautiful, and was happy with how it turned out.
 
