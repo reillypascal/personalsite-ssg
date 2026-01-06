@@ -4,6 +4,7 @@ description: Coming up with a new system for bullet journaling, as well as the f
 date: 2024-06-04
 tags: [ "post", "fountain-pens", "bujo", "hobbies"]
 ---
+
 <style>
     @media screen and (min-width: 760px) {
         #bujo_key {

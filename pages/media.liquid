@@ -2,12 +2,11 @@
 title: Reilly Spitzfaden, Composer | Media
 description: A collection of videos, podcast links, and other appearances around the internet
 ---
-
 <!-- lite-youtube -->
-<link rel="stylesheet" href="/styles/videos/lite-yt-embed.css" />
+<link rel="stylesheet" href="/styles/videos/lite-yt-embed.css">
 <script src="/styles/videos/lite-yt-embed.js"></script>
 
-<link rel="stylesheet" type="text/css" href="/styles/videogrid.css" />
+<link rel="stylesheet" type="text/css" href="/styles/videogrid.css">
 
 <h1 class="sectionHeader">Media</h1>
 
@@ -15,36 +14,64 @@ description: A collection of videos, podcast links, and other appearances around
     <div class="videoGrid">
         {%- for video in media.videos %}
             <div class="containingBlock">
-                <h2 class="video-link"><a href="https://www.youtube.com/watch?v={{ video.yt_id }}"><cite>{{ video.title }}</cite></a></h2>
+                <h2 class="video-link">
+                    <a href="https://www.youtube.com/watch?v={{ video.yt_id }}"
+                        ><cite>{{ video.title }}</cite></a
+                    >
+                </h2>
                 {%- if video.peertube_link %}
                     <p><a href="{{ video.peertube_link }}">PeerTube link</a></p>
                 {%- endif %}
                 <div class="videoWrapper">
-                    <lite-youtube videoid="{{ video.yt_id }}" style="background-image: url('https://i.ytimg.com/vi/{{ video.yt_id }}/hqdefault.jpg');">
+                    <lite-youtube
+                        videoid="{{ video.yt_id }}"
+                        style="background-image: url('https://i.ytimg.com/vi/{{ video.yt_id }}/hqdefault.jpg');"
+                    >
                     </lite-youtube>
                 </div>
             </div>
         {% endfor %}
-    <!-- close "videoGrid" -->
+        <!-- close "videoGrid" -->
     </div>
 </article>
-    
+
 <article>
     <h1 class="sectionHeader">Links to appearances around the internet</h1>
 
-    <p><a href="https://icareifyoulisten.com/2024/04/5-questions-to-apply-triangle/">Review</a> of Apply Triangle's <cite>Oxalis Triangularis</cite>, containing my track <a href="https://applytriangle.bandcamp.com/track/if-this-reaches-you"><cite>If this reaches you</cite></a></p>
+    <p>
+        <a href="https://icareifyoulisten.com/2024/04/5-questions-to-apply-triangle/">Review</a> of Apply Triangle's
+        <cite>Oxalis Triangularis</cite>, containing my track
+        <a href="https://applytriangle.bandcamp.com/track/if-this-reaches-you"><cite>If this reaches you</cite></a>
+    </p>
 
-    <p><a href="https://www.etherdiver.com/2024/04/25/opm-electroacoustic-magic-and-more/#ApplyReilly">Blog feature</a> of my track <a href="https://applytriangle.bandcamp.com/track/if-this-reaches-you"><cite>If this reaches you</cite></a></p>
+    <p>
+        <a href="https://www.etherdiver.com/2024/04/25/opm-electroacoustic-magic-and-more/#ApplyReilly">Blog feature</a>
+        of my track
+        <a href="https://applytriangle.bandcamp.com/track/if-this-reaches-you"><cite>If this reaches you</cite></a>
+    </p>
 
-    <p><a href="https://nowandxen.libsyn.com/14-tone-reilly-spitzfaden">Interview</a> on <cite>Now&Xen</cite> Podcast</p>
+    <p>
+        <a href="https://nowandxen.libsyn.com/14-tone-reilly-spitzfaden">Interview</a> on <cite>Now&Xen</cite> Podcast
+    </p>
 
-    <p><a href="https://wayofm.org/shows/episodes/12042018-0">Interview</a> about Eastman OSSIA New Music commission on WAYO 104.3 FM</p>
+    <p>
+        <a href="https://wayofm.org/shows/episodes/12042018-0">Interview</a> about Eastman OSSIA New Music commission on
+        WAYO 104.3 FM
+    </p>
 
-    <p><a href="https://yeahiknowitsucks.wordpress.com/2018/01/04/how-things-are-made-with-reilly-spitzfaden-jamie-vandermolen-maurice-rickard-and-an-eel/">Blog review</a> of my piece <a href="https://howthingsaremade.bandcamp.com/track/reilly-spitzfaden-combination-locks"><cite>Combination Locks</cite></a></p>
+    <p>
+        <a href="https://yeahiknowitsucks.wordpress.com/2018/01/04/how-things-are-made-with-reilly-spitzfaden-jamie-vandermolen-maurice-rickard-and-an-eel/"
+            >Blog review</a
+        >
+        of my piece
+        <a href="https://howthingsaremade.bandcamp.com/track/reilly-spitzfaden-combination-locks"
+            ><cite>Combination Locks</cite></a
+        >
+    </p>
 
     <p><a href="https://www.icadenza.com/elf-multimedia-performance/">Concert review</a> I wrote for iCadenza.</p>
 
-    <!-- close "linksList"-->
+    <!-- close "linksList" -->
 </article>
 
 <p><a href="#top">Top ⭡</a></p>

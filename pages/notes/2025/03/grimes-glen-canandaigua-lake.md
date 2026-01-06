@@ -19,6 +19,7 @@ tags:
   - photoblog
 post_series:
 ---
+
 <link rel="stylesheet" type="text/css" href="/styles/notes-photos.css">
 
 Today we went hiking in Grimes Glen in Naples, NY and stopped by Carolabarb Park, a small scenic outlook over Canandaigua Lake.

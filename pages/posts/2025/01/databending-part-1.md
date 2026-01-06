@@ -18,6 +18,7 @@ tags:
   - sound-design
 post_series: databending
 ---
+
 Let's start today off with some sounds right out of the gate:
 
 <audio controls>

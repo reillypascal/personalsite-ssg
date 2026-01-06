@@ -29,16 +29,16 @@ I wrote a short poem as a program note for the piece:
 > I watched the space between the houses undergo a sea change  
 > Into something slippery and strange  
 > Though it wasn’t mine to hold, I still carry it with me
-
+>
 > I walked as far as daylight would take me  
 > The wires stayed the same  
 > I brought them back anyway to show that I had done my due diligence
-
+>
 > A satellite floated overhead today and reminded me of home
-
+>
 > I can hear it now  
 > I am not the only one left to tell the tale
-
+>
 > A letter came, but the sky had already touched the ground behind me, so I kept walking
 
 ## The Project
@@ -46,7 +46,7 @@ I wrote a short poem as a program note for the piece:
 Here's the announcement from the ensemble:
 
 > Announcing “Oxalis Triangularis” - a triple album of thirty-three new works from thirty-three composers recorded in a fully remote setting by Apply Triangle. The project was developed through a call for scores in the summer of 2020 and stems from the resilience of artists to continue to create through a global pandemic. It is a testament to the flexibility and creativity possible through electroacoustic composition.
-
+>
 > Oxalis Triangularis refers to the scientific name for a purple “false shamrock” due to its triangle-like leaves. Throughout three albums Apply Triangle not only showcases the innovative techniques of 33 living composers but also highlights the embodied cultural nuances inherent in each composer’s style.
 
 Thanks for reading, and I would love if you check out the album!

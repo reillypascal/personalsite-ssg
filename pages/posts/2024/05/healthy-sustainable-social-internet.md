@@ -10,13 +10,13 @@ I read two articles recently that clarified a lot of what I had been thinking ab
 Ian Bogost [writes](https://www.theatlantic.com/technology/archive/2022/11/twitter-facebook-social-media-decline/672074/) in The Atlantic ([archived copy](https://archive.ph/PPXNV)):
 
 > The whole idea of social networks was networking: building or deepening relationships, mostly with people you knew. How and why that deepening happened was largely left to the users to decide.  
-
+>
 > That changed when social networking became social media around 2009, between the introduction of the smartphone and the launch of Instagram. Instead of connection—forging latent ties to people and organizations we would mostly ignore—social media offered platforms through which people could publish content as widely as possible, well beyond their networks of immediate contacts. Social media turned you, me, and everyone into broadcasters (if aspirational ones). The results have been disastrous but also highly pleasurable, not to mention massively profitable—a catastrophic combination.
 
 And Ellis Hamburger, a former worker at Snapchat [writes](https://www.theverge.com/2023/4/18/23672769/social-media-inevitable-death-monetization-growth-hacks) in The Verge:
 
 > Today, the product evolution of social media apps has led to a point where I’m not sure you can even call them social anymore — at least not in the way we always knew it.
-
+>
 > They each seem to have spontaneously discovered that shortform videos from strangers are simply more compelling than the posts and messages from friends that made up traditional social media. Call it the carcinization of social media, an inevitable outcome for feeds built only around engagement and popularity.
 
 I love the reference to “[carcinization](https://en.wikipedia.org/wiki/Carcinisation),” but most important from both articles is the contrast between “networks” and “media,” as Bogost puts it. I've been finding my usage of Instagram in particular to be shifting toward following strangers who I find entertaining instead of interacting with people I know.

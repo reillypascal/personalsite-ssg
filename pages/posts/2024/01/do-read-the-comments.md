@@ -173,7 +173,7 @@ exports.handler = async (event, context, callback) => {
         // selects only the rows containing comments 
         // made at the blog post's URL
         .eq('postURL', JSON.parse(event.body).postURL)
-        
+
     } catch (e) {
         return {
             statusCode: 500,

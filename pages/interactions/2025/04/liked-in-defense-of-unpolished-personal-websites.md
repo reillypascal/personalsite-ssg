@@ -11,4 +11,5 @@ tags:
 target_url: https://ohhelloana.blog/in-defense-of-unpolished-websites/
 target_title: In defense of unpolished personal websites
 ---
+
 > Is it okay to prioritize readability and learning over cutting-edge optimization on personal websites? I believe so. And if we want more people to have a personal website, I think more of us should consider doing the same.​​​​​​​​​​​​​​​​

@@ -8,7 +8,7 @@ date: 2024-06-18
 categories: ["reading", "hobbies"]
 tags: ["post", "reading", "hobbies"]
 ---
-                                
+
 At one point around the end of high school or the beginning of college, I heard about Haruki Murakami's *A Wild Sheep Chase* in an interview with an indie band I liked. I enjoyed the magical realism. It was something I hadn't encountered before, and while I continue to like that kind of book, I think sometime around that point I overcorrected too far in the direction of seeking out weird stories in mundane settings. I forgot how much I like sci-fi with adventure and action, and I think I had also somehow internalized a sense that stories with “action” in them weren't as “grown-up” to enjoy.
 
 Because I wasn't being honest with myself about some of the kinds of books I like to read (as well as being very busy with school), I haven't read a lot of fiction in several years. Now that I'm out of school, I've had the time and energy to try reading fiction again, and my relationship with the Internet has given me a particular push in that direction.

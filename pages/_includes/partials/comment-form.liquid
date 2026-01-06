@@ -8,10 +8,33 @@
         <fieldset>
             <legend>Comment</legend>
             <ul>
-                <li><input type="text" name="name" id="comment-name" placeholder="Name (required)" class="textinput" required="true" aria-required="true"></li>
-                <li><input type="text" name="email" id="comment-email" placeholder="Email (optional)" class="textinput"></li>
-                <li><textarea name="comment" id="comment-story" placeholder="Comment (required)" required="true" aria-required="true"></textarea></li>
-                <li><div id="submit-success"></div><input type="submit" value="Submit" id="submit-comment" ></li>
+                <li>
+                    <input
+                        type="text"
+                        name="name"
+                        id="comment-name"
+                        placeholder="Name (required)"
+                        class="textinput"
+                        required="true"
+                        aria-required="true"
+                    >
+                </li>
+                <li>
+                    <input type="text" name="email" id="comment-email" placeholder="Email (optional)" class="textinput">
+                </li>
+                <li>
+                    <textarea
+                        name="comment"
+                        id="comment-story"
+                        placeholder="Comment (required)"
+                        required="true"
+                        aria-required="true"
+                    ></textarea>
+                </li>
+                <li>
+                    <div id="submit-success"></div>
+                    <input type="submit" value="Submit" id="submit-comment">
+                </li>
             </ul>
         </fieldset>
     </form>

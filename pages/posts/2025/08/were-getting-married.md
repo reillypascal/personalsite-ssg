@@ -40,4 +40,3 @@ Eli and I are engaged, and we're getting married later this year! I'm really exc
 
 <figcaption>More of the stromatolite fossils. It makes me happy looking at this photo and seeing Eli so excited.</figcaption>
 </figure>
-

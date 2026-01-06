@@ -18,7 +18,7 @@ pagination:
 permalink: /tags/{{ tag }}/
 eleventyExcludeFromCollections: true
 ---
-<link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
+<link rel="stylesheet" type="text/css" href="/styles/onecolumn.css">
 
 <style>
     .taggedPostLink {
@@ -27,20 +27,20 @@ eleventyExcludeFromCollections: true
 </style>
 
 <article class="tagList">
-    <h1 class="sectionHeader">#{{ tag |  replace: "-", " "  }}</h1>
+    <h1 class="sectionHeader">#{{ tag | replace: '-', ' ' }}</h1>
     {% assign taglist = collections[tag] %}
     {% for post in taglist reversed %}
         <article>
-            <h3 class="taggedPostLink"><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+            <h3 class="taggedPostLink">
+                <a href="{{ post.url }}">{{ post.data.title }}</a>
+            </h3>
             <p>{{ post.data.description }}</p>
-                <span class="meta-icon">
-                <img src="/media/icon-calendar-ltr.svg" alt="calendar icon" />
-                </span>
-                <span class="meta-text">
-                <time>{{ post.date | date: "%A, %B %d, %Y" }}</time>
-                </span>
+            <span class="meta-icon">
+                <img src="/media/icon-calendar-ltr.svg" alt="calendar icon">
+            </span>
+            <span class="meta-text">
+                <time>{{ post.date | date: '%A, %B %d, %Y' }}</time>
+            </span>
         </article>
     {% endfor %}
-    
 </article>
-

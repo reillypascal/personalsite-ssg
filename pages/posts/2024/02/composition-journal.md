@@ -9,10 +9,10 @@ I'm currently working on a piece for (tentatively) B-flat clarinet; MIDI keyboar
 
 One of the sound design techniques I've been enjoying lately is making a “spectral composite” of two sounds using Eric Lyon's “[FFTease](https://github.com/ericlyon/FFTease3.0-MaxMSP)” Max/MSP package. I'm using the `fftz.ether~` object, which:
 
--   Takes the FFT of two sounds
--   Compares the corresponding bin between the two FFTs
--   Takes either the louder or quieter of the two, depending on the settings
--   The choice can also be “weighted” toward one source or the other
+- Takes the FFT of two sounds
+- Compares the corresponding bin between the two FFTs
+- Takes either the louder or quieter of the two, depending on the settings
+- The choice can also be “weighted” toward one source or the other
 
 I particularly like the effect of taking the quieter of the two. It's great for combining a more sustained sound and one with a percussive envelope. As the percussive sound decays, more and more of its bins “win out,” imparting a percussive envelope on the output.
 

@@ -27,4 +27,3 @@ If you want to track planes yourself, you can also use [ADS-B Exchange](https://
 ![A screenshot of a terminal window and Firefox. There is a table of aircraft data (flight codes, heading, altitude, speed, etc.) in the terminal, and a map of the airplanes in Firefox.](/media/blog/2025/05/dump1090-net-debian-screenshot-051525.webp)
 
 ![A Raspberry Pi with a small silver dongle, connected to a dipole antenna suctioned to a window.](/media/blog/2025/05/rtl-sdr-raspberry-pi-window-adsb-051525.webp){.img-vertical}
-

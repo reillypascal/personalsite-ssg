@@ -18,4 +18,3 @@ While [the reasons I oppose “generative AI” are numerous](/wiki/reading/ai-c
 > were sophisticated technical operators who destroyed machines not out of ignorance, but because, in their specific social and political context, those new machines guaranteed their immiseration.
 
 My refusal is not out of a rejection of new technology, but because of the anti-worker nature of a specific set of technologies, and the ideologies that are inextricably connected to those technologies. -->
-

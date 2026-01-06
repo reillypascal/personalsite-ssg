@@ -3,7 +3,7 @@ title: Reilly Spitzfaden, Composer | Posts by Tag
 description: Blog posts listed by tag
 eleventyExcludeFromCollections: true
 ---
-<link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
+<link rel="stylesheet" type="text/css" href="/styles/onecolumn.css">
 
 <style>
     figure {
@@ -17,12 +17,21 @@ eleventyExcludeFromCollections: true
 <h1 class="sectionHeader">All tags</h1>
 <div id="allTagsList">
     {% for tag in collections.allTags %}
-        {% if tag != 'interaction' and tag != 'note' and tag != 'post' and tag != 'bookmark' and tag != 'like' and tag != 'rsvp' and tag != 'reply' and tag != 'wiki' and tag != 'wiki-root' %}
+        {% if tag != 'interaction'
+            and tag != 'note'
+            and tag != 'post'
+            and tag != 'bookmark'
+            and tag != 'like'
+            and tag != 'rsvp'
+            and tag != 'reply'
+            and tag != 'wiki'
+            and tag != 'wiki-root'
+        %}
             <figure>
-                <p class="tag" id="{{ tag }}"><a href="/tags/{{ tag }}">#{{ tag | replace: "-", " "  }}</a> ({{ collections[tag].length }}) </p>
+                <p class="tag" id="{{ tag }}">
+                    <a href="/tags/{{ tag }}">#{{ tag | replace: '-', ' ' }}</a> ({{ collections[tag].length }})
+                </p>
             </figure>
         {% endif %}
     {% endfor %}
-    
 </div>
-

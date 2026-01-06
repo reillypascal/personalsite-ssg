@@ -6,6 +6,7 @@ tags: [ "post", "webdev", "indieweb"]
 ---
 
 Welcome to my blog! I recently listened to [Sophie Koonin](https://localghost.dev/)'s talk “[This Talk Is Under Construction: A Love Letter to the Personal Website](https://www.youtube.com/watch?v=H2Ux0hGQcs4),” as well as [this blog post](https://localghost.dev/blog/remembering-the-early-00s-teen-website-scene/) about the early-aughts teen website scene, and was immediately inspired to do more to make this site into a piece of personal expression. One of the ways I'm doing that is starting this blog, which I'll be using as a free-form journal about my interests and for write-ups of current projects. Some interests include:
+
 - Digital signal processing and audio plugin development in C++
 - Composition in Max/MSP/gen
 - Homemade electronics, often with a musical bent

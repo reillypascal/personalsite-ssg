@@ -1,41 +1,42 @@
 {
-    "videos" : [
-        {
-            "title" : "Everything lost along the way",
-            "yt_id" : "t_gxCOcNJr8",
-            "peertube_link" : "https://makertube.net/w/pktRnMxDGUKC6XPtbKqmW4"
-        },
-        {
-            "title" : "Reach Through",
-            "yt_id" : "YtSerbT7C5A",
-            "peertube_link" : "https://makertube.net/w/9UxZA1pmirmKndWaFkqDzz"
-        },
-        {
-            "title" : "Outlive everything you know",
-            "yt_id" : "2dz0iKwHrkI"
-        },
-        {
-            "title" : "Afterimage from",
-            "yt_id" : "Y_inKSy9K0k",
-            "peertube_link" : "https://makertube.net/w/7Bux8qi7gh4bu8iJokmQPQ"
-        },
-        {
-            "title" : "Selist",
-            "yt_id" : "aYjmpwDuPEI",
-            "peertube_link" : "https://makertube.net/w/raJPvm2wD7nhn2Vrrve4Vy"
-        },
-        {
-            "title" : "Each city, a tiny white flag",
-            "yt_id" : "dXJl9MmD0P0",
-            "peertube_link" : "https://makertube.net/w/fz2qPi51xAQAXWjBboT1DL"
-        },
-        {
-            "title" : "Skin lives in wires",
-            "yt_id" : "DA3fj-pdhMw"
-        },
-        {
-            "title" : "Resonances",
-            "yt_id" : "U7tHvdGgFjE"
-        }
-    ]
+	"videos": [
+		{
+			"title": "Everything lost along the way",
+			"yt_id": "t_gxCOcNJr8",
+			"peertube_link": "https://makertube.net/w/pktRnMxDGUKC6XPtbKqmW4"
+		},
+		{
+			"title": "Reach Through",
+			"yt_id": "YtSerbT7C5A",
+			"peertube_link": "https://makertube.net/w/9UxZA1pmirmKndWaFkqDzz"
+		},
+		{
+			"title": "Outlive everything you know",
+			"yt_id": "2dz0iKwHrkI"
+		},
+		{
+			"title": "Afterimage from",
+			"yt_id": "Y_inKSy9K0k",
+			"peertube_link": "https://makertube.net/w/7Bux8qi7gh4bu8iJokmQPQ"
+		},
+		{
+			"title": "Selist",
+			"yt_id": "aYjmpwDuPEI",
+			"peertube_link": "https://makertube.net/w/raJPvm2wD7nhn2Vrrve4Vy"
+		},
+		{
+			"title": "Each city, a tiny white flag",
+			"yt_id": "dXJl9MmD0P0",
+			"peertube_link": "https://makertube.net/w/fz2qPi51xAQAXWjBboT1DL"
+		},
+		{
+			"title": "Skin lives in wires",
+			"yt_id": "DA3fj-pdhMw"
+		},
+		{
+			"title": "Resonances",
+			"yt_id": "U7tHvdGgFjE"
+		}
+	]
 }
+

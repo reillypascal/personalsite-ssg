@@ -12,7 +12,8 @@
         color: var(--fg-light) !important;
         opacity: 0.5 !important;
     }
-    ::-ms-input-placeholder { /* Edge 12 -18 */
+    ::-ms-input-placeholder {
+        /* Edge 12 -18 */
         color: var(--fg-light) !important;
     }
     .pagefind-ui__result-thumb {
@@ -43,8 +44,10 @@
 <div id="search"></div>
 <script>
     window.addEventListener('DOMContentLoaded', (event) => {
-        new PagefindUI({ element: "#search", showSubResults: true });
+        new PagefindUI({ element: '#search', showSubResults: true });
     });
 </script>
 {% comment %} <div class="searchIndexDate"><p>Last indexed {{ generated }}</p></div> {% endcomment %}
-<div class="searchIndexDate"><p>Last indexed {{ "now" | date: "%B %e, %Y at %l:%M %p" }}</p></div>
+<div class="searchIndexDate">
+    <p>Last indexed {{ 'now' | date: '%B %e, %Y at %l:%M %p' }}</p>
+</div>

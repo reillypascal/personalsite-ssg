@@ -1,8 +1,8 @@
 {
-  "name": "Reilly Spitzfaden, Composer",
-  "url": "https://reillyspitzfaden.com",
-  "authorName": "Reilly Spitzfaden",
-  "authorUrl": "https://reillyspitzfaden.com",
-  "description": "I'm Reilly Spitzfaden, a composer who likes noise, code, electronics, and nostalgia. This site has my music, Max/MSP patches, code, blog, and more.",
-  "favicon": "https://reillyspitzfaden.com/media/favicon/favicon.svg"
+	"name": "Reilly Spitzfaden, Composer",
+	"url": "https://reillyspitzfaden.com",
+	"authorName": "Reilly Spitzfaden",
+	"authorUrl": "https://reillyspitzfaden.com",
+	"description": "I'm Reilly Spitzfaden, a composer who likes noise, code, electronics, and nostalgia. This site has my music, Max/MSP patches, code, blog, and more.",
+	"favicon": "https://reillyspitzfaden.com/media/favicon/favicon.svg"
 }

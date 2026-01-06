@@ -2,22 +2,21 @@
 layout: mainlayout.liquid
 title: Reilly Spitzfaden, Composer
 ---
-
-<link rel="stylesheet" type="text/css" href="/styles/blog.css" />
-<link rel="stylesheet" type="text/css" href="/styles/blogposts.css" />
-<link rel="stylesheet" type="text/css" href="/styles/forms.css" />
-<link rel="stylesheet" type="text/css" href="/styles/onecolumn.css" />
+<link rel="stylesheet" type="text/css" href="/styles/blog.css">
+<link rel="stylesheet" type="text/css" href="/styles/blogposts.css">
+<link rel="stylesheet" type="text/css" href="/styles/forms.css">
+<link rel="stylesheet" type="text/css" href="/styles/onecolumn.css">
 
 <!-- post contents -->
 <article class="h-entry">
     <h1 class="p-name sectionHeader">{{ title }}</h1>
 
-    {% include "partials/author-and-syndication.liquid" %}
-    
-    {%- include "partials/post-meta.liquid" -%}
+    {% include 'partials/author-and-syndication.liquid' %}
+
+    {%- include 'partials/post-meta.liquid' -%}
 
     {%- if post_series -%}
-        {% include "partials/post-series-list.liquid" %}
+        {% include 'partials/post-series-list.liquid' %}
     {%- endif -%}
 
     {{ content | toc }}
@@ -25,28 +24,27 @@ title: Reilly Spitzfaden, Composer
     <div class="e-content">
         {{ content }}
         {% if indienews %}
-            {% include "partials/indienews.liquid" %}
+            {% include 'partials/indienews.liquid' %}
         {% endif %}
     </div>
-    
+
     {% comment %} <div class="blogPostAsterism"><p>&#x2042;</p></div> {% endcomment %}
     <div class="blogPostEndText"><p>---END OF TRANSMISSION---</p></div>
-    
+
     <!-- <div class="post-end-line"></div> -->
 
-    {% include "partials/post-interactions.liquid" %}
-
+    {% include 'partials/post-interactions.liquid' %}
 </article>
 
-{% include "partials/webmention-form.liquid" %}
+{% include 'partials/webmention-form.liquid' %}
 
-{% include "partials/comment-form.liquid" %}
+{% include 'partials/comment-form.liquid' %}
 
-{% include "partials/webmention-display.liquid" %}
+{% include 'partials/webmention-display.liquid' %}
 
-{% include "partials/comment-display.liquid" %}
+{% include 'partials/comment-display.liquid' %}
 
 <script>
-    const blogPostURL = "https://reillyspitzfaden.com{{ page.url }}";
+    const blogPostURL = 'https://reillyspitzfaden.com{{ page.url }}';
 </script>
 <script defer src="/styles/interactions.js"></script>
