@@ -1,4 +1,4 @@
-{% assign pageUrl = "https://reillyspitzfaden.com" | append: page.url %}
+{% assign pageUrl = 'https://reillyspitzfaden.com' | append: page.url %}
 {% assign page_comments = comments.list | pageComments: pageUrl %}
 
 {% if page_comments.size > 0 %}
@@ -8,10 +8,10 @@
             <h3>{{ comment.name }}</h3>
             <blockquote>{{ comment.comment }}</blockquote>
             <span class="meta-icon">
-                <img src="/media/icon-calendar-ltr.svg" alt="calendar icon" />
+                <img src="/media/icon-calendar-ltr.svg" alt="calendar icon">
             </span>
             <span class="meta-text">
-                <time datetime="{{ comment.created_at }}">{{ comment.created_at | date: "%A, %B %d, %Y" }}</time></a>
+                <time datetime="{{ comment.created_at }}">{{ comment.created_at | date: '%A, %B %d, %Y' }}</time>
             </span>
         {% endfor %}
     </article>
