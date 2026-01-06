@@ -49,7 +49,7 @@ The stream is Twitter and Facebook feeds—as I mentioned, even the Fediverse an
 
 In contrast, the garden is
 
-> the web as topology. The web as space. It’s the integrative web, the iterative web, the web as an arrangement and rearrangement of things to one another. […]
+> the web as topology. The web as space. It’s the integrative web, the iterative web, the web as an arrangement and rearrangement of things to one another. \[…\]
 >
 > Every walk through the garden creates new paths, new meanings, and when we add things to the garden we add them in a way that allows many future, unpredicted relationships.
 
@@ -57,9 +57,15 @@ As Caulfield mentions, Vannevar Bush proposed the “[memex](https://en.wikipedi
 
 In contrast with the use of hypertext on the modern Web (perhaps excluding wikis), the memex uses links as a means of *association*, rather than a “[web of 'hey this is cool' one-hop links](https://hapgood.us/2015/10/17/the-garden-and-the-stream-a-technopastoral/).” The links bring documents and excerpts together to “form a new book,” as Bush puts it, as well as allow a given document or excerpt to form part of multiple “new book\[s].” What's more, networks of associations can be *named*, and can be referred to as objects in their own right. [This video demonstration](https://www.youtube.com/watch?v=c539cK58ees&t=73s) includes excerpts from Bush's essay in the voice over, and at the linked timecode (1:13), mentions the possibility of extracting and sharing a trail of associations with another person, for example.
 
+<figure>
 <img src="/media/blog/2024/12/Sistema_hipertextual.webp" alt="Image of documents with arrows between them to represent hyperlinks" width="497 " height=" 327">
 
-*Visualization of the network of links between hypertext documents. [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sistema_hipertextual.jpg)*
+<figcaption>
+
+Visualization of the network of links between hypertext documents. [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sistema_hipertextual.jpg)
+
+</figcaption>
+</figure>
 
 While both the Fediverse and IndieWeb tend to value hyperlinks much more than e.g., Twitter or Facebook (which want to keep users on the platform), links still rarely form shareable associative webs, and are more likely to be used as a means of saying “hey, this is cool.” What would it look like to incorporate at least some of this associative and nonlinear nature (and maybe even the collaborative knowledge-building, and the sharing of knowledge webs) into interactions with people on the Internet?
 
@@ -71,7 +77,7 @@ Even in the most radical re-imagining of interaction on the Internet, there is o
 
 After these discussions, I frequently want to save the information to return later. Unless I want to take the time to make a personal copy of this in e.g., Obsidian, I'm left with the built-in bookmarking systems in social media. Facebook and Instagram do have this option, but at best, it's just private folders with no links between things, no ability to comment on connections, and no ability to make a collection public. These are my only current means to save things from drifting away down the stream.
 
-Politically-engaged friends of mine will even write Facebook posts with carefully-researched citations, and I'll often think that I would like to have that knowledge accessible later on. I'll also see people ask “can you make this public?” in the post comments, with the intention of sharing the post, or friends will share screenshots of e.g., a Tumblr thread explaining a social or political issue. The latter is the classic “five giant websites, each filled with screenshots of the other four.” ^[ Tom Eastman's original tweet is audience-limited, but Molly White cites it [here](https://www.citationneeded.news/we-can-have-a-different-web/#reference-anchor-1) ]
+Politically-engaged friends of mine will even write Facebook posts with carefully-researched citations, and I'll often think that I would like to have that knowledge accessible later on. I'll also see people ask “can you make this public?” in the post comments, with the intention of sharing the post, or friends will share screenshots of e.g., a Tumblr thread explaining a social or political issue. The latter is the classic “five giant websites, each filled with screenshots of the other four.” [^1]
 
 In short, I think there really is a desire for communal knowledge-building and knowledge-sharing that is not well-served by the parts of the Internet most people use, and we're left with kludges and halfway solutions to try to satisfy this desire. Plus it could be fun! Bonding over creating something with others is something I personally enjoy a lot.
 
@@ -80,3 +86,5 @@ In addition to noticing a potential desire for communal knowledge-building/shari
 ## Looking Forward
 
 I originally wanted to include some thoughts on writing about/teaching about computer music, and how that relates to collaborative/associative knowledge-building, but this is long enough, and I think I will write about that a bit later. I hope to see you again then!
+
+[^1]: Tom Eastman's original tweet is audience-limited, but Molly White cites it [here](https://www.citationneeded.news/we-can-have-a-different-web/#reference-anchor-1)

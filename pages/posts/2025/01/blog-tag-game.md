@@ -45,7 +45,7 @@ A bunch of things came together to inspire me. I was reading about the [Gemini p
 
 ## 2. Why did you choose \[the blogging software/platform/tool you use\]?
 
-I use the [static site generator](https://en.wikipedia.org/wiki/Static_site_generator) [Eleventy](https://www.11ty.dev/). A static site generator takes in a series of template files and produces [HTML]([HTML](https://en.wikipedia.org/wiki/HTML)) pages. The purpose is to automate repetitive parts of writing HTML—each page has the same header and footer, for example, and now I only need to type the code for that once. I settled on Eleventy because a number of people I know or whose blogs I read suggest it, including [Benji](https://www.benji.dog/), and I like that it uses a large number of [template languages](https://www.11ty.dev/docs/languages/) so I have the freedom to choose which one I want, and to change that decision later on.
+I use the [static site generator](https://en.wikipedia.org/wiki/Static_site_generator) [Eleventy](https://www.11ty.dev/). A static site generator takes in a series of template files and produces [HTML](https://en.wikipedia.org/wiki/HTML) pages. The purpose is to automate repetitive parts of writing HTML—each page has the same header and footer, for example, and now I only need to type the code for that once. I settled on Eleventy because a number of people I know or whose blogs I read suggest it, including [Benji](https://www.benji.dog/), and I like that it uses a large number of [template languages](https://www.11ty.dev/docs/languages/) so I have the freedom to choose which one I want, and to change that decision later on.
 
 ## 3. Have you blogged on other platforms before?
 
