@@ -1,5 +1,7 @@
-# Ignore all files that aren't liquid
+# https://stackoverflow.com/a/74240038
+# ignore everything
 /**/*.*
+# *don't* ignore liquid files
 !**/*.liquid
-# formatting of humans.liquid has to be exact
+# *do* ignore humans.liquid - formatting has to be exact because it's a .txt file
 **/humans.liquid
