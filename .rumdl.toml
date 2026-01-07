@@ -11,11 +11,12 @@ disable = ["MD013", "MD025", "MD033", "MD036", "MD041", "MD059"]
 # List of rules to enable exclusively (if provided, only these rules will run)
 # enable = ["MD001", "MD003", "MD004"]
 # List of file/directory patterns to include for linting (if provided, only these will be linted)
-# include = [
-#    "docs/*.md",
-#    "src/**/*.md",
-#    "README.md"
-# ]
+include = [
+  # "docs/*.md",
+  # "src/**/*.md",
+  "**/*.md",
+  # "README.md"
+]
 # List of file/directory patterns to exclude from linting
 exclude = [
   # Common directories to exclude
