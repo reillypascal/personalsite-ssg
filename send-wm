@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+my_url="$1"
+target_url="$2"
+# https://indieweb.org/webmention-implementation-guide#One-liner_webmentions
+curl -i -d "source=$my_url&target=$target_url" $(curl -i -s "$target_url" | grep 'rel="webmention"' | grep -o -E 'https?://[^ ">]+' | sort | uniq)

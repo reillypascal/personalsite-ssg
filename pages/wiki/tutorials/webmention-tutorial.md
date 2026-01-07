@@ -207,10 +207,10 @@ This again requires knowing the endpoint (either with a bookmarklet or viewing t
 my_url="$1"
 target_url="$2"
 
-curl -i -d "source=$my_url&target=$target_url" $(curl -i -s "$target_url" | grep 'rel="webmention"' | sed 's/rel="webmention"//' | grep -o -E 'https?://[^ ">]+' | sort | uniq)
+curl -i -d "source=$my_url&target=$target_url" $(curl -i -s "$target_url" | grep 'rel="webmention"' | grep -o -E 'https?://[^ ">]+' | sort | uniq)
 ```
 
-Make sure to run `sudo chmod +x send-wm.sh` in order to make this executable, and then you can run `send-wm.sh <your_url> <target_url>` to send the webmention. If the target has a webmention endpoint listed, you'll see a response from that endpoint; otherwise, cURL will give an error: `curl: (2) no URL specified` or similar. One thing to note: the IndieWeb wiki's version says `grep 'rel="http://webmention.org/"'` instead of `grep 'rel="webmention"'`. `rel="webmention"` is the only way I've seen to indicate a webmention endpoint, so make sure your script uses that version.
+Make sure to run `sudo chmod +x send-wm.sh` in order to make this executable, and then you can run `./send-wm.sh <your_url> <target_url>` to send the webmention. If the target has a webmention endpoint listed, you'll see a response from that endpoint; otherwise, cURL will give an error: `curl: (2) no URL specified` or similar. One thing to note: the IndieWeb wiki's version says `grep 'rel="http://webmention.org/"'` instead of `grep 'rel="webmention"'`. `rel="webmention"` is the only way I've seen to indicate a webmention endpoint, so make sure your script uses that version.
 
 If you want something pre-made, Webmention\.app has a command line tool that makes sending mentions particularly easy. Once you've [installed Node.js](https://nodejs.org/en/download), run `npm install @remy/webmention` in your terminal in the folder where you want to install this tool. From that folder, you can run
 
