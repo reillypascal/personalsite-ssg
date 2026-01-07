@@ -199,7 +199,7 @@ Searching the page for a mention endpoint and typing into that is not too hard t
 curl -i -d source="https://reillyspitzfaden.com/interactions/2025/04/rsvp-homebrew-website-club-americas-april-16/" -d target="https://events.indieweb.org/2025/04/homebrew-website-club-americas-xCttvgRnN4Pl" "https://events.indieweb.org/webmention"
 ```
 
-This again requires knowing the endpoint (either with a bookmarklet or viewing the source). The IndieWeb wiki has a nice shell one-liner to get the target endpoint URL and send the webmention in one go. I've put it into a shell script below — I have this saved as `send-wm.sh`.
+This again requires knowing the endpoint (either with a bookmarklet or viewing the source). The IndieWeb wiki has [a nice shell one-liner](https://indieweb.org/webmention-implementation-guide#One-liner_webmentions) to get the target endpoint URL and send the webmention in one go. I've put it into a shell script below — I have this saved as `send-wm.sh` — and I also added my version to the wiki.
 
 ```sh
 #!/usr/bin/env bash
