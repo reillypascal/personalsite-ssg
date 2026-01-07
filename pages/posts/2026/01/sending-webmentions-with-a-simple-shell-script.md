@@ -29,7 +29,7 @@ curl -i -d "source=$my_url&target=$target_url" $(curl -i -s "$target_url" | grep
 
 The example had `rel="http://webmention.org/"` instead of `rel="webmention"`, which is the current standard. It also included an extra step — `sed 's/rel="webmention"//'`. I assume this was originally supposed to read something like `sed 's/rel="http:\/\/webmention.org\/"//'`, which would be necessary to make sure there is only one "http(s)" to `grep` for. At any rate, that part doesn't appear to be currently necessary. (UPDATE: I edited the IndieWeb wiki to reflect the current version of this script!)
 
-This script can be used as follows:
+This script can be used as follows. Note that to do this, you will first need to run `sudo chmod +x send-wm` to make the script executable:
 
 ```sh
 ./send-wm <your_url> <target_url>
