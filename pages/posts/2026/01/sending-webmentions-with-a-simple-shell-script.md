@@ -8,7 +8,6 @@ tags:
   - indieweb
   - webmentions
   - programming
-draft: true
 indienews: true
 ---
 
