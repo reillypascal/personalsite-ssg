@@ -11,7 +11,8 @@ octothorpes:
 tags:
   - wiki
   - links
-  - wiki-root
+  # - wiki-root
+  - reading
   - music
   - sound-design
   - bytebeat
