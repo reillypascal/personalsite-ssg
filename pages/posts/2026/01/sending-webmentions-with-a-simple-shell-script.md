@@ -2,6 +2,8 @@
 title: "Sending Webmentions with a Simple Shell Script"
 description: I came across a convenient way to send webmentions from my terminal using a simple Bash script.
 fedi_url:
+  - https://hachyderm.io/@reillypascal/115855402070350924
+  - https://bsky.app/profile/reillypascal.bsky.social/post/3mbu6dve5wk2r
 date: 2026-01-07T13:25:04-0500
 tags:
   - post
@@ -25,7 +27,7 @@ target_url="$2"
 curl -i -d "source=$my_url&target=$target_url" $(curl -i -s "$target_url" | grep 'rel="webmention"' | grep -o -E 'https?://[^ ">]+' | sort | uniq)
 ```
 
-The example had `rel="http://webmention.org/"` instead of `rel="webmention"`, which is the current standard. It also included an extra step — `sed 's/rel="webmention"//'`. I assume this was originally supposed to read something like `sed 's/rel="http:\/\/webmention.org\/"//'`, which would be necessary to make sure there is only one "http(s)" to `grep` for. At any rate, that part doesn't appear to be currently necessary.
+The example had `rel="http://webmention.org/"` instead of `rel="webmention"`, which is the current standard. It also included an extra step — `sed 's/rel="webmention"//'`. I assume this was originally supposed to read something like `sed 's/rel="http:\/\/webmention.org\/"//'`, which would be necessary to make sure there is only one "http(s)" to `grep` for. At any rate, that part doesn't appear to be currently necessary. (UPDATE: I edited the IndieWeb wiki to reflect the current version of this script!)
 
 This script can be used as follows:
 

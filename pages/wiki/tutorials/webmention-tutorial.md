@@ -210,7 +210,9 @@ target_url="$2"
 curl -i -d "source=$my_url&target=$target_url" $(curl -i -s "$target_url" | grep 'rel="webmention"' | grep -o -E 'https?://[^ ">]+' | sort | uniq)
 ```
 
-Make sure to run `sudo chmod +x send-wm.sh` in order to make this executable, and then you can run `./send-wm.sh <your_url> <target_url>` to send the webmention. If the target has a webmention endpoint listed, you'll see a response from that endpoint; otherwise, cURL will give an error: `curl: (2) no URL specified` or similar. One thing to note: the IndieWeb wiki's version is based on an older webmention standard that uses `rel="http://webmention.org/"` instead of `rel="webmention"`, which is why mine is slightly different than the example.
+Make sure to run `sudo chmod +x send-wm.sh` in order to make this executable, and then you can run `./send-wm.sh <your_url> <target_url>` to send the webmention. If the target has a webmention endpoint listed, you'll see a response from that endpoint; otherwise, cURL will give an error: `curl: (2) no URL specified` or similar.
+
+<!-- One thing to note: the IndieWeb wiki's version is based on an older webmention standard that uses `rel="http://webmention.org/"` instead of `rel="webmention"`, which is why mine is slightly different than the example. -->
 
 <!-- says `grep 'rel="http://webmention.org/"'` instead of `grep 'rel="webmention"'`. `rel="webmention"` is the only way I've seen to indicate a webmention endpoint, so make sure your script uses that version. -->
 
