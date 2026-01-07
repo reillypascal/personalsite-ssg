@@ -1,6 +1,8 @@
 ---
 title: "App Defaults at the End of 2025"
 fedi_url:
+  - https://hachyderm.io/@reillypascal/115854573345894683
+  - https://bsky.app/profile/reillypascal.bsky.social/post/3mbtul573gs24
 date: 2026-01-07T10:11:17-0500
 location: Rochester, New York
 tags:
