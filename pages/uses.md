@@ -124,6 +124,10 @@ tags:
 - [GrapheneOS](https://grapheneos.org/) (mobile)
     <!-- - GrapheneOS is an alternative, privacy/security-focused version of Android. The [web-based installation option](https://grapheneos.org/install/web) is extremely easy, and it's also easy to revert to stock Android. The sandboxed Google Play services make it easy to run pretty much any app you can use on stock (except NFC payment, unfortunately), or you can leave them off and have a completely Google-free experience. -->
 
+## Hardware
+
+- Watch: Casio F-91W with Sensor Watch microcontroller
+
 ## Stationery
 
 ### Fountain Pens
