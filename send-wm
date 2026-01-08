@@ -1,6 +1,13 @@
 #!/usr/bin/env bash
 
-my_url="$1"
+source_url="$1"
 target_url="$2"
+endpoint_url=$(curl -i -s "$target_url" | grep 'rel="webmention"' | grep -o -E 'https?://[^ ">]+' | sort | uniq)
 # https://indieweb.org/webmention-implementation-guide#One-liner_webmentions
-curl -i -d "source=$my_url&target=$target_url" $(curl -i -s "$target_url" | grep 'rel="webmention"' | grep -o -E 'https?://[^ ">]+' | sort | uniq)
+# assumes HTML is not minified, only one URL on the line
+# *should* only give a 404 in corner cases
+curl -i -d "source=$source_url&target=$target_url" "$endpoint_url"
+
+# working with response headers:
+# https://stackoverflow.com/a/46507651
+# https://curl.se/docs/httpscripting.html

@@ -16,7 +16,7 @@ indienews: true
 <link rel="stylesheet" type="text/css" href="/styles/code/prism-perf-custom.css" />
 <link rel="stylesheet" type="text/css" href="/styles/code/code-tweaks.css" />
 
-I came across a convenient way to send webmentions from my terminal using a simple Bash script. [This page on the IndieWeb wiki](https://indieweb.org/webmention-implementation-guide#One-liner_webmentions) includes a shell script one-liner. It references an older version of the webmention standard, but I was able to figure it out and get it working with my setup. I have the following in [a file titled `send-wm`](https://github.com/reillypascal/personalsite-ssg/blob/main/send-wm):
+I came across a convenient way to send webmentions from my terminal using a simple Bash script. [This page on the IndieWeb wiki](https://indieweb.org/webmention-implementation-guide#One-liner_webmentions) includes a shell script one-liner. It references an older version of the webmention standard, but I was able to figure it out and get it working with my setup. I have the following in [a file titled `send-wm`](https://github.com/reillypascal/personalsite-ssg/blob/70701a0af5980082df23f2c89651af6fb7be6d7f/send-wm):
 
 ```bash
 #!/usr/bin/env bash
