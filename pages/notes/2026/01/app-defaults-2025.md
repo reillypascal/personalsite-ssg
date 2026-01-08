@@ -29,7 +29,7 @@ Robb Knight has [a page listing people's descriptions of their default app choic
 - Password Management: Bitwarden
 - Podcasts: AntennaPod
 - RSS: NetNewsWire, Capy Reader
-- To-Do: Same as notes for writing the lists; [taskfinder](https://codeberg.org/kdwarn/taskfinderb) for tracking/organizing
+- To-Do: Same as notes for writing the lists; [taskfinder](https://codeberg.org/kdwarn/taskfinder) for tracking/organizing
 - Two-Factor Authentication: Aegis
 - Weather: Breezy Weather
 - Word Processing, Presentations, and Spreadsheets: LibreOffice
