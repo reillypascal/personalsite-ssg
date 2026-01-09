@@ -1,7 +1,6 @@
 ---
-title: IndieWeb Movie Club—The Castle (1997)
-description: My watch and discussion of this month's IndieWeb Movie Club pick—it's nice to participate in a group blogging activity!
-canonical_url: https://reillyspitzfaden.com/posts/2025/04/indieweb-movie-club-the-castle-1997/
+title: "IndieWeb Movie Club: “The Castle” (1997)"
+description: My watch and discussion of this month's IndieWeb Movie Club pick — it's nice to participate in a group blogging activity!
 fedi_url: https://hachyderm.io/@reillypascal/114331768042130524
 date: 2025-04-12T23:15:00-0400
 octothorpes:
@@ -13,6 +12,7 @@ tags:
   - indieweb
   - indieweb-movie-club
   - movies
+post_series: indieweb-movie-club
 ---
 
 This month's [IndieWeb Movie Club](https://indieweb.org/IndieWeb_Movie_Club) is <cite>[The Castle](https://en.wikipedia.org/wiki/The_Castle_(1997_Australian_film))</cite> (1997), and Zachary wrote the introduction post [here](https://zacharykai.net/notes/iwmapr25). Spoilers will follow in this post!

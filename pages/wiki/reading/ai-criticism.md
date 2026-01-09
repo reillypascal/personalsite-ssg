@@ -124,6 +124,8 @@ Cognitive scientist and AI researcher Gary Marcus [notes the following about the
 
 ## Harassment and Spam
 
+- Samantha Cole, “[Grok's AI Sexual Abuse Didn't Come Out of Nowhere](https://www.404media.co/grok-ai-sexual-abuse-imagery-twitter/)” ([archived link](https://archive.ph/nPSqp))
+
 - Samantha Cole, “[Schools Are Failing to Protect Students From Non-Consensual Deepfakes, Report Shows](https://www.404media.co/schools-are-failing-to-protect-students-from-non-consensual-deepfakes-report-shows/)”
 
 > “Nudify” and “undress” apps are easy to use and find online and are contributing to the epidemic of explicit deepfakes among teenagers. [Last month Emanuel reported](https://www.404media.co/google-search-includes-paid-promotion-of-nudify-apps/) that Google was promoting these apps in search results: “Google Search didn’t only lead users to these harmful apps, but was also profiting from the apps which pay to place links against specific search terms,” he wrote.
