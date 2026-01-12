@@ -372,7 +372,7 @@ For both Mastodon and Bluesky (but it seems especially for Mastodon), include th
 ></a>
 ```
 
-Replace the ``href""` contents with the URL of the Mastodon post where you share the link to your website post. Note that you will likely need to come back and add this after sharing your post, in order to actually have the URL! I have a `fedi_url` field in the Eleventy [frontmatter](https://www.11ty.dev/docs/data-frontmatter/) of my blog posts, and the following code in my blog post [layout](https://www.11ty.dev/docs/layouts/):
+Replace the `href=""` contents with the URL of the Mastodon post where you share the link to your website post. Note that you will likely need to come back and add this after sharing your post, in order to actually have the URL! I have a `fedi_url` field in the Eleventy [frontmatter](https://www.11ty.dev/docs/data-frontmatter/) of my blog posts, and the following code in my blog post [layout](https://www.11ty.dev/docs/layouts/):
 
 ```liquid
 {% raw %}{% if fedi_url %}
