@@ -216,7 +216,17 @@ Make sure to run `sudo chmod +x send-wm.sh` in order to make this executable, an
 
 <!-- says `grep 'rel="http://webmention.org/"'` instead of `grep 'rel="webmention"'`. `rel="webmention"` is the only way I've seen to indicate a webmention endpoint, so make sure your script uses that version. -->
 
-If you want something pre-made, Webmention\.app has a command line tool that makes sending mentions particularly easy. Once you've [installed Node.js](https://nodejs.org/en/download), run `npm install @remy/webmention` in your terminal in the folder where you want to install this tool. From that folder, you can run
+If you want something pre-made, I've been using `kbbl`, a webmention implementation in Rust by my friend [Ross A. Baker](https://rossabaker.com/). You can [use it to send webmentions](https://codeberg.org/rossabaker/kbbl#headline-3) by running the following line:
+
+```sh
+kbbl send --source https://me.example.com/mention --target https://them.example.net/mentionable
+```
+
+To use the `kbbl` CLI tool, first [install Rust](https://rust-lang.org/tools/install/), clone the `kbbl` repo (`git clone https://codeberg.org/rossabaker/kbbl.git`), go to the repo's folder (`cd kbbl`), then run `cargo install --path crates/kbbl-cli`. This should compile and install the `kbbl-cli` executable as `kbbl` using Rust's built-in `cargo` package manager. You can now use the `kbbl send` command above.
+
+Webmention\.app also has a popular NodeJS command line tool that makes sending mentions particularly easy. I've used this in the past, and you can try it out by [installing Node.js](https://nodejs.org/en/download) and running `npm install @remy/webmention` in your terminal in the folder where you want to install this tool, but lately it's been giving me trouble, and it seems poorly maintained.
+
+<!-- Once you've [installed Node.js](https://nodejs.org/en/download), run `npm install @remy/webmention` in your terminal in the folder where you want to install this tool. From that folder, you can run
 
 ```sh
 npx webmention https://reillyspitzfaden.com/feed.xml
@@ -230,15 +240,7 @@ npx webmention https://reillyspitzfaden.com/feed.xml --limit 1 --send
 
 (again, replacing my feed URL with your own).
 
-One potential issue is that this package seems to be a little outdated these days. When I tried to install it on my site, Node.js showed some critical vulnerabilities. When I installed it in its own separate folder, this wasn't as much of an issue for some reason, so you might try that — make a folder, open it in the terminal, and then run `npm install @remy/webmention`. The [Webmention.app](https://webmention.app/) site also offers some other tools, so you might play with those, although I haven't used them myself.
-
-Finally, something I haven't tried out, but looks promising is `kbbl`, a webmention implementation in Rust by my friend [Ross A. Baker](https://rossabaker.com/). You can [use it to send webmentions](https://codeberg.org/rossabaker/kbbl#headline-3) by running the following line:
-
-```sh
-kbbl send --source https://me.example.com/mention --target https://them.example.net/mentionable
-```
-
-To use the `kbbl` CLI tool, first [install Rust](https://rust-lang.org/tools/install/), clone the `kbbl` repo (`git clone https://codeberg.org/rossabaker/kbbl.git`), go to the repo's folder (`cd kbbl`), then run `cargo install --path crates/kbbl-cli`. This should compile and install the `kbbl-cli` executable as `kbbl` using Rust's built-in `cargo` package manager. You can now use the `kbbl send` command above.
+One potential issue is that this package seems to be a little outdated these days. When I tried to install it on my site, Node.js showed some critical vulnerabilities. When I installed it in its own separate folder, this wasn't as much of an issue for some reason, so you might try that — make a folder, open it in the terminal, and then run `npm install @remy/webmention`. The [Webmention.app](https://webmention.app/) site also offers some other tools, so you might play with those, although I haven't used them myself. -->
 
 ## Accessing Mentions in Eleventy
 
