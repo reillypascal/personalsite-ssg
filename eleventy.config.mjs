@@ -246,7 +246,7 @@ export default async function (eleventyConfig) {
 	let options = {
 		html: true,
 		breaks: true,
-		linkify: true,
+		linkify: false,
 	};
 
 	const mathjaxInstance = createMathjaxInstance({ output: "chtml" });
@@ -256,6 +256,7 @@ export default async function (eleventyConfig) {
 		.use(markdownItAttrs)
 		.use(markdownItFootnote)
 		.use(mathjax, mathjaxInstance);
+	// .disable(["entity"]) // allows entities through, but converts "&" to "&amp;"
 	// .use(markdownItGitHubAlerts, { markers: '*' })
 	// .use(katex);
 	// .use(mdItObsidianCallouts);
