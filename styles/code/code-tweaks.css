@@ -17,8 +17,8 @@
 } */
 
 code {
-    /* font-family: 'IBM Plex Mono', monospace !important; */
-    font-size: 0.85rem;
+	/* font-family: 'IBM Plex Mono', monospace !important; */
+	font-size: 0.85rem;
 }
 
 /* code[class*="language-"],
@@ -28,8 +28,9 @@ pre[class*="language-"] {
 } */
 
 .maxmsp-clipboard {
-    margin: 16px 0;
-    padding: 16px;
-    background-color: var(--bg-accent);
-    border-radius: var(--border-radius-large);
+	margin: 16px 0;
+	padding: 16px;
+	background-color: var(--bg-accent);
+	border-radius: var(--border-radius-large);
 }
+

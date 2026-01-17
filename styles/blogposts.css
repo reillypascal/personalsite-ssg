@@ -1,121 +1,121 @@
 .post-author {
-    margin: 16px 0;
+	margin: 16px 0;
 }
 
 /* before post */
 .post-meta {
-    margin-bottom: 16px;
+	margin-bottom: 16px;
 }
 
 .post-tags {
-    line-height: var(--p-line-height);
-    margin-bottom: 16px;
-    font-size: 0.95em;
+	line-height: var(--p-line-height);
+	margin-bottom: 16px;
+	font-size: 0.95em;
 }
 .post-tag {
-    margin-right: 4px;
+	margin-right: 4px;
 }
 
 .e-content {
-    /* this is an h-entry tag */
-    margin: 32px 0;
+	/* this is an h-entry tag */
+	margin: 32px 0;
 }
 
 @media screen and (min-width: 660px) {
-    .e-content {
-        /* this is an h-entry tag */
-        /* smaller on bottom because asterism looks funny when it's in the center and there's extra space to the upper left of it */
-        margin: 48px 0 40px 0;
-    }
+	.e-content {
+		/* this is an h-entry tag */
+		/* smaller on bottom because asterism looks funny when it's in the center and there's extra space to the upper left of it */
+		margin: 48px 0 40px 0;
+	}
 }
 
 article h3 {
-    margin-top: 48px;
+	margin-top: 48px;
 }
 
 /* after post */
 .blogPostAsterism {
-    font-size: 16pt;
-    max-width: fit-content;
-    margin: 0 auto;
+	font-size: 16pt;
+	max-width: fit-content;
+	margin: 0 auto;
 }
 .blogPostEndText {
-    /* font-size: 16pt; */
-    max-width: fit-content;
-    margin: 64px auto;
-    /* color: var(--fg-med-light); */
+	/* font-size: 16pt; */
+	max-width: fit-content;
+	margin: 64px auto;
+	/* color: var(--fg-med-light); */
 }
 
 .mail-icon {
-    position: relative;
-    top: 3px;
-    margin: 0 4px 0 0;
+	position: relative;
+	top: 3px;
+	margin: 0 4px 0 0;
 }
 
-.webmention-reply-icon, 
-.webmention-repost-icon, 
+.webmention-reply-icon,
+.webmention-repost-icon,
 .webmention-fav-icon {
-    position: relative;
-    margin: 0 4px;
+	position: relative;
+	margin: 0 4px;
 }
 .webmention-reply-icon {
-    top: 4px;
+	top: 4px;
 }
 .webmention-repost-icon {
-    top: 2px;
+	top: 2px;
 }
 .webmention-fav-icon {
-    top: 2px;
+	top: 2px;
 }
 #webmention-comments,
 #webmention-reposts {
-    margin-right: 6px;
+	margin-right: 6px;
 }
 
 /* .webmention-display,
 .featuredRecentCompact, */
 .webmentionForm {
-    /* to space from post bottom; don't need other sections to have as much spacing */
-    margin-top: 96px;
+	/* to space from post bottom; don't need other sections to have as much spacing */
+	margin-top: 96px;
 }
 
 .fedi-interactions {
-    margin-top: 16px;
-    padding-left: 12px;
-    border-left: 1px solid var(--accent-med-light);
+	margin-top: 16px;
+	padding-left: 12px;
+	border-left: 1px solid var(--accent-med-light);
 }
 
 /* https://stackoverflow.com/questions/22672368/how-to-make-a-transparent-html-button */
 #react-btn {
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    outline: none;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    padding: 0;
-    margin: 0 4px 0 0;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	padding: 0;
+	margin: 0 4px 0 0;
 }
 .heart-react {
-    position: relative;
-    top: 4px;
-    opacity: 0.75;
+	position: relative;
+	top: 4px;
+	opacity: 0.75;
 }
 #react-btn:not([disabled]) > .heart-react:hover,
 #react-btn:not([disabled]) > .heart-react:focus {
-    opacity: 1;
+	opacity: 1;
 }
 #react-btn[disabled] {
-    cursor: not-allowed;
+	cursor: not-allowed;
 }
 #react-ctr {
-    font-weight: 300;
+	font-weight: 300;
 }
 
 .webmention-logo {
-    position: relative;
-    top: 2px;
-    margin: 0 4px 0 0;
+	position: relative;
+	top: 2px;
+	margin: 0 4px 0 0;
 }
 
 /* .post-reactions,
@@ -124,40 +124,40 @@ article h3 {
     margin: 16px 0;
 } */
 .post-end-line {
-    border-top: 1px solid var(--ui-line-dark);
+	border-top: 1px solid var(--ui-line-dark);
 }
 
 .post-interactions {
-    display: flex;
-    flex-flow: row wrap;
-    row-gap: 16px;
-    justify-content: space-between;
-    /* padding: 12px 12px 0 12px; */
-    padding: 12px 0;
-    vertical-align: middle;
+	display: flex;
+	flex-flow: row wrap;
+	row-gap: 16px;
+	justify-content: space-between;
+	/* padding: 12px 12px 0 12px; */
+	padding: 12px 0;
+	vertical-align: middle;
 }
 
 /* class name from markdown-it-footnote library */
 /* .footnotes is a <section>, so undo the global formatting */
 .footnotes {
-    margin-top: 0;
-    margin-bottom: 0;
+	margin-top: 0;
+	margin-bottom: 0;
 }
 
 .fedi-asterism {
-    margin-right: 6px;
+	margin-right: 6px;
 }
 
 .webmention-comment {
-    margin-top: 40px;
-    margin-bottom: 48px;
+	margin-top: 40px;
+	margin-bottom: 48px;
 }
 
-/* comments */ 
+/* comments */
 #commentBGPad {
-    padding-top: 0;
-    /* padding-bottom: 4rem; */
-    padding-bottom: 64px;
+	padding-top: 0;
+	/* padding-bottom: 4rem; */
+	padding-bottom: 64px;
 }
 /* @media screen and (min-width: 860px) {
     #commentBGPad {
@@ -176,14 +176,14 @@ article h3 {
     background-color: #303234;
 } */
 .comment > h3 {
-    width: fit-content;
-    padding-bottom: 8px;
-    border-bottom: 1px solid var(--accent-med-light);
+	width: fit-content;
+	padding-bottom: 8px;
+	border-bottom: 1px solid var(--accent-med-light);
 }
 
 .indienews {
-    padding: 4px 0 4px 8px;
-    margin: 32px 0 32px 8px;
-    display: flow-root;
-    border-left: 1px solid var(--accent-med-light);
+	padding: 4px 0 4px 8px;
+	margin: 32px 0 32px 8px;
+	display: flow-root;
+	border-left: 1px solid var(--accent-med-light);
 }

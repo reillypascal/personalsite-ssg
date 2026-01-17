@@ -1,34 +1,35 @@
 .rss-icon,
 .tag-icon,
 .search-icon {
-    position: relative;
-    margin-right: 2px;
+	position: relative;
+	margin-right: 2px;
 }
 .rss-icon {
-    top: 3px;
+	top: 3px;
 }
 .tag-icon {
-    top: 4px;
+	top: 4px;
 }
 .search-icon {
-    top: 4px;
+	top: 4px;
 }
 
 p {
-    line-height: var(--p-line-height);
+	line-height: var(--p-line-height);
 }
 .page-nav-wrapper {
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 .postFeedDescription {
-    margin: 0 0 64px 0;
+	margin: 0 0 64px 0;
 }
 
 .RSSValidationLink {
-    background-image: none !important;
+	background-image: none !important;
 }
 .RSSValidationImg {
-    margin-bottom: 16px;
+	margin-bottom: 16px;
 }
+

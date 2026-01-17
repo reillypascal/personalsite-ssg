@@ -106,15 +106,19 @@ tags:
 ### Utilities
 
 - Aegis (2fa)
-- Bitwarden (password manager)
 - DAVx<sup>5</sup> (CalDAV/CardDAV/WebDAV manager for Android)
 - Droid-ify (F-Droid FOSS app store client)
 - Forkyz (FOSS Android crossword app)
 - Fossify Calendar (Android calendar)
-- FUTO Keyboard (Android keyboard)
+- Heliboard (Android keyboard)
+- KeePassDX (Android password manager)
+- KeePassium (macOS password manager)
 - LinearMouse (remap mouse input without requiring official Logitech software)
 - Obtainium (install Android apps from GitHub; keep track of/manage updates)
+- Transcribro (Android voice input)
 - uBlock Origin (adblocker)
+
+<!-- - Bitwarden (password manager) -->
 
 ### Operating Systems
 

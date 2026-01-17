@@ -1,27 +1,28 @@
 .e-content img {
-    border-radius: 8px;
-    &:not(figure *) {
-        margin-top: 16px;
-    }
+	border-radius: 8px;
+	&:not(figure *) {
+		margin-top: 16px;
+	}
 }
 
 .img-vertical {
-    max-width: 520px;
-    @media screen and (max-width: 565px) {
-        max-width: 100%;
-    }
+	max-width: 520px;
+	@media screen and (max-width: 565px) {
+		max-width: 100%;
+	}
 }
 
 .img-strip {
-    max-width: 530px;
-    @media screen and (max-width: 575px) {
-        max-width: 100%;
-    }
+	max-width: 530px;
+	@media screen and (max-width: 575px) {
+		max-width: 100%;
+	}
 }
 
 .img-square {
-    max-width: 575px;
-    @media screen and (max-width: 620px) {
-        max-width: 100%;
-    }
+	max-width: 575px;
+	@media screen and (max-width: 620px) {
+		max-width: 100%;
+	}
 }
+

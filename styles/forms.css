@@ -1,121 +1,122 @@
 /* webmentions */
 input#webmention-source {
-    border: none;
-    border-radius: var(--border-radius-small);
-    width: calc(100% - 7.25em);
-    font-family: inherit;
-    font-size: 0.875em;
-    font-weight: 400;
+	border: none;
+	border-radius: var(--border-radius-small);
+	width: calc(100% - 7.25em);
+	font-family: inherit;
+	font-size: 0.875em;
+	font-weight: 400;
 }
 
 input.textinput:focus,
 textarea:focus,
 input#webmention-source:focus {
-    outline-style: solid !important;
-    outline-width: 1px !important;
-    outline-color: var(--accent-med) !important;
+	outline-style: solid !important;
+	outline-width: 1px !important;
+	outline-color: var(--accent-med) !important;
 }
 
 input[id="webmention-submit"] {
-    float: right;
-    text-align: center;
-    width: 5.25em;
-    padding: 0 2px; /* keeps text from moving right on mobile */
+	float: right;
+	text-align: center;
+	width: 5.25em;
+	padding: 0 2px; /* keeps text from moving right on mobile */
 }
 input,
 textarea,
 fieldset {
-    flex: 1 1 30em;
+	flex: 1 1 30em;
 }
 input[type="submit"] {
-    /* turns off default styling for iOS/Safari, Mozilla, gen. */
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    /*****/
-    font-family: inherit;
-    font-size: inherit;
-    border: none;
-    border-radius: var(--border-radius-small);
-    margin: 0 0 0 auto;
-    justify-content: center;
+	/* turns off default styling for iOS/Safari, Mozilla, gen. */
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	/*****/
+	font-family: inherit;
+	font-size: inherit;
+	border: none;
+	border-radius: var(--border-radius-small);
+	margin: 0 0 0 auto;
+	justify-content: center;
 }
 input[id="send-email"] {
-    display: flex;
-    flex: 0 0 3.5em;
+	display: flex;
+	flex: 0 0 3.5em;
 }
 input[id="submit-comment"] {
-    display: flex;
-    flex: 0 0 4.5em;
+	display: flex;
+	flex: 0 0 4.5em;
 }
 input[id="load-comments"] {
-    width: 9em;
+	width: 9em;
 }
 
 /* Makes sizing form elements more consistent */
 form {
-    box-sizing: border-box;
-    max-width: 45rem;
-    padding: 8px 0;
+	box-sizing: border-box;
+	max-width: 45rem;
+	padding: 8px 0;
 }
 /* cancel out list styles */
 fieldset ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
 /* flex list */
 fieldset ul li {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 0.75em;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 0.75em;
 }
 /* hide border, legend; format label */
 fieldset {
-    padding: 0;
-    margin: 0;
-    border: none;
+	padding: 0;
+	margin: 0;
+	border: none;
 }
 legend {
-    width: 0;
-    height: 1px;
-    overflow: hidden;
+	width: 0;
+	height: 1px;
+	overflow: hidden;
 }
 
 input,
 textarea,
 fieldset {
-    flex: 1 1 30em;
+	flex: 1 1 30em;
 }
 
 input {
-    padding: 2px 5px;
+	padding: 2px 5px;
 }
 
 input,
 textarea {
-    color: var(--bg-dark) !important;
-    -webkit-text-fill-color: var(--bg-dark) !important;
-    background-color: var(--accent-med-light) !important;
-    height: 1.75em;
-    border: none;
-    border-radius: var(--border-radius-small);
-    font-family: inherit;
-    font-size: 0.875em;
-    font-weight: 400 !important;
+	color: var(--bg-dark) !important;
+	-webkit-text-fill-color: var(--bg-dark) !important;
+	background-color: var(--accent-med-light) !important;
+	height: 1.75em;
+	border: none;
+	border-radius: var(--border-radius-small);
+	font-family: inherit;
+	font-size: 0.875em;
+	font-weight: 400 !important;
 }
 
 textarea {
-    display: block;
-    height: 10em;
-    border: none;
-    border-radius: var(--border-radius-small);
-    padding: 5px;
-    line-height: 1.25;
-    resize: none;
-    overflow: auto;
+	display: block;
+	height: 10em;
+	border: none;
+	border-radius: var(--border-radius-small);
+	padding: 5px;
+	line-height: 1.25;
+	resize: none;
+	overflow: auto;
 }
 textarea[id="comment-story"] {
-    height: 6em;
+	height: 6em;
 }
+

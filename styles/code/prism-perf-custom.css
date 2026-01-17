@@ -6,8 +6,8 @@
  */
 
 code {
-    /* font-family: 'IBM Plex Mono', monospace !important; */
-    font-size: 0.85rem;
+	/* font-family: 'IBM Plex Mono', monospace !important; */
+	font-size: 0.85rem;
 }
 
 code[class*="language-"],
@@ -15,7 +15,7 @@ pre[class*="language-"] {
 	color: #f8f8f2;
 	background: none;
 	text-shadow: 0 1px rgba(0, 0, 0, 0.3);
-	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	font-family: Consolas, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
 	font-size: 0.9rem;
 	text-align: left;
 	white-space: pre;
@@ -36,7 +36,7 @@ pre[class*="language-"] {
 /* Code blocks */
 pre[class*="language-"] {
 	padding: 1em;
-	margin: .5em 0;
+	margin: 0.5em 0;
 	overflow: auto;
 	border-radius: 0.3em;
 }
@@ -49,8 +49,8 @@ pre[class*="language-"] {
 
 /* Inline code */
 :not(pre) > code[class*="language-"] {
-	padding: .1em;
-	border-radius: .3em;
+	padding: 0.1em;
+	border-radius: 0.3em;
 	white-space: normal;
 }
 
@@ -60,7 +60,7 @@ pre[class*="language-"] {
 .token.cdata {
 	/* color: #646568; */
 	/* color: #609663; */
-	color:  #75799d;
+	color: #75799d;
 }
 
 .token.punctuation {

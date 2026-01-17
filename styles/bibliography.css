@@ -1,16 +1,16 @@
 /* based on classes in https://github.com/arothuis/markdown-it-biblatex */
 .bibliography-title {
-    width: fit-content;
-    /* var defined in global.css */
-    padding-bottom: var(--section-header-padding);
-    border-bottom: 1px solid var(--accent-med-light);
+	width: fit-content;
+	/* var defined in global.css */
+	padding-bottom: var(--section-header-padding);
+	border-bottom: 1px solid var(--accent-med-light);
 }
 
 .csl-entry {
-    /* var defined in global.css */
-    line-height: var(--p-line-height); 
-    /* gives hanging indent */
-    text-indent: -2em; 
-    padding-left: 2em;
-    margin-bottom: 1em;
+	/* var defined in global.css */
+	line-height: var(--p-line-height);
+	/* gives hanging indent */
+	text-indent: -2em;
+	padding-left: 2em;
+	margin-bottom: 1em;
 }
