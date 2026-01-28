@@ -376,15 +376,15 @@ nav {
 /* @media (scripting: none) { */
 /* when clicked, switches to pointer and allows closing */
 /* pointer-events: none; doesn't seem to help/hurt w/ iOS Safari issue */
-.dropbtn.navIcon:focus {
+/* .dropbtn.navIcon:focus {
 	pointer-events: none;
-}
+} */
 /* if I do this in hamburger, *whole thing* closes */
-@media screen and (min-width: 60em) {
+/* @media screen and (min-width: 60em) {
 	.dropdown .dropbtn:focus {
 		pointer-events: none;
 	}
-}
+} */
 /* } */
 
 /* toggles hamburger menu on/off */
