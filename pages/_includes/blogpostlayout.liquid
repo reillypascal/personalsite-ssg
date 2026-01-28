@@ -23,16 +23,15 @@ title: Reilly Spitzfaden, Composer
 
     <div class="e-content">
         {{ content }}
+        {%- comment %} BLACK SQUARE FOR STOP {%- endcomment %}
+        {%- comment %} <p>&#9632;</p> {%- endcomment %}
         {% if indienews %}
             {% include 'partials/indienews.liquid' %}
         {% endif %}
     </div>
-
-    {% comment %} <div class="blogPostAsterism"><p>&#x2042;</p></div> {% endcomment %}
+    {%- comment %} <div class="blogPostAsterism"><p>&#x2042;</p></div> {%- endcomment %}
     <div class="blogPostEndText"><p>---END OF TRANSMISSION---</p></div>
-
-    <!-- <div class="post-end-line"></div> -->
-
+    {%- comment %} <div class="post-end-line"></div> {%- endcomment %}
     {% include 'partials/post-interactions.liquid' %}
 </article>
 

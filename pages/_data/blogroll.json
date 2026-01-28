@@ -85,8 +85,8 @@
 		]
 	},
 	{
-		"name": "Music Academia",
-		"id": "music-academia",
+		"name": "Music & Media Academia",
+		"id": "music-media-academia",
 		"blogs": [
 			{
 				"title": "it's her factory",
@@ -95,28 +95,16 @@
 				"description": "Robin James is a writer, editor, and former associate professor of philosophy at UNC Charlotte. […] She’s an expert in feminism/gender/race and popular music, pop music and politics, sound studies, electronic dance music studies, and contemporary continental philosophy (especially critical theories of neoliberalism and biopolitics)."
 			},
 			{
-				"title": "Sounding Out!",
-				"htmlUrl": "https://soundstudiesblog.com/",
-				"xmlUrl": "https://soundstudiesblog.com/feed/",
-				"description": "Sounding Out! is a bi-weekly online publication, a networked academic archive, and a dynamic group platform bringing together sound studies scholars, sound artists and professionals, and readers interested in the cultural politics of sound and listening.  Every Monday, our writers offer well-researched, well-written, and accessible interventions in sound studies, directing the field’s energy toward the social, cultural, and political aspects of sound and listening, particularly their differential construction of and material impacts on variously positioned bodies."
-			}
-		]
-	},
-	{
-		"name": "Media Art",
-		"id": "media-art",
-		"blogs": [
-			{
 				"title": "Other Networks",
 				"htmlUrl": "https://othernetworks.net/",
 				"xmlUrl": "https://othernetworks.net/feed/",
 				"description": "“Other Networks” is a cluster of projects headed up by Dr. Lori Emerson and Dr. libi striegl that document and experiment with networks outside of what’s now called “the internet.” We are invested in digging up alternative and forgotten networks so that we can reimagine the future of the internet as the future of networks."
 			},
 			{
-				"title": "Paloma Kop",
-				"htmlUrl": "https://palomakop.tv/",
-				"xmlUrl": "https://palomakop.tv/rss.xml",
-				"description": "I am an experimental multimedia artist and creative technologist currently based in New Haven, CT. My practice incorporates electronic media, from analog video and synthesizers to digital systems and code, as well as various physical materials and processes. I am especially interested in feedback loops, recursion, self-organizing and emergent structures, patterns in nature, psychedelia, and embodied sensory experience."
+				"title": "Sounding Out!",
+				"htmlUrl": "https://soundstudiesblog.com/",
+				"xmlUrl": "https://soundstudiesblog.com/feed/",
+				"description": "Sounding Out! is a bi-weekly online publication, a networked academic archive, and a dynamic group platform bringing together sound studies scholars, sound artists and professionals, and readers interested in the cultural politics of sound and listening.  Every Monday, our writers offer well-researched, well-written, and accessible interventions in sound studies, directing the field’s energy toward the social, cultural, and political aspects of sound and listening, particularly their differential construction of and material impacts on variously positioned bodies."
 			}
 		]
 	},
