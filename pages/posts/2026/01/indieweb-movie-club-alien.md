@@ -2,14 +2,13 @@
 title: "IndieWeb Movie Club: “Alien”"
 description: Re-watching a sci-fi classic to discuss with IndieWeb friends, and thinking about the music and sound design
 fedi_url:
-date: 2026-01-31T18:51:21-0500
+date: 2026-01-31T18:53:51-0500
 tags:
   - post
   - indieweb
   - indieweb-movie-club
   - movies
 post_series: indieweb-movie-club
-draft: true
 indienews: true
 ---
 
