@@ -12,7 +12,6 @@ tags:
   - note
   - hiking
   - rocks
-  - adirondacks
 ---
 
 <link rel="stylesheet" type="text/css" href="/styles/notes-photos.css">

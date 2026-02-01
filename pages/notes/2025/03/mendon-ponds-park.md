@@ -10,7 +10,6 @@ date: 2025-03-23T17:30:00-0500
 tags:
   - note
   - hiking
-  - date
   - state-parks
   - new-york
   - photoblog

@@ -17,7 +17,6 @@ tags:
   - post
   - javascript
   - webdev
-  - enshittification
 ---
 
 <link rel="stylesheet" type="text/css" href="/styles/code/prism-perf-custom.css" />

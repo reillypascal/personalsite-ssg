@@ -7,8 +7,6 @@ tags:
   - interaction
   - like
   - technology
-  - nostalgia
-  - y2k
   - phones
 target_url: https://blog.avas.space/dumbphone/
 target_title: dumbphones as a new status symbol

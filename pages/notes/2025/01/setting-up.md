@@ -5,7 +5,6 @@ canonical_url: https://reillyspitzfaden.com/notes/2025/01/setting-up/
 date: 2025-01-23
 tags:
   - note
-  - blogging
   - webdev
   - indieweb
 ---

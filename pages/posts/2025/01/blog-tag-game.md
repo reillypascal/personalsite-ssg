@@ -17,9 +17,7 @@ octothorpes:
   - webmentions
 tags:
   - post
-  - blogging
   - indieweb
-  - webdev
 ---
 
 I'm a fan of nostalgic internet trends. We're hitting a point where things like Tumblr tag games (i.e., another user tags you in a list of questions about your interests) are starting to feel nostalgic. As [avas.space](https://blog.avas.space) suggests in [this post](https://blog.avas.space/bear-blog-challenge/), I think it could be fun to bring those games to blogging, and I'll be responding to her post today. I've also seen other bloggers I follow such as [Manuel Moreale](https://manuelmoreale.com/blog-questions-challenge) do this.

@@ -13,7 +13,6 @@ octothorpes:
 tags:
   - note
   - hiking
-  - date
   - state-parks
   - new-york
   - photoblog

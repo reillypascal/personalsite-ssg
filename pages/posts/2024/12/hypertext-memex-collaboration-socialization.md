@@ -14,8 +14,7 @@ tags:
   - post
   - music
   - indieweb
-  - hypertext
-  - academia
+  - tech-philosophy
   - social-media
 ---
 

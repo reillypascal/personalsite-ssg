@@ -8,7 +8,6 @@ tags:
   - interaction
   - bookmark
   - trans
-  - healthcare
 target_url: https://www.medpagetoday.com/pediatrics/transgendermedicine/115801
 target_title: Utah Lawmakers Say Gender-Affirming Care Harms Kids. Their Own Study Disputes That.
 ---

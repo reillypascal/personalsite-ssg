@@ -9,7 +9,7 @@ og_image_height: 630
 date: 2025-05-24T19:14:41-0400
 tags:
   - note
-  - rochester
+  - new-york
   - photoblog
   - parks
 ---
