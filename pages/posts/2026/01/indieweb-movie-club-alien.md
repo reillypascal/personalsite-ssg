@@ -2,6 +2,8 @@
 title: "IndieWeb Movie Club: “Alien”"
 description: Re-watching a sci-fi classic to discuss with IndieWeb friends, and thinking about the music and sound design
 fedi_url:
+  - https://hachyderm.io/@reillypascal/115992430322810062
+  - https://bsky.app/profile/reillypascal.bsky.social/post/3mdqzntbqcc2a
 date: 2026-01-31T18:53:51-0500
 tags:
   - post
