@@ -40,9 +40,7 @@ export default async function (eleventyConfig) {
 	// https://github.com/11ty/eleventy/issues/637
 	eleventyConfig.addFilter("categoryValue", (collection, category, value) => {
 		if (!category) return collection;
-		const filtered = collection.filter(
-			(item) => item.data[category] == value,
-		);
+		const filtered = collection.filter((item) => item.data[category] == value);
 		return filtered;
 	});
 
@@ -130,9 +128,7 @@ export default async function (eleventyConfig) {
 			.sort((a, b) => new Date(b.published) - new Date(a.published));
 
 		const likes = pageWebmentions
-			.filter((mention) =>
-				allowedTypes.likes.includes(mention["wm-property"]),
-			)
+			.filter((mention) => allowedTypes.likes.includes(mention["wm-property"]))
 			.filter((like) => like.author)
 			.map((like) => like.author);
 
@@ -179,12 +175,9 @@ export default async function (eleventyConfig) {
 					return false;
 				}
 			})
+			.filter((mention) => !mention["wm-source"].includes("https://brid.gy/"))
 			.filter(
-				(mention) => !mention["wm-source"].includes("https://brid.gy/"),
-			)
-			.filter(
-				(mention) =>
-					!mention["wm-source"].includes("https://bsky.brid.gy/"),
+				(mention) => !mention["wm-source"].includes("https://bsky.brid.gy/"),
 			)
 			.sort((a, b) => new Date(b.published) - new Date(a.published))
 			.map(sanitize);
