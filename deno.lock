@@ -19,7 +19,6 @@
         "npm:@shopify/prettier-plugin-liquid@^1.10.0",
         "npm:@supabase/supabase-js@^2.53.0",
         "npm:@uncenter/eleventy-plugin-toc@^1.0.3",
-        "npm:cheerio@^1.1.2",
         "npm:dotenv@^17.2.1",
         "npm:markdown-it-anchor@^9.2.0",
         "npm:markdown-it-attrs@^4.3.1",
