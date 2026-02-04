@@ -62,7 +62,7 @@ In other words, as Merchant puts it
 
 ### “Human-in-the-loop” as a “reverse centaur”
 
-- Cory Doctorow, “[Pluralistic: ‘Humans in the loop’ must detect the hardest-to-spot errors, at superhuman speed (23 Apr 2024)](https://pluralistic.net/2024/04/23/maximal-plausibility/)”
+- Cory DTwoctorow, “[Pluralistic: ‘Humans in the loop’ must detect the hardest-to-spot errors, at superhuman speed (23 Apr 2024)](https://pluralistic.net/2024/04/23/maximal-plausibility/)”
 
 > Automation can _augment_ a worker. We can call this a “centaur” – the worker offloads a repetitive task, or one that requires a high degree of vigilance, or (worst of all) both. They're a human head on a robot body (hence “centaur”). Think of the sensor/vision system in your car that beeps if you activate your turn-signal while a car is in your blind spot. You're in charge, but you're getting a second opinion from the robot.
 
@@ -76,9 +76,17 @@ In other words, as Merchant puts it
 
 ## Weaknesses of AI as a Tool
 
-- David H. Cropley, “[‘The Cat Sat on the …?’ Why Generative AI Has Limited Creativity](https://onlinelibrary.wiley.com/doi/10.1002/jocb.70077)”
+- Jamie Twiss, “[AI Coding Assistants Are Getting Worse: Newer models are more prone to silent but deadly failure modes](https://spectrum.ieee.org/ai-coding-degrades)”
 
-> This paper applies the standard definition of creativity to the output of Large Language Models (LLMs) and shows not only that this can be calculated ex ante, but that LLM output creativity has a fundamental upper limit. …LLM creativity is mathematically constrained to a level equivalent to the boundary between amateur and professional human creativity. This has significant implications for claims about AI autonomy in creative tasks.
+> However, recently released LLMs, such as GPT-5, have a much more insidious method of failure. They often generate code that fails to perform as intended, but which on the surface seems to run successfully, avoiding syntax errors or obvious crashes. It does this by removing safety checks, or by creating fake output that matches the desired format, or through a variety of other techniques to avoid crashing during execution.
+>
+> As any developer will tell you, this kind of silent failure is far, far worse than a crash.
+
+- METR, “[Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/)”
+
+> We conduct a randomized controlled trial (RCT) to understand how early-2025 AI tools affect the productivity of experienced open-source developers working on their own repositories. \[…\]
+>
+> When developers are allowed to use AI tools, they take 19% longer to complete issues—a significant slowdown that goes against developer beliefs and expert forecasts. This gap between perception and reality is striking: developers expected AI to speed them up by 24%, and even after experiencing the slowdown, they still believed AI had sped them up by 20%.
 
 - Kosmyna et al., “[Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task](https://arxiv.org/abs/2506.08872)”
 
@@ -86,11 +94,9 @@ In other words, as Merchant puts it
 >
 > Over four months, LLM users consistently underperformed at neural, linguistic, and behavioral levels.
 
-- METR, “[Measuring the Impact of Early-2025 AI on Experienced Open-Source Developer Productivity](https://metr.org/blog/2025-07-10-early-2025-ai-experienced-os-dev-study/)”
+- David H. Cropley, “[‘The Cat Sat on the …?’ Why Generative AI Has Limited Creativity](https://onlinelibrary.wiley.com/doi/10.1002/jocb.70077)”
 
-> We conduct a randomized controlled trial (RCT) to understand how early-2025 AI tools affect the productivity of experienced open-source developers working on their own repositories. \[…\]
->
-> When developers are allowed to use AI tools, they take 19% longer to complete issues—a significant slowdown that goes against developer beliefs and expert forecasts. This gap between perception and reality is striking: developers expected AI to speed them up by 24%, and even after experiencing the slowdown, they still believed AI had sped them up by 20%.
+> This paper applies the standard definition of creativity to the output of Large Language Models (LLMs) and shows not only that this can be calculated ex ante, but that LLM output creativity has a fundamental upper limit. …LLM creativity is mathematically constrained to a level equivalent to the boundary between amateur and professional human creativity. This has significant implications for claims about AI autonomy in creative tasks.
 
 - Hao-Ping (Hank) Lee et al., “[The Impact of Generative AI on Critical Thinking: Self-Reported Reductions in Cognitive Effort and Confidence Effects From a Survey of Knowledge Workers](https://www.microsoft.com/en-us/research/wp-content/uploads/2025/01/lee_2025_ai_critical_thinking_survey.pdf)”
 
