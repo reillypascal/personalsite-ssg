@@ -284,6 +284,10 @@ One might argue that 6.7% of U.S. electricity usage is a relatively small portio
 
 - Edward Ongweso Jr., “[The phony comforts of useful idiots](https://thetechbubble.substack.com/p/the-phony-comforts-of-useful-idiots)”
 
+</section>
+
+<section>
+
 ## Discussion Covering Multiple Facets
 
 - Molly White, “[AI isn't useless. But is it worth it?](https://www.citationneeded.news/ai-isnt-useless/)”
