@@ -304,9 +304,11 @@ export default async function (eleventyConfig) {
 		const posts = collectionApi.getFilteredByTag("post");
 		const notes = collectionApi.getFilteredByTag("note");
 		const interactions = collectionApi.getFilteredByTag("interaction");
+		const rssonly = collectionApi.getFilteredByTag("rssonly");
 		return posts
 			.concat(notes)
 			.concat(interactions)
+			.concat(rssonly)
 			.sort(function (a, b) {
 				return a.date - b.date;
 			});
