@@ -27,7 +27,9 @@ Recently I've been getting into TTRPGs (i.e., games like D&D). I had been wantin
 
 I also just got married! My partner and I had a nice small ceremony in October with family and friends. I'm so excited to spend the rest of my life with them.
 
-<!-- Recently I've found some new hobbies. First is photography. I tracked down an analog SLR camera (a Minolta X-370) that I had in high school but never used, and I'm learning analog photography with it. I also found some local classes on developing black & white film, and that should be a fun skill to learn. -->
+{%- comment %}
+Recently I've found some new hobbies. First is photography. I tracked down an analog SLR camera (a Minolta X-370) that I had in high school but never used, and I'm learning analog photography with it. I also found some local classes on developing black & white film, and that should be a fun skill to learn.
+{%- endcomment %}
 
 </article>
 
@@ -49,18 +51,24 @@ _A Game in Yellow_ by Hailey Piper: a thrill-seeking couple — Carmen and Blanc
 
 _S._ by Doug Dorst: presented as a library copy of _Ship of Theseus_ by fictional author V.M. Straka, with handwritten notes in the margins between two college students. V.M. Straka is reclusive and mysterious, and conspiracy theories surround him, and the students' relationship grows as they dig deeper into this.
 
-<!-- _The Extinction of Irena Rey_ by Jennifer Croft: A novel about a group of translators working in a mysterious forest to translate a novel. Filled with footnotes, deeply meta, and the forest is full of strange fungi. -->
+{%- comment %}
+_The Extinction of Irena Rey_ by Jennifer Croft: A novel about a group of translators working in a mysterious forest to translate a novel. Filled with footnotes, deeply meta, and the forest is full of strange fungi.
+{%- endcomment %}
 
-<!-- _Ficciones_ by Jorge Luis Borges: I've heard people mention the story “The Garden of Forking Paths” in connection with hypertext, and I'm very intrigued to see more. -->
+{%- comment %}
+_Ficciones_ by Jorge Luis Borges: I've heard people mention the story “The Garden of Forking Paths” in connection with hypertext, and I'm very intrigued to see more.
+{%- endcomment %}
 
 </article>
 
-<!-- <article>
+{%- comment %}
+<article>
 <h2 class="sectionHeader">Statuslog</h2>
 
 {% include "partials/statuslog-content.liquid" %}
 
-</article> -->
+</article>
+{%- endcomment %}
 
 <section>
 
