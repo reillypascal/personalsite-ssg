@@ -60,9 +60,7 @@ In other words, as Merchant puts it
 
 > The message is this: There is an AI jobs apocalypse coming, everything is going to change, and if you hope to survive it, you’re going to have to learn to be a lot more productive, for me, your boss.
 
-### “Human-in-the-loop” as a “reverse centaur”
-
-- Cory DTwoctorow, “[Pluralistic: ‘Humans in the loop’ must detect the hardest-to-spot errors, at superhuman speed (23 Apr 2024)](https://pluralistic.net/2024/04/23/maximal-plausibility/)”
+- Cory Doctorow, “[Pluralistic: ‘Humans in the loop’ must detect the hardest-to-spot errors, at superhuman speed (23 Apr 2024)](https://pluralistic.net/2024/04/23/maximal-plausibility/)”
 
 > Automation can _augment_ a worker. We can call this a “centaur” – the worker offloads a repetitive task, or one that requires a high degree of vigilance, or (worst of all) both. They're a human head on a robot body (hence “centaur”). Think of the sensor/vision system in your car that beeps if you activate your turn-signal while a car is in your blind spot. You're in charge, but you're getting a second opinion from the robot.
 
