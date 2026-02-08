@@ -76,6 +76,10 @@ In other words, as Merchant puts it
 
 ## Weaknesses of AI as a Tool
 
+- Judy Hanwen Shen, Alex Tamkin, “[How AI Impacts Skill Formation](https://arxiv.org/abs/2601.20245)”
+
+> We conduct randomized experiments to study how developers gained mastery of a new asynchronous programming library with and without the assistance of AI. We find that AI use impairs conceptual understanding, code reading, and debugging abilities, without delivering significant efficiency gains on average.
+
 - Jamie Twiss, “[AI Coding Assistants Are Getting Worse: Newer models are more prone to silent but deadly failure modes](https://spectrum.ieee.org/ai-coding-degrades)”
 
 > However, recently released LLMs, such as GPT-5, have a much more insidious method of failure. They often generate code that fails to perform as intended, but which on the surface seems to run successfully, avoiding syntax errors or obvious crashes. It does this by removing safety checks, or by creating fake output that matches the desired format, or through a variety of other techniques to avoid crashing during execution.
