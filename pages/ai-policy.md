@@ -7,9 +7,9 @@ description: My policy on the use of AI on this site, and links to a library of 
 
 <h1 class="sectionHeader">AI Policy</h1>
 
-I do not use large language models (LLMs) or any other form of “generative AI” in any capacity in any of the writing, music, code, or images on this website.
+I do not use large language models (LLMs) or any similar form of “generative AI” in any capacity in any of the writing, music, code, or images on this website.
 
-I type my blog posts by hand in Neovim, using the `codebook` spell-checker to catch typos. Code is similarly written in Neovim using [this list](https://github.com/reillypascal/nvim/tree/main/lsp) of language servers to catch errors, and [this collection](https://github.com/reillypascal/nvim/blob/main/lua/plugins/conform.lua#L31) of formatting tools to achieve consistent use of line breaks, indentation, etc. — both categories use traditional code parsing, rather than LLMs.
+I type my blog posts by hand in Neovim, using the [`codebook` spell-checker](https://github.com/blopker/codebook) to catch typos. Code is similarly written in Neovim using [this list](https://github.com/reillypascal/nvim/tree/main/lsp) of language servers to catch errors, and [this collection](https://github.com/reillypascal/nvim/blob/main/lua/plugins/conform.lua#L31) of formatting tools to achieve consistent use of line breaks, indentation, etc. — both categories use traditional code parsing, rather than LLMs.
 
 For the images, I create and edit SVGs in Inkscape, touch up and scale photos in GIMP and/or ImageMagick, and cite e.g., digital signal processing diagrams from papers or other discussions when relevant. I take photos on a Pixel 8a running GrapheneOS, and the only on-device image processing is via the default hardware settings and the [GrapheneOS camera app](https://github.com/GrapheneOS/Camera).
 
