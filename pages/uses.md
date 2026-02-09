@@ -55,11 +55,9 @@ tags:
 - WezTerm (terminal)
 - zoxide (navigate terminal like cd, but with fuzzy matching/finding)
 
-<!-- - Ghostty (terminal) -->
 <!-- - chezmoi (dotfile manager) -->
 <!-- - brew-explorer (TUI for Homebrew) -->
 <!-- - Octave (FOSS equivalent to MATLAB) -->
-<!-- - tldr (man pages with practical examples) -->
 <!-- - tmux (terminal multiplexer) -->
 
 ### Web
@@ -69,8 +67,6 @@ tags:
 - Mailspring (desktop email client)
 - Signal (encrypted messenger)
 - Thunderbird (Android email client)
-
-<!-- - Fennec (fork of Firefox for Android, available in F-Droid store) -->
 
 ### Media
 
@@ -94,8 +90,6 @@ tags:
 - Readest (cross-platform e-book reader)
 - Zotero (reference manager)
 
-<!-- - Calibre (e-book library manager/reader) -->
-
 ### Files
 
 - FreeFileSync (easily manage backups)
@@ -108,17 +102,14 @@ tags:
 - Aegis (2fa)
 - DAVx<sup>5</sup> (CalDAV/CardDAV/WebDAV manager for Android)
 - Droid-ify (F-Droid FOSS app store client)
+- FlorisBoard (Android keyboard)
 - Forkyz (FOSS Android crossword app)
 - Fossify Calendar (Android calendar)
-- Heliboard (Android keyboard)
 - KeePassDX (Android password manager)
-- KeePassium (macOS password manager)
+- KeePassXC (Desktop password manager)
 - LinearMouse (remap mouse input without requiring official Logitech software)
 - Obtainium (install Android apps from GitHub; keep track of/manage updates)
-- Transcribro (Android voice input)
 - uBlock Origin (adblocker)
-
-<!-- - Bitwarden (password manager) -->
 
 ### Operating Systems
 
