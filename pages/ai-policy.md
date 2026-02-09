@@ -9,9 +9,9 @@ description: My policy on the use of AI on this site, and links to a library of 
 
 I do not use large language models (LLMs) or any other form of “generative AI” in any capacity in any of the writing, music, code, or images on this website.
 
-For writing my blog posts, I type them by hand in Neovim, using the `codebook` spell-checker to catch typos. Code is similarly written in Neovim using [this list](https://github.com/reillypascal/nvim/tree/main/lsp) of language servers to catch errors, and [this collection](https://github.com/reillypascal/nvim/blob/main/lua/plugins/conform.lua#L31) of formatting tools to achieve consistent use of line breaks, indentation, etc. — both categories use traditional code parsing, rather than LLMs.
+I type my blog posts by hand in Neovim, using the `codebook` spell-checker to catch typos. Code is similarly written in Neovim using [this list](https://github.com/reillypascal/nvim/tree/main/lsp) of language servers to catch errors, and [this collection](https://github.com/reillypascal/nvim/blob/main/lua/plugins/conform.lua#L31) of formatting tools to achieve consistent use of line breaks, indentation, etc. — both categories use traditional code parsing, rather than LLMs.
 
-For the images, I design SVGs (or edit existing ones, such as logos) in Inkscape, touch up and scale photos in GIMP and/or ImageMagick, and cite e.g., digital signal processing diagrams from papers or other discussions when relevant. I take photos on a Pixel 8a running GrapheneOS, and the only on-device image processing is via the default hardware settings and the [GrapheneOS camera app](https://github.com/GrapheneOS/Camera).
+For the images, I create and edit SVGs in Inkscape, touch up and scale photos in GIMP and/or ImageMagick, and cite e.g., digital signal processing diagrams from papers or other discussions when relevant. I take photos on a Pixel 8a running GrapheneOS, and the only on-device image processing is via the default hardware settings and the [GrapheneOS camera app](https://github.com/GrapheneOS/Camera).
 
 I keep [a list of my primary music software here](/uses/#music). While some of these programs ship with features the manufacturers describe as “AI” (e.g., Logic Pro has the ability to extract instrumental or vocal “stems” from a completed recording), I do not use these features in any of my composition or production.
 
