@@ -28,4 +28,4 @@ Thanks to [Sophia](https://banjomagpi.com/) for the caw-related art
 
 </section>
 
-More caw: [Sophia](https://banjomagpi.com/caw/), [James](https://jamesg.blog/caw), [Joe](https://artlung.com/caw/), [gRegor](https://gregorlove.com/caw/), [Thomas](https://www.vanderwal.net/random/entrysel.php?blog=2135)
+More caw: [Sophia](https://banjomagpi.com/caw/), [James](https://jamesg.blog/caw), [Joe](https://artlung.com/caw/), [gRegor](https://gregorlove.com/caw/), [Thomas](https://www.vanderwal.net/random/entrysel.php?blog=2135), [Naty](https://burgeonlab.com/caw/)
