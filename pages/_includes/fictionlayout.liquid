@@ -2,10 +2,19 @@
 layout: mainlayout.liquid
 title: Reilly Spitzfaden, Composer
 ---
-<link rel="stylesheet" type="text/css" href="/styles/blog.css">
-<link rel="stylesheet" type="text/css" href="/styles/blogposts.css">
-<link rel="stylesheet" type="text/css" href="/styles/fiction.css">
-<link rel="stylesheet" type="text/css" href="/styles/onecolumn.css">
+<!--
+    <link rel="stylesheet" type="text/css" href="/styles/blog.css">
+    <link rel="stylesheet" type="text/css" href="/styles/blogposts.css">
+    <link rel="stylesheet" type="text/css" href="/styles/fiction.css">
+    <link rel="stylesheet" type="text/css" href="/styles/onecolumn.css">
+-->
+
+<style>
+    {% include './styles/blog.css' %}
+    {% include './styles/blogposts.css' %}
+    {% include './styles/fiction.css' %}
+    {% include './styles/onecolumn.css' %}
+</style>
 
 <!-- post contents -->
 <article class="h-entry">
