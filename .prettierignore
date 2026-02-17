@@ -5,3 +5,4 @@
 !**/*.liquid
 # *do* ignore humans.liquid - formatting has to be exact because it's a .txt file
 **/humans.liquid
+**/indieweb.liquid
