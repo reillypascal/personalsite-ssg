@@ -644,7 +644,18 @@ figcaption {
 	margin-top: 40px;
 }
 .skip-link {
-	display: none;
+	/* display: none; */
+	/* referenced how TC does it; added &:not(:focus), removed !important; check if anyone can see it on first load */
+	&:not(:focus) {
+		height: 0px;
+		width: 0px;
+		margin: -1px;
+		padding: 0;
+		border: 0;
+		overflow: hidden;
+		position: absolute; /*!important;*/
+		word-wrap: normal; /*!important;*/
+	}
 }
 
 .bibliography {
