@@ -48,7 +48,6 @@ tags:
 
 - apparix (terminal bookmarks)
 - fzf (terminal fuzzy finder)
-- Ghostty (terminal)
 - Neovim (my [dotfiles](https://github.com/reillypascal/nvim))
     - nvim-lilypond-suite (Neovim tools for Lilypond)
     - scnvim (Neovim frontend for SuperCollider)
@@ -56,13 +55,13 @@ tags:
 - pluginval (validate and debug audio plugins)
 - Starship (command prompt)
 - superfile (terminal file browser/manager)
+- WezTerm (terminal emulator)
 - zoxide (navigate terminal like cd, but with fuzzy matching/finding)
 
 <!-- - chezmoi (dotfile manager) -->
 <!-- - brew-explorer (TUI for Homebrew) -->
 <!-- - Octave (FOSS equivalent to MATLAB) -->
 <!-- - tmux (terminal multiplexer) -->
-<!-- - WezTerm (terminal) -->
 
 ### Web
 
