@@ -1,3 +1,15 @@
+[project]
+name = "personalsite"
+version = "0.1.0"
+description = "Reilly Spitzfaden's personal website"
+authors = [
+  { name = "Reilly Spitzfaden", email = "reillypascal@gmail.com" },
+]
+dependencies = ["dotenv>=0.9.9"]
+requires-python = "==3.14.*"
+readme = "README.md"
+license = { text = "MIT" }
+
 [tool.curlylint]
 include = '\.(liquid|nunjucks)$'
 exclude = '''
@@ -14,3 +26,6 @@ exclude = '''
 [tool.curlylint.rules]
 indent = 4
 html_has_lang = "en-US"
+
+[tool.pdm]
+distribution = false
