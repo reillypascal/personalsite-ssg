@@ -2,6 +2,8 @@
 title: "Friendly Lilypond with Neovim & Audacity"
 description: I made a nice setup to write Lilypond scores in Neovim, while still being able to conveniently view and listen to them
 fedi_url:
+  - https://hachyderm.io/@reillypascal/116143819186825226
+  - https://bsky.app/profile/reillypascal.bsky.social/post/3mfuayvsi4c25
 og_image: /media/blog/2026/02/abide-with-me-ly-pdf.jpg
 og_image_width: 1200
 og_image_height: 630
