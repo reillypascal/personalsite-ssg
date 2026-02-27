@@ -5,27 +5,27 @@ year=$(date +"%Y")
 month=$(date +"%m")
 
 while getopts ":d" option; do
-    case "${option}" in
-        d)
-            isodate="$2T00:00:00-0400"
-            year=$(echo "${isodate}" | cut -c1-4)
-            month=$(echo "${isodate}" | cut -c6-7)
-            ;;
-    esac
-    # remove '-1' because two indices (flag, arg)
-    shift $((OPTIND))
+	case "${option}" in
+	d)
+		isodate="$2T00:00:00-0400"
+		year=$(echo "${isodate}" | cut -c1-4)
+		month=$(echo "${isodate}" | cut -c6-7)
+		;;
+	esac
+	# remove '-1' because two indices (flag, arg)
+	shift $((OPTIND))
 done
 
 if [ ${1+x} ]; then
-    name=$1
+	name=$1
 else
-    name="Blog Post"
+	name="Blog Post"
 fi
 
 if [ ${2+x} ]; then
-    description=$2
+	description=$2
 else
-    description=""
+	description=""
 fi
 
 # tr replace first w/ second; -c means "complement", -d "delete", -s "squeeze repeats"
@@ -36,7 +36,7 @@ mkdir -p pages/posts/$year/$month
 
 fullpath=pages/posts/$year/$month/$slug.md
 
-cat >> $fullpath << EOF
+cat >>$fullpath <<EOF
 ---
 title: "$name"
 description: $description
@@ -44,6 +44,7 @@ fedi_url:
 og_image: 
 og_image_width: 
 og_image_height: 
+og_image_alt: 
 date: $isodate
 tags:
   - post

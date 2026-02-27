@@ -2,10 +2,11 @@
 title: "Friendly Lilypond with Neovim & Audacity"
 description: I made a nice setup to write Lilypond scores in Neovim, while still being able to conveniently view and listen to them
 fedi_url:
-og_image:
-og_image_width:
-og_image_height:
-date: 2026-02-28T14:20:00-0500
+og_image: /media/blog/2026/02/abide-with-me-ly-pdf.jpg
+og_image_width: 1200
+og_image_height: 630
+og_image_alt: A Neovim window open on the left, showing Lilypond code, and a PDF score for the hymn “Abide with Me” open on the right
+date: 2026-02-27T09:38:52-0500
 tags:
   - bash
   - composition
