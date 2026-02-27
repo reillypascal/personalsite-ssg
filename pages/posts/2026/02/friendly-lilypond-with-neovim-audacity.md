@@ -6,7 +6,7 @@ og_image: /media/blog/2026/02/abide-with-me-ly-pdf.jpg
 og_image_width: 1200
 og_image_height: 630
 og_image_alt: A Neovim window open on the left, showing Lilypond code, and a PDF score for the hymn “Abide with Me” open on the right
-date: 2026-02-27T09:38:52-0500
+date: 2026-02-27T12:35:05-0500
 tags:
   - bash
   - composition
@@ -16,7 +16,6 @@ tags:
   - programming
   - python
 post_series:
-draft: true
 ---
 
 <link rel="stylesheet" type="text/css" href="/styles/code/prism-perf-custom.css" />
