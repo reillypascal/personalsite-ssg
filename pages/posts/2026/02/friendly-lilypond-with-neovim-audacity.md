@@ -5,12 +5,15 @@ fedi_url:
 og_image:
 og_image_width:
 og_image_height:
-date: 2026-02-28T12:30:00-0500
+date: 2026-02-28T14:20:00-0500
 tags:
+  - bash
   - composition
   - lilypond
+  - music
   - post
   - programming
+  - python
 post_series:
 draft: true
 ---
@@ -28,11 +31,13 @@ For writing Lilypond, the IDE-like program [Frescobaldi](https://www.frescobaldi
 
 First (and easiest), there is a nice Neovim plugin [nvim-lilypond-suite](https://github.com/martineausimon/nvim-lilypond-suite). This adds syntax highlighting and PDF/playback keyboard shortcuts. I also use the [conform.nvim](https://github.com/stevearc/conform.nvim) plugin to perform automatic formatting (e.g., line breaks, spacing, etc.). This plugin communicates with existing formatting tools, and here I used the [python-ly](https://python-ly.readthedocs.io/en/latest/) command-line program. It has indentation/formatting options, and I made conform.nvim aware of these commands using [this configuration here](https://github.com/reillypascal/nvim/blob/0efaa3262aa483d052bbab00c2219893e2a2d8a1/lua/plugins/conform.lua#L72-L81).
 
-This covers most of what Frescobaldi does, but for audio playback, there is one wrinkle that's specific to my needs that makes the provided playback not work. nvim-lilypond-suite uses [timidity](https://timidity.sourceforge.net/) or [fluidsynth](https://www.fluidsynth.org/) to convert MIDI files (which are just instructions to a synthesizer on the notes to play) to MP3 audio files. These two programs use a [SoundFont](https://en.wikipedia.org/wiki/SoundFont) — a predetermined collection of synthesizers — to convert the MIDI file to audio. Alongside live instruments, I like to have a [Max/MSP](https://en.wikipedia.org/wiki/Max_(software)) patch being controlled by e.g., a live MIDI keyboardist. This is unfortunately not compatible with timidity/fluidsynth.
+This covers most of what Frescobaldi does, but for audio playback, there is one wrinkle that's specific to my needs that makes the provided playback not work. The nvim-lilypond-suite plugin uses [timidity](https://timidity.sourceforge.net/) or [fluidsynth](https://www.fluidsynth.org/) to convert MIDI files (which are just instructions to a synthesizer on the notes to play) to audio files. These two programs use a [SoundFont](https://en.wikipedia.org/wiki/SoundFont) — a predetermined collection of synthesizers — to convert the MIDI file to audio. In my compositions, I often like to have a [Max/MSP](https://en.wikipedia.org/wiki/Max_(software)) patch being controlled by e.g., a live MIDI keyboardist, and played alongside live instruments. This is unfortunately not compatible with timidity/fluidsynth.
 
 ## MIDI Playback
 
-macOS provides the [IAC](https://help.ableton.com/hc/en-us/articles/209774225-Setting-up-a-virtual-MIDI-bus) virtual MIDI connection, which allows me to send MIDI data between programs, including sending it to Max. [^2] This means I just need to find a program that can play the MIDI file that Lilypond generates into the IAC bus. I looked for a surprisingly long time before realizing that Audacity [can load MIDI files](https://manual.audacityteam.org/man/note_tracks.html) and can play them back over IAC. It would work OK to drag and drop the files in, but I would miss the convenience of Frescobaldi automatically updating the MIDI file, and having to manually load the file and delete the previous ones would partly defeat the purpose of using Neovim to get away from the mouse.
+macOS provides the [IAC](https://help.ableton.com/hc/en-us/articles/209774225-Setting-up-a-virtual-MIDI-bus) virtual MIDI connection, which allows me to send MIDI data between programs, including sending it to Max. [^2] This means I just needed to find a program that can play the MIDI file that Lilypond generates into the IAC bus in order to hear my Max patches played as the keyboardist would play them.
+
+I looked for a surprisingly long time before realizing that Audacity [can load MIDI files](https://manual.audacityteam.org/man/note_tracks.html) and can play them back over IAC. It would work OK to drag and drop the files in, but I would miss the convenience of Frescobaldi automatically updating the MIDI file, and having to manually load the file and delete the previous ones would partly defeat the purpose of using Neovim to get away from the mouse.
 
 Fortunately, it turns out [Audacity can be scripted](https://manual.audacityteam.org/man/scripting.html)! First, go to Audacity > Preferences > Modules (Mac) or Edit > Preferences > Modules (Win), and make sure that “mod-script-pipe” is set to “Enabled.” The Audacity manual gives an [example Python script](https://github.com/audacity/audacity/blob/master/au3/scripts/piped-work/pipe_test.py) to confirm that the connection is now working. At the end of this file, note the line `do_command('Help: Command=Help')`. This sends the message `Help: Command=Help` to Audacity, and is a good template of how to send commands more generally.
 
@@ -105,7 +110,7 @@ lilypond "$(realpath "$1")" && {
 
 You can run the script with `./watch <scorename>.ly`. First, the script runs `lilypond <scorename>.ly` to ensure that the required MIDI/PDF exist, even if I haven't remembered to generate them yet. I use `realpath` to get the full path of the files and avoid any potential issues loading them (Audacity was the main source of trouble with this).
 
-The next block checks the `$OSTYPE` variable, since different operating systems have different PDF viewers. On Linux, Evince is common; macOS provides the `open` command to open any file in the default program; and the Windows options are based on poking around the internet (note that I don't have a Windows machine to test them, so please check before using!)
+The next block runs two copies of `entr`. In both cases we use the command format `echo <file-to-watch> | entr <run-on-file-change>`. For the PDF, we check the `$OSTYPE` variable, since different operating systems have different PDF viewers. On Linux, Evince is common; macOS provides the `open` command to open any file in the default program; and the Windows options are based on poking around the internet (note that I don't have a Windows machine to test them, so please check before using!)
 
 ## Listening in Max
 
@@ -116,6 +121,8 @@ In addition to running the Max patch for the keyboardist, Max is useful for host
 If you don't use Max, note that most DAWs and other programs that can host virtual instruments (e.g., I've tried this with Logic Pro, REAPER, and Mainstage) can also take input over a virtual MIDI bus. You could also connect to SuperCollider, Pure Data, VCV Rack, and many others.
 
 ## Postscript
+
+I've been having a ton of fun with Lilypond, including [microtones](https://en.wikipedia.org/wiki/Microtonality), algorithmic composition with Python/Abjad, and more. There's a lot of interesting stuff to discuss there, and I'm planning to write a few more posts about these topics sometime soon. I hope to see you then — until next time!
 
 [^1]: I use “algorithmic” here in the sense of Iannis Xenakis' [_Formalized Music_](https://en.wikipedia.org/wiki/Formalized_Music) — i.e., handwritten algorithms without large, unethical datasets — not in the LLM sense.
 
