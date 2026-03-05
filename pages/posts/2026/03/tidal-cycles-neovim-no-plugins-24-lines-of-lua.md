@@ -2,10 +2,10 @@
 title: "Tidal Cycles/Neovim: No Plugins, 24 Lines of Lua"
 description: I made a simple, easy-to-maintain way to do “algorave” musical live-coding from Neovim, without needing to depend on other people's plugins staying updated.
 fedi_url:
-og_image:
-og_image_width:
-og_image_height:
-og_image_alt:
+og_image: /media/blog/2026/03/tidal-ftplugin-hero.jpg
+og_image_width: 1200
+og_image_height: 630
+og_image_alt: Lua code in Neovim, showing Neovim keybindings for running Tidal Cycles code
 date: 2026-03-06T12:30:00-0500
 tags:
   - haskell
@@ -66,7 +66,7 @@ vim.keymap.set(
 	"n",
 	"<localleader>b",
 	"<cmd>10 split term://ghci -ghci-script=$TIDAL_BOOT_PATH/BootTidal.hs %<cr>:startinsert<cr>",
-	{ desc = "Boot Tidal server and open in terminal split", noremap = true, buffer = true }
+	{ desc = "Boot Tidal interpreter and open in terminal split", noremap = true, buffer = true }
 )
 ```
 

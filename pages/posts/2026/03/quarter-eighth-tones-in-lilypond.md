@@ -8,7 +8,12 @@ og_image_height:
 og_image_alt:
 date: 2026-03-07T12:00:58-0500
 tags:
-  - post
+  - composition
+  - lilypond
+  - music
+  # - post
+  - programming
+  - scheme
 post_series: lilypond
 draft: true
 ---
