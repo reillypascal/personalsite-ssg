@@ -28,7 +28,7 @@ Today, let's look at how I bypassed the need for plugins when writing Tidal Cycl
 
 The officially-recommended plugin [vim-tidal](https://github.com/tidalcycles/vim-tidal) hasn't been updated since 2020, and whenever I quit the Tidal interpreter in this plugin, I wasn't able to start it again without quitting and re-opening my terminal. [tidal.nvim](https://github.com/grddavies/tidal.nvim) was pretty nice and somewhat newer, but development doesn't seem to be particularly active, and my next experience made me question if I even needed that.
 
-I was playing with the [conjure](https://github.com/Olical/conjure) plugin, which provides interactive [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) support for many languages, including Scheme, which I've been using with Lilypond. I saw that it was pretty easy to set this up with the [`lilypond scheme-sandbox`](https://lilypond.org/doc/v2.24/Documentation/extending/scheme-sandbox) command, instead of the suggested MIT Scheme or GNU Guile REPLs — you can [see my Neovim configuration for this here](https://github.com/reillypascal/nvim/blob/d84f72ada230811b0879cba3e2e92b4e8c5f4ca4/lua/plugins/conjure.lua#L14-L15).
+I was playing with the [conjure](https://github.com/Olical/conjure) plugin, [^1] which provides interactive [REPL](https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop) support for many languages, including Scheme, which I've been using with Lilypond. I saw that it was pretty easy to set this up with the [`lilypond scheme-sandbox`](https://lilypond.org/doc/v2.24/Documentation/extending/scheme-sandbox) command, instead of the suggested MIT Scheme or GNU Guile REPLs — you can [see my Neovim configuration for this here](https://github.com/reillypascal/nvim/blob/d84f72ada230811b0879cba3e2e92b4e8c5f4ca4/lua/plugins/conjure.lua#L14-L15).
 
 This got me thinking: how hard could it be to set something like this up myself for Tidal Cycles? It turned out that I only needed a little bit of Lua! I always prefer small, simple scripts that I wrote and understand, since I know I can keep these maintained without relying on someone else to write a plugin (or having to dig through a plugin's worth of code myself in order to fork/maintain it).
 
@@ -66,13 +66,13 @@ vim.keymap.set(
 	"n",
 	"<localleader>b",
 	"<cmd>10 split term://ghci -ghci-script=$TIDAL_BOOT_PATH/BootTidal.hs %<cr>:startinsert<cr>",
-	{ desc = "[B]oot Tidal server and open in terminal split", noremap = true, buffer = true }
+	{ desc = "Boot Tidal server and open in terminal split", noremap = true, buffer = true }
 )
 ```
 
 Since this keymap is local to the buffer, we use the `<localleader>` key, which I have mapped to “,“. The command that this keymap runs enters command mode (`:`); creates a terminal split that's 10 characters high; runs GHCi with the Tidal boot file; and then switches to insert mode (Neovim's terminal defaults to normal mode).
 
-`$TIDAL_BOOT_PATH` here could be replaced with a hardcoded path to the Tidal boot file, but using an environment variable like this lets me use my configuration on multiple computers/OSes. You can set this variable with the following line in your .bashrc or .zshrc file. Note that this is under `~/.cabal/share/` (at least on my setup), but contains install-specific details, so you will need to locate the `BootTidal.hs` file for your installation.
+`$TIDAL_BOOT_PATH` here could be replaced with a hardcoded path to the Tidal boot file, but using an environment variable like this lets me use my configuration on multiple computers/OSes. You can set this variable with the following line in your .bashrc or .zshrc file. Note that this is under `~/.cabal/share/` (at least on my setup), but contains install-specific details, so you will need to locate the `BootTidal.hs` file for your installation. If you want or need, you can manually copy [the code for `BootTidal.hs`](https://tidalcycles.org/docs/configuration/boot-tidal/) into a file and use the directory where you store that file.
 
 ```sh
 export TIDAL_BOOT_PATH="$HOME/.cabal/share/aarch64-osx-ghc-9.12.2-ea3d/tidal-1.10.1"
@@ -133,3 +133,9 @@ vim.cmd("set ft=haskell")
 ```
 
 ## Postscript
+
+The tidal.nvim plugin is certainly still quite nice, and may be more your taste. The benefits I found from this project are 1\) more flexibility over the default terminal split size, 2\) direct access to the GHCi Tidal process in the resulting terminal, 3\) a better understanding of my tools in general, and 4\) the knowledge that all my setup depends on is the [base Tidal code](https://codeberg.org/uzu/tidal) staying maintained. In general, I find it fun and reassuring to make minimalist scripts to accomplish tasks, and this project was similarly satisfying.
+
+I plan to keep tinkering and writing about Tidal Cycles/Neovim, as well as Lilypond (which I mentioned at the beginning). I hope to see you then — until next time!
+
+[^1]: In addition to the Conjure plugin, [iron.nvim](https://github.com/Vigemus/iron.nvim) is another general-purpose REPL plugin you could try.

@@ -1,31 +1,34 @@
 #!/usr/bin/env bash
 
 while getopts ":blr" option; do
-    case "${option}" in
-        b)
-            interaction_title="Bookmarked"
-            interaction_tag="bookmark"
-            ;;
-        l)
-            interaction_title="Liked"
-            interaction_tag=like
-            ;;
-        r)
-            interaction_title="RSVP"
-            interaction_tag="rsvp"
-            ;;
-    esac
-    shift $((OPTIND-1))
+	case "${option}" in
+	b)
+		interaction_title="Bookmarked"
+		interaction_tag="bookmark"
+		;;
+	l)
+		interaction_title="Liked"
+		interaction_tag=like
+		;;
+	r)
+		interaction_title="RSVP"
+		interaction_tag="rsvp"
+		;;
+	*)
+		echo "Error: invalid flag ${option}"
+		;;
+	esac
+	shift $((OPTIND - 1))
 done
 
 if [ ${1+x} ]; then
-    target_url=$1
+	target_url=$1
 fi
 
 if [ ${target_url+x} ]; then
-    target_title=$(curl -s $target_url | grep -o "<title>[^<]*" | tail -c+8)
+	target_title=$(curl -s $target_url | grep -o "<title>[^<]*" | tail -c+8)
 else
-    target_title="Interaction"
+	target_title="Interaction"
 fi
 
 # tr replace first w/ second; -c means "complement", -d "delete", -s "squeeze repeats"
@@ -42,7 +45,7 @@ mkdir -p pages/interactions/$year/$month
 
 fullpath=pages/interactions/$year/$month/$slug.md
 
-cat >> $fullpath << EOF
+cat >>$fullpath <<EOF
 ---
 title: "${interaction_title}: ${target_title}"
 fedi_url: 

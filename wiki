@@ -17,6 +17,9 @@ while getopts ":hfnrt" option; do
 	t)
 		folder="tutorials"
 		;;
+	*)
+		echo "Error: invalid flag ${option}"
+		;;
 	esac
 	shift $((OPTIND - 1))
 done
