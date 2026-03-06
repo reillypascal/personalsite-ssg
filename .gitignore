@@ -1,19 +1,19 @@
 .DS_Store
-codebook.toml
-notes.md
-webmentions.json
-webmentions-sent.json
-_site/
-_webmentioncache/
-drafts/
-node_modules/
-Post\ Drafts/
-wip/
 .cache/
 .env
-# Local Netlify folder
 .netlify/
 .obsidian/
+.pdm-python
 .rumdl_cache/
 .venv/
 .zed/
+Post\ Drafts/
+_site/
+_webmentioncache/
+codebook.toml
+drafts/
+node_modules/
+notes.md
+webmentions-sent.json
+webmentions.json
+wip/

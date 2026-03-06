@@ -6,7 +6,7 @@ og_image: /media/blog/2026/03/tidal-ftplugin-hero.jpg
 og_image_width: 1200
 og_image_height: 630
 og_image_alt: Lua code in Neovim, showing Neovim keybindings for running Tidal Cycles code
-date: 2026-03-06T12:30:00-0500
+date: 2026-03-06T12:35:00-0500
 tags:
   - haskell
   - neovim
@@ -14,7 +14,6 @@ tags:
   - programming
   - tidal-cycles
 post_series:
-draft: true
 ---
 
 <link rel="stylesheet" type="text/css" href="/styles/code/prism-perf-custom.css" />
@@ -119,7 +118,7 @@ vim.keymap.set(
 )
 ```
 
-Finally, I add the following line to associate .tidal files with Haskell syntax. This works well, but note that the Haskell Language Server (HLS) may throw a fit on Tidal files. HLS is not needed for Tidal Cycles itself, but if you also want to write vanilla Haskell, be aware of this. I ended up using [this function](https://github.com/reillypascal/nvim/blob/d84f72ada230811b0879cba3e2e92b4e8c5f4ca4/lua/config/lsp.lua#L12-L16) and [this line](https://github.com/reillypascal/nvim/blob/d84f72ada230811b0879cba3e2e92b4e8c5f4ca4/lua/config/lsp.lua#L29) in my LSP configuration to prevent HLS from loading unless there is at least one Haskell project root marker in the folder. A bit of a hack, but it works for now.
+Finally, I add the following line to associate .tidal files with Haskell syntax. This works well, but note that the Haskell Language Server (HLS) may throw a fit on Tidal files — this has been an issue with some Vim/Neovim plugins, but weirdly not others. HLS is not needed for Tidal Cycles itself, but if you also want to write vanilla Haskell, be aware of this. I ended up using [this function](https://github.com/reillypascal/nvim/blob/d84f72ada230811b0879cba3e2e92b4e8c5f4ca4/lua/config/lsp.lua#L12-L16) and [this line](https://github.com/reillypascal/nvim/blob/d84f72ada230811b0879cba3e2e92b4e8c5f4ca4/lua/config/lsp.lua#L29) in my LSP configuration to prevent HLS from loading unless there is at least one Haskell project root marker in the folder. A bit of a hack, but it works for now.
 
 <span class="code-file">
 
