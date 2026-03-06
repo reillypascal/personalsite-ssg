@@ -6,7 +6,7 @@ og_image: /media/blog/2026/03/tidal-ftplugin-hero.jpg
 og_image_width: 1200
 og_image_height: 630
 og_image_alt: Lua code in Neovim, showing Neovim keybindings for running Tidal Cycles code
-date: 2026-03-06T12:35:00-0500
+date: 2026-03-06T12:30:00-0500
 tags:
   - haskell
   - neovim
