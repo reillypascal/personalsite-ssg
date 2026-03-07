@@ -2,6 +2,8 @@
 title: "Tidal Cycles/Neovim: No Plugins, 24 Lines of Lua"
 description: I made a simple, easy-to-maintain way to do “algorave” musical live-coding from Neovim, without needing to depend on other people's plugins staying updated.
 fedi_url:
+  - https://hachyderm.io/@reillypascal/116183454269059518
+  - https://bsky.app/profile/reillypascal.bsky.social/post/3mgfubx5gdc2h
 og_image: /media/blog/2026/03/tidal-ftplugin-hero.jpg
 og_image_width: 1200
 og_image_height: 630
