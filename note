@@ -8,7 +8,7 @@ else
 fi
 
 # tr replace first w/ second; -c means "complement", -d "delete", -s "squeeze repeats"
-slug=$(echo $name | tr '[:upper:]' '[:lower:]' | tr -cd '[:alnum:] ' | tr -s " " "-")
+slug=$(echo "$name" | tr '[:upper:]' '[:lower:]' | tr -cd '[:alnum:] ' | tr -s " " "-")
 
 isodate=$(date +"%Y-%m-%dT%H:%M:%S%z")
 year=$(date +"%Y")
@@ -17,11 +17,11 @@ month=$(date +"%m")
 location=$(curl -s ipinfo.io | jq -r '.city + ", " + .region')
 
 # -p: make intermediate directories and don't complain if the full path already exists
-mkdir -p pages/notes/$year/$month
+mkdir -p "pages/notes/$year/$month"
 
-fullpath=pages/notes/$year/$month/$slug.md
+fullpath="pages/notes/$year/$month/$slug.md"
 
-cat >>$fullpath <<EOF
+cat >>"$fullpath" <<EOF
 ---
 title: "$name"
 fedi_url: 

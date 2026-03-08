@@ -26,7 +26,7 @@ if [ ${1+x} ]; then
 fi
 
 if [ ${target_url+x} ]; then
-	target_title=$(curl -s $target_url | grep -o "<title>[^<]*" | tail -c+8)
+	target_title=$(curl -s "$target_url" | grep -o "<title>[^<]*" | tail -c+8)
 else
 	target_title="Interaction"
 fi
@@ -41,11 +41,11 @@ year=$(date +"%Y")
 month=$(date +"%m")
 
 # -p: make intermediate directories and don't complain if the full path already exists
-mkdir -p pages/interactions/$year/$month
+mkdir -p "pages/interactions/$year/$month"
 
-fullpath=pages/interactions/$year/$month/$slug.md
+fullpath="pages/interactions/$year/$month/$slug.md"
 
-cat >>$fullpath <<EOF
+cat >>"$fullpath" <<EOF
 ---
 title: "${interaction_title}: ${target_title}"
 fedi_url: 

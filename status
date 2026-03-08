@@ -6,9 +6,9 @@ location=$(curl -s ipinfo.io | jq -r '.city + ", " + .region')
 
 slug="${date}-status"
 
-fullpath=pages/now/$slug.md
+fullpath="pages/now/$slug.md"
 
-cat >> $fullpath << EOF
+cat >>"$fullpath" <<EOF
 ---
 date: $date
 location: $location
