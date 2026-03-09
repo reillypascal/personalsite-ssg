@@ -89,7 +89,7 @@ I do most of my coding/text editing in the Neovim text editor. Here are my [dotf
 
 I love tea (my favorite is Bigelow's Vanilla Chai) and I prefer it steeped for a precise length of time. However, I find alarms extremely irritating, with the worst part being that many of them keep going until you turn them off. This script lets me type e.g., `./timer.sh 4m` to get a timer that chimes once and then stops.
 
-This is inspired by [bashbunni's CLI pomodoro timer](https://gist.github.com/bashbunni/f6b04fc4703903a71ce9f70c58345106). Note that it requires [`timer`](https://github.com/caarlos0/timer), and is specific to macOS. You could try adapting [this Linux version](https://gist.github.com/bashbunni/3880e4194e3f800c4c494de286ebc1d7), although I was having some trouble getting it working.
+<!-- This is inspired by [bashbunni's CLI pomodoro timer](https://gist.github.com/bashbunni/f6b04fc4703903a71ce9f70c58345106). Note that it requires [`timer`](https://github.com/caarlos0/timer), and is specific to macOS. You could try adapting [this Linux version](https://gist.github.com/bashbunni/3880e4194e3f800c4c494de286ebc1d7), although I was having some trouble getting it working. -->
 
 <div class="code-file">timer.sh</div>
 
@@ -97,24 +97,31 @@ This is inspired by [bashbunni's CLI pomodoro timer](https://gist.github.com/bas
 #!/usr/bin/env bash
 
 if [ ${1+x} ]; then
-    time=$1
+    time="$1"
 else
     time="4m"
 fi
 
-timer $time && afplay /System/Library/Sounds/Glass.aiff
+if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+    # /usr/share/sounds/gnome/default/alerts/string.ogg may be available on GNOME
+    # may also look on freesound.org
+    # `play` command requires SoX
+    timer "$time" && play "/path/to/sound/file"
+elif [[ "$OSTYPE" == "darwin"* ]]; then
+    timer "$time" && afplay /System/Library/Sounds/Glass.aiff
+else
+    echo "Unknown OS: no ending sound will be played"
+    timer "$time"
+fi
 ```
 
 </article>
+
 <article>
 
-## Format Images for Website
+## Watch Lilypond Output and Open
 
-This line is what I use to apply EXIF rotation data to photos from my phone, resize them, and convert to .webp for use on my website. It uses [jhead](https://www.sentex.ca/~mwandel/jhead/), [imagemagick](https://imagemagick.org/index.php), and `zsh`.
-
-```sh
-jhead -autorot *.jpg && for file in ./**/*(.); magick $file -quality 65 -resize 35% ${file%.*}.webp
-```
+[This Python script](https://codeberg.org/reillypascal/forget/src/commit/22ff2db95082abb8f683e39e2d1e09d7fd322525/pipe.py) and [this Bash script](https://codeberg.org/reillypascal/forget/src/commit/22ff2db95082abb8f683e39e2d1e09d7fd322525/watch) allow me to watch the MIDI and PDF files generated from Lilypond and open them in Audacity and the default viewer, respectively every time they change.
 
 </article>
 
@@ -138,12 +145,37 @@ My [script](https://github.com/reillypascal/personalsite-ssg/blob/main/interacti
 
 <article>
 
-## Filter Webmentions
+## Send Webmentions
 
-This [Python script](https://github.com/reillypascal/personalsite-ssg/blob/main/webmentions.py) gets my webmentions, filters out all mentions received over Bridgy (which I use to pull in Mastodon/Bluesky interactions as webmentions), and writes the rest to a file `webmentions.json`. This is nice because non-Mastodon/Bluesky webmentions are much more interesting to me, but they're much more rare than social media interactions, and tend to get lost in the shuffle. I run this from my root folder to get the mentions and open the file in my editor.
+Send webmentions from your page to a URL it mentions.
 
 ```sh
-./webmentions.py && codium webmentions.json
+#!/usr/bin/env bash
+
+source_url="$1"
+target_url="$2"
+endpoint_url=$(curl -i -s "$target_url" | grep 'rel="webmention"' | grep -o -E 'https?://[^ ">]+' | sort | uniq)
+curl -i -d "source=$source_url&target=$target_url" "$endpoint_url"
+```
+
+</article>
+
+<article>
+
+## Filter Webmentions
+
+This [Python script](https://github.com/reillypascal/personalsite-ssg/blob/main/webmentions.py) gets my webmentions, filters out all mentions received over Bridgy (which I use to pull in Mastodon/Bluesky interactions as webmentions), and writes the rest to a file `webmentions.json`. This is nice because non-Mastodon/Bluesky webmentions are much more interesting to me, but they're much more rare than social media interactions, and tend to get lost in the shuffle. I run `./webmentions.py` from my root folder to get the mentions, after which they can be viewed by opening `webmentions.json` in an editor.
+
+</article>
+
+<article>
+
+## Format Images for Website
+
+This line is what I use to apply EXIF rotation data to photos from my phone, resize them, and convert to .webp for use on my website. It uses [jhead](https://www.sentex.ca/~mwandel/jhead/), [imagemagick](https://imagemagick.org/index.php), and `zsh`.
+
+```sh
+jhead -autorot *.jpg && for file in ./**/*(.); magick $file -quality 65 -resize 35% ${file%.*}.webp
 ```
 
 </article>
