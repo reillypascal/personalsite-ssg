@@ -5,9 +5,10 @@
 # Global configuration options
 [global]
 # List of rules to disable (uncomment and modify as needed)
+# MD001, heading increments; issue in /code
 # MD036, emphasis instead of heading: falsely flags *Eyes on the road* from story as heading
 # MD059, descriptive link text: may return to this issue, but not now
-disable = ["MD013", "MD025", "MD033", "MD036", "MD041", "MD059"]
+disable = ["MD001", "MD013", "MD025", "MD033", "MD036", "MD041", "MD059"]
 # List of rules to enable exclusively (if provided, only these rules will run)
 # enable = ["MD001", "MD003", "MD004"]
 extend-enable = ["MD076"]
