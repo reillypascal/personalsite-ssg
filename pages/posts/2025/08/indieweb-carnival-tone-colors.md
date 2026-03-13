@@ -51,6 +51,6 @@ Someone I admire who manages to pull together “cheesy” synth sounds with exp
 
 ## Wrapping Up
 
-Marisabel is hosting [this month's Indieweb carnival on the topic of colors](https://marisabel.nl/public/blog/IndieWeb_Carnival_August_2025_:_Colors), and this is my contribution. I had been looking forward to writing on this topic since I saw it on [the list of upcoming events](https://indieweb.org/IndieWeb_Carnival). I've been enjoying other people's entries, and thanks to Marisabel for hosting! I've particularly enjoyed this exercise of looking at my past work because it has given me some ideas for a current composition project — more info on that as I compose. Until next time!
+Marisabel is hosting [this month's IndieWeb carnival on the topic of colors](https://marisabel.nl/public/blog/IndieWeb_Carnival_August_2025_:_Colors), and this is my contribution. I had been looking forward to writing on this topic since I saw it on [the list of upcoming events](https://indieweb.org/IndieWeb_Carnival). I've been enjoying other people's entries, and thanks to Marisabel for hosting! I've particularly enjoyed this exercise of looking at my past work because it has given me some ideas for a current composition project — more info on that as I compose. Until next time!
 
 [^1]: Schoenberg, Arnold. *Theory of Harmony*. Translated by Roy E. Carter. University of California Press, 1978.

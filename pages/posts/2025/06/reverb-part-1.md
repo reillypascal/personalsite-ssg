@@ -116,7 +116,7 @@ In _“Colorless” Artificial Reverberation_, Schroeder and Logan propose a cha
 
 On this algorithm, [Sean Costello comments that](https://valhalladsp.com/2021/09/22/getting-started-with-reverb-design-part-2-the-foundations/)
 
-> The resulting reverberator structure is a bit hard to tune, as both the reverb attack and decay are controlled by the feedforward/feedback allpass coefficient, and is less “general purpose” than the structure discussed in Schoeder’s next paper.
+> The resulting reverberator structure is a bit hard to tune, as both the reverb attack and decay are controlled by the feedforward/feedback allpass coefficient, and is less “general purpose” than the structure discussed in Schroeder’s next paper.
 
 As Costello then mentions, some reverbs such as the [Eventide Blackhole](https://store.eventideaudio.com/products/blackhole) make artistic use of the weirdness of this structure. However, it would be helpful to have a more general-purpose algorithm.
 
