@@ -38,7 +38,7 @@ I like it a lot! Now let's talk about the code.
 
 ## Recap
 
-I previously described how an MP3 chops an audio file into short “frames” and analyzes the frequencies present in those frames. The file is structured with a “header” consiting of 8 [hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal) digits, some further information about the file, and then the list of frames, each prefixed by its own header.
+I previously described how an MP3 chops an audio file into short “frames” and analyzes the frequencies present in those frames. The file is structured with a “header” consisting of 8 [hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal) digits, some further information about the file, and then the list of frames, each prefixed by its own header.
 
 When glitching the file, the important thing is to leave the headers as well as the data before the list of frames alone, and to only change the data in the frames. My Python code loads the file as binary data, converts it to a hexadecimal string, finds the headers, and then makes random changes to data within the frames, using the headers as a reference for where the frames are located. Let's walk through how the code does this.
 
