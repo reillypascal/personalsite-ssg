@@ -57,7 +57,7 @@ Now that we know what these values mean, let's take a look at the hex values in 
 | A   | 1010   | This byte \[ed: should say “nibble”] (all four bits) tell us the bitrate; in this case 1010 is a bitrate of 160 kbps.                                                                                                                                                               |
 | 0   | 0000   | This byte tells us the sample rate, in this case 0000 is a sample rate of 44,100 Hz. Had it been 0100, this would be a sample rate of 48,000 Hz, or 1000 would be a sample rate of 32,000 Hz.                                                                                       |
 | 4   | 0100   | The first two bits contain channel information; in this case 01 means Join Stereo. When set to Joint Stereo (like this example), the latter two bits tell us the mode of joint stereo.                                                                                              |
-| 0   | 0000   | The first bit tells us if the MP3 file has a copyright (0 means it does not), the next bit tells us if it’s a copy of the original file or not (0 means it is). The last two bits tell us if there are empha­sized frequencies (00 means there are not).                            |
+| 0   | 0000   | The first bit tells us if the MP3 file has a copyright (0 means it does not), the next bit tells us if it’s a copy of the original file or not (0 means it is). The last two bits tell us if there are emphasized frequencies (00 means there are not).                            |
 
 Most MP3 headers will begin with FFFB, as shown here. Briz gives a long list of alternative (and rarer) headers, but in short, all begin with either FFF or FFE. The important things to do when hacking an MP3 are:
 

@@ -18,7 +18,7 @@ I particularly like the effect of taking the quieter of the two. It's great for 
 
 ## Sound 1: tonal/sustained
 
-For today's sound, my sustained, tonal source was made with the open-source [Surge XT](https://surge-synthesizer.github.io) synthesizer. Surge XT contains an oscillator titled “Twist” that appears to be an implementation of Mutable Instruments' “[Plaits](https://pichenettes.github.io/mutable-instruments-documentation/modules/plaits/)” Eurorack module. I'm using one of the organ-like wavetables to create a sound that rapidly morphs between low and high harmonics. Additionally, Surge XT supports microtuning, and I'm using the 131313... mode of [20-edo](https://en.xen.wiki/w/20edo).
+For today's sound, my sustained, tonal source was made with the open-source [Surge XT](https://surge-synthesizer.github.io) synthesizer. Surge XT contains an oscillator titled “Twist” that appears to be an implementation of Mutable Instruments' “[Plaits](https://pichenettes.github.io/mutable-instruments-documentation/modules/plaits/)” Eurorack module. I'm using one of the organ-like wavetables to create a sound that rapidly morphs between low and high harmonics. Additionally, Surge XT supports microtuning, and I'm using the 131313... mode of [20-EDO](https://en.xen.wiki/w/20edo).
 
 <audio controls>
     <source src="/media/blog/2024/02/plaits_organ_rand_sweeps_2.mp3" type="audio/mp3">
