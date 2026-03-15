@@ -28,7 +28,7 @@ This page is a collection of reporting, research, and essays critical of large l
 
 - Ethan Marcotte, “[Against the protection of stocking frames.](https://ethanmarcotte.com/wrote/against-stocking-frames/)”
 
-> This is where I think approaching “AI” as a failure becomes useful, even vital. it underscores that the technology’s real value isn’t improving productivity, or even in improving products. Rather, it’s a social mechanism employed to ensure compliance in the workplace, and to weaken worker power. Stories like the one at Zapier are becoming more common, where executive fiat is being used to force employees to use a technology that could [deskill](https://ethanmarcotte.com/wrote/tooled/) them, and make them more replaceable.
+> This is where I think approaching “AI” as a failure becomes useful, even vital. It underscores that the technology’s real value isn’t improving productivity, or even in improving products. Rather, it’s a social mechanism employed to ensure compliance in the workplace, and to weaken worker power. Stories like the one at Zapier are becoming more common, where executive fiat is being used to force employees to use a technology that could [deskill](https://ethanmarcotte.com/wrote/tooled/) them, and make them more replaceable.
 
 - Aaron Benanav, “[Is the AI Bubble About to Burst?](https://www.versobooks.com/blogs/news/is-the-ai-bubble-about-to-burst)”
 
@@ -188,7 +188,7 @@ Cognitive scientist and AI researcher Gary Marcus [notes the following about the
 
 > But instead of appropriating performances of stereotypical white femininity and non-whitneness, today Artificial Intelligence grants people access to creativity in a legibly masculine way centered not so much in self-mastery, but the mastery of others.
 >
-> Today, humanistic labor like writing, drawing, and communication has been throughly feminized, both by its association with women and by its demonetization. Prompting AI to write, draw, or communicate allows people (men) to do those things in ways that position them not as doing women’s work, but as masters of a subordinate.
+> Today, humanistic labor like writing, drawing, and communication has been thoroughly feminized, both by its association with women and by its demonetization. Prompting AI to write, draw, or communicate allows people (men) to do those things in ways that position them not as doing women’s work, but as masters of a subordinate.
 
 - Mandy Brown, “[Toolmen](https://aworkinglibrary.com/writing/toolmen)”
 
