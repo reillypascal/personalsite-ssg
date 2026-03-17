@@ -13,7 +13,6 @@ tags:
   - note
   - hiking
   - state-parks
-  - new-york
   - photoblog
 ---
 

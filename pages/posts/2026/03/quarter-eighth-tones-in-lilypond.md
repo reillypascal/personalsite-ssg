@@ -18,8 +18,6 @@ post_series: lilypond
 draft: true
 ---
 
-<!-- <link rel="stylesheet" type="text/css" href="/styles/notes-photos.css"> -->
-
 <link rel="stylesheet" type="text/css" href="/styles/code/prism-perf-custom.css" />
 <link rel="stylesheet" type="text/css" href="/styles/code/code-tweaks.css" />
 
