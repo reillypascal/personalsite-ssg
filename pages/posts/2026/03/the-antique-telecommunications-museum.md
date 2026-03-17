@@ -2,6 +2,8 @@
 title: "The Antique Telecommunications Museum"
 description: Remembering my partner taking me to see a museum on one of my favorite topics
 fedi_url:
+  - https://hachyderm.io/@reillypascal/116245405239918561
+  - https://bsky.app/profile/reillypascal.bsky.social/post/3mhbehsvkxc22
 og_image: /media/blog/2026/03/awa-western-union-og.jpg
 og_image_width: 1200
 og_image_height: 630
