@@ -36,17 +36,13 @@ Lo-fi plugin with options of various telecommunications codecs including Mu-Law 
 
 </article>
 
-<h2 id="maxmsp" class="sectionHeader">Max/MSP Tools and Externals</h2>
+<h2 id="devtools" class="sectionHeader">Dev Tools</h2>
 
 <article>
 
-### [rs.max](https://github.com/reillypascal/rs.max/)
+### [algorave.nvim](https://codeberg.org/reillypascal/algorave.nvim)
 
-\[rs.file2sig~\]: import any file as raw binary data and play this data back as a control signal for synthesizing [PSK](https://en.wikipedia.org/wiki/Phase-shift_keying) (phase-shift keying)/ASK/FSK/etc. telecommunications signals. See [Nathan Ho's post](https://nathan.ho.name/posts/dm-synthesis/) on using digital modulation modes for synthesis to hear the kinds of sounds this produces.
-
-### [rs.reverb](https://codeberg.org/reillypascal/rs.reverb)
-
-A collection of Max/MSP algorithmic reverb abstractions, based on classic DSP papers and software.
+A Neovim REPL plugin, primarily aimed at musical live-coding, or “algorave” performances, but flexible enough to cover other use cases.
 
 </article>
 
@@ -69,6 +65,20 @@ This is the same process described in [this post](/posts/2025/01/databending-par
 Python tool for glitching MP3s while leaving them playable. Includes many options to shape glitching amount, character, and timbre, and a shell script to automate converting batches of WAV files to MP3 with FFmpeg before glitching.
 
 The mechanics behind this are described in [this post](/posts/2025/02/databending-part-2/), and I discuss using Python to do the glitching in [this post](/posts/2025/04/databending-part-3/).
+
+</article>
+
+<h2 id="maxmsp" class="sectionHeader">Max/MSP Tools and Externals</h2>
+
+<article>
+
+### [rs.max](https://github.com/reillypascal/rs.max/)
+
+\[rs.file2sig~\]: import any file as raw binary data and play this data back as a control signal for synthesizing [PSK](https://en.wikipedia.org/wiki/Phase-shift_keying) (phase-shift keying)/ASK/FSK/etc. telecommunications signals. See [Nathan Ho's post](https://nathan.ho.name/posts/dm-synthesis/) on using digital modulation modes for synthesis to hear the kinds of sounds this produces.
+
+### [rs.reverb](https://codeberg.org/reillypascal/rs.reverb)
+
+A collection of Max/MSP algorithmic reverb abstractions, based on classic DSP papers and software.
 
 </article>
 
