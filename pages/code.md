@@ -92,6 +92,24 @@ A [grimoire](https://en.wikipedia.org/wiki/Grimoire) is a book of spells or inca
 
 I do most of my coding/text editing in the Neovim text editor. Here are my [dotfiles/configuration files](https://github.com/reillypascal/nvim) for it.
 
+#### Editing Lilypond
+
+Neovim's remote plugins API makes it easy to use the [`python-ly`](https://python-ly.readthedocs.io/en/latest/) library to edit Lilypond files. In [`rplugin/python3/`](https://github.com/reillypascal/nvim/tree/main/rplugin/python3) I have `:Transp` and `:Rhythm` commands that easily transpose and manipulate rhythm in place in a Lilypond file.
+
+#### Updating Treesitter
+
+With the `nvim-treesitter` plugin being archived as of April 3, 2026, I wanted a simple DIY way to manage my Tree-Sitter parsers/queries. I have [this Python script](https://github.com/reillypascal/nvim/blob/main/tsup.py), which downloads and builds the parsers, and moves them to `~/.local/share/nvim/site/`, which is the same location `nvim-treesitter` did. That and the Lua code below to start Tree-Sitter running seems to be plenty for my needs.
+
+```lua
+vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
+	pattern = { "*" },
+	callback = function()
+		pcall(vim.treesitter.start)
+	end,
+	desc = "Auto-enable treesitter",
+})
+```
+
 </article>
 
 <article>
