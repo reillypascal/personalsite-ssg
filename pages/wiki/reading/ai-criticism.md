@@ -74,6 +74,12 @@ In other words, as Merchant puts it
 
 ## Weaknesses of AI as a Tool
 
+- Tim Fernholz, “[‘Tokenmaxxing’ is making developers less productive than they think](https://techcrunch.com/2026/04/17/tokenmaxxing-is-making-developers-less-productive-than-they-think/)”
+
+> [GitClear](https://www.gitclear.com/)… [published a report](https://gitclear-public.s3.us-west-2.amazonaws.com/Developer_Cohort_Analysis_AI_Coding_Output.pdf) in January \[2026\] that found AI tools increased productivity, but also that its data showed “regular AI users averaged 9.4x higher code churn than their non-AI counterparts” — more than double the productivity gains the tools provided.
+>
+> Faros AI, an engineering analytics platform, drew on two years of customer data for its [March 2026 report](https://www.faros.ai/research/ai-acceleration-whiplash). The finding: code churn — lines of code deleted versus lines added — had increased 861% under high AI adoption.
+
 - Judy Hanwen Shen, Alex Tamkin, “[How AI Impacts Skill Formation](https://arxiv.org/abs/2601.20245)”
 
 > We conduct randomized experiments to study how developers gained mastery of a new asynchronous programming library with and without the assistance of AI. We find that AI use impairs conceptual understanding, code reading, and debugging abilities, without delivering significant efficiency gains on average.
