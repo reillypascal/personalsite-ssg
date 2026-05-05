@@ -49,15 +49,16 @@ tags:
 - apparix (terminal bookmarks)
 - fzf (terminal fuzzy finder)
 - Neovim (my [dotfiles](https://github.com/reillypascal/nvim))
+    - [algorave.nvim](https://codeberg.org/reillypascal/algorave.nvim) (Neovim REPL plugin I wrote — useful for Tidal Cycles, among other things)
     - nvim-lilypond-suite (Neovim tools for Lilypond)
     - scnvim (Neovim frontend for SuperCollider)
-    - tidal.nvim (Neovim plugin for Tidal Cycles)
 - pluginval (validate and debug audio plugins)
 - Starship (command prompt)
 - superfile (terminal file browser/manager)
 - WezTerm (terminal emulator)
 - zoxide (navigate terminal like cd, but with fuzzy matching/finding)
 
+<!-- - tidal.nvim (Neovim plugin for Tidal Cycles) -->
 <!-- - chezmoi (dotfile manager) -->
 <!-- - brew-explorer (TUI for Homebrew) -->
 <!-- - Octave (FOSS equivalent to MATLAB) -->
@@ -67,9 +68,8 @@ tags:
 
 - FFUpdater (app to keep vanilla Firefox for Android updated without Play Store)
 - Firefox (web browser)
-- Mailspring (desktop email client)
 - Signal (encrypted messenger)
-- Thunderbird (Android email client)
+- Thunderbird (desktop and Android email client)
 
 ### Media
 
@@ -120,7 +120,7 @@ tags:
 - Arch Linux
 - Ubuntu Server (for [my home server](/wiki/notebook/tech-projects/tv-media-server/))
 - [GrapheneOS](https://grapheneos.org/) (mobile)
-    <!-- - GrapheneOS is an alternative, privacy/security-focused version of Android. The [web-based installation option](https://grapheneos.org/install/web) is extremely easy, and it's also easy to revert to stock Android. The sandboxed Google Play services make it easy to run pretty much any app you can use on stock (except NFC payment, unfortunately), or you can leave them off and have a completely Google-free experience. -->
+  <!-- - GrapheneOS is an alternative, privacy/security-focused version of Android. The [web-based installation option](https://grapheneos.org/install/web) is extremely easy, and it's also easy to revert to stock Android. The sandboxed Google Play services make it easy to run pretty much any app you can use on stock (except NFC payment, unfortunately), or you can leave them off and have a completely Google-free experience. -->
 
 ## Hardware
 
