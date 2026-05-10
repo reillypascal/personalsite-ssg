@@ -80,6 +80,12 @@ In other words, as Merchant puts it
 >
 > Faros AI, an engineering analytics platform, drew on two years of customer data for its [March 2026 report](https://www.faros.ai/research/ai-acceleration-whiplash). The finding: code churn — lines of code deleted versus lines added — had increased 861% under high AI adoption.
 
+- Adam Kucharski, “[Real signals or artificial stereotypes? Adventures with a cultural Copilot](https://kucharski.substack.com/p/real-signals-or-artificial-stereotypes)”
+
+> First, I’d created 2000 free-text responses and labelled them ‘UK’. Then I copied and pasted the exact same 2000 responses but labelled these ‘US’. Finally, I combined them to create a dataset of 4000 total responses, and jumbled them up.
+>
+> Despite the responses being identical for the UK and US, Copilot produced a rich, detailed summary of how US and UK respondents differed.
+
 - Judy Hanwen Shen, Alex Tamkin, “[How AI Impacts Skill Formation](https://arxiv.org/abs/2601.20245)”
 
 > We conduct randomized experiments to study how developers gained mastery of a new asynchronous programming library with and without the assistance of AI. We find that AI use impairs conceptual understanding, code reading, and debugging abilities, without delivering significant efficiency gains on average.
@@ -108,15 +114,15 @@ In other words, as Merchant puts it
 
 - Hao-Ping (Hank) Lee et al., “[The Impact of Generative AI on Critical Thinking: Self-Reported Reductions in Cognitive Effort and Confidence Effects From a Survey of Knowledge Workers](https://www.microsoft.com/en-us/research/wp-content/uploads/2025/01/lee_2025_ai_critical_thinking_survey.pdf)”
 
-- Mike Judge, “[Where's the Shovelware? Why AI Coding Claims Don't Add Up](https://mikelovesrobots.substack.com/p/wheres-the-shovelware-why-ai-coding)“
+<!-- - Mike Judge, “[Where's the Shovelware? Why AI Coding Claims Don't Add Up](https://mikelovesrobots.substack.com/p/wheres-the-shovelware-why-ai-coding)“ -->
+<!---->
+<!-- > Consider this: with all you know about AI-assisted coding and its wide adoption, if I showed you charts and graphs of new software releases across the world, what shape of that graph would you expect? Surely you’d be seeing an exponential growth up-and-to-the-right as adoption took hold and people started producing more? -->
+<!-- > -->
+<!-- > Now, I’ve spent a lot of money and weeks putting the data for this article together, processing tens of terabytes of data in some cases. So I hope you appreciate how utterly uninspiring and flat these charts are across every major sector of software development. -->
 
-> Consider this: with all you know about AI-assisted coding and its wide adoption, if I showed you charts and graphs of new software releases across the world, what shape of that graph would you expect? Surely you’d be seeing an exponential growth up-and-to-the-right as adoption took hold and people started producing more?
->
-> Now, I’ve spent a lot of money and weeks putting the data for this article together, processing tens of terabytes of data in some cases. So I hope you appreciate how utterly uninspiring and flat these charts are across every major sector of software development.
+<!-- - William Harding, Matthew Kloster, “[Coding on Copilot: 2023 Data Suggests Downward Pressure on Code Quality](https://www.gitclear.com/coding_on_copilot_data_shows_ais_downward_pressure_on_code_quality)” -->
 
-- William Harding, Matthew Kloster, “[Coding on Copilot: 2023 Data Suggests Downward Pressure on Code Quality](https://www.gitclear.com/coding_on_copilot_data_shows_ais_downward_pressure_on_code_quality)”
-
-> We find disconcerting trends for maintainability. Code churn -- the percentage of lines that are reverted or updated less than two weeks after being authored -- is projected to double in 2024 compared to its 2021, pre-AI baseline. We further find that the percentage of “added code” and “copy/pasted code” is increasing in proportion to “updated,” “deleted,” and “moved” code. In this regard, code generated during 2023 more resembles an itinerant contributor, prone to violate the [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)-ness of the repos visited.
+<!-- > We find disconcerting trends for maintainability. Code churn -- the percentage of lines that are reverted or updated less than two weeks after being authored -- is projected to double in 2024 compared to its 2021, pre-AI baseline. We further find that the percentage of “added code” and “copy/pasted code” is increasing in proportion to “updated,” “deleted,” and “moved” code. In this regard, code generated during 2023 more resembles an itinerant contributor, prone to violate the [DRY](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself)-ness of the repos visited. -->
 
 - Chengshuai Zhao et al., “[Is Chain-of-Thought Reasoning of LLMs a Mirage? A Data Distribution Lens](https://arxiv.org/pdf/2508.01191)”
 
