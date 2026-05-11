@@ -74,6 +74,10 @@ In other words, as Merchant puts it
 
 ## Weaknesses of AI as a Tool
 
+- Mohammad Asadi et al., “[Mirage: The Illusion of Visual Understanding](https://arxiv.org/pdf/2603.21687)”
+
+> We report three findings that challenge prevailing assumptions about how \[multimodal AI\] systems process and integrate visual information. First, Frontier models readily generate detailed image descriptions and elaborate reasoning traces, including pathology-biased clinical findings, for images never provided; we term this phenomenon mirage reasoning. Second, without any image input, models also attain strikingly high scores across general and medical multimodal benchmarks, bringing into question their utility and design. In the most extreme case, our model achieved the top rank on a standard chest X-ray question-answering benchmark without access to any images. Third, when models were explicitly instructed to guess answers without image access, rather than being implicitly prompted to assume images were present, performance declined markedly.
+
 - Tim Fernholz, “[‘Tokenmaxxing’ is making developers less productive than they think](https://techcrunch.com/2026/04/17/tokenmaxxing-is-making-developers-less-productive-than-they-think/)”
 
 > [GitClear](https://www.gitclear.com/)… [published a report](https://gitclear-public.s3.us-west-2.amazonaws.com/Developer_Cohort_Analysis_AI_Coding_Output.pdf) in January \[2026\] that found AI tools increased productivity, but also that its data showed “regular AI users averaged 9.4x higher code churn than their non-AI counterparts” — more than double the productivity gains the tools provided.
