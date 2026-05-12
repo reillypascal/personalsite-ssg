@@ -13,11 +13,13 @@ tags:
   - bash
   - composition
   - lilypond
+  - midi
   - music
+  - neovim
   - post
   - programming
   - python
-post_series:
+post_series: lilypond
 ---
 
 <link rel="stylesheet" type="text/css" href="/styles/code/prism-perf-custom.css" />
