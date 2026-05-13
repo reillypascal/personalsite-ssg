@@ -2,6 +2,8 @@
 title: "Neovim/Lilypond: MIDI Files in the Terminal and More"
 description: More useful tricks for composing with Lilypond in Neovim, including playing MIDI files into Max/MSP using the terminal
 fedi_url:
+  - https://hachyderm.io/@reillypascal/116568110499925318
+  - https://bsky.app/profile/reillypascal.bsky.social/post/3mlqolgpe2c2q
 og_image: /media/blog/2026/05/nvim-ly-og-120526.jpg
 og_image_width: 1200
 og_image_height: 630
