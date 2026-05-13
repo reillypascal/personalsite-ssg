@@ -43,4 +43,9 @@ Reilly is currently a lecturer in music technology, film and game scoring, and m
 
 </article>
 
-<h1><a href="/documents/spitzfaden-CV-2024.pdf">CV</a></h1>
+## Documents
+
+- [CV](/documents/spitzfaden-CV-2024.pdf)
+- Ph.D Dissertation: [_“Misusing” Audio Gear as Instruments_](http://hdl.handle.net/1802/36908)
+
+> This dissertation examines three compositions that “misuse” audio equipment as instruments: Kelley Sheehan's ̦“Talk Circus,” Simon Steen-Andersen's “On and Off and To and Fro,” and Núria Nuñez Hierro's “Treffpunkt.” These pieces use no-input mixers, megaphones, contact microphones, turntables, and other audio equipment as primary generators of sound. I analyze these pieces in the context of Cathy van Eck's work on microphones and loudspeakers as musical instruments, Graham Harman's theory of “Object-Oriented Ontology” (OOO), James J. Gibson's concept of “affordances,” and Leah Lievrouw's application of affordances to communications and media studies. I discuss ways in which the affordances of the devices shape the form and content of the music. I analyze metaphorical relations between the instruments, using Harman's ideas of metaphor in OOO, and look at how metaphor may compel listener engagement with the physical nature of the objects. I address concerns a composer might have when working with these devices and conclude with how my personal compositional practice relates to these composers' work.
