@@ -10,9 +10,9 @@ date: git Last Modified
 
 <article>
 
-This page is for periodic updates about my current activities, projects, interests, and thoughts
+This page is for periodic updates about my current activities, projects, interests, and thoughts.
 
-It was last updated {{ page.date | date: "%B %d, %Y" }}
+It was last updated {{ page.date | date: "%B %d, %Y" }}.
 
 </article>
 

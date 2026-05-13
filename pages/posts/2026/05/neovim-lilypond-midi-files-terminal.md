@@ -6,7 +6,7 @@ og_image: /media/blog/2026/05/nvim-ly-og-120526.jpg
 og_image_width: 1200
 og_image_height: 630
 og_image_alt: A Neovim window on the left with Lilypond code, and a PDF of a trio for oboe, clarinet, and MIDI keyboard on the right
-date: 2026-05-12T12:30:00-0400
+date: 2026-05-13T12:00:00-0400
 tags:
   - composition
   - lilypond
@@ -16,7 +16,6 @@ tags:
   - post
   - programming
 post_series: lilypond
-draft: true
 ---
 
 <link rel="stylesheet" type="text/css" href="/styles/code/prism-perf-custom.css" />
@@ -103,4 +102,4 @@ vim.bo.commentstring = "% %s"
 
 ## More Features
 
-I'm going to do a writeup soon of some further Lilypond editing tools. Neovim has a [remote plugin](https://neovim.io/doc/user/remote_plugin/) API that works with other languages than Lua, and I've used it to make some [Python commands](https://github.com/reillypascal/nvim/tree/main/rplugin/python3) for transposing notes and manipulating rhythms using the [python-ly](https://python-ly.readthedocs.io/en/latest/) package. This package is based on the internals of the [Frescobaldi Lilypond editor](https://frescobaldi.org/), and provides a long list of useful tools. I'll write about how I did that soon, and I hope to see you then!
+I'm going to do a writeup soon of some further Lilypond editing tools. Neovim has a [remote plugin](https://neovim.io/doc/user/remote_plugin/) API that works with other languages than Lua, and I've used it to make some [Python commands](https://github.com/reillypascal/nvim/tree/main/rplugin/python3) for transposing notes and manipulating rhythms using the [python-ly](https://python-ly.readthedocs.io/en/latest/) package. This package is based on the internals of the [Frescobaldi Lilypond editor](https://frescobaldi.org/), and provides a long list of useful tools. I'll write about how I did that soon, and I hope to see you then! &#x220e;
