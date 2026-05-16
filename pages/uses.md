@@ -48,7 +48,7 @@ tags:
 
 - apparix (terminal bookmarks)
 - fzf (terminal fuzzy finder)
-- Neovim (my [dotfiles](https://github.com/reillypascal/nvim))
+- Neovim (my [dotfiles](https://codeberg.org/reillypascal/nvim))
     - [algorave.nvim](https://codeberg.org/reillypascal/algorave.nvim) (Neovim REPL plugin I wrote — useful for Tidal Cycles, among other things)
     - nvim-lilypond-suite (Neovim tools for Lilypond)
     - scnvim (Neovim frontend for SuperCollider)
