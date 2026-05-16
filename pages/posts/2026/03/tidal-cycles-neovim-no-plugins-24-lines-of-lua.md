@@ -41,7 +41,7 @@ First, we want Neovim to recognize “.tidal” as a file type. We can add a `ti
 
 <span class="code-file">
 
-[ftdetect/tidal.lua](https://github.com/reillypascal/nvim/blob/main/ftdetect/tidal.lua)
+[ftdetect/tidal.lua](https://codeberg.org/reillypascal/nvim/src/branch/main/ftdetect/tidal.lua)
 
 </span>
 
@@ -57,7 +57,7 @@ Next, as mentioned previously, Tidal Cycles uses Haskell's GHCi. All we need to 
 
 <span class="code-file">
 
-[ftplugin/tidal.lua](https://github.com/reillypascal/nvim/blob/main/ftplugin/tidal.lua)
+[ftplugin/tidal.lua](https://codeberg.org/reillypascal/nvim/src/branch/main/ftplugin/tidal.lua)
 
 </span>
 
@@ -99,7 +99,7 @@ In order for GCHi/Tidal to accept a block with line breaks, the block needs to b
 
 <span class="code-file">
 
-[ftplugin/tidal.lua](https://github.com/reillypascal/nvim/blob/main/ftplugin/tidal.lua)
+[ftplugin/tidal.lua](https://codeberg.org/reillypascal/nvim/src/branch/main/ftplugin/tidal.lua)
 
 </span>
 
@@ -124,7 +124,7 @@ Finally, I add the following line to associate .tidal files with Haskell syntax.
 
 <span class="code-file">
 
-[ftplugin/tidal.lua](https://github.com/reillypascal/nvim/blob/main/ftplugin/tidal.lua)
+[ftplugin/tidal.lua](https://codeberg.org/reillypascal/nvim/src/branch/main/ftplugin/tidal.lua)
 
 </span>
 
