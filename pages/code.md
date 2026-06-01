@@ -68,6 +68,14 @@ The mechanics behind this are described in [this post](/posts/2025/02/databendin
 
 </article>
 
+<article>
+
+### [notegraph](https://codeberg.org/reillypascal/notegraph/)
+
+Python CLI utility to generate and manipulate graphs of links in a PKM/Obsidian-style notebook.
+
+</article>
+
 <h2 id="maxmsp" class="sectionHeader">Max/MSP Tools and Externals</h2>
 
 <article>
