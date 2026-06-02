@@ -9,7 +9,7 @@ description: My policy on the use of AI on this site, and links to a library of 
 
 I do not use large language models (LLMs) or any similar form of “generative AI” in any capacity in any of the writing, music, code, or images on this website.
 
-I type my blog posts by hand in Neovim, using the built-in spell checker to catch typos. Code is similarly written in Neovim using [this list](https://codeberg.org/reillypascal/nvim/src/branch/main/lsp) of language servers to catch errors, and [this collection](https://codeberg.org/reillypascal/nvim/blob/main/lua/plugins/conform.lua#L35) of formatting tools to achieve consistent use of line breaks, indentation, etc. — both categories use traditional code parsing, rather than LLMs.
+I type my blog posts by hand in Neovim, using the built-in spell checker to catch typos. Code is similarly written in Neovim using [this list](https://codeberg.org/reillypascal/nvim/src/branch/main/lsp) of language servers to catch errors, and [this collection](https://codeberg.org/reillypascal/nvim/src/branch/main/lua/plugins/conform.lua#L35) of formatting tools to achieve consistent use of line breaks, indentation, etc. — both categories use traditional code parsing, rather than LLMs.
 
 {%- comment %} [`codebook` spell-checker](https://github.com/blopker/codebook) {%- endcomment %}
 
