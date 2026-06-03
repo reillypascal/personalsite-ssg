@@ -60,7 +60,7 @@ This is the same process described in [this post](/posts/2025/01/databending-par
 
 <article>
 
-### [mp3glitch](https://github.com/reillypascal/mp3glitch)
+### [mp3glitch](https://codeberg.org/reillypascal/mp3glitch)
 
 Python CLI tool for glitching MP3s while leaving them playable. Includes many options to shape glitching amount, character, and timbre.
 

@@ -44,7 +44,7 @@ When glitching the file, the important thing is to leave the headers as well as 
 
 ## Code Walkthrough
 
-The full code is available online [here](https://github.com/reillypascal/mp3glitch) under the [MIT license](https://en.wikipedia.org/wiki/MIT_License)—please feel free to use and adapt it!
+The full code is available online [here](https://codeberg.org/reillypascal/mp3glitch) under the [MIT license](https://en.wikipedia.org/wiki/MIT_License)—please feel free to use and adapt it!
 
 To use the code, you can run this line from the code folder: `python3 mp3glitch.py <input_file_name> <output_file_name>`. Using the included MP3, you might run `python3 mp3glitch.py beat_1_bip_2_F.mp3 output.mp3`. The first argument, `<input_file_name>` is assigned to `args.input` below, and the `'rb'` argument to `open()` means “read as binary data.” The [`.hex()` method](https://docs.python.org/3/library/functions.html#hex) then converts that binary data to a hexadecimal string.
 
