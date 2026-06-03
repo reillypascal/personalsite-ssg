@@ -52,7 +52,7 @@ A Neovim REPL plugin, primarily aimed at musical live-coding, or “algorave” 
 
 ### [data2audio](https://github.com/reillypascal/data2audio)
 
-Rust tool to import a folder of files, convert to audio, and normalize/filter out sub-audible frequencies. Processes files in parallel (using `rayon`), so it's extremely fast even with large batches of files.</p>
+Rust CLI tool to import a folder of files, convert to audio, and normalize/filter out sub-audible frequencies. Processes files in parallel (using `rayon`), so it's extremely fast even with large batches of files.</p>
 
 This is the same process described in [this post](/posts/2025/01/databending-part-1/), but automated to be much less time-consuming.
 
@@ -62,7 +62,7 @@ This is the same process described in [this post](/posts/2025/01/databending-par
 
 ### [mp3glitch](https://github.com/reillypascal/mp3glitch)
 
-Python tool for glitching MP3s while leaving them playable. Includes many options to shape glitching amount, character, and timbre, and a shell script to automate converting batches of WAV files to MP3 with FFmpeg before glitching.
+Python CLI tool for glitching MP3s while leaving them playable. Includes many options to shape glitching amount, character, and timbre.
 
 The mechanics behind this are described in [this post](/posts/2025/02/databending-part-2/), and I discuss using Python to do the glitching in [this post](/posts/2025/04/databending-part-3/).
 
