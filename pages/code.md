@@ -62,7 +62,7 @@ This is the same process described in [this post](/posts/2025/01/databending-par
 
 ### [mp3glitch](https://codeberg.org/reillypascal/mp3glitch)
 
-Python CLI tool for glitching MP3s while leaving them playable. Includes many options to shape glitching amount, character, and timbre.
+Python CLI tool for glitching MP3s, creating interesting sounds for music production. Includes many options to shape glitching amount, character, and timbre.
 
 The mechanics behind this are described in [this post](/posts/2025/02/databending-part-2/), and I discuss using Python to do the glitching in [this post](/posts/2025/04/databending-part-3/).
 
@@ -72,7 +72,7 @@ The mechanics behind this are described in [this post](/posts/2025/02/databendin
 
 ### [notegraph](https://codeberg.org/reillypascal/notegraph/)
 
-Python CLI utility to generate and manipulate graphs of links in a PKM/Obsidian-style notebook.
+Python CLI tool to generate and manipulate graphs of links in a PKM/Obsidian-style notebook.
 
 </article>
 
