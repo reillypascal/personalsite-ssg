@@ -24,6 +24,12 @@ featured: true
 <link rel="stylesheet" type="text/css" href="/styles/code/prism-perf-custom.css" />
 <link rel="stylesheet" type="text/css" href="/styles/code/code-tweaks.css" />
 
+<aside>
+
+UPDATE: as of 2026-06-03, this tool can be installed with e.g., `pipx` as a CLI utility. See the [README](https://codeberg.org/reillypascal/mp3glitch#readme) for current installation/usage instructions.
+
+</aside>
+
 In the [previous post](/posts/2025/02/databending-part-2/) in this series, I wrote about how to glitch up an MP3 file in a hex editor, while still leaving it playable. Since this process is incredibly slow and tedious to do by hand I mentioned wanting to automate this in Python. This week I've figured out how to do just that, and I'll walk through how it works.
 
 First, here are some sounds. The examples in the last post were incredibly short because of how difficult it is to do by hand, so here's a longer one. This is the source MP3:
