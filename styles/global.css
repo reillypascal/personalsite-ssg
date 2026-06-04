@@ -147,9 +147,12 @@ body {
 
 	/* fallback height */
 	min-height: 100vh;
-
 	/* new small viewport height for modern browsers */
 	min-height: 100svh;
+	/* @supports instead of cascade (biome complained) https://stackoverflow.com/a/63885563 */
+	/* @supports (min-height: 100svh) {
+		min-height: 100svh;
+	} */
 }
 
 /* ######## colors, sizes ######## */
@@ -696,6 +699,13 @@ aside {
 			margin: 28px 0 32px 16px;
 		}
 	}
+}
+
+ins {
+	/* <ins> defaults to underlining
+	 * https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/ins#accessibility
+	 * :before/:after will be visible with no decoration*/
+	text-decoration: none;
 }
 
 .digital-garden-preface {
