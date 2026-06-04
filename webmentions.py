@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 
-from dotenv import load_dotenv
 import json
 import os
 import urllib.request  # , subprocess
+from dotenv import load_dotenv
+from subprocess import run
+from typing import Any, Dict
 
 load_dotenv()
 
@@ -16,17 +18,19 @@ with urllib.request.urlopen(
 
 json_dict = json.loads(res.decode("utf-8"))
 
-webmentions = {"mentions": []}
+webmentions: Dict[str, Any] = {"mentions": []}
 for entry in json_dict.get("children"):
     if ("https://brid.gy/" not in entry.get("wm-source")) and (
         "https://bsky.brid.gy/" not in entry.get("wm-source")
     ):
-        webmentions.get("mentions").append(entry)
+        webmentions["mentions"].append(entry)
 
 output_filename = "webmentions.json"
 
 with open(output_filename, "w", encoding="utf-8") as output_file:
     json.dump(webmentions, output_file, ensure_ascii=False, indent=4)
 
-# open_file = subprocess.run(f"codium {output_filename}", check=True, text=True)
-# https://stackoverflow.com/a/51950538
+editor = os.getenv("EDITOR")
+# subprocess.run() over subprocess.call() https://stackoverflow.com/a/51950538
+if editor != None:
+    run([editor, output_filename])
