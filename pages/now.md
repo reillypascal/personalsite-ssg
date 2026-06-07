@@ -36,15 +36,6 @@ Recently I've found some new hobbies. First is photography. I tracked down an an
 </article>
 
 <article>
-<h2 class="sectionHeader">Currently Listening</h2>
-
-Fire-Toolz, [_Lavender Networks_](https://fire-toolz.bandcamp.com/album/lavender-networks): any year where we get a new Fire-Toolz is a good year! She's on Warp Records now, which along with Autechre means that my favorite artists are all there.
-
-Windows96, [_How to See through Walls_](https://windows96.bandcamp.com/album/how-to-see-through-walls): a friend on Bluesky was talking about this album, and “Near Death Experience” in particular feels deeply satisfying and nostalgic.
-
-</article>
-
-<article>
 <h2 class="sectionHeader">Currently Reading</h2>
 
 _Agnes, We're Not Murderers_ by Jessica Alexander: a bookseller recommended this to me since I liked _House of Leaves_. I can't quite say what it's _about_ yet, but red text and footnotes weave their way into the narrative, constantly directing the reader to other pages, commenting on the narrative.
@@ -56,6 +47,15 @@ _A Game in Yellow_ by Hailey Piper: a thrill-seeking couple — Carmen and Blanc
 
 _S._ by Doug Dorst: presented as a library copy of _Ship of Theseus_ by fictional author V.M. Straka, with handwritten notes in the margins between two college students. V.M. Straka is reclusive and mysterious, and conspiracy theories surround him, and the students' relationship grows as they dig deeper into this.
 {%- endcomment %}
+
+</article>
+
+<article>
+<h2 class="sectionHeader">Currently Listening</h2>
+
+Fire-Toolz, [_Lavender Networks_](https://fire-toolz.bandcamp.com/album/lavender-networks): any year where we get a new Fire-Toolz is a good year! She's on Warp Records now, which along with Autechre means that my favorite artists are all there.
+
+Windows96, [_How to See through Walls_](https://windows96.bandcamp.com/album/how-to-see-through-walls): a friend on Bluesky was talking about this album, and “Near Death Experience” in particular feels deeply satisfying and nostalgic.
 
 </article>
 
