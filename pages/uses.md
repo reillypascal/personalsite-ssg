@@ -51,18 +51,14 @@ tags:
 - Neovim (my [dotfiles](https://codeberg.org/reillypascal/nvim))
     - [algorave.nvim](https://codeberg.org/reillypascal/algorave.nvim) (Neovim REPL plugin I wrote — useful for Tidal Cycles, among other things)
     - nvim-lilypond-suite (Neovim tools for Lilypond)
+    - obsidian.nvim (Obsidian plugin; I use this for my notebook)
+    - orgmode.nvim (Org Mode plugin; I use this for to-do lists)
     - scnvim (Neovim frontend for SuperCollider)
 - pluginval (validate and debug audio plugins)
 - Starship (command prompt)
 - superfile (terminal file browser/manager)
 - WezTerm (terminal emulator)
 - zoxide (navigate terminal like cd, but with fuzzy matching/finding)
-
-<!-- - tidal.nvim (Neovim plugin for Tidal Cycles) -->
-<!-- - chezmoi (dotfile manager) -->
-<!-- - brew-explorer (TUI for Homebrew) -->
-<!-- - Octave (FOSS equivalent to MATLAB) -->
-<!-- - tmux (terminal multiplexer) -->
 
 ### Web
 
@@ -87,9 +83,8 @@ tags:
 
 - Capy Reader (Android RSS reader)
 - LibreOffice (FOSS office suite)
-- Markdown-Oxide (Obsidian-compatible language server; works with e.g., Neovim)
 - NetNewsWire (macOS RSS reader; also available for iOS)
-- Obsidian (notebook; pairs nicely with Syncthing)
+- Orgzly (Android graphical interface for Org Mode files)
 - Readest (cross-platform e-book reader)
 - Zotero (reference manager)
 
@@ -120,10 +115,10 @@ tags:
 - Arch Linux
 - Ubuntu Server (for [my home server](/wiki/notebook/tech-projects/tv-media-server/))
 - [GrapheneOS](https://grapheneos.org/) (mobile)
-  <!-- - GrapheneOS is an alternative, privacy/security-focused version of Android. The [web-based installation option](https://grapheneos.org/install/web) is extremely easy, and it's also easy to revert to stock Android. The sandboxed Google Play services make it easy to run pretty much any app you can use on stock (except NFC payment, unfortunately), or you can leave them off and have a completely Google-free experience. -->
 
 ## Hardware
 
+- Mouse: Logitech MX Vertical (helpful for joint pain)
 - Watch: Casio F-91W with Sensor Watch microcontroller
 
 ## Stationery
