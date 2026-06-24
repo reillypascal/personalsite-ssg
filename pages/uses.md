@@ -48,6 +48,7 @@ tags:
 
 - apparix (terminal bookmarks)
 - fzf (terminal fuzzy finder)
+- Ghostty (terminal emulator)
 - Neovim (my [dotfiles](https://codeberg.org/reillypascal/nvim))
     - [algorave.nvim](https://codeberg.org/reillypascal/algorave.nvim) (Neovim REPL plugin I wrote — useful for Tidal Cycles, among other things)
     - nvim-lilypond-suite (Neovim tools for Lilypond)
@@ -57,8 +58,9 @@ tags:
 - pluginval (validate and debug audio plugins)
 - Starship (command prompt)
 - superfile (terminal file browser/manager)
-- WezTerm (terminal emulator)
 - zoxide (navigate terminal like cd, but with fuzzy matching/finding)
+
+<!-- - WezTerm (terminal emulator) -->
 
 ### Web
 
