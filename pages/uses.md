@@ -60,8 +60,6 @@ tags:
 - superfile (terminal file browser/manager)
 - zoxide (navigate terminal like cd, but with fuzzy matching/finding)
 
-<!-- - WezTerm (terminal emulator) -->
-
 ### Web
 
 - FFUpdater (app to keep vanilla Firefox for Android updated without Play Store)
@@ -72,8 +70,8 @@ tags:
 ### Media
 
 - AntennaPod (Android podcast player)
-- Auxio (Android local music player)
 - Lollypop (Linux music player aimed at GNOME desktop)
+- Musicolet (Android local music player)
 - Platforms to buy downloads
     - Bandcamp
     - Faircamp (tool for artists to make their own download sales pages)
@@ -100,7 +98,7 @@ tags:
 ### Utilities
 
 - Aegis (2fa)
-- DAVx<sup>5</sup> (CalDAV/CardDAV/WebDAV manager for Android)
+- DAVx<sup>5</sup>, ICSx<sup>5</sup> (system calendar managers for Android)
 - Droid-ify (F-Droid FOSS app store client)
 - Forkyz (FOSS Android crossword app)
 - Fossify Calendar (Android calendar)

@@ -3,54 +3,60 @@ command = "npx @11ty/eleventy && npx pagefind --site _site"
 functions = "netlify/functions"
 publish = "/_site"
 
-
 [[headers]]
 for = "/*.ico"
+
 [headers.values]
 Cache-Control = "public, max-age=604800"
 
 [[headers]]
 for = "/*.jpg"
+
 [headers.values]
 Cache-Control = "public, max-age=604800"
 
 [[headers]]
 for = "/*.jpeg"
+
 [headers.values]
 Cache-Control = "public, max-age=604800"
 
 [[headers]]
 for = "/*.png"
+
 [headers.values]
 Cache-Control = "public, max-age=604800"
 
 [[headers]]
 for = "/*.svg"
+
 [headers.values]
 Cache-Control = "public, max-age=604800"
 
 [[headers]]
 for = "/*.webm"
+
 [headers.values]
 Cache-Control = "public, max-age=604800"
 
-
 [[headers]]
 for = "/*.woff"
+
 [headers.values]
 Cache-Control = "public, max-age=604800"
 
 [[headers]]
 for = "/*.woff2"
+
 [headers.values]
 Cache-Control = "public, max-age=604800"
 
+[[redirects]]
+from = "/.well-known/host-meta*"
+to = "https://fed.brid.gy/.well-known/host-meta:splat"
+status = 302
 
 [[redirects]]
-  from = "/.well-known/host-meta*"
-  to = "https://fed.brid.gy/.well-known/host-meta:splat"
-  status = 302
-[[redirects]]
-  from = "/.well-known/webfinger*"
-  to = "https://fed.brid.gy/.well-known/webfinger"
-  status = 302
+from = "/.well-known/webfinger*"
+to = "https://fed.brid.gy/.well-known/webfinger"
+status = 302
