@@ -1,15 +1,15 @@
-import { createMathjaxInstance, mathjax } from "@mdit/plugin-mathjax";
-import { DateTime } from "luxon";
 // needed for e.g., dateToRfc822 filter
 import feedPlugin from "@11ty/eleventy-plugin-rss";
+import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import { createMathjaxInstance, mathjax } from "@mdit/plugin-mathjax";
+import pluginTOC from "@uncenter/eleventy-plugin-toc";
+import { DateTime } from "luxon";
 // import interlinker from "@photogabble/eleventy-plugin-interlinker";
 import markdownIt from "markdown-it";
 import markdownItAnchor from "markdown-it-anchor";
 import markdownItAttrs from "markdown-it-attrs";
 import markdownItFootnote from "markdown-it-footnote";
-import pluginTOC from "@uncenter/eleventy-plugin-toc";
 import sanitizeHTML from "sanitize-html";
-import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 // import markdownItGitHubAlerts from 'markdown-it-github-alerts';
 // import { katex } from "@mdit/plugin-katex";
 // import mdBiblatex from '@arothuis/markdown-it-biblatex';

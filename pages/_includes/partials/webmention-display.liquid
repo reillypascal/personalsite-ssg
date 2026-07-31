@@ -71,12 +71,15 @@
                         {%- for category in fedi_mentions %}
                             {%- if category[1].size > 0 %}
                                 {%- assign valid_categories = valid_categories | plus: 1 %}
+                                {%- comment %} comma inserted *before* item; if just one category, no comma inserted; on last one, no comma at the end, since it's inserted before {%- endcomment %}
                                 {%- if valid_categories > 1 -%}
                                     ,
                                 {%- endif %}
                                 {% assign interaction_type = category[0] %}
                                 {% if category[1].size == 1 %}
-                                    {% assign interaction_type = interaction_type | slice: 0, -1 %}
+                                    {%- comment %} {% assign interaction_type = interaction_type | slice: 0, -1 %} {%- endcomment %}
+                                    {%- comment %} remove final 's' on single; `slice` was removing *entire* word{%- endcomment %}
+                                    {% assign interaction_type = interaction_type | remove_last: 's' %}
                                 {% endif %}
                                 {{ category[1].size }}
                                 {{ interaction_type }}
