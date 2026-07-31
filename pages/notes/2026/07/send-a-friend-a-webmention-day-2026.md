@@ -1,6 +1,8 @@
 ---
 title: "Send a Friend a Webmention Day 2026"
-fedi_url: 
+fedi_url:
+  - https://hachyderm.io/@reillypascal/117015980814900979
+  - https://bsky.app/profile/reillypascal.bsky.social/post/3mrxlajhgfk2p
 og_image: 
 og_image_width: 
 og_image_height: 
