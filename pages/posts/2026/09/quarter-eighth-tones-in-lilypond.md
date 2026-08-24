@@ -6,7 +6,7 @@ og_image:
 og_image_width: 1200
 og_image_height: 630
 og_image_alt:
-date: 2026-05-27T12:30:58-0500
+date: 2026-08-14T19:59:35-04:00
 tags:
   - composition
   - lilypond

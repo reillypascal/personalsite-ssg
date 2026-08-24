@@ -102,9 +102,9 @@ I do most of my coding/text editing in the Neovim text editor. Here are my [dotf
 
 #### Editing Lilypond
 
-Neovim's remote plugins API makes it easy to use the [`python-ly`](https://python-ly.readthedocs.io/en/latest/) library to edit Lilypond files. In [`rplugin/python3/`](https://codeberg.org/reillypascal/nvim/src/branch/main/rplugin/python3) I have `:Transp` and `:Rhythm` commands that easily transpose and manipulate rhythm in place in a Lilypond file.
+Neovim's remote plugins API makes it easy to use the [`python-ly`](https://python-ly.readthedocs.io/en/latest/) library to edit Lilypond files. In [`rplugin/python3/`](https://codeberg.org/reillypascal/nvim/src/branch/main/rplugin/python3) I have `:Transpose` and `:Rhythm` commands that easily transpose and manipulate rhythm in place in a Lilypond file.
 
-#### Updating Treesitter
+{%- comment %} #### Updating Treesitter
 
 With the `nvim-treesitter` plugin being archived as of April 3, 2026, I wanted a simple DIY way to manage my Tree-Sitter parsers/queries. I have [this Python script](https://codeberg.org/reillypascal/nvim/src/branch/main/tsup.py), which downloads and builds the parsers, and moves them to `~/.local/share/nvim/site/`, which is the same location `nvim-treesitter` did. That and the Lua code below to start Tree-Sitter running seems to be plenty for my needs.
 
@@ -126,7 +126,7 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
 
 [This Python script](https://codeberg.org/reillypascal/forget/src/commit/22ff2db95082abb8f683e39e2d1e09d7fd322525/pipe.py) and [this Bash script](https://codeberg.org/reillypascal/forget/src/commit/22ff2db95082abb8f683e39e2d1e09d7fd322525/watch) allow me to watch the MIDI and PDF files generated from Lilypond and open them in Audacity and the default viewer, respectively every time they change.
 
-</article>
+</article> {%- endcomment %}
 
 <article>
 
@@ -230,30 +230,32 @@ This [Python script](https://github.com/reillypascal/personalsite-ssg/blob/main/
 
 ### Tea/Coffee Timer
 
-I love tea (my favorite is Bigelow's Vanilla Chai) and I prefer it steeped for a precise length of time. However, I find alarms extremely irritating, with the worst part being that many of them keep going until you turn them off. This script lets me type e.g., `./timer.sh 4m` to get a timer that chimes once and then stops. Note that this depends on [timer](https://github.com/caarlos0/timer).
+I love tea (my favorite is Bigelow's Vanilla Chai) and I prefer it steeped for a precise length of time. However, I find alarms extremely irritating, with the worst part being that many of them keep going until you turn them off. This script lets me type e.g., `timer 4m` to get a timer that chimes once and then stops.
 
-<div class="code-file">timer.sh</div>
+This uses the `pv` utility (which visualizes data in a pipe) and either `afplay` (macOS) or the SoX `play` command (platform-agnostic) to play the audio. `pv` is commonly installed by default on Linux, and can be installed via Homebrew on Mac, and SoX will need to be installed on either.
+
+<div class="code-file">timer</div>
 
 ```sh
 #!/usr/bin/env bash
 
 if [ ${1+x} ]; then
-    time="$1"
+	time=$1
 else
-    time="4m"
+	time="4m"
 fi
 
-if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-    # /usr/share/sounds/gnome/default/alerts/string.ogg may be available on GNOME
-    # may also look on freesound.org
-    # `play` command requires SoX
-    timer "$time" && play "/path/to/sound/file"
-elif [[ "$OSTYPE" == "darwin"* ]]; then
-    timer "$time" && afplay "/System/Library/Sounds/Glass.aiff"
-else
-    echo "Unknown OS: no ending sound will be played"
-    timer "$time"
-fi
+printf "Setting timer for %s\n" "$time"
+
+sleep "$time" | pv -t && {
+	printf "Timer finished!\n"
+
+	if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+		play "/usr/share/sounds/gnome/default/alerts/string.ogg"
+	elif [[ "$OSTYPE" == "darwin"* ]]; then
+		afplay "/System/Library/Sounds/Glass.aiff"
+	fi
+}
 ```
 
 </article>

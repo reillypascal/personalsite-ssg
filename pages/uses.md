@@ -65,7 +65,7 @@ tags:
 - FFUpdater (app to keep vanilla Firefox for Android updated without Play Store)
 - Firefox (web browser)
 - Signal (encrypted messenger)
-- Thunderbird (desktop and Android email client)
+- Thunderbird (desktop and Android email client with calendar & contacts)
 
 ### Media
 
@@ -84,7 +84,6 @@ tags:
 - Capy Reader (Android RSS reader)
 - LibreOffice (FOSS office suite)
 - NetNewsWire (macOS RSS reader; also available for iOS)
-- Orgzly (Android graphical interface for Org Mode files)
 - Readest (cross-platform e-book reader)
 - Zotero (reference manager)
 
@@ -98,10 +97,9 @@ tags:
 ### Utilities
 
 - Aegis (2fa)
+- Calendula (Android calendar)
 - DAVx<sup>5</sup>, ICSx<sup>5</sup> (system calendar managers for Android)
 - Droid-ify (F-Droid FOSS app store client)
-- Forkyz (FOSS Android crossword app)
-- Fossify Calendar (Android calendar)
 - Heliboard (Android keyboard)
 - KeePassDX (Android password manager)
 - KeePassXC (Desktop password manager)
@@ -134,9 +132,8 @@ tags:
 
 - Colorverse, “NGC 1850”
 - Diamine, “Onyx Black” and “Oxblood” (“Oxblood” is one of my favorites for everyday use)
-- Platinum, “Lavender Black”
 - Robert Oster, “Aqua,” “Smokescreen,” and “Sydney Lavender”
-- Rohrer & Klingner, “Ebony” (one of my favorites for everyday use)
+- Rohrer & Klingner, “Ebony” (one of my favorites for everyday use) and “Sepia”
 - Sailor, “Seki,” “Studio 024,” “Yoi,” and “Zare Gokoro”
 - Teranishi Guitar, “Antique Black”
 - Troublemaker, “Petrichor”
@@ -147,3 +144,4 @@ tags:
 - GLP Creations, “The Author” (Tomoe River paper, 68gsm, dot grid)
 - GoodInkPressions Tomoe River Notebook (68gsm, dot grid)
 - Galen Leather Zippered Pen Case
+- Hobonichi Techo Cousin (planner, Tomoe River 52gsm paper)

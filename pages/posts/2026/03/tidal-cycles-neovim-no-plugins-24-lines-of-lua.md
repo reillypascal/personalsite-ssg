@@ -15,7 +15,7 @@ tags:
   - post
   - programming
   - tidal-cycles
-post_series:
+post_series: neovim
 ---
 
 <link rel="stylesheet" type="text/css" href="/styles/code/prism-perf-custom.css" />
