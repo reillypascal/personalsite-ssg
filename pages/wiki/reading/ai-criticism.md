@@ -224,6 +224,14 @@ Cognitive scientist and AI researcher Gary Marcus [notes the following about the
 
 ## AI in Academia
 
+- Katja Thieme and Brittany Amell, [_Generative AI and Sociorhetorical Views of Writing_](https://www.erudit.org/en/journals/dwr/2025-v35-dwr010042/1123295ar.pdf)
+
+> Artificial intelligence (AI) tools increasingly influence writing practices in
+educational contexts, yet writing studies expertise is too often sidelined in
+current discussions. This paper presents core insights from rhetorical genre
+theory and genre-based pedagogy to inform the teaching of research and
+writing in relation to generative AI tools.
+
 - Ethan Hein, “[AI slop and musical creativity](https://www.ethanhein.com/wp/2025/ai-slop-and-musical-creativity/)”
 
 > The question is not, how do we help people be creative? They are already, from birth. The question is, why do we grind creativity out of kids so thoroughly, and how do we stop doing that? Teaching songwriting and other creative music-making requires only that you disinhibit the strong creative impulse that is already there. \[…\]
