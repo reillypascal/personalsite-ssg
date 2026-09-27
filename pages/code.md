@@ -36,21 +36,11 @@ Lo-fi plugin with options of various telecommunications codecs including Mu-Law 
 
 </article>
 
-<h2 id="devtools" class="sectionHeader">Dev Tools</h2>
-
-<article>
-
-### [algorave.nvim](https://codeberg.org/reillypascal/algorave.nvim)
-
-A Neovim REPL plugin, primarily aimed at musical live-coding, or “algorave” performances, but flexible enough to cover other use cases.
-
-</article>
-
 <h2 id="cli-tools" class="sectionHeader">Command-Line Tools</h2>
 
 <article>
 
-### [data2audio](https://github.com/reillypascal/data2audio)
+### [data2audio](https://codeberg.org/reillypascal/data2audio)
 
 Rust CLI tool to import a folder of files, convert to audio, and normalize/filter out sub-audible frequencies. Processes files in parallel (using `rayon`), so it's extremely fast even with large batches of files.</p>
 
@@ -90,6 +80,16 @@ A collection of Max/MSP algorithmic reverb abstractions, based on classic DSP pa
 
 </article>
 
+<h2 id="devtools" class="sectionHeader">Dev Tools</h2>
+
+<article>
+
+### [algorave.nvim](https://codeberg.org/reillypascal/algorave.nvim)
+
+A Neovim REPL plugin, primarily aimed at musical live-coding, or “algorave” performances, but flexible enough to cover other use cases.
+
+</article>
+
 <h2 id="grimoire" class="sectionHeader">Grimoire</h2>
 
 A [grimoire](https://en.wikipedia.org/wiki/Grimoire) is a book of spells or incantations. This one is my place to keep shell scripts and other short snippets of code I find useful.
@@ -100,7 +100,7 @@ A [grimoire](https://en.wikipedia.org/wiki/Grimoire) is a book of spells or inca
 
 I do most of my coding/text editing in the Neovim text editor. Here are my [dotfiles/configuration files](https://codeberg.org/reillypascal/nvim) for it.
 
-#### Editing Lilypond
+#### Edit Lilypond Files
 
 Neovim's remote plugins API makes it easy to use the [`python-ly`](https://python-ly.readthedocs.io/en/latest/) library to edit Lilypond files. In [`rplugin/python3/`](https://codeberg.org/reillypascal/nvim/src/branch/main/rplugin/python3) I have `:Transpose` and `:Rhythm` commands that easily transpose and manipulate rhythm in place in a Lilypond file.
 
@@ -126,7 +126,7 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
 
 [This Python script](https://codeberg.org/reillypascal/forget/src/commit/22ff2db95082abb8f683e39e2d1e09d7fd322525/pipe.py) and [this Bash script](https://codeberg.org/reillypascal/forget/src/commit/22ff2db95082abb8f683e39e2d1e09d7fd322525/watch) allow me to watch the MIDI and PDF files generated from Lilypond and open them in Audacity and the default viewer, respectively every time they change.
 
-</article> {%- endcomment %}
+</article>
 
 <article>
 
@@ -199,7 +199,7 @@ indienews: true
 EOF
 ```
 
-</article>
+</article>{%- endcomment %}
 
 <article>
 
