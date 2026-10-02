@@ -48,18 +48,19 @@ tags:
 
 - Alacritty (terminal emulator)
 - apparix (terminal bookmarks)
-- foot (terminal emulator on Linux/Wayland)
 - fzf (terminal fuzzy finder)
 - Neovim (my [dotfiles](https://codeberg.org/reillypascal/nvim))
     - [algorave.nvim](https://codeberg.org/reillypascal/algorave.nvim) (Neovim REPL plugin I wrote — useful for Tidal Cycles, among other things)
     - nvim-lilypond-suite (Neovim tools for Lilypond)
     - obsidian.nvim (Obsidian plugin; I use this for my notebook)
     - scnvim (Neovim frontend for SuperCollider)
+- nnn (terminal file manager)
 - pluginval (validate and debug audio plugins)
-- Starship (command prompt)
-- superfile (terminal file browser/manager)
-- tmux (terminal multiplexer)
-- zoxide (navigate terminal like cd, but with fuzzy matching/finding)
+- tig (text-mode interface for git)
+
+<!-- - foot (terminal emulator on Linux/Wayland) -->
+<!-- - tmux (terminal multiplexer) -->
+<!-- - zoxide (navigate terminal like cd, but with fuzzy matching/finding) -->
 
 ### Web
 
@@ -111,7 +112,9 @@ tags:
 ### Operating Systems
 
 - macOS
-- Arch Linux
+- Void Linux
+    - Sway (window manager)
+    - fuzzel (application launcher)
 - Ubuntu Server (for [my home server](/wiki/notebook/tech-projects/tv-media-server/))
 - [GrapheneOS](https://grapheneos.org/) (mobile)
 
