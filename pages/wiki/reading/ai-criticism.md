@@ -74,6 +74,10 @@ In other words, as Merchant puts it
 
 ## Weaknesses of AI as a Tool
 
+- Afridi Mahmud et al., “[When Modernization Breaks Working Code: A Single-File Study of LLMs on Legacy PHP](https://doi.org/10.48550/arXiv.2610.40269)”
+
+> Pasting a legacy file into an LLM and asking it to "modernize this" is an easy shortcut. But is the result better than leaving the code alone? … Often, the answer is no. Untouched, 83 files already pass every check; the best LLM leaves only 59.
+
 - Mohammad Asadi et al., “[Mirage: The Illusion of Visual Understanding](https://arxiv.org/pdf/2603.21687)”
 
 > We report three findings that challenge prevailing assumptions about how \[multimodal AI\] systems process and integrate visual information. First, Frontier models readily generate detailed image descriptions and elaborate reasoning traces, including pathology-biased clinical findings, for images never provided; we term this phenomenon mirage reasoning. Second, without any image input, models also attain strikingly high scores across general and medical multimodal benchmarks, bringing into question their utility and design. In the most extreme case, our model achieved the top rank on a standard chest X-ray question-answering benchmark without access to any images. Third, when models were explicitly instructed to guess answers without image access, rather than being implicitly prompted to assume images were present, performance declined markedly.
@@ -84,11 +88,11 @@ In other words, as Merchant puts it
 >
 > Faros AI, an engineering analytics platform, drew on two years of customer data for its [March 2026 report](https://www.faros.ai/research/ai-acceleration-whiplash). The finding: code churn — lines of code deleted versus lines added — had increased 861% under high AI adoption.
 
-- Adam Kucharski, “[Real signals or artificial stereotypes? Adventures with a cultural Copilot](https://kucharski.substack.com/p/real-signals-or-artificial-stereotypes)”
+<!-- - Adam Kucharski, “[Real signals or artificial stereotypes? Adventures with a cultural Copilot](https://kucharski.substack.com/p/real-signals-or-artificial-stereotypes)” -->
 
-> First, I’d created 2000 free-text responses and labelled them ‘UK’. Then I copied and pasted the exact same 2000 responses but labelled these ‘US’. Finally, I combined them to create a dataset of 4000 total responses, and jumbled them up.
->
-> Despite the responses being identical for the UK and US, Copilot produced a rich, detailed summary of how US and UK respondents differed.
+<!-- > First, I’d created 2000 free-text responses and labelled them ‘UK’. Then I copied and pasted the exact same 2000 responses but labelled these ‘US’. Finally, I combined them to create a dataset of 4000 total responses, and jumbled them up. -->
+<!-- > -->
+<!-- > Despite the responses being identical for the UK and US, Copilot produced a rich, detailed summary of how US and UK respondents differed. -->
 
 - Judy Hanwen Shen, Alex Tamkin, “[How AI Impacts Skill Formation](https://arxiv.org/abs/2601.20245)”
 

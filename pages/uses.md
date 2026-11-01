@@ -37,9 +37,7 @@ tags:
 #### Plugins
 
 - Dexed (Yamaha DX7 emulator; micro-tunable with .scl files)
-- Element by Kushview (modular audio plugin host)
 - plugdata (Pure Data in plugin form; also includes a standalone version with a nice update to the Pure Data GUI)
-- sfizz (FOSS .sfz sampler host; micro-tunable with .scl files)
 - sforzando (the official .sfz sampler host)
 - Surge XT (FOSS hybrid synthesizer with rich sound design options; micro-tunable with .scl files)
 - Vital (wavetable synthesizer; micro-tunable with .scl files)
@@ -49,18 +47,14 @@ tags:
 - Alacritty (terminal emulator)
 - apparix (terminal bookmarks)
 - fzf (terminal fuzzy finder)
+- lf (terminal file manager)
 - Neovim (my [dotfiles](https://codeberg.org/reillypascal/nvim))
     - [algorave.nvim](https://codeberg.org/reillypascal/algorave.nvim) (Neovim REPL plugin I wrote — useful for Tidal Cycles, among other things)
     - nvim-lilypond-suite (Neovim tools for Lilypond)
     - obsidian.nvim (Obsidian plugin; I use this for my notebook)
     - scnvim (Neovim frontend for SuperCollider)
-- nnn (terminal file manager)
 - pluginval (validate and debug audio plugins)
 - tig (text-mode interface for git)
-
-<!-- - foot (terminal emulator on Linux/Wayland) -->
-<!-- - tmux (terminal multiplexer) -->
-<!-- - zoxide (navigate terminal like cd, but with fuzzy matching/finding) -->
 
 ### Web
 

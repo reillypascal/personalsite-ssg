@@ -1,12 +1,12 @@
 ---
-title: "Quarter & Eighth Tones in Lilypond"
+title: Quarter & Eighth Tones in Lilypond
 description: I needed to write multiphonics in Lilypond, so today we're talking about notating and playing back microtones.
 fedi_url:
 og_image:
 og_image_width: 1200
 og_image_height: 630
 og_image_alt:
-date: 2026-08-14T19:59:35-04:00
+date: 2026-10-25T12:30:00-05:00
 tags:
   - composition
   - lilypond
