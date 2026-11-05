@@ -59,3 +59,5 @@ indent = 4  # Unordered list indentation
 # [MD044]
 # names = ["rumdl", "Markdown", "GitHub"]  # Proper names that should be capitalized correctly
 # code-blocks = false  # Check code blocks for proper names (default: false, skips code blocks)
+[MD049]
+style = "asterisk"  # Options: "consistent", "asterisk", "underscore"

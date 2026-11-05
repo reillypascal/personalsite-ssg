@@ -21,26 +21,27 @@ It was last updated {{ page.date | date: "%B %d, %Y", "America/New_York" }}.
 
 ### Currently Reading
 
-- Violet Allen, _Plastic, Prism, Void_
-- Doug Dorst, _S._
-- Gretchen Felker-Martin, _Black Flame_
-- Tamsyn Muir, _Gideon the Ninth_
+- Violet Allen, *Plastic, Prism, Void*
+- Thomas Pynchon, *Gravity's Rainbow*
+- John Wiswell, *Someone You Can Build a Nest In*
+<!-- - Gretchen Felker-Martin, *Black Flame* -->
+<!-- - Tamsyn Muir, *Gideon the Ninth* -->
 
 ### Read This Year
 
-- Jessica Alexander, _Agnes, We're Not Murderers!_ (5/5)
-- Virginia Feito, _Victorian Psycho_ (3.75/5)
-- Sarah Gailey, _Spread Me_ (4.25/5)
-- Jeff VanderMeer, _Annihilation_ (5/5)
-- Hailey Piper, _A Game in Yellow_ (4.5/5)
-- qntm, _There Is No Antimemetics Division_ (4.5/5)
+- Jessica Alexander, *Agnes, We're Not Murderers!* (5/5)
+- Virginia Feito, *Victorian Psycho* (3.75/5)
+- Sarah Gailey, *Spread Me* (4.25/5)
+- Jeff VanderMeer, *Annihilation* (5/5)
+- Hailey Piper, *A Game in Yellow* (4.5/5)
+- qntm, *There Is No Antimemetics Division* (4.5/5)
 
 </article>
 
 <article>
 <h2 class="sectionHeader">Current Activities</h2>
 
-I've continued to update my [data2audio](/code/#data2audio) Rust CLI tool for converting any file into audio. The tool has made it _much_ easier to dig through my computer's drive for files that will create interesting sounds, and this has in turn made my current composition project easier.
+I've continued to update my [data2audio](/code/#data2audio) Rust CLI tool for converting any file into audio. The tool has made it *much* easier to dig through my computer's drive for files that will create interesting sounds, and this has in turn made my current composition project easier.
 
 I've slowly started to get back into reading fiction, and looking over the past year or so, I realized I actually read a fair amount. There's a bookstore right at the end of my street that also hosts community events, and I've started going to their &ldquo;weird books club&rdquo; as well. It's also been helping to accept that I like to be in the middle of a long list of books at any given time, and to freely jump between them.
 
