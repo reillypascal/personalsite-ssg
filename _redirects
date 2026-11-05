@@ -7,8 +7,8 @@ http://reillyspitzfaden.netlify.app/* http://reillyspitzfaden.com/:splat 301!
 
 # Renamed media -> music
 # NOTE: *don't* incl glob -- creates issue w/ /media/ directory!
-https://reillyspitzfaden.com/media https://reillyspitzfaden.com/music/:splat 301!
-http://reillyspitzfaden.com/media http://reillyspitzfaden.com/music/:splat 301!
+https://reillyspitzfaden.com/media https://reillyspitzfaden.com/music 301!
+http://reillyspitzfaden.com/media http://reillyspitzfaden.com/music 301!
 
 # Renamed blog
 https://reillyspitzfaden.com/blogposts/* https://reillyspitzfaden.com/blog/:splat 301!
