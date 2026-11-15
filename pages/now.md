@@ -22,10 +22,10 @@ It was last updated {{ page.date | date: "%B %d, %Y", "America/New_York" }}.
 ### Currently Reading
 
 - Violet Allen, *Plastic, Prism, Void*
-- Thomas Pynchon, *Gravity's Rainbow*
-- Hailey Piper, *She's Not Herself Tonight*
-- John Wiswell, *Someone You Can Build a Nest In*
 
+<!-- - Thomas Pynchon, *Gravity's Rainbow* -->
+<!-- - Hailey Piper, *She's Not Herself Tonight* -->
+<!-- - John Wiswell, *Someone You Can Build a Nest In* -->
 <!-- - Susanna Clarke, *Piranesi* -->
 <!-- - James Joyce, *Finnegans Wake* -->
 <!-- - Gretchen Felker-Martin, *Black Flame* -->
