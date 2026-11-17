@@ -1,9 +1,6 @@
 {
-	"plugins": [
-		"@shopify/prettier-plugin-liquid",
-		"prettier-plugin-jinja-template"
-	],
+	"plugins": ["@shopify/prettier-plugin-liquid"],
 	"useTabs": false,
-    "tabWidth": 4,
+	"tabWidth": 4,
 	"proseWrap": "preserve"
 }

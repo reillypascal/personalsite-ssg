@@ -16,10 +16,10 @@
         <p class="p-note">{{ h_card_p_note }}</p>
     {%- endif %}
 </div>
-{% if fedi_url %}
+{%- if fedi_url %}
     <div style="display:none;">
         {%- for url in fedi_url %}
             <a rel="syndication" class="u-syndication" href="{{ url }}"></a>
         {%- endfor %}
     </div>
-{% endif %}
+{%- endif %}

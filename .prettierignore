@@ -3,6 +3,6 @@
 /**/*.*
 # *don't* ignore liquid files
 !**/*.liquid
-# *do* ignore humans.liquid - formatting has to be exact because it's a .txt file
+# *do* ignore humans, indieweb - formatting has to be exact for .txt files
 **/humans.liquid
 **/indieweb.liquid
