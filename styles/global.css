@@ -154,6 +154,9 @@ body {
 		min-height: 100svh;
 	} */
 }
+.onecolumn {
+	max-width: 45rem;
+}
 
 /* ######## colors, sizes ######## */
 body {
